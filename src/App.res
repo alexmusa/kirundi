@@ -6,10 +6,10 @@ external vite: string = "default"
 
 @react.component
 let make = () => {
-  let (count, setCount) = React.useState(() => 0)
+  // let (count, setCount) = React.useState(() => 0)
 
   <div className="max-w-200">
-    <Lesson.LessonView lesson={Lesson.lesson1} />
+    <Lesson.LessonView lesson={Lesson1.lesson1} />
 
   //   <div className="flex justify-evenly items-center">
   //     <img src={vite} alt={"Vite logo"} className="h-24" />
