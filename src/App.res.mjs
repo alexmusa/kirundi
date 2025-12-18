@@ -6,15 +6,27 @@ import * as Belt_Int from "@rescript/runtime/lib/es6/Belt_Int.js";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
 import * as LessonData from "./lessons/LessonData.res.mjs";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
+import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
 import ViteSvg from "./assets/vite.svg";
 import * as JsxRuntime from "react/jsx-runtime";
 import RescriptLogoSvg from "./assets/rescript-logo.svg";
 
 function App(props) {
-  let match = React.useState(() => 0);
+  let localStorageKey = "current-lesson-index";
+  let match = React.useState(() => {
+    let value = Dom_storage.getItem(localStorageKey, localStorage);
+    if (value !== undefined) {
+      return Belt_Option.getWithDefault(Belt_Int.fromString(value), 0);
+    } else {
+      return 0;
+    }
+  });
   let setSelectedIdx = match[1];
   let selectedIdx = match[0];
   let totalLessons = LessonData.lessons.length;
+  React.useEffect(() => {
+    Dom_storage.setItem(localStorageKey, selectedIdx.toString(), localStorage);
+  }, [selectedIdx]);
   let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
   let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleChange = event => {
@@ -49,10 +61,6 @@ function App(props) {
             className: "px-4 py-2 bg-gray-200 rounded disabled:opacity-30",
             disabled: selectedIdx === 0,
             onClick: goToPrev
-          }),
-          JsxRuntime.jsx("span", {
-            children: `Lesson ` + (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString(),
-            className: "text-sm text-gray-500"
           }),
           JsxRuntime.jsx("button", {
             children: "Next →",
