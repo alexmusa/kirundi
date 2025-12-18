@@ -14,6 +14,9 @@ function App(props) {
   let match = React.useState(() => 0);
   let setSelectedIdx = match[1];
   let selectedIdx = match[0];
+  let totalLessons = LessonData.lessons.length;
+  let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
+  let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleChange = event => {
     let value = event.target.value;
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
@@ -21,37 +24,47 @@ function App(props) {
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
   return JsxRuntime.jsxs("div", {
     children: [
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsx("label", {
-            children: "Choose a Lesson:",
-            className: "block text-sm font-medium text-gray-700 mb-2",
-            htmlFor: "lesson-select"
-          }),
-          JsxRuntime.jsx("select", {
-            children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
-              children: `Lesson ` + (index + 1 | 0).toString() + `: ` + lesson.title,
-              value: index.toString()
-            }, index.toString())),
-            className: "block w-full max-w-md p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500",
-            id: "lesson-select",
-            value: selectedIdx.toString(),
-            onChange: handleChange
-          })
-        ],
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("select", {
+          children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
+            children: `Lesson ` + (index + 1 | 0).toString() + `: ` + lesson.title,
+            value: index.toString()
+          }, index.toString())),
+          className: "block w-full p-2 border border-gray-300 rounded-md",
+          value: selectedIdx.toString(),
+          onChange: handleChange
+        }),
         className: "mb-8"
-      }),
-      JsxRuntime.jsx("hr", {
-        className: "my-6"
       }),
       JsxRuntime.jsx("div", {
         children: currentLesson !== undefined ? JsxRuntime.jsx(Lesson.LessonView.make, {
             lesson: currentLesson
           }) : "Lesson not found",
-        className: "lesson-container"
+        className: "flex-grow"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("button", {
+            children: "← Previous",
+            className: "px-4 py-2 bg-gray-200 rounded disabled:opacity-30",
+            disabled: selectedIdx === 0,
+            onClick: goToPrev
+          }),
+          JsxRuntime.jsx("span", {
+            children: `Lesson ` + (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString(),
+            className: "text-sm text-gray-500"
+          }),
+          JsxRuntime.jsx("button", {
+            children: "Next →",
+            className: "px-4 py-2 bg-blue-600 text-white rounded disabled:bg-gray-300",
+            disabled: selectedIdx === (totalLessons - 1 | 0),
+            onClick: goToNext
+          })
+        ],
+        className: "mt-12 flex justify-between items-center border-t pt-6"
       })
     ],
-    className: "p-6"
+    className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto"
   });
 }
 
