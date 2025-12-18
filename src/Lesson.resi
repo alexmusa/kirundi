@@ -21,7 +21,7 @@ type lesson = {
   title: string,
   content: array<string>,
   vocabulary: array<(string, string)>,
-  verbs: array<(string, string)>,
+  examples: array<(string, string)>,
   quiz: array<quizSection>,
 }
 module Vocabulary: {

@@ -10,9 +10,11 @@ function Lesson$Vocabulary(props) {
     children: props.items.map(param => {
       let k = param[0];
       return JsxRuntime.jsx("li", {
-        children: k + " – " + param[1]
+        children: k + " – " + param[1],
+        className: "text-sm"
       }, k);
-    })
+    }),
+    className: "list-disc pl-6 space-y-1 text-gray-700"
   });
 }
 
@@ -31,80 +33,99 @@ function Lesson$QuizQuestionView(props) {
   let match$2 = React.useState(() => false);
   let setChecked = match$2[1];
   let checked = match$2[0];
+  let feedback = (ok, text) => JsxRuntime.jsx("p", {
+    children: text,
+    className: "mt-2 text-sm font-medium " + (
+      ok ? "text-green-600" : "text-red-600"
+    )
+  });
+  let tmp;
   switch (question.TAG) {
     case "TextInput" :
       let answer = question.answer;
-      return JsxRuntime.jsxs(JsxRuntime.Fragment, {
+      tmp = JsxRuntime.jsxs(JsxRuntime.Fragment, {
         children: [
           JsxRuntime.jsx("p", {
-            children: question.prompt
+            children: question.prompt,
+            className: "font-medium text-gray-900"
           }),
           JsxRuntime.jsx("input", {
+            className: "w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500",
             value: userInput,
             onChange: e => setUserInput(param => e.target.value)
           }),
           JsxRuntime.jsx("button", {
             children: "Check",
-            onClick: param => setChecked(prev => true)
+            className: "inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700",
+            onClick: param => setChecked(param => true)
           }),
-          checked ? JsxRuntime.jsx("p", {
-              children: userInput === answer ? "✓ Correct" : "✗ Correct answer: " + answer
-            }) : null
+          checked ? feedback(userInput === answer, userInput === answer ? "✓ Correct" : "✗ Correct answer: " + answer) : null
         ]
       });
+      break;
     case "MultipleChoice" :
       let correctIndex = question.correctIndex;
       let options = question.options;
-      return JsxRuntime.jsxs(JsxRuntime.Fragment, {
+      tmp = JsxRuntime.jsxs(JsxRuntime.Fragment, {
         children: [
           JsxRuntime.jsx("p", {
-            children: question.prompt
+            children: question.prompt,
+            className: "font-medium text-gray-900"
           }),
           JsxRuntime.jsx("ul", {
             children: options.map((opt, i) => JsxRuntime.jsx("li", {
               children: JsxRuntime.jsxs("label", {
                 children: [
                   JsxRuntime.jsx("input", {
+                    className: "h-4 w-4 text-blue-600",
                     checked: selected === i,
                     type: "radio",
                     onChange: param => setSelected(param => i)
                   }),
                   opt
-                ]
+                ],
+                className: "flex cursor-pointer items-center gap-2 text-sm text-gray-700"
               })
-            }, i.toString()))
+            }, i.toString())),
+            className: "space-y-2"
           }),
           JsxRuntime.jsx("button", {
             children: "Check",
-            onClick: param => setChecked(prev => true)
+            className: "inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700",
+            onClick: param => setChecked(param => true)
           }),
-          checked ? JsxRuntime.jsx("p", {
-              children: selected === correctIndex ? "✓ Correct" : "✗ Correct answer: " + Stdlib_Option.getOr(options[correctIndex], "error: missing index")
-            }) : null
+          checked ? feedback(selected === correctIndex, selected === correctIndex ? "✓ Correct" : "✗ Correct answer: " + Stdlib_Option.getOr(options[correctIndex], "error")) : null
         ]
       });
+      break;
     case "PartialInput" :
       let answer$1 = question.answer;
-      return JsxRuntime.jsxs(JsxRuntime.Fragment, {
+      tmp = JsxRuntime.jsxs(JsxRuntime.Fragment, {
         children: [
           JsxRuntime.jsx("p", {
-            children: question.prompt
+            children: question.prompt,
+            className: "font-medium text-gray-900"
           }),
           JsxRuntime.jsx("input", {
+            className: "w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500",
             placeholder: question.hint,
             value: userInput,
             onChange: e => setUserInput(param => e.target.value)
           }),
           JsxRuntime.jsx("button", {
             children: "Check",
-            onClick: param => setChecked(prev => true)
+            className: "inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700",
+            onClick: param => setChecked(param => true)
           }),
-          checked ? JsxRuntime.jsx("p", {
-              children: Js_string.includes(answer$1, userInput) ? "✓ On the right track" : "✗ Full answer: " + answer$1
-            }) : null
+          checked ? feedback(Js_string.includes(answer$1, userInput), Js_string.includes(answer$1, userInput) ? "✓ On the right track" : "✗ Full answer: " + answer$1) : null
         ]
       });
+      break;
   }
+  return JsxRuntime.jsx("div", {
+    children: tmp,
+    className: "rounded-xl border border-gray-200 bg-white p-4 shadow-sm space-y-3"
+  });
 }
 
 let QuizQuestionView = {
@@ -113,22 +134,22 @@ let QuizQuestionView = {
 
 function Lesson$QuizSection(props) {
   let section = props.section;
-  return JsxRuntime.jsxs("div", {
+  return JsxRuntime.jsxs("section", {
     children: [
       JsxRuntime.jsx("h3", {
-        children: section.title
+        children: section.title,
+        className: "text-lg font-semibold text-gray-900"
       }),
       JsxRuntime.jsx("ol", {
         children: section.questions.map((q, i) => JsxRuntime.jsx("li", {
           children: JsxRuntime.jsx(Lesson$QuizQuestionView, {
             question: q
           })
-        }, i.toString()))
+        }, i.toString())),
+        className: "space-y-4"
       })
     ],
-    style: {
-      marginBottom: "2rem"
-    }
+    className: "space-y-4"
   });
 }
 
@@ -142,30 +163,53 @@ function Lesson$LessonView(props) {
     children: [
       JsxRuntime.jsx("h1", {
         children: lesson.title,
-        className: `font-extrabold`
+        className: "text-3xl font-extrabold tracking-tight text-gray-900"
       }),
-      lesson.content.map(p => JsxRuntime.jsx("p", {
-        children: p
-      }, p)),
-      JsxRuntime.jsx("h2", {
-        children: "Vocabulary"
+      JsxRuntime.jsx("div", {
+        children: lesson.content.map(p => JsxRuntime.jsx("p", {
+          children: p,
+          className: "leading-relaxed"
+        }, p)),
+        className: "space-y-4 text-gray-700"
       }),
-      JsxRuntime.jsx(Lesson$Vocabulary, {
-        items: lesson.vocabulary
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Examples",
+            className: "text-xl font-semibold text-gray-900"
+          }),
+          JsxRuntime.jsx(Lesson$Vocabulary, {
+            items: lesson.examples
+          })
+        ],
+        className: "space-y-2"
       }),
-      JsxRuntime.jsx("h2", {
-        children: "Verbs"
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary",
+            className: "text-xl font-semibold text-gray-900"
+          }),
+          JsxRuntime.jsx(Lesson$Vocabulary, {
+            items: lesson.vocabulary
+          })
+        ],
+        className: "space-y-2"
       }),
-      JsxRuntime.jsx(Lesson$Vocabulary, {
-        items: lesson.verbs
-      }),
-      JsxRuntime.jsx("h2", {
-        children: "Quiz"
-      }),
-      lesson.quiz.map(s => JsxRuntime.jsx(Lesson$QuizSection, {
-        section: s
-      }, s.title))
-    ]
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Quiz",
+            className: "text-xl font-semibold text-gray-900"
+          }),
+          lesson.quiz.map(s => JsxRuntime.jsx(Lesson$QuizSection, {
+            section: s
+          }, s.title))
+        ],
+        className: "space-y-6"
+      })
+    ],
+    className: "mx-auto max-w-3xl space-y-8 px-4 py-8"
   });
 }
 

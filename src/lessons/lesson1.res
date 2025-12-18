@@ -1,6 +1,6 @@
 open Lesson
 
-let lesson1: lesson = {
+let l: lesson = {
   title: "LESSON 1: Class 1 umu–, aba–",
   content: [
     "Kirundi verbs are very important, but we begin with nouns.",
@@ -18,7 +18,7 @@ let lesson1: lesson = {
     ("abahungu", "boys"),
     ("abakobwa", "girls"),
   ],
-  verbs: [
+  examples: [
     ("arakora", "he/she works"),
     ("barakora", "they work"),
     ("aragenda", "he/she goes"),
