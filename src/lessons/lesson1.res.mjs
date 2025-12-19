@@ -76,29 +76,147 @@ let l_quiz = [
     questions: [
       {
         TAG: "TextInput",
-        prompt: "Umugabo arakora.",
-        answer: "The man is working."
+        prompt: "1. Umugabo arakora.",
+        answer: "The man is working"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Abahungu baragenda.",
+        answer: "The boys are going"
       },
       {
         TAG: "MultipleChoice",
-        prompt: "Abahungu baragenda.",
+        prompt: "3. Umukobwa ararima.",
         options: [
-          "The boys are eating.",
-          "The boys are going.",
-          "The girls are going."
+          "The girl is hoeing",
+          "The boy is working",
+          "The women are walking"
         ],
-        correctIndex: 1
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Umugore arakora.",
+        answer: "The woman is working"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Abagore bararima.",
+        answer: "The women are hoeing"
+      },
+      {
+        TAG: "PartialInput",
+        prompt: "6. Abagabo bararima.",
+        answer: "The men are hoeing",
+        hint: "Plural of men."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Umuhungu aragenda.",
+        answer: "The boy is going"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Abakobwa baragenda.",
+        answer: "The girls are going"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "9. Umugore ararima.",
+        options: [
+          "The woman is hoeing",
+          "The man is walking",
+          "They are going"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Umugabo aragenda.",
+        answer: "The man is going"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "11. Baragenda.",
+        answer: "They are going"
       }
     ]
   },
   {
     title: "II. Translate into Kirundi",
-    questions: [{
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. The boy is hoeing.",
+        answer: "Umuhungu ararima"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. The girl works.",
+        answer: "Umukobwa arakora"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. The men are going.",
+        answer: "Abagabo baragenda"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "4. The women are walking.",
+        options: [
+          "Abagore baragenda",
+          "Abagore barakora",
+          "Umugore aragenda"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. A boy is working.",
+        answer: "Umuhungu arakora"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. A girl is walking.",
+        answer: "Umukobwa aragenda"
+      },
+      {
         TAG: "PartialInput",
-        prompt: "The girl works.",
-        answer: "Umukobwa arakora.",
-        hint: "Starts with 'Umuko…'"
-      }]
+        prompt: "7. Some boys are working.",
+        answer: "Abahungu barakora",
+        hint: "Abahungu..."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. The man hoes.",
+        answer: "Umugabo ararima"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. A woman is going.",
+        answer: "Umugore aragenda"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Women work.",
+        answer: "Abagore barakora"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "11. They are working.",
+        options: [
+          "Barakora",
+          "Ararima",
+          "Baragenda"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "12. She is hoeing.",
+        answer: "Ararima"
+      }
+    ]
   }
 ];
 
