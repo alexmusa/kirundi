@@ -15,7 +15,8 @@
     "@rescript/react": "^0.14.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "rescript": "^12.0.1"
+    "rescript": "^12.0.1",
+    "rescript-webapi": "^0.10.0"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.12",

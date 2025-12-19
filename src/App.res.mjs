@@ -29,6 +29,13 @@ function App(props) {
   }, [selectedIdx]);
   let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
   let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
+  let handleReset = param => {
+    let confirm = window.confirm("Are you sure you want to reset your progress to Lesson 1?");
+    if (confirm) {
+      Dom_storage.removeItem(localStorageKey, localStorage);
+      return setSelectedIdx(param => 0);
+    }
+  };
   let handleChange = event => {
     let value = event.target.value;
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
@@ -36,17 +43,27 @@ function App(props) {
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
   return JsxRuntime.jsxs("div", {
     children: [
-      JsxRuntime.jsx("div", {
-        children: JsxRuntime.jsx("select", {
-          children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
-            children: `Lesson ` + (index + 1 | 0).toString() + `: ` + lesson.title,
-            value: index.toString()
-          }, index.toString())),
-          className: "block w-full p-2 border border-gray-300 rounded-md",
-          value: selectedIdx.toString(),
-          onChange: handleChange
-        }),
-        className: "mb-8"
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("select", {
+              children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
+                children: `Lesson ` + (index + 1 | 0).toString() + `: ` + lesson.title,
+                value: index.toString()
+              }, index.toString())),
+              className: "w-full p-2 border border-gray-300 rounded-md bg-white",
+              value: selectedIdx.toString(),
+              onChange: handleChange
+            }),
+            className: "flex-grow mr-4"
+          }),
+          JsxRuntime.jsx("button", {
+            children: "Reset Progress",
+            className: "text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors",
+            onClick: handleReset
+          })
+        ],
+        className: "flex justify-between items-center mb-8"
       }),
       JsxRuntime.jsx("div", {
         children: currentLesson !== undefined ? JsxRuntime.jsx(Lesson.LessonView.make, {
@@ -58,21 +75,25 @@ function App(props) {
         children: [
           JsxRuntime.jsx("button", {
             children: "← Previous",
-            className: "px-4 py-2 bg-gray-200 rounded disabled:opacity-30",
+            className: "px-6 py-2 bg-gray-100 text-gray-700 rounded-lg font-semibold disabled:opacity-30 hover:bg-gray-200 transition-all",
             disabled: selectedIdx === 0,
             onClick: goToPrev
           }),
+          JsxRuntime.jsx("span", {
+            children: `Lesson ` + (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString(),
+            className: "text-sm font-medium text-gray-500"
+          }),
           JsxRuntime.jsx("button", {
             children: "Next →",
-            className: "px-4 py-2 bg-blue-600 text-white rounded disabled:bg-gray-300",
+            className: "px-6 py-2 bg-indigo-600 text-white rounded-lg font-semibold disabled:bg-gray-300 hover:bg-indigo-700 shadow-sm transition-all",
             disabled: selectedIdx === (totalLessons - 1 | 0),
             onClick: goToNext
           })
         ],
-        className: "mt-12 flex justify-between items-center border-t pt-6"
+        className: "mt-12 flex justify-between items-center border-t pt-6 pb-12"
       })
     ],
-    className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto"
+    className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
   });
 }
 
