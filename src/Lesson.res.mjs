@@ -166,10 +166,7 @@ function Lesson$LessonView(props) {
         className: "text-3xl font-extrabold tracking-tight text-gray-900"
       }),
       JsxRuntime.jsx("div", {
-        children: lesson.content.map(p => JsxRuntime.jsx("p", {
-          children: p,
-          className: "leading-relaxed"
-        }, p)),
+        children: lesson.content,
         className: "space-y-4 text-gray-700"
       }),
       JsxRuntime.jsxs("section", {

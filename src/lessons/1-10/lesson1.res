@@ -2,29 +2,44 @@ open Lesson
 
 let l: lesson = {
   title: "LESSON 1: Class 1 umu–, aba–",
-  content: [
-    "Kirundi verbs are very important, but we begin with nouns.",
-    "Nouns are grouped into classes, each with prefixes.",
-    "Class 1 contains nouns referring to people.",
-    "Singular prefix: umu-, Plural prefix: aba-.",
-  ],
+  content: <>
+    <p>
+      {React.string("In Kirundi, the verb is perhaps the most important part of speech because it serves for several functions. However, we will begin by looking at nouns. Kirundi nouns are categorized into ten classes, each with its own set of prefixes. The prefix of a noun determines the prefix of other words related to that noun.")}
+    </p>
+    <h3> {React.string("Class 1 Nouns")} </h3>
+    <p>
+      {React.string("This class contains only nouns referring to people. In the singular, these words begin with the prefix ")}
+      <strong> {React.string("umu-")} </strong>
+      {React.string(". In the plural, the prefix changes to ")}
+      <strong> {React.string("aba-")} </strong>
+      {React.string(".")}
+    </p>
+    <h3> {React.string("Verbs and Subject Prefixes")} </h3>
+    <p>
+      {React.string("The subject prefix for Class 1 singular is ")}
+      <strong> {React.string("a-")} </strong>
+      {React.string(", and for plural it is ")}
+      <strong> {React.string("ba-")} </strong>
+      {React.string(". These verbs can stand alone if the subject is already known.")}
+    </p>
+  </>,
   vocabulary: [
-    ("umugabo", "man (husband)"),
-    ("umugore", "woman (wife)"),
+    ("umugabo", "man (married), husband"),
+    ("umugore", "woman (married), wife"),
     ("umuhungu", "boy, son"),
     ("umukobwa", "girl, daughter"),
-    ("abagabo", "men"),
-    ("abagore", "women"),
-    ("abahungu", "boys"),
-    ("abakobwa", "girls"),
+    ("abagabo", "men, husbands"),
+    ("abagore", "women, wives"),
+    ("abahungu", "boys, sons"),
+    ("abakobwa", "girls, daughters"),
   ],
   examples: [
-    ("arakora", "he/she works"),
-    ("barakora", "they work"),
-    ("aragenda", "he/she goes"),
-    ("baragenda", "they go"),
-    ("ararima", "he/she hoes"),
-    ("bararima", "they hoe"),
+    ("arakora", "he/she is working / works"),
+    ("barakora", "they are working / work"),
+    ("aragenda", "he/she is going / goes"),
+    ("baragenda", "they are going / walking"),
+    ("ararima", "he/she is hoeing / hoes"),
+    ("bararima", "they are hoeing / hoe"),
   ],
   quiz: [
     {

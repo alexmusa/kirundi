@@ -19,7 +19,7 @@ type quizSection = {
 }
 type lesson = {
   title: string,
-  content: array<string>,
+  content: React.element,
   vocabulary: array<(string, string)>,
   examples: array<(string, string)>,
   quiz: array<quizSection>,

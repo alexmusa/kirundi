@@ -2,11 +2,7 @@ open Lesson
 
 let l: lesson = {
   title: "LESSON X: xxx",
-  content: [
-    "aaa",
-    "bbb",
-    "ccc",
-  ],
+  content: <p> {React.string("Hello World")} </p>,
   vocabulary: [
     ("d", "e"),
     ("f", "g"),

@@ -22,7 +22,7 @@ type quizSection = {
 
 type lesson = {
   title: string,
-  content: array<string>,
+  content: React.element,
   vocabulary: array<(string, string)>,
   examples: array<(string, string)>,
   quiz: array<quizSection>,
@@ -202,13 +202,7 @@ module LessonView = {
       </h1>
 
       <div className="space-y-4 text-gray-700">
-        {lesson.content
-        ->Array.map(p =>
-          <p key={p} className="leading-relaxed">
-            {p->React.string}
-          </p>
-        )
-        ->React.array}
+        lesson.content
       </div>
 
       <section className="space-y-2">

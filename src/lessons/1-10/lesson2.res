@@ -2,12 +2,30 @@ open Lesson
 
 let l: lesson = {
   title: "LESSON 2: Ni and Si",
-  content: [
-    "Vowel change: When the prefix 'umu-' is followed by a vowel, 'u' becomes 'w' (e.g. umu-ana → umwāna). This also lengthens the stem vowel. In the plural, 'aba-' before a vowel drops the 'a' (aba-ana → abāna, aba-igisha → abīgīsha). This rule applies wherever 'u' precedes another vowel.",
-    "Use of 'ni' and 'si': 'Ni' means 'is/are' (present, 3rd person singular and plural) and does not change form. Its negative is 'si' meaning 'is not/are not'. These words express a state of being, not place.",
-    "Elision rule: The 'i' in 'ni' and 'si' elides before a word beginning with a vowel (ni umwami → n’umwami), unless the following word is a proper noun. This elision rule applies generally.",
-    "Restrictions and exception: 'Ni' and 'si' are not used in dependent clauses or before words of place, except when the subject itself is a place (e.g. Gitega ni kure – Gitega is far away)."
-  ],
+  content: <>
+    <h3>{React.string("1. Vowel Change Rules")}</h3>
+    <p>
+      {React.string("The singular prefix of Class 1 is 'umu', but it appears as 'umw' when the stem begins with a vowel. This is because ")}
+      <strong>{React.string("u")}</strong>
+      {React.string(" before another vowel becomes ")}
+      <strong>{React.string("w")}</strong>
+      {React.string(". This change often lengthens the following vowel.")}
+    </p>
+    <p>
+      {React.string("Similarly, ")}
+      <strong>{React.string("a")}</strong>
+      {React.string(" before another vowel drops out (elision). For example: aba-ana becomes abāna.")}
+    </p>
+    <h3>{React.string("2. Use of Ni and Si")}</h3>
+    <p>
+      {React.string("'Ni' (is/are) and 'Si' (is not/are not) are used for states of being. They do not change form based on number (singular or plural).")}
+    </p>
+    <ul>
+      <li>{React.string("The 'i' elides before a vowel (e.g., Ni + umwami = N'umwami).")}</li>
+      <li>{React.string("Do not elide before a proper noun.")}</li>
+      <li>{React.string("Do not use these for locations (unless the subject itself is a place).")}</li>
+    </ul>
+  </>,
   vocabulary: [
     ("umwāna (pl. abāna)", "child"),
     ("umwāmi (abāmi)", "king, Lord"),
@@ -16,14 +34,14 @@ let l: lesson = {
     ("afise", "he/she has"),
     ("bafise", "they have"),
     ("cane", "much, very"),
-    ("urakoze", "thank you")
+    ("urakoze", "thank you"),
   ],
   examples: [
-    ("N’umwami.", "It is the king."),
-    ("Umwana n’umukobwa.", "The child is a girl."),
-    ("Umugabo s’umwami.", "The man is not a king."),
-    ("Umwīgīsha ni Andereya.", "The teacher is Andrew."),
-    ("Gitega ni kure.", "Gitega is far away.")
+    ("N’umwami", "It is the king"),
+    ("Umwana n’umukobwa", "The child is a girl"),
+    ("Umugabo s’umwami", "The man is not a king"),
+    ("Umwigisha ni Andereya", "The teacher is Andrew"),
+    ("Gitega ni kure", "Gitega is far away"),
   ],
   quiz: [
   {

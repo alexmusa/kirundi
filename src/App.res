@@ -53,7 +53,7 @@ let make = () => {
           {LessonData.lessons
           ->Belt.Array.mapWithIndex((index, lesson) => {
             <option key={Int.toString(index)} value={Int.toString(index)}>
-              {React.string(`Lesson ${Int.toString(index + 1)}: ${lesson.title}`)}
+              {React.string(`${lesson.title}`)}
             </option>
           })
           ->React.array}

@@ -48,7 +48,7 @@ function App(props) {
           JsxRuntime.jsx("div", {
             children: JsxRuntime.jsx("select", {
               children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
-                children: `Lesson ` + (index + 1 | 0).toString() + `: ` + lesson.title,
+                children: lesson.title,
                 value: index.toString()
               }, index.toString())),
               className: "w-full p-2 border border-gray-300 rounded-md bg-white",
