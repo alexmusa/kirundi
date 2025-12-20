@@ -1,0 +1,14 @@
+{
+  "name": "Learn Kirundi",
+  "short_name": "Kirundi",
+  "description": "TODO",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "vite.svg",
+      "sizes": "any"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "portrait"
+}
