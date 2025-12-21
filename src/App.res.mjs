@@ -13,7 +13,9 @@ import RescriptLogoSvg from "./assets/rescript-logo.svg";
 
 function App(props) {
   let localStorageKey = "current-lesson-index";
-  let match = React.useState(() => {
+  let match = React.useState(() => "MainMenu");
+  let setCurrentScreen = match[1];
+  let match$1 = React.useState(() => {
     let value = Dom_storage.getItem(localStorageKey, localStorage);
     if (value !== undefined) {
       return Belt_Option.getWithDefault(Belt_Int.fromString(value), 0);
@@ -21,8 +23,8 @@ function App(props) {
       return 0;
     }
   });
-  let setSelectedIdx = match[1];
-  let selectedIdx = match[0];
+  let setSelectedIdx = match$1[1];
+  let selectedIdx = match$1[0];
   let totalLessons = LessonData.lessons.length;
   React.useEffect(() => {
     Dom_storage.setItem(localStorageKey, selectedIdx.toString(), localStorage);
@@ -30,10 +32,11 @@ function App(props) {
   let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
   let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleReset = param => {
-    let confirm = window.confirm("Are you sure you want to reset your progress to Lesson 1?");
+    let confirm = window.confirm("Are you sure you want to reset your progress?");
     if (confirm) {
       Dom_storage.removeItem(localStorageKey, localStorage);
-      return setSelectedIdx(param => 0);
+      setSelectedIdx(param => 0);
+      return setCurrentScreen(param => "MainMenu");
     }
   };
   let handleChange = event => {
@@ -41,26 +44,67 @@ function App(props) {
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
-  return JsxRuntime.jsxs("div", {
+  let renderMainMenu = () => JsxRuntime.jsxs("div", {
     children: [
       JsxRuntime.jsxs("div", {
         children: [
-          JsxRuntime.jsx("div", {
-            children: JsxRuntime.jsx("select", {
-              children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
-                children: lesson.title,
-                value: index.toString()
-              }, index.toString())),
-              className: "w-full p-2 border border-gray-300 rounded-md bg-white",
-              value: selectedIdx.toString(),
-              onChange: handleChange
-            }),
-            className: "flex-grow mr-4"
+          JsxRuntime.jsx("h1", {
+            children: "Course Navigator",
+            className: "text-4xl font-bold text-gray-900 mb-2"
           }),
+          JsxRuntime.jsx("p", {
+            children: "Master your skills one lesson at a time.",
+            className: "text-gray-600"
+          })
+        ],
+        className: "text-center mb-8"
+      }),
+      JsxRuntime.jsxs("button", {
+        children: [
+          selectedIdx === 0 ? "Start Learning" : "Continue Lesson",
+          JsxRuntime.jsx("span", {
+            children: "→",
+            className: "ml-2 group-hover:translate-x-1 transition-transform"
+          })
+        ],
+        className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
+        onClick: param => setCurrentScreen(param => "LessonView")
+      }),
+      selectedIdx > 0 ? JsxRuntime.jsx("button", {
+          children: "Reset progress and start over",
+          className: "mt-6 text-sm text-gray-400 hover:text-red-500 transition-colors",
+          onClick: handleReset
+        }) : null
+    ],
+    className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4"
+  });
+  let renderLessonContainer = () => JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsxs("div", {
+        children: [
           JsxRuntime.jsx("button", {
-            children: "Reset Progress",
-            className: "text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors",
-            onClick: handleReset
+            children: "← Back to Menu",
+            className: "text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium",
+            onClick: param => setCurrentScreen(param => "MainMenu")
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("select", {
+                children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
+                  children: lesson.title,
+                  value: index.toString()
+                }, index.toString())),
+                className: "p-2 border border-gray-300 rounded-md bg-white text-sm",
+                value: selectedIdx.toString(),
+                onChange: handleChange
+              }),
+              JsxRuntime.jsx("button", {
+                children: "Reset",
+                className: "text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors",
+                onClick: handleReset
+              })
+            ],
+            className: "flex items-center gap-4"
           })
         ],
         className: "flex justify-between items-center mb-8"
@@ -95,6 +139,11 @@ function App(props) {
     ],
     className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
   });
+  if (match[0] === "MainMenu") {
+    return renderMainMenu();
+  } else {
+    return renderLessonContainer();
+  }
 }
 
 let make = App;
