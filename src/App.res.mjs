@@ -7,9 +7,12 @@ import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
 import * as LessonData from "./lessons/LessonData.res.mjs";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
+import GearSvg from "./assets/gear.svg";
 import ViteSvg from "./assets/vite.svg";
 import * as JsxRuntime from "react/jsx-runtime";
 import RescriptLogoSvg from "./assets/rescript-logo.svg";
+
+let gear_icon = GearSvg;
 
 function App(props) {
   let localStorageKey = "current-lesson-index";
@@ -44,16 +47,133 @@ function App(props) {
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
+  let renderSettingsMenu = () => JsxRuntime.jsx("div", {
+    children: JsxRuntime.jsxs("div", {
+      children: [
+        JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("button", {
+              children: "← Back",
+              className: "text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium mr-4",
+              onClick: param => setCurrentScreen(param => "MainMenu")
+            }),
+            JsxRuntime.jsx("h1", {
+              children: "Settings",
+              className: "text-2xl font-bold text-gray-900"
+            })
+          ],
+          className: "flex items-center mb-8"
+        }),
+        JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("h2", {
+                  children: "Progress Management",
+                  className: "text-lg font-semibold text-gray-900 mb-2"
+                }),
+                JsxRuntime.jsxs("p", {
+                  children: [
+                    "You're currently on lesson ",
+                    JsxRuntime.jsx("span", {
+                      children: (selectedIdx + 1 | 0).toString(),
+                      className: "font-medium"
+                    }),
+                    " of ",
+                    JsxRuntime.jsx("span", {
+                      children: totalLessons.toString(),
+                      className: "font-medium"
+                    })
+                  ],
+                  className: "text-gray-600 text-sm mb-4"
+                }),
+                JsxRuntime.jsx("div", {
+                  children: JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsxs("button", {
+                        children: [
+                          JsxRuntime.jsx("span", {
+                            children: "🔄",
+                            className: "mr-2"
+                          }),
+                          "Reset All Progress"
+                        ],
+                        className: "w-full py-3 px-4 bg-red-50 text-red-700 border border-red-200 rounded-lg font-medium hover:bg-red-100 hover:border-red-300 transition-colors flex items-center justify-center",
+                        onClick: handleReset
+                      }),
+                      JsxRuntime.jsx("p", {
+                        children: "This will clear your learning progress and start from the beginning",
+                        className: "text-gray-500 text-xs mt-2 text-center"
+                      })
+                    ]
+                  }),
+                  className: "space-y-4"
+                })
+              ],
+              className: "mb-6"
+            }),
+            JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("h2", {
+                  children: "Progress Management",
+                  className: "text-lg font-semibold text-gray-900 mb-4"
+                }),
+                JsxRuntime.jsx("p", {
+                  children: "This Kirundi learning app is based on the work of Elizabeth E. Cox.",
+                  className: "text-gray-600 text-sm mb-2"
+                }),
+                JsxRuntime.jsxs("p", {
+                  children: [
+                    "Built with ",
+                    JsxRuntime.jsx("a", {
+                      children: "ReScript",
+                      className: "text-indigo-600 hover:text-indigo-800 font-medium",
+                      href: "https://rescript-lang.org"
+                    }),
+                    " and ",
+                    JsxRuntime.jsx("a", {
+                      children: "Vite",
+                      className: "text-indigo-600 hover:text-indigo-800 font-medium",
+                      href: "https://vitejs.dev"
+                    })
+                  ],
+                  className: "text-gray-600 text-sm"
+                })
+              ],
+              className: "pt-6 border-t border-gray-100"
+            })
+          ],
+          className: "bg-white rounded-xl shadow-sm border border-gray-200 p-6"
+        }),
+        JsxRuntime.jsx("div", {
+          children: JsxRuntime.jsxs("button", {
+            children: [
+              "Return to Lessons",
+              JsxRuntime.jsx("span", {
+                children: "→",
+                className: "ml-2"
+              })
+            ],
+            className: "inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors",
+            onClick: param => setCurrentScreen(param => "LessonView")
+          }),
+          className: "mt-8 text-center"
+        })
+      ],
+      className: "max-w-md mx-auto w-full"
+    }),
+    className: "flex flex-col min-h-screen bg-gray-50 px-4 py-8"
+  });
   let renderMainMenu = () => JsxRuntime.jsxs("div", {
     children: [
       JsxRuntime.jsxs("div", {
         children: [
           JsxRuntime.jsx("h1", {
-            children: "Course Navigator",
+            children: "Learn Kirundi",
             className: "text-4xl font-bold text-gray-900 mb-2"
           }),
           JsxRuntime.jsx("p", {
-            children: "Master your skills one lesson at a time.",
+            children: "based off work from Elizabeth E. Cox.",
             className: "text-gray-600"
           })
         ],
@@ -70,11 +190,24 @@ function App(props) {
         className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
         onClick: param => setCurrentScreen(param => "LessonView")
       }),
-      selectedIdx > 0 ? JsxRuntime.jsx("button", {
-          children: "Reset progress and start over",
-          className: "mt-6 text-sm text-gray-400 hover:text-red-500 transition-colors",
-          onClick: handleReset
-        }) : null
+      JsxRuntime.jsx("div", {
+        children: selectedIdx > 0 ? JsxRuntime.jsxs("button", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: JsxRuntime.jsx("img", {
+                  className: "h-10",
+                  alt: "Gear icon",
+                  src: gear_icon
+                }),
+                className: "mr-1"
+              }),
+              "Settings"
+            ],
+            className: "text-sm text-gray-500 hover:text-gray-800 transition-colors flex items-center",
+            onClick: param => setCurrentScreen(param => "SettingsMenu")
+          }) : null,
+        className: "mt-8 flex gap-4"
+      })
     ],
     className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4"
   });
@@ -99,9 +232,16 @@ function App(props) {
                 onChange: handleChange
               }),
               JsxRuntime.jsx("button", {
-                children: "Reset",
-                className: "text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors",
-                onClick: handleReset
+                children: JsxRuntime.jsx("span", {
+                  children: JsxRuntime.jsx("img", {
+                    className: "h-24",
+                    alt: "Gear icon",
+                    src: gear_icon
+                  })
+                }),
+                className: "p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors",
+                title: "Settings",
+                onClick: param => setCurrentScreen(param => "SettingsMenu")
               })
             ],
             className: "flex items-center gap-4"
@@ -139,10 +279,13 @@ function App(props) {
     ],
     className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
   });
-  if (match[0] === "MainMenu") {
-    return renderMainMenu();
-  } else {
-    return renderLessonContainer();
+  switch (match[0]) {
+    case "MainMenu" :
+      return renderMainMenu();
+    case "LessonView" :
+      return renderLessonContainer();
+    case "SettingsMenu" :
+      return renderSettingsMenu();
   }
 }
 
