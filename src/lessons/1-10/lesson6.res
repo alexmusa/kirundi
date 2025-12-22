@@ -1,17 +1,94 @@
 open Lesson
 
+module Content = {
+  @react.component
+  let make = () => {
+    <div className="max-w-2xl mx-auto p-8 font-sans text-[#000000] leading-normal">
+      /* Header Section */
+      <div className="border-b border-black pb-1 mb-4">
+        <h1 className="text-center font-bold text-[11pt] uppercase">
+          {React.string("LESSON 6: Possessive Particle")}
+        </h1>
+      </div>
+
+      /* Vocabulary Section */
+      <div className="mb-6">
+        <p className="font-bold text-[11pt] mb-2">
+          {React.string("Vocabulary:")}
+        </p>
+        <div className="ml-4 space-y-1 text-[11pt]">
+          <p> {React.string("umushatsi – hair (of the human head, rarely used in plural)")} </p>
+          <p> {React.string("umugozi – string, rope")} </p>
+          <p> {React.string("umugisha – blessing")} </p>
+          
+          <div className="flex flex-wrap gap-x-12">
+            <p> {React.string("umurima – garden")} </p>
+            <p> {React.string("ndagenda – I am going, I go")} </p>
+          </div>
+          
+          <div className="flex flex-wrap gap-x-12">
+            <p> {React.string("ndakora – I am working, I work")} </p>
+            <p> {React.string("mfise – I have")} </p>
+          </div>
+        </div>
+      </div>
+
+      /* Main Lesson Content */
+      <div className="space-y-4 text-[11pt] text-justify">
+        <div className="flex items-start">
+          <span className="font-bold mr-2"> {React.string("12.")} </span>
+          <p>
+            <span className="font-bold"> {React.string("Possessive particle")} </span>
+            {React.string(": This is a small word used to express possession as expressed in English by “of” or “’s”. It is always the same as the prefix of the possessive adjective.")}
+          </p>
+        </div>
+
+        /* Singular/Plural Table */
+        <div className="ml-24 space-y-1">
+          <div className="grid grid-cols-2 w-48">
+            <span className="italic"> {React.string("singular")} </span>
+            <span className="italic"> {React.string("plural")} </span>
+          </div>
+          <div className="grid grid-cols-[auto_1fr_1fr] gap-x-8 w-64">
+            <span> {React.string("Class 1:")} </span>
+            <span className="text-center"> {React.string("wa")} </span>
+            <span className="text-center"> {React.string("ba")} </span>
+            
+            <span> {React.string("Class 2:")} </span>
+            <span className="text-center"> {React.string("wa")} </span>
+            <span className="text-center"> {React.string("ya")} </span>
+          </div>
+        </div>
+
+        <p className="ml-4">
+          {React.string("The possessive particle always follows the name of the thing possessed and agrees with it, ")}
+          <i className="italic"> {React.string("not with the owner")} </i>
+          {React.string(".")}
+        </p>
+
+        /* Examples */
+        <div className="ml-8 space-y-1 italic">
+          <p> {React.string("Umutima wa Yesu – the heart of Jesus (Jesus’ heart)")} </p>
+          <p> {React.string("Imirima y’abantu – the gardens of the people (people’s gardens)")} </p>
+          <p> {React.string("Abana b’umwigisha – the teachers children")} </p>
+        </div>
+
+        <p className="ml-4 text-sm text-gray-700">
+          {React.string("(We will not give the possessive particle with each class. Simply remember that it is the same as the prefix of the possessive adjective.)")}
+        </p>
+
+        <p className="ml-4">
+          <span className="font-bold"> {React.string("Note: ")} </span>
+          {React.string("The –a of the possessive particle elides before a following vowel, thus w’, b’, etc., as seen in some of the preceding examples.")}
+        </p>
+      </div>
+    </div>
+  }
+}
+
 let l: lesson = {
   title: "LESSON 6: Possessive Particle",
-  content: <p>
-    {React.string(
-      "The possessive particle expresses 'of' or '-'s'. It follows the noun being possessed and must agree with that noun's class prefix. Note: the final '-a' elides (drops) before a following vowel, becoming w', b', or y'."
-    )}
-    <br />
-    <br />
-    {React.string("Class 1: Singular (wa), Plural (ba)")}
-    <br />
-    {React.string("Class 2: Singular (wa), Plural (ya)")}
-  </p>,
+  content: <Content />,
   vocabulary: [
     ("umushatsi", "hair"),
     ("umugozi", "string, rope"),
@@ -49,10 +126,10 @@ quiz: [
         answer: "Imirima y’abatama",
         // hint: "Umurima is Class 3; Umutama is Class 1.",
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make plural: Umugore w’umugabo (The man's wife)",
         answer: "Abagore b’abagabo",
-        hint: "Use Class 2 plurals.",
+
       }),
       TextInput({
         prompt: "Make plural: Umuhungu w’umwigisha (The teacher's son)",
@@ -78,10 +155,10 @@ quiz: [
         answer: "Imyenda y’abakozi",
         // hint: "Umwenda becomes Imy- in plural.",
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make plural: Umwami w’abantu (The king of the people)",
         answer: "Abami b’abantu",
-        hint: "Note that 'abantu' is already plural.",
+
       }),
       TextInput({
         prompt: "Make plural: Umutima w’umuntu (The person's heart)",
@@ -98,10 +175,10 @@ quiz: [
         answer: "Abantu ba Yezu bafise akanyamuneza mu mitima yabo",
         // hint: "Use 'bafise' for 'they have'.",
       }),
-      PartialInput({
+      TextInput({
         prompt: "I have the light of Jesus in my heart.",
         answer: "Mfise umuco wa Yezu mu mutima wanje",
-        hint: "Umuco = Light.",
+
       }),
       MultipleChoice({
         prompt: "The teacher’s workmen are working in his gardens.",
@@ -136,10 +213,10 @@ quiz: [
         answer: "Umwana afise imishatsi",
         // hint: "Hair = Imishatsi.",
       }),
-      PartialInput({
+      TextInput({
         prompt: "I am working in the darkness.",
         answer: "Ndiko ndakora mu muzimagiza",
-        hint: "Darkness = Umuzimagiza.",
+
       }),
       TextInput({
         prompt: "I am going to the teacher’s garden.",

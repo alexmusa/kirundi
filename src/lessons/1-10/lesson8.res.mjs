@@ -2,344 +2,221 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs("div", {
-  children: [
-    JsxRuntime.jsx("p", {
-      children: "These are the primary descriptive adjectives in common use. They take the prefix of the noun (minus initial vowel) and agree in class/number with the noun they modify. They always follow the noun.",
-      className: "mb-4"
-    }),
-    JsxRuntime.jsx("div", {
-      children: JsxRuntime.jsxs("table", {
+function Lesson8$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "Lesson 8: Adjectives",
+          className: "text-center font-bold uppercase"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "The descriptive adjectives: (in this lesson memorize only the first half of this list).",
+        className: "text-justify mb-4"
+      }),
+      JsxRuntime.jsx("div", {
         children: [
-          JsxRuntime.jsx("thead", {
-            children: JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("th", {
-                  children: "Adjective Stem",
-                  className: "border border-gray-300 px-4 py-2 text-left font-medium"
-                }),
-                JsxRuntime.jsx("th", {
-                  children: "Meanings",
-                  className: "border border-gray-300 px-4 py-2 text-left font-medium"
-                }),
-                JsxRuntime.jsx("th", {
-                  children: "Notes",
-                  className: "border border-gray-300 px-4 py-2 text-left font-medium"
-                })
-              ]
-            }),
-            className: "bg-gray-100"
-          }),
-          JsxRuntime.jsxs("tbody", {
+          [
+            "-bi",
+            "bad, dirty, ugly"
+          ],
+          [
+            "-bisi",
+            "raw, fresh, uncooked, wet (cannot be always used for wet), unboiled (liquids)"
+          ],
+          [
+            "-gari",
+            "wide, broad (rarely used, e.g. for lakes)"
+          ],
+          [
+            "-gufi",
+            "short, low, shallow (sometimes gufinya or gufiya)"
+          ],
+          [
+            "-īnshi",
+            "much, many"
+          ],
+          [
+            "-īza",
+            "good, clean, beautiful, nice, pretty"
+          ],
+          [
+            "-ke",
+            "few, scanty, little (quantity), (sometimes kenya or keya)"
+          ],
+          [
+            "-kuru",
+            "important, senior, great"
+          ],
+          [
+            "-nini",
+            "big, thick, large, wide, broad (sometimes –ninīya)"
+          ],
+          [
+            "-nzīnya",
+            "very small, tiny (used only with 7th class)"
+          ],
+          [
+            "-rē-re",
+            "tall, long, high, deep (prefix repeated as well as stem: muremure)"
+          ],
+          [
+            "-sa",
+            "mere, only, alone"
+          ],
+          [
+            "-sha",
+            "new (often: -shāsha)"
+          ],
+          [
+            "-to",
+            "small, little (size), young, thin (sometimes tōnya or tōya)"
+          ],
+          [
+            "-tōto",
+            "green, unripe (not ready for picking, used only of certain foods)"
+          ],
+          [
+            "-zima",
+            "alive, whole, living"
+          ]
+        ].map(param => {
+          let stem = param[0];
+          return JsxRuntime.jsxs("div", {
             children: [
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-bi",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "bad, dirty, ugly",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
+              JsxRuntime.jsx("span", {
+                children: stem,
+                className: "whitespace-nowrap"
               }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-bisi",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "raw, fresh, uncooked, wet, unboiled (liquids)",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Cannot always be used for \"wet\"",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-gari",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "wide, broad",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Rarely used (e.g., for lakes)",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-gufi",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "short, low, shallow",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Sometimes gufinya or gufiya",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-īnshi",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "much, many",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-īza",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "good, clean, beautiful, nice, pretty",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-ke",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "few, scanty, little (quantity)",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Sometimes kenya or keya",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-kuru",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "important, senior, great",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-nini",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "big, thick, large, wide, broad",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Sometimes -ninīya",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-nzīnya",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "very small, tiny",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Used only with 7th class",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-rē-re",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "tall, long, high, deep",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Prefix repeated as well as stem (muremure)",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-sa",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "mere, only, alone",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-sha",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "new",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Often: -shāsha",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-to",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "small, little (size), young, thin",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Sometimes tōnya or tōya",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-tōto",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "green, unripe",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "Not ready for picking, used only of certain foods",
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ]
-              }),
-              JsxRuntime.jsxs("tr", {
-                children: [
-                  JsxRuntime.jsx("td", {
-                    children: "-zima",
-                    className: "border border-gray-300 px-4 py-2 font-mono"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    children: "alive, whole, living",
-                    className: "border border-gray-300 px-4 py-2"
-                  }),
-                  JsxRuntime.jsx("td", {
-                    className: "border border-gray-300 px-4 py-2 text-gray-600"
-                  })
-                ],
-                className: "bg-gray-50"
+              JsxRuntime.jsx("span", {
+                children: param[1]
               })
-            ]
+            ],
+            className: "grid grid-cols-[120px_1fr] text-justify"
+          }, stem);
+        }),
+        className: "space-y-0.5 mb-6"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Note: Usually for ‘wide’ use -nini, not -gari.",
+        className: "text-justify italic mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "15."
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "These adjectives listed here are the only descriptive adjectives in common use. Most other descriptive adjectives are formed by verbs or nouns as we shall see later. These adjectives take the prefix of the noun ",
+                  JsxRuntime.jsx("i", {
+                    children: "minus the initial vowel",
+                    className: "italic"
+                  }),
+                  ". They always agree with the nouns they modify in class and number. They always follow the noun."
+                ]
+              })
+            ],
+            className: "flex gap-x-4 text-justify"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umuntu mubi – a bad person"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "abantu babi – bad people"
+                  })
+                ],
+                className: "grid grid-cols-2 gap-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umutima mubi – a bad heart"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "imitima mibi – bad hearts"
+                  })
+                ],
+                className: "grid grid-cols-2 gap-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "nzu nsha (nshasha) – a new house"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "inzu nsha – new houses"
+                  })
+                ],
+                className: "grid grid-cols-2 gap-4"
+              })
+            ],
+            className: "pl-[36pt] space-y-1"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "As the other classes are given you will be able to form the adjectives according to this rule given above.",
+                className: "text-justify mb-4"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Note: ",
+                    className: "font-bold"
+                  }),
+                  "If both a descriptive adjective and a possessive adjective follow a noun, the possessive ",
+                  JsxRuntime.jsx("i", {
+                    children: "must follow the noun",
+                    className: "italic"
+                  }),
+                  " immediately:"
+                ],
+                className: "text-justify"
+              })
+            ],
+            className: "pl-[18pt]"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("p", {
+              children: "inka ziwe nkeya – his few cows"
+            }),
+            className: "pl-[36pt]"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("p", {
+              children: "If one of the adjectives refers to quantity it usually comes last:",
+              className: "text-justify"
+            }),
+            className: "pl-[18pt]"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("p", {
+              children: "inka mbi nkeya – a few bad cows"
+            }),
+            className: "pl-[36pt]"
           })
         ],
-        className: "min-w-full border border-gray-300"
-      }),
-      className: "overflow-x-auto"
-    }),
-    JsxRuntime.jsxs("div", {
-      children: [
-        JsxRuntime.jsx("h3", {
-          children: "Important Notes:",
-          className: "font-bold text-lg mb-2 text-blue-800"
-        }),
-        JsxRuntime.jsxs("ul", {
-          children: [
-            JsxRuntime.jsxs("li", {
-              children: [
-                "Usually for \"wide\" use ",
-                JsxRuntime.jsx("span", {
-                  children: "-nini",
-                  className: "font-mono"
-                }),
-                ", not ",
-                JsxRuntime.jsx("span", {
-                  children: "-gari",
-                  className: "font-mono"
-                })
-              ]
-            }),
-            JsxRuntime.jsx("li", {
-              children: "These are the ONLY descriptive adjectives in common use"
-            }),
-            JsxRuntime.jsx("li", {
-              children: "Most other descriptive adjectives are formed from verbs/nouns"
-            }),
-            JsxRuntime.jsx("li", {
-              children: "If both a descriptive and possessive adjective follow a noun, the possessive comes immediately after the noun"
-            }),
-            JsxRuntime.jsx("li", {
-              children: "If an adjective refers to quantity, it usually comes last"
-            })
-          ],
-          className: "list-disc pl-5 space-y-1 text-blue-700"
-        })
-      ],
-      className: "mt-6 p-4 bg-blue-50 border border-blue-200 rounded"
-    })
-  ],
-  className: "space-y-4"
-});
+        className: "space-y-4"
+      })
+    ],
+    className: "max-w-3xl mx-auto p-8 bg-white text-[11pt] leading-normal font-serif text-black"
+  });
+}
+
+let Content = {
+  make: Lesson8$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson8$Content, {});
 
 let l_vocabulary = [
   [
@@ -468,10 +345,9 @@ let l_quiz = [
         answer: "The people are not few."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate into English: Abana banje si babi.",
-        answer: "My children are not bad.",
-        hint: "The word 'si' means 'not'."
+        answer: "My children are not bad."
       },
       {
         TAG: "TextInput",
@@ -499,10 +375,9 @@ let l_quiz = [
         answer: "I have bad porridge."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate into English: Abana bafise imitsima mike.",
-        answer: "The children have few porridges.",
-        hint: "'bafise' means 'they have', and 'imitsima' is plural for porridge."
+        answer: "The children have few porridges."
       },
       {
         TAG: "TextInput",
@@ -535,10 +410,9 @@ let l_quiz = [
         answer: "Intebe zanyu ni ngufi."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate into Kirundi: His bad children.",
-        answer: "Abana be babi.",
-        hint: "Use 'be' for 'his', and 'babi' for 'bad'."
+        answer: "Abana be babi."
       },
       {
         TAG: "TextInput",
@@ -566,10 +440,9 @@ let l_quiz = [
         answer: "Imana ni nkuru cyane."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate into Kirundi: I have his short rope.",
-        answer: "Mfise umugozi we mugufi.",
-        hint: "'umugozi' means rope, 'we' means his, 'mugufi' means short."
+        answer: "Mfise umugozi we mugufi."
       },
       {
         TAG: "TextInput",
@@ -589,6 +462,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

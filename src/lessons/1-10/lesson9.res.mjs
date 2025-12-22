@@ -2,135 +2,248 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs("div", {
-  children: [
-    JsxRuntime.jsx("p", {
-      children: JsxRuntime.jsx("strong", {
-        children: "16. Vowel changes."
-      })
-    }),
-    JsxRuntime.jsxs("ul", {
-      children: [
-        JsxRuntime.jsxs("li", {
-          children: [
-            JsxRuntime.jsx("strong", {
-              children: "(a)"
-            }),
-            " Though in Par. 3 we stated that 'a' before another vowel drops out, there are exceptions to this rule. In the adjectives –iza and –inshi, when an 'a' precedes the 'i', the two contract into e, thus:",
-            JsxRuntime.jsx("br", {}),
-            "ba-iza becomes beza, ba-inshi becomes benshi"
-          ]
+function Lesson9$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("b", {
+          children: "Lesson 9: Adjectives (continued)",
+          className: "uppercase"
         }),
-        JsxRuntime.jsxs("li", {
-          children: [
-            JsxRuntime.jsx("strong", {
-              children: "(b)"
-            }),
-            " Remember that as stated in Par. 3, 'u' before another vowel becomes 'w', thus:",
-            JsxRuntime.jsx("br", {}),
-            "mu-iza becomes mwiza"
-          ]
-        }),
-        JsxRuntime.jsxs("li", {
-          children: [
-            JsxRuntime.jsx("strong", {
-              children: "(c)"
-            }),
-            " Also remember that 'i' often (not always) becomes 'y' before another vowel, thus:",
-            JsxRuntime.jsx("br", {}),
-            "mi-iza becomes myiza, mi-inshi becomes myinshi"
-          ]
-        })
-      ]
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        JsxRuntime.jsx("strong", {
-          children: "Note I:"
-        }),
-        " In Par. 14 we said that 'n' before a vowel becomes 'nz', thus: n-iza becomes nziza; however, the adjective –inshi is an exception, for n-inshi becomes nyinshi."
-      ]
-    }),
-    JsxRuntime.jsxs("table", {
-      children: [
-        JsxRuntime.jsx("thead", {
-          children: JsxRuntime.jsxs("tr", {
+        className: "border-b border-black text-center pb-1 mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("p", {
             children: [
-              JsxRuntime.jsx("th", {
-                children: "Class"
+              JsxRuntime.jsx("b", {
+                children: "Vocabulary"
               }),
-              JsxRuntime.jsx("th", {
-                children: "-iza forms"
+              ":"
+            ],
+            className: "mb-1"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "Memorize the last half of the list of adjectives in Lesson 8!",
+            className: "ml-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "16.",
+                className: "min-w-[1.5rem]"
               }),
-              JsxRuntime.jsx("th", {
-                children: "-inshi forms"
+              JsxRuntime.jsx("b", {
+                children: "Vowel changes."
               })
+            ],
+            className: "flex items-baseline gap-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "(a)",
+                    className: "min-w-[1.5rem]"
+                  }),
+                  JsxRuntime.jsxs("p", {
+                    children: [
+                      "Though in Par. 3 we stated that ‘a’ before another vowel drops out, there are exceptions to this rule. In the adjectives –iza and –inshi, when an ‘a’ precedes the ‘i’, the two contract into ",
+                      JsxRuntime.jsx("b", {
+                        children: "e"
+                      }),
+                      ", thus:",
+                      JsxRuntime.jsx("br", {}),
+                      "ba-iza becomes ",
+                      JsxRuntime.jsx("i", {
+                        children: "beza",
+                        className: "italic"
+                      }),
+                      ", ba-inshi becomes ",
+                      JsxRuntime.jsx("i", {
+                        children: "benshi",
+                        className: "italic"
+                      })
+                    ]
+                  })
+                ],
+                className: "flex gap-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "(b)",
+                    className: "min-w-[1.5rem]"
+                  }),
+                  JsxRuntime.jsxs("p", {
+                    children: [
+                      "Remember that as stated in Par. 3, ‘u’ before another vowel becomes ‘w’, thus",
+                      JsxRuntime.jsx("br", {}),
+                      "mu-iza becomes ",
+                      JsxRuntime.jsx("i", {
+                        children: "mwiza",
+                        className: "italic"
+                      }),
+                      "."
+                    ],
+                    className: "text-justify"
+                  })
+                ],
+                className: "flex gap-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "(c)",
+                    className: "min-w-[1.5rem]"
+                  }),
+                  JsxRuntime.jsxs("p", {
+                    children: [
+                      "Also remember that ‘i’ often (not always) becomes ‘y’ before another vowel, thus:",
+                      JsxRuntime.jsx("br", {}),
+                      "mi-iza becomes ",
+                      JsxRuntime.jsx("i", {
+                        children: "myiza",
+                        className: "italic"
+                      }),
+                      ", mi-inshi becomes ",
+                      JsxRuntime.jsx("i", {
+                        children: "myinshi",
+                        className: "italic"
+                      })
+                    ],
+                    className: "text-justify"
+                  })
+                ],
+                className: "flex gap-4"
+              })
+            ],
+            className: "ml-8 mt-4 space-y-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("p", {
+            children: [
+              JsxRuntime.jsx("b", {
+                children: "Note I"
+              }),
+              ": In Par. 14 we said that ‘n’ before a vowel becomes ‘nz’, thus: n-iza becomes ",
+              JsxRuntime.jsx("i", {
+                children: "nziza",
+                className: "italic"
+              }),
+              "; however, the adjective –inshi is an exception, for n-inshi becomes ",
+              JsxRuntime.jsx("i", {
+                children: "nyinshi",
+                className: "italic"
+              }),
+              "."
+            ],
+            className: "mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Class 1:",
+                className: "font-normal"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "mwiza"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "beza"
+              }),
+              JsxRuntime.jsx("span", {}),
+              JsxRuntime.jsx("span", {
+                children: "mwinshi"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "benshi"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Class 2:",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "mwiza",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "myiza",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {}),
+              JsxRuntime.jsx("span", {
+                children: "mwinshi"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "myinshi"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Class 3:",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "nziza",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "nziza",
+                className: "mt-2"
+              }),
+              JsxRuntime.jsx("span", {}),
+              JsxRuntime.jsx("span", {
+                children: "nyinshi"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "nyinshi"
+              })
+            ],
+            className: "grid grid-cols-[100px_100px_100px] gap-y-1 ml-12"
+          })
+        ],
+        className: "ml-4 mb-6 text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("p", {
+            children: [
+              JsxRuntime.jsx("b", {
+                children: "Note II"
+              }),
+              ": The adjective nini in agreeing with the 3rd class does not get an extra n. It is simply like the stem: inka nini – a big cow."
+            ]
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              JsxRuntime.jsx("b", {
+                children: "Note III"
+              }),
+              ": The adjectives –nini and –to may be reduplicated in the plural forms: abahungu banini-banini – big boys, abana bato-bato – little children."
             ]
           })
-        }),
-        JsxRuntime.jsxs("tbody", {
-          children: [
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "Class 1:"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "mwiza, beza"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "mwinshi, benshi"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "Class 2:"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "mwiza, myiza"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "mwinshi, myinshi"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "Class 3:"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "nziza, nziza"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "nyinshi, nyinshi"
-                })
-              ]
-            })
-          ]
-        })
-      ]
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        JsxRuntime.jsx("strong", {
-          children: "Note II:"
-        }),
-        " The adjective nini in agreeing with the 3rd class does not get an extra n. It is simply like the stem: inka nini – a big cow."
-      ]
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        JsxRuntime.jsx("strong", {
-          children: "Note III:"
-        }),
-        " The adjectives –nini and –to may be reduplicated in the plural forms: abahungu banini-banini – big boys, abana bato-bato – little children."
-      ]
-    })
-  ]
-});
+        ],
+        className: "ml-4 space-y-4"
+      })
+    ],
+    className: "p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal"
+  });
+}
+
+let Content = {
+  make: Lesson9$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson9$Content, {});
 
 let l_vocabulary = [];
 
@@ -242,10 +355,9 @@ let l_quiz = [
         correctIndex: 0
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Mbeg’ inka z’umutama ni nini?",
-        answer: "Are the farmer's cows large?",
-        hint: "This is a question about the size of the farmer's cows."
+        answer: "Are the farmer's cows large?"
       }
     ]
   },
@@ -313,10 +425,9 @@ let l_quiz = [
         correctIndex: 0
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Our God is living.",
-        answer: "Imana yacu iri kubaho.",
-        hint: "Use 'iri kubaho' for 'is living'."
+        answer: "Imana yacu iri kubaho."
       }
     ]
   }
@@ -331,6 +442,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

@@ -1,68 +1,130 @@
 open Lesson
 
+module Content = {
+  @react.component
+  let make = () => {
+    <div className="max-w-2xl mx-auto p-8 font-serif text-gray-800 bg-white leading-relaxed">
+      /* Header Section */
+      <div className="border-b border-black pb-1 mb-6 text-center">
+        <h1 className="text-lg font-bold uppercase tracking-wide">
+          {React.string("Lesson 3: Possessive Adjective")}
+        </h1>
+      </div>
+
+      /* Vocabulary Section */
+      <section className="mb-6">
+        <h2 className="font-bold mb-2"> {React.string("Vocabulary:")} </h2>
+        <div className="ml-6 space-y-1">
+          <p> {React.string("umūntu – person")} </p>
+          <p> {React.string("umukozi – workman, employee")} </p>
+          <p> {React.string("umutāma – old man")} </p>
+          <p> {React.string("Umukiza – Savior")} </p>
+          <p> {React.string("aravuga – he/she is speaking")} </p>
+          <p> {React.string("ego(me) – yes, Note: ego, or just ē, is common for yes, but ‘egome’ is more emphatic")} </p>
+          <p> {React.string("oya(ye) – no, Likewise, oyaye is more emphatic then oya.")} </p>
+        </div>
+        <p className="ml-6 mt-4 italic text-sm">
+          {React.string("Note: Observe especially the pronunciation of umuntu. It is almost as if the ‘ntu’ were blown through the nose.")}
+        </p>
+      </section>
+
+      <hr className="my-6 border-transparent" />
+
+      /* Section 5: The Possessive Adjective */
+      <section className="mb-8">
+        <div className="flex items-start mb-4">
+          <span className="font-bold mr-4"> {React.string("5.")} </span>
+          <div>
+            <p className="font-bold inline"> {React.string("The possessive adjective ")} </p>
+            <span>
+              {React.string("is made up of two parts: the prefix which refers to and agrees with the object owned, and the suffix which refers to and agrees with the owner. (This agreement refers to the system of prefixes for the various classes as indicated in Par. 1)")}
+            </span>
+          </div>
+        </div>
+
+        <div className="ml-12 mb-4">
+          <p className="italic"> {React.string("umwana wa-nje – my child")} </p>
+          <p className="mt-2">
+            <span className="font-mono bg-gray-100 px-1"> {React.string("wa")} </span>
+            {React.string(" is the prefix which agrees with the first class singular. ")}
+            <span className="font-mono bg-gray-100 px-1"> {React.string("-nje")} </span>
+            {React.string(" means ‘me’. Thus wanje means ‘of me’, that is ‘my’. (Do not try to use –nje for ‘me’ in other instances.) The plural prefix is ")}
+            <span className="font-mono bg-gray-100 px-1"> {React.string("ba-.")} </span>
+          </p>
+        </div>
+
+        <p className="ml-6 mb-4">
+          {React.string("In this lesson we introduce only the personal possessives (that is, the owner being a person). Other forms will be taught later.")}
+        </p>
+
+        /* Suffixes Grid */
+        <div className="ml-12 grid grid-cols-2 gap-x-8 max-w-sm mb-6">
+          <div> {React.string("-nje - me")} </div>
+          <div> {React.string("-cu - us")} </div>
+          <div> {React.string("-we - you (sing.)")} </div>
+          <div> {React.string("-nyu - you (pl.)")} </div>
+          <div> {React.string("-iwe - him, her")} </div>
+          <div> {React.string("-bo - them")} </div>
+        </div>
+
+        /* Possessive Table */
+        <div className="ml-12 grid grid-cols-2 gap-x-8 font-semibold mb-2">
+          <div> {React.string("Singular")} </div>
+          <div> {React.string("Plural")} </div>
+        </div>
+        <div className="ml-12 grid grid-cols-2 gap-x-8 mb-6 border-t pt-2">
+          <div className="space-y-1">
+            <p> {React.string("wanje - my")} </p>
+            <p> {React.string("wawe - your (sing.)")} </p>
+            <p> {React.string("wiwe - his, hers")} </p>
+            <p> {React.string("wacu - our")} </p>
+            <p> {React.string("wanyu - your (pl.)")} </p>
+            <p> {React.string("wabo - their")} </p>
+          </div>
+          <div className="space-y-1">
+            <p> {React.string("banje - my")} </p>
+            <p> {React.string("bawe - your")} </p>
+            <p> {React.string("biwe - his, hers")} </p>
+            <p> {React.string("bacu - our")} </p>
+            <p> {React.string("banyu - your")} </p>
+            <p> {React.string("babo - their")} </p>
+          </div>
+        </div>
+
+        /* Notes */
+        <div className="ml-12 space-y-3">
+          <p>
+            <span className="italic"> {React.string("Note the contraction in 3rd person singular: ")} </span>
+            {React.string("wa-iwe = wiwe, ba-iwe = biwe.")}
+          </p>
+          <p className="italic">
+            {React.string("e.g. umwana wiwe – his child, abana biwe – his children, abana babo – their children")}
+          </p>
+          <p className="font-medium underline decoration-gray-300">
+            {React.string("Note: the possessive regularly follows the noun it modifies.")}
+          </p>
+        </div>
+      </section>
+
+      /* Section 6: Mbega */
+      <section>
+        <div className="flex items-start">
+          <span className="font-bold mr-4"> {React.string("6.")} </span>
+          <div>
+            <p className="font-bold inline"> {React.string("Mbega.")} </p>
+            <span>
+              {React.string(" This word introduces a question, but is not translated. It is not necessary always to use it in questions. It elides before a vowel. e.g. Mbeg’ abigishwa bararima? – Are the pupils hoeing?")}
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  }
+}
+
 let l: lesson = {
   title: "LESSON 3: Possessive Adjectives",
-  content: <>
-    <p>
-      {React.string("The possessive adjective consists of a prefix (object owned) and a suffix (the owner). For Class 1, the singular prefix is ")}
-      <strong>{React.string("wa-")}</strong>
-      {React.string(" and the plural is ")}
-      <strong>{React.string("ba-")}</strong>
-      {React.string(".")}
-    </p>
-
-    <table className="min-w-full divide-y">
-      <thead>
-        <tr>
-          <th>{React.string("Suffix")}</th>
-          <th>{React.string("Singular (wa-)")}</th>
-          <th>{React.string("Plural (ba-)")}</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{React.string("-nje (me)")}</td>
-          <td>{React.string("wanje (my)")}</td>
-          <td>{React.string("banje (my)")}</td>
-        </tr>
-        <tr>
-          <td>{React.string("-we (you sing.)")}</td>
-          <td>{React.string("wawe (your)")}</td>
-          <td>{React.string("bawe (your)")}</td>
-        </tr>
-        <tr>
-          <td>{React.string("-iwe (him/her)")}</td>
-          <td>{React.string("wiwe (his/hers)")}</td>
-          <td>{React.string("biwe (his/hers)")}</td>
-        </tr>
-        <tr>
-          <td>{React.string("-cu (us)")}</td>
-          <td>{React.string("wacu (our)")}</td>
-          <td>{React.string("bacu (our)")}</td>
-        </tr>
-        <tr>
-          <td>{React.string("-nyu (you pl.)")}</td>
-          <td>{React.string("wanyu (your)")}</td>
-          <td>{React.string("banyu (your)")}</td>
-        </tr>
-        <tr>
-          <td>{React.string("-bo (them)")}</td>
-          <td>{React.string("wabo (their)")}</td>
-          <td>{React.string("babo (their)")}</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p style={{marginTop: "1rem"}}>
-      <strong>{React.string("Note:")}</strong>
-      {React.string(" The 3rd person singular contracts: wa-iwe = wiwe, ba-iwe = biwe. The possessive regularly follows the noun it modifies.")}
-    </p>
-
-    <p>
-      <strong>{React.string("Mbega:")}</strong>
-      {React.string(" Introduces a question but is not translated. It elides before a vowel (e.g., Mbeg' abigishwa...).")}
-    </p>
-  </>,
+  content: <Content />,
   vocabulary: [
     ("umūntu", "person (nasalized 'ntu')"),
     ("umukozi", "workman, employee"),
@@ -99,10 +161,9 @@ let l: lesson = {
         prompt: "3. Abakozi banyu bararima.",
         answer: "Your workers are hoeing",
       }),
-      PartialInput({
+      TextInput({
         prompt: "4. Umwana wawe n’umuhungu.",
         answer: "Your child is a boy",
-        hint: "wawe indicates singular 'your'",
       }),
       TextInput({
         prompt: "5. Abigishwa babo barakora.",
@@ -155,10 +216,9 @@ let l: lesson = {
         prompt: "5. Your (sing.) children.",
         answer: "Abana bawe",
       }),
-      PartialInput({
+      TextInput({
         prompt: "6. Her pupils.",
         answer: "Abigishwa biwe",
-        hint: "Use the plural 'ba' prefix for the possessive",
       }),
       TextInput({
         prompt: "7. Our Savior.",
@@ -198,10 +258,9 @@ let l: lesson = {
         prompt: "13. Our children are hoeing.",
         answer: "Abana bacu bararima",
       }),
-      PartialInput({
+      TextInput({
         prompt: "14. Your (pl.) children are girls.",
         answer: "Abana banyu n'abakobwa",
-        hint: "Remember the conjunction 'n'' for 'are'",
       }),
       TextInput({
         prompt: "15. My sons are not pupils.",

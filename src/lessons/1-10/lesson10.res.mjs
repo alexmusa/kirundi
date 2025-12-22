@@ -2,7 +2,16 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsx(JsxRuntime.Fragment, {});
+let l_content = JsxRuntime.jsx("div", {
+  children: JsxRuntime.jsx("div", {
+    children: JsxRuntime.jsx("b", {
+      children: "Lesson 10: Review",
+      className: "uppercase"
+    }),
+    className: "border-b border-black text-center pb-1 mb-6"
+  }),
+  className: "p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal"
+});
 
 let l_vocabulary = [];
 
@@ -118,40 +127,34 @@ let l_quiz = [
     title: "II. Adjective Agreement (-iza)",
     questions: [
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'umukobwa' (singular) and translate.",
-        answer: "umukobwa mwiza – good girl",
-        hint: "Use class 1 agreement"
+        answer: "umukobwa mwiza – good girl"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'abakobwa' (plural) and translate.",
-        answer: "abakobwa beza – good girls",
-        hint: "Plural of umukobwa"
+        answer: "abakobwa beza – good girls"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'umutsima' (singular) and translate.",
-        answer: "umutsima mwiza – good bread",
-        hint: "Class 2 singular"
+        answer: "umutsima mwiza – good bread"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'imitsima' (plural) and translate.",
-        answer: "imitsima myiza – good bread (plural)",
-        hint: "Plural of umutsima"
+        answer: "imitsima myiza – good bread (plural)"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'imbwa' (singular) and translate.",
-        answer: "imbwa nziza – good dog",
-        hint: "N-class noun"
+        answer: "imbwa nziza – good dog"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make -iza agree with 'imbwa' (plural) and translate.",
-        answer: "imbwa nziza – good dogs",
-        hint: "Same form in plural"
+        answer: "imbwa nziza – good dogs"
       }
     ]
   },

@@ -2,237 +2,288 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs("div", {
-  children: [
-    JsxRuntime.jsx("p", {
-      children: "Class 3: The prefix for Class 3 is in- for both singular and plural. The context and agreements will usually indicate whether the word is singular or plural. Later we will note some variations of this prefix.",
-      className: "text-gray-700 leading-relaxed"
-    }),
-    JsxRuntime.jsxs("div", {
-      children: [
-        JsxRuntime.jsx("h3", {
-          children: "Possessive Adjective Prefixes",
-          className: "text-xl font-semibold text-blue-800"
-        }),
-        JsxRuntime.jsx("div", {
-          children: JsxRuntime.jsxs("table", {
-            children: [
-              JsxRuntime.jsx("thead", {
-                children: JsxRuntime.jsxs("tr", {
-                  children: [
-                    JsxRuntime.jsx("th", {
-                      children: "Number",
-                      className: "px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300"
-                    }),
-                    JsxRuntime.jsx("th", {
-                      children: "Prefix",
-                      className: "px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300"
-                    }),
-                    JsxRuntime.jsx("th", {
-                      children: "Example",
-                      className: "px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300"
-                    }),
-                    JsxRuntime.jsx("th", {
-                      children: "Meaning",
-                      className: "px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider"
-                    })
-                  ]
-                }),
-                className: "bg-gray-50"
-              }),
-              JsxRuntime.jsxs("tbody", {
-                children: [
-                  JsxRuntime.jsxs("tr", {
-                    children: [
-                      JsxRuntime.jsx("td", {
-                        children: "Singular",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "ya-",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "inka yanje",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "my cow",
-                        className: "px-4 py-3 text-sm text-gray-800"
-                      })
-                    ],
-                    className: "hover:bg-gray-50"
-                  }),
-                  JsxRuntime.jsxs("tr", {
-                    children: [
-                      JsxRuntime.jsx("td", {
-                        children: "Plural",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "za-",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "inka zanje",
-                        className: "px-4 py-3 text-sm text-gray-800 border-r border-gray-300"
-                      }),
-                      JsxRuntime.jsx("td", {
-                        children: "my cows",
-                        className: "px-4 py-3 text-sm text-gray-800"
-                      })
-                    ],
-                    className: "hover:bg-gray-50"
-                  })
-                ],
-                className: "bg-white divide-y divide-gray-200"
-              })
-            ],
-            className: "min-w-full divide-y divide-gray-200 border border-gray-300"
-          }),
-          className: "overflow-x-auto"
-        })
-      ],
-      className: "space-y-3"
-    }),
-    JsxRuntime.jsxs("div", {
-      children: [
-        JsxRuntime.jsx("h3", {
-          children: "Consonant Change Rules",
-          className: "text-xl font-semibold text-blue-800"
-        }),
-        JsxRuntime.jsx("p", {
-          children: "Memorize these rules, they are used in many words:",
-          className: "text-gray-600 italic"
-        }),
-        JsxRuntime.jsxs("ul", {
+function Lesson7$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("span", {
           children: [
-            JsxRuntime.jsxs("li", {
-              children: [
-                JsxRuntime.jsx("span", {
-                  children: "n before labials (b, m, v, f, p) → m",
-                  className: "font-medium text-gray-900"
-                }),
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    "Example: ",
-                    JsxRuntime.jsx("code", {
-                      children: "imbwa (in-bwa)",
-                      className: "bg-gray-100 px-2 py-1 rounded text-sm font-mono"
-                    })
-                  ],
-                  className: "ml-4 text-gray-600"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("li", {
-              children: [
-                JsxRuntime.jsx("span", {
-                  children: "n + h → mp",
-                  className: "font-medium text-gray-900"
-                }),
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    "Example: ",
-                    JsxRuntime.jsx("code", {
-                      children: "impuzu (in-huzu)",
-                      className: "bg-gray-100 px-2 py-1 rounded text-sm font-mono"
-                    })
-                  ],
-                  className: "ml-4 text-gray-600"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("li", {
-              children: [
-                JsxRuntime.jsx("span", {
-                  children: "n + r → nd",
-                  className: "font-medium text-gray-900"
-                }),
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    "Example: ",
-                    JsxRuntime.jsx("code", {
-                      children: "indimiro (in-rimiro)",
-                      className: "bg-gray-100 px-2 py-1 rounded text-sm font-mono"
-                    })
-                  ],
-                  className: "ml-4 text-gray-600"
-                })
-              ]
-            }),
-            JsxRuntime.jsx("li", {
-              children: JsxRuntime.jsx("span", {
-                children: "n before another n drops out",
-                className: "font-medium text-gray-900"
-              })
-            }),
-            JsxRuntime.jsxs("li", {
-              children: [
-                JsxRuntime.jsx("span", {
-                  children: "n before a vowel root → nz",
-                  className: "font-medium text-gray-900"
-                }),
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    "Example: ",
-                    JsxRuntime.jsx("code", {
-                      children: "inzara (in-ara)",
-                      className: "bg-gray-100 px-2 py-1 rounded text-sm font-mono"
-                    })
-                  ],
-                  className: "ml-4 text-gray-600"
-                })
-              ]
+            "LESSON 7: Class 3 ",
+            JsxRuntime.jsx("i", {
+              children: "in–, in–",
+              className: "italic"
             })
           ],
-          className: "space-y-3 pl-5 list-disc text-gray-700"
-        })
-      ],
-      className: "space-y-3"
-    }),
-    JsxRuntime.jsx("div", {
-      children: JsxRuntime.jsxs("div", {
+          className: "font-bold"
+        }),
+        className: "border-b border-black pb-1 mb-6 text-center"
+      }),
+      JsxRuntime.jsxs("div", {
         children: [
-          JsxRuntime.jsx("div", {
-            children: JsxRuntime.jsx("svg", {
-              children: JsxRuntime.jsx("path", {
-                clipRule: "evenodd",
-                d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z",
-                fillRule: "evenodd"
-              }),
-              className: "h-5 w-5 text-blue-400",
-              fill: "currentColor",
-              viewBox: "0 0 20 20"
-            }),
-            className: "flex-shrink-0"
+          JsxRuntime.jsx("b", {
+            children: "Vocabulary:",
+            className: "block mb-2"
           }),
-          JsxRuntime.jsx("div", {
-            children: JsxRuntime.jsxs("p", {
-              children: [
-                JsxRuntime.jsx("span", {
-                  children: "Note: ",
-                  className: "font-medium"
-                }),
-                "In the word ",
-                JsxRuntime.jsx("code", {
-                  children: "Imana (in-mana)",
-                  className: "bg-blue-100 px-1 py-0.5 rounded text-sm font-mono"
-                }),
-                " the n drops out before m, thus making Imana."
-              ],
-              className: "text-sm text-blue-700"
-            }),
-            className: "ml-3"
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "inka – cow"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "Imāna – God"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "imbwa – dog"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "impūzu – clothes"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "indimiro – field"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "inzu – house, room"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "intebe – chair, stool"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-8 pl-4"
           })
         ],
-        className: "flex"
+        className: "mb-6"
       }),
-      className: "bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r"
-    })
-  ],
-  className: "space-y-6"
-});
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "13.",
+            className: "min-w-[1.5rem]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("b", {
+                children: "Class 3:",
+                className: "mr-1"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "The prefix for Class 3 is in- for both singular and plural. The context and agreements will usually indicate whether the word is singular or plural. Later we will note some variations of this prefix."
+              })
+            ]
+          })
+        ],
+        className: "flex gap-4 mb-6 text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "singular"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "plural"
+              })
+            ],
+            className: "grid grid-cols-2 max-w-xs text-center mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "possessive adjective prefix:",
+                className: "whitespace-nowrap"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "ya-"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "za-"
+                  })
+                ],
+                className: "grid grid-cols-2 flex-grow text-center"
+              })
+            ],
+            className: "flex gap-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "inka yanje"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "(my cow)",
+                    className: "italic text-gray-600"
+                  })
+                ],
+                className: "mt-2"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "inka zanje"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "(my cows)",
+                    className: "italic text-gray-600"
+                  })
+                ],
+                className: "mt-2"
+              })
+            ],
+            className: "grid grid-cols-2 max-w-xs text-center ml-auto"
+          })
+        ],
+        className: "ml-32 mb-8"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "14.",
+            className: "min-w-[1.5rem]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("b", {
+                children: "Consonant change:",
+                className: "mr-1"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "(Memorize this rule, it is used in many words.)",
+                className: "italic text-sm"
+              }),
+              JsxRuntime.jsxs("ul", {
+                children: [
+                  JsxRuntime.jsxs("li", {
+                    children: [
+                      JsxRuntime.jsxs("span", {
+                        children: [
+                          "n before all labials (",
+                          JsxRuntime.jsx("b", {
+                            children: "b, m, v, f, p"
+                          }),
+                          ") becomes ",
+                          JsxRuntime.jsx("b", {
+                            children: "m"
+                          })
+                        ],
+                        className: "flex-1"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "e.g. imbwa (in-bwa)",
+                        className: "w-40 italic"
+                      })
+                    ],
+                    className: "flex"
+                  }),
+                  JsxRuntime.jsxs("li", {
+                    children: [
+                      JsxRuntime.jsxs("span", {
+                        children: [
+                          JsxRuntime.jsx("b", {
+                            children: "n + h"
+                          }),
+                          " becomes ",
+                          JsxRuntime.jsx("b", {
+                            children: "mp"
+                          })
+                        ],
+                        className: "flex-1"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "e.g. impūzu (in-huzu)",
+                        className: "w-40 italic"
+                      })
+                    ],
+                    className: "flex"
+                  }),
+                  JsxRuntime.jsxs("li", {
+                    children: [
+                      JsxRuntime.jsxs("span", {
+                        children: [
+                          JsxRuntime.jsx("b", {
+                            children: "n + r"
+                          }),
+                          " becomes ",
+                          JsxRuntime.jsx("b", {
+                            children: "nd"
+                          })
+                        ],
+                        className: "flex-1"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "e.g. indimiro (in-rimiro)",
+                        className: "w-40 italic"
+                      })
+                    ],
+                    className: "flex"
+                  }),
+                  JsxRuntime.jsxs("li", {
+                    children: [
+                      "n before another ",
+                      JsxRuntime.jsx("b", {
+                        children: "n"
+                      }),
+                      " drops out."
+                    ]
+                  }),
+                  JsxRuntime.jsxs("li", {
+                    children: [
+                      JsxRuntime.jsxs("span", {
+                        children: [
+                          "n before a vowel root becomes ",
+                          JsxRuntime.jsx("b", {
+                            children: "nz"
+                          })
+                        ],
+                        className: "flex-1"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "e.g. inzara (in-ara)",
+                        className: "w-40 italic"
+                      })
+                    ],
+                    className: "flex"
+                  })
+                ],
+                className: "mt-4 space-y-2"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("b", {
+                    children: "Note:",
+                    className: "mr-1"
+                  }),
+                  "In the word Imana (in-mana) the n drops out before m, thus making Imana."
+                ],
+                className: "mt-4"
+              })
+            ],
+            className: "flex-1"
+          })
+        ],
+        className: "flex gap-4 text-justify"
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 font-serif text-[11pt] leading-normal text-gray-900"
+  });
+}
+
+let Content = {
+  make: Lesson7$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson7$Content, {});
 
 let l_vocabulary = [
   [
@@ -389,10 +440,9 @@ let l_quiz = [
         answer: "Inka zabo."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "My God in Kirundi is: Imana ______",
-        answer: "yanje",
-        hint: "possessive suffix for 'my'"
+        answer: "yanje"
       },
       {
         TAG: "TextInput",
@@ -432,10 +482,9 @@ let l_quiz = [
         correctIndex: 0
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "I am working in the teacher’s field. → Nkora mu murima ______",
-        answer: "w’umwarimu",
-        hint: "possessive form for 'teacher'"
+        answer: "w’umwarimu"
       },
       {
         TAG: "TextInput",
@@ -455,6 +504,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

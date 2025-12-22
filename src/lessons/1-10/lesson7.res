@@ -1,154 +1,133 @@
 open Lesson
 
-let l: lesson = {
-  title: "LESSON 7: Class 3 in–, in–",
-  content: <div className="space-y-6">
-    <p className="text-gray-700 leading-relaxed">
-      {React.string("Class 3: The prefix for Class 3 is in- for both singular and plural. The context and agreements will usually indicate whether the word is singular or plural. Later we will note some variations of this prefix.")}
-    </p>
-    
-    <div className="space-y-3">
-      <h3 className="text-xl font-semibold text-blue-800">
-        {React.string("Possessive Adjective Prefixes")}
-      </h3>
-      
-      <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200 border border-gray-300">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300">
-                {React.string("Number")}
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300">
-                {React.string("Prefix")}
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider border-r border-gray-300">
-                {React.string("Example")}
-              </th>
-              <th className="px-4 py-3 text-left text-xs font-medium text-gray-700 uppercase tracking-wider">
-                {React.string("Meaning")}
-              </th>
-            </tr>
-          </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            <tr className="hover:bg-gray-50">
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("Singular")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("ya-")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("inka yanje")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800">
-                {React.string("my cow")}
-              </td>
-            </tr>
-            <tr className="hover:bg-gray-50">
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("Plural")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("za-")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800 border-r border-gray-300">
-                {React.string("inka zanje")}
-              </td>
-              <td className="px-4 py-3 text-sm text-gray-800">
-                {React.string("my cows")}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+module Content = {
+  @react.component
+  let make = () => {
+    <div className="max-w-2xl mx-auto p-8 font-serif text-[11pt] leading-normal text-gray-900">
+      /* Header Section */
+      <div className="border-b border-black pb-1 mb-6 text-center">
+        <span className="font-bold">
+          {React.string("LESSON 7: Class 3 ")}
+          <i className="italic">{React.string("in–, in–")}</i>
+        </span>
       </div>
-    </div>
-    
-    <div className="space-y-3">
-      <h3 className="text-xl font-semibold text-blue-800">
-        {React.string("Consonant Change Rules")}
-      </h3>
-      
-      <p className="text-gray-600 italic">
-        {React.string("Memorize these rules, they are used in many words:")}
-      </p>
-      
-      <ul className="space-y-3 pl-5 list-disc text-gray-700">
-        <li>
-          <span className="font-medium text-gray-900">
-            {React.string("n before labials (b, m, v, f, p) → m")}
-          </span>
-          <div className="ml-4 text-gray-600">
-            {React.string("Example: ")}
-            <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-              {React.string("imbwa (in-bwa)")}
-            </code>
+
+      /* Vocabulary Section */
+      <div className="mb-6">
+        <b className="block mb-2">{React.string("Vocabulary:")}</b>
+        <div className="grid grid-cols-2 gap-x-8 pl-4">
+          <div>
+            <p>{React.string("inka – cow")}</p>
+            <p>{React.string("Imāna – God")}</p>
+            <p>{React.string("imbwa – dog")}</p>
+            <p>{React.string("impūzu – clothes")}</p>
           </div>
-        </li>
-        <li>
-          <span className="font-medium text-gray-900">
-            {React.string("n + h → mp")}
-          </span>
-          <div className="ml-4 text-gray-600">
-            {React.string("Example: ")}
-            <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-              {React.string("impuzu (in-huzu)")}
-            </code>
+          <div>
+            <p>{React.string("indimiro – field")}</p>
+            <p>{React.string("inzu – house, room")}</p>
+            <p>{React.string("intebe – chair, stool")}</p>
           </div>
-        </li>
-        <li>
-          <span className="font-medium text-gray-900">
-            {React.string("n + r → nd")}
-          </span>
-          <div className="ml-4 text-gray-600">
-            {React.string("Example: ")}
-            <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-              {React.string("indimiro (in-rimiro)")}
-            </code>
-          </div>
-        </li>
-        <li>
-          <span className="font-medium text-gray-900">
-            {React.string("n before another n drops out")}
-          </span>
-        </li>
-        <li>
-          <span className="font-medium text-gray-900">
-            {React.string("n before a vowel root → nz")}
-          </span>
-          <div className="ml-4 text-gray-600">
-            {React.string("Example: ")}
-            <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">
-              {React.string("inzara (in-ara)")}
-            </code>
-          </div>
-        </li>
-      </ul>
-    </div>
-    
-    <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r">
-      <div className="flex">
-        <div className="flex-shrink-0">
-          <svg className="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-          </svg>
         </div>
-        <div className="ml-3">
-          <p className="text-sm text-blue-700">
-            <span className="font-medium">
-              {React.string("Note: ")}
-            </span>
-            {React.string("In the word ")}
-            <code className="bg-blue-100 px-1 py-0.5 rounded text-sm font-mono">
-              {React.string("Imana (in-mana)")}
-            </code>
-            {React.string(" the n drops out before m, thus making Imana.")}
+      </div>
+
+      /* Rule 13 */
+      <div className="flex gap-4 mb-6 text-justify">
+        <span className="min-w-[1.5rem]">{React.string("13.")}</span>
+        <div>
+          <b className="mr-1">{React.string("Class 3:")}</b>
+          <span>
+            {React.string("The prefix for Class 3 is in- for both singular and plural. The context and agreements will usually indicate whether the word is singular or plural. Later we will note some variations of this prefix.")}
+          </span>
+        </div>
+      </div>
+
+      /* Singular/Plural Comparison Table */
+      <div className="ml-32 mb-8">
+        <div className="grid grid-cols-2 max-w-xs text-center mb-2">
+          <span>{React.string("singular")}</span>
+          <span>{React.string("plural")}</span>
+        </div>
+        <div className="flex gap-4">
+          <span className="whitespace-nowrap">{React.string("possessive adjective prefix:")}</span>
+          <div className="grid grid-cols-2 flex-grow text-center">
+            <span>{React.string("ya-")}</span>
+            <span>{React.string("za-")}</span>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 max-w-xs text-center ml-auto">
+          <div className="mt-2">
+            <p>{React.string("inka yanje")}</p>
+            <p className="italic text-gray-600">{React.string("(my cow)")}</p>
+          </div>
+          <div className="mt-2">
+            <p>{React.string("inka zanje")}</p>
+            <p className="italic text-gray-600">{React.string("(my cows)")}</p>
+          </div>
+        </div>
+      </div>
+
+      /* Rule 14 */
+      <div className="flex gap-4 text-justify">
+        <span className="min-w-[1.5rem]">{React.string("14.")}</span>
+        <div className="flex-1">
+          <b className="mr-1">{React.string("Consonant change:")}</b>
+          <span className="italic text-sm">
+            {React.string("(Memorize this rule, it is used in many words.)")}
+          </span>
+
+          <ul className="mt-4 space-y-2">
+            <li className="flex">
+              <span className="flex-1">
+                {React.string("n before all labials (")}
+                <b>{React.string("b, m, v, f, p")}</b>
+                {React.string(") becomes ")}
+                <b>{React.string("m")}</b>
+              </span>
+              <span className="w-40 italic">{React.string("e.g. imbwa (in-bwa)")}</span>
+            </li>
+            <li className="flex">
+              <span className="flex-1">
+                <b>{React.string("n + h")}</b>
+                {React.string(" becomes ")}
+                <b>{React.string("mp")}</b>
+              </span>
+              <span className="w-40 italic">{React.string("e.g. impūzu (in-huzu)")}</span>
+            </li>
+            <li className="flex">
+              <span className="flex-1">
+                <b>{React.string("n + r")}</b>
+                {React.string(" becomes ")}
+                <b>{React.string("nd")}</b>
+              </span>
+              <span className="w-40 italic">{React.string("e.g. indimiro (in-rimiro)")}</span>
+            </li>
+            <li>
+              {React.string("n before another ")}
+              <b>{React.string("n")}</b>
+              {React.string(" drops out.")}
+            </li>
+            <li className="flex">
+              <span className="flex-1">
+                {React.string("n before a vowel root becomes ")}
+                <b>{React.string("nz")}</b>
+              </span>
+              <span className="w-40 italic">{React.string("e.g. inzara (in-ara)")}</span>
+            </li>
+          </ul>
+
+          <p className="mt-4">
+            <b className="mr-1">{React.string("Note:")}</b>
+            {React.string("In the word Imana (in-mana) the n drops out before m, thus making Imana.")}
           </p>
         </div>
       </div>
     </div>
-  </div>,
-  
+  }
+}
+
+let l: lesson = {
+  title: "LESSON 7: Class 3 in–, in–",
+  content: <Content />,
   vocabulary: [
     ("inka", "cow"),
     ("Imana", "God"),
@@ -158,7 +137,6 @@ let l: lesson = {
     ("inzu", "house, room"),
     ("intebe", "chair, stool"),
   ],
-  
   examples: [
     ("inka yanje", "my cow (singular possessive)"),
     ("inka zanje", "my cows (plural possessive)"),
@@ -247,10 +225,10 @@ let l: lesson = {
         prompt: "Their cows.",
         answer: "Inka zabo.",
       }),
-      PartialInput({
+      TextInput({
         prompt: "My God in Kirundi is: Imana ______",
         answer: "yanje",
-        hint: "possessive suffix for 'my'",
+
       }),
       TextInput({
         prompt: "Your (pl.) clothes.",
@@ -284,10 +262,10 @@ let l: lesson = {
         ],
         correctIndex: 0,
       }),
-      PartialInput({
+      TextInput({
         prompt: "I am working in the teacher’s field. → Nkora mu murima ______",
         answer: "w’umwarimu",
-        hint: "possessive form for 'teacher'",
+
       }),
       TextInput({
         prompt: "The women have bread on their heads.",

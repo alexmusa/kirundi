@@ -2,16 +2,178 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs("p", {
-  children: [
-    "The possessive particle expresses 'of' or '-'s'. It follows the noun being possessed and must agree with that noun's class prefix. Note: the final '-a' elides (drops) before a following vowel, becoming w', b', or y'.",
-    JsxRuntime.jsx("br", {}),
-    JsxRuntime.jsx("br", {}),
-    "Class 1: Singular (wa), Plural (ba)",
-    JsxRuntime.jsx("br", {}),
-    "Class 2: Singular (wa), Plural (ya)"
-  ]
-});
+function Lesson6$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "LESSON 6: Possessive Particle",
+          className: "text-center font-bold text-[11pt] uppercase"
+        }),
+        className: "border-b border-black pb-1 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary:",
+            className: "font-bold text-[11pt] mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "umushatsi – hair (of the human head, rarely used in plural)"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "umugozi – string, rope"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "umugisha – blessing"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "umurima – garden"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ndagenda – I am going, I go"
+                  })
+                ],
+                className: "flex flex-wrap gap-x-12"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "ndakora – I am working, I work"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "mfise – I have"
+                  })
+                ],
+                className: "flex flex-wrap gap-x-12"
+              })
+            ],
+            className: "ml-4 space-y-1 text-[11pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "12.",
+                className: "font-bold mr-2"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Possessive particle",
+                    className: "font-bold"
+                  }),
+                  ": This is a small word used to express possession as expressed in English by “of” or “’s”. It is always the same as the prefix of the possessive adjective."
+                ]
+              })
+            ],
+            className: "flex items-start"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "singular",
+                    className: "italic"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "plural",
+                    className: "italic"
+                  })
+                ],
+                className: "grid grid-cols-2 w-48"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Class 1:"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "wa",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "ba",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "Class 2:"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "wa",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "ya",
+                    className: "text-center"
+                  })
+                ],
+                className: "grid grid-cols-[auto_1fr_1fr] gap-x-8 w-64"
+              })
+            ],
+            className: "ml-24 space-y-1"
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              "The possessive particle always follows the name of the thing possessed and agrees with it, ",
+              JsxRuntime.jsx("i", {
+                children: "not with the owner",
+                className: "italic"
+              }),
+              "."
+            ],
+            className: "ml-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Umutima wa Yesu – the heart of Jesus (Jesus’ heart)"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Imirima y’abantu – the gardens of the people (people’s gardens)"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Abana b’umwigisha – the teachers children"
+              })
+            ],
+            className: "ml-8 space-y-1 italic"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "(We will not give the possessive particle with each class. Simply remember that it is the same as the prefix of the possessive adjective.)",
+            className: "ml-4 text-sm text-gray-700"
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Note: ",
+                className: "font-bold"
+              }),
+              "The –a of the possessive particle elides before a following vowel, thus w’, b’, etc., as seen in some of the preceding examples."
+            ],
+            className: "ml-4"
+          })
+        ],
+        className: "space-y-4 text-[11pt] text-justify"
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 font-sans text-[#000000] leading-normal"
+  });
+}
+
+let Content = {
+  make: Lesson6$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson6$Content, {});
 
 let l_vocabulary = [
   [
@@ -84,10 +246,9 @@ let l_quiz = [
         answer: "Imirima y’abatama"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make plural: Umugore w’umugabo (The man's wife)",
-        answer: "Abagore b’abagabo",
-        hint: "Use Class 2 plurals."
+        answer: "Abagore b’abagabo"
       },
       {
         TAG: "TextInput",
@@ -115,10 +276,9 @@ let l_quiz = [
         answer: "Imyenda y’abakozi"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Make plural: Umwami w’abantu (The king of the people)",
-        answer: "Abami b’abantu",
-        hint: "Note that 'abantu' is already plural."
+        answer: "Abami b’abantu"
       },
       {
         TAG: "TextInput",
@@ -136,10 +296,9 @@ let l_quiz = [
         answer: "Abantu ba Yezu bafise akanyamuneza mu mitima yabo"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "I have the light of Jesus in my heart.",
-        answer: "Mfise umuco wa Yezu mu mutima wanje",
-        hint: "Umuco = Light."
+        answer: "Mfise umuco wa Yezu mu mutima wanje"
       },
       {
         TAG: "MultipleChoice",
@@ -177,10 +336,9 @@ let l_quiz = [
         answer: "Umwana afise imishatsi"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "I am working in the darkness.",
-        answer: "Ndiko ndakora mu muzimagiza",
-        hint: "Darkness = Umuzimagiza."
+        answer: "Ndiko ndakora mu muzimagiza"
       },
       {
         TAG: "TextInput",
@@ -215,6 +373,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

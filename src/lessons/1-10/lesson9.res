@@ -1,74 +1,127 @@
 open Lesson
 
+module Content = {
+  @react.component
+  let make = () => {
+    <div className="p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal">
+      /* Header Section */
+      <div className="border-b border-black text-center pb-1 mb-6">
+        <b className="uppercase"> {React.string("Lesson 9: Adjectives (continued)")} </b>
+      </div>
+
+      /* Vocabulary Section */
+      <div className="mb-6">
+        <p className="mb-1">
+          <b> {React.string("Vocabulary")} </b> {React.string(":")}
+        </p>
+        <p className="ml-4">
+          {React.string("Memorize the last half of the list of adjectives in Lesson 8!")}
+        </p>
+      </div>
+
+      /* Paragraph 16: Vowel Changes */
+      <div className="mb-6">
+        <div className="flex items-baseline gap-2">
+          <span className="min-w-[1.5rem]"> {React.string("16.")} </span>
+          <b> {React.string("Vowel changes.")} </b>
+        </div>
+
+        <div className="ml-8 mt-4 space-y-4">
+          /* Part A */
+          <div className="flex gap-4">
+            <span className="min-w-[1.5rem]"> {React.string("(a)")} </span>
+            <p>
+              {React.string("Though in Par. 3 we stated that ‘a’ before another vowel drops out, there are exceptions to this rule. In the adjectives –iza and –inshi, when an ‘a’ precedes the ‘i’, the two contract into ")}
+              <b> {React.string("e")} </b>
+              {React.string(", thus:")}
+              <br />
+              {React.string("ba-iza becomes ")}
+              <i className="italic"> {React.string("beza")} </i>
+              {React.string(", ba-inshi becomes ")}
+              <i className="italic"> {React.string("benshi")} </i>
+            </p>
+          </div>
+
+          /* Part B */
+          <div className="flex gap-4">
+            <span className="min-w-[1.5rem]"> {React.string("(b)")} </span>
+            <p className="text-justify">
+              {React.string("Remember that as stated in Par. 3, ‘u’ before another vowel becomes ‘w’, thus")}
+              <br />
+              {React.string("mu-iza becomes ")}
+              <i className="italic"> {React.string("mwiza")} </i>
+              {React.string(".")}
+            </p>
+          </div>
+
+          /* Part C */
+          <div className="flex gap-4">
+            <span className="min-w-[1.5rem]"> {React.string("(c)")} </span>
+            <p className="text-justify">
+              {React.string("Also remember that ‘i’ often (not always) becomes ‘y’ before another vowel, thus:")}
+              <br />
+              {React.string("mi-iza becomes ")}
+              <i className="italic"> {React.string("myiza")} </i>
+              {React.string(", mi-inshi becomes ")}
+              <i className="italic"> {React.string("myinshi")} </i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      /* Note I Section with Table-like Layout */
+      <div className="ml-4 mb-6 text-justify">
+        <p className="mb-4">
+          <b> {React.string("Note I")} </b>
+          {React.string(": In Par. 14 we said that ‘n’ before a vowel becomes ‘nz’, thus: n-iza becomes ")}
+          <i className="italic"> {React.string("nziza")} </i>
+          {React.string("; however, the adjective –inshi is an exception, for n-inshi becomes ")}
+          <i className="italic"> {React.string("nyinshi")} </i>
+          {React.string(".")}
+        </p>
+
+        /* Class Examples Table */
+        <div className="grid grid-cols-[100px_100px_100px] gap-y-1 ml-12">
+          <span className="font-normal"> {React.string("Class 1:")} </span>
+          <span> {React.string("mwiza")} </span>
+          <span> {React.string("beza")} </span>
+          <span />
+          <span> {React.string("mwinshi")} </span>
+          <span> {React.string("benshi")} </span>
+
+          <span className="mt-2"> {React.string("Class 2:")} </span>
+          <span className="mt-2"> {React.string("mwiza")} </span>
+          <span className="mt-2"> {React.string("myiza")} </span>
+          <span />
+          <span> {React.string("mwinshi")} </span>
+          <span> {React.string("myinshi")} </span>
+
+          <span className="mt-2"> {React.string("Class 3:")} </span>
+          <span className="mt-2"> {React.string("nziza")} </span>
+          <span className="mt-2"> {React.string("nziza")} </span>
+          <span />
+          <span> {React.string("nyinshi")} </span>
+          <span> {React.string("nyinshi")} </span>
+        </div>
+      </div>
+
+      /* Notes II & III */
+      <div className="ml-4 space-y-4">
+        <p>
+          <b> {React.string("Note II")} </b>
+          {React.string(": The adjective nini in agreeing with the 3rd class does not get an extra n. It is simply like the stem: inka nini – a big cow.")}
+        </p>
+        <p>
+          <b> {React.string("Note III")} </b>
+          {React.string(": The adjectives –nini and –to may be reduplicated in the plural forms: abahungu banini-banini – big boys, abana bato-bato – little children.")}
+        </p>
+      </div>
+    </div>
+  }
+}
 let l: lesson = {
   title: "LESSON 9: Adjectives (continued)",
-  content: {
-    <div>
-      <p><strong>{React.string("16. Vowel changes.")}</strong></p>
-      <ul>
-        <li>
-          <strong>{React.string("(a)")}</strong>
-          {React.string(" Though in Par. 3 we stated that 'a' before another vowel drops out, there are exceptions to this rule. In the adjectives –iza and –inshi, when an 'a' precedes the 'i', the two contract into e, thus:")}
-          <br/>
-          {React.string("ba-iza becomes beza, ba-inshi becomes benshi")}
-        </li>
-        <li>
-          <strong>{React.string("(b)")}</strong>
-          {React.string(" Remember that as stated in Par. 3, 'u' before another vowel becomes 'w', thus:")}
-          <br/>
-          {React.string("mu-iza becomes mwiza")}
-        </li>
-        <li>
-          <strong>{React.string("(c)")}</strong>
-          {React.string(" Also remember that 'i' often (not always) becomes 'y' before another vowel, thus:")}
-          <br/>
-          {React.string("mi-iza becomes myiza, mi-inshi becomes myinshi")}
-        </li>
-      </ul>
-
-      <p>
-        <strong>{React.string("Note I:")}</strong>
-        {React.string(" In Par. 14 we said that 'n' before a vowel becomes 'nz', thus: n-iza becomes nziza; however, the adjective –inshi is an exception, for n-inshi becomes nyinshi.")}
-      </p>
-
-      <table>
-        <thead>
-          <tr>
-            <th>{React.string("Class")}</th>
-            <th>{React.string("-iza forms")}</th>
-            <th>{React.string("-inshi forms")}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{React.string("Class 1:")}</td>
-            <td>{React.string("mwiza, beza")}</td>
-            <td>{React.string("mwinshi, benshi")}</td>
-          </tr>
-          <tr>
-            <td>{React.string("Class 2:")}</td>
-            <td>{React.string("mwiza, myiza")}</td>
-            <td>{React.string("mwinshi, myinshi")}</td>
-          </tr>
-          <tr>
-            <td>{React.string("Class 3:")}</td>
-            <td>{React.string("nziza, nziza")}</td>
-            <td>{React.string("nyinshi, nyinshi")}</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <p>
-        <strong>{React.string("Note II:")}</strong>
-        {React.string(" The adjective nini in agreeing with the 3rd class does not get an extra n. It is simply like the stem: inka nini – a big cow.")}
-      </p>
-      
-      <p>
-        <strong>{React.string("Note III:")}</strong>
-        {React.string(" The adjectives –nini and –to may be reduplicated in the plural forms: abahungu banini-banini – big boys, abana bato-bato – little children.")}
-      </p>
-    </div>
-  },
+  content: <Content />,
   vocabulary: [],
   examples: [
     ("inka nini", "a big cow"),
@@ -137,10 +190,10 @@ let l: lesson = {
         ],
         correctIndex: 0,
       }),
-      PartialInput({
+      TextInput({
         prompt: "Mbeg’ inka z’umutama ni nini?",
         answer: "Are the farmer's cows large?",
-        hint: "This is a question about the size of the farmer's cows.",
+
       }),
     ],
   },
@@ -198,10 +251,10 @@ let l: lesson = {
         ],
         correctIndex: 0,
       }),
-      PartialInput({
+      TextInput({
         prompt: "Our God is living.",
         answer: "Imana yacu iri kubaho.",
-        hint: "Use 'iri kubaho' for 'is living'.",
+
       }),
     ],
   },

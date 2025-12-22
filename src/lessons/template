@@ -1,14 +1,22 @@
 open Lesson
 
+module Content = {
+  @react.component
+  let make = () => {
+    <> </>
+  }
+}
+
 let l: lesson = {
   title: "LESSON X: xxx",
-  content: <p> {React.string("Hello World")} </p>,
-  vocabulary: [
+  content: <Content />,
+  examples: [
     ("d", "e"),
     ("f", "g"),
   ],
-  examples: [
+  vocabulary: [
     ("h", "i"),
+    ("j", "k"),
   ],
 //}
   quiz: [
@@ -33,12 +41,12 @@ let l: lesson = {
     {
       title: "II. qqq",
       questions: [
-        PartialInput({
+        TextInput({
           prompt: "r",
           answer: "s",
-          hint: "t",
+
         }),
       ],
     },
   ],
-}
+};

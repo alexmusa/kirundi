@@ -1,215 +1,112 @@
 open Lesson
 
+module Content = {
+  @react.component
+  let make = () => {
+    <div className="max-w-3xl mx-auto p-8 bg-white text-[11pt] leading-normal font-serif text-black">
+      /* Header Section */
+      <div className="border-b border-black pb-[1pt] mb-4">
+        <p className="text-center font-bold uppercase">
+          {React.string("Lesson 8: Adjectives")}
+        </p>
+      </div>
+
+      /* Introduction */
+      <p className="text-justify mb-4">
+        {React.string("The descriptive adjectives: (in this lesson memorize only the first half of this list).")}
+      </p>
+
+      /* Adjective List */
+      <div className="space-y-0.5 mb-6">
+        {[
+          ("-bi", "bad, dirty, ugly"),
+          ("-bisi", "raw, fresh, uncooked, wet (cannot be always used for wet), unboiled (liquids)"),
+          ("-gari", "wide, broad (rarely used, e.g. for lakes)"),
+          ("-gufi", "short, low, shallow (sometimes gufinya or gufiya)"),
+          ("-īnshi", "much, many"),
+          ("-īza", "good, clean, beautiful, nice, pretty"),
+          ("-ke", "few, scanty, little (quantity), (sometimes kenya or keya)"),
+          ("-kuru", "important, senior, great"),
+          ("-nini", "big, thick, large, wide, broad (sometimes –ninīya)"),
+          ("-nzīnya", "very small, tiny (used only with 7th class)"),
+          ("-rē-re", "tall, long, high, deep (prefix repeated as well as stem: muremure)"),
+          ("-sa", "mere, only, alone"),
+          ("-sha", "new (often: -shāsha)"),
+          ("-to", "small, little (size), young, thin (sometimes tōnya or tōya)"),
+          ("-tōto", "green, unripe (not ready for picking, used only of certain foods)"),
+          ("-zima", "alive, whole, living"),
+        ]->Array.map(((stem, definition)) => {
+          <div key={stem} className="grid grid-cols-[120px_1fr] text-justify">
+            <span className="whitespace-nowrap"> {React.string(stem)} </span>
+            <span> {React.string(definition)} </span>
+          </div>
+        })->React.array}
+      </div>
+
+      <p className="text-justify italic mb-6">
+        {React.string("Note: Usually for ‘wide’ use -nini, not -gari.")}
+      </p>
+
+      /* Grammatical Rules */
+      <div className="space-y-4">
+        <div className="flex gap-x-4 text-justify">
+          <span> {React.string("15.")} </span>
+          <p>
+            {React.string("These adjectives listed here are the only descriptive adjectives in common use. Most other descriptive adjectives are formed by verbs or nouns as we shall see later. These adjectives take the prefix of the noun ")}
+            <i className="italic"> {React.string("minus the initial vowel")} </i>
+            {React.string(". They always agree with the nouns they modify in class and number. They always follow the noun.")}
+          </p>
+        </div>
+
+        /* Examples */
+        <div className="pl-[36pt] space-y-1">
+          <div className="grid grid-cols-2 gap-4">
+            <span> {React.string("umuntu mubi – a bad person")} </span>
+            <span> {React.string("abantu babi – bad people")} </span>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <span> {React.string("umutima mubi – a bad heart")} </span>
+            <span> {React.string("imitima mibi – bad hearts")} </span>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <span> {React.string("nzu nsha (nshasha) – a new house")} </span>
+            <span> {React.string("inzu nsha – new houses")} </span>
+          </div>
+        </div>
+
+        <div className="pl-[18pt]">
+          <p className="text-justify mb-4">
+            {React.string("As the other classes are given you will be able to form the adjectives according to this rule given above.")}
+          </p>
+          
+          <p className="text-justify">
+            <span className="font-bold"> {React.string("Note: ")} </span>
+            {React.string("If both a descriptive adjective and a possessive adjective follow a noun, the possessive ")}
+            <i className="italic"> {React.string("must follow the noun")} </i>
+            {React.string(" immediately:")}
+          </p>
+        </div>
+
+        <div className="pl-[36pt]">
+          <p> {React.string("inka ziwe nkeya – his few cows")} </p>
+        </div>
+
+        <div className="pl-[18pt]">
+          <p className="text-justify">
+            {React.string("If one of the adjectives refers to quantity it usually comes last:")}
+          </p>
+        </div>
+
+        <div className="pl-[36pt]">
+          <p> {React.string("inka mbi nkeya – a few bad cows")} </p>
+        </div>
+      </div>
+    </div>
+  }
+}
 let l: lesson = {
   title: "LESSON 8: Adjectives - Descriptive Adjectives",
-  content: <div className="space-y-4">
-    <p className="mb-4">
-      {React.string("These are the primary descriptive adjectives in common use. They take the prefix of the noun (minus initial vowel) and agree in class/number with the noun they modify. They always follow the noun.")}
-    </p>
-    
-    <div className="overflow-x-auto">
-      <table className="min-w-full border border-gray-300">
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="border border-gray-300 px-4 py-2 text-left font-medium">
-              {React.string("Adjective Stem")}
-            </th>
-            <th className="border border-gray-300 px-4 py-2 text-left font-medium">
-              {React.string("Meanings")}
-            </th>
-            <th className="border border-gray-300 px-4 py-2 text-left font-medium">
-              {React.string("Notes")}
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-bi")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("bad, dirty, ugly")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-bisi")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("raw, fresh, uncooked, wet, unboiled (liquids)")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Cannot always be used for \"wet\"")}
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-gari")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("wide, broad")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Rarely used (e.g., for lakes)")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-gufi")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("short, low, shallow")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Sometimes gufinya or gufiya")}
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-īnshi")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("much, many")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-īza")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("good, clean, beautiful, nice, pretty")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-ke")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("few, scanty, little (quantity)")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Sometimes kenya or keya")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-kuru")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("important, senior, great")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-nini")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("big, thick, large, wide, broad")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Sometimes -ninīya")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-nzīnya")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("very small, tiny")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Used only with 7th class")}
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-rē-re")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("tall, long, high, deep")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Prefix repeated as well as stem (muremure)")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-sa")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("mere, only, alone")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-sha")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("new")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Often: -shāsha")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-to")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("small, little (size), young, thin")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Sometimes tōnya or tōya")}
-            </td>
-          </tr>
-          <tr>
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-tōto")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("green, unripe")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600">
-              {React.string("Not ready for picking, used only of certain foods")}
-            </td>
-          </tr>
-          <tr className="bg-gray-50">
-            <td className="border border-gray-300 px-4 py-2 font-mono">
-              {React.string("-zima")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2">
-              {React.string("alive, whole, living")}
-            </td>
-            <td className="border border-gray-300 px-4 py-2 text-gray-600"></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded">
-      <h3 className="font-bold text-lg mb-2 text-blue-800">
-        {React.string("Important Notes:")}
-      </h3>
-      <ul className="list-disc pl-5 space-y-1 text-blue-700">
-        <li>
-          {React.string("Usually for \"wide\" use ")}
-          <span className="font-mono">{React.string("-nini")}</span>
-          {React.string(", not ")}
-          <span className="font-mono">{React.string("-gari")}</span>
-        </li>
-        <li>{React.string("These are the ONLY descriptive adjectives in common use")}</li>
-        <li>{React.string("Most other descriptive adjectives are formed from verbs/nouns")}</li>
-        <li>{React.string("If both a descriptive and possessive adjective follow a noun, the possessive comes immediately after the noun")}</li>
-        <li>{React.string("If an adjective refers to quantity, it usually comes last")}</li>
-      </ul>
-    </div>
-  </div>,
-  
+  content: <Content />,
   vocabulary: [
     ("-bi", "bad, dirty, ugly"),
     ("-bisi", "raw, fresh, uncooked, wet, unboiled (liquids)"),
@@ -260,10 +157,10 @@ let l: lesson = {
         prompt: "Translate into English: Abantu si bake.",
         answer: "The people are not few."
       }),
-      PartialInput({
+      TextInput({
         prompt: "Translate into English: Abana banje si babi.",
         answer: "My children are not bad.",
-        hint: "The word 'si' means 'not'."
+
       }),
       TextInput({
         prompt: "Translate into English: Umwigisha ni mukuru.",
@@ -286,10 +183,10 @@ let l: lesson = {
         prompt: "Translate into English: Mfise umutsima mubi.",
         answer: "I have bad porridge."
       }),
-      PartialInput({
+      TextInput({
         prompt: "Translate into English: Abana bafise imitsima mike.",
         answer: "The children have few porridges.",
-        hint: "'bafise' means 'they have', and 'imitsima' is plural for porridge."
+
       }),
       TextInput({
         prompt: "Translate into English: Intebe zanyu ni ngufi.",
@@ -317,10 +214,10 @@ let l: lesson = {
         prompt: "Translate into Kirundi: Your (pl.) chairs are short.",
         answer: "Intebe zanyu ni ngufi."
       }),
-      PartialInput({
+      TextInput({
         prompt: "Translate into Kirundi: His bad children.",
         answer: "Abana be babi.",
-        hint: "Use 'be' for 'his', and 'babi' for 'bad'."
+
       }),
       TextInput({
         prompt: "Translate into Kirundi: Their few cows.",
@@ -343,10 +240,10 @@ let l: lesson = {
         prompt: "Translate into Kirundi: God is very great.",
         answer: "Imana ni nkuru cyane."
       }),
-      PartialInput({
+      TextInput({
         prompt: "Translate into Kirundi: I have his short rope.",
         answer: "Mfise umugozi we mugufi.",
-        hint: "'umugozi' means rope, 'we' means his, 'mugufi' means short."
+
       }),
       TextInput({
         prompt: "Translate into Kirundi: Is the teacher’s child bad?",

@@ -2,28 +2,202 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs("div", {
-  children: [
-    JsxRuntime.jsx("h3", {
-      children: "Vowel Changes"
-    }),
-    JsxRuntime.jsx("p", {
-      children: "Before another vowel, 'u' changes to 'w' and 'i' changes to 'y'. For example, 'umu-enda' becomes 'umwenda', and the plural 'imi-enda' becomes 'imyenda'."
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "Prepositions: Mu and Ku"
-    }),
-    JsxRuntime.jsx("p", {
-      children: "'Mu' indicates being inside (in, into, out of), whereas 'ku' indicates being on the outside (on, at, to, from). These prepositions typically cause the following noun to lose its initial vowel (e.g., 'ku muriro' instead of 'ku umuriro')."
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "Dropping the '-ra-' Infix"
-    }),
-    JsxRuntime.jsx("p", {
-      children: "When a verb is followed by a phrase or object (other than 'cane' or 'ati'), the '-ra-' or '-da-' infix is usually dropped. For example, 'aragenda' becomes 'agenda' when followed by 'mu mwiza'."
-    })
-  ]
-});
+function Lesson5$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("h1", {
+          children: [
+            "LESSON 5: ",
+            JsxRuntime.jsx("span", {
+              children: "Mu",
+              className: "italic"
+            }),
+            " and ",
+            JsxRuntime.jsx("span", {
+              children: "Ku",
+              className: "italic"
+            })
+          ],
+          className: "font-bold uppercase tracking-wide"
+        }),
+        className: "border-b border-black text-center pb-1 mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "umwōtsi – smoke"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "umuco – light"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "umwīza – darkness"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "umūsi – day"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "umwēnda – debt"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "umunēzēro – joy"
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-4 pl-[18pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "9.",
+                className: "w-[18pt] inline-block"
+              }),
+              JsxRuntime.jsxs("span", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Vowel change",
+                    className: "font-bold"
+                  }),
+                  ": You will note that the change of u to w before a vowel is the same as in first class. I before another vowel becomes y. (Exceptions shown later.)"
+                ]
+              })
+            ],
+            className: "flex items-start pl-[18pt] -indent-[18pt] text-justify"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "umu-enda = umwenda, imi-enda = imyenda",
+            className: "pl-[36pt] mt-2 italic text-gray-700"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "10.",
+                className: "w-[18pt] inline-block"
+              }),
+              JsxRuntime.jsxs("span", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Mu and Ku",
+                    className: "font-bold"
+                  }),
+                  ": These two prepositions have a number of uses, but for the present we will learn only one:"
+                ]
+              })
+            ],
+            className: "flex items-start pl-[18pt] -indent-[18pt] text-justify"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "mu – in, into, out of (the inside of a thing)"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ku – on, at, to (the outside of a thing), from (outside of a thing)"
+              })
+            ],
+            className: "pl-[36pt] mt-2 space-y-1"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "These various meanings are often dependant on the verb accompanying them.",
+            className: "pl-[18pt] mt-4 text-justify"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Agenda mu mwiza – he/she is walking in the dark."
+              }),
+              JsxRuntime.jsx("p", {
+                children: "kuva – to come from",
+                className: "italic"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "kuva mu muriro – to come ",
+                  JsxRuntime.jsx("span", {
+                    children: "out of",
+                    className: "italic"
+                  }),
+                  " the fire"
+                ]
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "kuva ku muriro – to come ",
+                  JsxRuntime.jsx("span", {
+                    children: "away from",
+                    className: "italic"
+                  }),
+                  " the fire"
+                ]
+              })
+            ],
+            className: "pl-[36pt] mt-4 space-y-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Note: ",
+                className: "font-bold not-italic"
+              }),
+              "Mu and Ku usually remove the initial vowel of the noun following: not ku umuriro, but ",
+              JsxRuntime.jsx("span", {
+                children: "ku muriro",
+                className: "font-semibold"
+              }),
+              ". (For a variation of this see Par. 32.)"
+            ],
+            className: "pl-[18pt] mt-4 text-justify italic"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "11.",
+                className: "w-[18pt] inline-block"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "When verbs beginning with ‘ara-‘ or ‘nda-‘ (as in the following lesson) are followed by a phrase or object, other then ‘cane’ or ‘ati’, the ‘-ra-‘ or ‘-da-‘ usually drops out. This also applies to verbs in the other persons. (See Lesson 25.)"
+              })
+            ],
+            className: "flex items-start pl-[18pt] -indent-[18pt] text-justify"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "Agenda mu mwiza (not: aragenda mu mwiza) – he/she goes in the dark",
+            className: "pl-[36pt] mt-4 font-medium italic"
+          })
+        ],
+        className: "mb-6"
+      })
+    ],
+    className: "p-6 font-serif text-[11pt] leading-normal text-gray-800 max-w-2xl mx-auto"
+  });
+}
+
+let Content = {
+  make: Lesson5$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson5$Content, {});
 
 let l_vocabulary = [
   [
@@ -96,10 +270,9 @@ let l_quiz = [
         answer: "The woman has joy in her heart."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate 'His/her children work well': Abana biwe _________ neza.",
-        answer: "barakora",
-        hint: "Verb: to work (plural)"
+        answer: "barakora"
       },
       {
         TAG: "TextInput",
@@ -127,10 +300,9 @@ let l_quiz = [
         answer: "Does the worker have clothes? No."
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate 'The workers hoe on the hill': Abakozi _____ ku musozi.",
-        answer: "barima",
-        hint: "Verb: to hoe/farm"
+        answer: "barima"
       }
     ]
   },
@@ -158,10 +330,9 @@ let l_quiz = [
         answer: "Abagore barakora ku musozi wabo"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate 'Your (sing.) debts': ______ yawe.",
-        answer: "Imyenda",
-        hint: "Plural of debt/garment"
+        answer: "Imyenda"
       },
       {
         TAG: "TextInput",
@@ -189,10 +360,9 @@ let l_quiz = [
         answer: "Abatama bafise umwiza mu mitima yabo"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Translate using 'wo': The light on the hill is your fire.",
-        answer: "umuco wo ku musozi ni umuriro wawe",
-        hint: "umuco = light"
+        answer: "umuco wo ku musozi ni umuriro wawe"
       },
       {
         TAG: "TextInput",
@@ -212,6 +382,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

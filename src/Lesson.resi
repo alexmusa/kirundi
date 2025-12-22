@@ -8,22 +8,27 @@ type quizQuestion =
       options: array<string>,
       correctIndex: int,
     })
-  | PartialInput({
-      prompt: string,
-      answer: string,
-      hint: string,
-    })
+  // | PartialInput({
+  //     prompt: string,
+  //     answer: string,
+  //     hint: string,
+  //   })
 type quizSection = {
   title: string,
   questions: array<quizQuestion>,
 }
+
+type vocabulary = array<(string, string)>
+type examples = vocabulary
+
 type lesson = {
   title: string,
   content: React.element,
-  vocabulary: array<(string, string)>,
-  examples: array<(string, string)>,
+  vocabulary: vocabulary,
+  examples: examples,
   quiz: array<quizSection>,
 }
+
 module Vocabulary: {
   @react.component
   let make: (~items: array<(string, string)>) => React.element

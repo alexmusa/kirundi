@@ -2,71 +2,253 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs(JsxRuntime.Fragment, {
-  children: [
-    JsxRuntime.jsx("p", {
-      children: "Class 2 is used for inanimate objects and non-human nouns. While the singular prefix (umu-) is identical to Class 1, you can distinguish them by the plural prefix (imi-) and the context: if it is not a person, it is Class 2."
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "Prefixes and Possessives"
-    }),
-    JsxRuntime.jsxs("table", {
-      children: [
-        JsxRuntime.jsx("thead", {
-          children: JsxRuntime.jsxs("tr", {
-            children: [
-              JsxRuntime.jsx("th", {
-                children: "Number"
-              }),
-              JsxRuntime.jsx("th", {
-                children: "Noun Prefix"
-              }),
-              JsxRuntime.jsx("th", {
-                children: "Possessive Prefix"
-              })
-            ]
-          })
+function Lesson4$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "LESSON 4: Class 2 umu–, imi–",
+          className: "text-center font-bold text-base uppercase tracking-tight"
         }),
-        JsxRuntime.jsxs("tbody", {
-          children: [
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "Singular"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "umu-"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wa-"
-                })
-              ]
+        className: "border-b border-black pb-1 mb-6"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "umutima – heart"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umuriro – fire (no pl.)"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umucanwa – fire (as in fireplace, no pl.)"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umutsima – bread"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umutwe – head"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "umusozi – hill, mountain"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "nēza – well (adv.), nicely"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "na – and, with, by"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umūnyu – salt"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-12 pl-6"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("p", {
+              children: "Note: The native “bread” (umutsima) is a sort of doughy porridge. But some have adopted the word for the European type of bread. Others use the Swahili umukate."
             }),
-            JsxRuntime.jsxs("tr", {
+            className: "mt-4 ml-6 italic text-justify"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "7.",
+                className: "min-w-[20px]"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Class 2",
+                    className: "font-bold"
+                  }),
+                  ": This class is not used for people, as the first class, though the singular prefix is the same. You do not need to confuse these two classes, for if it is a person it is first class; if not, it is second. (There are a few rare exceptions to this.)"
+                ],
+                className: "text-justify"
+              })
+            ],
+            className: "flex gap-4 mb-4"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("table", {
               children: [
-                JsxRuntime.jsx("td", {
-                  children: "Plural"
+                JsxRuntime.jsx("thead", {
+                  children: JsxRuntime.jsxs("tr", {
+                    children: [
+                      JsxRuntime.jsx("th", {
+                        children: "",
+                        className: "w-1/4 p-2 text-left font-normal"
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "Singular",
+                        className: "w-1/3 p-2 text-left font-normal underline decoration-1"
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "Plural",
+                        className: "w-1/3 p-2 text-left font-normal underline decoration-1"
+                      })
+                    ]
+                  })
                 }),
-                JsxRuntime.jsx("td", {
-                  children: "imi-"
+                JsxRuntime.jsxs("tbody", {
+                  children: [
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Prefixes:",
+                          className: "p-2 align-top"
+                        }),
+                        JsxRuntime.jsxs("td", {
+                          children: [
+                            JsxRuntime.jsx("div", {
+                              children: "umu-",
+                              className: "font-semibold"
+                            }),
+                            JsxRuntime.jsx("div", {
+                              children: "umutima – heart"
+                            })
+                          ],
+                          className: "p-2 align-top text-blue-800"
+                        }),
+                        JsxRuntime.jsxs("td", {
+                          children: [
+                            JsxRuntime.jsx("div", {
+                              children: "imi-",
+                              className: "font-semibold"
+                            }),
+                            JsxRuntime.jsx("div", {
+                              children: "imitima – hearts"
+                            })
+                          ],
+                          className: "p-2 align-top text-blue-800"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Possessive prefixes:",
+                          className: "p-2 align-top"
+                        }),
+                        JsxRuntime.jsxs("td", {
+                          children: [
+                            JsxRuntime.jsx("div", {
+                              children: "wa-"
+                            }),
+                            JsxRuntime.jsx("div", {
+                              children: "(wanje)",
+                              className: "text-gray-600"
+                            })
+                          ],
+                          className: "p-2 align-top"
+                        }),
+                        JsxRuntime.jsxs("td", {
+                          children: [
+                            JsxRuntime.jsx("div", {
+                              children: "ya-"
+                            }),
+                            JsxRuntime.jsx("div", {
+                              children: "(yanje)",
+                              className: "text-gray-600"
+                            })
+                          ],
+                          className: "p-2 align-top"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "",
+                          className: "p-2 align-top"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "umutwe wiwe – his head",
+                          className: "p-2 align-top italic"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "imitwe yabo – their heads",
+                          className: "p-2 align-top italic"
+                        })
+                      ]
+                    })
+                  ]
+                })
+              ],
+              className: "w-full border-collapse"
+            }),
+            className: "ml-6 overflow-x-auto"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsx("section", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("span", {
+              children: "8.",
+              className: "min-w-[20px]"
+            }),
+            JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsxs("p", {
+                  children: [
+                    JsxRuntime.jsx("span", {
+                      children: "Conjunction ‘na’",
+                      className: "font-bold"
+                    }),
+                    ": and. This word, na, is used for joining nouns. It does not connect clauses. It elides (n’) before words beginning with a vowel."
+                  ],
+                  className: "text-justify"
                 }),
-                JsxRuntime.jsx("td", {
-                  children: "ya-"
+                JsxRuntime.jsx("p", {
+                  children: "umugabo n’umugore – a man and a woman",
+                  className: "ml-8 mt-4 italic font-medium"
+                }),
+                JsxRuntime.jsx("p", {
+                  children: "When elided thus, there is no difference in appearance between na and ni, but the context will usually indicate which is intended.",
+                  className: "mt-4 text-justify"
+                }),
+                JsxRuntime.jsx("p", {
+                  children: "A series in Kirundi is always connected by na. Though in English one would say, “A man woman and child”, in Kirundi one would say, “Umugabo n’umugore n’umwana.”",
+                  className: "mt-4 text-justify"
                 })
               ]
             })
-          ]
-        })
-      ]
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "The Conjunction 'na'"
-    }),
-    JsxRuntime.jsx("p", {
-      children: "The word 'na' (and) joins nouns but not clauses. It elides to 'n\'' before words beginning with a vowel. Note that in Kirundi, 'na' must be repeated between every item in a series."
-    })
-  ]
-});
+          ],
+          className: "flex gap-4"
+        }),
+        className: "mb-6"
+      })
+    ],
+    className: "max-w-3xl mx-auto p-8 bg-white text-gray-900 font-serif leading-normal text-[14.67px]"
+  });
+}
+
+let Content = {
+  make: Lesson4$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson4$Content, {});
 
 let l_vocabulary = [
   [
@@ -268,10 +450,9 @@ let l_quiz = [
         answer: "Umukozi afise umutsima wiwe n’umunyu"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "Is your (pl.) child a boy? No, it’s a girl.",
-        answer: "Umwana wanyu ni umuhungu? Oya, ni umukobwa",
-        hint: "Start with the question about the child's gender."
+        answer: "Umwana wanyu ni umuhungu? Oya, ni umukobwa"
       }
     ]
   }
@@ -286,6 +467,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

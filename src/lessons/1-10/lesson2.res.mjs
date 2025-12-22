@@ -2,54 +2,322 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs(JsxRuntime.Fragment, {
-  children: [
-    JsxRuntime.jsx("h3", {
-      children: "1. Vowel Change Rules"
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        "The singular prefix of Class 1 is 'umu', but it appears as 'umw' when the stem begins with a vowel. This is because ",
-        JsxRuntime.jsx("strong", {
-          children: "u"
+function Lesson2$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("h1", {
+          children: [
+            "LESSON 2: ",
+            JsxRuntime.jsx("span", {
+              children: "Ni",
+              className: "italic"
+            }),
+            " and ",
+            JsxRuntime.jsx("span", {
+              children: "Si",
+              className: "italic"
+            })
+          ],
+          className: "text-xl font-bold tracking-wide"
         }),
-        " before another vowel becomes ",
-        JsxRuntime.jsx("strong", {
-          children: "w"
-        }),
-        ". This change often lengthens the following vowel."
-      ]
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        "Similarly, ",
-        JsxRuntime.jsx("strong", {
-          children: "a"
-        }),
-        " before another vowel drops out (elision). For example: aba-ana becomes abāna."
-      ]
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "2. Use of Ni and Si"
-    }),
-    JsxRuntime.jsx("p", {
-      children: "'Ni' (is/are) and 'Si' (is not/are not) are used for states of being. They do not change form based on number (singular or plural)."
-    }),
-    JsxRuntime.jsxs("ul", {
-      children: [
-        JsxRuntime.jsx("li", {
-          children: "The 'i' elides before a vowel (e.g., Ni + umwami = N'umwami)."
-        }),
-        JsxRuntime.jsx("li", {
-          children: "Do not elide before a proper noun."
-        }),
-        JsxRuntime.jsx("li", {
-          children: "Do not use these for locations (unless the subject itself is a place)."
-        })
-      ]
-    })
-  ]
-});
+        className: "border-b-2 border-slate-900 pb-2 mb-8 text-center"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary",
+            className: "text-lg font-bold mb-4 border-l-4 border-blue-500 pl-3"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umwāna (pl. abāna)"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "child",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "afise"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "he/she has",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umwāmi (abāmi)"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "king, Lord",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "bafise"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "they have",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umwīgīsha (abīgīsha)"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "teacher",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "cane (adv.)"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "much, very",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "umwīgīshwa (abīgīshwa)"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "pupil",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "urakoze"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "thank you",
+                    className: "text-slate-500 font-normal"
+                  })
+                ],
+                className: "flex justify-between border-b border-slate-50"
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 pl-4 italic"
+          })
+        ],
+        className: "mb-8"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "3.",
+            className: "font-bold text-blue-600 text-lg"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("h3", {
+                children: "Vowel change: ",
+                className: "font-bold inline"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "Though we observed that the singular prefix of Class 1 is 'umu', we will find some words in which it seems to be 'umw', as in the nouns given above. This is due to the fact that ",
+                  JsxRuntime.jsx("code", {
+                    children: "u",
+                    className: "bg-slate-100 px-1 rounded"
+                  }),
+                  " before another vowel becomes ",
+                  JsxRuntime.jsx("code", {
+                    children: "w",
+                    className: "bg-slate-100 px-1 rounded"
+                  }),
+                  ". This rule applies not only in this instance but wherever u precedes another vowel."
+                ],
+                className: "inline"
+              }),
+              JsxRuntime.jsx("div", {
+                children: JsxRuntime.jsxs("p", {
+                  children: [
+                    "Thus: umu-ana becomes ",
+                    JsxRuntime.jsx("span", {
+                      children: "umwana",
+                      className: "font-semibold"
+                    }),
+                    ". This lengthens the vowel which begins the stem, ",
+                    JsxRuntime.jsx("span", {
+                      children: "umwīgīsha, abīgīsha",
+                      className: "font-semibold"
+                    }),
+                    ". Also, ",
+                    JsxRuntime.jsx("span", {
+                      children: "a",
+                      className: "font-semibold"
+                    }),
+                    " before another vowel drops out, thus the plural of these nouns: aba-ana = ",
+                    JsxRuntime.jsx("span", {
+                      children: "abāna",
+                      className: "font-semibold"
+                    }),
+                    ", aba-igisha = ",
+                    JsxRuntime.jsx("span", {
+                      children: "abīgīsha",
+                      className: "font-semibold"
+                    }),
+                    ". (Later you will learn an exception to this rule about a.)"
+                  ]
+                }),
+                className: "mt-4 p-4 bg-slate-50 rounded-r-lg border-l-2 border-slate-300 italic"
+              })
+            ]
+          })
+        ],
+        className: "mb-8 flex gap-4"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "4.",
+            className: "font-bold text-blue-600 text-lg"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("h3", {
+                children: "Use of Ni and Si: ",
+                className: "font-bold inline"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Ni",
+                    className: "italic font-semibold"
+                  }),
+                  " means 'is' or 'are' (3rd person, sing. and pl., present), and does not change its form regardless of the subject. Its negative is ",
+                  JsxRuntime.jsx("span", {
+                    children: "Si",
+                    className: "italic font-semibold"
+                  }),
+                  ", meaning 'is not', 'are not'. These words ",
+                  JsxRuntime.jsx("span", {
+                    children: "may not be used",
+                    className: "italic underline"
+                  }),
+                  " in a dependent clause or when followed by a word of place. The i of these words elides when preceding a word which begins with a vowel, unless that word is a proper noun. Ni and Si may be translated with the subject 'it'."
+                ],
+                className: "inline"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "N'umwami",
+                        className: "font-medium min-w-[140px] italic"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "– it is the king.",
+                        className: "text-slate-500"
+                      })
+                    ],
+                    className: "flex gap-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "Umwana n'umukobwa",
+                        className: "font-medium min-w-[140px] italic"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "– the child is a girl.",
+                        className: "text-slate-500"
+                      })
+                    ],
+                    className: "flex gap-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "Umugabo s'umwami",
+                        className: "font-medium min-w-[140px] italic"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "– the man is not a king.",
+                        className: "text-slate-500"
+                      })
+                    ],
+                    className: "flex gap-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "Umwigisha ni Andereya",
+                        className: "font-medium min-w-[140px] italic"
+                      }),
+                      JsxRuntime.jsx("span", {
+                        children: "– the teacher is Andrew.",
+                        className: "text-slate-500"
+                      })
+                    ],
+                    className: "flex gap-4"
+                  })
+                ],
+                className: "mt-6 space-y-2 pl-4 border-l-2 border-blue-100"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Exception: ",
+                    className: "font-bold text-amber-800"
+                  }),
+                  "If the subject of 'is' or 'are' is a place, the words ni and si may be used even if followed by a word of place. e.g. ",
+                  JsxRuntime.jsx("span", {
+                    children: "Gitega ni kure",
+                    className: "italic font-medium"
+                  }),
+                  " – Gitega is far away."
+                ],
+                className: "mt-6 p-4 bg-amber-50 rounded border border-amber-100 text-sm"
+              })
+            ]
+          })
+        ],
+        className: "mb-8 flex gap-4"
+      })
+    ],
+    className: "max-w-3xl mx-auto p-8 bg-white text-slate-800 font-sans leading-relaxed shadow-sm border border-slate-100 my-10"
+  });
+}
+
+let Content = {
+  make: Lesson2$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson2$Content, {});
 
 let l_vocabulary = [
   [
@@ -204,10 +472,9 @@ let l_quiz = [
         answer: "abanyeshure bafise umwigisha"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "A woman is hoeing.",
-        answer: "umugore ariko aracumba",
-        hint: "ariko aracumba = is hoeing"
+        answer: "umugore ariko aracumba"
       },
       {
         TAG: "TextInput",
@@ -272,6 +539,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

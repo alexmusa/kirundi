@@ -8,11 +8,12 @@ type quizQuestion =
       options: array<string>,
       correctIndex: int,
     })
-  | PartialInput({
-      prompt: string,
-      answer: string,
-      hint: string,
-    })
+  // | FillInTheBlank({
+  //     before: string,
+  //     blank: string,
+  //     after: string,
+  //     answer: string,
+  //   })
 
 
 type quizSection = {
@@ -20,11 +21,14 @@ type quizSection = {
   questions: array<quizQuestion>,
 }
 
+type vocabulary = array<(string, string)>
+type examples = vocabulary
+
 type lesson = {
   title: string,
   content: React.element,
-  vocabulary: array<(string, string)>,
-  examples: array<(string, string)>,
+  vocabulary: vocabulary,
+  examples: examples,
   quiz: array<quizSection>,
 }
 
@@ -136,38 +140,38 @@ module QuizQuestionView = {
               : React.null}
           </>
 
-      | PartialInput({prompt, answer, hint}) =>
-          <>
-            <p className="font-medium text-gray-900">
-              {prompt->React.string}
-            </p>
+      // | PartialInput({prompt, answer, hint}) =>
+      //     <>
+      //       <p className="font-medium text-gray-900">
+      //         {prompt->React.string}
+      //       </p>
 
-            <input
-              className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
-              placeholder={hint}
-              value={userInput}
-              onChange={e =>
-                setUserInput(_ => ReactEvent.Form.target(e)["value"])
-              }
-            />
+      //       <input
+      //         className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      //         placeholder={hint}
+      //         value={userInput}
+      //         onChange={e =>
+      //           setUserInput(_ => ReactEvent.Form.target(e)["value"])
+      //         }
+      //       />
 
-            <button
-              className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
-              onClick={_ => setChecked(_ => true)}>
-              {"Check"->React.string}
-            </button>
+      //       <button
+      //         className="inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+      //         onClick={_ => setChecked(_ => true)}>
+      //         {"Check"->React.string}
+      //       </button>
 
-            {checked
-              ? feedback(
-                  ~ok={Js.String.includes(answer, userInput)},
-                  ~text={
-                    Js.String.includes(answer, userInput)
-                      ? "✓ On the right track"
-                      : "✗ Full answer: " ++ answer
-                  },
-                )
-              : React.null}
-          </>
+      //       {checked
+      //         ? feedback(
+      //             ~ok={Js.String.includes(answer, userInput)},
+      //             ~text={
+      //               Js.String.includes(answer, userInput)
+      //                 ? "✓ On the right track"
+      //                 : "✗ Full answer: " ++ answer
+      //             },
+      //           )
+      //         : React.null}
+      //     </>
       }}
     </div>
   }
@@ -205,19 +209,19 @@ module LessonView = {
         lesson.content
       </div>
 
-      <section className="space-y-2">
-        <h2 className="text-xl font-semibold text-gray-900">
-          {"Examples"->React.string}
-        </h2>
-        <Vocabulary items={lesson.examples} />
-      </section>
+      // <section className="space-y-2">
+      //   <h2 className="text-xl font-semibold text-gray-900">
+      //     {"Examples"->React.string}
+      //   </h2>
+      //   <Vocabulary items={lesson.examples} />
+      // </section>
 
-      <section className="space-y-2">
-        <h2 className="text-xl font-semibold text-gray-900">
-          {"Vocabulary"->React.string}
-        </h2>
-        <Vocabulary items={lesson.vocabulary} />
-      </section>
+      // <section className="space-y-2">
+      //   <h2 className="text-xl font-semibold text-gray-900">
+      //     {"Vocabulary"->React.string}
+      //   </h2>
+      //   <Vocabulary items={lesson.vocabulary} />
+      // </section>
 
       <section className="space-y-6">
         <h2 className="text-xl font-semibold text-gray-900">

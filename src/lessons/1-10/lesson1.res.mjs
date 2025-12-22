@@ -2,45 +2,238 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs(JsxRuntime.Fragment, {
-  children: [
-    JsxRuntime.jsx("p", {
-      children: "In Kirundi, the verb is perhaps the most important part of speech because it serves for several functions. However, we will begin by looking at nouns. Kirundi nouns are categorized into ten classes, each with its own set of prefixes. The prefix of a noun determines the prefix of other words related to that noun."
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "Class 1 Nouns"
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        "This class contains only nouns referring to people. In the singular, these words begin with the prefix ",
-        JsxRuntime.jsx("strong", {
-          children: "umu-"
-        }),
-        ". In the plural, the prefix changes to ",
-        JsxRuntime.jsx("strong", {
-          children: "aba-"
-        }),
-        "."
-      ]
-    }),
-    JsxRuntime.jsx("h3", {
-      children: "Verbs and Subject Prefixes"
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        "The subject prefix for Class 1 singular is ",
-        JsxRuntime.jsx("strong", {
-          children: "a-"
-        }),
-        ", and for plural it is ",
-        JsxRuntime.jsx("strong", {
-          children: "ba-"
-        }),
-        ". These verbs can stand alone if the subject is already known."
-      ]
-    })
-  ]
-});
+function Lesson1$Content(props) {
+  let sectionTitle = "text-xl font-bold text-slate-800 mb-4 border-b-2 border-indigo-100 pb-1";
+  let tableHeader = "text-left text-sm font-semibold text-slate-500 uppercase tracking-wider p-2";
+  let tableCell = "p-2 border-t border-slate-100";
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsxs("header", {
+        children: [
+          JsxRuntime.jsx("h1", {
+            children: "Lesson 1",
+            className: "text-3xl font-extrabold text-indigo-700 uppercase tracking-tight"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "Class 1: umu–, aba–",
+            className: "text-lg font-medium text-slate-500 mt-2 italic"
+          })
+        ],
+        className: "text-center mb-10"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "As we take up the study of Kirundi, we must first get a little picture of the structure of the language. In Kirundi the verb is perhaps the most important part of speech because it serves for several parts of speech.",
+            className: "mb-4"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("p", {
+              children: [
+                JsxRuntime.jsx("span", {
+                  children: "Note: ",
+                  className: "font-bold text-indigo-800"
+                }),
+                "Nouns are found in ten classes, each with its own set of prefixes. The prefix of a noun determines the prefix of other related words."
+              ],
+              className: "text-sm"
+            }),
+            className: "bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-400"
+          })
+        ],
+        className: "mb-8"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Class 1 Nouns (People)",
+            className: sectionTitle
+          }),
+          JsxRuntime.jsx("p", {
+            children: "This class contains names of people (not necessarily proper nouns).",
+            className: "mb-4 italic text-sm"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("table", {
+              children: [
+                JsxRuntime.jsx("thead", {
+                  children: JsxRuntime.jsxs("tr", {
+                    children: [
+                      JsxRuntime.jsx("th", {
+                        children: "Singular (umu-)",
+                        className: tableHeader
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "Plural (aba-)",
+                        className: tableHeader
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "Meaning",
+                        className: tableHeader
+                      })
+                    ]
+                  }),
+                  className: "bg-slate-50"
+                }),
+                JsxRuntime.jsxs("tbody", {
+                  children: [
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "umugabo",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "abagabo",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "man, husband",
+                          className: tableCell
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "umugore",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "abagore",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "woman, wife",
+                          className: tableCell
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "umuhungu",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "abahungu",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "boy, son",
+                          className: tableCell
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "umukobwa",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "abakobwa",
+                          className: tableCell
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "girl, daughter",
+                          className: tableCell
+                        })
+                      ]
+                    })
+                  ]
+                })
+              ],
+              className: "w-full text-left border-collapse"
+            }),
+            className: "overflow-hidden rounded-lg border border-slate-200"
+          })
+        ],
+        className: "mb-8"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Basic Verbs",
+            className: sectionTitle
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              "Singular verb prefix: ",
+              JsxRuntime.jsx("span", {
+                children: "a-",
+                className: "font-mono font-bold text-pink-600"
+              }),
+              " | Plural verb prefix: ",
+              JsxRuntime.jsx("span", {
+                children: "ba-",
+                className: "font-mono font-bold text-pink-600"
+              })
+            ],
+            className: "mb-4"
+          }),
+          JsxRuntime.jsx("div", {
+            children: [
+              [
+                "arakora",
+                "barakora",
+                "work(ing)"
+              ],
+              [
+                "aragenda",
+                "baragenda",
+                "go(ing) / walking"
+              ],
+              [
+                "ararima",
+                "bararima",
+                "hoe(ing)"
+              ]
+            ].map(param => {
+              let sing = param[0];
+              return JsxRuntime.jsx("div", {
+                children: JsxRuntime.jsxs("div", {
+                  children: [
+                    JsxRuntime.jsxs("div", {
+                      children: [
+                        JsxRuntime.jsx("span", {
+                          children: sing,
+                          className: "block font-mono text-indigo-600 italic"
+                        }),
+                        JsxRuntime.jsx("span", {
+                          children: param[1],
+                          className: "block font-mono text-indigo-600 italic"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsx("span", {
+                      children: param[2],
+                      className: "text-slate-400 text-sm italic"
+                    })
+                  ],
+                  className: "flex justify-between items-center"
+                }),
+                className: "p-3 border border-slate-100 rounded hover:bg-slate-50 transition-colors"
+              }, sing);
+            }),
+            className: "grid grid-cols-1 md:grid-cols-2 gap-4"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "Note: These verbs may stand alone with no noun or pronoun subject expressed when the antecedent is known.",
+            className: "mt-6 text-sm text-slate-500 italic"
+          })
+        ]
+      })
+    ],
+    className: "max-w-3xl mx-auto my-8 p-8 bg-white shadow-lg rounded-xl border border-slate-200 font-sans text-slate-700 leading-relaxed"
+  });
+}
+
+let Content = {
+  make: Lesson1$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson1$Content, {});
 
 let l_vocabulary = [
   [
@@ -139,10 +332,9 @@ let l_quiz = [
         answer: "The women are hoeing"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "6. Abagabo bararima.",
-        answer: "The men are hoeing",
-        hint: "Plural of men."
+        answer: "The men are hoeing"
       },
       {
         TAG: "TextInput",
@@ -215,10 +407,9 @@ let l_quiz = [
         answer: "Umukobwa aragenda"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "7. Some boys are working.",
-        answer: "Abahungu barakora",
-        hint: "Abahungu..."
+        answer: "Abahungu barakora"
       },
       {
         TAG: "TextInput",
@@ -263,6 +454,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */

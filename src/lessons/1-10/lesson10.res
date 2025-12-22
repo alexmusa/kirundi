@@ -2,7 +2,13 @@ open Lesson
 
 let l: lesson = {
   title: "LESSON 10: Review",
-  content: <> </>,
+  content: 
+    <div className="p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal">
+      /* Header Section */
+      <div className="border-b border-black text-center pb-1 mb-6">
+        <b className="uppercase"> {React.string("Lesson 10: Review")} </b>
+      </div>
+    </div>,
   vocabulary: [],
   examples: [],
 quiz: [
@@ -100,35 +106,35 @@ quiz: [
   {
     title: "II. Adjective Agreement (-iza)",
     questions: [
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'umukobwa' (singular) and translate.",
         answer: "umukobwa mwiza – good girl",
-        hint: "Use class 1 agreement",
+
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'abakobwa' (plural) and translate.",
         answer: "abakobwa beza – good girls",
-        hint: "Plural of umukobwa",
+
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'umutsima' (singular) and translate.",
         answer: "umutsima mwiza – good bread",
-        hint: "Class 2 singular",
+
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'imitsima' (plural) and translate.",
         answer: "imitsima myiza – good bread (plural)",
-        hint: "Plural of umutsima",
+
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'imbwa' (singular) and translate.",
         answer: "imbwa nziza – good dog",
-        hint: "N-class noun",
+
       }),
-      PartialInput({
+      TextInput({
         prompt: "Make -iza agree with 'imbwa' (plural) and translate.",
         answer: "imbwa nziza – good dogs",
-        hint: "Same form in plural",
+
       }),
     ],
   },

@@ -2,144 +2,254 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-let l_content = JsxRuntime.jsxs(JsxRuntime.Fragment, {
-  children: [
-    JsxRuntime.jsxs("p", {
-      children: [
-        "The possessive adjective consists of a prefix (object owned) and a suffix (the owner). For Class 1, the singular prefix is ",
-        JsxRuntime.jsx("strong", {
-          children: "wa-"
+function Lesson3$Content(props) {
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 3: Possessive Adjective",
+          className: "text-lg font-bold uppercase tracking-wide"
         }),
-        " and the plural is ",
-        JsxRuntime.jsx("strong", {
-          children: "ba-"
-        }),
-        "."
-      ]
-    }),
-    JsxRuntime.jsxs("table", {
-      children: [
-        JsxRuntime.jsx("thead", {
-          children: JsxRuntime.jsxs("tr", {
+        className: "border-b border-black pb-1 mb-6 text-center"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
             children: [
-              JsxRuntime.jsx("th", {
-                children: "Suffix"
+              JsxRuntime.jsx("p", {
+                children: "umūntu – person"
               }),
-              JsxRuntime.jsx("th", {
-                children: "Singular (wa-)"
+              JsxRuntime.jsx("p", {
+                children: "umukozi – workman, employee"
               }),
-              JsxRuntime.jsx("th", {
-                children: "Plural (ba-)"
+              JsxRuntime.jsx("p", {
+                children: "umutāma – old man"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Umukiza – Savior"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "aravuga – he/she is speaking"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ego(me) – yes, Note: ego, or just ē, is common for yes, but ‘egome’ is more emphatic"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "oya(ye) – no, Likewise, oyaye is more emphatic then oya."
               })
-            ]
+            ],
+            className: "ml-6 space-y-1"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "Note: Observe especially the pronunciation of umuntu. It is almost as if the ‘ntu’ were blown through the nose.",
+            className: "ml-6 mt-4 italic text-sm"
           })
-        }),
-        JsxRuntime.jsxs("tbody", {
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsx("hr", {
+        className: "my-6 border-transparent"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "5.",
+                className: "font-bold mr-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "The possessive adjective ",
+                    className: "font-bold inline"
+                  }),
+                  JsxRuntime.jsx("span", {
+                    children: "is made up of two parts: the prefix which refers to and agrees with the object owned, and the suffix which refers to and agrees with the owner. (This agreement refers to the system of prefixes for the various classes as indicated in Par. 1)"
+                  })
+                ]
+              })
+            ],
+            className: "flex items-start mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "umwana wa-nje – my child",
+                className: "italic"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "wa",
+                    className: "font-mono bg-gray-100 px-1"
+                  }),
+                  " is the prefix which agrees with the first class singular. ",
+                  JsxRuntime.jsx("span", {
+                    children: "-nje",
+                    className: "font-mono bg-gray-100 px-1"
+                  }),
+                  " means ‘me’. Thus wanje means ‘of me’, that is ‘my’. (Do not try to use –nje for ‘me’ in other instances.) The plural prefix is ",
+                  JsxRuntime.jsx("span", {
+                    children: "ba-.",
+                    className: "font-mono bg-gray-100 px-1"
+                  })
+                ],
+                className: "mt-2"
+              })
+            ],
+            className: "ml-12 mb-4"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "In this lesson we introduce only the personal possessives (that is, the owner being a person). Other forms will be taught later.",
+            className: "ml-6 mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "-nje - me"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-cu - us"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-we - you (sing.)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-nyu - you (pl.)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-iwe - him, her"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-bo - them"
+              })
+            ],
+            className: "ml-12 grid grid-cols-2 gap-x-8 max-w-sm mb-6"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "Singular"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "Plural"
+              })
+            ],
+            className: "ml-12 grid grid-cols-2 gap-x-8 font-semibold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "wanje - my"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "wawe - your (sing.)"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "wiwe - his, hers"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "wacu - our"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "wanyu - your (pl.)"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "wabo - their"
+                  })
+                ],
+                className: "space-y-1"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "banje - my"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "bawe - your"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "biwe - his, hers"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "bacu - our"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "banyu - your"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "babo - their"
+                  })
+                ],
+                className: "space-y-1"
+              })
+            ],
+            className: "ml-12 grid grid-cols-2 gap-x-8 mb-6 border-t pt-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Note the contraction in 3rd person singular: ",
+                    className: "italic"
+                  }),
+                  "wa-iwe = wiwe, ba-iwe = biwe."
+                ]
+              }),
+              JsxRuntime.jsx("p", {
+                children: "e.g. umwana wiwe – his child, abana biwe – his children, abana babo – their children",
+                className: "italic"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Note: the possessive regularly follows the noun it modifies.",
+                className: "font-medium underline decoration-gray-300"
+              })
+            ],
+            className: "ml-12 space-y-3"
+          })
+        ],
+        className: "mb-8"
+      }),
+      JsxRuntime.jsx("section", {
+        children: JsxRuntime.jsxs("div", {
           children: [
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "-nje (me)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wanje (my)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "banje (my)"
-                })
-              ]
+            JsxRuntime.jsx("span", {
+              children: "6.",
+              className: "font-bold mr-4"
             }),
-            JsxRuntime.jsxs("tr", {
+            JsxRuntime.jsxs("div", {
               children: [
-                JsxRuntime.jsx("td", {
-                  children: "-we (you sing.)"
+                JsxRuntime.jsx("p", {
+                  children: "Mbega.",
+                  className: "font-bold inline"
                 }),
-                JsxRuntime.jsx("td", {
-                  children: "wawe (your)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "bawe (your)"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "-iwe (him/her)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wiwe (his/hers)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "biwe (his/hers)"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "-cu (us)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wacu (our)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "bacu (our)"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "-nyu (you pl.)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wanyu (your)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "banyu (your)"
-                })
-              ]
-            }),
-            JsxRuntime.jsxs("tr", {
-              children: [
-                JsxRuntime.jsx("td", {
-                  children: "-bo (them)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "wabo (their)"
-                }),
-                JsxRuntime.jsx("td", {
-                  children: "babo (their)"
+                JsxRuntime.jsx("span", {
+                  children: " This word introduces a question, but is not translated. It is not necessary always to use it in questions. It elides before a vowel. e.g. Mbeg’ abigishwa bararima? – Are the pupils hoeing?"
                 })
               ]
             })
-          ]
+          ],
+          className: "flex items-start"
         })
-      ],
-      className: "min-w-full divide-y"
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        JsxRuntime.jsx("strong", {
-          children: "Note:"
-        }),
-        " The 3rd person singular contracts: wa-iwe = wiwe, ba-iwe = biwe. The possessive regularly follows the noun it modifies."
-      ],
-      style: {
-        marginTop: "1rem"
-      }
-    }),
-    JsxRuntime.jsxs("p", {
-      children: [
-        JsxRuntime.jsx("strong", {
-          children: "Mbega:"
-        }),
-        " Introduces a question but is not translated. It elides before a vowel (e.g., Mbeg' abigishwa...)."
-      ]
-    })
-  ]
-});
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 font-serif text-gray-800 bg-white leading-relaxed"
+  });
+}
+
+let Content = {
+  make: Lesson3$Content
+};
+
+let l_content = JsxRuntime.jsx(Lesson3$Content, {});
 
 let l_vocabulary = [
   [
@@ -216,10 +326,9 @@ let l_quiz = [
         answer: "Your workers are hoeing"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "4. Umwana wawe n’umuhungu.",
-        answer: "Your child is a boy",
-        hint: "wawe indicates singular 'your'"
+        answer: "Your child is a boy"
       },
       {
         TAG: "TextInput",
@@ -282,10 +391,9 @@ let l_quiz = [
         answer: "Abana bawe"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "6. Her pupils.",
-        answer: "Abigishwa biwe",
-        hint: "Use the plural 'ba' prefix for the possessive"
+        answer: "Abigishwa biwe"
       },
       {
         TAG: "TextInput",
@@ -333,10 +441,9 @@ let l_quiz = [
         answer: "Abana bacu bararima"
       },
       {
-        TAG: "PartialInput",
+        TAG: "TextInput",
         prompt: "14. Your (pl.) children are girls.",
-        answer: "Abana banyu n'abakobwa",
-        hint: "Remember the conjunction 'n'' for 'are'"
+        answer: "Abana banyu n'abakobwa"
       },
       {
         TAG: "TextInput",
@@ -356,6 +463,7 @@ let l = {
 };
 
 export {
+  Content,
   l,
 }
 /* l Not a pure module */
