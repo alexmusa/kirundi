@@ -6,8 +6,8 @@ external vite: string = "default"
 
 open Webapi.Dom
 
-// Define the possible screens
-type screen = MainMenu | LessonView
+// 1. Added Settings to the screen type
+type screen = MainMenu | LessonView | Settings
 
 @react.component
 let make = () => {
@@ -36,7 +36,7 @@ let make = () => {
   let goToPrev = _ => setSelectedIdx(prev => Math.Int.max(prev - 1, 0))
 
   let handleReset = _ => {
-    let confirm = window->Window.confirm("Are you sure you want to reset your progress?")
+    let confirm = window->Window.confirm("Are you sure you want to reset all progress? This cannot be undone.")
     if confirm {
       Dom.Storage.removeItem(localStorageKey, Dom.Storage.localStorage)
       setSelectedIdx(_ => 0)
@@ -57,28 +57,55 @@ let make = () => {
   let renderMainMenu = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4">
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2"> {React.string("Course Navigator")} </h1>
-        <p className="text-gray-600"> {React.string("Master your skills one lesson at a time.")} </p>
+        <h1 className="text-4xl font-bold text-gray-900 mb-2"> {React.string("Learn Kirundi")} </h1>
+        <p className="text-gray-600"> {React.string("based off work from Elizabeth E. Cox.")} </p>
       </div>
       
-      <button
-        onClick={_ => setCurrentScreen(_ => LessonView)}
-        className="group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all">
-        {React.string(selectedIdx === 0 ? "Start Learning" : "Continue Lesson")}
-        <span className="ml-2 group-hover:translate-x-1 transition-transform"> {React.string("→")} </span>
-      </button>
+      <div className="flex flex-col gap-4 w-full max-w-xs">
+        <button
+          onClick={_ => setCurrentScreen(_ => LessonView)}
+          className="group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all">
+          {React.string(selectedIdx === 0 ? "Start Learning" : "Continue Lesson")}
+          <span className="ml-2 group-hover:translate-x-1 transition-transform"> {React.string("→")} </span>
+        </button>
 
-      {selectedIdx > 0 
-        ? <button 
-            onClick={handleReset}
-            className="mt-6 text-sm text-gray-400 hover:text-red-500 transition-colors">
-            {React.string("Reset progress and start over")}
-          </button>
-        : React.null}
+        <button 
+          onClick={_ => setCurrentScreen(_ => Settings)}
+          className="text-gray-500 hover:text-indigo-600 font-medium transition-colors">
+          {React.string("Settings")}
+        </button>
+      </div>
     </div>
   }
 
-  // 2. The Lesson Viewer Screen
+  // 2. The Settings Menu
+  let renderSettingsMenu = () => {
+    <div className="flex flex-col min-h-screen bg-gray-50 p-6 max-w-2xl mx-auto">
+      <button 
+        onClick={_ => setCurrentScreen(_ => MainMenu)}
+        className="mb-8 text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium">
+        {React.string("← Back to Menu")}
+      </button>
+
+      <h2 className="text-3xl font-bold text-gray-900 mb-6"> {React.string("Settings")} </h2>
+      
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+        <div className="p-6 border-b border-gray-100 flex justify-between items-center">
+          <div>
+            <h3 className="font-semibold text-gray-900"> {React.string("Learning Progress")} </h3>
+            <p className="text-sm text-gray-500"> {React.string("Reset all your completed lessons and start from the beginning.")} </p>
+          </div>
+          <button
+            onClick={handleReset}
+            className="bg-red-50 text-red-600 hover:bg-red-100 px-4 py-2 rounded-lg font-medium transition-colors">
+            {React.string("Reset Progress")}
+          </button>
+        </div>
+      </div>
+    </div>
+  }
+
+  // 3. The Lesson Viewer Screen
   let renderLessonContainer = () => {
     <div className="flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans">
       <div className="flex justify-between items-center mb-8">
@@ -103,9 +130,14 @@ let make = () => {
           </select>
           
           <button
-            onClick={handleReset}
-            className="text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors">
-            {React.string("Reset")}
+            onClick={_ => setCurrentScreen(_ => Settings)}
+            className="p-2 text-gray-400 hover:text-gray-600"
+            title="Settings">
+            // Simple SVG Settings Gear
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
           </button>
         </div>
       </div>
@@ -142,6 +174,7 @@ let make = () => {
   // --- Main Render Logic ---
   switch currentScreen {
   | MainMenu => renderMainMenu()
+  | Settings => renderSettingsMenu()
   | LessonView => renderLessonContainer()
   }
 }

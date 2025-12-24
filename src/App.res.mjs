@@ -32,7 +32,7 @@ function App(props) {
   let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
   let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleReset = param => {
-    let confirm = window.confirm("Are you sure you want to reset your progress?");
+    let confirm = window.confirm("Are you sure you want to reset all progress? This cannot be undone.");
     if (confirm) {
       Dom_storage.removeItem(localStorageKey, localStorage);
       setSelectedIdx(param => 0);
@@ -49,34 +49,78 @@ function App(props) {
       JsxRuntime.jsxs("div", {
         children: [
           JsxRuntime.jsx("h1", {
-            children: "Course Navigator",
+            children: "Learn Kirundi",
             className: "text-4xl font-bold text-gray-900 mb-2"
           }),
           JsxRuntime.jsx("p", {
-            children: "Master your skills one lesson at a time.",
+            children: "based off work from Elizabeth E. Cox.",
             className: "text-gray-600"
           })
         ],
         className: "text-center mb-8"
       }),
-      JsxRuntime.jsxs("button", {
+      JsxRuntime.jsxs("div", {
         children: [
-          selectedIdx === 0 ? "Start Learning" : "Continue Lesson",
-          JsxRuntime.jsx("span", {
-            children: "→",
-            className: "ml-2 group-hover:translate-x-1 transition-transform"
+          JsxRuntime.jsxs("button", {
+            children: [
+              selectedIdx === 0 ? "Start Learning" : "Continue Lesson",
+              JsxRuntime.jsx("span", {
+                children: "→",
+                className: "ml-2 group-hover:translate-x-1 transition-transform"
+              })
+            ],
+            className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
+            onClick: param => setCurrentScreen(param => "LessonView")
+          }),
+          JsxRuntime.jsx("button", {
+            children: "Settings",
+            className: "text-gray-500 hover:text-indigo-600 font-medium transition-colors",
+            onClick: param => setCurrentScreen(param => "Settings")
           })
         ],
-        className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
-        onClick: param => setCurrentScreen(param => "LessonView")
-      }),
-      selectedIdx > 0 ? JsxRuntime.jsx("button", {
-          children: "Reset progress and start over",
-          className: "mt-6 text-sm text-gray-400 hover:text-red-500 transition-colors",
-          onClick: handleReset
-        }) : null
+        className: "flex flex-col gap-4 w-full max-w-xs"
+      })
     ],
     className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4"
+  });
+  let renderSettingsMenu = () => JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("button", {
+        children: "← Back to Menu",
+        className: "mb-8 text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium",
+        onClick: param => setCurrentScreen(param => "MainMenu")
+      }),
+      JsxRuntime.jsx("h2", {
+        children: "Settings",
+        className: "text-3xl font-bold text-gray-900 mb-6"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("h3", {
+                  children: "Learning Progress",
+                  className: "font-semibold text-gray-900"
+                }),
+                JsxRuntime.jsx("p", {
+                  children: "Reset all your completed lessons and start from the beginning.",
+                  className: "text-sm text-gray-500"
+                })
+              ]
+            }),
+            JsxRuntime.jsx("button", {
+              children: "Reset Progress",
+              className: "bg-red-50 text-red-600 hover:bg-red-100 px-4 py-2 rounded-lg font-medium transition-colors",
+              onClick: handleReset
+            })
+          ],
+          className: "p-6 border-b border-gray-100 flex justify-between items-center"
+        }),
+        className: "bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden"
+      })
+    ],
+    className: "flex flex-col min-h-screen bg-gray-50 p-6 max-w-2xl mx-auto"
   });
   let renderLessonContainer = () => JsxRuntime.jsxs("div", {
     children: [
@@ -99,9 +143,29 @@ function App(props) {
                 onChange: handleChange
               }),
               JsxRuntime.jsx("button", {
-                children: "Reset",
-                className: "text-xs text-red-600 hover:text-red-800 font-medium border border-red-200 px-3 py-2 rounded hover:bg-red-50 transition-colors",
-                onClick: handleReset
+                children: JsxRuntime.jsxs("svg", {
+                  children: [
+                    JsxRuntime.jsx("path", {
+                      d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
+                      strokeLinecap: "round",
+                      strokeLinejoin: "round",
+                      strokeWidth: "2"
+                    }),
+                    JsxRuntime.jsx("path", {
+                      d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z",
+                      strokeLinecap: "round",
+                      strokeLinejoin: "round",
+                      strokeWidth: "2"
+                    })
+                  ],
+                  className: "w-5 h-5",
+                  fill: "none",
+                  stroke: "currentColor",
+                  viewBox: "0 0 24 24"
+                }),
+                className: "p-2 text-gray-400 hover:text-gray-600",
+                title: "Settings",
+                onClick: param => setCurrentScreen(param => "Settings")
               })
             ],
             className: "flex items-center gap-4"
@@ -139,10 +203,13 @@ function App(props) {
     ],
     className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
   });
-  if (match[0] === "MainMenu") {
-    return renderMainMenu();
-  } else {
-    return renderLessonContainer();
+  switch (match[0]) {
+    case "MainMenu" :
+      return renderMainMenu();
+    case "LessonView" :
+      return renderLessonContainer();
+    case "Settings" :
+      return renderSettingsMenu();
   }
 }
 
