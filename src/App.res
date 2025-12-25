@@ -52,33 +52,6 @@ let make = () => {
   let currentLesson = Belt.Array.get(LessonData.lessons, selectedIdx)
 
   // --- UI Components ---
-  // 2. The Settings Menu
-  let renderSettingsMenu = () => {
-    <div className="flex flex-col min-h-screen bg-gray-50 p-6 max-w-2xl mx-auto">
-      <button 
-        onClick={_ => setCurrentScreen(_ => MainMenu)}
-        className="mb-8 text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium">
-        {React.string("← Back to Menu")}
-      </button>
-
-      <h2 className="text-3xl font-bold text-gray-900 mb-6"> {React.string("Settings")} </h2>
-      
-      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-        <div className="p-6 border-b border-gray-100 flex justify-between items-center">
-          <div>
-            <h3 className="font-semibold text-gray-900"> {React.string("Learning Progress")} </h3>
-            <p className="text-sm text-gray-500"> {React.string("Reset all your completed lessons and start from the beginning.")} </p>
-          </div>
-          <button
-            onClick={handleReset}
-            className="bg-red-50 text-red-600 hover:bg-red-100 px-4 py-2 rounded-lg font-medium transition-colors">
-            {React.string("Reset Progress")}
-          </button>
-        </div>
-      </div>
-    </div>
-  }
-
   // 3. The Lesson Viewer Screen
   let renderLessonContainer = () => {
     <div className="flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans">
@@ -147,13 +120,17 @@ let make = () => {
 
   // --- Main Render Logic ---
   switch currentScreen {
-  | MainMenu => 
-      <MainMenu 
-        onStart={_ => setCurrentScreen(_ => LessonView)} 
-        onSettings={_ => setCurrentScreen(_ => Settings)}
-        isStarted={selectedIdx > 0}
-      />
-  | Settings => renderSettingsMenu()
+  | MainMenu =>
+    <MainMenu
+      onStart={_ => setCurrentScreen(_ => LessonView)}
+      onSettings={_ => setCurrentScreen(_ => Settings)}
+      isStarted={selectedIdx > 0}
+    />
+  | Settings => 
+    <Settings 
+      onBack={_ => setCurrentScreen(_ => MainMenu)} 
+      onReset={handleReset} 
+    />
   | LessonView => renderLessonContainer()
   }
 }

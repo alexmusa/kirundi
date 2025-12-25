@@ -4,6 +4,7 @@ import * as React from "react";
 import * as Lesson from "./Lesson.res.mjs";
 import * as Belt_Int from "@rescript/runtime/lib/es6/Belt_Int.js";
 import * as MainMenu from "./MainMenu.res.mjs";
+import * as Settings from "./Settings.res.mjs";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
 import * as LessonData from "./lessons/LessonData.res.mjs";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
@@ -45,45 +46,6 @@ function App(props) {
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
-  let renderSettingsMenu = () => JsxRuntime.jsxs("div", {
-    children: [
-      JsxRuntime.jsx("button", {
-        children: "← Back to Menu",
-        className: "mb-8 text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium",
-        onClick: param => setCurrentScreen(param => "MainMenu")
-      }),
-      JsxRuntime.jsx("h2", {
-        children: "Settings",
-        className: "text-3xl font-bold text-gray-900 mb-6"
-      }),
-      JsxRuntime.jsx("div", {
-        children: JsxRuntime.jsxs("div", {
-          children: [
-            JsxRuntime.jsxs("div", {
-              children: [
-                JsxRuntime.jsx("h3", {
-                  children: "Learning Progress",
-                  className: "font-semibold text-gray-900"
-                }),
-                JsxRuntime.jsx("p", {
-                  children: "Reset all your completed lessons and start from the beginning.",
-                  className: "text-sm text-gray-500"
-                })
-              ]
-            }),
-            JsxRuntime.jsx("button", {
-              children: "Reset Progress",
-              className: "bg-red-50 text-red-600 hover:bg-red-100 px-4 py-2 rounded-lg font-medium transition-colors",
-              onClick: handleReset
-            })
-          ],
-          className: "p-6 border-b border-gray-100 flex justify-between items-center"
-        }),
-        className: "bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden"
-      })
-    ],
-    className: "flex flex-col min-h-screen bg-gray-50 p-6 max-w-2xl mx-auto"
-  });
   let renderLessonContainer = () => JsxRuntime.jsxs("div", {
     children: [
       JsxRuntime.jsxs("div", {
@@ -175,7 +137,10 @@ function App(props) {
     case "LessonView" :
       return renderLessonContainer();
     case "Settings" :
-      return renderSettingsMenu();
+      return JsxRuntime.jsx(Settings.make, {
+        onBack: () => setCurrentScreen(param => "MainMenu"),
+        onReset: handleReset
+      });
   }
 }
 
