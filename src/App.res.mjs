@@ -3,6 +3,7 @@
 import * as React from "react";
 import * as Lesson from "./Lesson.res.mjs";
 import * as Belt_Int from "@rescript/runtime/lib/es6/Belt_Int.js";
+import * as MainMenu from "./MainMenu.res.mjs";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
 import * as LessonData from "./lessons/LessonData.res.mjs";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
@@ -44,45 +45,6 @@ function App(props) {
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
   let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
-  let renderMainMenu = () => JsxRuntime.jsxs("div", {
-    children: [
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsx("h1", {
-            children: "Learn Kirundi",
-            className: "text-4xl font-bold text-gray-900 mb-2"
-          }),
-          JsxRuntime.jsx("p", {
-            children: "based off work from Elizabeth E. Cox.",
-            className: "text-gray-600"
-          })
-        ],
-        className: "text-center mb-8"
-      }),
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsxs("button", {
-            children: [
-              selectedIdx === 0 ? "Start Learning" : "Continue Lesson",
-              JsxRuntime.jsx("span", {
-                children: "→",
-                className: "ml-2 group-hover:translate-x-1 transition-transform"
-              })
-            ],
-            className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
-            onClick: param => setCurrentScreen(param => "LessonView")
-          }),
-          JsxRuntime.jsx("button", {
-            children: "Settings",
-            className: "text-gray-500 hover:text-indigo-600 font-medium transition-colors",
-            onClick: param => setCurrentScreen(param => "Settings")
-          })
-        ],
-        className: "flex flex-col gap-4 w-full max-w-xs"
-      })
-    ],
-    className: "flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4"
-  });
   let renderSettingsMenu = () => JsxRuntime.jsxs("div", {
     children: [
       JsxRuntime.jsx("button", {
@@ -205,7 +167,11 @@ function App(props) {
   });
   switch (match[0]) {
     case "MainMenu" :
-      return renderMainMenu();
+      return JsxRuntime.jsx(MainMenu.make, {
+        onStart: () => setCurrentScreen(param => "LessonView"),
+        onSettings: () => setCurrentScreen(param => "Settings"),
+        isStarted: selectedIdx > 0
+      });
     case "LessonView" :
       return renderLessonContainer();
     case "Settings" :

@@ -52,32 +52,6 @@ let make = () => {
   let currentLesson = Belt.Array.get(LessonData.lessons, selectedIdx)
 
   // --- UI Components ---
-  
-  // 1. The Main Menu Screen
-  let renderMainMenu = () => {
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4">
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2"> {React.string("Learn Kirundi")} </h1>
-        <p className="text-gray-600"> {React.string("based off work from Elizabeth E. Cox.")} </p>
-      </div>
-      
-      <div className="flex flex-col gap-4 w-full max-w-xs">
-        <button
-          onClick={_ => setCurrentScreen(_ => LessonView)}
-          className="group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all">
-          {React.string(selectedIdx === 0 ? "Start Learning" : "Continue Lesson")}
-          <span className="ml-2 group-hover:translate-x-1 transition-transform"> {React.string("→")} </span>
-        </button>
-
-        <button 
-          onClick={_ => setCurrentScreen(_ => Settings)}
-          className="text-gray-500 hover:text-indigo-600 font-medium transition-colors">
-          {React.string("Settings")}
-        </button>
-      </div>
-    </div>
-  }
-
   // 2. The Settings Menu
   let renderSettingsMenu = () => {
     <div className="flex flex-col min-h-screen bg-gray-50 p-6 max-w-2xl mx-auto">
@@ -173,7 +147,12 @@ let make = () => {
 
   // --- Main Render Logic ---
   switch currentScreen {
-  | MainMenu => renderMainMenu()
+  | MainMenu => 
+      <MainMenu 
+        onStart={_ => setCurrentScreen(_ => LessonView)} 
+        onSettings={_ => setCurrentScreen(_ => Settings)}
+        isStarted={selectedIdx > 0}
+      />
   | Settings => renderSettingsMenu()
   | LessonView => renderLessonContainer()
   }
