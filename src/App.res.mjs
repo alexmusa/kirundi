@@ -7,6 +7,7 @@ import * as MainMenu from "./MainMenu.res.mjs";
 import * as Settings from "./Settings.res.mjs";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
 import * as LessonData from "./data/LessonData.res.mjs";
+import * as Stdlib_Int from "@rescript/runtime/lib/es6/Stdlib_Int.js";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
 import ViteSvg from "./assets/vite.svg";
@@ -33,6 +34,11 @@ function App(props) {
   }, [selectedIdx]);
   let goToNext = () => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
   let goToPrev = () => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
+  let goToLessonId = id => {
+    let id$1 = Stdlib_Int.clamp(0, totalLessons - 1 | 0, id);
+    setSelectedIdx(param => id$1);
+    setCurrentScreen(param => "LessonView");
+  };
   let handleReset = param => {
     let confirm = window.confirm("Are you sure you want to reset all progress? This cannot be undone.");
     if (confirm) {
@@ -49,6 +55,7 @@ function App(props) {
     case "MainMenu" :
       return JsxRuntime.jsx(MainMenu.make, {
         onStart: () => setCurrentScreen(param => "LessonView"),
+        onLessonSelect: goToLessonId,
         onSettings: () => setCurrentScreen(param => "Settings"),
         isStarted: selectedIdx > 0
       });

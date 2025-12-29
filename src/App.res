@@ -32,6 +32,11 @@ let make = () => {
   // --- Handlers ---
   let goToNext = () => setSelectedIdx(prev => Math.Int.min(prev + 1, totalLessons - 1))
   let goToPrev = () => setSelectedIdx(prev => Math.Int.max(prev - 1, 0))
+  let goToLessonId = (id) => {
+    let id = Int.clamp(id, ~min=0, ~max=(totalLessons - 1))
+    setSelectedIdx(_ => id)
+    setCurrentScreen(_ => LessonView)
+  }
 
   let handleReset = _ => {
     let confirm = window->Window.confirm(
@@ -56,6 +61,7 @@ let make = () => {
       onStart={_ => setCurrentScreen(_ => LessonView)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
       isStarted={selectedIdx > 0}
+      onLessonSelect=goToLessonId
     />
   | Settings => 
     <Settings 
