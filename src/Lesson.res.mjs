@@ -24,16 +24,9 @@ let Vocabulary = {
 
 function Lesson$LessonView(props) {
   let lesson = props.lesson;
-  return JsxRuntime.jsxs("div", {
+  return JsxRuntime.jsxs(JsxRuntime.Fragment, {
     children: [
-      JsxRuntime.jsx("h1", {
-        children: lesson.title,
-        className: "text-3xl font-extrabold tracking-tight text-gray-900"
-      }),
-      JsxRuntime.jsx("div", {
-        children: lesson.content,
-        className: "space-y-4 text-gray-700"
-      }),
+      lesson.content,
       JsxRuntime.jsxs("section", {
         children: [
           JsxRuntime.jsx("h2", {
@@ -46,8 +39,7 @@ function Lesson$LessonView(props) {
         ],
         className: "space-y-6"
       })
-    ],
-    className: "mx-auto max-w-3xl space-y-8 px-4 py-8"
+    ]
   });
 }
 
@@ -66,9 +58,17 @@ function Lesson$Container(props) {
     children: [
       JsxRuntime.jsxs("div", {
         children: [
-          JsxRuntime.jsx("button", {
-            children: "← Back to Menu",
-            className: "text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium",
+          JsxRuntime.jsxs("button", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "← "
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Back to Menu",
+                className: "hidden sm:inline ml-1"
+              })
+            ],
+            className: "text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium flex-shrink-0",
             onClick: param => onBack()
           }),
           JsxRuntime.jsxs("div", {
@@ -78,7 +78,7 @@ function Lesson$Container(props) {
                   children: lesson.title,
                   value: index.toString()
                 }, index.toString())),
-                className: "p-2 border border-gray-300 rounded-md bg-white text-sm",
+                className: "p-2 border border-gray-300 rounded-md bg-white text-sm min-w-0 flex-1 sm:flex-none max-w-[200px] sm:max-w-xs truncate",
                 value: selectedIdx.toString(),
                 onChange: props.onSelectChange
               }),
@@ -103,21 +103,18 @@ function Lesson$Container(props) {
                   stroke: "currentColor",
                   viewBox: "0 0 24 24"
                 }),
-                className: "p-2 text-gray-400 hover:text-gray-600",
+                className: "p-2 text-gray-400 hover:text-gray-600 flex-shrink-0",
                 title: "Settings",
                 onClick: param => onSettings()
               })
             ],
-            className: "flex items-center gap-4"
+            className: "flex items-center gap-2 sm:gap-4 min-w-0"
           })
         ],
-        className: "flex justify-between items-center mb-8"
+        className: "sticky top-0 z-10 bg-white flex justify-between items-center py-4 px-4 sm:px-6 border-b border-gray-100 gap-2"
       }),
-      JsxRuntime.jsx("div", {
-        children: JsxRuntime.jsx(Lesson$LessonView, {
-          lesson: props.lesson
-        }),
-        className: "flex-grow"
+      JsxRuntime.jsx(Lesson$LessonView, {
+        lesson: props.lesson
       }),
       JsxRuntime.jsxs("div", {
         children: [
@@ -138,10 +135,10 @@ function Lesson$Container(props) {
             onClick: param => onNext()
           })
         ],
-        className: "mt-12 flex justify-between items-center border-t pt-6 pb-12"
+        className: "mt-12 flex justify-between items-center border-t pt-6 px-6 pb-6"
       })
     ],
-    className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
+    className: "flex flex-col min-h-screen max-w-4xl mx-auto font-sans"
   });
 }
 

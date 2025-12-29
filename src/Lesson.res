@@ -18,14 +18,11 @@ module Vocabulary = {
 module LessonView = {
   @react.component
   let make = (~lesson: lesson) =>
-    <div className="mx-auto max-w-3xl space-y-8 px-4 py-8">
-      <h1 className="text-3xl font-extrabold tracking-tight text-gray-900">
-        {lesson.title->React.string}
-      </h1>
-
-      <div className="space-y-4 text-gray-700">
+  <>
+    // <div className="mx-auto max-w-3xl space-y-8 px-4 py-8">
+      // <div className="space-y-4 text-gray-700">
         {lesson.content}
-      </div>
+      // </div>
 
       <section className="space-y-6">
         <h2 className="text-xl font-semibold text-gray-900">
@@ -38,7 +35,8 @@ module LessonView = {
         )
         ->React.array}
       </section>
-    </div>
+    // </div>
+    </>
 }
 
 module Container = {
@@ -53,19 +51,22 @@ module Container = {
     ~onPrev: unit => unit,
     ~onSelectChange: ReactEvent.Form.t => unit,
   ) => {
-    <div className="flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans">
+    <div className="flex flex-col min-h-screen max-w-4xl mx-auto font-sans">
       /* Header Navigation */
-      <div className="flex justify-between items-center mb-8">
+      <div className="sticky top-0 z-10 bg-white flex justify-between items-center py-4 px-4 sm:px-6 border-b border-gray-100 gap-2">
         <button
           onClick={_ => onBack()}
-          className="text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium">
-          {React.string("← Back to Menu")}
+          className="text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium flex-shrink-0">
+          <span>{React.string("← ")}</span>
+          <span className="hidden sm:inline ml-1">{React.string("Back to Menu")}</span>
         </button>
-        <div className="flex items-center gap-4">
+
+        /* Right Group */
+        <div className="flex items-center gap-2 sm:gap-4 min-w-0">
           <select
             value={Int.toString(selectedIdx)}
             onChange={onSelectChange}
-            className="p-2 border border-gray-300 rounded-md bg-white text-sm">
+            className="p-2 border border-gray-300 rounded-md bg-white text-sm min-w-0 flex-1 sm:flex-none max-w-[200px] sm:max-w-xs truncate">
             {LessonData.lessons
             ->Belt.Array.mapWithIndex((index, lesson) => {
               <option key={Int.toString(index)} value={Int.toString(index)}>
@@ -74,9 +75,11 @@ module Container = {
             })
             ->React.array}
           </select>
+          
+          /* Settings Button */
           <button
             onClick={_ => onSettings()}
-            className="p-2 text-gray-400 hover:text-gray-600"
+            className="p-2 text-gray-400 hover:text-gray-600 flex-shrink-0"
             title="Settings">
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path
@@ -97,12 +100,10 @@ module Container = {
       </div>
 
       /* Content Area */
-      <div className="flex-grow">
-        <LessonView lesson />
-      </div>
+      <LessonView lesson />
 
       /* Footer Navigation */
-      <div className="mt-12 flex justify-between items-center border-t pt-6 pb-12">
+      <div className="mt-12 flex justify-between items-center border-t pt-6 px-6 pb-6">
         <button
           onClick={_ => onPrev()}
           disabled={selectedIdx === 0}
