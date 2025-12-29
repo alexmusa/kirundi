@@ -17,8 +17,8 @@ function Quiz$QuizQuestionView(props) {
   let checked = match$2[0];
   let feedback = (ok, text) => JsxRuntime.jsx("p", {
     children: text,
-    className: "mt-2 text-sm font-medium " + (
-      ok ? "text-green-600" : "text-red-600"
+    className: "mt-2 text-sm font-bold italic " + (
+      ok ? "text-green-800" : "text-red-800"
     )
   });
   let tmp;
@@ -28,17 +28,23 @@ function Quiz$QuizQuestionView(props) {
       children: [
         JsxRuntime.jsx("p", {
           children: question.prompt,
-          className: "font-medium text-gray-900"
+          className: "text-justify leading-normal"
         }),
-        JsxRuntime.jsx("input", {
-          className: "w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500",
-          value: userInput,
-          onChange: e => setUserInput(param => e.target.value)
-        }),
-        JsxRuntime.jsx("button", {
-          children: "Check",
-          className: "inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700",
-          onClick: param => setChecked(param => true)
+        JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("input", {
+              className: "flex-1 border-b border-black py-1 focus:outline-none focus:bg-gray-50 bg-transparent",
+              placeholder: "Type answer here...",
+              value: userInput,
+              onChange: e => setUserInput(param => e.target.value)
+            }),
+            JsxRuntime.jsx("button", {
+              children: "Check",
+              className: "border border-black px-4 py-1 text-sm font-bold uppercase hover:bg-black hover:text-white transition-colors",
+              onClick: param => setChecked(param => true)
+            })
+          ],
+          className: "flex flex-col sm:flex-row gap-2"
         }),
         checked ? feedback(userInput === answer, userInput === answer ? "✓ Correct" : "✗ Correct answer: " + answer) : null
       ]
@@ -50,28 +56,30 @@ function Quiz$QuizQuestionView(props) {
       children: [
         JsxRuntime.jsx("p", {
           children: question.prompt,
-          className: "font-medium text-gray-900"
+          className: "text-justify leading-normal"
         }),
         JsxRuntime.jsx("ul", {
-          children: options.map((opt, i) => JsxRuntime.jsx("li", {
-            children: JsxRuntime.jsxs("label", {
-              children: [
-                JsxRuntime.jsx("input", {
-                  className: "h-4 w-4 text-blue-600",
-                  checked: selected === i,
-                  type: "radio",
-                  onChange: param => setSelected(param => i)
-                }),
-                opt
-              ],
-              className: "flex cursor-pointer items-center gap-2 text-sm text-gray-700"
-            })
+          children: options.map((opt, i) => JsxRuntime.jsxs("li", {
+            children: [
+              JsxRuntime.jsx("input", {
+                className: "accent-black h-4 w-4",
+                checked: selected === i,
+                type: "radio",
+                onChange: param => setSelected(param => i)
+              }),
+              JsxRuntime.jsx("span", {
+                children: opt,
+                className: "cursor-pointer",
+                onClick: param => setSelected(param => i)
+              })
+            ],
+            className: "flex items-center gap-3"
           }, i.toString())),
-          className: "space-y-2"
+          className: "space-y-2 mt-2"
         }),
         JsxRuntime.jsx("button", {
           children: "Check",
-          className: "inline-flex items-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700",
+          className: "mt-2 border border-black px-4 py-1 text-sm font-bold uppercase hover:bg-black hover:text-white transition-colors",
           onClick: param => setChecked(param => true)
         }),
         checked ? feedback(selected === correctIndex, selected === correctIndex ? "✓ Correct" : "✗ Correct answer: " + Stdlib_Option.getOr(options[correctIndex], "error")) : null
@@ -79,8 +87,20 @@ function Quiz$QuizQuestionView(props) {
     });
   }
   return JsxRuntime.jsx("div", {
-    children: tmp,
-    className: "rounded-xl border border-gray-200 bg-white p-4 shadow-sm space-y-3"
+    children: JsxRuntime.jsxs("div", {
+      children: [
+        JsxRuntime.jsx("span", {
+          children: (props.index + 1 | 0).toString() + ".",
+          className: "font-bold"
+        }),
+        JsxRuntime.jsx("div", {
+          children: tmp,
+          className: "flex-1 space-y-4"
+        })
+      ],
+      className: "flex gap-x-4"
+    }),
+    className: "py-6 border-b border-gray-200 last:border-0 font-serif text-[11pt]"
   });
 }
 
@@ -92,20 +112,22 @@ function Quiz(props) {
   let section = props.section;
   return JsxRuntime.jsxs("section", {
     children: [
-      JsxRuntime.jsx("h3", {
-        children: section.title,
-        className: "text-lg font-semibold text-gray-900"
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h3", {
+          children: section.title,
+          className: "text-center font-bold uppercase text-lg tracking-tight"
+        }),
+        className: "border-b border-black pb-1 mb-4"
       }),
-      JsxRuntime.jsx("ol", {
-        children: section.questions.map((q, i) => JsxRuntime.jsx("li", {
-          children: JsxRuntime.jsx(Quiz$QuizQuestionView, {
-            question: q
-          })
+      JsxRuntime.jsx("div", {
+        children: section.questions.map((q, i) => JsxRuntime.jsx(Quiz$QuizQuestionView, {
+          question: q,
+          index: i
         }, i.toString())),
-        className: "space-y-4"
+        className: "divide-y divide-gray-100"
       })
     ],
-    className: "space-y-4"
+    className: "max-w-3xl mx-auto p-8 bg-white font-serif text-black border-t-2 border-black mt-8"
   });
 }
 

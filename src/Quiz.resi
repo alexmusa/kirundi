@@ -14,7 +14,7 @@ type quizSection = {
 }
 module QuizQuestionView: {
   @react.component
-  let make: (~question: quizQuestion) => React.element
+  let make: (~question: quizQuestion, ~index: int) => React.element
 }
 @react.component
 let make: (~section: quizSection) => React.element
