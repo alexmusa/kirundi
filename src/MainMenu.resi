@@ -3,5 +3,5 @@ let make: (
   ~onStart: unit => unit,
   ~onLessonSelect: int => unit,
   ~onSettings: unit => unit,
-  ~isStarted: bool,
+  ~lastLessonId: int,
 ) => React.element

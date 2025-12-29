@@ -60,7 +60,7 @@ let make = () => {
     <MainMenu
       onStart={_ => setCurrentScreen(_ => LessonView)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
-      isStarted={selectedIdx > 0}
+      lastLessonId=selectedIdx
       onLessonSelect=goToLessonId
     />
   | Settings => 

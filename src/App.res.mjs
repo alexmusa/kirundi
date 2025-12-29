@@ -57,7 +57,7 @@ function App(props) {
         onStart: () => setCurrentScreen(param => "LessonView"),
         onLessonSelect: goToLessonId,
         onSettings: () => setCurrentScreen(param => "Settings"),
-        isStarted: selectedIdx > 0
+        lastLessonId: selectedIdx
       });
     case "LessonView" :
       let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);
