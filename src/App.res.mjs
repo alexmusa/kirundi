@@ -6,7 +6,7 @@ import * as Belt_Int from "@rescript/runtime/lib/es6/Belt_Int.js";
 import * as MainMenu from "./MainMenu.res.mjs";
 import * as Settings from "./Settings.res.mjs";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
-import * as LessonData from "./lessons/LessonData.res.mjs";
+import * as LessonData from "./data/LessonData.res.mjs";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
 import ViteSvg from "./assets/vite.svg";
@@ -31,8 +31,8 @@ function App(props) {
   React.useEffect(() => {
     Dom_storage.setItem(localStorageKey, selectedIdx.toString(), localStorage);
   }, [selectedIdx]);
-  let goToNext = param => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
-  let goToPrev = param => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
+  let goToNext = () => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
+  let goToPrev = () => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleReset = param => {
     let confirm = window.confirm("Are you sure you want to reset all progress? This cannot be undone.");
     if (confirm) {
@@ -45,88 +45,6 @@ function App(props) {
     let value = event.target.value;
     setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
-  let currentLesson = Belt_Array.get(LessonData.lessons, selectedIdx);
-  let renderLessonContainer = () => JsxRuntime.jsxs("div", {
-    children: [
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsx("button", {
-            children: "← Back to Menu",
-            className: "text-gray-500 hover:text-gray-800 flex items-center text-sm font-medium",
-            onClick: param => setCurrentScreen(param => "MainMenu")
-          }),
-          JsxRuntime.jsxs("div", {
-            children: [
-              JsxRuntime.jsx("select", {
-                children: Belt_Array.mapWithIndex(LessonData.lessons, (index, lesson) => JsxRuntime.jsx("option", {
-                  children: lesson.title,
-                  value: index.toString()
-                }, index.toString())),
-                className: "p-2 border border-gray-300 rounded-md bg-white text-sm",
-                value: selectedIdx.toString(),
-                onChange: handleChange
-              }),
-              JsxRuntime.jsx("button", {
-                children: JsxRuntime.jsxs("svg", {
-                  children: [
-                    JsxRuntime.jsx("path", {
-                      d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "2"
-                    }),
-                    JsxRuntime.jsx("path", {
-                      d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z",
-                      strokeLinecap: "round",
-                      strokeLinejoin: "round",
-                      strokeWidth: "2"
-                    })
-                  ],
-                  className: "w-5 h-5",
-                  fill: "none",
-                  stroke: "currentColor",
-                  viewBox: "0 0 24 24"
-                }),
-                className: "p-2 text-gray-400 hover:text-gray-600",
-                title: "Settings",
-                onClick: param => setCurrentScreen(param => "Settings")
-              })
-            ],
-            className: "flex items-center gap-4"
-          })
-        ],
-        className: "flex justify-between items-center mb-8"
-      }),
-      JsxRuntime.jsx("div", {
-        children: currentLesson !== undefined ? JsxRuntime.jsx(Lesson.LessonView.make, {
-            lesson: currentLesson
-          }) : "Lesson not found",
-        className: "flex-grow"
-      }),
-      JsxRuntime.jsxs("div", {
-        children: [
-          JsxRuntime.jsx("button", {
-            children: "← Previous",
-            className: "px-6 py-2 bg-gray-100 text-gray-700 rounded-lg font-semibold disabled:opacity-30 hover:bg-gray-200 transition-all",
-            disabled: selectedIdx === 0,
-            onClick: goToPrev
-          }),
-          JsxRuntime.jsx("span", {
-            children: `Lesson ` + (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString(),
-            className: "text-sm font-medium text-gray-500"
-          }),
-          JsxRuntime.jsx("button", {
-            children: "Next →",
-            className: "px-6 py-2 bg-indigo-600 text-white rounded-lg font-semibold disabled:bg-gray-300 hover:bg-indigo-700 shadow-sm transition-all",
-            disabled: selectedIdx === (totalLessons - 1 | 0),
-            onClick: goToNext
-          })
-        ],
-        className: "mt-12 flex justify-between items-center border-t pt-6 pb-12"
-      })
-    ],
-    className: "flex flex-col min-h-screen p-6 max-w-4xl mx-auto font-sans"
-  });
   switch (match[0]) {
     case "MainMenu" :
       return JsxRuntime.jsx(MainMenu.make, {
@@ -135,7 +53,21 @@ function App(props) {
         isStarted: selectedIdx > 0
       });
     case "LessonView" :
-      return renderLessonContainer();
+      let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);
+      if (lesson !== undefined) {
+        return JsxRuntime.jsx(Lesson.Container.make, {
+          lesson: lesson,
+          selectedIdx: selectedIdx,
+          totalLessons: totalLessons,
+          onBack: () => setCurrentScreen(param => "MainMenu"),
+          onSettings: () => setCurrentScreen(param => "Settings"),
+          onNext: goToNext,
+          onPrev: goToPrev,
+          onSelectChange: handleChange
+        });
+      } else {
+        return "Lesson not found";
+      }
     case "Settings" :
       return JsxRuntime.jsx(Settings.make, {
         onBack: () => setCurrentScreen(param => "MainMenu"),

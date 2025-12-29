@@ -1,4 +1,4 @@
-open Lesson
+open LessonTypes
 
 let lessons: array<lesson> = [
   // Introduction

@@ -1,4 +1,4 @@
-open Lesson
+open LessonTypes
 
 module Content = {
     open React

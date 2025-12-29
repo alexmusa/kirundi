@@ -1,4 +1,4 @@
-open Lesson
+open LessonTypes
 
 let l: lesson = {
   title: "LESSON 10: Review",

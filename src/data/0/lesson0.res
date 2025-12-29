@@ -1,4 +1,4 @@
-open Lesson
+open LessonTypes
 
 module Introduction = {
   type pronunciation = {key: string, description: string}
