@@ -19,24 +19,14 @@ module LessonView = {
   @react.component
   let make = (~lesson: lesson) =>
   <>
-    // <div className="mx-auto max-w-3xl space-y-8 px-4 py-8">
-      // <div className="space-y-4 text-gray-700">
-        {lesson.content}
-      // </div>
+    {lesson.content}
 
-      <section className="space-y-6">
-        <h2 className="text-xl font-semibold text-gray-900">
-          {"Quiz"->React.string}
-        </h2>
-
-        {lesson.quiz
-        ->Array.map(s =>
-          <Quiz key={s.title} section={s} />
-        )
-        ->React.array}
-      </section>
-    // </div>
-    </>
+    <section className="space-y-6">
+      {lesson.quiz
+      ->Array.map(s => <Quiz key={s.title} section={s} />)
+      ->React.array}
+    </section>
+  </>
 }
 
 module Container = {
@@ -108,18 +98,21 @@ module Container = {
           onClick={_ => onPrev()}
           disabled={selectedIdx === 0}
           className="px-6 py-2 bg-gray-100 text-gray-700 rounded-lg font-semibold disabled:opacity-30 hover:bg-gray-200 transition-all">
-          {React.string("← Previous")}
+          <span> {React.string("←")} </span>
+          <span className="hidden sm:inline ml-1"> {React.string("Previous")} </span>
         </button>
+        
         <span className="text-sm font-medium text-gray-500">
-          {React.string(
-            `Lesson ${Int.toString(selectedIdx + 1)} of ${Int.toString(totalLessons)}`,
-          )}
+          <span className="hidden sm:inline"> {React.string("Lesson ")} </span>
+          {React.string(`${Int.toString(selectedIdx + 1)} of ${Int.toString(totalLessons)}`)}
         </span>
+        
         <button
           onClick={_ => onNext()}
           disabled={selectedIdx === totalLessons - 1}
           className="px-6 py-2 bg-indigo-600 text-white rounded-lg font-semibold disabled:bg-gray-300 hover:bg-indigo-700 shadow-sm transition-all">
-          {React.string("Next →")}
+          <span className="hidden sm:inline mr-1"> {React.string("Next")} </span>
+          <span> {React.string("→")} </span>
         </button>
       </div>
     </div>

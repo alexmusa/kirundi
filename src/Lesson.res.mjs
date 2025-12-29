@@ -27,16 +27,10 @@ function Lesson$LessonView(props) {
   return JsxRuntime.jsxs(JsxRuntime.Fragment, {
     children: [
       lesson.content,
-      JsxRuntime.jsxs("section", {
-        children: [
-          JsxRuntime.jsx("h2", {
-            children: "Quiz",
-            className: "text-xl font-semibold text-gray-900"
-          }),
-          lesson.quiz.map(s => JsxRuntime.jsx(Quiz.make, {
-            section: s
-          }, s.title))
-        ],
+      JsxRuntime.jsx("section", {
+        children: lesson.quiz.map(s => JsxRuntime.jsx(Quiz.make, {
+          section: s
+        }, s.title)),
         className: "space-y-6"
       })
     ]
@@ -118,18 +112,40 @@ function Lesson$Container(props) {
       }),
       JsxRuntime.jsxs("div", {
         children: [
-          JsxRuntime.jsx("button", {
-            children: "← Previous",
+          JsxRuntime.jsxs("button", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "←"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Previous",
+                className: "hidden sm:inline ml-1"
+              })
+            ],
             className: "px-6 py-2 bg-gray-100 text-gray-700 rounded-lg font-semibold disabled:opacity-30 hover:bg-gray-200 transition-all",
             disabled: selectedIdx === 0,
             onClick: param => onPrev()
           }),
-          JsxRuntime.jsx("span", {
-            children: `Lesson ` + (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString(),
+          JsxRuntime.jsxs("span", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Lesson ",
+                className: "hidden sm:inline"
+              }),
+              (selectedIdx + 1 | 0).toString() + ` of ` + totalLessons.toString()
+            ],
             className: "text-sm font-medium text-gray-500"
           }),
-          JsxRuntime.jsx("button", {
-            children: "Next →",
+          JsxRuntime.jsxs("button", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Next",
+                className: "hidden sm:inline mr-1"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "→"
+              })
+            ],
             className: "px-6 py-2 bg-indigo-600 text-white rounded-lg font-semibold disabled:bg-gray-300 hover:bg-indigo-700 shadow-sm transition-all",
             disabled: selectedIdx === (totalLessons - 1 | 0),
             onClick: param => onNext()
