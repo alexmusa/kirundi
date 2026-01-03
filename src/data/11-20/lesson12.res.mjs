@@ -3,7 +3,285 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson12$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 12: Verb –ri",
+          className: "text-center text-lg font-bold uppercase tracking-wide"
+        }),
+        className: "w-full max-w-2xl border-b border-black pb-1 mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("section", {
+            children: [
+              JsxRuntime.jsx("h2", {
+                children: "Vocabulary:",
+                className: "font-bold text-lg mb-2"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "ingoma",
+                        className: "italic"
+                      }),
+                      " – drum, throne"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "hari",
+                        className: "italic"
+                      }),
+                      " – there is, there are"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "imbuto",
+                        className: "italic"
+                      }),
+                      " – seed, fruit, plant"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "hehe? (he?)",
+                        className: "italic"
+                      }),
+                      " – where? (only in questions)"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "intama",
+                        className: "italic"
+                      }),
+                      " – sheep"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "hano",
+                        className: "italic"
+                      }),
+                      " – here"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "imvunja",
+                        className: "italic"
+                      }),
+                      " – jigger"
+                    ]
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("span", {
+                        children: "harīya",
+                        className: "italic"
+                      }),
+                      " – over there"
+                    ]
+                  })
+                ],
+                className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-1 ml-4"
+              })
+            ]
+          }),
+          JsxRuntime.jsx("section", {
+            children: JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("span", {
+                  children: "19.",
+                  className: "font-bold mr-2"
+                }),
+                JsxRuntime.jsxs("p", {
+                  children: [
+                    JsxRuntime.jsx("span", {
+                      children: "Verb –ri.",
+                      className: "font-bold"
+                    }),
+                    " In Par. 4 we learned that ni and si are used for is, are, and the negative of these words, but that in certain circumstances these words cannot be used. In many instances (in fact, wherever possible) –ri is used where ni and si cannot be, such as the words of place but ",
+                    JsxRuntime.jsx("span", {
+                      children: "not",
+                      className: "italic"
+                    }),
+                    " for state of being (3rd person) except independent clauses."
+                  ]
+                })
+              ],
+              className: "flex items-start"
+            }),
+            className: "text-justify mt-6"
+          }),
+          JsxRuntime.jsxs("section", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "The present conjugation of –ri:"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "ndi - I am (n + ri = ndi)"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "turi - we are"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "uri - you are"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "muri - you are"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ari - he/she is"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "bari - they are"
+                  })
+                ],
+                className: "grid grid-cols-2 max-w-sm ml-4"
+              })
+            ],
+            className: "ml-4 space-y-4"
+          }),
+          JsxRuntime.jsxs("section", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "In the third person forms prefix changes to agree with the class of the subject of that verb. Here are the forms for the classes studied thus far:"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {}),
+                      JsxRuntime.jsx("div", {
+                        children: "singular"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "plural"
+                      })
+                    ],
+                    className: "grid grid-cols-3 max-w-sm italic"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "Class 1"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "ari"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "bari"
+                      })
+                    ],
+                    className: "grid grid-cols-3 max-w-sm"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "Class 2"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "uri"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "iri"
+                      })
+                    ],
+                    className: "grid grid-cols-3 max-w-sm"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "Class 3"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "iri"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "ziri"
+                      })
+                    ],
+                    className: "grid grid-cols-3 max-w-sm"
+                  })
+                ],
+                className: "flex flex-col ml-4"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "The same prefixes are used for all verbs. be sure you know them. From now on the verb prefixes of each class will be introduced with that class."
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "Imana iravuga – God is speaking"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "Impene ziragenda – the goats are going"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "Ufise imbuto – you have seeds"
+                  })
+                ],
+                className: "space-y-1 ml-4 italic"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "-ri",
+                    className: "font-bold"
+                  }),
+                  " is a defective verb, that is, it lacks certain parts. It has no infinitive and only a few tenses. The missing forms are provided by the verb ‘kuba’ – to be, become, live (in a certain place). The verb –ri usually elides in writing as well as in speaking. Thus, umwana ar’i muhira. – the child is at home. ‘hari’ is a form of –ri."
+                ]
+              })
+            ],
+            className: "ml-4 text-justify space-y-4"
+          }),
+          JsxRuntime.jsxs("section", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Note: ",
+                    className: "font-bold"
+                  }),
+                  "Observe the sentence order when using hehe, always at the end of the sentence or clause."
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "Impene zawe ziri hehe?",
+                    className: "font-medium italic"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "goats your are where? (Where are your goats?)",
+                    className: "text-gray-600"
+                  })
+                ],
+                className: "ml-4"
+              })
+            ],
+            className: "ml-4 space-y-2"
+          })
+        ],
+        className: "w-full max-w-2xl space-y-4"
+      })
+    ],
+    className: "flex flex-col items-center p-8 bg-white text-gray-900 font-serif leading-normal"
+  });
 }
 
 let Content = {
@@ -16,10 +294,145 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "Kirundi to English Translation",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Abahungu bari mu nzu.",
+        answer: "The boys are in the house"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Umwigisha ari hehe? Ar’i we.",
+        answer: "Where is the teacher? He is at his place"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "What is the English translation of: 'Uri hehe? Ndi hano.'",
+        options: [
+          "Where are they? They are here.",
+          "Where are you? I am here.",
+          "Who are you? I am a person.",
+          "Where is he? He is here."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Inka zawe ziri hariya.",
+        answer: "Your cows are over there"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Umwami afise ingoma nini nyinshi.",
+        answer: "The king has many large drums"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Inka n’impene n’intama ziri mu ndimiro y’umwigisha.",
+        answer: "The cows and goats and sheep are in the teacher's garden"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Ingoma ziri hehe? Ziri hariya mu nzu ntoya.",
+        answer: "Where are the drums? They are over there in the small house"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate to English: 'Har’umwotsi hariya ku musozi.'",
+        options: [
+          "There is a house over there on the hill.",
+          "The fire is over there on the mountain.",
+          "There is smoke over there on the hill.",
+          "The teacher is over there on the hill."
+        ],
+        correctIndex: 2
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Impene iri mu murima.",
+        answer: "The goat is in the field"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to English: Imana ikora mu mitima y’abantu.",
+        answer: "God works in the hearts of people"
+      }
+    ]
+  },
+  {
+    title: "English to Kirundi Translation",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: Where are your (pl.) goats?",
+        answer: "Impene zanyu ziri hehe?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: (the goats) They are at our place.",
+        answer: "Zir’iwacu"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: Where are the old man’s gardens?",
+        answer: "Indimiro z’umutama ziri hehe?"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate to Kirundi: 'The man’s many sheep are over there.'",
+        options: [
+          "Intama nyinshi z'umugabo ziri hariya.",
+          "Inka nyinshi z'umugabo ziri hano.",
+          "Intama nini z'umwami ziri hariya.",
+          "Impene nyinshi z'umugabo ziri hariya."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: Where is your (sing.) new house? It is over there on the hill.",
+        answer: "Inzu yawe nshasha iri hehe? Iri hariya ku musozi."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: Where are you (pl.)? We are here at home.",
+        answer: "Muri hehe? Turi hano muhira."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: There are many plants in the garden.",
+        answer: "Hari ibimera vyinshi mu ndimiro."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: The child has many jiggers.",
+        answer: "Umwana afise imvunja nyinshi."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate to Kirundi: 'The girl has a sack of flour on her head.'",
+        options: [
+          "Umwigeme afise ingoma ku mutwe.",
+          "Umwigeme afise isaho y'ifu ku mutwe.",
+          "Umwigisha afise isaho y'ifu ku mutwe.",
+          "Umwigeme afise imvunja ku mutwe."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate to Kirundi: The boys and girls are in the teacher’s house.",
+        answer: "Abahungu n'abigeme bari mu nzu y'umwigisha."
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 12: Verb –ri",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

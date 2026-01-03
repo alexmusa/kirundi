@@ -296,7 +296,143 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Abantu benshi bafise impene.",
+        answer: "Many people have goats"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Mfise amasuka i muhira.",
+        answer: "I have hoes at home"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "3. Imvura ni nziza.",
+        options: [
+          "The rain is good",
+          "The rain is cold",
+          "The water is good"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Abagabo bagenda i Gitega.",
+        answer: "The men are going to Gitega"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Umuhungu wawe afise impene nyinshi n’inka nyinshi.",
+        answer: "Your son has many goats and many cows"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Umugabo afise inyama nziza nyinshi.",
+        answer: "The man has much good meat"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "7. I wacu mfise isaho niniya cane.",
+        options: [
+          "At your place you have a big sack",
+          "At our place I have a very large sack",
+          "At home there is a small sack"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Abigishwa bakora i Kibimba.",
+        answer: "The students work at Kibimba"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Umutama afise ifi nyinshi.",
+        answer: "The old man has many fish"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Ifu yacu ni nziza.",
+        answer: "Our flour is good"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "11. Abahungu bafise imbwa i wabo.",
+        answer: "The boys have a dog at their place"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. I have much good flour.",
+        answer: "Mfise ifu nziza nyinshi"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. The old man has many goats at his place.",
+        answer: "Umutama afise impene nyinshi i wabo"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "3. The woman has a hoe in her house.",
+        options: [
+          "Umugabo afise isuka mu nzu",
+          "Umugore afise isuka mu nzu yiwe",
+          "Umugore afise amasuka mu nzu"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. The new teacher has many gardens.",
+        answer: "Umwigisha mushasha afise imirima myinshi"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. The king’s new house is large.",
+        answer: "Inzu nshasha y'umwami ni nini"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. The boys have a few fish.",
+        answer: "Abahungu bafise ifi nkeyi"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "7. The child’s plate is clean.",
+        options: [
+          "Isahani y'umwana ni nziza",
+          "Isahani y'umutama ni nini",
+          "Isahani y'umuhungu ni mbi"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. A man is walking in the house. He has a sack on (his) head.",
+        answer: "Umugabo aragenda mu nzu. Afise isaho ku mutwe"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. My plate is dirty.",
+        answer: "Isahani yanje ni mbi"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Are the boys hoeing in the rain?",
+        answer: "Abahungu bararimira mu mvura?"
+      }
+    ]
+  }
+];
 
 let l = {
   title: "LESSON 11: Class 3 (continued)",

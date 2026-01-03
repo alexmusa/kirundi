@@ -3,7 +3,239 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson17$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 17: Negative of the –ra– Present",
+          className: "text-center text-[11pt] font-bold uppercase tracking-wide"
+        }),
+        className: "border-b border-black pb-0.5 mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "text-[11pt] font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "inzira (cl. 3) – path, way"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umuvyēyi (cl. 1) – parent"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "umuti (cl. 2) – medicine"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "indwāra (cl. 3) - illness"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "-kunda – love, like"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "-shima – praise, be content with"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "kandi – and (connecting phrases), also"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 ml-[18pt] text-[11pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "28.",
+                className: "min-w-[18pt] font-bold"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Negative of –ra– present. ",
+                    className: "font-bold"
+                  }),
+                  "For the negative the –ra– must drop out. Its presence makes the not-yet tense (see Par. 183). The negative prefix is ",
+                  JsxRuntime.jsx("span", {
+                    children: "nti- ",
+                    className: "font-bold"
+                  }),
+                  "(note the exception in the first person), and it must precede the personal prefix. (A different negative prefix is used in dependant clauses, Par. 186)."
+                ]
+              })
+            ],
+            className: "flex items-start mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "sinkora – I am not working"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntukora – you are not working"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntakora – he/she is not working"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "ntidukora – we are not working"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntimukora – you are not working"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntibakora – they are not working"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 ml-[36pt] mb-6"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Note: nti-ukora becomes ntukora, nti-akora becomes ntakora. Notice the parts of the word now:"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "nti"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "neg.pref.",
+                        className: "text-[9pt] not-italic"
+                      })
+                    ],
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "–",
+                    className: "pt-1"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "mu"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "pers.pref.",
+                        className: "text-[9pt] not-italic"
+                      })
+                    ],
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "–",
+                    className: "pt-1"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("div", {
+                        children: "kora"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "verb stem",
+                        className: "text-[9pt] not-italic"
+                      })
+                    ],
+                    className: "text-center"
+                  })
+                ],
+                className: "flex space-x-8 py-2 font-mono italic"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "The third person prefixes of the other classes follow the regular rule:",
+                className: "pt-2"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "inka ntizigenda mu murima – the cows do not go in the garden.",
+                className: "italic ml-[18pt]"
+              })
+            ],
+            className: "ml-[18pt] mb-4 space-y-1"
+          })
+        ],
+        className: "mb-6 text-[11pt] text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "29.",
+                className: "min-w-[18pt] font-bold"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Negative of –ri. ",
+                    className: "font-bold"
+                  }),
+                  "The negative of the verb –ri is formed in the same way:"
+                ]
+              })
+            ],
+            className: "flex items-start mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "sindi – I am not"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "nturi – you are not"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntari – he/she is not"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "ntituri – we are not"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntimuri – you are not"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "ntibari – they are not"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 ml-[36pt]"
+          })
+        ],
+        className: "text-[11pt] text-justify"
+      })
+    ],
+    className: "p-8 bg-white text-[#000000] font-serif leading-normal"
+  });
 }
 
 let Content = {
@@ -16,10 +248,139 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "Kirundi to English Translation",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Abantu ntibarima mu mirima yabo, kandi ntibagenda i muhira.",
+        answer: "The people are not hoeing in their fields, and they are not going home."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: Intama ntizigenda mu nzira.",
+        options: [
+          "The sheep are not walking in the path.",
+          "The sheep are going in the path.",
+          "The cows are not in the path.",
+          "The sheep are in the field."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Nkunda Imana mu mutima wanje.",
+        answer: "I love God in my heart."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Ntitugenda i muhira.",
+        answer: "We are not going home."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Umuhungu ni mubi, ntakora.",
+        answer: "The boy is bad, he does not work."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Sinshima abana babi, arika ndakunda abana beza.",
+        answer: "I do not praise bad children, but I love good children."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Umwana afise indwara mbi, arika ntakunda umuti.",
+        answer: "The child has a bad illness, but he does not like medicine."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: Mbeg’ abavyeyi bawe bar’ i muhira?",
+        options: [
+          "Are your parents working?",
+          "Are your parents at home?",
+          "Where are your parents?",
+          "Are the children at home?"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Ntitugenda mu nzira nini.",
+        answer: "We are not going in the big path."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into English: Ntituri mu murima wanyu, tur’ i wacu.",
+        answer: "We are not in your field, we are at our place."
+      }
+    ]
+  },
+  {
+    title: "English to Kirundi Translation",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: I am not going to the house.",
+        answer: "Singenda mu nzu."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: I praise God in my heart. He has much mercy.",
+        answer: "Ndashima Imana mu mutima wanje. Afise ikigongwe cinshi."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: The child’s illness is not very bad.",
+        answer: "Indwara y'umwana si mbi cane."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: He does not like medicine.",
+        answer: "Ntakunda umuti."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: My parents are not at home.",
+        answer: "Abavyeyi banje ntibari i muhira."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: We love our Savior very much, and we do not like sin.",
+        answer: "Dukunda Umukiza wacu cane, kandi ntitukunda icaha."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: The women are not hoeing in the sweet potatoes, they are in the house.",
+        answer: "Abagore ntibarima mu bijumbu, bari mu nzu."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: Where are the goats? They are not on the path.",
+        answer: "Impene ziri he? Ntiziri mu nzira."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: Don’t you (sing.) love your parents?",
+        options: [
+          "Mbega ntukunda abavyeyi bawe?",
+          "Ntitukunda abavyeyi bawe?",
+          "Abavyeyi bawe bari he?",
+          "Mbega urakunda abavyeyi bawe?"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: The sleeping mat is not in the house, and my clothes are not on the chair.",
+        answer: "Ikirago ntikiri mu nzu, kandi impuzu zanje ntiziri ku ntebe."
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 17: Negative of the –ra– Present",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

@@ -3,7 +3,341 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson16$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 16: –ra Present Tense of Verb",
+          className: "text-[11.0pt] font-bold uppercase tracking-wide"
+        }),
+        className: "border-b border-black pb-1 mb-6 text-center"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "text-[11.0pt] font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "No new vocabulary is given in this lesson, but refresh your memory on the verbs already learned:",
+                className: "text-[11.0pt] mb-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "-kora – work, do fix, repair, make"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "-genda – go, walk"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "-rima – hoe, dig, cultivate"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "-vuga – speak, say"
+                  })
+                ],
+                className: "grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1 text-[11.0pt]"
+              })
+            ],
+            className: "ml-[18.0pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "26.",
+                className: "text-[11.0pt] font-bold w-[18.0pt] flex-shrink-0"
+              }),
+              JsxRuntime.jsx("div", {
+                children: JsxRuntime.jsxs("p", {
+                  children: [
+                    JsxRuntime.jsx("span", {
+                      children: "Conjugation of –ra– present",
+                      className: "font-bold"
+                    }),
+                    ". The verb is the most complicated and the most important part of Kirundi grammar. It will require much careful study. There are several ways of expressing present time, but here we take up only one, the –ra– present tense. This gets its name from the fact that -ra- always comes between the personal prefix and the stem of the word in this tense. You have already seen a few forms of it in Lesson 1 and elsewhere."
+                  ],
+                  className: "text-[11.0pt]"
+                }),
+                className: "flex-grow"
+              })
+            ],
+            className: "flex items-baseline mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "ndakora",
+                    className: "font-medium"
+                  }),
+                  " – I work, am working"
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "turakora",
+                    className: "font-medium"
+                  }),
+                  " – we work, are working"
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "urakora",
+                    className: "font-medium"
+                  }),
+                  " – you work, are working"
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "murakora",
+                    className: "font-medium"
+                  }),
+                  " – you work, are working"
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "arakora",
+                    className: "font-medium"
+                  }),
+                  " – he/she works, is working"
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "barakora",
+                    className: "font-medium"
+                  }),
+                  " – they work, are working"
+                ]
+              })
+            ],
+            className: "ml-[36.0pt] grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-1 text-[11.0pt] mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Note: ",
+                    className: "font-bold not-italic"
+                  }),
+                  "Remember NR becomes ND, thus ",
+                  JsxRuntime.jsx("span", {
+                    children: "nd",
+                    className: "font-bold"
+                  }),
+                  "akora."
+                ],
+                className: "mb-2"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "Observe and learn these prefixes used here: n-, u-, a-, tu-, mu-, ba-. The third person prefixes given are those of the first class. verb prefixes are given with each class. ",
+                  JsxRuntime.jsx("span", {
+                    children: "A verb must agree with its subject in class and number.",
+                    className: "italic"
+                  })
+                ],
+                className: "not-italic"
+              })
+            ],
+            className: "ml-[18.0pt] text-[11.0pt] italic"
+          })
+        ],
+        className: "mb-8 text-justify"
+      }),
+      JsxRuntime.jsxs("section", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "27.",
+                className: "text-[11.0pt] font-bold w-[18.0pt] flex-shrink-0"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Some rules regarding this tense:",
+                className: "text-[11.0pt] font-bold"
+              })
+            ],
+            className: "flex items-baseline mb-4"
+          }),
+          JsxRuntime.jsxs("ol", {
+            children: [
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "1.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("p", {
+                        children: "It is used in stating a simple fact regarding that which is happening now if no phrase or object follows. Occasionally it is used even with an object or phrase. Note that when a word like cane, neza, ati follows, the –ra– present is used.",
+                        className: "mb-2"
+                      }),
+                      JsxRuntime.jsxs("div", {
+                        children: [
+                          "Umugabo arakora – the man is working, or works.",
+                          JsxRuntime.jsx("br", {}),
+                          "umuhungu agomba umunyu – the boy wants some salt."
+                        ],
+                        className: "ml-[36.0pt] italic border-l-2 border-gray-200 pl-4 py-1"
+                      })
+                    ],
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              }),
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "2.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsxs("p", {
+                        children: [
+                          "It is used in questions and answers to questions ",
+                          JsxRuntime.jsx("span", {
+                            children: "when no object or phrase follows.",
+                            className: "italic"
+                          }),
+                          " (You will learn another tense to use when an object follows, Lesson 25)"
+                        ],
+                        className: "mb-2"
+                      }),
+                      JsxRuntime.jsxs("div", {
+                        children: [
+                          "Abantu bararima? – Are the people hoeing?",
+                          JsxRuntime.jsx("br", {}),
+                          "Ego, bararima. – Yes, they are hoeing."
+                        ],
+                        className: "ml-[36.0pt] italic border-l-2 border-gray-200 pl-4 py-1"
+                      })
+                    ],
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              }),
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "3.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsxs("p", {
+                    children: [
+                      "It is ",
+                      JsxRuntime.jsx("span", {
+                        children: "never",
+                        className: "italic"
+                      }),
+                      " used in a ",
+                      JsxRuntime.jsx("span", {
+                        children: "dependent",
+                        className: "italic"
+                      }),
+                      " clause, when it expresses present time."
+                    ],
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              }),
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "4.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("p", {
+                        children: "It is used to express habitual action (in present time) whether an object follows or not.",
+                        className: "mb-2"
+                      }),
+                      JsxRuntime.jsxs("div", {
+                        children: [
+                          "Mbeg’ Abarundi bararya (eat) inyama? – Do the Barundi eat meat?",
+                          JsxRuntime.jsx("br", {}),
+                          "Abakobwa bararima. – Girls hoe."
+                        ],
+                        className: "ml-[36.0pt] italic border-l-2 border-gray-200 pl-4 py-1"
+                      })
+                    ],
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              }),
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "5.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "In some instances, such us mentioned in Rule 1, this tense is used interchangeably with the prefixes present (see Lesson 25).",
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              }),
+              JsxRuntime.jsxs("li", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "6.",
+                    className: "text-[11.0pt] w-[36.0pt] flex-shrink-0 text-right pr-4"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("p", {
+                        children: "The –ra-present may express progressive or continuous present.",
+                        className: "mb-2"
+                      }),
+                      JsxRuntime.jsx("div", {
+                        children: "Arakora – he/she is working.",
+                        className: "ml-[36.0pt] italic border-l-2 border-gray-200 pl-4 py-1"
+                      }),
+                      JsxRuntime.jsx("p", {
+                        children: "However, see Par. 35 for the tense most commonly used for this.",
+                        className: "mt-4 text-[10.0pt] text-gray-600"
+                      })
+                    ],
+                    className: "text-[11.0pt]"
+                  })
+                ],
+                className: "flex"
+              })
+            ],
+            className: "list-none space-y-4"
+          })
+        ],
+        className: "text-justify"
+      })
+    ],
+    className: "max-w-3xl mx-auto p-8 font-serif text-[#1a1a1a] leading-normal"
+  });
 }
 
 let Content = {
@@ -16,10 +350,145 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Inka zigenda mu bijumbu.",
+        answer: "Cows go in the sweet potatoes"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Mbeg’ abantu barakora neza mu murima?",
+        answer: "Are the people working well in the field?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. Turakora cane mu nzu zacu.",
+        answer: "We are working hard in our houses"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Imbwa yiwe igenda i muhira.",
+        answer: "His dog is going home"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "5. Har’ imvunja nyinshi mu birenge vyiwe.",
+        options: [
+          "There are many jiggers in his feet.",
+          "There are many shoes on his feet.",
+          "He has many injuries on his legs.",
+          "There is much mud on his feet."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Umukiza aravuga mu mitima yacu.",
+        answer: "The Savior speaks in our hearts"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Igikoko kigenda mu ndimiro y’umwigisha.",
+        answer: "The wild animal is going in the teacher’s gardens"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Mbega murarima cane mu bigori?",
+        answer: "Are you hoeing much in the corn?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Mbeg’ ukora intebe nziza? Ego, nkora intebe.",
+        answer: "Do you make a nice chair? Yes, I make a chair."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "10. Abakobwa b’Abarundi bararima cane.",
+        options: [
+          "The Burundian boys are working hard.",
+          "The Burundian girls are hoeing much.",
+          "The Burundian women are planting corn.",
+          "The Burundian girls are making mats."
+        ],
+        correctIndex: 1
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. God speaks in the hearts of people.",
+        answer: "Imana ivuga mu mitima y'abantu"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Are you (pl.) hoeing in your gardens?",
+        answer: "Mbega murarima mu ndimiro zanyu?"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "3. The bad goats are going into the house.",
+        options: [
+          "Ihene nziza zigenda mu nzu.",
+          "Imbwa mbi zigenda mu nzu.",
+          "Ihene mbi zigenda mu nzu.",
+          "Ihene mbi ziri mu nzu."
+        ],
+        correctIndex: 2
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. A few men and a few women are working in the old man’s gardens.",
+        answer: "Abagabo bake n'abagore bake barakora mu ndimiro z'umutama"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. I am going to Gitega.",
+        answer: "Ngenda i Gitega"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. We are working hard in our new houses.",
+        answer: "Turakora cane mu nzu zacu nshasha"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. The boys have dirty sleeping mats.",
+        answer: "Abahungu bafise imisambi mibi"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "8. Are you (sing.) going to our country? (use 'mu')",
+        options: [
+          "Mbega ugenda mu gihugu cacu?",
+          "Mbega murarima mu gihugu cacu?",
+          "Mbega ugenda i wacu?",
+          "Mbega mwebwe mugenda mu gihugu?"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. The men’s dogs are going into the teacher’s fields.",
+        answer: "Imbwa z'abagabo zigenda mu ndimiro z'umwigisha"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Are you (sing.) working in the dark?",
+        answer: "Mbega ukora mu muzimagiza?"
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 16: –ra Present Tense of Verb",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

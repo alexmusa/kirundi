@@ -3,7 +3,244 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson13$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("h1", {
+          children: [
+            "LESSON 13: Class 4",
+            JsxRuntime.jsx("i", {
+              children: "iki–, ibi–",
+              className: "italic"
+            })
+          ],
+          className: "text-center font-bold text-lg"
+        }),
+        className: "border-b border-black pb-1 mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "inkintu – thing"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "igiti – tree"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "igitabo – book"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikijumbu – sweet potato (or, ikijumpu)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "igihugu – country"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikirenge – foot"
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-8 gap-y-1 pl-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "20.",
+                className: "w-8"
+              }),
+              JsxRuntime.jsx("h2", {
+                children: "Class 4.",
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("table", {
+              children: [
+                JsxRuntime.jsx("thead", {
+                  children: JsxRuntime.jsxs("tr", {
+                    children: [
+                      JsxRuntime.jsx("th", {
+                        className: "font-normal"
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "singular",
+                        className: "font-normal underline"
+                      }),
+                      JsxRuntime.jsx("th", {
+                        children: "plural",
+                        className: "font-normal underline"
+                      })
+                    ]
+                  })
+                }),
+                JsxRuntime.jsxs("tbody", {
+                  children: [
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Class prefix:",
+                          className: "py-1"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "iki-"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "ibi-"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Poss. adjective",
+                          className: "py-1"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "ca- (canje)"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "vya- (vyanje)"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Verb prefix",
+                          className: "py-1"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "ki- (kiri)"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "bi- (biri)"
+                        })
+                      ]
+                    }),
+                    JsxRuntime.jsxs("tr", {
+                      children: [
+                        JsxRuntime.jsx("td", {
+                          children: "Adjectiv prefix",
+                          className: "py-1"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "ki- (kibi)"
+                        }),
+                        JsxRuntime.jsx("td", {
+                          children: "bi- (bibi)"
+                        })
+                      ]
+                    })
+                  ]
+                })
+              ],
+              className: "w-full max-w-md text-left border-separate border-spacing-x-4"
+            }),
+            className: "pl-8 overflow-x-auto"
+          })
+        ],
+        className: "mb-8"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "21.",
+                className: "w-8"
+              }),
+              JsxRuntime.jsxs("h2", {
+                children: [
+                  "Change-down rule.",
+                  JsxRuntime.jsx("span", {
+                    children: "(Technically, Dahl’s law of dissimilation)",
+                    className: "font-normal ml-1"
+                  })
+                ],
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "When the root of a word begins with certain letters, ",
+                  JsxRuntime.jsx("b", {
+                    children: "k",
+                    className: "font-bold"
+                  }),
+                  " in a prefix must change to ",
+                  JsxRuntime.jsx("b", {
+                    children: "g",
+                    className: "font-bold"
+                  }),
+                  ", and ",
+                  JsxRuntime.jsx("b", {
+                    children: "t",
+                    className: "font-bold"
+                  }),
+                  " in a prefix must change to ",
+                  JsxRuntime.jsx("b", {
+                    children: "d",
+                    className: "font-bold"
+                  }),
+                  "."
+                ]
+              }),
+              JsxRuntime.jsx("p", {
+                children: "These letters are: c, f, h, k, p, s, t"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "Not ikitabo, but i",
+                  JsxRuntime.jsx("b", {
+                    children: "g",
+                    className: "font-bold"
+                  }),
+                  "itabo, because the root of the word – tabo – begins with t."
+                ]
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Notice the other words in this vocabulary and the letters which caused the “change-down” from k to g."
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "This rule is very important. It does ",
+                  JsxRuntime.jsx("i", {
+                    children: "not apply",
+                    className: "italic"
+                  }),
+                  " to a k or t preceded by a consonant: e.g. ntukora. It does ",
+                  JsxRuntime.jsx("i", {
+                    children: "not apply",
+                    className: "italic"
+                  }),
+                  " when the intervening vowel is a long one: e.g. atīhana."
+                ]
+              })
+            ],
+            className: "pl-8 space-y-4"
+          })
+        ],
+        className: "text-justify"
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 bg-white text-gray-900 font-serif"
+  });
 }
 
 let Content = {
@@ -16,10 +253,150 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Ibiti vyiwe ni birebire.",
+        answer: "His trees are tall"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Umugabo afise ibijumbu bikeya.",
+        answer: "The man has a few sweet potatoes"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. Ibirenge vyiwe ni binini.",
+        answer: "His feet are big"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Igihugu cacu ni gitoya.",
+        answer: "Our country is small"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "5. Ibintu vyanyu biri hehe?",
+        options: [
+          "Where are your things?",
+          "What are your things?",
+          "Where is your thing?",
+          "How are your things?"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Abigishwa bafise ibitabo bisha.",
+        answer: "The pupils have new books"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Abana bafise umvunja mu birenge.",
+        answer: "The children have jiggers in their feet"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Har’ibiti binini mu ndimiro zanyu.",
+        answer: "There are big trees in your gardens"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "9. Ibitabo vyabo biri ku ntebe.",
+        options: [
+          "Your books are on the chair.",
+          "Their books are on the chair.",
+          "Their books are in the house.",
+          "His books are under the chair."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Igitabo c’umwigisha kiri mu nzu.",
+        answer: "The teacher's book is in the house"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. The girls’ sweet potatoes are dirty.",
+        answer: "Ibijumbu vy'abigeme ni bishishira"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. There are tall trees over there at your place.",
+        answer: "Hariyo ibiti birebire iwanyu"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. I have a few books in my house.",
+        answer: "Nfise ibitabo bikeya mu nzu yanje"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Many hills are in our country.",
+        answer: "Imisozi myinshi iri mu gihugu cacu"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "5. The sweet potatoes are small.",
+        options: [
+          "Ibijumbu ni binini.",
+          "Ibijumbu ni bikeya.",
+          "Ibijumbu ni bitoya.",
+          "Ibijumbu ni bisha."
+        ],
+        correctIndex: 2
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Where is your (sing.) book? It is at home.",
+        answer: "Igitabo cawe kiri hehe? Kiri muhira"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. The trees over there are not very tall.",
+        answer: "Ibiti biriya si birebire cane"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. The women have many sweet potatoes in their garden.",
+        answer: "Abagore bafise ibijumbu vyinshi mu ndimiro yabo"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Are there sheep and goats in your country?",
+        answer: "Har'intama n'impene mu gihugu canyu?"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "10. The pupil’s books are in the teacher’s house.",
+        options: [
+          "Ibitabo vy'umwigishwa biri mu nzu y'umwigisha.",
+          "Ibitabo vy'umwigisha biri mu nzu y'umwigishwa.",
+          "Ibitabo vy'umwigishwa biri ku ntebe y'umwigisha.",
+          "Ibitabo vy'abigishwa biri mu nzu y'umwigisha."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "11. I have a jigger in (my) foot.",
+        answer: "Nfise umvunja mu kirenge"
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 13: Class 4",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

@@ -3,7 +3,240 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson15$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 15: Special Uses of Class 4",
+          className: "text-center font-bold text-[11pt] uppercase"
+        }),
+        className: "border-b border-black pb-1 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary:",
+            className: "font-bold text-[11pt] mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "igitāmbāra – cloth"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikigōngwe (no pl.) – mercy, pity, forgiveness"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikigōri – corn, stalk of corn"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "igitōke (or, igitoki) – bananas (bunch or tree)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikirago – mat (for sleeping)"
+              })
+            ],
+            className: "ml-[18pt] text-[11pt] leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-x-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "23.",
+                className: "min-w-[18pt]"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Compound subject",
+                    className: "font-bold"
+                  }),
+                  ": When there is a compound subject of one verb, the verb takes the 4",
+                  JsxRuntime.jsx("sup", {
+                    children: "th"
+                  }),
+                  " class prefix. This is true also of the possessive modifying two nouns."
+                ],
+                className: "text-justify"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "Umutsima n’inyama ",
+                  JsxRuntime.jsx("span", {
+                    children: "bi",
+                    className: "font-bold"
+                  }),
+                  "ri mu nzu – bread and meat are in the house."
+                ]
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "Umurima n’indimiro ",
+                  JsxRuntime.jsx("span", {
+                    children: "vy",
+                    className: "font-bold"
+                  }),
+                  "iwe – his garden and field"
+                ]
+              })
+            ],
+            className: "ml-[36pt] mb-4 italic"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("p", {
+              children: "However, if both nouns should be of the first class, the first class plural prefix is used."
+            }),
+            className: "ml-[18pt] mb-2 text-justify"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("p", {
+              children: [
+                "umuhungu n’umukobwa ",
+                JsxRuntime.jsx("span", {
+                  children: "ba",
+                  className: "font-bold"
+                }),
+                "rakora – the boy and girl are working"
+              ]
+            }),
+            className: "ml-[36pt] mb-4 italic"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsxs("p", {
+              children: [
+                "If both nouns are in the same class (other than the 1",
+                JsxRuntime.jsx("sup", {
+                  children: "st"
+                }),
+                ") the verb may take the plural prefix of that class or it may take the 4",
+                JsxRuntime.jsx("sup", {
+                  children: "th"
+                }),
+                " class plural prefix. In most localities it seems preferable to use the same class as the nouns (likewise with the possessive particle.) Thus it could be:"
+              ]
+            }),
+            className: "ml-[18pt] mb-2 text-justify"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Impene n’intama z’umutama"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Impene n’intama vy’umutama"
+              })
+            ],
+            className: "ml-[36pt] italic"
+          })
+        ],
+        className: "mb-6 text-[11pt] leading-snug"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "24.",
+                className: "min-w-[18pt]"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Great size",
+                    className: "font-bold"
+                  }),
+                  ". A word of another class may be given the prefixes of this class to give the meaning of a thing of great size:"
+                ],
+                className: "text-justify"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "umusozi – hill"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "igisozi – a very big hill"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ibuye – stone"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikibuye – a very big rock"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "imvura – rain"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ikivura – a very heavy rain"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-1 sm:grid-cols-2 gap-y-1 mb-2"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "(This should be used with caution by a beginner.)",
+            className: "ml-[18pt] italic text-sm"
+          })
+        ],
+        className: "mb-6 text-[11pt] leading-snug"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "25.",
+                className: "min-w-[18pt]"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Thing class",
+                    className: "font-bold"
+                  }),
+                  ". When reference to something indefinite is made, such as we in English use “thing”, “something”, “it”, etc., no definite object being referred to, the fourth class agreements are used, usually in the plural:"
+                ],
+                className: "text-justify"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "ivyiza – good things"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ivyanje – my things"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "bizoba neza (vyiza) – it will be well",
+                className: "sm:col-span-2"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-1 sm:grid-cols-2 gap-y-1 mb-4"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "Note that in ivyiza and ivyanje the prefix is like that of the vowel-system nouns.",
+            className: "ml-[18pt] text-justify"
+          })
+        ],
+        className: "mb-6 text-[11pt] leading-snug"
+      })
+    ],
+    className: "max-w-3xl mx-auto p-8 bg-white font-serif text-[#000000]"
+  });
 }
 
 let Content = {
@@ -16,10 +249,141 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Umunezero n’ikigongwe vy’Imana ni bikuru.",
+        answer: "The joy and mercy of God are great"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Igisozi ni kirekire cane.",
+        answer: "The mountain is very high"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "What does 'Impene nyinshi n’ibikoko bike biri ku musozi' mean?",
+        options: [
+          "Many goats and a few wild animals are on the hill",
+          "Many sheep and few cows are on the mountain",
+          "Many goats and many animals are in the house"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Ikigongwe c’Imana ni cinshi cane.",
+        answer: "The mercy of God is very great"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Ivyanje bir’i wacu.",
+        answer: "Mine are at our place"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Ikirago c’umugabo kiri mu nzu yiwe.",
+        answer: "The man's mat is in his house"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Umukozi wacu n’ikigabo.",
+        answer: "Our worker is a big man"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: 'Abagore bafise ibigori vyinshi mu mirima yabo.'",
+        options: [
+          "The men have much corn in their fields",
+          "The women have much corn in their fields",
+          "The women have few beans in the garden"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Har’ igihuzu mu nzu y’umutama.",
+        answer: "There is a cloth in the old man's house"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Abana bafise umunezero mwinshi. Ni vyiza.",
+        answer: "The children have much joy. It is good"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "The dog and a wild animal are over there.",
+        answer: "Imbwa n’igikoko biri hariya"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "A huge stone is on the hill.",
+        answer: "Ibuye rinini riri ku musozi"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "The boys have corn (pl.) and sweet potatoes.",
+        answer: "Abahungu bafise ibigori n’ibijumbu"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "How do you say 'Bananas are very good'?",
+        options: [
+          "Ibitoke ni bibi cane",
+          "Imineke ni myiza cane",
+          "Ibijumbu ni vyiza cane"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "The new cloth is long.",
+        answer: "Igihuzu gishasha ni kirekire"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "There is a very heavy rain over there.",
+        answer: "Hari imvura nyinshi cane hariya"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "The men are hoeing well in the bananas.",
+        answer: "Abagabo bariko bararima neza mu bitoke"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Our bread (pl.) and meat are in a cloth.",
+        answer: "Imikate yacu n’inyama biri mu gihuzu"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: 'The child’s head and feet are large.'",
+        options: [
+          "Umutwe n’ibirenge vy’umwana ni binini",
+          "Amata n’inyama vy’umwana ni binini",
+          "Umutwe n’amaboko vy’umutama ni binini"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "The man’s chairs and drums are in his house.",
+        answer: "Intebe n’ingoma vy’umugabo biri mu nzu yiwe"
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 15: Special Uses of Class 4",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

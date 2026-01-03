@@ -3,7 +3,191 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson19$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "LESSON 19: Class 5 (continued), Continuous present",
+          className: "text-center font-bold text-[11pt] uppercase"
+        }),
+        className: "border-b border-black py-1 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary:",
+            className: "font-bold text-[11pt] mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "amazi – water"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "amaraso – blood"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "amata – milk"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "-gomba – to want"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "amavuta – butter, oil"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ico – dirt (not soil as in garden)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "amahoro – peace"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "icumu – spear"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ameza – table (Swahili)"
+              })
+            ],
+            className: "ml-4 grid grid-cols-2 gap-x-8 text-[11pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "33.",
+            className: "mr-4"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "There are a number of words in this class which have only the plural form. Of course, all agreements are with this plural form. The first 6 words in this vocabulary are some of these. You will learn others later."
+          })
+        ],
+        className: "flex items-start ml-4 mb-4 text-justify text-[11pt]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "34.",
+            className: "mr-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "5th class words having c.",
+                    className: "font-bold"
+                  }),
+                  " The last two words in this vocabulary: icumu and ico, look like 4th class words with a vowel root. But they are regular 5th class words, forming their plurals like any other word in this class: icumu – spear, amacumu – spears, (the stem is –cumu)."
+                ],
+                className: "mb-2"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Besides the two words given here, there is one other of common use: icukiro – manure heap. There may be a few other rare words beginning with ic- which belong to this class, but in general you may assume that any other words beginning with ic- belong to 4th class."
+              })
+            ]
+          })
+        ],
+        className: "flex items-start ml-4 mb-4 text-justify text-[11pt]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "35.",
+            className: "mr-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Another important present tense is conjugated as follows:",
+                className: "mb-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "ndiko ndakora – I am working"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "turiko turakora – we are working"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "urik’ urakora – you are working"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "muriko murakora – you are working"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "arikw arakora – he/she is working"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "bariko barakora – they are working"
+                  })
+                ],
+                className: "ml-8 grid grid-cols-2 gap-y-1 mb-4 italic"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "This is the tense most commonly used for the continuous present: I am working, when the sense is that right now I am in the act of working. You will see it is composed of the present of –ri + ko followed by the –ra-present of the verb desired.",
+                className: "mb-4"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "Umukozi ari hehe? Arikw ararima mu murima wanje."
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "Where is the workman? He is hoeing in my garden.",
+                    className: "text-gray-700"
+                  })
+                ],
+                className: "ml-8 mb-4"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Note: ",
+                    className: "italic"
+                  }),
+                  "This tense is not subject to the rules applying to the –ra-present."
+                ],
+                className: "mb-4"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "The negative is formed like this:",
+                className: "mb-2"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "sindiko ndakora"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ntituriko turakora"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "nturik’ urakora"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ntimuriko murakora"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ntarikw arakora"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ntibariko barakora"
+                  })
+                ],
+                className: "ml-8 grid grid-cols-2 gap-y-1 font-mono text-[10pt]"
+              })
+            ],
+            className: "w-full"
+          })
+        ],
+        className: "flex items-start ml-4 mb-4 text-justify text-[11pt]"
+      })
+    ],
+    className: "font-sans p-4 max-w-2xl mx-auto text-gray-900 leading-normal"
+  });
 }
 
 let Content = {
@@ -16,7 +200,141 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "Section I: Kirundi to English Translation",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umutama afise inka nyinshi n’amata menshi.",
+        answer: "The old man has many cows and much milk"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: Abana bariko baragenda mw ishuli ryabo.",
+        options: [
+          "The children are sleeping in their school.",
+          "The children are going to their school.",
+          "The children are working at their school.",
+          "The teachers are going to their house."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umutama afise amacumu maremare.",
+        answer: "The old man has long spears"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umukobwa arikw ararima mu ndimiro z’abavyeyi biwe.",
+        answer: "The girl is hoeing in the fields of her parents"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "What does 'Sinkunda amazi mabi' mean?",
+        options: [
+          "I like clean water.",
+          "I do not like bad water.",
+          "We do not like cold water.",
+          "I want bad water."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umwana afise ico ryinshi ku birenge vyiwe.",
+        answer: "The child has much dirt on his feet"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Mbeg’ ugomba amavuta ku mutsima wawe?",
+        answer: "Do you want butter on your bread?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Abana b’Imana bafise amahoro menshi cane.",
+        answer: "The children of God have very much peace"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Ibitabo vyawe bisha biri hehe? Biri ku meza mu nzu yacu.",
+        answer: "Where are your new books? They are on the table in our house"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Abigishwa bariko barakora mw ishuli.",
+        answer: "The pupils are working in school"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Amaraso ya Yesu akiza ivyaha vyacu. (The blood of Jesus saves us from our sins)",
+        answer: "The blood of Jesus saves us from our sins"
+      }
+    ]
+  },
+  {
+    title: "Section II: English to Kirundi Translation",
+    questions: [
+      {
+        TAG: "MultipleChoice",
+        prompt: "How do you say 'God’s people have joy and peace'?",
+        options: [
+          "Abantu b'Imana bafise akanyamuneza n'amahoro.",
+          "Abigishwa bafise Ijambo ry'Imana.",
+          "Abantu babi bafise amahoro menshi.",
+          "Imana ikunda abantu bayo."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: I have a very small stone in (my) eye.",
+        answer: "Nfise ibuye rito cane mu jisho"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: The pupils have the Word of God in school.",
+        answer: "Abigishwa bafise Ijambo ry'Imana mw ishuli"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: I want (some) clean water.",
+        answer: "Ngomba amazi meza"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: Bad people are not going in the way of God.",
+        answer: "Abantu babi ntibagenda mu nzira y'Imana"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: The clean cloths are on the table.",
+        answer: "Impuzu zera ziri ku meza"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: A workman is hoeing at the school.",
+        answer: "Umukozi ariko ararima mw ishuli"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: Our teacher is speaking the Word of God.",
+        answer: "Umwigisha wacu ariko aravuga Ijambo ry'Imana"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: I am walking in the way of God.",
+        answer: "Ndiko nagenda mu nzira y'Imana"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate into Kirundi: We are praising God and we love our Lord Jesus Christ (Kristo).",
+        answer: "Turiko turashimagiza Imana kandi turakunda Umwami wacu Yesu Kristo"
+      }
+    ]
+  }
+];
 
 let l = {
   title: "LESSON X: xxx",

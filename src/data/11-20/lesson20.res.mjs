@@ -2,24 +2,256 @@
 
 import * as JsxRuntime from "react/jsx-runtime";
 
-function Lesson20$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
-}
-
-let Content = {
-  make: Lesson20$Content
-};
-
-let l_content = JsxRuntime.jsx(Lesson20$Content, {});
+let l_content = JsxRuntime.jsx("div", {
+  children: JsxRuntime.jsx("div", {
+    children: JsxRuntime.jsx("b", {
+      children: "Lesson 20: Review",
+      className: "uppercase"
+    }),
+    className: "border-b border-black text-center pb-1 mb-6"
+  }),
+  className: "p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal"
+});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "I. Grammar & Usage Questions",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Name the words in the 3rd class which form their plurals like the 5th class.",
+        answer: "Some 3rd class nouns with i- form plurals like the 5th class with ama- (e.g. ijisho → amaso)."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. What are the prefixes of 4th class nouns?",
+        answer: "The prefixes are iki- (singular) and ibi- (plural)."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. What change takes place in those prefixes before a vowel?",
+        answer: "iki- becomes iky-, and ibi- becomes ivy- before a vowel."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Conjugate the verb –ri in the present affirmative (3rd person singular).",
+        answer: "ari"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. What verb takes place of –ri for forms that are lacking?",
+        answer: "The verb –ba is used."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "6. Which preposition is usually used for 'at' with names of places?",
+        options: [
+          "ku",
+          "mu",
+          "i"
+        ],
+        correctIndex: 2
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Give the 3rd person singular and plural verb prefixes for all classes learned.",
+        answer: "Singular: a-, u-, i- ; Plural: ba-, i-, zi- (depending on noun class)."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Explain the change-down rule.",
+        answer: "Certain consonants change to softer sounds when followed by i or e."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Give two uses of the 4th class prefixes other than regular nouns.",
+        answer: "They are used for diminutives and for languages or ways of doing things."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Conjugate –genda in the –ra– present tense (3rd pers. sing.).",
+        answer: "aragend a → aragenda"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "11. When may the –ra– present tense not be used?",
+        answer: "It is not used with stative verbs or verbs of being."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "12. Conjugate –kunda in the present negative (3rd pers. sing.).",
+        answer: "ntakunda"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "13. What are the 5th class noun prefixes?",
+        answer: "Singular i-/iri-, plural ama-."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "14. When do mu and ku change to mw and kw?",
+        options: [
+          "Before any consonant",
+          "Before a vowel",
+          "Only in plural forms"
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "15. Name one exception to the mu/ku → mw/kw rule.",
+        answer: "Before certain monosyllabic words the change may not occur."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "16. What is the difference between 'arakora' and 'arikw arakora'?",
+        answer: "'arakora' means he works; 'arikw arakora' means he is working now (emphasis/continuous)."
+      }
+    ]
+  },
+  {
+    title: "II. Nouns: Plurals and Meanings",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Give the plural and meaning of 'umuvyeyi'.",
+        answer: "abavyeyi – parent"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Give the plural and meaning of 'ikigori'.",
+        answer: "ibigori – corn"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. Give the plural and meaning of 'icete'.",
+        answer: "ibicete – letter"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Give the plural and meaning of 'ishuli'.",
+        answer: "amashuli – school"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Give the plural and meaning of 'icumu'.",
+        answer: "ibicumu – spear"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Give the plural and meaning of 'isuka'.",
+        answer: "amasuka – hoe"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Give the plural and meaning of 'ifi'.",
+        answer: "ifi – fish (same singular and plural)"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Give the plural and meaning of 'iryinyo'.",
+        answer: "amenyo – tooth"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Give the plural and meaning of 'umuti'.",
+        answer: "imiti – medicine/tree"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Give the plural and meaning of 'ijisho'.",
+        answer: "amaso – eye"
+      }
+    ]
+  },
+  {
+    title: "III. Translation into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "A. Translate: 'Abantu benshi bafise ivyaha mu mitima yabo.'",
+        answer: "Many people have sins in their hearts."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: 'Imana irakunda abantu.'",
+        answer: "God loves people."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: 'Baragenda mu nzira y’Imana.'",
+        answer: "They walk in the way of God."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: 'Mfise amahoro meza cane mu mutima wanje.'",
+        answer: "I have very good peace in my heart."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "B. Translate: 'Abigishwa bariko barakora mu mirima y’ishuli.'",
+        answer: "The pupils are working in the school gardens."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: 'Umwigisha arikw aragenda mw ishuli.'",
+        answer: "The teacher is going to the school."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: 'Avuga amajambo meza.'",
+        answer: "He speaks good words."
+      }
+    ]
+  },
+  {
+    title: "IV. Translation into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Translate into Kirundi: I am working in my big garden.",
+        answer: "Ndiko ndakora mu murima wanje munini."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Translate: Children do not like wild animals.",
+        answer: "Abana ntibakunda ibikoko vy’ishamba."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. Translate: The teachers have many good pupils in the schools.",
+        answer: "Abigisha bafise abanyeshure benshi beza mu mashuli."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Translate: Are you (sing.) going home?",
+        answer: "Uriko uragenda muhira?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Translate: We are praising God in our hearts.",
+        answer: "Turiko turashima Imana mu mitima yacu."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. Translate: Where is the teacher?",
+        answer: "Umwigisha ari hehe?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Translate: He is speaking the Word of God at the school.",
+        answer: "Ariko aravuga Ijambo ry’Imana kw ishuli."
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 20: Review",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
@@ -27,7 +259,6 @@ let l = {
 };
 
 export {
-  Content,
   l,
 }
 /* l Not a pure module */

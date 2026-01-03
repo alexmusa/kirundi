@@ -12,6 +12,15 @@ import * as Lesson8 from "./1-10/lesson8.res.mjs";
 import * as Lesson9 from "./1-10/lesson9.res.mjs";
 import * as Lesson10 from "./1-10/lesson10.res.mjs";
 import * as Lesson11 from "./11-20/lesson11.res.mjs";
+import * as Lesson12 from "./11-20/lesson12.res.mjs";
+import * as Lesson13 from "./11-20/lesson13.res.mjs";
+import * as Lesson14 from "./11-20/lesson14.res.mjs";
+import * as Lesson15 from "./11-20/lesson15.res.mjs";
+import * as Lesson16 from "./11-20/lesson16.res.mjs";
+import * as Lesson17 from "./11-20/lesson17.res.mjs";
+import * as Lesson18 from "./11-20/lesson18.res.mjs";
+import * as Lesson19 from "./11-20/lesson19.res.mjs";
+import * as Lesson20 from "./11-20/lesson20.res.mjs";
 
 let lessons = [
   Lesson0.l,
@@ -25,7 +34,16 @@ let lessons = [
   Lesson8.l,
   Lesson9.l,
   Lesson10.l,
-  Lesson11.l
+  Lesson11.l,
+  Lesson12.l,
+  Lesson13.l,
+  Lesson14.l,
+  Lesson15.l,
+  Lesson16.l,
+  Lesson17.l,
+  Lesson18.l,
+  Lesson19.l,
+  Lesson20.l
 ];
 
 let vocabulary = [
@@ -40,7 +58,16 @@ let vocabulary = [
   Lesson8.l.vocabulary,
   Lesson9.l.vocabulary,
   Lesson10.l.vocabulary,
-  Lesson11.l.vocabulary
+  Lesson11.l.vocabulary,
+  Lesson12.l.vocabulary,
+  Lesson13.l.vocabulary,
+  Lesson14.l.vocabulary,
+  Lesson15.l.vocabulary,
+  Lesson16.l.vocabulary,
+  Lesson17.l.vocabulary,
+  Lesson18.l.vocabulary,
+  Lesson19.l.vocabulary,
+  Lesson20.l.vocabulary
 ];
 
 export {

@@ -3,7 +3,151 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson14$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 14: Class 4 (continued)",
+          className: "text-center font-bold uppercase tracking-wide"
+        }),
+        className: "border-b border-black pb-0.5 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "icēte – letter"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "icūma – iron, metal, tool"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "icāha – sin"
+                  })
+                ]
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("p", {
+                    children: "icōbo – hole (in ground)"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "igikōko – wild animal, insect"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "hanze – outside, out of doors"
+                  })
+                ]
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-8 ml-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "22.",
+            className: "mr-4"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "These prefixes do not appear the same as those in the previous lesson, but they still belong to 4th class.",
+            className: "text-justify"
+          })
+        ],
+        className: "flex items-start mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "(a)",
+                className: "mr-4"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  "The prefix ki before a vowel becomes ",
+                  JsxRuntime.jsx("span", {
+                    children: "c",
+                    className: "font-bold"
+                  }),
+                  "; bi before a vowel becomes ",
+                  JsxRuntime.jsx("span", {
+                    children: "vy",
+                    className: "font-bold"
+                  }),
+                  "."
+                ]
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "iki-ete = icete"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ibi-ete = ivyete"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "iki-aha = icaha"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ibi-aha = ivyaha"
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-8 ml-8 whitespace-pre"
+          })
+        ],
+        className: "ml-12 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "(b)",
+                className: "mr-4"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "This same rule applies to adjectives and verbs:"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "ki-iza = ciza"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "bi-iza = vyiza"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ki-inshi = cinshi"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "bi-inshi = vyinshi"
+              })
+            ],
+            className: "grid grid-cols-2 gap-x-8 ml-8 whitespace-pre"
+          })
+        ],
+        className: "ml-12"
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 font-serif text-[11pt] leading-normal text-black"
+  });
 }
 
 let Content = {
@@ -16,10 +160,219 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "I. Singulars and Translations",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibiti':",
+        answer: "igiti - tree"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ivyobo':",
+        answer: "icobo - hole"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'imyenda':",
+        answer: "umwenda - garment"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibirenge':",
+        answer: "ikirenge - foot"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ivyuma':",
+        answer: "icuma - tool"
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "What is the singular of 'abigishwa'?",
+        options: [
+          "umwigishwa",
+          "igishwa",
+          "abigishwa",
+          "umugishwa"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibitabo':",
+        answer: "igitabo - book"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'abami':",
+        answer: "umwami - king"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ivyaha':",
+        answer: "icaha - sin"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibikoko':",
+        answer: "igikoko - animal"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'amasuka':",
+        answer: "isuka - hoe"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibihugu':",
+        answer: "igihugu - country"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ibijumbu':",
+        answer: "igijumbu - sweet potato"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'imisi':",
+        answer: "umusi - day"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Give the singular and English translation for 'ivyete':",
+        answer: "icete - letter"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Igitabo c’umukobwa kiri hano.",
+        answer: "The girl's book is here."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Har’ivyete vyawe vyinshi mu nzu.",
+        answer: "There are many of your letters in the house."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Ibikoko bibi biri hanze.",
+        answer: "Bad animals are outside."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umuntu mubi afise ivyaha vyinshi mu mutima wiwe.",
+        answer: "A bad person has many sins in his heart."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Mfise igitabo ciza cane.",
+        answer: "I have a very good book."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Intama iri mu cobo kinini hariya.",
+        answer: "The sheep is in a large hole over there."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Ibirenge vy’umwana ni bibi.",
+        answer: "The child's feet are bad."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: Mbeg’ibitabo vyanyu bisha biri mu nzu?",
+        options: [
+          "Are your new books in the house?",
+          "Is your new book in the house?",
+          "Are the books in your house new?",
+          "Do you have new books in the house?"
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Mbeg’abakozi bafise ivyuma vyinshi? oya, bafise bikeya.",
+        answer: "Do the workers have many tools? No, they have few."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Umutama afise icete canje. Kiri mu mpuzu ziwe.",
+        answer: "The old man has my letter. It is in his clothes."
+      }
+    ]
+  },
+  {
+    title: "III. Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "Translate: The hole is very large.",
+        answer: "Icobo ni kinini cane."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Many people are outside.",
+        answer: "Abantu benshi bari hanze."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: There are many sins in the heart of a bad man.",
+        answer: "Har'ivyaha vyinshi mu mutima w'umuntu mubi."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Your (pl.) big country is nice.",
+        answer: "Igihugu canyu kinini ni ciza."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Many good things are in their houses.",
+        answer: "Ibintu vyiza vyinshi biri mu nzu zabo."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: Where are your tools? They are at home.",
+        answer: "Ivyuma vyawe biri he? Biri muhira."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: The girls have few books.",
+        answer: "Abakobwa bafise ibitabo bikeya."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: The tall trees over there are very beautiful.",
+        answer: "Ibiti birebire hariya ni vyiza cane."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "Translate: The wild animal is alive.",
+        options: [
+          "Igikoko ni kibi.",
+          "Igikoko kiri muzima.",
+          "Ibikoko biri muzima.",
+          "Umuntu ni muzima."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "Translate: There is a small hole in our field.",
+        answer: "Har'icobo gitoyi mu murima wacu."
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 14: Class 4 (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

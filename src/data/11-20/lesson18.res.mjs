@@ -3,7 +3,266 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson18$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h1", {
+          children: "Lesson 18: Class 5 i–, ama–",
+          className: "text-[11pt] font-bold text-center uppercase"
+        }),
+        className: "border-b border-black py-1 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("h2", {
+            children: "Vocabulary:",
+            className: "text-[11pt] font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "izuba – sun"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ijambo – word (pl. sometimes amagambo)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "irigi (or, igi) – egg (pl. amagi)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ijisho – eye (pl. amaso)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "iryinyo – tooth"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ishuli – school"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ifaranga – franc"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "izuru – nose, nostril"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ibuye – stone"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "iziko – fireplace, stove"
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 pl-[18pt] text-[11pt]"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "30.",
+                className: "w-[18pt] font-bold"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Class 5.",
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {}),
+                  JsxRuntime.jsx("div", {
+                    children: "singular",
+                    className: "italic text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "plural",
+                    className: "italic text-center"
+                  })
+                ],
+                className: "grid grid-cols-3 mb-1"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "Class prefix",
+                    className: "pr-4"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "i- or iri- (ibuye)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ama- (amabuye)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "Poss. prefix",
+                    className: "pr-4"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "rya- (ryanje)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ya- (yanje)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "Verb prefix",
+                    className: "pr-4"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ri- (riri)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "a- (ari)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "Adj. prefix",
+                    className: "pr-4"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ri- (ribi)",
+                    className: "text-center"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "ma- (mabi)",
+                    className: "text-center"
+                  })
+                ],
+                className: "grid grid-cols-3 gap-y-1"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Note: The singular adjective prefix here is ri-. This is the only place the adjective prefix differs from the noun prefix (see Par. 15). Before a vowel the singular adjective prefix becomes ry-. e.g. ryiza.",
+                className: "mt-4 text-justify"
+              })
+            ],
+            className: "pl-[18pt]"
+          })
+        ],
+        className: "mb-6 text-[11pt]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "31.",
+                className: "w-[18pt] font-bold"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "Some irregularities.",
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "Note and learn the plurals of ijisho, irigi and iryinyo. Amenyo appears to be irregular, but is not. In Par. 16a, we saw that sometimes a and i contract into e, thus ama-inyo becomes amenyo."
+              }),
+              JsxRuntime.jsx("p", {
+                children: "The singular prefix of Class 5 before a vowel is ry- instead of just i-."
+              })
+            ],
+            className: "pl-[18pt] space-y-4 text-justify"
+          })
+        ],
+        className: "mb-6 text-[11pt]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "32.",
+                className: "w-[18pt] font-bold"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  "Mu and Ku with 5",
+                  JsxRuntime.jsx("sup", {
+                    children: "th",
+                    className: "text-[8pt]"
+                  }),
+                  " class nouns."
+                ],
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "For nearly all 5th class nouns in the singular mu and ku change to mw and kw, and the noun retains its initial vowel. This is also true of nouns which are 3rd cl. in the sin. but 5th in the pl., such as isuka, isaho, isahane."
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "mw ishuli – in school"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "kw ibuye – on a rock"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "mw isahane – in a dish"
+                  })
+                ],
+                className: "pl-[18pt] space-y-1 italic"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "However, a few 5th class nouns follow the regular rule and drop the initial vowel after mu and ku. The important ones are:"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "mu (ku) zuba – in the sun"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "mu (ku) zuru – in the nose"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "mu (ku) jisho – in the eye"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "mu (ku) ziko – in the fireplace"
+                  })
+                ],
+                className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 pl-[18pt]"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "The plurals of all 5th class nouns follow the regular rule dropping the initial vowel:"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("div", {
+                    children: "ku mabuye – on the stones"
+                  }),
+                  JsxRuntime.jsx("div", {
+                    children: "mu maso – in the eyes"
+                  })
+                ],
+                className: "grid grid-cols-1 md:grid-cols-2 gap-x-8 pl-[18pt] italic"
+              })
+            ],
+            className: "pl-[18pt] space-y-4 text-justify"
+          })
+        ],
+        className: "mb-6 text-[11pt]"
+      })
+    ],
+    className: "max-w-2xl mx-auto p-8 bg-white text-[#000000] font-serif leading-normal"
+  });
 }
 
 let Content = {
@@ -16,10 +275,146 @@ let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
+let l_quiz = [
+  {
+    title: "Translate into English",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. Amabuye makeya ari ku musozi.",
+        answer: "Few stones are on the mountain."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "2. Amenyo y’umuhungu ni meza. (Note contraction: ma-iza, meza)",
+        options: [
+          "The boy's eyes are nice.",
+          "The boy's teeth are good.",
+          "The boy's clothes are good."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "3. Ifaranga ryanje riri hehe?",
+        answer: "Where is my franc?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. Umugabo afise amafaranga menshi.",
+        answer: "The man has many francs."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Umwana afise ikintu mu jisho ryiwe.",
+        answer: "The child has something in his eye."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "6. Umuhungu afise irigi rito.",
+        options: [
+          "The boy has a small egg.",
+          "The boy has a little stone.",
+          "The boy has a small eye."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. Har’ umucanwa mu ziko.",
+        answer: "There is a fire in the hearth."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. Har’ abana benshi mw ishuli ryanyu.",
+        answer: "There are many children in your school."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "9. Ku musozi wacu har’ amabuye menshi.",
+        answer: "On our mountain there are many stones."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Amajambo y’umukiza ni meza cane.",
+        answer: "The words of the Savior are very good."
+      }
+    ]
+  },
+  {
+    title: "Translate into Kirundi",
+    questions: [
+      {
+        TAG: "TextInput",
+        prompt: "1. The teacher says many words.",
+        answer: "Umwigisha avuga amajambo menshi."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "2. Our new school is very nice.",
+        answer: "Ishuli ryacu rishasha ni ryiza cane."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "3. The sun is large.",
+        options: [
+          "Izuba ni rito.",
+          "Izuba ni rinini.",
+          "Izuba ni rishasha."
+        ],
+        correctIndex: 1
+      },
+      {
+        TAG: "TextInput",
+        prompt: "4. The Word of God is good; it works in people’s hearts.",
+        answer: "Ijambo ry'Imana ni ryiza; rirakorera mu mishaha y'abantu."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "5. Do his parents have many francs?",
+        answer: "Abavyeyi biwe bafise amafaranga menshi?"
+      },
+      {
+        TAG: "TextInput",
+        prompt: "6. John (Yohana) doesn’t like eggs, but (ariko) he likes meat.",
+        answer: "Yohana ntakunda amagi, ariko akunda inyama."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "7. I have the blessing of the Savior in my heart, and I love His Word.",
+        answer: "Nfise umugisha w'Umukiza mu mushaha wanje, kandi nkunda Ijambo ryiwe."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "8. The child has a small nose and big eyes, and much hair.",
+        answer: "Umwana afise izuru rito n'amaso manini, n'ishatsi nyinshi."
+      },
+      {
+        TAG: "MultipleChoice",
+        prompt: "9. The old man has only a few teeth.",
+        options: [
+          "Umutama afise amenyo makeya gusa.",
+          "Umugabo afise amabuye makeya gusa.",
+          "Umukiza afise amajambo makeya gusa."
+        ],
+        correctIndex: 0
+      },
+      {
+        TAG: "TextInput",
+        prompt: "10. Women don’t go to (use mu) school.",
+        answer: "Abagore ntibaja mw ishuli."
+      },
+      {
+        TAG: "TextInput",
+        prompt: "11. The girl has a little stone in her nose.",
+        answer: "Umwigeme afise ibuye rito mu zuru ryiwe."
+      }
+    ]
+  }
+];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 18: Class 5 i–, ama–",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
