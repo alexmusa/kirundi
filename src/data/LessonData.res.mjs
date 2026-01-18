@@ -52,7 +52,16 @@ let lessons = [
   Lesson17.l,
   Lesson18.l,
   Lesson19.l,
-  Lesson20.l
+  Lesson20.l,
+  Lesson21.l,
+  Lesson22.l,
+  Lesson23.l,
+  Lesson24.l,
+  Lesson25.l,
+  Lesson26.l,
+  Lesson27.l,
+  Lesson28.l,
+  Lesson29.l
 ];
 
 let vocabulary = [
