@@ -3,7 +3,186 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson25$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("h2", {
+          children: "Lesson 25: Prefixless Present Tense",
+          className: "text-center font-bold text-lg uppercase"
+        }),
+        className: "border-b border-black py-1 mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("h3", {
+            children: "Vocabulary:",
+            className: "font-bold mb-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "kugura – to buy, (sometimes also: to sell)"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "kubona – to see"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "gusenga – to pray, worship"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "n’ingoga – quickly"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "kūza – to come"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "buhoro-buhoro – slowly, softly, so-so (sometimes used in simple form: buhoro)",
+                className: "sm:col-span-2"
+              })
+            ],
+            className: "ml-5 grid grid-cols-1 sm:grid-cols-2 gap-x-4"
+          })
+        ],
+        className: "mb-6"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "44.",
+                className: "mr-4"
+              }),
+              JsxRuntime.jsxs("p", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "Prefixless Present",
+                    className: "font-bold"
+                  }),
+                  ". This is another tense used to express present time. It is not truly “prefixless”, for the personal prefixes are used, the same as for the –ra– present. But the tense sign –ra– is omitted. Thus:"
+                ]
+              })
+            ],
+            className: "flex items-start mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "nkora – I work"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "dukora – we work"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "ukora – you work"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "mukora – you work"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "akora – he/she works"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "bakora – they work"
+              })
+            ],
+            className: "ml-12 grid grid-cols-2 gap-y-1"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "There is a wide diversity of opinion about the use of these two present tenses, and it is difficult to outline definite rules for them, because occasionally they are used more or less interchangeably. However, there are certain rules which must be observed for their use. Listen carefully to the Barundi and try to observe for yourself the use of these tenses. It is important to know and use both of them. The negative is the same as that of the –ra– present, Par. 28.",
+            className: "mt-4 ml-5"
+          })
+        ],
+        className: "mb-6 text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "45.",
+                className: "mr-4"
+              }),
+              JsxRuntime.jsx("h3", {
+                children: "A few rules:",
+                className: "font-bold"
+              })
+            ],
+            className: "flex items-start mb-4"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "1.",
+                    className: "mr-4 italic"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("p", {
+                        children: "In asking or answering questions the prefixless present is usually used if an object follows the verb, in referring to now-present time, not habitual present. In some localities the –ra– present may be used:"
+                      }),
+                      JsxRuntime.jsx("p", {
+                        children: "Ukora iki? – What are you doing? Nteka ibijumbu. – I’m cooking sweet potatoes.",
+                        className: "mt-2 ml-4 font-medium italic"
+                      })
+                    ]
+                  })
+                ],
+                className: "flex items-start"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "2.",
+                    className: "mr-4 italic"
+                  }),
+                  JsxRuntime.jsxs("div", {
+                    children: [
+                      JsxRuntime.jsx("p", {
+                        children: "It is usually used to express that which is happening just now when another word follows in the same clause, other then cane or ati, except when the continuous present (arikw aragenda) is used:"
+                      }),
+                      JsxRuntime.jsxs("div", {
+                        children: [
+                          JsxRuntime.jsx("p", {
+                            children: "Ngomba kugenda – I want to go."
+                          }),
+                          JsxRuntime.jsx("p", {
+                            children: "Agomba amazi – he/she wants water."
+                          }),
+                          JsxRuntime.jsx("p", {
+                            children: "Mfise igitabo – I have a book."
+                          })
+                        ],
+                        className: "mt-2 ml-4 font-medium italic space-y-1"
+                      })
+                    ]
+                  })
+                ],
+                className: "flex items-start"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsx("span", {
+                    children: "3.",
+                    className: "mr-4 italic"
+                  }),
+                  JsxRuntime.jsx("p", {
+                    children: "It must be used for present time in dependent clauses, which we will study later."
+                  })
+                ],
+                className: "flex items-start"
+              })
+            ],
+            className: "ml-10 space-y-4"
+          })
+        ],
+        className: "mb-6 text-justify"
+      })
+    ],
+    className: "font-serif text-[#000000] leading-normal max-w-2xl mx-auto p-8 bg-white"
+  });
 }
 
 let Content = {
