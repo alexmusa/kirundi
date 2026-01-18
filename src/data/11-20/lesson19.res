@@ -94,7 +94,7 @@ let make = () => {
 }
 
 let l: lesson = {
-  title: "LESSON X: xxx",
+  title: "LESSON 19: Class 5 (continued), Continuous present",
   content: <Content />,
   examples: [],
   vocabulary: [],
