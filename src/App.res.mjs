@@ -6,6 +6,7 @@ import * as Belt_Int from "@rescript/runtime/lib/es6/Belt_Int.js";
 import * as MainMenu from "./MainMenu.res.mjs";
 import * as Settings from "./Settings.res.mjs";
 import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
+import * as Flashcards from "./Flashcards.res.mjs";
 import * as LessonData from "./data/LessonData.res.mjs";
 import * as Stdlib_Int from "@rescript/runtime/lib/es6/Stdlib_Int.js";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
@@ -13,6 +14,14 @@ import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
 import ViteSvg from "./assets/vite.svg";
 import * as JsxRuntime from "react/jsx-runtime";
 import RescriptLogoSvg from "./assets/rescript-logo.svg";
+
+let rescript = RescriptLogoSvg;
+
+let vite = ViteSvg;
+
+function getCompletedVocab(lessons, maxIdx) {
+  return lessons.slice(0, maxIdx + 1 | 0).flatMap(l => l.vocabulary);
+}
 
 function App(props) {
   let localStorageKey = "current-lesson-index";
@@ -57,7 +66,8 @@ function App(props) {
         onStart: () => setCurrentScreen(param => "LessonView"),
         onLessonSelect: goToLessonId,
         onSettings: () => setCurrentScreen(param => "Settings"),
-        lastLessonId: selectedIdx
+        lastLessonId: selectedIdx,
+        onFlashcards: () => setCurrentScreen(param => "Flashcards")
       });
     case "LessonView" :
       let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);
@@ -80,12 +90,20 @@ function App(props) {
         onBack: () => setCurrentScreen(param => "MainMenu"),
         onReset: handleReset
       });
+    case "Flashcards" :
+      return JsxRuntime.jsx(Flashcards.make, {
+        vocabulary: getCompletedVocab(LessonData.lessons, selectedIdx),
+        onBack: param => setCurrentScreen(param => "MainMenu")
+      });
   }
 }
 
 let make = App;
 
 export {
+  rescript,
+  vite,
+  getCompletedVocab,
   make,
 }
-/*  Not a pure module */
+/* rescript Not a pure module */

@@ -6,7 +6,14 @@ external vite: string = "default"
 
 open Webapi.Dom
 
-type screen = MainMenu | LessonView | Settings
+type screen = MainMenu | LessonView | Settings | Flashcards
+
+// Add this helper inside the App component or above it
+let getCompletedVocab = (lessons: array<LessonTypes.lesson>, maxIdx) => {
+  lessons
+  ->Array.slice(~start=0, ~end=maxIdx + 1)
+  ->Array.flatMap(l => l.vocabulary)
+}
 
 @react.component
 let make = () => {
@@ -60,6 +67,7 @@ let make = () => {
     <MainMenu
       onStart={_ => setCurrentScreen(_ => LessonView)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
+      onFlashcards={_ => setCurrentScreen(_ => Flashcards)} // <--- Pass the handler here
       lastLessonId=selectedIdx
       onLessonSelect=goToLessonId
     />
@@ -83,5 +91,10 @@ let make = () => {
       />
     | None => React.string("Lesson not found")
     }
+  | Flashcards =>
+    <Flashcards
+      vocabulary={getCompletedVocab(LessonData.lessons, selectedIdx)}
+      onBack={_ => setCurrentScreen(_ => MainMenu)}
+    />
   }
 }

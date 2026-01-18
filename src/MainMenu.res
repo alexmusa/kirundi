@@ -1,7 +1,13 @@
 // MainMenu.res
 
 @react.component
-let make = (~onStart, ~onLessonSelect: int => unit, ~onSettings, ~lastLessonId) => {
+let make = (
+  ~onStart, 
+  ~onLessonSelect: int => unit, 
+  ~onSettings, 
+  ~lastLessonId,
+  ~onFlashcards
+) => {
   let lessonGroups = [
     (1, 10), (11, 20), (21, 30), (31, 40), (41, 50), 
     (51, 60), (61, 70), (71, 80), (81, 90), (91, 100), 
@@ -60,6 +66,14 @@ let make = (~onStart, ~onLessonSelect: int => unit, ~onSettings, ~lastLessonId) 
               {React.string("→")}
             </span>
           </button>
+
+            {isStarted ? (
+          <button
+              onClick={_ => onFlashcards()} // Pass this prop from App.res
+              className="flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all">
+              {React.string("Practice Flashcards")}
+            </button>
+          ) : React.null}
         </div>
       </div>
 

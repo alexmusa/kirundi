@@ -5,6 +5,7 @@ import * as Primitive_object from "@rescript/runtime/lib/es6/Primitive_object.js
 import * as JsxRuntime from "react/jsx-runtime";
 
 function MainMenu(props) {
+  let onFlashcards = props.onFlashcards;
   let lastLessonId = props.lastLessonId;
   let onSettings = props.onSettings;
   let onLessonSelect = props.onLessonSelect;
@@ -119,18 +120,25 @@ function MainMenu(props) {
                 ],
                 className: "text-center mb-8"
               }),
-              JsxRuntime.jsx("div", {
-                children: JsxRuntime.jsxs("button", {
-                  children: [
-                    isStarted ? "Continue Lesson" : "Start Learning",
-                    JsxRuntime.jsx("span", {
-                      children: "→",
-                      className: "ml-2 group-hover:translate-x-1 transition-transform"
-                    })
-                  ],
-                  className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
-                  onClick: param => onStart()
-                }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  JsxRuntime.jsxs("button", {
+                    children: [
+                      isStarted ? "Continue Lesson" : "Start Learning",
+                      JsxRuntime.jsx("span", {
+                        children: "→",
+                        className: "ml-2 group-hover:translate-x-1 transition-transform"
+                      })
+                    ],
+                    className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
+                    onClick: param => onStart()
+                  }),
+                  isStarted ? JsxRuntime.jsx("button", {
+                      children: "Practice Flashcards",
+                      className: "flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all",
+                      onClick: param => onFlashcards()
+                    }) : null
+                ],
                 className: "flex flex-col gap-4 w-full max-w-xs"
               })
             ],

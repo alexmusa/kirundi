@@ -4,4 +4,5 @@ let make: (
   ~onLessonSelect: int => unit,
   ~onSettings: unit => unit,
   ~lastLessonId: int,
+  ~onFlashcards: unit => unit,
 ) => React.element
