@@ -1,12 +1,28 @@
 // Flashcards.res
+// Flashcards.res
+
+type card = {
+  kirundi: string,
+  english: string,
+  isReversed: bool,
+}
 
 @react.component
 let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
   let (deck, setDeck) = React.useState(_ => {
-    let newDeck = vocabulary->Array.copy
+    let newDeck = vocabulary->Array.map(((k, e)) => {
+      // Add the type annotation ': card' right here
+      let card: card = {
+        kirundi: k,
+        english: e,
+        isReversed: Math.random() > 0.5,
+      }
+      card
+    })
     newDeck->Array.shuffle
     newDeck
   })
+  
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
   let (isFlipped, setIsFlipped) = React.useState(_ => false)
 
@@ -41,40 +57,44 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
 
     /* Card Area */
     <div className="flex-grow flex items-center justify-center">
+      // Inside the render switch in Flashcards.res
       {switch currentCard {
-      | Some((kirundi, english)) =>
+      | Some(card) =>
+        let frontText = card.isReversed ? card.english : card.kirundi
+        let frontLabel = card.isReversed ? "English" : "Kirundi"
+        
+        let backText = card.isReversed ? card.kirundi : card.english
+        let backLabel = card.isReversed ? "Kirundi" : "English"
+
         <div 
           onClick={handleFlip}
           className="relative w-full max-w-sm aspect-[3/4] cursor-pointer group perspective">
-          <div className={`
-            relative w-full h-full duration-500 preserve-3d transition-all
-            ${isFlipped ? "rotate-y-180" : ""}
-          `}>
-            /* Front (Kirundi) */
+          <div className={`relative w-full h-full duration-500 preserve-3d transition-all ${isFlipped ? "rotate-y-180" : ""}`}>
+            
+            /* Front Side */
             <div className="absolute inset-0 backface-hidden bg-white rounded-3xl shadow-xl border-2 border-indigo-100 flex flex-col items-center justify-center p-8 text-center">
               <span className="text-sm text-indigo-400 font-bold uppercase tracking-widest mb-4">
-                {React.string("Kirundi")}
+                {React.string(frontLabel)}
               </span>
               <h2 className="text-3xl font-bold text-gray-800">
-                {React.string(kirundi)}
+                {React.string(frontText)}
               </h2>
-              <p className="mt-8 text-gray-400 text-sm italic">
-                {React.string("Tap to flip")}
-              </p>
+              <p className="mt-8 text-gray-400 text-sm italic">{React.string("Tap to flip")}</p>
             </div>
 
-            /* Back (English) */
+            /* Back Side */
             <div className="absolute inset-0 backface-hidden bg-indigo-600 rounded-3xl shadow-xl flex flex-col items-center justify-center p-8 text-center rotate-y-180">
               <span className="text-sm text-indigo-200 font-bold uppercase tracking-widest mb-4">
-                {React.string("English")}
+                {React.string(backLabel)}
               </span>
               <h2 className="text-3xl font-bold text-white">
-                {React.string(english)}
+                {React.string(backText)}
               </h2>
             </div>
+
           </div>
         </div>
-      | None => React.string("No cards available. Complete more lessons!")
+      | None => React.string("No cards available.")
       }}
     </div>
 

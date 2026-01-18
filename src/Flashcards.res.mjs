@@ -7,7 +7,11 @@ import * as JsxRuntime from "react/jsx-runtime";
 function Flashcards(props) {
   let vocabulary = props.vocabulary;
   let match = React.useState(() => {
-    let newDeck = vocabulary.slice();
+    let newDeck = vocabulary.map(param => ({
+      kirundi: param[0],
+      english: param[1],
+      isReversed: Math.random() > 0.5
+    }));
     Stdlib_Array.shuffle(newDeck);
     return newDeck;
   });
@@ -28,6 +32,56 @@ function Flashcards(props) {
     setCurrentIndex(prev => Math.max(prev - 1 | 0, 0));
   };
   let handleFlip = param => setIsFlipped(prev => !prev);
+  let tmp;
+  if (currentCard !== undefined) {
+    let frontText = currentCard.isReversed ? currentCard.english : currentCard.kirundi;
+    let frontLabel = currentCard.isReversed ? "English" : "Kirundi";
+    let backText = currentCard.isReversed ? currentCard.kirundi : currentCard.english;
+    let backLabel = currentCard.isReversed ? "Kirundi" : "English";
+    tmp = JsxRuntime.jsx("div", {
+      children: JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: frontLabel,
+                className: "text-sm text-indigo-400 font-bold uppercase tracking-widest mb-4"
+              }),
+              JsxRuntime.jsx("h2", {
+                children: frontText,
+                className: "text-3xl font-bold text-gray-800"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "Tap to flip",
+                className: "mt-8 text-gray-400 text-sm italic"
+              })
+            ],
+            className: "absolute inset-0 backface-hidden bg-white rounded-3xl shadow-xl border-2 border-indigo-100 flex flex-col items-center justify-center p-8 text-center"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: backLabel,
+                className: "text-sm text-indigo-200 font-bold uppercase tracking-widest mb-4"
+              }),
+              JsxRuntime.jsx("h2", {
+                children: backText,
+                className: "text-3xl font-bold text-white"
+              })
+            ],
+            className: "absolute inset-0 backface-hidden bg-indigo-600 rounded-3xl shadow-xl flex flex-col items-center justify-center p-8 text-center rotate-y-180"
+          })
+        ],
+        className: `relative w-full h-full duration-500 preserve-3d transition-all ` + (
+          match$2[0] ? "rotate-y-180" : ""
+        )
+      }),
+      className: "relative w-full max-w-sm aspect-[3/4] cursor-pointer group perspective",
+      onClick: handleFlip
+    });
+  } else {
+    tmp = "No cards available.";
+  }
   return JsxRuntime.jsxs("div", {
     children: [
       JsxRuntime.jsxs("div", {
@@ -59,50 +113,7 @@ function Flashcards(props) {
         className: "flex items-center justify-between mb-8"
       }),
       JsxRuntime.jsx("div", {
-        children: currentCard !== undefined ? JsxRuntime.jsx("div", {
-            children: JsxRuntime.jsxs("div", {
-              children: [
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    JsxRuntime.jsx("span", {
-                      children: "Kirundi",
-                      className: "text-sm text-indigo-400 font-bold uppercase tracking-widest mb-4"
-                    }),
-                    JsxRuntime.jsx("h2", {
-                      children: currentCard[0],
-                      className: "text-3xl font-bold text-gray-800"
-                    }),
-                    JsxRuntime.jsx("p", {
-                      children: "Tap to flip",
-                      className: "mt-8 text-gray-400 text-sm italic"
-                    })
-                  ],
-                  className: "absolute inset-0 backface-hidden bg-white rounded-3xl shadow-xl border-2 border-indigo-100 flex flex-col items-center justify-center p-8 text-center"
-                }),
-                JsxRuntime.jsxs("div", {
-                  children: [
-                    JsxRuntime.jsx("span", {
-                      children: "English",
-                      className: "text-sm text-indigo-200 font-bold uppercase tracking-widest mb-4"
-                    }),
-                    JsxRuntime.jsx("h2", {
-                      children: currentCard[1],
-                      className: "text-3xl font-bold text-white"
-                    })
-                  ],
-                  className: "absolute inset-0 backface-hidden bg-indigo-600 rounded-3xl shadow-xl flex flex-col items-center justify-center p-8 text-center rotate-y-180"
-                })
-              ],
-              className: `
-            relative w-full h-full duration-500 preserve-3d transition-all
-            ` + (
-                match$2[0] ? "rotate-y-180" : ""
-              ) + `
-          `
-            }),
-            className: "relative w-full max-w-sm aspect-[3/4] cursor-pointer group perspective",
-            onClick: handleFlip
-          }) : "No cards available. Complete more lessons!",
+        children: tmp,
         className: "flex-grow flex items-center justify-center"
       }),
       JsxRuntime.jsxs("div", {
