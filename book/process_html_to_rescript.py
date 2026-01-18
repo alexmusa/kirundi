@@ -61,7 +61,6 @@ HTML:
     print("\nProcessing complete!")
 
 if __name__ == "__main__":
-    Check for API key
     if not os.environ.get("GOOGLE_API_KEY"):
         print("Error: GOOGLE_API_KEY environment variable not set.")
         print("Please set it with: export GOOGLE_API_KEY='your-api-key'")
