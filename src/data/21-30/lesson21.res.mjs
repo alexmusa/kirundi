@@ -3,7 +3,132 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson21$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("p", {
+          children: [
+            "LESSON 21: Verb –",
+            JsxRuntime.jsx("i", {
+              children: "fise",
+              className: "italic"
+            })
+          ],
+          className: "text-center font-bold"
+        }),
+        className: "border-b border-black pb-[1.0pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Vocabulary",
+            className: "font-bold"
+          }),
+          ":"
+        ],
+        className: "mb-2"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("div", {
+              children: "umworo (cl. 1) – poor man, woman"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "inzara (cl. 3) – hunger"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "umutunzi (cl. 1) – rich man, woman"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ariko – but"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "umuyaga (cl. 2) – wind"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ubu – now"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "inkoko (cl. 3) – chicken"
+            })
+          ],
+          className: "grid grid-cols-1 sm:grid-cols-2 gap-x-8"
+        }),
+        className: "pl-[18pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "36.",
+            className: "inline-block w-[18pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Verb –fise",
+            className: "font-bold"
+          }),
+          ". This verb is defective. Like –ri it has no infinitive or imperative, no far future, and very few other tenses. The verb used for its missing parts is ",
+          JsxRuntime.jsx("i", {
+            children: "kugira",
+            className: "italic"
+          }),
+          "."
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Since the –ra– present tense ordinarily is not used with this verb when an object follows, we give here the present tense without –ra, of which you have already had a number of forms:",
+        className: "ml-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("div", {
+              children: "mfise – I have"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "dufise – we have"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ufise – you have"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "mufise – you have"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "afise – he/she has"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "bafise – they have"
+            })
+          ],
+          className: "grid grid-cols-2 gap-x-8 max-w-md"
+        }),
+        className: "ml-[36pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Note the change of letter in the personal prefixes according to the rules given in Par. 14 and 21. Remember the accords for the other classes: e.g. Imana ifise – God has. The negative is formed regularly: simfise, ntufise, ntafise etc.",
+        className: "ml-[18pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "The –ra– present of this verb may be used when no object follows, and is occasionally used when there is an object, but preferably not. The –ra– present would be ndafise, urafise etc.",
+        className: "ml-[18pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "min-h-[1.2em]"
+      })
+    ],
+    className: "font-serif text-[11pt] leading-normal text-black max-w-2xl mx-auto p-4"
+  });
 }
 
 let Content = {
@@ -19,7 +144,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 21: Verb –",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

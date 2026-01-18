@@ -3,7 +3,193 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson29$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "LESSON 29: Future Tense",
+          className: "font-bold text-[11pt]"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4 text-center"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("p", {
+            children: [
+              "Vocabulary",
+              JsxRuntime.jsx("span", {
+                children: ":",
+                className: "font-normal"
+              })
+            ],
+            className: "font-bold text-[11pt]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "kubika \u2013 to put away"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "gusubira \u2013 to return, go back"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "kugaruka \u2013 to return, come back"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  "ejo \u2013 yesterday, tomorrow ",
+                  JsxRuntime.jsx("span", {
+                    children: "(dep. on verb tense)",
+                    className: "text-[10pt]"
+                  })
+                ]
+              }),
+              JsxRuntime.jsx("div", {
+                children: "kugira \u2013 to do, make, have"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "uyu musi \u2013 today"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ubwoba \u2013 fear"
+              }),
+              JsxRuntime.jsxs("div", {
+                children: [
+                  "ku mugoroba \u2013 in the afternoon ",
+                  JsxRuntime.jsx("span", {
+                    children: "(3:00-6:00)",
+                    className: "text-[10pt]"
+                  })
+                ]
+              })
+            ],
+            className: "pl-[18pt] text-[11pt] grid grid-cols-1 md:grid-cols-2"
+          })
+        ],
+        className: "mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "57.\u00A0\u00A0 "
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Future tense",
+            className: "font-bold"
+          }),
+          JsxRuntime.jsxs("span", {
+            children: [
+              ". For future time ",
+              JsxRuntime.jsx("i", {
+                children: "after"
+              }),
+              " today the particle \u2013z\u014D\u2013 is inserted in the verb between the personal prefix and the verb stem. This is often called the ",
+              JsxRuntime.jsx("i", {
+                children: "far future tense"
+              }),
+              ". \u2013z\u014D\u2013 is always long in both affirmative and negative."
+            ]
+          })
+        ],
+        className: "pl-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("div", {
+              children: "nz\u014Dgenda \u2013 I shall go"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "tuz\u014Dgenda \u2013 we shall go"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "uz\u014Dgenda \u2013 you will go"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "muz\u014Dgenda \u2013 you will go"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "az\u014Dgenda \u2013 he/she will go"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "baz\u014Dgenda \u2013 they will go"
+            })
+          ],
+          className: "grid grid-cols-2 max-w-lg"
+        }),
+        className: "pl-[36pt] text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("p", {
+            children: [
+              "But for future time ",
+              JsxRuntime.jsx("i", {
+                children: "today"
+              }),
+              " (called the near future tense) the \u2013ra\u2013 present is used:"
+            ]
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("p", {
+                children: "ndagenda uyu musi \u2013 I shall go today"
+              }),
+              JsxRuntime.jsx("p", {
+                children: "nzogenda ejo \u2013 I shall go tomorrow"
+              })
+            ],
+            className: "pl-[18pt]"
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Note: ",
+                className: "font-bold"
+              }),
+              "This tense will retain the \u2013ra\u2013 even in dependent clauses but not negative, contrary to the rule for its use in now present time. Also it is used when followed by an object or phrase."
+            ]
+          })
+        ],
+        className: "pl-[18pt] text-justify text-[11pt] mb-4 space-y-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "58.\u00A0\u00A0 "
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Verb kugira",
+            className: "font-bold"
+          }),
+          JsxRuntime.jsx("span", {
+            children: ". This is a very important verb for it is used in many idiomatic expressions, e.g. kugira ubwoba \u2013 to have fear, be afraid. You remember, also that this is the verb which supplies the missing parts of \u2013fise. Thus, for the future of \u201cto have\u201d you must use kugira."
+          })
+        ],
+        className: "pl-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "59.\u00A0\u00A0 "
+          }),
+          JsxRuntime.jsx("span", {
+            children: "The verb kugaruka",
+            className: "font-bold"
+          }),
+          JsxRuntime.jsx("span", {
+            children: " is used in the sense of to return to the place where the speaker is. e.g. A man at Gitega would say of another: \u201cAzogaruka ino ejo\u201d \u2013 he/she will return here tomorrow. But if a man is at Gitega and says, \u201cI will return to Bujumbura tomorrow\u201d he would not use kugaruka, but gusubira. e.g. Nzosubira i Bujumbura ejo \u2013 I will return (go back) to Bujumbura tomorrow."
+          })
+        ],
+        className: "pl-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      })
+    ],
+    className: "max-w-4xl mx-auto p-8 bg-white text-black font-serif leading-normal"
+  });
 }
 
 let Content = {
@@ -19,7 +205,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 29: Future Tense",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

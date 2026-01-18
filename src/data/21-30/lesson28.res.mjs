@@ -3,7 +3,150 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson28$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "LESSON 28: Class 8 (continued)",
+          className: "text-center font-bold text-[11pt]"
+        }),
+        className: "border-b border-black pb-px mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("b", {
+            children: "Vocabulary",
+            className: "font-bold"
+          }),
+          ":"
+        ],
+        className: "text-[11pt] mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "ubushe – burn (no pl.) \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ubwoya – hair (except of human head, no pl.)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "ubukene – need, poverty (no pl.) \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 uburyo – opportunity, way, kind (no pl.)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "ubwana – childhood (no pl.) \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ubufu – flour (no pl.)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "ubusore – youth (in the sense of age, not person, no pl.)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "ubutumwa – message (when used with bwiza means gospel, no pl.)"
+          })
+        ],
+        className: "ml-[18pt] text-[11pt] space-y-1"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] text-justify my-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "54."
+          }),
+          JsxRuntime.jsx("span", {
+            children: "\u00A0",
+            className: "inline-block w-[14pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Observe the words in this class: ubwana (from umwana) and ubusore (from umusore). Many others are formed this way: e.g. Ubukristo (from Umukristo) meaning Christianity."
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] text-justify my-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "55."
+          }),
+          JsxRuntime.jsx("span", {
+            children: "\u00A0",
+            className: "inline-block w-[14pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Another use of this class is in temporal expressions, such as:"
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify text-[11pt] mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "bwakeye – good morning (not a literal translation)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "burije – it is getting dark, it is late (in the day) (bwije in a dependent clause)"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "bukeye – the next day"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "ubu – now"
+          })
+        ],
+        className: "ml-[36pt] text-[11pt] space-y-1 mb-2"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "You will learn other expressions from time to time involving this use.",
+        className: "ml-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] text-justify my-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "56."
+          }),
+          JsxRuntime.jsx("span", {
+            children: "\u00A0",
+            className: "inline-block w-[14pt]"
+          }),
+          JsxRuntime.jsx("b", {
+            children: "Imperative of “to come”",
+            className: "font-bold"
+          }),
+          JsxRuntime.jsxs("span", {
+            children: [
+              ". Kuza has no imperative in the singular, and thus you must use ",
+              JsxRuntime.jsx("i", {
+                children: "ngo",
+                className: "italic"
+              }),
+              " or ",
+              JsxRuntime.jsx("i", {
+                children: "ngwino",
+                className: "italic"
+              }),
+              " – come, come here."
+            ]
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify text-[11pt]"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] text-justify my-4"
+      })
+    ],
+    className: "text-black font-serif leading-normal"
+  });
 }
 
 let Content = {
@@ -19,7 +162,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 28: Class 8 (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

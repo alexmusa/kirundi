@@ -3,7 +3,200 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson23$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("p", {
+          children: [
+            "LESSON 23: Class 6 ",
+            JsxRuntime.jsx("i", {
+              children: "uru\u2013, in\u2013",
+              className: "italic"
+            })
+          ],
+          className: "text-center font-bold uppercase"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: " ",
+        className: "min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Vocabulary",
+            className: "font-bold"
+          }),
+          ":"
+        ],
+        className: "mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("div", {
+            children: "ur\u016Bgi \u2013 door"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urukwi \u2013 stick of wood (firewood)"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urutoke \u2013 finger"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "ur\u016Bzi \u2013 river"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "uruk\u016Bndo \u2013 love"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urub\u0101ho \u2013 board, slate"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "gushira \u2013 to put"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urugo \u2013 homestead, kraal, enclosure"
+          })
+        ],
+        className: "ml-[18pt] grid grid-cols-2 gap-y-0 mb-4 whitespace-pre-wrap"
+      }),
+      JsxRuntime.jsx("p", {
+        children: " ",
+        className: "min-h-[1.2em] text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "39."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Class 6",
+            className: "font-bold"
+          }),
+          "."
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "singular"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "plural"
+          })
+        ],
+        className: "ml-[144pt] grid grid-cols-2 text-justify mb-1"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Noun prefix"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "uru- (urutoke)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "in- (intoke)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Poss. prefix"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "rwa- (rwanje)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "za- (zanje)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Verb prefix"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "ru- (ruri)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "zi- (ziri)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Adj. prefix"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "ru- (rubi)"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "n- (m) (mbi)"
+          })
+        ],
+        className: "ml-[36pt] grid grid-cols-[108pt_1fr_1fr] text-justify mb-0"
+      }),
+      JsxRuntime.jsx("p", {
+        children: " ",
+        className: "min-h-[1.2em] text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "40."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "In forming the plurals of words in this class remember the changes that take place when N comes in contact with certain letters (Par. 14)."
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "urubaho \u2013 board"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "imbaho \u2013 boards"
+          })
+        ],
+        className: "ml-[36pt] grid grid-cols-2 text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: " ",
+        className: "min-h-[1.2em] text-justify"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "41."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "The plural of uruzi is inzuzi, and that of urugi is inzugi and likewise for all vowel-stem nouns of this class. (The stems of these words are: -uzi, -ugi)"
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Note: ",
+            className: "italic"
+          }),
+          "The plural agreements of this class are exactly the same as the plurals of class 3."
+        ],
+        className: "ml-[18pt] text-justify"
+      }),
+      JsxRuntime.jsx("p", {
+        children: " ",
+        className: "min-h-[1.2em] text-justify"
+      })
+    ],
+    className: "bg-white p-8 text-[#000000] font-serif text-[11pt] leading-normal max-w-[800px] mx-auto"
+  });
 }
 
 let Content = {
@@ -19,7 +212,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 23: Class 6",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

@@ -3,7 +3,132 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson22$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "LESSON 22: Infinitive and Imperative",
+          className: "text-center font-bold text-[11pt]"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Vocabulary",
+            className: "font-bold"
+          }),
+          ":"
+        ],
+        className: "text-[11pt] mb-2"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("div", {
+              children: "gusesa – to empty out, spill"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "gutēka – to cook (in water) (trans.)"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "gusoma – to read"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "gufasha – to help"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "kuzana – to bring"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "iki? – what?"
+            })
+          ],
+          className: "grid grid-cols-2 gap-x-4"
+        }),
+        className: "ml-[18pt] text-[11pt] mb-4 leading-relaxed"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "37."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Infinitive",
+            className: "font-bold"
+          }),
+          ". You will see that all the verbs in this vocabulary begin with ku or gu. (Remember the change-down rule, Par. 21.) In English we form an infinitive by placing the word ‘to’ before the verb. In Kirundi, ku (gu) is attached to the verb stem. Then to conjugate a verb we simply remove the ku and add the proper prefixes. From now on all verbs given in the vocabularies will be given in the infinitive form."
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Ndagomba kugenda – I want to go.",
+        className: "ml-[36pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "You can easily form the infinitives of the verbs already learned.",
+        className: "ml-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "38."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Imperative",
+            className: "font-bold"
+          }),
+          ". The singular imperative is simply the stem of the verb:"
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Kora! – work!               Genda! – go!                Zana! – bring!",
+        className: "ml-[36pt] text-justify text-[11pt] mb-4 whitespace-pre"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "The singular negative imperative is like the present negative, except that the final a is changed to e.",
+        className: "ml-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Ntugende! – don’t go!               Ntuteke! – don’t cook!",
+        className: "ml-[36pt] text-justify text-[11pt] mb-4 whitespace-pre"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "(For further explanations see Par. 132-134.) Except in the imperative, the verb stem can never stand alone. Two imperatives may not follow each other without changing the form of the 2"
+          }),
+          JsxRuntime.jsx("sup", {
+            children: "nd"
+          }),
+          JsxRuntime.jsx("span", {
+            children: " one (Par. 134)."
+          })
+        ],
+        className: "ml-[18pt] text-justify text-[11pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-[11pt] min-h-[1.2em]"
+      })
+    ],
+    className: "bg-white p-8 text-[#000000] leading-normal font-serif"
+  });
 }
 
 let Content = {
@@ -19,7 +144,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 22: Infinitive and Imperative",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

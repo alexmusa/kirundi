@@ -3,7 +3,350 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson26$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("p", {
+          children: [
+            "LESSON 26: Class 7 ",
+            JsxRuntime.jsx("i", {
+              children: "aka"
+            }),
+            "\u2013, ",
+            JsxRuntime.jsx("i", {
+              children: "utu"
+            }),
+            "\u2013"
+          ],
+          className: "text-center font-bold"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          "Vocabulary",
+          JsxRuntime.jsx("span", {
+            children: ":",
+            className: "font-normal"
+          })
+        ],
+        className: "font-bold mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "agakiza \u2013 salvation (no pl.)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "agahinda \u2013 sorrow (no pl.)"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "akazi \u2013 work (Swahili, no pl.)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "agahiri \u2013 cold (in the head, no pl.)"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "akanwa \u2013 mouth (no pl.)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "akamango \u2013 cold (in the head, no pl.)"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "akantu \u2013 a little thing"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "(preferred in some places)",
+                className: "italic text-sm"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsx("div", {
+            children: JsxRuntime.jsx("span", {
+              children: "akayabo \u2013 cat (or, akayabu)"
+            }),
+            className: "grid grid-cols-2"
+          })
+        ],
+        className: "ml-[18pt] space-y-1 mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "46.\u00A0\u00A0\u00A0\u00A0"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Class 7",
+            className: "font-bold"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "."
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "singular"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "plural"
+              })
+            ],
+            className: "ml-[144pt] grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Noun prefix"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "aka- (akantu)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "utu- (utuntu)"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-[1fr_1fr_1fr]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Poss. prefix"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "ka- (kanje)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "twa- (twanje)"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-[1fr_1fr_1fr]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Verb prefix"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "ka- (kari)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "tu- (turi)"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-[1fr_1fr_1fr]"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "Adj. prefix"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "ka- (kabi)"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "tu- (tubi)"
+              })
+            ],
+            className: "ml-[36pt] grid grid-cols-[1fr_1fr_1fr]"
+          })
+        ],
+        className: "mb-4"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          "Note: ",
+          JsxRuntime.jsx("i", {
+            children: "ka"
+          }),
+          "- for adjective prefix before ",
+          JsxRuntime.jsx("i", {
+            children: "i"
+          }),
+          " changes to ",
+          JsxRuntime.jsx("i", {
+            children: "ke"
+          }),
+          ". (ka-iza = keza)"
+        ],
+        className: "ml-[36pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "47.\u00A0\u00A0\u00A0\u00A0"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "The plural is not very common for most of the words given above. Also, the plural of akayabo is usually irregular; being ubuyabo, thus requiring the accords for ubu-, see Par. 50. However, the plural is used commonly, especially for words brought into this class from other classes, as you see in the following paragraph."
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "48.\u00A0\u00A0\u00A0\u00A0"
+          }),
+          JsxRuntime.jsxs("span", {
+            children: [
+              "Class 7 is the diminutive class. Words of all other classes may be given the prefixes of this class to give the meaning of a ",
+              JsxRuntime.jsx("i", {
+                children: "little"
+              }),
+              " thing:"
+            ]
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "ikintu \u2013 thing"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "akantu \u2013 little thing"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "umwana \u2013 child"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "akana \u2013 little child"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "igikoko \u2013 wild animal"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "agakoko \u2013 insect"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "impuzu \u2013 clothes"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "agahuzu \u2013 little clothing (Par. 14)"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "umunyu \u2013 salt"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "akunyu \u2013 little salt"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "amazi \u2013 water"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "utuzi \u2013 little water"
+              })
+            ],
+            className: "grid grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("span", {
+                children: "amata \u2013 milk"
+              }),
+              JsxRuntime.jsx("span", {
+                children: "uduta \u2013 little milk"
+              })
+            ],
+            className: "grid grid-cols-2"
+          })
+        ],
+        className: "ml-[36pt] space-y-1 mb-4"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          "Note that the last two words, since in their regular form they have a plural prefix, when changed to this class still have a plural prefix. Note also, that the diminutive of umunyu is ak",
+          JsxRuntime.jsx("b", {
+            children: "u",
+            className: "font-bold"
+          }),
+          "nyu (not akanyu)."
+        ],
+        className: "ml-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "49.\u00A0\u00A0\u00A0\u00A0"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "The diminutive form is commonly used when a person is asking for something, though it isn\u2019t just a little that he wants."
+          })
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "Ngomba agahuzu \u2013 I want a little clothing (but he wouldn\u2019t be satisfied with a little!)",
+        className: "ml-[36pt] text-justify mb-4"
+      })
+    ],
+    className: "font-serif text-[11pt] leading-tight text-black max-w-4xl mx-auto p-8"
+  });
 }
 
 let Content = {
@@ -19,7 +362,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 26: Class 7",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

@@ -3,7 +3,145 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson24$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsx("p", {
+          children: "LESSON 24: Class 6 (continued)",
+          className: "text-center font-bold"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("p", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "Vocabulary",
+            className: "font-bold"
+          }),
+          ":"
+        ],
+        className: "mb-2"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("div", {
+            children: "urusato – skin"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "uruyuki – bee"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urupfunguzo – key (Swahili)"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "uruyoya – infant (up to one month old)"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "ururimi – tongue, language"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "uruyige – locust"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urushi – palm of hand (pl. amashi)"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "urwāra – fingernail or toenail"
+          })
+        ],
+        className: "pl-[18pt] mb-4 grid grid-cols-1 md:grid-cols-2 gap-y-1"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "42."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Urushi",
+            className: "font-bold"
+          }),
+          ". The plural is amashi. This word is usually used in the sense of holding out one’s hands to receive something. They say, “Tega amashi” – hold out your hands."
+        ],
+        className: "pl-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("div", {
+        children: "Urushi also has the regular 6th class pl. prefix, but when used that way (inshi) it means “slaps in the face”.",
+        className: "pl-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "43."
+          }),
+          JsxRuntime.jsx("span", {
+            className: "inline-block w-[12pt]"
+          }),
+          "The words uruyuki, uruyoya, uruyige, urwara form their plurals with a ‘z’: inzuki, inzoya, inzige, inzāra. (Do not confuse inzāra with inzara meaning hunger. The tone is different as well as the syllable being longer.) These are all vowel-stem, thus inz- in plural (see Par. 14 and 41). Observe:"
+        ],
+        className: "pl-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "uru-uki"
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              "uru-oya",
+              JsxRuntime.jsx("span", {
+                className: "inline-block w-[24pt]"
+              }),
+              "– The vowel is short so a ",
+              JsxRuntime.jsx("i", {
+                children: "y",
+                className: "italic"
+              }),
+              " is inserted between prefix and stem"
+            ]
+          }),
+          JsxRuntime.jsx("p", {
+            children: "uru-ige"
+          }),
+          JsxRuntime.jsxs("p", {
+            children: [
+              "uru-āra",
+              JsxRuntime.jsx("span", {
+                className: "inline-block w-[36pt]"
+              }),
+              "– the vowel is long, so the ",
+              JsxRuntime.jsx("i", {
+                children: "u",
+                className: "italic"
+              }),
+              " of the prefix changes to ",
+              JsxRuntime.jsx("i", {
+                children: "w",
+                className: "italic"
+              }),
+              ": urwāra."
+            ]
+          })
+        ],
+        className: "pl-[36pt] text-justify space-y-1"
+      }),
+      JsxRuntime.jsx("p", {
+        className: "h-4"
+      })
+    ],
+    className: "font-serif text-[11pt] leading-normal text-black max-w-3xl mx-auto p-8"
+  });
 }
 
 let Content = {
@@ -19,7 +157,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 24: Class 6 (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

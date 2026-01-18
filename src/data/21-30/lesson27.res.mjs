@@ -3,7 +3,307 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson27$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsxs("div", {
+    children: [
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("p", {
+          children: [
+            "LESSON 27: Class 8 ",
+            JsxRuntime.jsx("i", {
+              children: "ubu",
+              className: "italic"
+            }),
+            "–, ",
+            JsxRuntime.jsx("i", {
+              children: "ama",
+              className: "italic"
+            }),
+            "–"
+          ],
+          className: "text-center font-bold"
+        }),
+        className: "border-b border-black pb-[1pt] mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "Vocabulary",
+            className: "font-bold inline"
+          }),
+          JsxRuntime.jsx("span", {
+            children: ":"
+          })
+        ],
+        className: "mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "ubwato – boat"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ubwenge – wisdom (no pl.)"
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "ubushaza (ubwishaza) – peas (no pl.)"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ubuntu – grace (no pl.)"
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2"
+          }),
+          JsxRuntime.jsxs("div", {
+            children: [
+              JsxRuntime.jsx("div", {
+                children: "uburiri – bed"
+              }),
+              JsxRuntime.jsx("div", {
+                children: "ubugingo – life (no pl.)"
+              })
+            ],
+            className: "grid grid-cols-1 md:grid-cols-2"
+          }),
+          JsxRuntime.jsx("div", {
+            children: "kuko – because"
+          })
+        ],
+        className: "ml-[18pt] mb-4 space-y-1"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-justify min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "50.",
+            className: "inline-block w-[18pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Class 8",
+            className: "font-bold"
+          }),
+          "."
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("div", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("div", {}),
+            JsxRuntime.jsx("div", {
+              children: "singular",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "plural",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "Noun prefix"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ubu- (uburiri)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ama- (amariri)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "Poss. prefix"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "bwa- (bwanje)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ya- (yanje)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "Verb prefix"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "bu- (buri)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "a- (ari)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "Adj. prefix"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "bu- (bubi)",
+              className: "pl-4"
+            }),
+            JsxRuntime.jsx("div", {
+              children: "ma- (mabi)",
+              className: "pl-4"
+            })
+          ],
+          className: "grid grid-cols-[120pt_120pt_120pt] text-justify whitespace-nowrap"
+        }),
+        className: "ml-[36pt] mb-4 overflow-x-auto"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-justify min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "51.",
+            className: "inline-block w-[18pt]"
+          }),
+          "Most words in this class have no plural. Ubwato and uburiri have plurals – amato, amariri; however, in speaking of a definite number of boats or beds one would use the singular form, ubwato, uburiri. The plural is used only when speaking of an indefinite number:"
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("p", {
+            children: "ubwato bubiri – two boats"
+          }),
+          JsxRuntime.jsx("p", {
+            children: "amato menshi – many boats"
+          })
+        ],
+        className: "ml-[36pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-justify min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "52.",
+            className: "inline-block w-[18pt]"
+          }),
+          "The great majority of words in this class are those expressing abstract ideas, such as the last three nouns of the vocabulary, and they seldom have a plural form."
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-justify min-h-[1.2em]"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("span", {
+            children: "53.",
+            className: "inline-block w-[18pt]"
+          }),
+          JsxRuntime.jsx("span", {
+            children: "Bwa",
+            className: "font-bold"
+          }),
+          ". Remember that ",
+          JsxRuntime.jsx("i", {
+            children: "u",
+            className: "italic"
+          }),
+          " before a vowel becomes ",
+          JsxRuntime.jsx("i", {
+            children: "w",
+            className: "italic"
+          }),
+          "; thus it becomes bwa, but since ",
+          JsxRuntime.jsx("i", {
+            children: "w",
+            className: "italic"
+          }),
+          " after a ",
+          JsxRuntime.jsx("i", {
+            children: "b",
+            className: "italic"
+          }),
+          " is pronounced like ",
+          JsxRuntime.jsx("i", {
+            children: "g",
+            className: "italic"
+          }),
+          ", ‘",
+          JsxRuntime.jsx("b", {
+            children: "bw",
+            className: "italic"
+          }),
+          "’ is always pronounced ",
+          JsxRuntime.jsx("b", {
+            children: "bw",
+            className: "italic"
+          }),
+          ". Have an African help with pronunciation of this sound. Also notice the application of this same rule in certain adjectives: bwiza, bwinshi. (In some older publications this is written bwa, bwiza, etc.)"
+        ],
+        className: "ml-[18pt] -indent-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsxs("div", {
+        children: [
+          JsxRuntime.jsx("i", {
+            children: "Note: ",
+            className: "italic"
+          }),
+          "kuko – because, introduces a dependent clause. Remember rules about verb tenses in dependent clauses. Kuko and other conjunctions ending in –ko (like ariko) change ",
+          JsxRuntime.jsx("i", {
+            children: "ko",
+            className: "italic"
+          }),
+          " to ",
+          JsxRuntime.jsx("i", {
+            children: "kw",
+            className: "italic"
+          }),
+          " before words beginning with ",
+          JsxRuntime.jsx("i", {
+            children: "a",
+            className: "italic"
+          }),
+          ", ",
+          JsxRuntime.jsx("i", {
+            children: "e",
+            className: "italic"
+          }),
+          " or ",
+          JsxRuntime.jsx("i", {
+            children: "i",
+            className: "italic"
+          }),
+          ", and to ",
+          JsxRuntime.jsx("i", {
+            children: "k’",
+            className: "italic"
+          }),
+          " before ",
+          JsxRuntime.jsx("i", {
+            children: "u",
+            className: "italic"
+          }),
+          "."
+        ],
+        className: "ml-[18pt] text-justify mb-4"
+      }),
+      JsxRuntime.jsx("p", {
+        children: "\u00A0",
+        className: "text-justify min-h-[1.2em]"
+      })
+    ],
+    className: "font-serif text-[11pt] leading-normal text-black max-w-3xl mx-auto p-4 bg-white"
+  });
 }
 
 let Content = {
@@ -19,7 +319,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 27: Class 8",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

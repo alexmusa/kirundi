@@ -337,7 +337,7 @@ let l_quiz = [
 ];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 19: Class 5 (continued), Continuous present",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
