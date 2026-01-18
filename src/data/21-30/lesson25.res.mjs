@@ -198,7 +198,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "Lesson 25: Prefixless Present Tense",
+  title: "LESSON 25: Prefixless Present Tense",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

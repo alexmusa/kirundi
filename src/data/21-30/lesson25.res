@@ -101,7 +101,7 @@ module Content = {
 }
 
 let l: lesson = {
-  title: "Lesson 25: Prefixless Present Tense",
+  title: "LESSON 25: Prefixless Present Tense",
   content: <Content />,
   examples: [],
   vocabulary: [],
