@@ -3,8 +3,6 @@ from google import genai
 import time
 from pathlib import Path
 
-
-
 def main():
     # Initialize the model
     client = genai.Client()
@@ -29,6 +27,10 @@ def main():
         if not input_file.exists():
             print(f"File {filename} not found, skipping...")
             continue
+
+        if output_file.exists():
+            print(f"Output for {filename} already exists. Skipping...")
+            continue
         
         print(f"Processing {filename}...")
         
@@ -52,8 +54,9 @@ HTML:
             
             print(f"  Saved to {output_file}")
             
-            # Add a delay to avoid rate limiting (adjust as needed)
-            time.sleep(10)
+            # Add a delay to avoid rate limiting
+            print(f"  Throttling for 15s ...")
+            time.sleep(15)
             
         except Exception as e:
             print(f"  Error processing {filename}: {e}")
@@ -63,7 +66,6 @@ HTML:
 if __name__ == "__main__":
     if not os.environ.get("GOOGLE_API_KEY"):
         print("Error: GOOGLE_API_KEY environment variable not set.")
-        print("Please set it with: export GOOGLE_API_KEY='your-api-key'")
         exit(1)
     
     main()

@@ -1,6 +1,7 @@
 import os
 import re
 import glob
+from pathlib import Path
 
 def get_bucket(lesson_num):
     """Calculates the folder range, e.g., 21 -> '21-30'"""
@@ -10,12 +11,12 @@ def get_bucket(lesson_num):
 
 def migrate_all_lessons():
     # Configuration
-    source_dir = "kirundi_textbook_pages/rescript_output"
-    target_base_dir = "../src/data"
+    source_dir = Path("kirundi_textbook_pages/rescript_output")
+    target_base_dir = Path("../src/data")
     
     # Pattern to match content_XXX.res.component
-    file_pattern = os.path.join(source_dir, "content_*.res.component")
-    files = glob.glob(file_pattern)
+    file_pattern = source_dir / "content_*.res.component"
+    files = glob.glob(str(file_pattern))
 
     if not files:
         print(f"No files found in {source_dir}")
@@ -56,11 +57,15 @@ def migrate_all_lessons():
 
         # 4. Prepare Output Path
         bucket = get_bucket(lesson_num)
-        output_dir = os.path.join(target_base_dir, bucket)
+        output_dir = target_base_dir / bucket
         os.makedirs(output_dir, exist_ok=True)
         
         output_filename = f"lesson{lesson_num}.res"
-        output_path = os.path.join(output_dir, output_filename)
+        output_path = output_dir / output_filename
+
+        if Path(output_path).exists():
+            print(f"Output for {file_path} already exists. Skipping...")
+            continue
 
         # 5. Build Template
         final_output = f"""open LessonTypes
