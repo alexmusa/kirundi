@@ -144,7 +144,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON 21: Verb –",
+  title: "LESSON 21: Verb –fise",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

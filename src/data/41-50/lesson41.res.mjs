@@ -340,7 +340,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON 41: –",
+  title: "LESSON 41: –ose",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

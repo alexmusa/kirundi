@@ -158,7 +158,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON 56: Past of –",
+  title: "LESSON 56: Past of –ri",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

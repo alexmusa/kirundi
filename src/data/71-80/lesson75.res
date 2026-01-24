@@ -101,7 +101,7 @@ module Content = {
 }
 
 let l: lesson = {
-  title: "LESSON 75: Immediate Past (or, –",
+  title: "LESSON 75: Immediate Past (or, –ra",
   content: <Content />,
   examples: [],
   vocabulary: [],

@@ -123,7 +123,7 @@ module Content = {
 }
 
 let l: lesson = {
-  title: "LESSON 39: –",
+  title: "LESSON 39: –ngahe",
   content: <Content />,
   examples: [],
   vocabulary: [],

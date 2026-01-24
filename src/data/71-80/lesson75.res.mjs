@@ -190,7 +190,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON 75: Immediate Past (or, –",
+  title: "LESSON 75: Immediate Past (or, –ra",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
