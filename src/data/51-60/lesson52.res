@@ -46,7 +46,7 @@ module Content = {
     /* Table Section */
     <table
       className="ml-[23.4pt] border-collapse border-none text-[11.0pt]"
-      style={ReactDOM.Style.make(~borderCollapse="collapse", ())}>
+      style={{borderCollapse: "collapse"}}>
       <thead>
         <tr>
           <td className="w-[72.0pt] border border-black p-[5.4pt] italic vertical-top">

@@ -4,7 +4,7 @@ module Content = {
   @react.component
   let make = () => {
     <div className="bg-white p-8 text-[11pt] leading-normal font-serif text-black">
-    {/* Header Section */}
+    /* Header Section */
     <div className="border-b border-black pb-[1pt] mb-4">
       <p className="text-center font-bold">
         {React.string("LESSON 71: Far Past Tense")}
@@ -13,7 +13,7 @@ module Content = {
 
     <p className="min-h-[1.2em]"> {React.string("\u00A0")} </p>
 
-    {/* Vocabulary Section */}
+    /* Vocabulary Section */
     <p className="font-bold mb-1">
       {React.string("Vocabulary")}
       <span className="font-normal">{React.string(":")}</span>
@@ -21,13 +21,13 @@ module Content = {
 
     <div className="pl-[18pt] mb-4 space-y-1">
       <p className="whitespace-pre-wrap">
-        {React.string("umugani – parable, proverb" ++ String.make(24, ' ') ++ "guteba (vye) – to be late")}
+        {React.string("umugani – parable, proverb" ++ String.repeat(" ", 24) ++ "guteba (vye) – to be late")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("ingeso – custom, habit" ++ String.make(31, ' ') ++ "gutegura (ye) – to prepare")}
+        {React.string("ingeso – custom, habit" ++ String.repeat(" ", 31) ++ "gutegura (ye) – to prepare")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("urugendo – journey" ++ String.make(36, ' ') ++ "kwiyumvira (riye) – to think, think about")}
+        {React.string("urugendo – journey" ++ String.repeat(" ", 36) ++ "kwiyumvira (riye) – to think, think about")}
       </p>
       <p>
         {React.string("guca (ciye) umugani – to tell a proverb, parable")}
@@ -36,7 +36,7 @@ module Content = {
 
     <p className="min-h-[1.2em]"> {React.string("\u00A0")} </p>
 
-    {/* Main Content Item 142 */}
+    /* Main Content Item 142 */
     <div className="pl-[18pt] -indent-[18pt] text-justify mb-4">
       <span> {React.string("142.")} </span>
       <span className="inline-block w-[14pt]"> </span>
@@ -47,12 +47,12 @@ module Content = {
       </span>
     </div>
 
-    {/* Example 1 */}
+    /* Example 1 */
     <div className="pl-[36pt] indent-[18pt] text-justify mb-4 whitespace-pre-wrap">
-      {React.string("tw-ara-koze – we worked" ++ String.make(17, ' ') ++ "y-ara-giye – he/she went")}
+      {React.string("tw-ara-koze – we worked" ++ String.repeat(" ", 17) ++ "y-ara-giye – he/she went")}
     </div>
 
-    {/* Subsection 1 */}
+    /* Subsection 1 */
     <div className="pl-[36pt] -indent-[18pt] text-justify mb-2">
       <span> {React.string("1)")} </span>
       <span className="inline-block w-[14pt]"> </span>
@@ -63,13 +63,13 @@ module Content = {
 
     <div className="pl-[54pt] text-justify space-y-1 mb-4">
       <p className="whitespace-pre-wrap">
-        {React.string("narakoze – I worked" ++ String.make(21, ' ') ++ "tw\u0101rakoze – we worked")}
+        {React.string("narakoze – I worked" ++ String.repeat(" ", 21) ++ "tw\u0101rakoze – we worked")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("warakoze – you worked" ++ String.make(18, ' ') ++ "mw\u0101rakoze – you worked")}
+        {React.string("warakoze – you worked" ++ String.repeat(" ", 18) ++ "mw\u0101rakoze – you worked")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("yarakoze – he/she worked" ++ String.make(15, ' ') ++ "b\u0101rakoze – they worked")}
+        {React.string("yarakoze – he/she worked" ++ String.repeat(" ", 15) ++ "b\u0101rakoze – they worked")}
       </p>
     </div>
 
@@ -85,14 +85,14 @@ module Content = {
 
     <div className="pl-[54pt] text-justify space-y-1 mb-4">
       <p className="whitespace-pre-wrap">
-        {React.string("naribagiye – I forgot" ++ String.make(23, ' ') ++ "waribagiye – you forgot")}
+        {React.string("naribagiye – I forgot" ++ String.repeat(" ", 23) ++ "waribagiye – you forgot")}
       </p>
       <p>
         {React.string("yaribagiye – he/she forgot etc.")}
       </p>
     </div>
 
-    {/* Subsection 2 */}
+    /* Subsection 2 */
     <div className="pl-[36pt] -indent-[18pt] text-justify mb-2">
       <span> {React.string("2)")} </span>
       <span className="inline-block w-[14pt]"> </span>
@@ -107,13 +107,13 @@ module Content = {
 
     <div className="pl-[54pt] text-justify space-y-1 mb-4">
       <p className="whitespace-pre-wrap">
-        {React.string("nakoze" ++ String.make(19, ' ') ++ "tw\u0101koze")}
+        {React.string("nakoze" ++ String.repeat(" ", 19) ++ "tw\u0101koze")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("wakoze" ++ String.make(19, ' ') ++ "mw\u0101koze")}
+        {React.string("wakoze" ++ String.repeat(" ", 19) ++ "mw\u0101koze")}
       </p>
       <p className="whitespace-pre-wrap">
-        {React.string("yakoze" ++ String.make(19, ' ') ++ "b\u0101koze")}
+        {React.string("yakoze" ++ String.repeat(" ", 19) ++ "b\u0101koze")}
       </p>
     </div>
 

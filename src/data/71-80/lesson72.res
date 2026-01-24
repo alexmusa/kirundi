@@ -22,15 +22,15 @@ module Content = {
       </p>
       
       <p className="ml-[18pt] text-[11pt] m-0">
-        {React.string("impamba – food for a journey" ++ String.make(21, '\u00A0') ++ "guhwera (reye) – to die")}
+        {React.string("impamba – food for a journey" ++ String.repeat("\u00A0", 21) ++ "guhwera (reye) – to die")}
       </p>
       
       <p className="ml-[18pt] text-[11pt] m-0">
-        {React.string("kwiruka (tse) – ti run, run away" ++ String.make(17, '\u00A0') ++ "gutabara (ye) – to go to help, assistance of")}
+        {React.string("kwiruka (tse) – ti run, run away" ++ String.repeat("\u00A0", 17) ++ "gutabara (ye) – to go to help, assistance of")}
       </p>
       
       <p className="ml-[18pt] text-[11pt] m-0">
-        {React.string("kera – long ago, a long time ahead" ++ String.make(14, '\u00A0') ++ "guhera (ze) – to finish (intr.), be all gone")}
+        {React.string("kera – long ago, a long time ahead" ++ String.repeat("\u00A0", 14) ++ "guhera (ze) – to finish (intr.), be all gone")}
       </p>
       
       <p className="ml-[18pt] text-[11pt] text-justify mt-2">

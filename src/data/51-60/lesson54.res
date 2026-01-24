@@ -37,57 +37,57 @@ module Content = {
 
     /* Column Headers */
     <p className="ml-[72pt] indent-[36pt] text-justify text-[11pt]">
-      {React.string("singular" ++ "\u00a0".repeat(40) ++ "plural")}
+      {React.string("singular" ++ String.repeat("\u00a0", 40) ++ "plural")}
     </p>
 
     /* Verb Conjugation List */
     <div className="text-[11pt]">
       <p className="text-justify">
-        {React.string("\u00a0".repeat(12) ++ "2")}
+        {React.string(String.repeat("\u00a0", 12) ++ "2")}
         <sup> {React.string("nd")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "wagiye" ++ "\u00a0".repeat(25) ++ "yagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "wagiye" ++ String.repeat("\u00a0", 25) ++ "yagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("3")}
         <sup> {React.string("rd")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "yagiye" ++ "\u00a0".repeat(25) ++ "zagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "yagiye" ++ String.repeat("\u00a0", 25) ++ "zagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("4")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "cagiye" ++ "\u00a0".repeat(26) ++ "vyagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "cagiye" ++ String.repeat("\u00a0", 26) ++ "vyagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("5")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "ryagiye" ++ "\u00a0".repeat(24) ++ "yagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "ryagiye" ++ String.repeat("\u00a0", 24) ++ "yagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("6")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "rwagiye" ++ "\u00a0".repeat(23) ++ "zagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "rwagiye" ++ String.repeat("\u00a0", 23) ++ "zagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("7")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "kagiye" ++ "\u00a0".repeat(25) ++ "twagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "kagiye" ++ String.repeat("\u00a0", 25) ++ "twagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("8")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "bwagiye" ++ "\u00a0".repeat(33) ++ "yagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "bwagiye" ++ String.repeat("\u00a0", 33) ++ "yagiye")}
       </p>
       
       <p className="ml-[36pt] text-justify">
         {React.string("9")}
         <sup> {React.string("th")} </sup>
-        {React.string(" class:" ++ "\u00a0".repeat(10) ++ "kwagiye" ++ "\u00a0".repeat(23) ++ "yagiye")}
+        {React.string(" class:" ++ String.repeat("\u00a0", 10) ++ "kwagiye" ++ String.repeat("\u00a0", 23) ++ "yagiye")}
       </p>
     </div>
 
@@ -108,10 +108,10 @@ module Content = {
     /* Examples Section */
     <div className="ml-[36pt] text-justify text-[11pt] space-y-1">
       <p>
-        {React.string("nibagiye – I forgot" ++ "\u00a0".repeat(30) ++ "yubatse – he/she built")}
+        {React.string("nibagiye – I forgot" ++ String.repeat("\u00a0", 30) ++ "yubatse – he/she built")}
       </p>
       <p>
-        {React.string("bemeye – they agreed" ++ "\u00a0".repeat(26) ++ "twogeje – we washed")}
+        {React.string("bemeye – they agreed" ++ String.repeat("\u00a0", 26) ++ "twogeje – we washed")}
       </p>
       <p>
         {React.string("mwanditse – you (pl.) wrote")}

@@ -19,13 +19,13 @@ module Content = {
 
     <div className="ml-[18.0pt]">
       <p className="mb-0 whitespace-pre">
-        {React.string("urusengero – church" ++ String.make(40, '\u00a0') ++ "guharūra – to count")}
+        {React.string("urusengero – church" ++ String.repeat("\u00a0", 40) ++ "guharūra – to count")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("umwaka – year" ++ String.make(40, '\u00a0') ++ "gufata – to take hold of, catch, seize")}
+        {React.string("umwaka – year" ++ String.repeat("\u00a0", 40) ++ "gufata – to take hold of, catch, seize")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("umunyakazi – workman" ++ String.make(25, '\u00a0') ++ "kwinjira – to enter (usually followed by mu)")}
+        {React.string("umunyakazi – workman" ++ String.repeat("\u00a0", 25) ++ "kwinjira – to enter (usually followed by mu)")}
       </p>
       <p className="mb-0">
         {React.string("imbeba – rat, mouse")}
@@ -43,16 +43,16 @@ module Content = {
 
     <div className="ml-[36.0pt] text-justify">
       <p className="mb-0 whitespace-pre">
-        {React.string("icumi n’umwe – eleven" ++ String.make(25, '\u00a0') ++ "icumi na batandatu – sixteen")}
+        {React.string("icumi n’umwe – eleven" ++ String.repeat("\u00a0", 25) ++ "icumi na batandatu – sixteen")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("icumi na babiri – twelve" ++ String.make(35, '\u00a0') ++ "icumi n’indwi – seventeen")}
+        {React.string("icumi na babiri – twelve" ++ String.repeat("\u00a0", 35) ++ "icumi n’indwi – seventeen")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("icumi na batatu – thirteen" ++ String.make(21, '\u00a0') ++ "icumi n’umunani – eighteen")}
+        {React.string("icumi na batatu – thirteen" ++ String.repeat("\u00a0", 21) ++ "icumi n’umunani – eighteen")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("icumi na bane – fourteen" ++ String.make(21, '\u00a0') ++ "icumi n’icenda – nineteen")}
+        {React.string("icumi na bane – fourteen" ++ String.repeat("\u00a0", 21) ++ "icumi n’icenda – nineteen")}
       </p>
       <p className="mb-0">
         {React.string("icumi na batanu – fifteen")}
@@ -85,19 +85,19 @@ module Content = {
 
     <div className="ml-[36.0pt] text-justify">
       <p className="mb-0 whitespace-pre">
-        {React.string("mirongwibiri – twenty" ++ String.make(25, '\u00a0') ++ "mirongwirindwi – seventy")}
+        {React.string("mirongwibiri – twenty" ++ String.repeat("\u00a0", 25) ++ "mirongwirindwi – seventy")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("mirongwitatu – thirty" ++ String.make(27, '\u00a0') ++ "mirongumunani – eighty")}
+        {React.string("mirongwitatu – thirty" ++ String.repeat("\u00a0", 27) ++ "mirongumunani – eighty")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("mirongwine – fourty" ++ String.make(29, '\u00a0') ++ "mirongwicenda – ninety")}
+        {React.string("mirongwine – fourty" ++ String.repeat("\u00a0", 29) ++ "mirongwicenda – ninety")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("mirongwitanu – fifty" ++ String.make(29, '\u00a0') ++ "ijana – one hundred")}
+        {React.string("mirongwitanu – fifty" ++ String.repeat("\u00a0", 29) ++ "ijana – one hundred")}
       </p>
       <p className="mb-0 whitespace-pre">
-        {React.string("mirongwitandatu – sixty" ++ String.make(24, '\u00a0') ++ "amajana abiri – two hundred")}
+        {React.string("mirongwitandatu – sixty" ++ String.repeat("\u00a0", 24) ++ "amajana abiri – two hundred")}
       </p>
     </div>
 

@@ -4,17 +4,17 @@ module Content = {
   @react.component
   let make = () => {
     <div className="p-8 text-[11pt] leading-normal text-black font-serif">
-    {/* Header Section */}
+    /* Header Section */
     <div className="border-b border-black pb-[1pt] mb-4">
       <p className="text-center font-bold">
         {React.string("LESSON 61: Ordinal Numerals")}
       </p>
     </div>
 
-    {/* Spacer */}
+    /* Spacer */
     <p className="min-h-[1.5em]"> {React.string("\u00A0")} </p>
 
-    {/* Vocabulary */}
+    /* Vocabulary */
     <p className="mb-2">
       <span className="font-bold"> {React.string("Vocabulary")} </span>
       {React.string(":")}
@@ -39,7 +39,7 @@ module Content = {
 
     <p className="min-h-[1.5em]"> {React.string("\u00A0")} </p>
 
-    {/* Section 122 */}
+    /* Section 122 */
     <div className="pl-[18pt] -indent-[18pt] text-justify mb-4">
       <span> {React.string("122. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ")} </span>
       {React.string(
@@ -113,7 +113,7 @@ module Content = {
 
     <p className="min-h-[1.5em]"> {React.string("\u00A0")} </p>
 
-    {/* Section 123 */}
+    /* Section 123 */
     <div className="pl-[18pt] -indent-[18pt] text-justify mb-4">
       <span> {React.string("123. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ")} </span>
       {React.string("The “last” of anything is ")}
@@ -127,7 +127,7 @@ module Content = {
 
     <p className="min-h-[1.5em]"> {React.string("\u00A0")} </p>
 
-    {/* Section 124 */}
+    /* Section 124 */
     <div className="pl-[18pt] -indent-[18pt] text-justify mb-2">
       <span> {React.string("124. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ")} </span>
       <span className="font-bold"> {React.string("Numeral adverb")} </span>
@@ -156,7 +156,7 @@ module Content = {
 
     <p className="min-h-[1.5em]"> {React.string("\u00A0")} </p>
 
-    {/* Section 125 */}
+    /* Section 125 */
     <div className="pl-[18pt] -indent-[18pt] text-justify">
       <span> {React.string("125. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 ")} </span>
       <span className="font-bold"> {React.string("–ompi – both")} </span>

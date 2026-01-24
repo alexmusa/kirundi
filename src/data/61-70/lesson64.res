@@ -4,17 +4,17 @@ module Content = {
   @react.component
   let make = () => {
     <div className="font-serif leading-normal text-[#000000]">
-    {/* Header Section */}
+    /* Header Section */
     <div className="border-b border-black pb-[1.0pt] mb-4">
       <p className="text-center font-bold text-[11.0pt]">
         {React.string("LESSON 64: Stative Voice")}
       </p>
     </div>
 
-    {/* Spacer */}
+    /* Spacer */
     <p className="text-[11.0pt] mb-4"> {React.string("\u00A0")} </p>
 
-    {/* Vocabulary */}
+    /* Vocabulary */
     <p className="mb-1">
       <span className="font-bold text-[11.0pt]"> {React.string("Vocabulary")} </span>
       <span className="text-[11.0pt]"> {React.string(":")} </span>
@@ -34,10 +34,10 @@ module Content = {
       <p> {React.string("gukomera (ye) – to be well, strong")} </p>
     </div>
 
-    {/* Spacer */}
+    /* Spacer */
     <p className="text-[11.0pt] my-4"> {React.string("\u00A0")} </p>
 
-    {/* Section 130 */}
+    /* Section 130 */
     <div className="flex pl-[18.0pt] text-justify text-[11.0pt] mb-4">
       <div className="min-w-[18.0pt] -ml-[18.0pt]"> {React.string("130.")} </div>
       <p>
@@ -47,7 +47,7 @@ module Content = {
       </p>
     </div>
 
-    {/* Examples */}
+    /* Examples */
     <div className="pl-[36.0pt] text-justify text-[11.0pt] space-y-0">
       <p> {React.string("Ndarwaye – I am sick")} </p>
       <p> {React.string("Ndanezerewe – I am happy")} </p>
@@ -56,7 +56,7 @@ module Content = {
       <p> {React.string("Ndizeye – I trust")} </p>
     </div>
 
-    {/* Habitual Section */}
+    /* Habitual Section */
     <div className="pl-[18.0pt] text-justify text-[11.0pt] mt-4">
       <p> {React.string("For habitual present of these verbs the regular –ra– present is used.")} </p>
       <p className="mt-2">
@@ -64,7 +64,7 @@ module Content = {
       </p>
     </div>
 
-    {/* Final Spacer */}
+    /* Final Spacer */
     <p className="text-[11.0pt] mt-4"> {React.string("\u00A0")} </p>
   </div>
   }

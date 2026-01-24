@@ -30,6 +30,48 @@ import * as Lesson26 from "./21-30/lesson26.res.mjs";
 import * as Lesson27 from "./21-30/lesson27.res.mjs";
 import * as Lesson28 from "./21-30/lesson28.res.mjs";
 import * as Lesson29 from "./21-30/lesson29.res.mjs";
+import * as Lesson30 from "./21-30/lesson30.res.mjs";
+import * as Lesson31 from "./31-40/lesson31.res.mjs";
+import * as Lesson32 from "./31-40/lesson32.res.mjs";
+import * as Lesson33 from "./31-40/lesson33.res.mjs";
+import * as Lesson34 from "./31-40/lesson34.res.mjs";
+import * as Lesson35 from "./31-40/lesson35.res.mjs";
+import * as Lesson36 from "./31-40/lesson36.res.mjs";
+import * as Lesson37 from "./31-40/lesson37.res.mjs";
+import * as Lesson38 from "./31-40/lesson38.res.mjs";
+import * as Lesson39 from "./31-40/lesson39.res.mjs";
+import * as Lesson41 from "./41-50/lesson41.res.mjs";
+import * as Lesson42 from "./41-50/lesson42.res.mjs";
+import * as Lesson43 from "./41-50/lesson43.res.mjs";
+import * as Lesson44 from "./41-50/lesson44.res.mjs";
+import * as Lesson45 from "./41-50/lesson45.res.mjs";
+import * as Lesson46 from "./41-50/lesson46.res.mjs";
+import * as Lesson47 from "./41-50/lesson47.res.mjs";
+import * as Lesson48 from "./41-50/lesson48.res.mjs";
+import * as Lesson51 from "./51-60/lesson51.res.mjs";
+import * as Lesson52 from "./51-60/lesson52.res.mjs";
+import * as Lesson53 from "./51-60/lesson53.res.mjs";
+import * as Lesson54 from "./51-60/lesson54.res.mjs";
+import * as Lesson55 from "./51-60/lesson55.res.mjs";
+import * as Lesson56 from "./51-60/lesson56.res.mjs";
+import * as Lesson57 from "./51-60/lesson57.res.mjs";
+import * as Lesson58 from "./51-60/lesson58.res.mjs";
+import * as Lesson59 from "./51-60/lesson59.res.mjs";
+import * as Lesson61 from "./61-70/lesson61.res.mjs";
+import * as Lesson62 from "./61-70/lesson62.res.mjs";
+import * as Lesson63 from "./61-70/lesson63.res.mjs";
+import * as Lesson64 from "./61-70/lesson64.res.mjs";
+import * as Lesson65 from "./61-70/lesson65.res.mjs";
+import * as Lesson66 from "./61-70/lesson66.res.mjs";
+import * as Lesson67 from "./61-70/lesson67.res.mjs";
+import * as Lesson71 from "./71-80/lesson71.res.mjs";
+import * as Lesson72 from "./71-80/lesson72.res.mjs";
+import * as Lesson73 from "./71-80/lesson73.res.mjs";
+import * as Lesson74 from "./71-80/lesson74.res.mjs";
+import * as Lesson75 from "./71-80/lesson75.res.mjs";
+import * as Lesson76 from "./71-80/lesson76.res.mjs";
+import * as Lesson77 from "./71-80/lesson77.res.mjs";
+import * as Lesson78 from "./71-80/lesson78.res.mjs";
 
 let lessons = [
   Lesson0.l,
@@ -61,7 +103,48 @@ let lessons = [
   Lesson26.l,
   Lesson27.l,
   Lesson28.l,
-  Lesson29.l
+  Lesson29.l,
+  Lesson31.l,
+  Lesson32.l,
+  Lesson33.l,
+  Lesson34.l,
+  Lesson35.l,
+  Lesson36.l,
+  Lesson37.l,
+  Lesson38.l,
+  Lesson39.l,
+  Lesson41.l,
+  Lesson42.l,
+  Lesson43.l,
+  Lesson44.l,
+  Lesson45.l,
+  Lesson46.l,
+  Lesson47.l,
+  Lesson48.l,
+  Lesson51.l,
+  Lesson52.l,
+  Lesson53.l,
+  Lesson54.l,
+  Lesson55.l,
+  Lesson56.l,
+  Lesson57.l,
+  Lesson58.l,
+  Lesson59.l,
+  Lesson61.l,
+  Lesson62.l,
+  Lesson63.l,
+  Lesson64.l,
+  Lesson65.l,
+  Lesson66.l,
+  Lesson67.l,
+  Lesson71.l,
+  Lesson72.l,
+  Lesson73.l,
+  Lesson74.l,
+  Lesson75.l,
+  Lesson76.l,
+  Lesson77.l,
+  Lesson78.l
 ];
 
 let vocabulary = [
@@ -94,7 +177,49 @@ let vocabulary = [
   Lesson26.l.vocabulary,
   Lesson27.l.vocabulary,
   Lesson28.l.vocabulary,
-  Lesson29.l.vocabulary
+  Lesson29.l.vocabulary,
+  Lesson30.l.vocabulary,
+  Lesson31.l.vocabulary,
+  Lesson32.l.vocabulary,
+  Lesson33.l.vocabulary,
+  Lesson34.l.vocabulary,
+  Lesson35.l.vocabulary,
+  Lesson36.l.vocabulary,
+  Lesson37.l.vocabulary,
+  Lesson38.l.vocabulary,
+  Lesson39.l.vocabulary,
+  Lesson41.l.vocabulary,
+  Lesson42.l.vocabulary,
+  Lesson43.l.vocabulary,
+  Lesson44.l.vocabulary,
+  Lesson45.l.vocabulary,
+  Lesson46.l.vocabulary,
+  Lesson47.l.vocabulary,
+  Lesson48.l.vocabulary,
+  Lesson51.l.vocabulary,
+  Lesson52.l.vocabulary,
+  Lesson53.l.vocabulary,
+  Lesson54.l.vocabulary,
+  Lesson55.l.vocabulary,
+  Lesson56.l.vocabulary,
+  Lesson57.l.vocabulary,
+  Lesson58.l.vocabulary,
+  Lesson59.l.vocabulary,
+  Lesson61.l.vocabulary,
+  Lesson62.l.vocabulary,
+  Lesson63.l.vocabulary,
+  Lesson64.l.vocabulary,
+  Lesson65.l.vocabulary,
+  Lesson66.l.vocabulary,
+  Lesson67.l.vocabulary,
+  Lesson71.l.vocabulary,
+  Lesson72.l.vocabulary,
+  Lesson73.l.vocabulary,
+  Lesson74.l.vocabulary,
+  Lesson75.l.vocabulary,
+  Lesson76.l.vocabulary,
+  Lesson77.l.vocabulary,
+  Lesson78.l.vocabulary
 ];
 
 export {
