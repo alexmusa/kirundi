@@ -108,5 +108,96 @@ let l: lesson = {
     ("inzige", "locusts"),
     ("inzāra", "fingernails / toenails"),
   ],
-  quiz: [],
+  quiz: [
+    {
+      title: "I. Translate into English",
+      questions: [
+        TextInput({
+          prompt: "Uruyuki ruri ku rutoke rwanje.",
+          answer: "A bee is on my finger.",
+        }),
+        TextInput({
+          prompt: "Inzige nyinshi ziri mu mirima.",
+          answer: "Many locusts are in the fields.",
+        }),
+        TextInput({
+          prompt: "Urubaho rwawe ntiruri hano.",
+          answer: "Your board is not here.",
+        }),
+        TextInput({
+          prompt: "Urukundo rw’Imana ruri mu mutima wanje.",
+          answer: "The love of God is in my heart.",
+        }),
+        TextInput({
+          prompt: "Urusato rw’igikoko ni rwiza cane.",
+          answer: "The skin of the animal is very beautiful (or good).",
+        }),
+        TextInput({
+          prompt: "Abana bariko baratega amashi.",
+          answer: "The children are holding out their hands.",
+        }),
+        TextInput({
+          prompt: "Mbeg’ ufise impfunguzo zanje? Ngomba kugenda mw ishuli.",
+          answer: "Do you have my keys? I want to go to school.",
+        }),
+        TextInput({
+          prompt: "Mbeg’ uravuga ururimi rwacu?",
+          answer: "Do you speak our language?",
+        }),
+        TextInput({
+          prompt: "Singomba inzuki mu nzu.",
+          answer: "I do not want bees in the house.",
+        }),
+        TextInput({
+          prompt: "Mbega muzana insato z’inka mu rugo?",
+          answer: "Do you bring the skins of the cows into the kraal (or home)?",
+        })
+      ],
+    },
+    {
+      title: "II. Translate into Kirundi",
+      questions: [
+        TextInput({
+          prompt: "The cow’s skin is large.",
+          answer: "Urusato rw'inka ni runini.",
+        }),
+        TextInput({
+          prompt: "The teacher speaks many languages.",
+          answer: "Umwigisha avuga indimi nyinshi.",
+        }),
+        TextInput({
+          prompt: "Where are your (sing.) keys? They are here.",
+          answer: "Impfunguzo zawe ziri hehe? Ziri hano.",
+        }),
+        TextInput({
+          prompt: "The boy’s fingernails are dirty.",
+          answer: "Inzara z'umuhungu ni mbi (or zirafise isuku nke).",
+        }),
+        TextInput({
+          prompt: "The woman’s baby (infant) has a bad illness.",
+          answer: "Uruyoya rw'umugore rufise indwara mbi.",
+        }),
+        TextInput({
+          prompt: "God puts love in our hearts.",
+          answer: "Imana ishyira urukundo mu mitima yacu.",
+        }),
+        TextInput({
+          prompt: "What do you have in your hand (palm)?",
+          answer: "Ufise iki mu rushi?",
+        }),
+        TextInput({
+          prompt: "Many bees and locusts are in our fields.",
+          answer: "Inzuki nyinshi n'inzige nyinshi ziri mu mirima yacu.",
+        }),
+        TextInput({
+          prompt: "Put the teacher’s keys in his room.",
+          answer: "Shira impfunguzo z'umwigisha mu vyumba vyiwe (or mu cumba ciwe).",
+        }),
+        TextInput({
+          prompt: "Women love their babies very much.",
+          answer: "Abagore bakunda cane inzoya zabo.",
+        })
+      ],
+    }
+  ],
 };
