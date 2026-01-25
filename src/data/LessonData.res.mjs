@@ -72,6 +72,17 @@ import * as Lesson75 from "./71-80/lesson75.res.mjs";
 import * as Lesson76 from "./71-80/lesson76.res.mjs";
 import * as Lesson77 from "./71-80/lesson77.res.mjs";
 import * as Lesson78 from "./71-80/lesson78.res.mjs";
+import * as Lesson82 from "./81-90/lesson82.res.mjs";
+import * as Lesson83 from "./81-90/lesson83.res.mjs";
+import * as Lesson86 from "./81-90/lesson86.res.mjs";
+import * as Lesson88 from "./81-90/lesson88.res.mjs";
+import * as Lesson91 from "./91-100/lesson91.res.mjs";
+import * as Lesson92 from "./91-100/lesson92.res.mjs";
+import * as Lesson95 from "./91-100/lesson95.res.mjs";
+import * as Lesson96 from "./91-100/lesson96.res.mjs";
+import * as Lesson97 from "./91-100/lesson97.res.mjs";
+import * as Lesson98 from "./91-100/lesson98.res.mjs";
+import * as Lesson99 from "./91-100/lesson99.res.mjs";
 
 let lessons = [
   Lesson0.l,
@@ -144,7 +155,18 @@ let lessons = [
   Lesson75.l,
   Lesson76.l,
   Lesson77.l,
-  Lesson78.l
+  Lesson78.l,
+  Lesson82.l,
+  Lesson83.l,
+  Lesson86.l,
+  Lesson88.l,
+  Lesson91.l,
+  Lesson92.l,
+  Lesson95.l,
+  Lesson96.l,
+  Lesson97.l,
+  Lesson98.l,
+  Lesson99.l
 ];
 
 let vocabulary = [
@@ -219,7 +241,18 @@ let vocabulary = [
   Lesson75.l.vocabulary,
   Lesson76.l.vocabulary,
   Lesson77.l.vocabulary,
-  Lesson78.l.vocabulary
+  Lesson78.l.vocabulary,
+  Lesson82.l.vocabulary,
+  Lesson83.l.vocabulary,
+  Lesson86.l.vocabulary,
+  Lesson88.l.vocabulary,
+  Lesson91.l.vocabulary,
+  Lesson92.l.vocabulary,
+  Lesson95.l.vocabulary,
+  Lesson96.l.vocabulary,
+  Lesson97.l.vocabulary,
+  Lesson98.l.vocabulary,
+  Lesson99.l.vocabulary
 ];
 
 export {
