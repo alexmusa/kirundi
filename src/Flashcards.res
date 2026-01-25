@@ -1,5 +1,4 @@
 // Flashcards.res
-// Flashcards.res
 
 type card = {
   kirundi: string,
