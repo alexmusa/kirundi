@@ -179,10 +179,33 @@ module Content = {
   }
 }
 
+let vocabulary: vocabulary = [
+  ("agakiza", "salvation"),
+  ("agahinda", "sorrow"),
+  ("akazi", "work"),
+  ("agahiri", "cold (in the head)"),
+  ("akanwa", "mouth"),
+  ("akamango", "cold (in the head)"),
+  ("akantu", "a little thing"),
+  ("akayabo", "cat"),
+]
+
+let examples: examples = [
+  ("ikintu -> akantu", "thing -> little thing"),
+  ("umwana -> akana", "child -> little child"),
+  ("igikoko -> agakoko", "wild animal -> insect"),
+  ("impuzu -> agahuzu", "clothes -> little clothing"),
+  ("umunyu -> akunyu", "salt -> little salt"),
+  ("amazi -> utuzi", "water -> little water"),
+  ("amata -> uduta", "milk -> little milk"),
+  ("ka-iza = keza", "adjective: beautiful (little)"),
+  ("Ngomba agahuzu", "I want a little clothing"),
+]
+
 let l: lesson = {
   title: "LESSON 26: Class 7",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: examples,
+  vocabulary: vocabulary,
   quiz: [],
 };

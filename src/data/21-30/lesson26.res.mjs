@@ -353,24 +353,96 @@ let Content = {
   make: Lesson26$Content
 };
 
+let vocabulary = [
+  [
+    "agakiza",
+    "salvation"
+  ],
+  [
+    "agahinda",
+    "sorrow"
+  ],
+  [
+    "akazi",
+    "work"
+  ],
+  [
+    "agahiri",
+    "cold (in the head)"
+  ],
+  [
+    "akanwa",
+    "mouth"
+  ],
+  [
+    "akamango",
+    "cold (in the head)"
+  ],
+  [
+    "akantu",
+    "a little thing"
+  ],
+  [
+    "akayabo",
+    "cat"
+  ]
+];
+
+let examples = [
+  [
+    "ikintu -> akantu",
+    "thing -> little thing"
+  ],
+  [
+    "umwana -> akana",
+    "child -> little child"
+  ],
+  [
+    "igikoko -> agakoko",
+    "wild animal -> insect"
+  ],
+  [
+    "impuzu -> agahuzu",
+    "clothes -> little clothing"
+  ],
+  [
+    "umunyu -> akunyu",
+    "salt -> little salt"
+  ],
+  [
+    "amazi -> utuzi",
+    "water -> little water"
+  ],
+  [
+    "amata -> uduta",
+    "milk -> little milk"
+  ],
+  [
+    "ka-iza = keza",
+    "adjective: beautiful (little)"
+  ],
+  [
+    "Ngomba agahuzu",
+    "I want a little clothing"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson26$Content, {});
-
-let l_vocabulary = [];
-
-let l_examples = [];
 
 let l_quiz = [];
 
 let l = {
   title: "LESSON 26: Class 7",
   content: l_content,
-  vocabulary: l_vocabulary,
-  examples: l_examples,
+  vocabulary: vocabulary,
+  examples: examples,
   quiz: l_quiz
 };
 
 export {
   Content,
+  vocabulary,
+  examples,
   l,
 }
 /* l Not a pure module */

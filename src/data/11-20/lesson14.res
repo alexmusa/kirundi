@@ -76,8 +76,22 @@ let make = () => {
 let l: lesson = {
   title: "LESSON 14: Class 4 (continued)",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("icēte ciza", "a good letter"),
+    ("ivyete vyiza", "good letters"),
+    ("icāha cinshi", "much sin"),
+    ("ivyaha vyinshi", "many sins"),
+    ("icūma ciza", "a good tool"),
+    ("ivyūma vyinshi", "many tools"),
+  ],
+  vocabulary: [
+    ("icēte", "letter"),
+    ("icōbo", "hole (in ground)"),
+    ("icūma", "iron, metal, tool"),
+    ("igikōko", "wild animal, insect"),
+    ("icāha", "sin"),
+    ("hanze", "outside, out of doors"),
+  ],
   quiz: [
     {
       title: "I. Singulars and Translations",

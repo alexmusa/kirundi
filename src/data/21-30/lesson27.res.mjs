@@ -312,9 +312,63 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson27$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "ubwato",
+    "boat"
+  ],
+  [
+    "ubwenge",
+    "wisdom"
+  ],
+  [
+    "ubushaza (ubwishaza)",
+    "peas"
+  ],
+  [
+    "ubuntu",
+    "grace"
+  ],
+  [
+    "uburiri",
+    "bed"
+  ],
+  [
+    "ubugingo",
+    "life"
+  ],
+  [
+    "kuko",
+    "because"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "ubwato bubiri",
+    "two boats"
+  ],
+  [
+    "amato menshi",
+    "many boats"
+  ],
+  [
+    "uburiri bwanje",
+    "my bed"
+  ],
+  [
+    "ubwenge bwinshi",
+    "much wisdom"
+  ],
+  [
+    "uburiri bubi",
+    "a bad bed"
+  ],
+  [
+    "amariri mabi",
+    "bad beds"
+  ]
+];
 
 let l_quiz = [];
 

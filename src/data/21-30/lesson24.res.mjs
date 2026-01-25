@@ -150,9 +150,71 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson24$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "urusato",
+    "skin"
+  ],
+  [
+    "uruyuki",
+    "bee"
+  ],
+  [
+    "urupfunguzo",
+    "key (Swahili)"
+  ],
+  [
+    "uruyoya",
+    "infant (up to one month old)"
+  ],
+  [
+    "ururimi",
+    "tongue, language"
+  ],
+  [
+    "uruyige",
+    "locust"
+  ],
+  [
+    "urushi",
+    "palm of hand"
+  ],
+  [
+    "urwāra",
+    "fingernail or toenail"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "amashi",
+    "palms of hands (plural of urushi)"
+  ],
+  [
+    "Tega amashi",
+    "Hold out your hands (to receive)"
+  ],
+  [
+    "inshi",
+    "slaps in the face"
+  ],
+  [
+    "inzuki",
+    "bees"
+  ],
+  [
+    "inzoya",
+    "infants"
+  ],
+  [
+    "inzige",
+    "locusts"
+  ],
+  [
+    "inzāra",
+    "fingernails / toenails"
+  ]
+];
 
 let l_quiz = [];
 

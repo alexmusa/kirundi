@@ -346,9 +346,71 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson16$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "-kora",
+    "work, do, fix, repair, make"
+  ],
+  [
+    "-genda",
+    "go, walk"
+  ],
+  [
+    "-rima",
+    "hoe, dig, cultivate"
+  ],
+  [
+    "-vuga",
+    "speak, say"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "ndakora",
+    "I work, am working"
+  ],
+  [
+    "urakora",
+    "you work, are working"
+  ],
+  [
+    "arakora",
+    "he/she works, is working"
+  ],
+  [
+    "turakora",
+    "we work, are working"
+  ],
+  [
+    "murakora",
+    "you (plural) work, are working"
+  ],
+  [
+    "barakora",
+    "they work, are working"
+  ],
+  [
+    "Umugabo arakora",
+    "The man is working, or works"
+  ],
+  [
+    "Abantu bararima?",
+    "Are the people hoeing?"
+  ],
+  [
+    "Ego, bararima",
+    "Yes, they are hoeing"
+  ],
+  [
+    "Mbeg' Abarundi bararya inyama?",
+    "Do the Barundi eat meat?"
+  ],
+  [
+    "Abakobwa bararima",
+    "Girls hoe"
+  ]
+];
 
 let l_quiz = [
   {

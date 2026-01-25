@@ -89,7 +89,24 @@ module Content = {
 let l: lesson = {
   title: "LESSON 24: Class 6 (continued)",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  vocabulary: [
+    ("urusato", "skin"),
+    ("uruyuki", "bee"),
+    ("urupfunguzo", "key (Swahili)"),
+    ("uruyoya", "infant (up to one month old)"),
+    ("ururimi", "tongue, language"),
+    ("uruyige", "locust"),
+    ("urushi", "palm of hand"),
+    ("urwāra", "fingernail or toenail"),
+  ],
+  examples: [
+    ("amashi", "palms of hands (plural of urushi)"),
+    ("Tega amashi", "Hold out your hands (to receive)"),
+    ("inshi", "slaps in the face"),
+    ("inzuki", "bees"),
+    ("inzoya", "infants"),
+    ("inzige", "locusts"),
+    ("inzāra", "fingernails / toenails"),
+  ],
   quiz: [],
 };

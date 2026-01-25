@@ -92,7 +92,26 @@ module Content = {
 let l: lesson = {
   title: "LESSON 28: Class 8 (continued)",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  vocabulary: [
+    ("ubushe", "burn"),
+    ("ubwoya", "hair (except of human head)"),
+    ("ubukene", "need, poverty"),
+    ("uburyo", "opportunity, way, kind"),
+    ("ubwana", "childhood"),
+    ("ubufu", "flour"),
+    ("ubusore", "youth (age/period)"),
+    ("ubutumwa", "message"),
+    ("ubutumwa bwiza", "gospel"),
+    ("ubukristo", "Christianity"),
+  ],
+  examples: [
+    ("bwakeye", "good morning"),
+    ("burije", "it is getting dark / it is late"),
+    ("bwije", "it is getting dark (dependent clause)"),
+    ("bukeye", "the next day"),
+    ("ubu", "now"),
+    ("ngwino", "come / come here (singular)"),
+    ("ngo", "come (singular)"),
+  ],
   quiz: [],
 };

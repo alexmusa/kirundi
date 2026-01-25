@@ -244,9 +244,91 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson17$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "inzira (cl. 3)",
+    "path, way"
+  ],
+  [
+    "-kunda",
+    "love, like"
+  ],
+  [
+    "umuvyeyi (cl. 1)",
+    "parent"
+  ],
+  [
+    "-shima",
+    "praise, be content with"
+  ],
+  [
+    "umuti (cl. 2)",
+    "medicine"
+  ],
+  [
+    "kandi",
+    "and (connecting phrases), also"
+  ],
+  [
+    "indwara (cl. 3)",
+    "illness"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "sinkora",
+    "I am not working"
+  ],
+  [
+    "ntukora",
+    "you are not working"
+  ],
+  [
+    "ntakora",
+    "he/she is not working"
+  ],
+  [
+    "ntidukora",
+    "we are not working"
+  ],
+  [
+    "ntimukora",
+    "you (pl.) are not working"
+  ],
+  [
+    "ntibakora",
+    "they are not working"
+  ],
+  [
+    "inka ntizigenda mu murima",
+    "the cows do not go in the garden"
+  ],
+  [
+    "sindi",
+    "I am not"
+  ],
+  [
+    "nturi",
+    "you are not"
+  ],
+  [
+    "ntari",
+    "he/she is not"
+  ],
+  [
+    "ntituri",
+    "we are not"
+  ],
+  [
+    "ntimuri",
+    "you (pl.) are not"
+  ],
+  [
+    "ntibari",
+    "they are not"
+  ]
+];
 
 let l_quiz = [
   {

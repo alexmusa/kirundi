@@ -117,8 +117,28 @@ module Content = {
 let l: lesson = {
   title: "LESSON 11: Class 3 (continued)",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("amasuka", "hoes (Class 5 plural)"),
+    ("amasaho", "sacks (Class 5 plural)"),
+    ("amasahane", "plates (Class 5 plural)"),
+    ("i Gitega", "at Gitega"),
+    ("i wacu", "at our place / home"),
+    ("i wanyu", "at your place"),
+    ("i wabo", "at their place"),
+    ("i wanje", "at my place (used by head of household)"),
+    ("i we", "at his/her place"),
+  ],
+  vocabulary: [
+    ("i muhira", "at home"),
+    ("ifi", "fish"),
+    ("inyama", "meat"),
+    ("ifu", "flour"),
+    ("impene", "goat"),
+    ("isaho", "bag, sack"),
+    ("imvura", "rain"),
+    ("isahane", "plate, dish"),
+    ("isuka", "hoe"),
+  ],
   quiz: [
     {
       title: "I. Translate into English",

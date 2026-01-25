@@ -149,7 +149,22 @@ module Content = {
 let l: lesson = {
   title: "LESSON 27: Class 8",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  vocabulary: [
+    ("ubwato", "boat"),
+    ("ubwenge", "wisdom"),
+    ("ubushaza (ubwishaza)", "peas"),
+    ("ubuntu", "grace"),
+    ("uburiri", "bed"),
+    ("ubugingo", "life"),
+    ("kuko", "because"),
+  ],
+  examples: [
+    ("ubwato bubiri", "two boats"),
+    ("amato menshi", "many boats"),
+    ("uburiri bwanje", "my bed"),
+    ("ubwenge bwinshi", "much wisdom"),
+    ("uburiri bubi", "a bad bed"),
+    ("amariri mabi", "bad beds"),
+  ],
   quiz: [],
 };

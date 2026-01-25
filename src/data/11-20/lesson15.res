@@ -120,8 +120,34 @@ let make = () => {
 let l: lesson = {
   title: "LESSON 15: Special Uses of Class 4",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    // Compound Subjects
+    ("Umutsima n’inyama biri mu nzu", "bread and meat are in the house"),
+    ("Umurima n’indimiro vyiwe", "his garden and field"),
+    ("umuhungu n’umukobwa barakora", "the boy and girl are working"),
+    ("Impene n’intama z’umutama", "the goat and sheep of the old man (Class 5 agreement)"),
+    ("Impene n’intama vy’umutama", "the goat and sheep of the old man (Class 4 agreement)"),
+    
+    // Great Size (Augmentative)
+    ("igisozi", "a very big hill"),
+    ("ikibuye", "a very big rock"),
+    ("ikivura", "a very heavy rain"),
+    
+    // Indefinite "Things"
+    ("ivyiza", "good things"),
+    ("ivyanje", "my things"),
+    ("bizoba neza", "it will be well"),
+  ],
+  vocabulary: [
+    ("igitām bāra", "cloth"),
+    ("ikigōngwe", "mercy, pity, forgiveness"),
+    ("ikigōri", "corn, stalk of corn"),
+    ("igitōke", "bananas (bunch or tree)"),
+    ("ikirago", "mat (for sleeping)"),
+    ("umusozi", "hill"),
+    ("ibuye", "stone"),
+    ("imvura", "rain"),
+  ],
   quiz: [
   {
     title: "I. Translate into English",

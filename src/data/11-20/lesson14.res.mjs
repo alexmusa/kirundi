@@ -156,9 +156,59 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson14$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "icēte",
+    "letter"
+  ],
+  [
+    "icōbo",
+    "hole (in ground)"
+  ],
+  [
+    "icūma",
+    "iron, metal, tool"
+  ],
+  [
+    "igikōko",
+    "wild animal, insect"
+  ],
+  [
+    "icāha",
+    "sin"
+  ],
+  [
+    "hanze",
+    "outside, out of doors"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "icēte ciza",
+    "a good letter"
+  ],
+  [
+    "ivyete vyiza",
+    "good letters"
+  ],
+  [
+    "icāha cinshi",
+    "much sin"
+  ],
+  [
+    "ivyaha vyinshi",
+    "many sins"
+  ],
+  [
+    "icūma ciza",
+    "a good tool"
+  ],
+  [
+    "ivyūma vyinshi",
+    "many tools"
+  ]
+];
 
 let l_quiz = [
   {

@@ -271,9 +271,123 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson18$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "izuba",
+    "sun"
+  ],
+  [
+    "ijambo",
+    "word"
+  ],
+  [
+    "amagambo",
+    "words"
+  ],
+  [
+    "irigi (or igi)",
+    "egg"
+  ],
+  [
+    "amagi",
+    "eggs"
+  ],
+  [
+    "ijisho",
+    "eye"
+  ],
+  [
+    "amaso",
+    "eyes"
+  ],
+  [
+    "iryinyo",
+    "tooth"
+  ],
+  [
+    "amenyo",
+    "teeth"
+  ],
+  [
+    "ishuli",
+    "school"
+  ],
+  [
+    "ifaranga",
+    "franc"
+  ],
+  [
+    "izuru",
+    "nose, nostril"
+  ],
+  [
+    "ibuye",
+    "stone"
+  ],
+  [
+    "iziko",
+    "fireplace, stove"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "ibuye ryanje",
+    "my stone (Possessive rya-)"
+  ],
+  [
+    "amabuye yanje",
+    "my stones (Possessive ya-)"
+  ],
+  [
+    "ibuye riri",
+    "the stone is (Verb prefix ri-)"
+  ],
+  [
+    "amabuye ari",
+    "the stones are (Verb prefix a-)"
+  ],
+  [
+    "ibuye ribi",
+    "a bad stone (Adj. prefix ri-)"
+  ],
+  [
+    "amabuye mabi",
+    "bad stones (Adj. prefix ma-)"
+  ],
+  [
+    "iryiza",
+    "good (Adj. prefix ry- before vowel)"
+  ],
+  [
+    "mw ishuli",
+    "in school (mu + i-)"
+  ],
+  [
+    "kw ibuye",
+    "on a rock (ku + i-)"
+  ],
+  [
+    "mw isahane",
+    "in a dish"
+  ],
+  [
+    "mu zuba",
+    "in the sun (irregular drop)"
+  ],
+  [
+    "mu jisho",
+    "in the eye"
+  ],
+  [
+    "ku mabuye",
+    "on the stones (plural drop)"
+  ],
+  [
+    "mu maso",
+    "in the eyes"
+  ]
+];
 
 let l_quiz = [
   {

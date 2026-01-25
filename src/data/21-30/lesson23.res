@@ -104,7 +104,25 @@ module Content = {
 let l: lesson = {
   title: "LESSON 23: Class 6",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("urutoke rwanje", "my finger"),
+    ("intoke zanje", "my fingers"),
+    ("urubāho rubi", "a bad board"),
+    ("imbaho mbi", "bad boards"),
+    ("urūzi ruri", "the river is"),
+    ("inzuzi ziri", "the rivers are"),
+    ("urūgi rwa-", "the door of"),
+    ("inzugi za-", "the doors of"),
+  ],
+  vocabulary: [
+    ("urūgi", "door"),
+    ("urukwi", "stick of wood (firewood)"),
+    ("urutoke", "finger"),
+    ("urūzi", "river"),
+    ("urukūndo", "love"),
+    ("urubāho", "board, slate"),
+    ("gushira", "to put"),
+    ("urugo", "homestead, kraal, enclosure"),
+  ],
   quiz: [],
 };

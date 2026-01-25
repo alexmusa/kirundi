@@ -198,9 +198,71 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson29$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "kubika",
+    "to put away"
+  ],
+  [
+    "gusubira",
+    "to return, go back"
+  ],
+  [
+    "kugaruka",
+    "to return, come back"
+  ],
+  [
+    "ejo",
+    "yesterday, tomorrow (dep. on verb tense)"
+  ],
+  [
+    "kugira",
+    "to do, make, have"
+  ],
+  [
+    "uyu musi",
+    "today"
+  ],
+  [
+    "ubwoba",
+    "fear"
+  ],
+  [
+    "ku mugoroba",
+    "in the afternoon (3:00-6:00)"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "nzōgenda",
+    "I shall go (future after today)"
+  ],
+  [
+    "tuzōgenda",
+    "we shall go (future after today)"
+  ],
+  [
+    "ndagenda uyu musi",
+    "I shall go today (near future)"
+  ],
+  [
+    "nzogenda ejo",
+    "I shall go tomorrow (far future)"
+  ],
+  [
+    "kugira ubwoba",
+    "to have fear / be afraid"
+  ],
+  [
+    "Azogaruka ino ejo",
+    "He/she will return here tomorrow (to where speaker is)"
+  ],
+  [
+    "Nzosubira i Bujumbura ejo",
+    "I will return to Bujumbura tomorrow (away from speaker)"
+  ]
+];
 
 let l_quiz = [];
 

@@ -205,9 +205,75 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson23$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "urūgi",
+    "door"
+  ],
+  [
+    "urukwi",
+    "stick of wood (firewood)"
+  ],
+  [
+    "urutoke",
+    "finger"
+  ],
+  [
+    "urūzi",
+    "river"
+  ],
+  [
+    "urukūndo",
+    "love"
+  ],
+  [
+    "urubāho",
+    "board, slate"
+  ],
+  [
+    "gushira",
+    "to put"
+  ],
+  [
+    "urugo",
+    "homestead, kraal, enclosure"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "urutoke rwanje",
+    "my finger"
+  ],
+  [
+    "intoke zanje",
+    "my fingers"
+  ],
+  [
+    "urubāho rubi",
+    "a bad board"
+  ],
+  [
+    "imbaho mbi",
+    "bad boards"
+  ],
+  [
+    "urūzi ruri",
+    "the river is"
+  ],
+  [
+    "inzuzi ziri",
+    "the rivers are"
+  ],
+  [
+    "urūgi rwa-",
+    "the door of"
+  ],
+  [
+    "inzugi za-",
+    "the doors of"
+  ]
+];
 
 let l_quiz = [];
 

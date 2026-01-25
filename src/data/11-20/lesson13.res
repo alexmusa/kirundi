@@ -122,8 +122,23 @@ module Content = {
 let l: lesson = {
   title: "LESSON 13: Class 4",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("igitabo / ibitabo", "book / books (k -> g because of 't')"),
+    ("igihugu / ibihugu", "country / countries (k -> g because of 'h')"),
+    ("ikirenge canje", "my foot (Possessive 'ca-')"),
+    ("ibirenge vyanje", "my feet (Possessive 'vya-')"),
+    ("ikintu kiri hano", "the thing is here (Verb prefix 'ki-')"),
+    ("ibintu biri hano", "the things are here (Verb prefix 'bi-')"),
+    ("igiti kibi", "a bad tree (Adjective prefix 'ki-' stays 'ki' even if noun changed to 'gi')"),
+  ],
+  vocabulary: [
+    ("inkintu", "thing"),
+    ("igiti", "tree"),
+    ("igitabo", "book"),
+    ("ikijumbu", "sweet potato"),
+    ("igihugu", "country"),
+    ("ikirenge", "foot"),
+  ],
   quiz: [
     {
       title: "Exercise I: Translate into English",

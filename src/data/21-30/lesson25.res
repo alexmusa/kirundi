@@ -100,10 +100,33 @@ module Content = {
   }
 }
 
+let vocabulary: vocabulary = [
+  ("kugura", "to buy (sometimes also: to sell)"),
+  ("kubona", "to see"),
+  ("gusenga", "to pray, worship"),
+  ("kūza", "to come"),
+  ("n'ingoga", "quickly"),
+  ("buhoro-buhoro", "slowly, softly, so-so"),
+]
+
+let examples: examples = [
+  ("nkora", "I work"),
+  ("ukora", "you work"),
+  ("akora", "he/she works"),
+  ("dukora", "we work"),
+  ("mukora", "you work"),
+  ("bakora", "they work"),
+  ("Ukora iki?", "What are you doing?"),
+  ("Nteka ibijumbu.", "I'm cooking sweet potatoes."),
+  ("Ngomba kugenda", "I want to go."),
+  ("Agomba amazi", "He/she wants water."),
+  ("Mfise igitabo", "I have a book."),
+]
+
 let l: lesson = {
   title: "LESSON 25: Prefixless Present Tense",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  vocabulary: vocabulary,
+  examples: examples,
   quiz: [],
 };

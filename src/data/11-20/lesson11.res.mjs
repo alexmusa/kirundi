@@ -292,9 +292,83 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson11$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "i muhira",
+    "at home"
+  ],
+  [
+    "ifi",
+    "fish"
+  ],
+  [
+    "inyama",
+    "meat"
+  ],
+  [
+    "ifu",
+    "flour"
+  ],
+  [
+    "impene",
+    "goat"
+  ],
+  [
+    "isaho",
+    "bag, sack"
+  ],
+  [
+    "imvura",
+    "rain"
+  ],
+  [
+    "isahane",
+    "plate, dish"
+  ],
+  [
+    "isuka",
+    "hoe"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "amasuka",
+    "hoes (Class 5 plural)"
+  ],
+  [
+    "amasaho",
+    "sacks (Class 5 plural)"
+  ],
+  [
+    "amasahane",
+    "plates (Class 5 plural)"
+  ],
+  [
+    "i Gitega",
+    "at Gitega"
+  ],
+  [
+    "i wacu",
+    "at our place / home"
+  ],
+  [
+    "i wanyu",
+    "at your place"
+  ],
+  [
+    "i wabo",
+    "at their place"
+  ],
+  [
+    "i wanje",
+    "at my place (used by head of household)"
+  ],
+  [
+    "i we",
+    "at his/her place"
+  ]
+];
 
 let l_quiz = [
   {

@@ -249,9 +249,63 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson13$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "inkintu",
+    "thing"
+  ],
+  [
+    "igiti",
+    "tree"
+  ],
+  [
+    "igitabo",
+    "book"
+  ],
+  [
+    "ikijumbu",
+    "sweet potato"
+  ],
+  [
+    "igihugu",
+    "country"
+  ],
+  [
+    "ikirenge",
+    "foot"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "igitabo / ibitabo",
+    "book / books (k -> g because of 't')"
+  ],
+  [
+    "igihugu / ibihugu",
+    "country / countries (k -> g because of 'h')"
+  ],
+  [
+    "ikirenge canje",
+    "my foot (Possessive 'ca-')"
+  ],
+  [
+    "ibirenge vyanje",
+    "my feet (Possessive 'vya-')"
+  ],
+  [
+    "ikintu kiri hano",
+    "the thing is here (Verb prefix 'ki-')"
+  ],
+  [
+    "ibintu biri hano",
+    "the things are here (Verb prefix 'bi-')"
+  ],
+  [
+    "igiti kibi",
+    "a bad tree (Adjective prefix 'ki-' stays 'ki' even if noun changed to 'gi')"
+  ]
+];
 
 let l_quiz = [
   {

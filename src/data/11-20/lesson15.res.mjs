@@ -245,9 +245,87 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson15$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "igitām bāra",
+    "cloth"
+  ],
+  [
+    "ikigōngwe",
+    "mercy, pity, forgiveness"
+  ],
+  [
+    "ikigōri",
+    "corn, stalk of corn"
+  ],
+  [
+    "igitōke",
+    "bananas (bunch or tree)"
+  ],
+  [
+    "ikirago",
+    "mat (for sleeping)"
+  ],
+  [
+    "umusozi",
+    "hill"
+  ],
+  [
+    "ibuye",
+    "stone"
+  ],
+  [
+    "imvura",
+    "rain"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "Umutsima n’inyama biri mu nzu",
+    "bread and meat are in the house"
+  ],
+  [
+    "Umurima n’indimiro vyiwe",
+    "his garden and field"
+  ],
+  [
+    "umuhungu n’umukobwa barakora",
+    "the boy and girl are working"
+  ],
+  [
+    "Impene n’intama z’umutama",
+    "the goat and sheep of the old man (Class 5 agreement)"
+  ],
+  [
+    "Impene n’intama vy’umutama",
+    "the goat and sheep of the old man (Class 4 agreement)"
+  ],
+  [
+    "igisozi",
+    "a very big hill"
+  ],
+  [
+    "ikibuye",
+    "a very big rock"
+  ],
+  [
+    "ikivura",
+    "a very heavy rain"
+  ],
+  [
+    "ivyiza",
+    "good things"
+  ],
+  [
+    "ivyanje",
+    "my things"
+  ],
+  [
+    "bizoba neza",
+    "it will be well"
+  ]
+];
 
 let l_quiz = [
   {

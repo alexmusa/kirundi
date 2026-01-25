@@ -155,9 +155,79 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson28$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "ubushe",
+    "burn"
+  ],
+  [
+    "ubwoya",
+    "hair (except of human head)"
+  ],
+  [
+    "ubukene",
+    "need, poverty"
+  ],
+  [
+    "uburyo",
+    "opportunity, way, kind"
+  ],
+  [
+    "ubwana",
+    "childhood"
+  ],
+  [
+    "ubufu",
+    "flour"
+  ],
+  [
+    "ubusore",
+    "youth (age/period)"
+  ],
+  [
+    "ubutumwa",
+    "message"
+  ],
+  [
+    "ubutumwa bwiza",
+    "gospel"
+  ],
+  [
+    "ubukristo",
+    "Christianity"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "bwakeye",
+    "good morning"
+  ],
+  [
+    "burije",
+    "it is getting dark / it is late"
+  ],
+  [
+    "bwije",
+    "it is getting dark (dependent clause)"
+  ],
+  [
+    "bukeye",
+    "the next day"
+  ],
+  [
+    "ubu",
+    "now"
+  ],
+  [
+    "ngwino",
+    "come / come here (singular)"
+  ],
+  [
+    "ngo",
+    "come (singular)"
+  ]
+];
 
 let l_quiz = [];
 

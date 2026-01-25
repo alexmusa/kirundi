@@ -149,8 +149,29 @@ module Content = {
 let l: lesson = {
   title: "LESSON 12: Verb –ri",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("ndi", "I am (n + ri = ndi)"),
+    ("turi", "we are"),
+    ("uri", "you are (singular)"),
+    ("muri", "you are (plural)"),
+    ("ari", "he/she is"),
+    ("bari", "they are"),
+    ("Imana iravuga", "God is speaking"),
+    ("Impene ziragenda", "The goats are going"),
+    ("Ufise imbuto", "You have seeds"),
+    ("Umwana ar’i muhira", "The child is at home"),
+    ("Impene zawe ziri hehe?", "Where are your goats?"),
+  ],
+  vocabulary: [
+    ("ingoma", "drum, throne"),
+    ("imbuto", "seed, fruit, plant"),
+    ("intama", "sheep"),
+    ("imvunja", "jigger"),
+    ("hari", "there is, there are"),
+    ("hehe? (he?)", "where? (only in questions)"),
+    ("hano", "here"),
+    ("harīya", "over there"),
+  ],
   quiz: [
   {
     title: "Kirundi to English Translation",

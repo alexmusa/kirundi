@@ -96,8 +96,28 @@ let make = () => {
 let l: lesson = {
   title: "LESSON 19: Class 5 (continued), Continuous present",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("ndiko ndakora", "I am working"),
+    ("arikw arakora", "he/she is working"),
+    ("bariko barakora", "they are working"),
+    ("Umukozi ari hehe?", "Where is the workman?"),
+    ("Arikw ararima mu murima wanje", "He is hoeing in my garden"),
+    ("sindiko ndakora", "I am not working"),
+    ("ntibariko barakora", "they are not working"),
+    ("icumu - amacumu", "spear - spears"),
+  ],
+  vocabulary: [
+    ("amazi", "water"),
+    ("amaraso", "blood"),
+    ("amata", "milk"),
+    ("-gomba", "to want"),
+    ("amavuta", "butter, oil"),
+    ("ico", "dirt"),
+    ("amahoro", "peace"),
+    ("icumu", "spear"),
+    ("ameza", "table"),
+    ("icukiro", "manure heap"),
+  ],
   quiz: [
   {
     title: "Section I: Kirundi to English Translation",

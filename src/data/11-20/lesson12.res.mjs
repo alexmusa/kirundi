@@ -290,9 +290,87 @@ let Content = {
 
 let l_content = JsxRuntime.jsx(Lesson12$Content, {});
 
-let l_vocabulary = [];
+let l_vocabulary = [
+  [
+    "ingoma",
+    "drum, throne"
+  ],
+  [
+    "imbuto",
+    "seed, fruit, plant"
+  ],
+  [
+    "intama",
+    "sheep"
+  ],
+  [
+    "imvunja",
+    "jigger"
+  ],
+  [
+    "hari",
+    "there is, there are"
+  ],
+  [
+    "hehe? (he?)",
+    "where? (only in questions)"
+  ],
+  [
+    "hano",
+    "here"
+  ],
+  [
+    "harīya",
+    "over there"
+  ]
+];
 
-let l_examples = [];
+let l_examples = [
+  [
+    "ndi",
+    "I am (n + ri = ndi)"
+  ],
+  [
+    "turi",
+    "we are"
+  ],
+  [
+    "uri",
+    "you are (singular)"
+  ],
+  [
+    "muri",
+    "you are (plural)"
+  ],
+  [
+    "ari",
+    "he/she is"
+  ],
+  [
+    "bari",
+    "they are"
+  ],
+  [
+    "Imana iravuga",
+    "God is speaking"
+  ],
+  [
+    "Impene ziragenda",
+    "The goats are going"
+  ],
+  [
+    "Ufise imbuto",
+    "You have seeds"
+  ],
+  [
+    "Umwana ar’i muhira",
+    "The child is at home"
+  ],
+  [
+    "Impene zawe ziri hehe?",
+    "Where are your goats?"
+  ]
+];
 
 let l_quiz = [
   {

@@ -182,8 +182,25 @@ let make = () => {
 let l: lesson = {
   title: "LESSON 16: –ra Present Tense of Verb",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
+  examples: [
+    ("ndakora", "I work, am working"),
+    ("urakora", "you work, are working"),
+    ("arakora", "he/she works, is working"),
+    ("turakora", "we work, are working"),
+    ("murakora", "you (plural) work, are working"),
+    ("barakora", "they work, are working"),
+    ("Umugabo arakora", "The man is working, or works"),
+    ("Abantu bararima?", "Are the people hoeing?"),
+    ("Ego, bararima", "Yes, they are hoeing"),
+    ("Mbeg' Abarundi bararya inyama?", "Do the Barundi eat meat?"),
+    ("Abakobwa bararima", "Girls hoe"),
+  ],
+  vocabulary: [
+    ("-kora", "work, do, fix, repair, make"),
+    ("-genda", "go, walk"),
+    ("-rima", "hoe, dig, cultivate"),
+    ("-vuga", "speak, say"),
+  ],
   quiz: [
     {
       title: "I. Translate into English",

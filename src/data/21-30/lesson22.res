@@ -78,7 +78,112 @@ module Content = {
 let l: lesson = {
   title: "LESSON 22: Infinitive and Imperative",
   content: <Content />,
-  examples: [],
-  vocabulary: [],
-  quiz: [],
-};
+  examples: [
+    ("Ndagomba kugenda", "I want to go"),
+    ("Kora!", "Work!"),
+    ("Genda!", "Go!"),
+    ("Zana!", "Bring!"),
+    ("Ntugende!", "Don't go!"),
+    ("Ntuteke!", "Don't cook!"),
+  ],
+  vocabulary: [
+    ("gusesa", "to empty out, spill"),
+    ("guteka", "to cook (in water) (trans.)"),
+    ("gusoma", "to read"),
+    ("gufasha", "to help"),
+    ("kuzana", "to bring"),
+    ("iki?", "what?"),
+  ],
+  quiz: [
+    {
+      title: "I. Translate into English",
+      questions: [
+        TextInput({
+          prompt: "1. Zana igitabo n’icete.",
+          answer: "Bring the book and the letter.",
+        }),
+        TextInput({
+          prompt: "2. Tugomba kugenda i Gitega.",
+          answer: "We want to go to Gitega.",
+        }),
+        TextInput({
+          prompt: "3. Ntukore mu murima ubu, kora mu nzu.",
+          answer: "Don't work in the garden now, work in the house.",
+        }),
+        TextInput({
+          prompt: "4. Abana bakunda gusoma mw ishuli.",
+          answer: "The children like to read in school.",
+        }),
+        TextInput({
+          prompt: "5. Mbega mufise iki? Dufise ibitabo vyacu.",
+          answer: "What do you (pl.) have? We have our books.",
+        }),
+        TextInput({
+          prompt: "6. Soma mu gitabo cawe gishasha.",
+          answer: "Read in your new book.",
+        }),
+        TextInput({
+          prompt: "7. Sesa amazi mabi; ntuteke ibigori mu mazi mabi.",
+          answer: "Empty out the bad water; don't cook the corn in bad water.",
+        }),
+        TextInput({
+          prompt: "8. Fasha abakobwa kurima mu bitoke.",
+          answer: "Help the girls to hoe in the banana grove.",
+        }),
+        TextInput({
+          prompt: "9. Teka inyama z’inkoko ku ziko.",
+          answer: "Cook the chicken meat on the stove.",
+        }),
+        TextInput({
+          prompt: "10. Turiko turafasha abigisha bacu gukora mw ishuli.",
+          answer: "We are helping our teachers to work in school.",
+        }),
+      ],
+    },
+    {
+      title: "II. Translate into Kirundi",
+      questions: [
+        TextInput({
+          prompt: "1. Hoe well in your (sing.) garden.",
+          answer: "Rima neza mu murima wawe.",
+        }),
+        TextInput({
+          prompt: "2. Cook the sweet potatoes and corn.",
+          answer: "Teka ibijumbu n’ibigori.",
+        }),
+        TextInput({
+          prompt: "3. Go to help the poor people.",
+          answer: "Genda gufasha abakene.",
+        }),
+        TextInput({
+          prompt: "4. I like to work in the house.",
+          answer: "Nkunda gukora mu nzu.",
+        }),
+        TextInput({
+          prompt: "5. The boys want to go to school.",
+          answer: "Abahungu bagomba kugenda mw ishuli.",
+        }),
+        TextInput({
+          prompt: "6. The pupils like to read in school. They read very well.",
+          answer: "Abigishwa bakunda gusoma mw ishuli. Basoma neza cane.",
+        }),
+        TextInput({
+          prompt: "7. Don’t bring your (sing.) sleeping mats and clothes into the house now.",
+          answer: "Ntuzane ibirago vyawe n'ivyambaro mu nzu ubu.",
+        }),
+        TextInput({
+          prompt: "8. What are you (pl.) doing? We are helping the boys (to) bring the fish.",
+          answer: "Muriko murakora iki? Turiko turafasha abahungu kuzana amafi.",
+        }),
+        TextInput({
+          prompt: "9. Don’t empty out the milk; it is good.",
+          answer: "Ntuseseyo amata; ni meza.",
+        }),
+        TextInput({
+          prompt: "10. The wind is bringing the smoke into our eyes.",
+          answer: "Umuyaga uriko urazana umwotsi mu maso yacu.",
+        }),
+      ],
+    },
+  ],
+}
