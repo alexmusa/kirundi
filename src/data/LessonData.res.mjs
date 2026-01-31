@@ -64,6 +64,7 @@ import * as Lesson64 from "./61-70/lesson64.res.mjs";
 import * as Lesson65 from "./61-70/lesson65.res.mjs";
 import * as Lesson66 from "./61-70/lesson66.res.mjs";
 import * as Lesson67 from "./61-70/lesson67.res.mjs";
+import * as Lesson69 from "./61-70/lesson69.res.mjs";
 import * as Lesson71 from "./71-80/lesson71.res.mjs";
 import * as Lesson72 from "./71-80/lesson72.res.mjs";
 import * as Lesson73 from "./71-80/lesson73.res.mjs";
@@ -72,12 +73,19 @@ import * as Lesson75 from "./71-80/lesson75.res.mjs";
 import * as Lesson76 from "./71-80/lesson76.res.mjs";
 import * as Lesson77 from "./71-80/lesson77.res.mjs";
 import * as Lesson78 from "./71-80/lesson78.res.mjs";
+import * as Lesson79 from "./71-80/lesson79.res.mjs";
+import * as Lesson80 from "./71-80/lesson80.res.mjs";
 import * as Lesson82 from "./81-90/lesson82.res.mjs";
 import * as Lesson83 from "./81-90/lesson83.res.mjs";
+import * as Lesson84 from "./81-90/lesson84.res.mjs";
+import * as Lesson85 from "./81-90/lesson85.res.mjs";
 import * as Lesson86 from "./81-90/lesson86.res.mjs";
+import * as Lesson87 from "./81-90/lesson87.res.mjs";
 import * as Lesson88 from "./81-90/lesson88.res.mjs";
+import * as Lesson89 from "./81-90/lesson89.res.mjs";
 import * as Lesson91 from "./91-100/lesson91.res.mjs";
 import * as Lesson92 from "./91-100/lesson92.res.mjs";
+import * as Lesson93 from "./91-100/lesson93.res.mjs";
 import * as Lesson95 from "./91-100/lesson95.res.mjs";
 import * as Lesson96 from "./91-100/lesson96.res.mjs";
 import * as Lesson97 from "./91-100/lesson97.res.mjs";
@@ -148,6 +156,7 @@ let lessons = [
   Lesson65.l,
   Lesson66.l,
   Lesson67.l,
+  Lesson69.l,
   Lesson71.l,
   Lesson72.l,
   Lesson73.l,
@@ -156,12 +165,19 @@ let lessons = [
   Lesson76.l,
   Lesson77.l,
   Lesson78.l,
+  Lesson79.l,
+  Lesson80.l,
   Lesson82.l,
   Lesson83.l,
+  Lesson84.l,
+  Lesson85.l,
   Lesson86.l,
+  Lesson87.l,
   Lesson88.l,
+  Lesson89.l,
   Lesson91.l,
   Lesson92.l,
+  Lesson93.l,
   Lesson95.l,
   Lesson96.l,
   Lesson97.l,
@@ -234,6 +250,7 @@ let vocabulary = [
   Lesson65.l.vocabulary,
   Lesson66.l.vocabulary,
   Lesson67.l.vocabulary,
+  Lesson69.l.vocabulary,
   Lesson71.l.vocabulary,
   Lesson72.l.vocabulary,
   Lesson73.l.vocabulary,
@@ -242,12 +259,18 @@ let vocabulary = [
   Lesson76.l.vocabulary,
   Lesson77.l.vocabulary,
   Lesson78.l.vocabulary,
+  Lesson79.l.vocabulary,
   Lesson82.l.vocabulary,
   Lesson83.l.vocabulary,
+  Lesson84.l.vocabulary,
+  Lesson85.l.vocabulary,
   Lesson86.l.vocabulary,
+  Lesson87.l.vocabulary,
   Lesson88.l.vocabulary,
+  Lesson89.l.vocabulary,
   Lesson91.l.vocabulary,
   Lesson92.l.vocabulary,
+  Lesson93.l.vocabulary,
   Lesson95.l.vocabulary,
   Lesson96.l.vocabulary,
   Lesson97.l.vocabulary,
