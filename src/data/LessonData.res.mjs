@@ -99,8 +99,10 @@ import * as Lesson105 from "./101-110/lesson105.res.mjs";
 import * as Lesson106 from "./101-110/lesson106.res.mjs";
 import * as Lesson107 from "./101-110/lesson107.res.mjs";
 import * as Lesson108 from "./101-110/lesson108.res.mjs";
+import * as Lesson109 from "./101-110/lesson109.res.mjs";
 import * as Lesson111 from "./111-120/lesson111.res.mjs";
 import * as Lesson112 from "./111-120/lesson112.res.mjs";
+import * as Lesson113 from "./111-120/lesson113.res.mjs";
 import * as Lesson115 from "./111-120/lesson115.res.mjs";
 import * as Lesson116 from "./111-120/lesson116.res.mjs";
 import * as Lesson117 from "./111-120/lesson117.res.mjs";
@@ -205,8 +207,10 @@ let lessons = [
   Lesson106.l,
   Lesson107.l,
   Lesson108.l,
+  Lesson109.l,
   Lesson111.l,
   Lesson112.l,
+  Lesson113.l,
   Lesson115.l,
   Lesson116.l,
   Lesson117.l,
@@ -312,8 +316,10 @@ let vocabulary = [
   Lesson106.l.vocabulary,
   Lesson107.l.vocabulary,
   Lesson108.l.vocabulary,
+  Lesson109.l.vocabulary,
   Lesson111.l.vocabulary,
   Lesson112.l.vocabulary,
+  Lesson113.l.vocabulary,
   Lesson115.l.vocabulary,
   Lesson116.l.vocabulary,
   Lesson117.l.vocabulary,
