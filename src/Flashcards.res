@@ -38,8 +38,13 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
     setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
   }
 
-  let handleFlip = _ => setIsFlipped(prev => !prev)
-
+  let handleFlip = _ => {
+    if isFlipped {
+      handleNext()
+    } else {
+      setIsFlipped(prev => !prev)
+    }
+  }
   <div className="flex flex-col min-h-screen bg-gray-50 p-6">
     /* Header */
     <div className="flex items-center justify-between mb-8">

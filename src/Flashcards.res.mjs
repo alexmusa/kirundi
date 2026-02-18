@@ -21,6 +21,7 @@ function Flashcards(props) {
   let currentIndex = match$1[0];
   let match$2 = React.useState(() => false);
   let setIsFlipped = match$2[1];
+  let isFlipped = match$2[0];
   let currentCard = deck[currentIndex];
   let totalCards = deck.length;
   let handleNext = () => {
@@ -31,7 +32,13 @@ function Flashcards(props) {
     setIsFlipped(param => false);
     setCurrentIndex(prev => Math.max(prev - 1 | 0, 0));
   };
-  let handleFlip = param => setIsFlipped(prev => !prev);
+  let handleFlip = param => {
+    if (isFlipped) {
+      return handleNext();
+    } else {
+      return setIsFlipped(prev => !prev);
+    }
+  };
   let tmp;
   if (currentCard !== undefined) {
     let frontText = currentCard.isReversed ? currentCard.english : currentCard.kirundi;
@@ -73,7 +80,7 @@ function Flashcards(props) {
           })
         ],
         className: `relative w-full h-full duration-500 preserve-3d transition-all ` + (
-          match$2[0] ? "rotate-y-180" : ""
+          isFlipped ? "rotate-y-180" : ""
         )
       }),
       className: "relative w-full max-w-sm aspect-[3/4] cursor-pointer group perspective",
