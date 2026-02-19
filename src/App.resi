@@ -1,6 +1,6 @@
 let rescript: string
 let vite: string
-type screen = MainMenu | LessonView | Settings | Flashcards
+type screen = MainMenu | LessonView | Settings | Flashcards | PracticeQuiz
 let getCompletedVocab: (array<LessonTypes.lesson>, int) => array<(string, string)>
 @react.component
 let make: unit => React.element

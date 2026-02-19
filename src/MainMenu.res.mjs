@@ -5,6 +5,7 @@ import * as Primitive_object from "@rescript/runtime/lib/es6/Primitive_object.js
 import * as JsxRuntime from "react/jsx-runtime";
 
 function MainMenu(props) {
+  let onPracticeQuiz = props.onPracticeQuiz;
   let onFlashcards = props.onFlashcards;
   let lastLessonId = props.lastLessonId;
   let onSettings = props.onSettings;
@@ -133,10 +134,19 @@ function MainMenu(props) {
                     className: "group relative flex items-center justify-center px-8 py-4 bg-indigo-600 text-white text-xl font-bold rounded-2xl shadow-lg hover:bg-indigo-700 hover:-translate-y-1 transition-all",
                     onClick: param => onStart()
                   }),
-                  isStarted ? JsxRuntime.jsx("button", {
-                      children: "Practice Flashcards",
-                      className: "flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all",
-                      onClick: param => onFlashcards()
+                  isStarted ? JsxRuntime.jsxs(JsxRuntime.Fragment, {
+                      children: [
+                        JsxRuntime.jsx("button", {
+                          children: "Practice Quiz",
+                          className: "flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all",
+                          onClick: param => onPracticeQuiz()
+                        }),
+                        JsxRuntime.jsx("button", {
+                          children: "Practice Flashcards",
+                          className: "flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all",
+                          onClick: param => onFlashcards()
+                        })
+                      ]
                     }) : null
                 ],
                 className: "flex flex-col gap-4 w-full max-w-xs"

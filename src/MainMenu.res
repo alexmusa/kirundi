@@ -6,7 +6,8 @@ let make = (
   ~onLessonSelect: int => unit, 
   ~onSettings, 
   ~lastLessonId,
-  ~onFlashcards
+  ~onFlashcards,
+  ~onPracticeQuiz,
 ) => {
   let lessonGroups = [
     (1, 10), (11, 20), (21, 30), (31, 40), (41, 50), 
@@ -67,13 +68,18 @@ let make = (
             </span>
           </button>
 
-            {isStarted ? (
-          <button
+          {isStarted ? (<>
+            <button
+              onClick={_ => onPracticeQuiz()}
+              className="flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all">
+              {React.string("Practice Quiz")}
+            </button>
+            <button
               onClick={_ => onFlashcards()} // Pass this prop from App.res
               className="flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all">
               {React.string("Practice Flashcards")}
             </button>
-          ) : React.null}
+          </>) : React.null}
         </div>
       </div>
 

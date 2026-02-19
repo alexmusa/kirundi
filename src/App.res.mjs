@@ -11,6 +11,7 @@ import * as LessonData from "./data/LessonData.res.mjs";
 import * as Stdlib_Int from "@rescript/runtime/lib/es6/Stdlib_Int.js";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
+import * as PracticeQuiz from "./PracticeQuiz.res.mjs";
 import ViteSvg from "./assets/vite.svg";
 import * as JsxRuntime from "react/jsx-runtime";
 import RescriptLogoSvg from "./assets/rescript-logo.svg";
@@ -21,6 +22,16 @@ let vite = ViteSvg;
 
 function getCompletedVocab(lessons, maxIdx) {
   return lessons.slice(0, maxIdx + 1 | 0).flatMap(l => l.vocabulary);
+}
+
+function getContextualQuizzes(lessons, maxIdx) {
+  return lessons.slice(0, maxIdx + 1 | 0).flatMap(l => l.quiz).flatMap(section => {
+    let allAnswersInThisSection = section.questions.map(q => q.answer);
+    return section.questions.map(q => ({
+      question: q,
+      sectionAnswers: allAnswersInThisSection
+    }));
+  });
 }
 
 function App(props) {
@@ -67,7 +78,8 @@ function App(props) {
         onLessonSelect: goToLessonId,
         onSettings: () => setCurrentScreen(param => "Settings"),
         lastLessonId: selectedIdx,
-        onFlashcards: () => setCurrentScreen(param => "Flashcards")
+        onFlashcards: () => setCurrentScreen(param => "Flashcards"),
+        onPracticeQuiz: () => setCurrentScreen(param => "PracticeQuiz")
       });
     case "LessonView" :
       let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);
@@ -94,6 +106,11 @@ function App(props) {
       return JsxRuntime.jsx(Flashcards.make, {
         vocabulary: getCompletedVocab(LessonData.lessons, selectedIdx),
         onBack: param => setCurrentScreen(param => "MainMenu")
+      });
+    case "PracticeQuiz" :
+      return JsxRuntime.jsx(PracticeQuiz.make, {
+        questions: getContextualQuizzes(LessonData.lessons, selectedIdx),
+        onBack: () => setCurrentScreen(param => "MainMenu")
       });
   }
 }

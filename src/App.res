@@ -6,13 +6,27 @@ external vite: string = "default"
 
 open Webapi.Dom
 
-type screen = MainMenu | LessonView | Settings | Flashcards
+type screen = MainMenu | LessonView | Settings | Flashcards | PracticeQuiz
 
-// Add this helper inside the App component or above it
 let getCompletedVocab = (lessons: array<LessonTypes.lesson>, maxIdx) => {
   lessons
   ->Array.slice(~start=0, ~end=maxIdx + 1)
   ->Array.flatMap(l => l.vocabulary)
+}
+
+let getContextualQuizzes : (array<LessonTypes.lesson>, int) => array<PracticeQuiz.contextualQuestion> = (lessons, maxIdx) => {
+  lessons
+  ->Array.slice(~start=0, ~end=maxIdx + 1)
+  ->Array.flatMap(l => l.quiz)
+  ->Array.flatMap(section => {
+      // For every question in this section, we attach ALL answers from this section
+      let allAnswersInThisSection = section.questions->Array.map(q => q.answer)
+      
+      section.questions->Array.map((q): PracticeQuiz.contextualQuestion => {
+        question: q,
+        sectionAnswers: allAnswersInThisSection,
+      })
+    })
 }
 
 @react.component
@@ -67,7 +81,8 @@ let make = () => {
     <MainMenu
       onStart={_ => setCurrentScreen(_ => LessonView)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
-      onFlashcards={_ => setCurrentScreen(_ => Flashcards)} // <--- Pass the handler here
+      onFlashcards={_ => setCurrentScreen(_ => Flashcards)}
+      onPracticeQuiz={_ => setCurrentScreen(_ => PracticeQuiz)}
       lastLessonId=selectedIdx
       onLessonSelect=goToLessonId
     />
@@ -94,6 +109,11 @@ let make = () => {
   | Flashcards =>
     <Flashcards
       vocabulary={getCompletedVocab(LessonData.lessons, selectedIdx)}
+      onBack={_ => setCurrentScreen(_ => MainMenu)}
+    />
+  | PracticeQuiz =>
+    <PracticeQuiz
+      questions={getContextualQuizzes(LessonData.lessons, selectedIdx)}
       onBack={_ => setCurrentScreen(_ => MainMenu)}
     />
   }
