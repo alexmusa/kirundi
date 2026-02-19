@@ -28,14 +28,32 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
   let currentCard = deck[currentIndex]
   let totalCards = Array.length(deck)
 
+  let (isTransitioning, setIsTransitioning) = React.useState(_ => false)
+
   let handleNext = () => {
-    setIsFlipped(_ => false)
-    setCurrentIndex(prev => Math.Int.min(prev + 1, totalCards - 1))
+    if isTransitioning { () }
+    
+    if isFlipped {
+      setIsTransitioning(_ => true)
+      setIsFlipped(_ => false)
+      let _ = setTimeout(() => {
+        setCurrentIndex(prev => Math.Int.min(prev + 1, totalCards - 1))
+        setIsTransitioning(_ => false)
+      }, 200)
+    } else {
+      setCurrentIndex(prev => Math.Int.min(prev + 1, totalCards - 1))
+    }
   }
 
   let handlePrev = () => {
-    setIsFlipped(_ => false)
-    setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
+    if isFlipped {
+      setIsFlipped(_ => false)
+      let _ = setTimeout(() => {
+        setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
+      }, 200)
+    } else {
+      setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
+    }
   }
 
   let handleFlip = _ => {
@@ -61,7 +79,6 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
 
     /* Card Area */
     <div className="flex-grow flex items-center justify-center">
-      // Inside the render switch in Flashcards.res
       {switch currentCard {
       | Some(card) =>
         let frontText = card.isReversed ? card.english : card.kirundi

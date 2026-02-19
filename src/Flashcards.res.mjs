@@ -24,13 +24,29 @@ function Flashcards(props) {
   let isFlipped = match$2[0];
   let currentCard = deck[currentIndex];
   let totalCards = deck.length;
+  let match$3 = React.useState(() => false);
+  let setIsTransitioning = match$3[1];
   let handleNext = () => {
-    setIsFlipped(param => false);
-    setCurrentIndex(prev => Math.min(prev + 1 | 0, totalCards - 1 | 0));
+    if (isFlipped) {
+      setIsTransitioning(param => true);
+      setIsFlipped(param => false);
+      setTimeout(() => {
+        setCurrentIndex(prev => Math.min(prev + 1 | 0, totalCards - 1 | 0));
+        setIsTransitioning(param => false);
+      }, 200);
+      return;
+    } else {
+      return setCurrentIndex(prev => Math.min(prev + 1 | 0, totalCards - 1 | 0));
+    }
   };
   let handlePrev = () => {
-    setIsFlipped(param => false);
-    setCurrentIndex(prev => Math.max(prev - 1 | 0, 0));
+    if (isFlipped) {
+      setIsFlipped(param => false);
+      setTimeout(() => setCurrentIndex(prev => Math.max(prev - 1 | 0, 0)), 200);
+      return;
+    } else {
+      return setCurrentIndex(prev => Math.max(prev - 1 | 0, 0));
+    }
   };
   let handleFlip = param => {
     if (isFlipped) {
