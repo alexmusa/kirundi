@@ -103,91 +103,91 @@ let l: lesson = {
     {
       title: "I. Translate into English",
       questions: [
-        TextInput({
+        {
           prompt: "Mbeg’ ufise inkoko? Oya, simfise inkoko.",
           answer: "Do you have a chicken? No, I do not have a chicken.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Dufise impene ariko ntidufise inka.",
           answer: "We have goats but we do not have cows.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Umutunzi afise ibintu vyiza vyinshi.",
           answer: "The rich man has many good things.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Mbega mufise ibitabo vyanyu? Oya, bir’ i muhira.",
-          answer: "Do you (pl.) have your books? No, they are at home.",
-        }),
-        TextInput({
+          answer: "Do you (pl. have your books? No, they are at home.",
+        },
+        {
           prompt: "Imana ifise ikigongwe cinshi.",
           answer: "God has much mercy.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Umworo ntafise amafaranga menshi, arik’ ubu arikw arakora.",
           answer: "The poor man does not have much money, but now he is working.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Mbega har’ amahoro mu gihugu canyu? Ego me, dufise amahoro menshi.",
           answer: "Is there peace in your country? Yes indeed, we have much peace.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Dufise inyama z’inkoko. Ziri ku meza mu nzu.",
-          answer: "We have chicken meat. They (it) are on the table in the house.",
-        }),
-        TextInput({
+          answer: "We have chicken meat. They (it are on the table in the house.",
+        },
+        {
           prompt: "Abatunzi bafise inzu nziza, n’inka n’intama n’impene n’inkoko.",
           answer: "The rich people have good houses, and cows and sheep and goats and chickens.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Har’ umuyaga mwinshi mu biti hariya.",
           answer: "There is much wind in the trees over there.",
-        }),
+        },
       ],
     },
     {
       title: "II. Translate into Kirundi",
       questions: [
-        TextInput({
+        {
           prompt: "The poor man’s child has hunger.",
           answer: "Umwana w’umworo afise inzara.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Sins are very bad, but God has mercy.",
           answer: "Ivyaha ni bibi cane, ariko Imana ifise ikigongwe.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "The rich man’s wife has a bad illness.",
           answer: "Umugore w’umutunzi afise indwara mbi.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Is there much wind in your country?",
           answer: "Mbega har’ umuyaga mwinshi mu gihugu canyu?",
-        }),
-        TextInput({
+        },
+        {
           prompt: "We have chickens, but not many.",
           answer: "Dufise inkoko, ariko si nyinshi.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "The rich man’s spear is very long.",
           answer: "Icumuryi c’umutunzi ni kirekire cane.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "We like chicken meat, but poor people don’t have chickens.",
           answer: "Turakunda inyama z’inkoko, ariko aboro ntibafise inkoko.",
-        }),
-        TextInput({
-          prompt: "You (sing.) have good cows; do you have milk and butter?",
+        },
+        {
+          prompt: "You (sing. have good cows; do you have milk and butter?",
           answer: "Ufise inka nziza; mbega ufise amata n’amavuta?",
-        }),
-        TextInput({
+        },
+        {
           prompt: "We are working hard in our gardens, but we don’t have many sweet potatoes.",
           answer: "Turakorana ingoga mu mirima yacu, ariko ntidufise ibijumbu vyinshi.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "The men are praising God, and they have much joy.",
           answer: "Abagabo barashimagiza Imana, kandi bafise akanyamuneza kenshi.",
-        }),
+        },
       ],
     },
   ],

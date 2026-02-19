@@ -226,63 +226,43 @@ let l_quiz = [
     title: "I. Plurals and Meanings",
     questions: [
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umwana w’umwami (The king's child)",
+        prompt: "Make plural: Umwana w’umwami (The king's child",
         answer: "Abana b’abami"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Make plural: Umutwe w’umuntu (The person's head)",
-        options: [
-          "Amitwe y'abantu",
-          "Imitwe y’abantu",
-          "Imitwe w'abantu"
-        ],
-        correctIndex: 1
+        answer: "Imitwe y’abantu"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umurima w’umutama (The old man's garden)",
+        prompt: "Make plural: Umurima w’umutama (The old man's garden",
         answer: "Imirima y’abatama"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umugore w’umugabo (The man's wife)",
+        prompt: "Make plural: Umugore w’umugabo (The man's wife",
         answer: "Abagore b’abagabo"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umuhungu w’umwigisha (The teacher's son)",
+        prompt: "Make plural: Umuhungu w’umwigisha (The teacher's son",
         answer: "Abahungu b’abigisha"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Make plural: Umwigishwa wa Paulo (Paul's disciple)",
-        options: [
-          "Abigishwa ba Paulo",
-          "Abigishwa ya Paulo",
-          "Imigishwa ba Paulo"
-        ],
-        correctIndex: 0
+        answer: "Abigishwa ba Paulo"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umugozi w’umuhungu (The boy's rope)",
+        prompt: "Make plural: Umugozi w’umuhungu (The boy's rope",
         answer: "Imigozi y’abahungu"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umwenda w’umukozi (The worker's garment)",
+        prompt: "Make plural: Umwenda w’umukozi (The worker's garment",
         answer: "Imyenda y’abakozi"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umwami w’abantu (The king of the people)",
+        prompt: "Make plural: Umwami w’abantu (The king of the people",
         answer: "Abami b’abantu"
       },
       {
-        TAG: "TextInput",
-        prompt: "Make plural: Umutima w’umuntu (The person's heart)",
+        prompt: "Make plural: Umutima w’umuntu (The person's heart",
         answer: "Imitima y’abantu"
       }
     ]
@@ -291,72 +271,46 @@ let l_quiz = [
     title: "II. Translation into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The people of Jesus have joy in their hearts.",
         answer: "Abantu ba Yezu bafise akanyamuneza mu mitima yabo"
       },
       {
-        TAG: "TextInput",
         prompt: "I have the light of Jesus in my heart.",
         answer: "Mfise umuco wa Yezu mu mutima wanje"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The teacher’s workmen are working in his gardens.",
-        options: [
-          "Abakozi b'umwigisha bariko barakora mu mirima yiwe",
-          "Umukozi w'umwigisha ariko arakora mu mirima yiwe",
-          "Abakozi b'umwigisha bafise imirima yiwe"
-        ],
-        correctIndex: 0
+        answer: "Abakozi b'umwigisha bariko barakora mu mirima yiwe"
       },
       {
-        TAG: "TextInput",
         prompt: "The child of the king is a girl.",
         answer: "Umwana w’umwami ni umwigeme"
       },
       {
-        TAG: "TextInput",
         prompt: "The smoke of the fire.",
         answer: "Umwotsi w’umuriro"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "I work on our hill.",
-        options: [
-          "Ndakora ku mugasozi wanyu",
-          "Ndakora ku mugasozi wacu",
-          "Barakora ku mugasozi wacu"
-        ],
-        correctIndex: 1
+        answer: "Ndakora ku mugasozi wacu"
       },
       {
-        TAG: "TextInput",
         prompt: "The child has hair.",
         answer: "Umwana afise imishatsi"
       },
       {
-        TAG: "TextInput",
         prompt: "I am working in the darkness.",
         answer: "Ndiko ndakora mu muzimagiza"
       },
       {
-        TAG: "TextInput",
         prompt: "I am going to the teacher’s garden.",
         answer: "Ngira mu murima w’umwigisha"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The old man has the blessing of the Savior in his heart.",
-        options: [
-          "Umutama afise umuhezagiro w’Umukiza mu mutima wiwe",
-          "Umuhungu afise umuhezagiro w’Umukiza mu mutima wiwe",
-          "Umutama afise umuco w’Umukiza mu mutima wiwe"
-        ],
-        correctIndex: 0
+        answer: "Umutama afise umuhezagiro w’Umukiza mu mutima wiwe"
       },
       {
-        TAG: "TextInput",
         prompt: "Jesus is my Lord and Savior.",
         answer: "Yezu ni Umwami wanje n’Umukiza wanje"
       }

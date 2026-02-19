@@ -215,83 +215,62 @@ let l_quiz = [
     title: "I. Singulars and Translations",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibiti':",
         answer: "igiti - tree"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ivyobo':",
         answer: "icobo - hole"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'imyenda':",
         answer: "umwenda - garment"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibirenge':",
         answer: "ikirenge - foot"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ivyuma':",
         answer: "icuma - tool"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "What is the singular of 'abigishwa'?",
-        options: [
-          "umwigishwa",
-          "igishwa",
-          "abigishwa",
-          "umugishwa"
-        ],
-        correctIndex: 0
+        answer: "umwigishwa"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibitabo':",
         answer: "igitabo - book"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'abami':",
         answer: "umwami - king"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ivyaha':",
         answer: "icaha - sin"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibikoko':",
         answer: "igikoko - animal"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'amasuka':",
         answer: "isuka - hoe"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibihugu':",
         answer: "igihugu - country"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ibijumbu':",
         answer: "igijumbu - sweet potato"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'imisi':",
         answer: "umusi - day"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the singular and English translation for 'ivyete':",
         answer: "icete - letter"
       }
@@ -301,58 +280,42 @@ let l_quiz = [
     title: "II. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate: Igitabo c’umukobwa kiri hano.",
         answer: "The girl's book is here."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Har’ivyete vyawe vyinshi mu nzu.",
         answer: "There are many of your letters in the house."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Ibikoko bibi biri hanze.",
         answer: "Bad animals are outside."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Umuntu mubi afise ivyaha vyinshi mu mutima wiwe.",
         answer: "A bad person has many sins in his heart."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Mfise igitabo ciza cane.",
         answer: "I have a very good book."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Intama iri mu cobo kinini hariya.",
         answer: "The sheep is in a large hole over there."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Ibirenge vy’umwana ni bibi.",
         answer: "The child's feet are bad."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: Mbeg’ibitabo vyanyu bisha biri mu nzu?",
-        options: [
-          "Are your new books in the house?",
-          "Is your new book in the house?",
-          "Are the books in your house new?",
-          "Do you have new books in the house?"
-        ],
-        correctIndex: 0
+        answer: "Are your new books in the house?"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Mbeg’abakozi bafise ivyuma vyinshi? oya, bafise bikeya.",
         answer: "Do the workers have many tools? No, they have few."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Umutama afise icete canje. Kiri mu mpuzu ziwe.",
         answer: "The old man has my letter. It is in his clothes."
       }
@@ -362,58 +325,42 @@ let l_quiz = [
     title: "III. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate: The hole is very large.",
         answer: "Icobo ni kinini cane."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Many people are outside.",
         answer: "Abantu benshi bari hanze."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: There are many sins in the heart of a bad man.",
         answer: "Har'ivyaha vyinshi mu mutima w'umuntu mubi."
       },
       {
-        TAG: "TextInput",
-        prompt: "Translate: Your (pl.) big country is nice.",
+        prompt: "Translate: Your (pl. big country is nice.",
         answer: "Igihugu canyu kinini ni ciza."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Many good things are in their houses.",
         answer: "Ibintu vyiza vyinshi biri mu nzu zabo."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Where are your tools? They are at home.",
         answer: "Ivyuma vyawe biri he? Biri muhira."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: The girls have few books.",
         answer: "Abakobwa bafise ibitabo bikeya."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: The tall trees over there are very beautiful.",
         answer: "Ibiti birebire hariya ni vyiza cane."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: The wild animal is alive.",
-        options: [
-          "Igikoko ni kibi.",
-          "Igikoko kiri muzima.",
-          "Ibikoko biri muzima.",
-          "Umuntu ni muzima."
-        ],
-        correctIndex: 1
+        answer: "Igikoko kiri muzima."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: There is a small hole in our field.",
         answer: "Har'icobo gitoyi mu murima wacu."
       }

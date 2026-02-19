@@ -332,62 +332,42 @@ let l_quiz = [
     title: "I. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Umunezero n’ikigongwe vy’Imana ni bikuru.",
         answer: "The joy and mercy of God are great"
       },
       {
-        TAG: "TextInput",
         prompt: "Igisozi ni kirekire cane.",
         answer: "The mountain is very high"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "What does 'Impene nyinshi n’ibikoko bike biri ku musozi' mean?",
-        options: [
-          "Many goats and a few wild animals are on the hill",
-          "Many sheep and few cows are on the mountain",
-          "Many goats and many animals are in the house"
-        ],
-        correctIndex: 0
+        answer: "Many goats and a few wild animals are on the hill"
       },
       {
-        TAG: "TextInput",
         prompt: "Ikigongwe c’Imana ni cinshi cane.",
         answer: "The mercy of God is very great"
       },
       {
-        TAG: "TextInput",
         prompt: "Ivyanje bir’i wacu.",
         answer: "Mine are at our place"
       },
       {
-        TAG: "TextInput",
         prompt: "Ikirago c’umugabo kiri mu nzu yiwe.",
         answer: "The man's mat is in his house"
       },
       {
-        TAG: "TextInput",
         prompt: "Umukozi wacu n’ikigabo.",
         answer: "Our worker is a big man"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: 'Abagore bafise ibigori vyinshi mu mirima yabo.'",
-        options: [
-          "The men have much corn in their fields",
-          "The women have much corn in their fields",
-          "The women have few beans in the garden"
-        ],
-        correctIndex: 1
+        answer: "The women have much corn in their fields"
       },
       {
-        TAG: "TextInput",
         prompt: "Har’ igihuzu mu nzu y’umutama.",
         answer: "There is a cloth in the old man's house"
       },
       {
-        TAG: "TextInput",
         prompt: "Abana bafise umunezero mwinshi. Ni vyiza.",
         answer: "The children have much joy. It is good"
       }
@@ -397,62 +377,42 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The dog and a wild animal are over there.",
         answer: "Imbwa n’igikoko biri hariya"
       },
       {
-        TAG: "TextInput",
         prompt: "A huge stone is on the hill.",
         answer: "Ibuye rinini riri ku musozi"
       },
       {
-        TAG: "TextInput",
-        prompt: "The boys have corn (pl.) and sweet potatoes.",
+        prompt: "The boys have corn (pl. and sweet potatoes.",
         answer: "Abahungu bafise ibigori n’ibijumbu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "How do you say 'Bananas are very good'?",
-        options: [
-          "Ibitoke ni bibi cane",
-          "Imineke ni myiza cane",
-          "Ibijumbu ni vyiza cane"
-        ],
-        correctIndex: 1
+        answer: "Imineke ni myiza cane"
       },
       {
-        TAG: "TextInput",
         prompt: "The new cloth is long.",
         answer: "Igihuzu gishasha ni kirekire"
       },
       {
-        TAG: "TextInput",
         prompt: "There is a very heavy rain over there.",
         answer: "Hari imvura nyinshi cane hariya"
       },
       {
-        TAG: "TextInput",
         prompt: "The men are hoeing well in the bananas.",
         answer: "Abagabo bariko bararima neza mu bitoke"
       },
       {
-        TAG: "TextInput",
-        prompt: "Our bread (pl.) and meat are in a cloth.",
+        prompt: "Our bread (pl. and meat are in a cloth.",
         answer: "Imikate yacu n’inyama biri mu gihuzu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: 'The child’s head and feet are large.'",
-        options: [
-          "Umutwe n’ibirenge vy’umwana ni binini",
-          "Amata n’inyama vy’umwana ni binini",
-          "Umutwe n’amaboko vy’umutama ni binini"
-        ],
-        correctIndex: 0
+        answer: "Umutwe n’ibirenge vy’umwana ni binini"
       },
       {
-        TAG: "TextInput",
         prompt: "The man’s chairs and drums are in his house.",
         answer: "Intebe n’ingoma vy’umugabo biri mu nzu yiwe"
       }

@@ -1,13 +1,8 @@
-type quizQuestion =
-  | TextInput({
-      prompt: string,
-      answer: string,
-    })
-  | MultipleChoice({
-      prompt: string,
-      options: array<string>,
-      correctIndex: int,
-    })
+// Quiz.res
+type quizQuestion = {
+  prompt: string,
+  answer: string,
+}
 
 type quizSection = {
   title: string,
@@ -18,7 +13,6 @@ module QuizQuestionView = {
   @react.component
   let make = (~question: quizQuestion, ~index: int) => {
     let (userInput, setUserInput) = React.useState(() => "")
-    let (selected, setSelected) = React.useState(() => -1)
     let (checked, setChecked) = React.useState(() => false)
 
     let feedback = (~ok, ~text) =>
@@ -34,11 +28,10 @@ module QuizQuestionView = {
       <div className="flex gap-x-4">
         <span className="font-bold">{React.string(Int.toString(index + 1) ++ ".")}</span>
         <div className="flex-1 space-y-4">
-          {switch question {
-          | TextInput({prompt, answer}) =>
+          {
             <>
               <p className="text-justify leading-normal">
-                {prompt->React.string}
+                {question.prompt->React.string}
               </p>
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
@@ -53,8 +46,8 @@ module QuizQuestionView = {
                   {"Check"->React.string}
                 </button>
               </div>
-              {checked
-                ? feedback(
+              {let answer = question.answer
+                checked ? feedback(
                     ~ok={userInput == answer},
                     ~text={
                       userInput == answer ? "✓ Correct" : "✗ Correct answer: " ++ answer
@@ -62,46 +55,7 @@ module QuizQuestionView = {
                   )
                 : React.null}
             </>
-
-          | MultipleChoice({prompt, options, correctIndex}) =>
-            <>
-              <p className="text-justify leading-normal">
-                {prompt->React.string}
-              </p>
-              <ul className="space-y-2 mt-2">
-                {options
-                ->Array.mapWithIndex((opt, i) =>
-                  <li key={Int.toString(i)} className="flex items-center gap-3">
-                    <input
-                      type_="radio"
-                      className="accent-black h-4 w-4"
-                      checked={selected == i}
-                      onChange={_ => setSelected(_ => i)}
-                    />
-                    <span className="cursor-pointer" onClick={_ => setSelected(_ => i)}>
-                      {opt->React.string}
-                    </span>
-                  </li>
-                )
-                ->React.array}
-              </ul>
-              <button
-                className="mt-2 border border-black px-4 py-1 text-sm font-bold uppercase hover:bg-black hover:text-white transition-colors"
-                onClick={_ => setChecked(_ => true)}>
-                {"Check"->React.string}
-              </button>
-              {checked
-                ? feedback(
-                    ~ok={selected == correctIndex},
-                    ~text={
-                      selected == correctIndex
-                        ? "✓ Correct"
-                        : "✗ Correct answer: " ++ (options[correctIndex]->Option.getOr("error"))
-                    },
-                  )
-                : React.null}
-            </>
-          }}
+          }
         </div>
       </div>
     </div>

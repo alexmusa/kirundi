@@ -306,52 +306,34 @@ let l_quiz = [
     title: "I. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. Umukiza wacu ni Yesu.",
         answer: "Our Savior is Jesus"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "2. Umwigisha wabo aravuga.",
-        options: [
-          "Their teacher is speaking",
-          "Our teacher is speaking",
-          "Their teacher is working"
-        ],
-        correctIndex: 0
+        answer: "Their teacher is speaking"
       },
       {
-        TAG: "TextInput",
         prompt: "3. Abakozi banyu bararima.",
         answer: "Your workers are hoeing"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Umwana wawe n’umuhungu.",
         answer: "Your child is a boy"
       },
       {
-        TAG: "TextInput",
         prompt: "5. Abigishwa babo barakora.",
         answer: "Their pupils are working"
       },
       {
-        TAG: "TextInput",
         prompt: "6. Abantu barakora cane.",
         answer: "The people are working hard"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "7. Mbeg’ umwigisha wanyu ararima?",
-        options: [
-          "Is my teacher hoeing?",
-          "Is your teacher hoeing?",
-          "Are the teachers hoeing?"
-        ],
-        correctIndex: 1
+        answer: "Is your teacher hoeing?"
       },
       {
-        TAG: "TextInput",
         prompt: "8. Abana banje n’abakobwa.",
         answer: "My children are girls"
       }
@@ -361,92 +343,62 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. My child.",
         answer: "Umwana wanje"
       },
       {
-        TAG: "TextInput",
-        prompt: "2. Your (sing.) husband.",
+        prompt: "2. Your (sing. husband.",
         answer: "Umugabo wawe"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "3. His workmen.",
-        options: [
-          "Abakozi biwe",
-          "Abakozi babo",
-          "Umukozi wiwe"
-        ],
-        correctIndex: 0
+        answer: "Abakozi biwe"
       },
       {
-        TAG: "TextInput",
-        prompt: "4. Your (pl.) teachers.",
+        prompt: "4. Your (pl. teachers.",
         answer: "Abigisha banyu"
       },
       {
-        TAG: "TextInput",
-        prompt: "5. Your (sing.) children.",
+        prompt: "5. Your (sing. children.",
         answer: "Abana bawe"
       },
       {
-        TAG: "TextInput",
         prompt: "6. Her pupils.",
         answer: "Abigishwa biwe"
       },
       {
-        TAG: "TextInput",
         prompt: "7. Our Savior.",
         answer: "Umukiza wacu"
       },
       {
-        TAG: "TextInput",
         prompt: "8. Our boys.",
         answer: "Abahungu bacu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "9. Their wives.",
-        options: [
-          "Abagore banje",
-          "Abagore babo",
-          "Abagore banyu"
-        ],
-        correctIndex: 1
+        answer: "Abagore babo"
       },
       {
-        TAG: "TextInput",
-        prompt: "10. Your (pl.) girls.",
+        prompt: "10. Your (pl. girls.",
         answer: "Abakobwa banyu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "11. The old men work (are working).",
-        options: [
-          "Abasaza barakora",
-          "Umusage arakora",
-          "Abasaza bararima"
-        ],
-        correctIndex: 0
+        answer: "Abasaza barakora"
       },
       {
-        TAG: "TextInput",
-        prompt: "12. Your (pl.) king.",
+        prompt: "12. Your (pl. king.",
         answer: "Umwami wanyu"
       },
       {
-        TAG: "TextInput",
         prompt: "13. Our children are hoeing.",
         answer: "Abana bacu bararima"
       },
       {
-        TAG: "TextInput",
-        prompt: "14. Your (pl.) children are girls.",
+        prompt: "14. Your (pl. children are girls.",
         answer: "Abana banyu n'abakobwa"
       },
       {
-        TAG: "TextInput",
         prompt: "15. My sons are not pupils.",
         answer: "Abahungu banje si abigishwa"
       }

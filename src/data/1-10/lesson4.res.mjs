@@ -313,68 +313,36 @@ let l_quiz = [
     title: "I. Plurals and Meanings",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Give the plural and meaning for: umukozi wawe",
         answer: "abakozi banyu: your workers"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Give the plural and meaning for: umutima wiwe",
-        options: [
-          "imitima yabo: their hearts",
-          "abana babo: their children",
-          "imitima yiwe: his hearts",
-          "umutima wabo: their heart"
-        ],
-        correctIndex: 0
+        answer: "imitima yabo: their hearts"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the plural and meaning for: umwana wabo",
         answer: "abana babo: their children"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Give the plural and meaning for: umusozi wacu",
-        options: [
-          "imisozi yacu: our mountains",
-          "abasozi wacu: our mountain",
-          "imisozi yabo: their mountains",
-          "umusozi wacu: our mountain"
-        ],
-        correctIndex: 0
+        answer: "imisozi yacu: our mountains"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the plural and meaning for: umutsima wanje",
         answer: "imitsima yacu: our bread"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Give the plural and meaning for: umutwe wawe",
-        options: [
-          "imitwe yanyu: your heads",
-          "abanywa banyu: your mouths",
-          "imitwe wawe: your head",
-          "umutwe yanyu: your heads"
-        ],
-        correctIndex: 0
+        answer: "imitwe yanyu: your heads"
       },
       {
-        TAG: "TextInput",
         prompt: "Give the plural and meaning for: umwigishwa wiwe",
         answer: "abigishwa babo: their pupils"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Give the plural and meaning for: umukobwa wanje",
-        options: [
-          "abakobwa bacu: our daughters",
-          "abakobwa wanje: my daughters",
-          "imikobwa yacu: our girls",
-          "abakobwa banyu: your daughters"
-        ],
-        correctIndex: 0
+        answer: "abakobwa bacu: our daughters"
       }
     ]
   },
@@ -382,76 +350,47 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The boy and the girl have their bread.",
         answer: "Umuhungu n’umukobwa bafise umutsima wabo"
       },
       {
-        TAG: "TextInput",
         prompt: "Jesus is my Savior.",
         answer: "Yezu ni Umukiza wanje"
       },
       {
-        TAG: "TextInput",
         prompt: "The old man has salt and bread.",
         answer: "Umusaza afise umunyu n’umutsima"
       },
       {
-        TAG: "TextInput",
-        prompt: "Your (pl.) children work well.",
+        prompt: "Your (pl. children work well.",
         answer: "Abana banyu barakora neza"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "His daughter and your (sing.) son are going.",
-        options: [
-          "Umukobwa wiwe n’umuhungu wawe baragenda",
-          "Umukobwa wabo n’umuhungu wacu baragenda",
-          "Abakobwa biwe n’umuhungu wawe baragenda",
-          "Umukobwa wiwe n’umuhungu wawe barakora"
-        ],
-        correctIndex: 0
+        answer: "Umukobwa wiwe n’umuhungu wawe baragenda"
       },
       {
-        TAG: "TextInput",
         prompt: "My teacher has a fire.",
         answer: "Umwigisha wanje afise umuriro"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The workmen and the pupils are hoeing.",
-        options: [
-          "Abakozi n’abigishwa bararima",
-          "Umukozi n’umwigishwa bararima",
-          "Abakozi n’abigishwa barakora",
-          "Abakozi n’abigishwa baragenda"
-        ],
-        correctIndex: 0
+        answer: "Abakozi n’abigishwa bararima"
       },
       {
-        TAG: "TextInput",
         prompt: "The people are speaking.",
         answer: "Abantu baravuga"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Your (pl.) teachers have (some) salt.",
-        options: [
-          "Abigisha banyu bafise umunyu",
-          "Umwigisha wanyu afise umunyu",
-          "Abigisha bacu bafise umunyu",
-          "Abigisha banyu bafise umutsima"
-        ],
-        correctIndex: 0
+        answer: "Abigisha banyu bafise umunyu"
       },
       {
-        TAG: "TextInput",
-        prompt: "The workman has his bread and (some) salt.",
+        prompt: "The workman has his bread and (some salt.",
         answer: "Umukozi afise umutsima wiwe n’umunyu"
       },
       {
-        TAG: "TextInput",
-        prompt: "Is your (pl.) child a boy? No, it’s a girl.",
+        prompt: "Is your (pl. child a boy? No, it’s a girl.",
         answer: "Umwana wanyu ni umuhungu? Oya, ni umukobwa"
       }
     ]

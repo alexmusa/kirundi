@@ -23,29 +23,24 @@ let l: lesson = {
     {
       title: "I. jjj",
       questions: [
-        TextInput({
+        {
           prompt: "kk.",
           answer: "ll",
-        }),
-        MultipleChoice({
-          prompt: "mm",
-          options: [
-            "nnn",
-            "ooo",
-            "ppp",
-          ],
-          correctIndex: 65536,
-        }),
+        },
+        {
+          prompt: "mm.",
+          answer: "nnn",
+        },
       ],
     },
     {
       title: "II. qqq",
       questions: [
-        TextInput({
+        {
           prompt: "r",
           answer: "s",
 
-        }),
+        },
       ],
     },
   ],

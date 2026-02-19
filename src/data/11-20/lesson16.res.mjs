@@ -417,66 +417,44 @@ let l_quiz = [
     title: "I. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. Inka zigenda mu bijumbu.",
         answer: "Cows go in the sweet potatoes"
       },
       {
-        TAG: "TextInput",
         prompt: "2. Mbeg’ abantu barakora neza mu murima?",
         answer: "Are the people working well in the field?"
       },
       {
-        TAG: "TextInput",
         prompt: "3. Turakora cane mu nzu zacu.",
         answer: "We are working hard in our houses"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Imbwa yiwe igenda i muhira.",
         answer: "His dog is going home"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "5. Har’ imvunja nyinshi mu birenge vyiwe.",
-        options: [
-          "There are many jiggers in his feet.",
-          "There are many shoes on his feet.",
-          "He has many injuries on his legs.",
-          "There is much mud on his feet."
-        ],
-        correctIndex: 0
+        answer: "There are many jiggers in his feet."
       },
       {
-        TAG: "TextInput",
         prompt: "6. Umukiza aravuga mu mitima yacu.",
         answer: "The Savior speaks in our hearts"
       },
       {
-        TAG: "TextInput",
         prompt: "7. Igikoko kigenda mu ndimiro y’umwigisha.",
         answer: "The wild animal is going in the teacher’s gardens"
       },
       {
-        TAG: "TextInput",
         prompt: "8. Mbega murarima cane mu bigori?",
         answer: "Are you hoeing much in the corn?"
       },
       {
-        TAG: "TextInput",
         prompt: "9. Mbeg’ ukora intebe nziza? Ego, nkora intebe.",
         answer: "Do you make a nice chair? Yes, I make a chair."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "10. Abakobwa b’Abarundi bararima cane.",
-        options: [
-          "The Burundian boys are working hard.",
-          "The Burundian girls are hoeing much.",
-          "The Burundian women are planting corn.",
-          "The Burundian girls are making mats."
-        ],
-        correctIndex: 1
+        answer: "The Burundian girls are hoeing much."
       }
     ]
   },
@@ -484,65 +462,43 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. God speaks in the hearts of people.",
         answer: "Imana ivuga mu mitima y'abantu"
       },
       {
-        TAG: "TextInput",
-        prompt: "2. Are you (pl.) hoeing in your gardens?",
+        prompt: "2. Are you (pl. hoeing in your gardens?",
         answer: "Mbega murarima mu ndimiro zanyu?"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "3. The bad goats are going into the house.",
-        options: [
-          "Ihene nziza zigenda mu nzu.",
-          "Imbwa mbi zigenda mu nzu.",
-          "Ihene mbi zigenda mu nzu.",
-          "Ihene mbi ziri mu nzu."
-        ],
-        correctIndex: 2
+        answer: "Ihene mbi zigenda mu nzu."
       },
       {
-        TAG: "TextInput",
         prompt: "4. A few men and a few women are working in the old man’s gardens.",
         answer: "Abagabo bake n'abagore bake barakora mu ndimiro z'umutama"
       },
       {
-        TAG: "TextInput",
         prompt: "5. I am going to Gitega.",
         answer: "Ngenda i Gitega"
       },
       {
-        TAG: "TextInput",
         prompt: "6. We are working hard in our new houses.",
         answer: "Turakora cane mu nzu zacu nshasha"
       },
       {
-        TAG: "TextInput",
         prompt: "7. The boys have dirty sleeping mats.",
         answer: "Abahungu bafise imisambi mibi"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "8. Are you (sing.) going to our country? (use 'mu')",
-        options: [
-          "Mbega ugenda mu gihugu cacu?",
-          "Mbega murarima mu gihugu cacu?",
-          "Mbega ugenda i wacu?",
-          "Mbega mwebwe mugenda mu gihugu?"
-        ],
-        correctIndex: 0
+        answer: "Mbega ugenda mu gihugu cacu?"
       },
       {
-        TAG: "TextInput",
         prompt: "9. The men’s dogs are going into the teacher’s fields.",
         answer: "Imbwa z'abagabo zigenda mu ndimiro z'umwigisha"
       },
       {
-        TAG: "TextInput",
-        prompt: "10. Are you (sing.) working in the dark?",
+        prompt: "10. Are you (sing. working in the dark?",
         answer: "Mbega ukora mu muzimagiza?"
       }
     ]

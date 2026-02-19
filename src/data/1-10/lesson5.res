@@ -120,114 +120,94 @@ quiz: [
   {
     title: "I. Kirundi to English Translation",
     questions: [
-      TextInput({
+      {
         prompt: "Translate: Umugabo agenda mu mwiza.",
         answer: "The man walks in the darkness."
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "What does 'imyenda' mean in: 'Umwigisha afise imyenda'?",
-        options: [
-          "Books",
-          "Clothes/Garments",
-          "Children",
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "Clothes/Garments",
+      },
+      {
         prompt: "Translate: Umugore afise umunezero mu mutima wiwe.",
         answer: "The woman has joy in her heart.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate 'His/her children work well': Abana biwe _________ neza.",
         answer: "barakora",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Umwotsi uva mu muriro.",
         answer: "Smoke comes from the fire.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate: Umutama afise umwiza mu mutima wiwe.",
-        options: [
-          "The old man has darkness in his heart.",
-          "The teacher has joy in his heart.",
-          "The old man has smoke in his heart.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "The old man has darkness in his heart.",
+      },
+      {
         prompt: "Translate: Umukiza akora mu mitima yacu.",
         answer: "The Savior works in our hearts.",
         // hint: "yacu = our",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate the question and answer: Mbeg’ umukozi afise imyenda? Oyaye.",
         answer: "Does the worker have clothes? No.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate 'The workers hoe on the hill': Abakozi _____ ku musozi.",
         answer: "barima",
-      }),
+      },
     ],
   },
   {
     title: "II. English to Kirundi Translation",
     questions: [
-      TextInput({
+      {
         prompt: "Translate: The children have joy in their hearts.",
         answer: "Abana bafise umunezero mu mitima yabo",
         // hint: "Use 'yabo' for 'their'",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "How do you say 'The boy has bread on his head'?",
-        options: [
-          "Umuhungu afise umukate mu mutwe wiwe",
-          "Umuhungu afise umukate ku mutwe wiwe",
-          "Umwana afise umukate ku musozi wiwe",
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "Umuhungu afise umukate ku mutwe wiwe",
+      },
+      {
         prompt: "Translate: The women work on their hill.",
         answer: "Abagore barakora ku musozi wabo",
-        // hint: "Use 'wabo' for 'their' (hill)",
-      }),
-      TextInput({
-        prompt: "Translate 'Your (sing.) debts': ______ yawe.",
+        // hint: "Use 'wabo' for 'their' (hill",
+      },
+      {
+        prompt: "Translate 'Your (sing. debts': ______ yawe.",
         answer: "Imyenda",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Our fire.",
         answer: "Umuriro wacu",
         // hint: "wacu = our",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Which phrase means 'In the fire'?",
-        options: [
-          "Ku muriro",
-          "Mu muriro",
-          "Kuri muriro",
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "Mu muriro",
+      },
+      {
         prompt: "Translate: At the fire.",
         answer: "Ku muriro",
         // hint: "Use the 'at/on' preposition",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: The old men have darkness in their hearts.",
         answer: "Abatama bafise umwiza mu mitima yabo",
         // hint: "Old men = Abatama",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate using 'wo': The light on the hill is your fire.",
         answer: "umuco wo ku musozi ni umuriro wawe",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: The child is walking in the smoke.",
         answer: "Umwana agenda mu mwotsi",
         // hint: "smoke = umwotsi",
-      }),
+      },
     ],
   },
 ]

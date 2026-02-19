@@ -139,123 +139,93 @@ let l: lesson = {
   {
     title: "I. Translate into English",
     questions: [
-      TextInput({
+      {
         prompt: "Inka ziwe ni nyinshi.",
         answer: "His cows are many.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Afise umwana mwiza.",
         answer: "He has a beautiful child.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Umukobwa wiwe n’umuhungu wiwe ni batoya.",
         answer: "His daughter and his son are small.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Inzu zabo nini ni nziza cane.",
         answer: "Their large house is very beautiful.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Abana bato si babi.",
         answer: "Small children are not bad.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Umugabo muremure akora mu ndimiro y’umwigisha.",
         answer: "A tall man works in the teacher's garden.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Mfise intebe nziza nshasha.",
-        options: [
-          "I have a beautiful new chair.",
-          "He has a beautiful new chair.",
-          "They have a beautiful new chair.",
-        ],
-        correctIndex: 0,
-      }),
-      MultipleChoice({
+        answer: "I have a beautiful new chair.",
+      },
+      {
         prompt: "Umuhungu mutoya afise umunyu mwinshi.",
-        options: [
-          "A small boy has much salt.",
-          "A tall boy has much salt.",
-          "A small boy has many cows.",
-        ],
-        correctIndex: 0,
-      }),
-      MultipleChoice({
+        answer: "A small boy has much salt.",
+      },
+      {
         prompt: "Mbeg’ abigishwa bafise impuzu nziza?",
-        options: [
-          "Do the students have nice clothes?",
-          "Does the teacher have nice clothes?",
-          "Are the students nice?",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Do the students have nice clothes?",
+      },
+      {
         prompt: "Mbeg’ inka z’umutama ni nini?",
         answer: "Are the farmer's cows large?",
 
-      }),
+      },
     ],
   },
   {
     title: "II. Translate into Kirundi",
     questions: [
-      TextInput({
+      {
         prompt: "My good dog is very short.",
         answer: "Inja yanjye nziza ni igufi cane.",
-      }),
-      TextInput({
-        prompt: "Your (pl.) large houses are nice.",
+      },
+      {
+        prompt: "Your (pl. large houses are nice.",
         answer: "Inzo zanyu nini ni nziza.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Our small chairs are new.",
         answer: "Intebe zacu ntoya ni nshasha.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Our great God is good.",
         answer: "Imana yacu nini ni nziza.",
-      }),
-      TextInput({
-        prompt: "Your (pl.) many people work hard.",
+      },
+      {
+        prompt: "Your (pl. many people work hard.",
         answer: "Abantu banyu benshi bakora cane.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "A tall man is walking in the garden.",
         answer: "Umugabo muremure aragenda mu ndimiro.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "The good children are not few.",
-        options: [
-          "Abana nziza si bake.",
-          "Abana bato si bake.",
-          "Abana benshi si bake.",
-        ],
-        correctIndex: 0,
-      }),
-      MultipleChoice({
+        answer: "Abana nziza si bake.",
+       },
+      {
         prompt: "The teacher has many gardens.",
-        options: [
-          "Umwigisha afise indimiro nyinshi.",
-          "Umwigisha afise inka nyinshi.",
-          "Abigishwa bafise indimiro nyinshi.",
-        ],
-        correctIndex: 0,
-      }),
-      MultipleChoice({
+        answer: "Umwigisha afise indimiro nyinshi.",
+      },
+      {
         prompt: "His long string is nice.",
-        options: [
-          "Umugozi wiwe muremure ni nziza.",
-          "Umugozi wiwe mutoya ni nziza.",
-          "Umuhungu wiwe muremure ni nziza.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Umugozi wiwe muremure ni nziza.",
+      },
+      {
         prompt: "Our God is living.",
         answer: "Imana yacu iri kubaho.",
 
-      }),
+      },
     ],
   },
 ]

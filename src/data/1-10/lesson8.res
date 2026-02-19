@@ -140,115 +140,95 @@ let l: lesson = {
   {
     title: "I. Translate from Kirundi to English",
     questions: [
-      TextInput({
+      {
         prompt: "Translate into English: Inka yanje ni mbi.",
         answer: "My cow is bad."
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate into English: Umugabo ni mugufi.",
-        options: [
-          "The man is short.",
-          "The man is tall.",
-          "The man is bad."
-        ],
-        correctIndex: 0
-      }),
-      TextInput({
+        answer: "The man is short.",
+      },
+      {
         prompt: "Translate into English: Abantu si bake.",
         answer: "The people are not few."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into English: Abana banje si babi.",
         answer: "My children are not bad.",
 
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into English: Umwigisha ni mukuru.",
         answer: "The teacher is old."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into English: Inzu y’umutama ni mbi.",
         answer: "The old man's house is bad."
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate into English: Impuzu y’umwana ni ngufi.",
-        options: [
-          "The child's clothes are short.",
-          "The child's clothes are dirty.",
-          "The child's clothes are new."
-        ],
-        correctIndex: 0
-      }),
-      TextInput({
+        answer: "The child's clothes are short.",
+      },
+      {
         prompt: "Translate into English: Mfise umutsima mubi.",
         answer: "I have bad porridge."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into English: Abana bafise imitsima mike.",
         answer: "The children have few porridges.",
 
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into English: Intebe zanyu ni ngufi.",
         answer: "Your chairs are short."
-      })
+      }
     ]
   },
   {
     title: "II. Translate from English to Kirundi",
     questions: [
-      TextInput({
+      {
         prompt: "Translate into Kirundi: I have an ugly dog.",
         answer: "Mfise imbwa mbi."
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate into Kirundi: Our house is low.",
-        options: [
-          "Inzu yacu ni ngufi.",
-          "Inzu yacu ni nkuru.",
-          "Inzu yacu ni mbi."
-        ],
-        correctIndex: 0
-      }),
-      TextInput({
-        prompt: "Translate into Kirundi: Your (pl.) chairs are short.",
+        answer: "Inzu yacu ni ngufi.",
+      },
+      {
+        prompt: "Translate into Kirundi: Your (pl. chairs are short.",
         answer: "Intebe zanyu ni ngufi."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: His bad children.",
         answer: "Abana be babi.",
 
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: Their few cows.",
         answer: "Inka zabo nke."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: The houses are few.",
         answer: "Amazu ni make."
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate into Kirundi: Your (sing.) clothes are dirty.",
-        options: [
-          "Impuzu yawe ni mbi.",
-          "Impuzu yawe ni ngufi.",
-          "Impuzu yawe ni nkuru."
-        ],
-        correctIndex: 0
-      }),
-      TextInput({
+        answer: "Impuzu yawe ni mbi.",
+      },
+      {
         prompt: "Translate into Kirundi: God is very great.",
         answer: "Imana ni nkuru cyane."
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: I have his short rope.",
         answer: "Mfise umugozi we mugufi.",
 
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: Is the teacher’s child bad?",
         answer: "Umwana w’umwigisha ni mbi?"
-      })
+      }
     ]
   }
 ]

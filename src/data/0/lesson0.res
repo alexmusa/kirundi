@@ -177,141 +177,106 @@ let l: lesson = {
     {
       title: "I. Basic Greetings",
       questions: [
-        TextInput({
-          prompt: "Translate 'Good morning (first meeting)' to Kirundi:",
+        {
+          prompt: "Translate 'Good morning (first meeting' to Kirundi:",
           answer: "Bwakeye",
-        }),
-        MultipleChoice({
+        },
+        {
           prompt: "Which phrase means 'Good afternoon/evening'?",
-          options: [
-            "Bwakeye neza",
-            "Mwiriwe neza",
-            "Ndagize bwakeye",
-          ],
-          correctIndex: 1,
-        }),
-        TextInput({
+          answer: "Bwakeye neza",
+        },
+        {
           prompt: "What does 'Ndagize bwakeye' mean in English?",
-          answer: "Good morning (to a superior)",
-        }),
-        TextInput({
+          answer: "Good morning (to a superior",
+        },
+        {
           prompt: "Give the formal morning greeting for superiors:",
           answer: "Ndagize bwakeye",
-        }),
+        },
       ],
     },
     {
       title: "II. Daily Inquiries",
       questions: [
-        MultipleChoice({
+        {
           prompt: "What would you say to ask 'What's the news?'",
-          options: [
-            "N'amahoro",
-            "N'amaki",
-            "Ndagumye",
-          ],
-          correctIndex: 1,
-        }),
-        TextInput({
+          answer: "N'amaki",
+        },
+        {
           prompt: "When someone says 'N'amahoro?', they're asking:",
           answer: "Is it peace?",
-        }),
-        TextInput({
-          prompt: "How do you respond 'It's peace (all is well)' in Kirundi?",
+        },
+        {
+          prompt: "How do you respond 'It's peace (all is well' in Kirundi?",
           answer: "N'amahoro",
-        }),
-        MultipleChoice({
+        },
+        {
           prompt: "Which phrase indicates good news?",
-          options: [
-            "N'amabi",
-            "N'ameza",
-            "N'akagaruka",
-          ],
-          correctIndex: 1,
-        }),
+          answer: "N'ameza",
+        },
       ],
     },
     {
       title: "III. Health & Well-being",
       questions: [
-        TextInput({
+        {
           prompt: "Translate 'Are you well?' to Kirundi:",
           answer: "Uragumye",
-        }),
-        MultipleChoice({
+        },
+        {
           prompt: "How do you respond 'I'm well'?",
-          options: [
-            "Ndagumye",
-            "N'amahoro",
-            "N'agasaga",
-          ],
-          correctIndex: 0,
-        }),
-        TextInput({
+          answer: "Ndagumye",
+        },
+        {
           prompt: "What is the alternative way to ask 'Urakomeye?' in English?",
           answer: "Are you well?",
-        }),
-        TextInput({
-          prompt: "Give another Kirundi phrase for 'I'm well' (besides Ndagumye):",
+        },
+        {
+          prompt: "Give another Kirundi phrase for 'I'm well' (besides Ndagumye:",
           answer: "Ndakomeye",
-        }),
+        },
       ],
     },
     {
       title: "IV. Mixed Phrases",
       questions: [
-        MultipleChoice({
+        {
           prompt: "Which phrase means 'Good-bye / See you soon'?",
-          options: [
-            "Bwakeye neza",
-            "N'agasaga",
-            "N'amarembe",
-          ],
-          correctIndex: 1,
-        }),
-        TextInput({
+          answer: "N'agasaga",
+        },
+        {
           prompt: "What does 'N'amarembe' mean?",
-          answer: "It's peace (all is well)",
-        }),
-        MultipleChoice({
+          answer: "It's peace (all is well",
+        },
+        {
           prompt: "Select the evening greeting (for subsequent meetings):",
-          options: [
-            "Bwakeye",
-            "Mwiriwe",
-            "Ndaguhaye bwakeye",
-          ],
-          correctIndex: 1,
-        }),
-        TextInput({
+          answer: "Mwiriwe",
+        },
+        {
           prompt: "Give the alternative Kirundi phrase for 'Good-bye' besides 'N'agasaga':",
           answer: "N'akagaruka",
-        }),
+        },
       ],
     },
     {
       title: "V. Comprehensive Review",
       questions: [
-        TextInput({
+        {
           prompt: "Translate 'Mwiriwe neza' to English:",
           answer: "Good afternoon/evening",
-        }),
-        MultipleChoice({
+        },
+        {
           prompt: "Which is the proper response to 'N'amaki?' if everything is fine?",
-          options: [
-            "N'amabi",
-            "N'amahoro",
-            "Uragumye",
-          ],
-          correctIndex: 1,
-        }),
-        TextInput({
+          answer: "N'amahoro",
+        },
+        {
           prompt: "How would you say 'It's bad news' in Kirundi?",
           answer: "N'amabi",
-        }),
-        TextInput({
+        },
+        {
           prompt: "What is the English meaning of 'Ndaguhaye bwakeye'?",
-          answer: "Good morning (to a superior)",
-        }),
+          answer: "Good morning (to a superior",
+        },
       ],
     },
   ],

@@ -280,27 +280,22 @@ let l_quiz = [
     title: "I. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Shira urubaho rwawe ku meza mw ishuli.",
-        answer: "Put your board (or slate) on the table in school."
+        answer: "Put your board (or slate on the table in school."
       },
       {
-        TAG: "TextInput",
         prompt: "Dufise urugi rugufi mu nzu yacu.",
         answer: "We have a short door in our house."
       },
       {
-        TAG: "TextInput",
         prompt: "Mbeg’ urugo rwanyu ruri hehe? Ruri hariya kure ku musozi.",
-        answer: "Is your homestead (or kraal) where? It is over there far on the hill."
+        answer: "Is your homestead (or kraal where? It is over there far on the hill."
       },
       {
-        TAG: "TextInput",
         prompt: "Mu gihugu cacu har’ inzuzi nyinshi.",
         answer: "In our country there are many rivers."
       },
       {
-        TAG: "TextInput",
         prompt: "Umwana ashira urutoke mu jisho.",
         answer: "The child puts a finger in the eye."
       }
@@ -310,27 +305,22 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The man’s fingers are long.",
         answer: "Intoke z'umugabo ni ndende."
       },
       {
-        TAG: "TextInput",
-        prompt: "Bring wood (insert “zo”) to put in the fire.",
+        prompt: "Bring wood (insert “zo” to put in the fire.",
         answer: "Zana inkwi zo gushira mu muriro."
       },
       {
-        TAG: "TextInput",
-        prompt: "The love of God is great (much).",
+        prompt: "The love of God is great (much.",
         answer: "Urukundo rw'Imana ni rwinshi."
       },
       {
-        TAG: "TextInput",
         prompt: "The long river is over there.",
         answer: "Uruzi rurerure ruri hariya."
       },
       {
-        TAG: "TextInput",
         prompt: "We have a few slates in school.",
         answer: "Dufise imbaho nkeya mw ishuli."
       }
@@ -340,54 +330,44 @@ let l_quiz = [
     title: "III. Give plurals and meanings",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "inka",
-        answer: "inka (cows)"
+        answer: "inka (cows"
       },
       {
-        TAG: "TextInput",
         prompt: "urutoke",
-        answer: "intoke (fingers)"
+        answer: "intoke (fingers"
       },
       {
-        TAG: "TextInput",
         prompt: "isahane",
-        answer: "amasahane (plates)"
+        answer: "amasahane (plates"
       },
       {
-        TAG: "TextInput",
         prompt: "inkoko",
-        answer: "inkoko (chickens)"
+        answer: "inkoko (chickens"
       },
       {
-        TAG: "TextInput",
         prompt: "uruzi",
-        answer: "inzuzi (rivers)"
+        answer: "inzuzi (rivers"
       },
       {
-        TAG: "TextInput",
         prompt: "ishuli",
-        answer: "amashuli (schools)"
+        answer: "amashuli (schools"
       },
       {
-        TAG: "TextInput",
         prompt: "irigi",
-        answer: "amagi (eggs)"
+        answer: "amagi (eggs"
       },
       {
-        TAG: "TextInput",
         prompt: "urukwi",
-        answer: "inkwi (sticks of wood)"
+        answer: "inkwi (sticks of wood"
       },
       {
-        TAG: "TextInput",
         prompt: "urubaho",
-        answer: "imbaho (boards/slates)"
+        answer: "imbaho (boards/slates"
       },
       {
-        TAG: "TextInput",
         prompt: "urugi",
-        answer: "inzugi (doors)"
+        answer: "inzugi (doors"
       }
     ]
   }

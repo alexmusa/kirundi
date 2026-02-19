@@ -150,127 +150,94 @@ let l: lesson = {
   {
     title: "I. Translate from Kirundi to English",
     questions: [
-      TextInput({
+      {
         prompt: "Inka z’umugabo.",
         answer: "The man's cows.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Umutama n’imbwa yiwe.",
         answer: "The child and his dog.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Umuhungu akora mu ndimiro yiwe.",
-        options: [
-          "The boy works in his field.",
-          "The girl works in her field.",
-          "The boy is playing in his field.",
-          "The boy works in the house.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "The boy works in his field.",
+      },
+      {
         prompt: "Abakobwa bafise intebe zabo.",
         answer: "The girls have their chairs.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Umukobwa afise impuzu mu nzu yanje.",
         answer: "The girl has clothes in my house.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Umwana afise impuzu zawe.",
         answer: "The child has your clothes.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Inka zawe ziri mu murima wanje.",
-        options: [
-          "Your cows are in my field.",
-          "My cows are in your field.",
-          "The cows are in the field.",
-          "Your cows are in the house.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Your cows are in my field.",
+      },
+      {
         prompt: "Abantu bagenda mu nzu.",
         answer: "The people are going into the house.",
-      }),
+      },
     ],
   },
   {
     title: "II. Translate from English to Kirundi",
     questions: [
-      TextInput({
+      {
         prompt: "The men’s houses.",
         answer: "Inzu z’abagabo.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "The girl’s chair.",
         answer: "Intebe y’umukobwa.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "I have a dog.",
-        options: [
-          "Mfise imbwa.",
-          "Mfise inka.",
-          "Ndagira imbwa.",
-          "Mfise umugabo.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Mfise imbwa.",
+      },
+      {
         prompt: "Our chairs.",
         answer: "Intebe zacu.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Their cows.",
         answer: "Inka zabo.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "My God in Kirundi is: Imana ______",
         answer: "yanje",
 
-      }),
-      TextInput({
-        prompt: "Your (pl.) clothes.",
+      },
+      {
+        prompt: "Your (pl. clothes.",
         answer: "Impuzu zanyu.",
-      }),
-      MultipleChoice({
+      },{
         prompt: "The old man’s cows.",
-        options: [
-          "Inka z’umusaza.",
-          "Inka z’umugabo.",
-          "Inka z’umukobwa.",
-          "Inka z’abagabo.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Inka z’umusaza.",
+      },
+      {
         prompt: "The teachers’ children.",
         answer: "Abana b’abarimu.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "The woman’s clothes.",
         answer: "Impuzu z’umugore.",
-      }),
-      MultipleChoice({
+      },{
         prompt: "The children are going into the man’s field.",
-        options: [
-          "Abana bagenda mu murima w’umugabo.",
-          "Abagore bagenda mu murima w’umugabo.",
-          "Abana bagenda mu nzu y’umugabo.",
-          "Abana bafise mu murima w’umugabo.",
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
+        answer: "Abana bagenda mu murima w’umugabo.",
+      },
+      {
         prompt: "I am working in the teacher’s field. → Nkora mu murima ______",
         answer: "w’umwarimu",
-
-      }),
-      TextInput({
+      },
+      {
         prompt: "The women have bread on their heads.",
         answer: "Abagore bafise umugati mu mitwe yabo.",
-      }),
+      },
     ],
   },
 ]

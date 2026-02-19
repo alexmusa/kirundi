@@ -302,67 +302,46 @@ let l_quiz = [
     title: "I. Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. Umugabo arakora.",
         answer: "The man is working"
       },
       {
-        TAG: "TextInput",
         prompt: "2. Abahungu baragenda.",
         answer: "The boys are going"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "3. Umukobwa ararima.",
-        options: [
-          "The girl is hoeing",
-          "The boy is working",
-          "The women are walking"
-        ],
-        correctIndex: 0
+        answer: "The girl is hoeing"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Umugore arakora.",
         answer: "The woman is working"
       },
       {
-        TAG: "TextInput",
         prompt: "5. Abagore bararima.",
         answer: "The women are hoeing"
       },
       {
-        TAG: "TextInput",
         prompt: "6. Abagabo bararima.",
         answer: "The men are hoeing"
       },
       {
-        TAG: "TextInput",
         prompt: "7. Umuhungu aragenda.",
         answer: "The boy is going"
       },
       {
-        TAG: "TextInput",
         prompt: "8. Abakobwa baragenda.",
         answer: "The girls are going"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "9. Umugore ararima.",
-        options: [
-          "The woman is hoeing",
-          "The man is walking",
-          "They are going"
-        ],
-        correctIndex: 0
+        answer: "The woman is hoeing"
       },
       {
-        TAG: "TextInput",
         prompt: "10. Umugabo aragenda.",
         answer: "The man is going"
       },
       {
-        TAG: "TextInput",
         prompt: "11. Baragenda.",
         answer: "They are going"
       }
@@ -372,72 +351,50 @@ let l_quiz = [
     title: "II. Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. The boy is hoeing.",
         answer: "Umuhungu ararima"
       },
       {
-        TAG: "TextInput",
         prompt: "2. The girl works.",
         answer: "Umukobwa arakora"
       },
       {
-        TAG: "TextInput",
         prompt: "3. The men are going.",
         answer: "Abagabo baragenda"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "4. The women are walking.",
-        options: [
-          "Abagore baragenda",
-          "Abagore barakora",
-          "Umugore aragenda"
-        ],
-        correctIndex: 0
+        answer: "Abagore baragenda"
       },
       {
-        TAG: "TextInput",
         prompt: "5. A boy is working.",
         answer: "Umuhungu arakora"
       },
       {
-        TAG: "TextInput",
         prompt: "6. A girl is walking.",
         answer: "Umukobwa aragenda"
       },
       {
-        TAG: "TextInput",
         prompt: "7. Some boys are working.",
         answer: "Abahungu barakora"
       },
       {
-        TAG: "TextInput",
         prompt: "8. The man hoes.",
         answer: "Umugabo ararima"
       },
       {
-        TAG: "TextInput",
         prompt: "9. A woman is going.",
         answer: "Umugore aragenda"
       },
       {
-        TAG: "TextInput",
         prompt: "10. Women work.",
         answer: "Abagore barakora"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "11. They are working.",
-        options: [
-          "Barakora",
-          "Ararima",
-          "Baragenda"
-        ],
-        correctIndex: 0
+        answer: "Barakora"
       },
       {
-        TAG: "TextInput",
         prompt: "12. She is hoeing.",
         answer: "Ararima"
       }

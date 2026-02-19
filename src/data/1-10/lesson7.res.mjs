@@ -352,54 +352,34 @@ let l_quiz = [
     title: "I. Translate from Kirundi to English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Inka z’umugabo.",
         answer: "The man's cows."
       },
       {
-        TAG: "TextInput",
         prompt: "Umutama n’imbwa yiwe.",
         answer: "The child and his dog."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Umuhungu akora mu ndimiro yiwe.",
-        options: [
-          "The boy works in his field.",
-          "The girl works in her field.",
-          "The boy is playing in his field.",
-          "The boy works in the house."
-        ],
-        correctIndex: 0
+        answer: "The boy works in his field."
       },
       {
-        TAG: "TextInput",
         prompt: "Abakobwa bafise intebe zabo.",
         answer: "The girls have their chairs."
       },
       {
-        TAG: "TextInput",
         prompt: "Umukobwa afise impuzu mu nzu yanje.",
         answer: "The girl has clothes in my house."
       },
       {
-        TAG: "TextInput",
         prompt: "Umwana afise impuzu zawe.",
         answer: "The child has your clothes."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Inka zawe ziri mu murima wanje.",
-        options: [
-          "Your cows are in my field.",
-          "My cows are in your field.",
-          "The cows are in the field.",
-          "Your cows are in the house."
-        ],
-        correctIndex: 0
+        answer: "Your cows are in my field."
       },
       {
-        TAG: "TextInput",
         prompt: "Abantu bagenda mu nzu.",
         answer: "The people are going into the house."
       }
@@ -409,85 +389,54 @@ let l_quiz = [
     title: "II. Translate from English to Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The men’s houses.",
         answer: "Inzu z’abagabo."
       },
       {
-        TAG: "TextInput",
         prompt: "The girl’s chair.",
         answer: "Intebe y’umukobwa."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "I have a dog.",
-        options: [
-          "Mfise imbwa.",
-          "Mfise inka.",
-          "Ndagira imbwa.",
-          "Mfise umugabo."
-        ],
-        correctIndex: 0
+        answer: "Mfise imbwa."
       },
       {
-        TAG: "TextInput",
         prompt: "Our chairs.",
         answer: "Intebe zacu."
       },
       {
-        TAG: "TextInput",
         prompt: "Their cows.",
         answer: "Inka zabo."
       },
       {
-        TAG: "TextInput",
         prompt: "My God in Kirundi is: Imana ______",
         answer: "yanje"
       },
       {
-        TAG: "TextInput",
-        prompt: "Your (pl.) clothes.",
+        prompt: "Your (pl. clothes.",
         answer: "Impuzu zanyu."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The old man’s cows.",
-        options: [
-          "Inka z’umusaza.",
-          "Inka z’umugabo.",
-          "Inka z’umukobwa.",
-          "Inka z’abagabo."
-        ],
-        correctIndex: 0
+        answer: "Inka z’umusaza."
       },
       {
-        TAG: "TextInput",
         prompt: "The teachers’ children.",
         answer: "Abana b’abarimu."
       },
       {
-        TAG: "TextInput",
         prompt: "The woman’s clothes.",
         answer: "Impuzu z’umugore."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The children are going into the man’s field.",
-        options: [
-          "Abana bagenda mu murima w’umugabo.",
-          "Abagore bagenda mu murima w’umugabo.",
-          "Abana bagenda mu nzu y’umugabo.",
-          "Abana bafise mu murima w’umugabo."
-        ],
-        correctIndex: 0
+        answer: "Abana bagenda mu murima w’umugabo."
       },
       {
-        TAG: "TextInput",
         prompt: "I am working in the teacher’s field. → Nkora mu murima ______",
         answer: "w’umwarimu"
       },
       {
-        TAG: "TextInput",
         prompt: "The women have bread on their heads.",
         answer: "Abagore bafise umugati mu mitwe yabo."
       }

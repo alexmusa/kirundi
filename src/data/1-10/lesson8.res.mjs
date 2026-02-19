@@ -325,62 +325,42 @@ let l_quiz = [
     title: "I. Translate from Kirundi to English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Inka yanje ni mbi.",
         answer: "My cow is bad."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate into English: Umugabo ni mugufi.",
-        options: [
-          "The man is short.",
-          "The man is tall.",
-          "The man is bad."
-        ],
-        correctIndex: 0
+        answer: "The man is short."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Abantu si bake.",
         answer: "The people are not few."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Abana banje si babi.",
         answer: "My children are not bad."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Umwigisha ni mukuru.",
         answer: "The teacher is old."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Inzu y’umutama ni mbi.",
         answer: "The old man's house is bad."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate into English: Impuzu y’umwana ni ngufi.",
-        options: [
-          "The child's clothes are short.",
-          "The child's clothes are dirty.",
-          "The child's clothes are new."
-        ],
-        correctIndex: 0
+        answer: "The child's clothes are short."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Mfise umutsima mubi.",
         answer: "I have bad porridge."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Abana bafise imitsima mike.",
         answer: "The children have few porridges."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Intebe zanyu ni ngufi.",
         answer: "Your chairs are short."
       }
@@ -390,62 +370,42 @@ let l_quiz = [
     title: "II. Translate from English to Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: I have an ugly dog.",
         answer: "Mfise imbwa mbi."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate into Kirundi: Our house is low.",
-        options: [
-          "Inzu yacu ni ngufi.",
-          "Inzu yacu ni nkuru.",
-          "Inzu yacu ni mbi."
-        ],
-        correctIndex: 0
+        answer: "Inzu yacu ni ngufi."
       },
       {
-        TAG: "TextInput",
-        prompt: "Translate into Kirundi: Your (pl.) chairs are short.",
+        prompt: "Translate into Kirundi: Your (pl. chairs are short.",
         answer: "Intebe zanyu ni ngufi."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: His bad children.",
         answer: "Abana be babi."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: Their few cows.",
         answer: "Inka zabo nke."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: The houses are few.",
         answer: "Amazu ni make."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate into Kirundi: Your (sing.) clothes are dirty.",
-        options: [
-          "Impuzu yawe ni mbi.",
-          "Impuzu yawe ni ngufi.",
-          "Impuzu yawe ni nkuru."
-        ],
-        correctIndex: 0
+        answer: "Impuzu yawe ni mbi."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: God is very great.",
         answer: "Imana ni nkuru cyane."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: I have his short rope.",
         answer: "Mfise umugozi we mugufi."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: Is the teacher’s child bad?",
         answer: "Umwana w’umwigisha ni mbi?"
       }

@@ -176,115 +176,91 @@ let l: lesson = {
   {
     title: "Kirundi to English Translation",
     questions: [
-      TextInput({
+      {
         prompt: "Translate to English: Abahungu bari mu nzu.",
         answer: "The boys are in the house",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to English: Umwigisha ari hehe? Ar’i we.",
         answer: "Where is the teacher? He is at his place",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "What is the English translation of: 'Uri hehe? Ndi hano.'",
-        options: [
-          "Where are they? They are here.",
-          "Where are you? I am here.",
-          "Who are you? I am a person.",
-          "Where is he? He is here."
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "Where are you? I am here.",
+      },
+      {
         prompt: "Translate to English: Inka zawe ziri hariya.",
         answer: "Your cows are over there",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to English: Umwami afise ingoma nini nyinshi.",
         answer: "The king has many large drums",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to English: Inka n’impene n’intama ziri mu ndimiro y’umwigisha.",
         answer: "The cows and goats and sheep are in the teacher's garden",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to English: Ingoma ziri hehe? Ziri hariya mu nzu ntoya.",
         answer: "Where are the drums? They are over there in the small house",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate to English: 'Har’umwotsi hariya ku musozi.'",
-        options: [
-          "There is a house over there on the hill.",
-          "The fire is over there on the mountain.",
-          "There is smoke over there on the hill.",
-          "The teacher is over there on the hill."
-        ],
-        correctIndex: 2,
-      }),
-      TextInput({
+        answer: "There is smoke over there on the hill.",
+      },
+      {
         prompt: "Translate to English: Impene iri mu murima.",
         answer: "The goat is in the field",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to English: Imana ikora mu mitima y’abantu.",
         answer: "God works in the hearts of people",
-      }),
+      },
     ],
   },
   {
     title: "English to Kirundi Translation",
     questions: [
-      TextInput({
-        prompt: "Translate to Kirundi: Where are your (pl.) goats?",
+      {
+        prompt: "Translate to Kirundi: Where are your (pl. goats?",
         answer: "Impene zanyu ziri hehe?",
-      }),
-      TextInput({
-        prompt: "Translate to Kirundi: (the goats) They are at our place.",
+      },
+      {
+        prompt: "Translate to Kirundi: (the goats They are at our place.",
         answer: "Zir’iwacu",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to Kirundi: Where are the old man’s gardens?",
         answer: "Indimiro z’umutama ziri hehe?",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate to Kirundi: 'The man’s many sheep are over there.'",
-        options: [
-          "Intama nyinshi z'umugabo ziri hariya.",
-          "Inka nyinshi z'umugabo ziri hano.",
-          "Intama nini z'umwami ziri hariya.",
-          "Impene nyinshi z'umugabo ziri hariya."
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
-        prompt: "Translate to Kirundi: Where is your (sing.) new house? It is over there on the hill.",
+        answer: "Intama nyinshi z'umugabo ziri hariya.",
+      },
+      {
+        prompt: "Translate to Kirundi: Where is your (sing. new house? It is over there on the hill.",
         answer: "Inzu yawe nshasha iri hehe? Iri hariya ku musozi.",
-      }),
-      TextInput({
-        prompt: "Translate to Kirundi: Where are you (pl.)? We are here at home.",
+      },
+      {
+        prompt: "Translate to Kirundi: Where are you (pl.? We are here at home.",
         answer: "Muri hehe? Turi hano muhira.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to Kirundi: There are many plants in the garden.",
         answer: "Hari ibimera vyinshi mu ndimiro.",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate to Kirundi: The child has many jiggers.",
         answer: "Umwana afise imvunja nyinshi.",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate to Kirundi: 'The girl has a sack of flour on her head.'",
-        options: [
-          "Umwigeme afise ingoma ku mutwe.",
-          "Umwigeme afise isaho y'ifu ku mutwe.",
-          "Umwigisha afise isaho y'ifu ku mutwe.",
-          "Umwigeme afise imvunja ku mutwe."
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "Umwigeme afise isaho y'ifu ku mutwe.",
+      },
+      {
         prompt: "Translate to Kirundi: The boys and girls are in the teacher’s house.",
         answer: "Abahungu n'abigeme bari mu nzu y'umwigisha.",
-      }),
+      },
     ],
   },
 ],

@@ -1,13 +1,7 @@
-type quizQuestion =
-  | TextInput({
+type quizQuestion = {
       prompt: string,
       answer: string,
-    })
-  | MultipleChoice({
-      prompt: string,
-      options: array<string>,
-      correctIndex: int,
-    })
+    }
 type quizSection = {
   title: string,
   questions: array<quizQuestion>,

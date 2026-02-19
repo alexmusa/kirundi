@@ -394,62 +394,42 @@ let l_quiz = [
     title: "Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. Amabuye makeya ari ku musozi.",
         answer: "Few stones are on the mountain."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "2. Amenyo y’umuhungu ni meza. (Note contraction: ma-iza, meza)",
-        options: [
-          "The boy's eyes are nice.",
-          "The boy's teeth are good.",
-          "The boy's clothes are good."
-        ],
-        correctIndex: 1
+        answer: "The boy's teeth are good."
       },
       {
-        TAG: "TextInput",
         prompt: "3. Ifaranga ryanje riri hehe?",
         answer: "Where is my franc?"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Umugabo afise amafaranga menshi.",
         answer: "The man has many francs."
       },
       {
-        TAG: "TextInput",
         prompt: "5. Umwana afise ikintu mu jisho ryiwe.",
         answer: "The child has something in his eye."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "6. Umuhungu afise irigi rito.",
-        options: [
-          "The boy has a small egg.",
-          "The boy has a little stone.",
-          "The boy has a small eye."
-        ],
-        correctIndex: 0
+        answer: "The boy has a small egg."
       },
       {
-        TAG: "TextInput",
         prompt: "7. Har’ umucanwa mu ziko.",
         answer: "There is a fire in the hearth."
       },
       {
-        TAG: "TextInput",
         prompt: "8. Har’ abana benshi mw ishuli ryanyu.",
         answer: "There are many children in your school."
       },
       {
-        TAG: "TextInput",
         prompt: "9. Ku musozi wacu har’ amabuye menshi.",
         answer: "On our mountain there are many stones."
       },
       {
-        TAG: "TextInput",
         prompt: "10. Amajambo y’umukiza ni meza cane.",
         answer: "The words of the Savior are very good."
       }
@@ -459,67 +439,46 @@ let l_quiz = [
     title: "Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. The teacher says many words.",
         answer: "Umwigisha avuga amajambo menshi."
       },
       {
-        TAG: "TextInput",
         prompt: "2. Our new school is very nice.",
         answer: "Ishuli ryacu rishasha ni ryiza cane."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "3. The sun is large.",
-        options: [
-          "Izuba ni rito.",
-          "Izuba ni rinini.",
-          "Izuba ni rishasha."
-        ],
-        correctIndex: 1
+        answer: "Izuba ni rinini."
       },
       {
-        TAG: "TextInput",
         prompt: "4. The Word of God is good; it works in people’s hearts.",
         answer: "Ijambo ry'Imana ni ryiza; rirakorera mu mishaha y'abantu."
       },
       {
-        TAG: "TextInput",
         prompt: "5. Do his parents have many francs?",
         answer: "Abavyeyi biwe bafise amafaranga menshi?"
       },
       {
-        TAG: "TextInput",
-        prompt: "6. John (Yohana) doesn’t like eggs, but (ariko) he likes meat.",
+        prompt: "6. John (Yohana doesn’t like eggs, but (ariko) he likes meat.",
         answer: "Yohana ntakunda amagi, ariko akunda inyama."
       },
       {
-        TAG: "TextInput",
         prompt: "7. I have the blessing of the Savior in my heart, and I love His Word.",
         answer: "Nfise umugisha w'Umukiza mu mushaha wanje, kandi nkunda Ijambo ryiwe."
       },
       {
-        TAG: "TextInput",
         prompt: "8. The child has a small nose and big eyes, and much hair.",
         answer: "Umwana afise izuru rito n'amaso manini, n'ishatsi nyinshi."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "9. The old man has only a few teeth.",
-        options: [
-          "Umutama afise amenyo makeya gusa.",
-          "Umugabo afise amabuye makeya gusa.",
-          "Umukiza afise amajambo makeya gusa."
-        ],
-        correctIndex: 0
+        answer: "Umutama afise amenyo makeya gusa."
       },
       {
-        TAG: "TextInput",
-        prompt: "10. Women don’t go to (use mu) school.",
+        prompt: "10. Women don’t go to (use mu school.",
         answer: "Abagore ntibaja mw ishuli."
       },
       {
-        TAG: "TextInput",
         prompt: "11. The girl has a little stone in her nose.",
         answer: "Umwigeme afise ibuye rito mu zuru ryiwe."
       }

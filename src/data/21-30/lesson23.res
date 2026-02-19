@@ -128,96 +128,96 @@ let l: lesson = {
     {
       title: "I. Translate into English",
       questions: [
-        TextInput({
+        {
           prompt: "Shira urubaho rwawe ku meza mw ishuli.",
-          answer: "Put your board (or slate) on the table in school.",
-        }),
-        TextInput({
+          answer: "Put your board (or slate on the table in school.",
+        },
+        {
           prompt: "Dufise urugi rugufi mu nzu yacu.",
           answer: "We have a short door in our house.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Mbeg’ urugo rwanyu ruri hehe? Ruri hariya kure ku musozi.",
-          answer: "Is your homestead (or kraal) where? It is over there far on the hill.",
-        }),
-        TextInput({
+          answer: "Is your homestead (or kraal where? It is over there far on the hill.",
+        },
+        {
           prompt: "Mu gihugu cacu har’ inzuzi nyinshi.",
           answer: "In our country there are many rivers.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "Umwana ashira urutoke mu jisho.",
           answer: "The child puts a finger in the eye.",
-        }),
+        },
       ],
     },
     {
       title: "II. Translate into Kirundi",
       questions: [
-        TextInput({
+        {
           prompt: "The man’s fingers are long.",
           answer: "Intoke z'umugabo ni ndende.",
-        }),
-        TextInput({
-          prompt: "Bring wood (insert “zo”) to put in the fire.",
+        },
+        {
+          prompt: "Bring wood (insert “zo” to put in the fire.",
           answer: "Zana inkwi zo gushira mu muriro.",
-        }),
-        TextInput({
-          prompt: "The love of God is great (much).",
+        },
+        {
+          prompt: "The love of God is great (much.",
           answer: "Urukundo rw'Imana ni rwinshi.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "The long river is over there.",
           answer: "Uruzi rurerure ruri hariya.",
-        }),
-        TextInput({
+        },
+        {
           prompt: "We have a few slates in school.",
           answer: "Dufise imbaho nkeya mw ishuli.",
-        }),
+        },
       ],
     },
     {
       title: "III. Give plurals and meanings",
       questions: [
-        TextInput({
+        {
           prompt: "inka",
-          answer: "inka (cows)",
-        }),
-        TextInput({
+          answer: "inka (cows",
+        },
+        {
           prompt: "urutoke",
-          answer: "intoke (fingers)",
-        }),
-        TextInput({
+          answer: "intoke (fingers",
+        },
+        {
           prompt: "isahane",
-          answer: "amasahane (plates)",
-        }),
-        TextInput({
+          answer: "amasahane (plates",
+        },
+        {
           prompt: "inkoko",
-          answer: "inkoko (chickens)",
-        }),
-        TextInput({
+          answer: "inkoko (chickens",
+        },
+        {
           prompt: "uruzi",
-          answer: "inzuzi (rivers)",
-        }),
-        TextInput({
+          answer: "inzuzi (rivers",
+        },
+        {
           prompt: "ishuli",
-          answer: "amashuli (schools)",
-        }),
-        TextInput({
+          answer: "amashuli (schools",
+        },
+        {
           prompt: "irigi",
-          answer: "amagi (eggs)",
-        }),
-        TextInput({
+          answer: "amagi (eggs",
+        },
+        {
           prompt: "urukwi",
-          answer: "inkwi (sticks of wood)",
-        }),
-        TextInput({
+          answer: "inkwi (sticks of wood",
+        },
+        {
           prompt: "urubaho",
-          answer: "imbaho (boards/slates)",
-        }),
-        TextInput({
+          answer: "imbaho (boards/slates",
+        },
+        {
           prompt: "urugi",
-          answer: "inzugi (doors)",
-        }),
+          answer: "inzugi (doors",
+        },
       ],
     },
   ]

@@ -122,113 +122,95 @@ let l: lesson = {
   {
     title: "Section I: Kirundi to English Translation",
     questions: [
-      TextInput({
+      {
         prompt: "Translate: Umutama afise inka nyinshi n’amata menshi.",
         answer: "The old man has many cows and much milk",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "Translate: Abana bariko baragenda mw ishuli ryabo.",
-        options: [
-          "The children are sleeping in their school.",
-          "The children are going to their school.",
-          "The children are working at their school.",
-          "The teachers are going to their house."
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "The children are going to their school.",
+      },
+      {
         prompt: "Translate: Umutama afise amacumu maremare.",
         answer: "The old man has long spears",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Umukobwa arikw ararima mu ndimiro z’abavyeyi biwe.",
         answer: "The girl is hoeing in the fields of her parents",
-      }),
-      MultipleChoice({
+      },
+      {
         prompt: "What does 'Sinkunda amazi mabi' mean?",
-        options: [
-          "I like clean water.",
-          "I do not like bad water.",
-          "We do not like cold water.",
-          "I want bad water."
-        ],
-        correctIndex: 1,
-      }),
-      TextInput({
+        answer: "I do not like bad water.",
+      },
+      {
         prompt: "Translate: Umwana afise ico ryinshi ku birenge vyiwe.",
         answer: "The child has much dirt on his feet",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Mbeg’ ugomba amavuta ku mutsima wawe?",
         answer: "Do you want butter on your bread?",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Abana b’Imana bafise amahoro menshi cane.",
         answer: "The children of God have very much peace",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Ibitabo vyawe bisha biri hehe? Biri ku meza mu nzu yacu.",
         answer: "Where are your new books? They are on the table in our house",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate: Abigishwa bariko barakora mw ishuli.",
         answer: "The pupils are working in school",
-      }),
-      TextInput({
-        prompt: "Translate: Amaraso ya Yesu akiza ivyaha vyacu. (The blood of Jesus saves us from our sins)",
+      },
+      {
+        prompt: "Translate: Amaraso ya Yesu akiza ivyaha vyacu. (The blood of Jesus saves us from our sins",
         answer: "The blood of Jesus saves us from our sins",
-      }),
+      },
     ],
   },
   {
     title: "Section II: English to Kirundi Translation",
     questions: [
-      MultipleChoice({
+      {
         prompt: "How do you say 'God’s people have joy and peace'?",
-        options: [
-          "Abantu b'Imana bafise akanyamuneza n'amahoro.",
-          "Abigishwa bafise Ijambo ry'Imana.",
-          "Abantu babi bafise amahoro menshi.",
-          "Imana ikunda abantu bayo."
-        ],
-        correctIndex: 0,
-      }),
-      TextInput({
-        prompt: "Translate into Kirundi: I have a very small stone in (my) eye.",
+        answer: "Abantu b'Imana bafise akanyamuneza n'amahoro.",
+      },
+      {
+        prompt: "Translate into Kirundi: I have a very small stone in (my eye.",
         answer: "Nfise ibuye rito cane mu jisho",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: The pupils have the Word of God in school.",
         answer: "Abigishwa bafise Ijambo ry'Imana mw ishuli",
-      }),
-      TextInput({
-        prompt: "Translate into Kirundi: I want (some) clean water.",
+      },
+      {
+        prompt: "Translate into Kirundi: I want (some clean water.",
         answer: "Ngomba amazi meza",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: Bad people are not going in the way of God.",
         answer: "Abantu babi ntibagenda mu nzira y'Imana",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: The clean cloths are on the table.",
         answer: "Impuzu zera ziri ku meza",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: A workman is hoeing at the school.",
         answer: "Umukozi ariko ararima mw ishuli",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: Our teacher is speaking the Word of God.",
         answer: "Umwigisha wacu ariko aravuga Ijambo ry'Imana",
-      }),
-      TextInput({
+      },
+      {
         prompt: "Translate into Kirundi: I am walking in the way of God.",
         answer: "Ndiko nagenda mu nzira y'Imana",
-      }),
-      TextInput({
-        prompt: "Translate into Kirundi: We are praising God and we love our Lord Jesus Christ (Kristo).",
+      },
+      {
+        prompt: "Translate into Kirundi: We are praising God and we love our Lord Jesus Christ (Kristo.",
         answer: "Turiko turashimagiza Imana kandi turakunda Umwami wacu Yesu Kristo",
-      }),
+      },
     ],
   },
 ]

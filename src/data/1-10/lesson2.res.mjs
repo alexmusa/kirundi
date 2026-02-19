@@ -382,59 +382,36 @@ let l_quiz = [
     title: "I. Plurals and Meanings",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Plural of 'umwana' and its meaning:",
         answer: "abana, children"
       },
       {
-        TAG: "TextInput",
         prompt: "Plural of 'umugabo' and its meaning:",
         answer: "abagabo, men"
       },
       {
-        TAG: "TextInput",
         prompt: "Plural of 'umwami' and its meaning:",
         answer: "abami, kings"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Plural of 'umugore':",
-        options: [
-          "abagore",
-          "abigore",
-          "umugore"
-        ],
-        correctIndex: 0
+        answer: "abagore"
       },
       {
-        TAG: "TextInput",
         prompt: "Plural of 'umuhungu' and its meaning:",
         answer: "abahungu, boys"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Plural of 'umwigisha':",
-        options: [
-          "abigisha",
-          "amwigisha",
-          "umwigisha"
-        ],
-        correctIndex: 0
+        answer: "abigisha"
       },
       {
-        TAG: "TextInput",
         prompt: "Plural of 'umukobwa' and its meaning:",
         answer: "abakobwa, girls"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Plural of 'umwigishwa':",
-        options: [
-          "abigishwa",
-          "umwigishwa",
-          "amwigishwa"
-        ],
-        correctIndex: 0
+        answer: "abigishwa"
       }
     ]
   },
@@ -442,87 +419,62 @@ let l_quiz = [
     title: "II. Translation into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "The king has a wife.",
         answer: "umwami afise umugore"
       },
       {
-        TAG: "TextInput",
         prompt: "The children are going.",
         answer: "abana bariko baragenda"
       },
       {
-        TAG: "TextInput",
         prompt: "The man is a king.",
         answer: "umugabo ni umwami"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The boys are working hard (much).",
-        options: [
-          "abahungu bariko barakora cane",
-          "abahungu bariko bararya",
-          "abahungu bariko bararira"
-        ],
-        correctIndex: 0
+        answer: "abahungu bariko barakora cane"
       },
       {
-        TAG: "TextInput",
         prompt: "The pupils have a teacher.",
         answer: "abanyeshure bafise umwigisha"
       },
       {
-        TAG: "TextInput",
         prompt: "A woman is hoeing.",
         answer: "umugore ariko aracumba"
       },
       {
-        TAG: "TextInput",
         prompt: "The child is not a boy.",
         answer: "umwana si umuhungu"
       },
       {
-        TAG: "TextInput",
         prompt: "The man has a son.",
         answer: "umugabo afise umuhungu"
       },
       {
-        TAG: "TextInput",
-        prompt: "Teachers work hard (much).",
+        prompt: "Teachers work hard (much.",
         answer: "abigisha barakora cane"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "The women have children.",
-        options: [
-          "abagore bafise abana",
-          "abagore bafise abagabo",
-          "abagore bafise abakobwa"
-        ],
-        correctIndex: 0
+        answer: "abagore bafise abana"
       },
       {
-        TAG: "TextInput",
         prompt: "The pupil is a girl.",
         answer: "umunyeshure ni umukobwa"
       },
       {
-        TAG: "TextInput",
         prompt: "The girl is not a teacher.",
         answer: "umukobwa si umwigisha"
       },
       {
-        TAG: "TextInput",
         prompt: "Men have wives.",
         answer: "abagabo bafise abagore"
       },
       {
-        TAG: "TextInput",
         prompt: "Pupils hoe.",
         answer: "abanyeshure baracumba"
       },
       {
-        TAG: "TextInput",
         prompt: "The teacher is a man.",
         answer: "umwigisha ni umugabo"
       }

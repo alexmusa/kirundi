@@ -250,57 +250,38 @@ let l_quiz = [
     title: "I. Kirundi to English Translation",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate: Umugabo agenda mu mwiza.",
         answer: "The man walks in the darkness."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "What does 'imyenda' mean in: 'Umwigisha afise imyenda'?",
-        options: [
-          "Books",
-          "Clothes/Garments",
-          "Children"
-        ],
-        correctIndex: 1
+        answer: "Clothes/Garments"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Umugore afise umunezero mu mutima wiwe.",
         answer: "The woman has joy in her heart."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate 'His/her children work well': Abana biwe _________ neza.",
         answer: "barakora"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Umwotsi uva mu muriro.",
         answer: "Smoke comes from the fire."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: Umutama afise umwiza mu mutima wiwe.",
-        options: [
-          "The old man has darkness in his heart.",
-          "The teacher has joy in his heart.",
-          "The old man has smoke in his heart."
-        ],
-        correctIndex: 0
+        answer: "The old man has darkness in his heart."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Umukiza akora mu mitima yacu.",
         answer: "The Savior works in our hearts."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate the question and answer: Mbeg’ umukozi afise imyenda? Oyaye.",
         answer: "Does the worker have clothes? No."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate 'The workers hoe on the hill': Abakozi _____ ku musozi.",
         answer: "barima"
       }
@@ -310,62 +291,42 @@ let l_quiz = [
     title: "II. English to Kirundi Translation",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate: The children have joy in their hearts.",
         answer: "Abana bafise umunezero mu mitima yabo"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "How do you say 'The boy has bread on his head'?",
-        options: [
-          "Umuhungu afise umukate mu mutwe wiwe",
-          "Umuhungu afise umukate ku mutwe wiwe",
-          "Umwana afise umukate ku musozi wiwe"
-        ],
-        correctIndex: 1
+        answer: "Umuhungu afise umukate ku mutwe wiwe"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: The women work on their hill.",
         answer: "Abagore barakora ku musozi wabo"
       },
       {
-        TAG: "TextInput",
-        prompt: "Translate 'Your (sing.) debts': ______ yawe.",
+        prompt: "Translate 'Your (sing. debts': ______ yawe.",
         answer: "Imyenda"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: Our fire.",
         answer: "Umuriro wacu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Which phrase means 'In the fire'?",
-        options: [
-          "Ku muriro",
-          "Mu muriro",
-          "Kuri muriro"
-        ],
-        correctIndex: 1
+        answer: "Mu muriro"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: At the fire.",
         answer: "Ku muriro"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: The old men have darkness in their hearts.",
         answer: "Abatama bafise umwiza mu mitima yabo"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate using 'wo': The light on the hill is your fire.",
         answer: "umuco wo ku musozi ni umuriro wawe"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate: The child is walking in the smoke.",
         answer: "Umwana agenda mu mwotsi"
       }

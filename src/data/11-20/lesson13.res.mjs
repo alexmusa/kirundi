@@ -312,64 +312,42 @@ let l_quiz = [
     title: "Exercise I: Translate into English",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. Ibiti vyiwe ni birebire.",
         answer: "His trees are tall"
       },
       {
-        TAG: "TextInput",
         prompt: "2. Umugabo afise ibijumbu bikeya.",
         answer: "The man has a few sweet potatoes"
       },
       {
-        TAG: "TextInput",
         prompt: "3. Ibirenge vyiwe ni binini.",
         answer: "His feet are big"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Igihugu cacu ni gitoya.",
         answer: "Our country is small"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "5. Ibintu vyanyu biri hehe?",
-        options: [
-          "Where are your things?",
-          "What are your things?",
-          "Where is your thing?",
-          "How are your things?"
-        ],
-        correctIndex: 0
+        answer: "Where are your things?"
       },
       {
-        TAG: "TextInput",
         prompt: "6. Abigishwa bafise ibitabo bisha.",
         answer: "The pupils have new books"
       },
       {
-        TAG: "TextInput",
         prompt: "7. Abana bafise umvunja mu birenge.",
         answer: "The children have jiggers in their feet"
       },
       {
-        TAG: "TextInput",
         prompt: "8. Har’ibiti binini mu ndimiro zanyu.",
         answer: "There are big trees in your gardens"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "9. Ibitabo vyabo biri ku ntebe.",
-        options: [
-          "Your books are on the chair.",
-          "Their books are on the chair.",
-          "Their books are in the house.",
-          "His books are under the chair."
-        ],
-        correctIndex: 1
+        answer: "Their books are on the chair."
       },
       {
-        TAG: "TextInput",
         prompt: "10. Igitabo c’umwigisha kiri mu nzu.",
         answer: "The teacher's book is in the house"
       }
@@ -379,70 +357,47 @@ let l_quiz = [
     title: "Exercise II: Translate into Kirundi",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "1. The girls’ sweet potatoes are dirty.",
         answer: "Ibijumbu vy'abigeme ni bishishira"
       },
       {
-        TAG: "TextInput",
         prompt: "2. There are tall trees over there at your place.",
         answer: "Hariyo ibiti birebire iwanyu"
       },
       {
-        TAG: "TextInput",
         prompt: "3. I have a few books in my house.",
         answer: "Nfise ibitabo bikeya mu nzu yanje"
       },
       {
-        TAG: "TextInput",
         prompt: "4. Many hills are in our country.",
         answer: "Imisozi myinshi iri mu gihugu cacu"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "5. The sweet potatoes are small.",
-        options: [
-          "Ibijumbu ni binini.",
-          "Ibijumbu ni bikeya.",
-          "Ibijumbu ni bitoya.",
-          "Ibijumbu ni bisha."
-        ],
-        correctIndex: 2
+        answer: "Ibijumbu ni bitoya."
       },
       {
-        TAG: "TextInput",
-        prompt: "6. Where is your (sing.) book? It is at home.",
+        prompt: "6. Where is your (sing. book? It is at home.",
         answer: "Igitabo cawe kiri hehe? Kiri muhira"
       },
       {
-        TAG: "TextInput",
         prompt: "7. The trees over there are not very tall.",
         answer: "Ibiti biriya si birebire cane"
       },
       {
-        TAG: "TextInput",
         prompt: "8. The women have many sweet potatoes in their garden.",
         answer: "Abagore bafise ibijumbu vyinshi mu ndimiro yabo"
       },
       {
-        TAG: "TextInput",
         prompt: "9. Are there sheep and goats in your country?",
         answer: "Har'intama n'impene mu gihugu canyu?"
       },
       {
-        TAG: "MultipleChoice",
         prompt: "10. The pupil’s books are in the teacher’s house.",
-        options: [
-          "Ibitabo vy'umwigishwa biri mu nzu y'umwigisha.",
-          "Ibitabo vy'umwigisha biri mu nzu y'umwigishwa.",
-          "Ibitabo vy'umwigishwa biri ku ntebe y'umwigisha.",
-          "Ibitabo vy'abigishwa biri mu nzu y'umwigisha."
-        ],
-        correctIndex: 0
+        answer: "Ibitabo vy'umwigishwa biri mu nzu y'umwigisha."
       },
       {
-        TAG: "TextInput",
-        prompt: "11. I have a jigger in (my) foot.",
+        prompt: "11. I have a jigger in (my foot.",
         answer: "Nfise umvunja mu kirenge"
       }
     ]

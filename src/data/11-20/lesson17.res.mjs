@@ -335,64 +335,42 @@ let l_quiz = [
     title: "Kirundi to English Translation",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Abantu ntibarima mu mirima yabo, kandi ntibagenda i muhira.",
         answer: "The people are not hoeing in their fields, and they are not going home."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: Intama ntizigenda mu nzira.",
-        options: [
-          "The sheep are not walking in the path.",
-          "The sheep are going in the path.",
-          "The cows are not in the path.",
-          "The sheep are in the field."
-        ],
-        correctIndex: 0
+        answer: "The sheep are not walking in the path."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Nkunda Imana mu mutima wanje.",
         answer: "I love God in my heart."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Ntitugenda i muhira.",
         answer: "We are not going home."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Umuhungu ni mubi, ntakora.",
         answer: "The boy is bad, he does not work."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Sinshima abana babi, arika ndakunda abana beza.",
         answer: "I do not praise bad children, but I love good children."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Umwana afise indwara mbi, arika ntakunda umuti.",
         answer: "The child has a bad illness, but he does not like medicine."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: Mbeg’ abavyeyi bawe bar’ i muhira?",
-        options: [
-          "Are your parents working?",
-          "Are your parents at home?",
-          "Where are your parents?",
-          "Are the children at home?"
-        ],
-        correctIndex: 1
+        answer: "Are your parents at home?"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Ntitugenda mu nzira nini.",
         answer: "We are not going in the big path."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into English: Ntituri mu murima wanyu, tur’ i wacu.",
         answer: "We are not in your field, we are at our place."
       }
@@ -402,58 +380,42 @@ let l_quiz = [
     title: "English to Kirundi Translation",
     questions: [
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: I am not going to the house.",
         answer: "Singenda mu nzu."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: I praise God in my heart. He has much mercy.",
         answer: "Ndashima Imana mu mutima wanje. Afise ikigongwe cinshi."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: The child’s illness is not very bad.",
         answer: "Indwara y'umwana si mbi cane."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: He does not like medicine.",
         answer: "Ntakunda umuti."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: My parents are not at home.",
         answer: "Abavyeyi banje ntibari i muhira."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: We love our Savior very much, and we do not like sin.",
         answer: "Dukunda Umukiza wacu cane, kandi ntitukunda icaha."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: The women are not hoeing in the sweet potatoes, they are in the house.",
         answer: "Abagore ntibarima mu bijumbu, bari mu nzu."
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: Where are the goats? They are not on the path.",
         answer: "Impene ziri he? Ntiziri mu nzira."
       },
       {
-        TAG: "MultipleChoice",
         prompt: "Translate: Don’t you (sing.) love your parents?",
-        options: [
-          "Mbega ntukunda abavyeyi bawe?",
-          "Ntitukunda abavyeyi bawe?",
-          "Abavyeyi bawe bari he?",
-          "Mbega urakunda abavyeyi bawe?"
-        ],
-        correctIndex: 0
+        answer: "Mbega ntukunda abavyeyi bawe?"
       },
       {
-        TAG: "TextInput",
         prompt: "Translate into Kirundi: The sleeping mat is not in the house, and my clothes are not on the chair.",
         answer: "Ikirago ntikiri mu nzu, kandi impuzu zanje ntiziri ku ntebe."
       }

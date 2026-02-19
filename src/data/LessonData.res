@@ -1,3 +1,4 @@
+// LessonData.res
 open LessonTypes
 
 let lessons: array<lesson> = [

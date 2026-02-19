@@ -1,3 +1,4 @@
+// LessonTypes.res
 type vocabulary = array<(string, string)>
 type examples = vocabulary
 
