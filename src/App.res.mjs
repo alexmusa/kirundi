@@ -79,7 +79,18 @@ function App(props) {
         onSettings: () => setCurrentScreen(param => "Settings"),
         lastLessonId: selectedIdx,
         onFlashcards: () => setCurrentScreen(param => "Flashcards"),
-        onPracticeQuiz: () => setCurrentScreen(param => "PracticeQuiz")
+        onPracticeQuiz: () => setCurrentScreen(param => "PracticeQuiz"),
+        onDiscussWithGemini: () => {
+          let lessons = LessonData.lessons;
+          let currentLesson = Belt_Array.get(lessons, selectedIdx);
+          if (currentLesson === undefined) {
+            return;
+          }
+          let vocabList = getCompletedVocab(lessons, selectedIdx).map(param => param[0] + " (" + param[1] + ")").join(", ");
+          let prompt = "Help me study Kirundi. I am currently on a lesson titled: '" + currentLesson.title + "'. My cumulative vocabulary includes: " + vocabList + ". Please help me practice these words and any grammar related to this lesson.";
+          let url = "https://gemini.google.com/guided-learning?query=" + encodeURIComponent(prompt);
+          window.open(url, "_blank", "");
+        }
       });
     case "LessonView" :
       let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);

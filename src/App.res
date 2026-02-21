@@ -75,6 +75,28 @@ let make = () => {
     setSelectedIdx(_ => Belt.Int.fromString(value)->Belt.Option.getWithDefault(0))
   }
 
+  let handleDiscussWithGemini = (lessons: array<LessonTypes.lesson>, idx) => {
+    let currentLesson = Belt.Array.get(lessons, idx)
+    
+    switch currentLesson {
+    | Some(lesson) =>
+        let vocabList = getCompletedVocab(lessons, idx)
+        ->Array.map(((k, v)) => k ++ " (" ++ v ++ ")")
+        ->Array.joinWith(", ")
+
+        let prompt = 
+          "Help me study Kirundi. I am currently on a lesson titled: '" ++ lesson.title ++ "'. " ++
+          "My cumulative vocabulary includes: " ++ vocabList ++ ". " ++
+          "Please help me practice these words and any grammar related to this lesson."
+
+        let url = "https://gemini.google.com/guided-learning?query=" ++ Js.Global.encodeURIComponent(prompt)
+        
+        // Open in new tab
+        window->Window.open_(~url, ~name="_blank", ~features="", ())->ignore
+    | None => ()
+    }
+  }
+
   // --- Main Render Logic ---
   switch currentScreen {
   | MainMenu =>
@@ -83,6 +105,7 @@ let make = () => {
       onSettings={_ => setCurrentScreen(_ => Settings)}
       onFlashcards={_ => setCurrentScreen(_ => Flashcards)}
       onPracticeQuiz={_ => setCurrentScreen(_ => PracticeQuiz)}
+      onDiscussWithGemini={_ => handleDiscussWithGemini(LessonData.lessons, selectedIdx)} // Add this
       lastLessonId=selectedIdx
       onLessonSelect=goToLessonId
     />

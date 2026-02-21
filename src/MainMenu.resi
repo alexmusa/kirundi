@@ -6,4 +6,5 @@ let make: (
   ~lastLessonId: int,
   ~onFlashcards: unit => unit,
   ~onPracticeQuiz: unit => unit,
+  ~onDiscussWithGemini: unit => unit,
 ) => React.element

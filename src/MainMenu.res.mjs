@@ -5,6 +5,7 @@ import * as Primitive_object from "@rescript/runtime/lib/es6/Primitive_object.js
 import * as JsxRuntime from "react/jsx-runtime";
 
 function MainMenu(props) {
+  let onDiscussWithGemini = props.onDiscussWithGemini;
   let onPracticeQuiz = props.onPracticeQuiz;
   let onFlashcards = props.onFlashcards;
   let lastLessonId = props.lastLessonId;
@@ -145,6 +146,21 @@ function MainMenu(props) {
                           children: "Practice Flashcards",
                           className: "flex items-center justify-center px-8 py-3 bg-white text-indigo-600 border-2 border-indigo-100 font-bold rounded-2xl hover:bg-indigo-50 transition-all",
                           onClick: param => onFlashcards()
+                        }),
+                        JsxRuntime.jsxs("button", {
+                          children: [
+                            JsxRuntime.jsx("svg", {
+                              children: JsxRuntime.jsx("path", {
+                                d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                              }),
+                              className: "w-5 h-5",
+                              fill: "currentColor",
+                              viewBox: "0 0 24 24"
+                            }),
+                            "Discuss with Gemini"
+                          ],
+                          className: "flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-bold rounded-2xl hover:opacity-90 hover:-translate-y-0.5 shadow-md transition-all",
+                          onClick: param => onDiscussWithGemini()
                         })
                       ]
                     }) : null
