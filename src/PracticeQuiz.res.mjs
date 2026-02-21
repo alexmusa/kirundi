@@ -3,6 +3,7 @@
 import * as React from "react";
 import * as Stdlib_Array from "@rescript/runtime/lib/es6/Stdlib_Array.js";
 import * as Stdlib_Option from "@rescript/runtime/lib/es6/Stdlib_Option.js";
+import * as Primitive_object from "@rescript/runtime/lib/es6/Primitive_object.js";
 import * as JsxRuntime from "react/jsx-runtime";
 
 function PracticeQuiz(props) {
@@ -16,23 +17,25 @@ function PracticeQuiz(props) {
   let match$2 = React.useState(() => "Playing");
   let setGameState = match$2[1];
   let match$3 = React.useState(() => {});
-  let setFeedback = match$3[1];
-  let feedback = match$3[0];
+  let setSelectedChoice = match$3[1];
+  let selectedChoice = match$3[0];
+  let shuffledQuestions = React.useMemo(() => Stdlib_Array.toShuffled(questions), [questions]);
+  let currentQuestion = shuffledQuestions[currentIndex];
   let options = React.useMemo(() => {
-    let ctx = questions[currentIndex];
-    if (ctx === undefined) {
+    if (currentQuestion === undefined) {
       return [];
     }
-    let correctAnswer = ctx.question.answer;
-    let distractors = Stdlib_Array.toShuffled(ctx.sectionAnswers.filter(a => a !== correctAnswer)).slice(0, 3);
+    let correctAnswer = currentQuestion.question.answer;
+    let distractors = Stdlib_Array.toShuffled(currentQuestion.sectionAnswers.filter(a => a !== correctAnswer)).slice(0, 3);
     return Stdlib_Array.toShuffled(distractors.concat([correctAnswer]));
-  }, [currentIndex]);
+  }, [
+    currentIndex,
+    shuffledQuestions
+  ]);
   let tmp;
   if (match$2[0] === "Playing") {
-    let ctx = Stdlib_Option.getExn(questions[currentIndex], undefined);
-    let color = feedback !== undefined ? (
-        feedback ? "#22c55e" : "#ef4444"
-      ) : "transparent";
+    let ctx = Stdlib_Option.getExn(currentQuestion, undefined);
+    let correctAnswer = ctx.question.answer;
     tmp = JsxRuntime.jsxs("div", {
       children: [
         JsxRuntime.jsx("div", {
@@ -44,48 +47,50 @@ function PracticeQuiz(props) {
           className: "text-2xl font-bold text-gray-900 mb-8"
         }),
         JsxRuntime.jsx("div", {
-          children: options.map(opt => JsxRuntime.jsx("button", {
-            children: opt,
-            className: "w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-500 transition-all font-medium text-gray-700",
-            disabled: Stdlib_Option.isSome(feedback),
-            onClick: param => {
-              let ctx = questions[currentIndex];
-              let isCorrect = Stdlib_Option.mapOr(ctx, false, c => c.question.answer === opt);
-              setFeedback(param => isCorrect);
-              if (isCorrect) {
-                setScore(prev => prev + 1 | 0);
-              }
-              setTimeout(() => {
-                setFeedback(param => {});
-                if (currentIndex < (questions.length - 1 | 0)) {
-                  return setCurrentIndex(prev => prev + 1 | 0);
-                } else {
-                  return setGameState(param => "Finished");
+          children: options.map(opt => {
+            let isSelected = Primitive_object.equal(selectedChoice, opt);
+            let hasAnswered = Stdlib_Option.isSome(selectedChoice);
+            let isCorrect = opt === correctAnswer;
+            let buttonStyles = hasAnswered ? (
+                isCorrect ? "bg-green-500 border-green-500 text-white" : (
+                    isSelected && !isCorrect ? "bg-red-500 border-red-500 text-white" : "bg-gray-50 border-gray-100 text-gray-400"
+                  )
+              ) : "bg-white border-gray-100 text-gray-700 hover:border-indigo-500";
+            return JsxRuntime.jsx("button", {
+              children: opt,
+              className: `w-full text-left p-4 rounded-xl border-2 transition-all font-medium ` + buttonStyles,
+              disabled: hasAnswered,
+              onClick: param => {
+                let isCorrect = Stdlib_Option.mapOr(currentQuestion, false, c => c.question.answer === opt);
+                setSelectedChoice(param => opt);
+                if (isCorrect) {
+                  setScore(prev => prev + 1 | 0);
                 }
-              }, 600);
-            }
-          }, opt)),
+                setTimeout(() => {
+                  setSelectedChoice(param => {});
+                  if (currentIndex < (shuffledQuestions.length - 1 | 0)) {
+                    return setCurrentIndex(prev => prev + 1 | 0);
+                  } else {
+                    return setGameState(param => "Finished");
+                  }
+                }, 1000);
+              }
+            }, opt);
+          }),
           className: "grid gap-3"
         })
       ],
-      className: "bg-white rounded-3xl shadow-xl p-8 border-4 transition-colors duration-200",
-      style: {
-        borderColor: color
-      }
+      className: "bg-white rounded-3xl shadow-xl p-8 border-4 border-transparent"
     });
   } else {
     tmp = JsxRuntime.jsxs("div", {
       children: [
-        JsxRuntime.jsx("div", {
-          children: "🎉",
-          className: "text-5xl mb-4"
-        }),
         JsxRuntime.jsx("h2", {
           children: "Quiz Complete!",
           className: "text-2xl font-bold mb-2"
         }),
         JsxRuntime.jsx("p", {
-          children: `You got ` + match$1[0].toString() + ` out of ` + questions.length.toString() + ` correct.`,
+          children: `Score: ` + match$1[0].toString() + `/` + shuffledQuestions.length.toString(),
           className: "text-gray-600 mb-6"
         }),
         JsxRuntime.jsx("button", {

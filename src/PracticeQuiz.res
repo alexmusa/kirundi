@@ -12,44 +12,44 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
   let (score, setScore) = React.useState(_ => 0)
   let (gameState, setGameState) = React.useState(_ => Playing)
-  let (feedback, setFeedback) = React.useState(_ => None) // To show Correct/Incorrect
+  
+  // Track the specific string the user clicked
+  let (selectedChoice, setSelectedChoice) = React.useState(_ => None)
 
-  // Generate options ONLY from the same section
-  let options = React.useMemo1(() => {
-    switch questions[currentIndex] {
+  let shuffledQuestions = React.useMemo1(() => questions->Array.toShuffled, [questions])
+
+  let currentQuestion = shuffledQuestions[currentIndex]
+
+  let options = React.useMemo2(() => {
+    switch currentQuestion {
     | None => []
     | Some(ctx) =>
       let correctAnswer = ctx.question.answer
-      
-      // 1. Get distractors from the same section pool
       let distractors = 
         ctx.sectionAnswers
         ->Array.filter(a => a != correctAnswer)
         ->Array.toShuffled
-        // Take up to 3 distractors
         ->Array.slice(~start=0, ~end=3)
 
-      // 2. Combine and shuffle
       Array.concat(distractors, [correctAnswer])->Array.toShuffled
     }
-  }, [currentIndex])
+  }, (currentIndex, shuffledQuestions))
 
   let handleAnswer = (selected) => {
-    let ctx = questions[currentIndex]
+    let ctx = currentQuestion
     let isCorrect = ctx->Option.mapOr(false, c => c.question.answer == selected)
     
-    setFeedback(_ => Some(isCorrect))
+    setSelectedChoice(_ => Some(selected))
     if (isCorrect) { setScore(prev => prev + 1) }
 
-    // Brief delay so user sees the feedback
     let _ = setTimeout(() => {
-      setFeedback(_ => None)
-      if (currentIndex < Array.length(questions) - 1) {
+      setSelectedChoice(_ => None) // Reset for next question
+      if (currentIndex < Array.length(shuffledQuestions) - 1) {
         setCurrentIndex(prev => prev + 1)
       } else {
         setGameState(_ => Finished)
       }
-    }, 600)
+    }, 1000) // Slightly longer delay so user can process the colors
   }
 
   <div className="flex flex-col min-h-screen bg-gray-50 p-4">
@@ -60,15 +60,10 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
     <div className="max-w-md mx-auto w-full">
       {switch gameState {
       | Playing =>
-        let ctx = questions[currentIndex]->Option.getExn
-        let color = switch feedback {
-               | Some(true) => "#22c55e" // Green
-               | Some(false) => "#ef4444" // Red
-               | None => "transparent"
-             }
-        <div className="bg-white rounded-3xl shadow-xl p-8 border-4 transition-colors duration-200"
-             style={{ borderColor: color}}>
-          
+        let ctx = currentQuestion->Option.getExn
+        let correctAnswer = ctx.question.answer
+
+        <div className="bg-white rounded-3xl shadow-xl p-8 border-4 border-transparent">
           <div className="mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest">
             {React.string(`Question ${Int.toString(currentIndex + 1)}`)}
           </div>
@@ -78,29 +73,41 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
           </h2>
 
           <div className="grid gap-3">
-            {options->Array.map(opt => (
+            {options->Array.map(opt => {
+              // --- Styling Logic ---
+              let isSelected = selectedChoice == Some(opt)
+              let hasAnswered = Option.isSome(selectedChoice)
+              let isCorrect = opt == correctAnswer
+
+              let buttonStyles = if !hasAnswered {
+                "bg-white border-gray-100 text-gray-700 hover:border-indigo-500"
+              } else if isCorrect {
+                "bg-green-500 border-green-500 text-white" // Right answer is always green
+              } else if isSelected && !isCorrect {
+                "bg-red-500 border-red-500 text-white" // Selected wrong answer is red
+              } else {
+                "bg-gray-50 border-gray-100 text-gray-400" // Others fade out
+              }
+
               <button
                 key={opt}
-                disabled={Option.isSome(feedback)}
+                disabled={hasAnswered}
                 onClick={_ => handleAnswer(opt)}
-                className="w-full text-left p-4 rounded-xl border-2 border-gray-100 hover:border-indigo-500 transition-all font-medium text-gray-700">
+                className={`w-full text-left p-4 rounded-xl border-2 transition-all font-medium ${buttonStyles}`}>
                 {React.string(opt)}
               </button>
-            ))->React.array}
+            })->React.array}
           </div>
         </div>
       | Finished =>
         <div className="p-8 text-center">
-          <div className="text-5xl mb-4"> {React.string("🎉")} </div>
-          <h2 className="text-2xl font-bold mb-2"> {React.string("Quiz Complete!")} </h2>
-          <p className="text-gray-600 mb-6">
-            {React.string(`You got ${Int.toString(score)} out of ${Int.toString(Array.length(questions))} correct.`)}
-          </p>
-          <button
-            onClick={_ => onBack()}
-            className="w-full py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-lg">
-            {React.string("Return to Menu")}
-          </button>
+            <h2 className="text-2xl font-bold mb-2"> {React.string("Quiz Complete!")} </h2>
+            <p className="text-gray-600 mb-6">
+                {React.string(`Score: ${Int.toString(score)}/${Int.toString(Array.length(shuffledQuestions))}`)}
+            </p>
+            <button onClick={_ => onBack()} className="w-full py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-lg">
+                {React.string("Return to Menu")}
+            </button>
         </div>
       }}
     </div>
