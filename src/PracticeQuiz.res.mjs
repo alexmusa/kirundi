@@ -32,15 +32,34 @@ function PracticeQuiz(props) {
     currentIndex,
     shuffledQuestions
   ]);
+  let hasAnswered = Stdlib_Option.isSome(selectedChoice);
+  let handleNext = () => {
+    if (hasAnswered) {
+      setSelectedChoice(param => {});
+      if (currentIndex < (shuffledQuestions.length - 1 | 0)) {
+        return setCurrentIndex(prev => prev + 1 | 0);
+      } else {
+        return setGameState(param => "Finished");
+      }
+    }
+  };
   let tmp;
   if (match$2[0] === "Playing") {
     let ctx = Stdlib_Option.getExn(currentQuestion, undefined);
     let correctAnswer = ctx.question.answer;
     tmp = JsxRuntime.jsxs("div", {
       children: [
-        JsxRuntime.jsx("div", {
-          children: `Question ` + (currentIndex + 1 | 0).toString(),
-          className: "mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest"
+        JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("span", {
+              children: `Question ` + (currentIndex + 1 | 0).toString()
+            }),
+            hasAnswered ? JsxRuntime.jsx("span", {
+                children: "Tap card to continue →",
+                className: "animate-pulse text-indigo-400"
+              }) : null
+          ],
+          className: "mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest flex justify-between"
         }),
         JsxRuntime.jsx("h2", {
           children: ctx.question.prompt,
@@ -49,39 +68,34 @@ function PracticeQuiz(props) {
         JsxRuntime.jsx("div", {
           children: options.map(opt => {
             let isSelected = Primitive_object.equal(selectedChoice, opt);
-            let hasAnswered = Stdlib_Option.isSome(selectedChoice);
             let isCorrect = opt === correctAnswer;
             let isWrongSelection = isSelected && !isCorrect;
             let buttonStyles = hasAnswered ? (
-                isCorrect ? "bg-green-500 border-green-500 text-white shadow-lg" : (
-                    isWrongSelection ? "bg-red-500 border-red-500 text-white animate-shake shadow-inner" : "bg-gray-50 border-gray-100 text-gray-400 opacity-50"
+                isCorrect ? "bg-green-500 border-green-500 text-white" : (
+                    isWrongSelection ? "bg-red-500 border-red-500 text-white animate-shake" : "bg-gray-50 border-gray-100 text-gray-400 opacity-50"
                   )
-              ) : "bg-white border-gray-100 text-gray-700 hover:border-indigo-500 hover:shadow-md";
+              ) : "bg-white border-gray-100 text-gray-700 hover:border-indigo-500";
             return JsxRuntime.jsx("button", {
               children: opt,
-              className: `w-full text-left p-4 rounded-xl border-2 transition-all duration-200 font-medium ` + buttonStyles,
+              className: `w-full text-left p-4 rounded-xl border-2 transition-all font-medium ` + buttonStyles,
               disabled: hasAnswered,
-              onClick: param => {
+              onClick: e => {
+                e.stopPropagation();
                 let isCorrect = Stdlib_Option.mapOr(currentQuestion, false, c => c.question.answer === opt);
                 setSelectedChoice(param => opt);
                 if (isCorrect) {
-                  setScore(prev => prev + 1 | 0);
+                  return setScore(prev => prev + 1 | 0);
                 }
-                setTimeout(() => {
-                  setSelectedChoice(param => {});
-                  if (currentIndex < (shuffledQuestions.length - 1 | 0)) {
-                    return setCurrentIndex(prev => prev + 1 | 0);
-                  } else {
-                    return setGameState(param => "Finished");
-                  }
-                }, 1000);
               }
             }, opt);
           }),
           className: "grid gap-3"
         })
       ],
-      className: "bg-white rounded-3xl shadow-xl p-8 border-4 border-transparent"
+      className: `bg-white rounded-3xl shadow-xl p-8 border-4 transition-all duration-300 ` + (
+        hasAnswered ? "cursor-pointer ring-4 ring-indigo-100" : "border-transparent"
+      ),
+      onClick: param => handleNext()
     });
   } else {
     tmp = JsxRuntime.jsxs("div", {

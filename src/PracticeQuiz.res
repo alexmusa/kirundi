@@ -12,12 +12,9 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
   let (score, setScore) = React.useState(_ => 0)
   let (gameState, setGameState) = React.useState(_ => Playing)
-  
-  // Track the specific string the user clicked
   let (selectedChoice, setSelectedChoice) = React.useState(_ => None)
 
   let shuffledQuestions = React.useMemo1(() => questions->Array.toShuffled, [questions])
-
   let currentQuestion = shuffledQuestions[currentIndex]
 
   let options = React.useMemo2(() => {
@@ -34,6 +31,20 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
       Array.concat(distractors, [correctAnswer])->Array.toShuffled
     }
   }, (currentIndex, shuffledQuestions))
+  
+  let hasAnswered = Option.isSome(selectedChoice)
+
+  // --- Navigation Logic ---
+  let handleNext = () => {
+    if hasAnswered {
+      setSelectedChoice(_ => None)
+      if (currentIndex < Array.length(shuffledQuestions) - 1) {
+        setCurrentIndex(prev => prev + 1)
+      } else {
+        setGameState(_ => Finished)
+      }
+    }
+  }
 
   let handleAnswer = (selected) => {
     let ctx = currentQuestion
@@ -41,15 +52,7 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
     
     setSelectedChoice(_ => Some(selected))
     if (isCorrect) { setScore(prev => prev + 1) }
-
-    let _ = setTimeout(() => {
-      setSelectedChoice(_ => None) // Reset for next question
-      if (currentIndex < Array.length(shuffledQuestions) - 1) {
-        setCurrentIndex(prev => prev + 1)
-      } else {
-        setGameState(_ => Finished)
-      }
-    }, 1000) // Slightly longer delay so user can process the colors
+    // No more setTimeout here!
   }
 
   <div className="flex flex-col min-h-screen bg-gray-50 p-4">
@@ -63,9 +66,13 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
         let ctx = currentQuestion->Option.getExn
         let correctAnswer = ctx.question.answer
 
-        <div className="bg-white rounded-3xl shadow-xl p-8 border-4 border-transparent">
-          <div className="mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest">
-            {React.string(`Question ${Int.toString(currentIndex + 1)}`)}
+        <div 
+          onClick={_ => handleNext()}
+          className={`bg-white rounded-3xl shadow-xl p-8 border-4 transition-all duration-300 ${hasAnswered ? "cursor-pointer ring-4 ring-indigo-100" : "border-transparent"}`}>
+          
+          <div className="mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest flex justify-between">
+            <span>{React.string(`Question ${Int.toString(currentIndex + 1)}`)}</span>
+            {hasAnswered ? <span className="animate-pulse text-indigo-400">{React.string("Tap card to continue →")}</span> : React.null}
           </div>
           
           <h2 className="text-2xl font-bold text-gray-900 mb-8">
@@ -74,19 +81,16 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
 
           <div className="grid gap-3">
             {options->Array.map(opt => {
-              // --- Styling Logic ---
               let isSelected = selectedChoice == Some(opt)
-              let hasAnswered = Option.isSome(selectedChoice)
               let isCorrect = opt == correctAnswer
-              
               let isWrongSelection = isSelected && !isCorrect
 
               let buttonStyles = if !hasAnswered {
-                "bg-white border-gray-100 text-gray-700 hover:border-indigo-500 hover:shadow-md"
+                "bg-white border-gray-100 text-gray-700 hover:border-indigo-500"
               } else if isCorrect {
-                "bg-green-500 border-green-500 text-white shadow-lg" 
+                "bg-green-500 border-green-500 text-white"
               } else if isWrongSelection {
-                "bg-red-500 border-red-500 text-white animate-shake shadow-inner"
+                "bg-red-500 border-red-500 text-white animate-shake"
               } else {
                 "bg-gray-50 border-gray-100 text-gray-400 opacity-50"
               }
@@ -94,8 +98,11 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
               <button
                 key={opt}
                 disabled={hasAnswered}
-                onClick={_ => handleAnswer(opt)}
-                className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 font-medium ${buttonStyles}`}>
+                onClick={e => {
+                  ReactEvent.Mouse.stopPropagation(e) // Prevent triggering the card's handleNext
+                  handleAnswer(opt)
+                }}
+                className={`w-full text-left p-4 rounded-xl border-2 transition-all font-medium ${buttonStyles}`}>
                 {React.string(opt)}
               </button>
             })->React.array}
