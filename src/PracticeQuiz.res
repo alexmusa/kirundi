@@ -78,22 +78,24 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
               let isSelected = selectedChoice == Some(opt)
               let hasAnswered = Option.isSome(selectedChoice)
               let isCorrect = opt == correctAnswer
+              
+              let isWrongSelection = isSelected && !isCorrect
 
               let buttonStyles = if !hasAnswered {
-                "bg-white border-gray-100 text-gray-700 hover:border-indigo-500"
+                "bg-white border-gray-100 text-gray-700 hover:border-indigo-500 hover:shadow-md"
               } else if isCorrect {
-                "bg-green-500 border-green-500 text-white" // Right answer is always green
-              } else if isSelected && !isCorrect {
-                "bg-red-500 border-red-500 text-white" // Selected wrong answer is red
+                "bg-green-500 border-green-500 text-white shadow-lg" 
+              } else if isWrongSelection {
+                "bg-red-500 border-red-500 text-white animate-shake shadow-inner"
               } else {
-                "bg-gray-50 border-gray-100 text-gray-400" // Others fade out
+                "bg-gray-50 border-gray-100 text-gray-400 opacity-50"
               }
 
               <button
                 key={opt}
                 disabled={hasAnswered}
                 onClick={_ => handleAnswer(opt)}
-                className={`w-full text-left p-4 rounded-xl border-2 transition-all font-medium ${buttonStyles}`}>
+                className={`w-full text-left p-4 rounded-xl border-2 transition-all duration-200 font-medium ${buttonStyles}`}>
                 {React.string(opt)}
               </button>
             })->React.array}
