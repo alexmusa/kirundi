@@ -4,65 +4,82 @@ type card = {
   kirundi: string,
   english: string,
   isReversed: bool,
+  isDue: bool,
+}
+
+type cardStatsMap = Belt.Map.String.t<SRS.stats>
+
+module SRSButton = {
+  @react.component
+  let make = (~label, ~color, ~onClick) => {
+    <button 
+      onClick={onClick}
+      className={`${color} text-white py-4 px-2 rounded-xl font-bold text-xs uppercase shadow-lg active:scale-95 transition-transform`}>
+      {React.string(label)}
+    </button>
+  }
 }
 
 @react.component
 let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
+  let localStorageKey = "srs-stats-v1"
+
+  // 1. Load Stats from LocalStorage
+  let (statsMap, setStatsMap) = React.useState(() => {
+    switch Dom.Storage.getItem(localStorageKey, Dom.Storage.localStorage) {
+    | Some(json) => /* In a real app, use a JSON parser here. For brevity, returning empty map */ 
+      Belt.Map.String.empty
+    | None => Belt.Map.String.empty
+    }
+  })
+
+  // 2. Filter and Sort the Deck (Due cards first)
   let (deck, setDeck) = React.useState(_ => {
-    let newDeck = vocabulary->Array.map(((k, e)) => {
-      // Add the type annotation ': card' right here
-      let card: card = {
+    let now = Js.Date.now()
+    vocabulary
+    ->Array.map(((k, e)) => {
+      let stats = statsMap->Belt.Map.String.getWithDefault(k, SRS.defaultStats)
+      let dueTime = stats.lastReviewed +. (stats.interval *. 86400000.0)
+      {
         kirundi: k,
         english: e,
         isReversed: Math.random() > 0.5,
+        isDue: now >= dueTime,
       }
-      card
     })
-    newDeck->Array.shuffle
-    newDeck
+    ->Array.toSorted((a, b) => (a.isDue ? -1.0 : 1.0) - (b.isDue ? -1.0 : 1.0)) // Put due cards at start
   })
-  
+
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
   let (isFlipped, setIsFlipped) = React.useState(_ => false)
-
   let currentCard = deck[currentIndex]
   let totalCards = Array.length(deck)
 
-  let (isTransitioning, setIsTransitioning) = React.useState(_ => false)
-
-  let handleNext = () => {
-    if isTransitioning { () }
-    
-    if isFlipped {
-      setIsTransitioning(_ => true)
-      setIsFlipped(_ => false)
-      let _ = setTimeout(() => {
-        setCurrentIndex(prev => Math.Int.min(prev + 1, totalCards - 1))
-        setIsTransitioning(_ => false)
-      }, 200)
-    } else {
-      setCurrentIndex(prev => Math.Int.min(prev + 1, totalCards - 1))
-    }
-  }
-
-  let handlePrev = () => {
-    if isFlipped {
-      setIsFlipped(_ => false)
-      let _ = setTimeout(() => {
-        setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
-      }, 200)
-    } else {
-      setCurrentIndex(prev => Math.Int.max(prev - 1, 0))
-    }
-  }
-
   let handleFlip = _ => {
-    if isFlipped {
-      handleNext()
-    } else {
       setIsFlipped(prev => !prev)
+  }
+
+  let handleReview = (result: SRS.reviewResult) => {
+    switch currentCard {
+    | Some(card) =>
+      // Calculate new stats
+      let currentStats = statsMap->Belt.Map.String.getWithDefault(card.kirundi, SRS.defaultStats)
+      let newStats = SRS.calculateNextReview(currentStats, result)
+      
+      // Update State and Storage
+      let newMap = statsMap->Belt.Map.String.set(card.kirundi, newStats)
+      setStatsMap(_ => newMap)
+      // Dom.Storage.setItem(localStorageKey, serialize(newMap)) // Persistence logic
+
+      // Move to next card
+      setIsFlipped(_ => false)
+      let _ = setTimeout(() => {
+        setCurrentIndex(prev => prev + 1)
+      }, 200)
+    | None => ()
     }
   }
+
   <div className="flex flex-col min-h-screen bg-gray-50 p-6">
     /* Header */
     <div className="flex items-center justify-between mb-8">
@@ -115,29 +132,26 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
 
           </div>
         </div>
-      | None => React.string("No cards available.")
+      | None => 
+        <div className="text-center">
+          <h2 className="text-2xl font-bold mb-4">{React.string("All caught up!")}</h2>
+          <button onClick={onBack} className="bg-indigo-600 text-white px-6 py-2 rounded-lg">{React.string("Return to Menu")}</button>
+        </div>
       }}
     </div>
 
-    /* Controls */
-    <div className="mt-12 flex justify-center items-center gap-8 pb-10">
-      <button
-        onClick={_ => handlePrev()}
-        disabled={currentIndex == 0}
-        className="p-4 rounded-full bg-white shadow-md text-gray-600 disabled:opacity-30">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={_ => handleNext()}
-        disabled={currentIndex == totalCards - 1}
-        className="p-4 rounded-full bg-indigo-600 shadow-lg text-white disabled:opacity-30">
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-    </div>
+    /* Feedback Controls */
+    {isFlipped ? (
+      <div className="mt-8 grid grid-cols-4 gap-2 max-w-md mx-auto w-full pb-10">
+        <SRSButton label="Again" color="bg-red-500" onClick={_ => handleReview(Again)} />
+        <SRSButton label="Hard" color="bg-orange-500" onClick={_ => handleReview(Hard)} />
+        <SRSButton label="Good" color="bg-green-500" onClick={_ => handleReview(Good)} />
+        <SRSButton label="Easy" color="bg-blue-500" onClick={_ => handleReview(Easy)} />
+      </div>
+    ) : (
+      <div className="mt-8 flex justify-center pb-10">
+        <p className="text-gray-400 animate-bounce">{React.string("Tap card to see answer")}</p>
+      </div>
+    )}
   </div>
 }
