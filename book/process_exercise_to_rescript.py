@@ -43,7 +43,7 @@ def main():
             # Create the prompt
             prompt = f"""{html_content}
             
-Adapt ALL the previous exercises to the given format for Rescript. Only output the quizData: array<quizSection> code and nothing else.
+Adapt ALL the previous exercises to the given format for Rescript. Only output the quizData: array<Quiz.quizSection> code and nothing else.
 
 type quizQuestion = {{
   prompt: string,
