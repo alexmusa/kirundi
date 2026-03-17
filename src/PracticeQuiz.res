@@ -14,7 +14,12 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
   let (gameState, setGameState) = React.useState(_ => Playing)
   let (selectedChoice, setSelectedChoice) = React.useState(_ => None)
 
-  let shuffledQuestions = React.useMemo1(() => questions->Array.toShuffled, [questions])
+  let shuffledQuestions = React.useMemo1(() => {
+    questions
+    ->Array.toShuffled
+    ->Array.slice(~start=0, ~end=20) // Limits the session to 20 questions
+  }, [questions])
+
   let totalQuestions = Array.length(shuffledQuestions)
   let currentQuestion = shuffledQuestions[currentIndex]
 

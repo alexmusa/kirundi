@@ -20,7 +20,7 @@ function PracticeQuiz(props) {
   let match$3 = React.useState(() => {});
   let setSelectedChoice = match$3[1];
   let selectedChoice = match$3[0];
-  let shuffledQuestions = React.useMemo(() => Stdlib_Array.toShuffled(questions), [questions]);
+  let shuffledQuestions = React.useMemo(() => Stdlib_Array.toShuffled(questions).slice(0, 20), [questions]);
   let totalQuestions = shuffledQuestions.length;
   let currentQuestion = shuffledQuestions[currentIndex];
   let options = React.useMemo(() => {
