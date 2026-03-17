@@ -161,10 +161,143 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: -ose Agreement (Singular and Plural)",
+    questions: [
+      {
+        prompt: "1. igitoke (Make -ose agree sing. and pl. and translate)",
+        answer: "igitoke cose (whole bunch of bananas), ibitoke vyose (all bunches of bananas)",
+      },
+      {
+        prompt: "2. ahantu (Make -ose agree and translate)",
+        answer: "ahantu hose (every place / everywhere)",
+      },
+      {
+        prompt: "3. umuti (Make -ose agree sing. and pl. and translate)",
+        answer: "umuti wose (the whole medicine), imiti yose (all medicines)",
+      },
+      {
+        prompt: "4. umwigeme (Make -ose agree sing. and pl. and translate)",
+        answer: "umwigeme wese (every girl), abigeme bose (all girls)",
+      },
+      {
+        prompt: "5. ukuboko (Make -ose agree sing. and pl. and translate)",
+        answer: "ukuboko kwose (the whole arm), amaboko yose (all arms)",
+      },
+      {
+        prompt: "6. umusuma (Make -ose agree sing. and pl. and translate)",
+        answer: "umusuma wese (every thief), abasuma bose (all thieves)",
+      },
+      {
+        prompt: "7. imbwa (Make -ose agree sing. and pl. and translate)",
+        answer: "imbwa yose (the whole dog), imbwa zose (all dogs)",
+      },
+      {
+        prompt: "8. akayabo (Make -ose agree sing. and pl. and translate)",
+        answer: "akayabo kose (the whole cat), utuyabo twose (all cats)",
+      },
+      {
+        prompt: "9. inkofero (Make -ose agree sing. and pl. and translate)",
+        answer: "inkofero yose (the whole hat), inkofero zose (all hats)",
+      },
+      {
+        prompt: "10. amavuta (Make -ose agree and translate)",
+        answer: "amavuta yose (all the oil/butter)",
+      },
+      {
+        prompt: "11. umwungere (Make -ose agree sing. and pl. and translate)",
+        answer: "umwungere wese (every shepherd), abungere bose (all shepherds)",
+      },
+      {
+        prompt: "12. umwaka (Make -ose agree sing. and pl. and translate)",
+        answer: "umwaka wose (the whole year), imyaka yose (all years)",
+      },
+      {
+        prompt: "13. ubushaza (Make -ose agree and translate)",
+        answer: "ubushaza bwose (all the peas)",
+      },
+      {
+        prompt: "14. izina (Make -ose agree sing. and pl. and translate)",
+        answer: "izina ryose (the whole name), amazina yose (all names)",
+      },
+      {
+        prompt: "15. akantu (Make -ose agree sing. and pl. and translate)",
+        answer: "akantu kose (every little thing), utuntu twose (all little things)",
+      },
+      {
+        prompt: "16. umusozi (Make -ose agree sing. and pl. and translate)",
+        answer: "umusozi wose (the whole mountain), imisozi yose (all mountains)",
+      },
+      {
+        prompt: "17. igiti (Make -ose agree sing. and pl. and translate)",
+        answer: "igiti cose (the whole tree), ibiti vyose (all trees)",
+      },
+      {
+        prompt: "18. ubwato (Make -ose agree sing. and pl. and translate)",
+        answer: "ubwato bwose (the whole boat), amato yose (all boats)",
+      },
+      {
+        prompt: "19. uruzi (Make -ose agree sing. and pl. and translate)",
+        answer: "uruzi rwose (the whole river), inzuzi zose (all rivers)",
+      },
+      {
+        prompt: "20. inkoko (Make -ose agree sing. and pl. and translate)",
+        answer: "inkoko yose (the whole chicken), inkoko zose (all chickens)",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translation into Kirundi",
+    questions: [
+      {
+        prompt: "1. All people like to sleep all night (write “in the whole night”).",
+        answer: "Abantu bose bakunda gusinzira mw'ijoro ryose.",
+      },
+      {
+        prompt: "2. All the miracles of Jesus are very great.",
+        answer: "Ibitangaza vyose vya Yezu ni binini cane.",
+      },
+      {
+        prompt: "3. He is writing his whole name.",
+        answer: "Arandika izina ryiwe ryose.",
+      },
+      {
+        prompt: "4. Every shepherd helps his sheep.",
+        answer: "Umwungere wese afasha intama ziwe.",
+      },
+      {
+        prompt: "5. When will all the boys come back to school?",
+        answer: "Abahungu bose bazogaruka kw'ishure ryari?",
+      },
+      {
+        prompt: "6. All girls like pretty clothes.",
+        answer: "Abigeme bose bakunda impuzu nziza.",
+      },
+      {
+        prompt: "7. We will remember to worship God every day.",
+        answer: "Tuzokwibuka gusenga Imana imisi yose.",
+      },
+      {
+        prompt: "8. I want to see all of your big garden.",
+        answer: "Nshaka kubona umurima wawe munini wose.",
+      },
+      {
+        prompt: "9. When will you (sing.) remember to bring all my chickens?",
+        answer: "Uzokwibuka kuzana inkoko zanje zose ryari?",
+      },
+      {
+        prompt: "10. Our little cat catches big rats. It’s amazing (a surprising thing)!",
+        answer: "Akayabo kacu gatoyi gafata imbeba zinini. Ni igitangaza!",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 41: –ose",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

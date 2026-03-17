@@ -122,10 +122,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mufise ibitabo bingahe? Dufise icumi na bibiri.",
+        answer: "How many books do you (pl.) have? We have twelve.",
+      },
+      {
+        prompt: "Mbeg’ uzorungika abantu bangahe i Gitega kuzana ibintu vyawe? Nzorungika icumi.",
+        answer: "How many people will you send to Gitega to bring your things? I will send ten.",
+      },
+      {
+        prompt: "Mbeg’ ufise inkofero zingahe? Mfise zibiri.",
+        answer: "Do you have how many hats? I have two.",
+      },
+      {
+        prompt: "Nzorungika icete i Bujumbura kuko ngomba kugura imbaho mirongwitatu na zine.",
+        answer: "I will send a letter to Bujumbura because I want to buy thirty-four boards.",
+      },
+      {
+        prompt: "Imana ikunda kwumva ugusenga kwacu.",
+        answer: "God likes to hear our prayer.",
+      },
+      {
+        prompt: "Mbeg’ urumva ikirundi? Ndumva buhoro-buhoro yamara si cane.",
+        answer: "Do you understand Kirundi? I understand a little (slowly) but not much.",
+      },
+      {
+        prompt: "Yesu atuma abantu biwe kuvuga Ubutumwa Bgiza.",
+        answer: "Jesus sends his people to speak the Good News.",
+      },
+      {
+        prompt: "Abasuma bafata impene zingahe? Bafata icumi na zibiri.",
+        answer: "How many goats do the thieves catch? They catch twelve.",
+      },
+      {
+        prompt: "Muzoguma hano amajoro angahe? N’atatu.",
+        answer: "How many nights will you (pl.) stay here? It is three.",
+      },
+      {
+        prompt: "Harura amafaranga. Ufise angahe? Mfise mirongwitanu n’ane.",
+        answer: "Count the money. How many (francs) do you have? I have fifty-four.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "How many children are entering the church?",
+        answer: "Abana bangahe barinjira mw'ishengero?",
+      },
+      {
+        prompt: "How many books will you send?",
+        answer: "Uzorungika ibitabo bingahe?",
+      },
+      {
+        prompt: "Thieves like to go in the night because there is darkness.",
+        answer: "Abasuma bakunda kugenda mw'ijoro kuko hariho umwiza.",
+      },
+      {
+        prompt: "How many years will you teach here? I will teach six years.",
+        answer: "Uzozigisha hano imyaka ingahe? Nzozigisha imyaka itandatu.",
+      },
+      {
+        prompt: "Send twelve men to bring my boards.",
+        answer: "Rungika abagabo icumi na babiri kuzana imbaho zanje.",
+      },
+      {
+        prompt: "Send a pupil to bring your letter to my house.",
+        answer: "Tuma umwigishwa kuzana icete cawe ku nzu yanje.",
+      },
+      {
+        prompt: "Do you (pl.) hear the drums? Where are they?",
+        answer: "Mbeg' murumva ingoma? Ziri he?",
+      },
+      {
+        prompt: "I hear the workmen. What are they doing? They are building a church.",
+        answer: "Ndumva abakozi. Baragira iki? Barubaka ishengero.",
+      },
+      {
+        prompt: "In the night the old man hears a thief in his kraal. He gets (takes hold of) his spear.",
+        answer: "Mw'ijoro umutama yumva umusuma mu rugo rwiwe. Afata icumu ryiwe.",
+      },
+      {
+        prompt: "I want to put away our clothes now, but I don’t see well at (in) night.",
+        answer: "Ngomba kubika ivyambaro vyacu ubu, yamara simbona neza mw'ijoro.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 39: –ngahe",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

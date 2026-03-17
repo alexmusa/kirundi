@@ -343,24 +343,169 @@ let Content = {
   make: Lesson37$Content
 };
 
+let quizData = [{
+    title: "Translate into Kirundi",
+    questions: [
+      {
+        prompt: "one stone",
+        answer: "ibuye rimwe"
+      },
+      {
+        prompt: "three fingers",
+        answer: "intoke zitatu"
+      },
+      {
+        prompt: "six months",
+        answer: "amezi atandatu"
+      },
+      {
+        prompt: "two cats",
+        answer: "injangwe zibiri"
+      },
+      {
+        prompt: "eight chairs",
+        answer: "intebe munani"
+      },
+      {
+        prompt: "four teachers",
+        answer: "abigisha bane"
+      },
+      {
+        prompt: "ten boys",
+        answer: "abahungu cumi"
+      },
+      {
+        prompt: "five books",
+        answer: "ibitabo bitanu"
+      },
+      {
+        prompt: "one door",
+        answer: "urugi rumwe"
+      },
+      {
+        prompt: "six dogs",
+        answer: "imbwa zitandatu"
+      },
+      {
+        prompt: "nine eggs",
+        answer: "amagi cenda"
+      },
+      {
+        prompt: "seven bees",
+        answer: "inzuki ndwi"
+      },
+      {
+        prompt: "three jiggers",
+        answer: "amavunja atatu"
+      },
+      {
+        prompt: "one cow",
+        answer: "inka imwe"
+      },
+      {
+        prompt: "five francs",
+        answer: "amafaranga atanu"
+      },
+      {
+        prompt: "four hills",
+        answer: "imisozi ine"
+      },
+      {
+        prompt: "two arms",
+        answer: "amaboko abiri"
+      },
+      {
+        prompt: "three beds",
+        answer: "uburiri atatu"
+      },
+      {
+        prompt: "six hoes",
+        answer: "amasuka atandatu"
+      },
+      {
+        prompt: "ten sheep",
+        answer: "intama cumi"
+      },
+      {
+        prompt: "one board",
+        answer: "urubaho rumwe"
+      },
+      {
+        prompt: "eight schools",
+        answer: "amashure munani"
+      },
+      {
+        prompt: "five little things (dimin.)",
+        answer: "utuntu tutanu"
+      },
+      {
+        prompt: "six pupils",
+        answer: "abanyeshure batandatu"
+      },
+      {
+        prompt: "one cat",
+        answer: "injangwe imwe"
+      },
+      {
+        prompt: "many boats",
+        answer: "amato amengi"
+      },
+      {
+        prompt: "three places",
+        answer: "ahantu hatatu"
+      },
+      {
+        prompt: "nine goats",
+        answer: "ihene cenda"
+      },
+      {
+        prompt: "seven (ears of) corn",
+        answer: "ibigori ndwi"
+      },
+      {
+        prompt: "four rivers",
+        answer: "inzuzi zine"
+      },
+      {
+        prompt: "eight gardens",
+        answer: "imirima munani"
+      },
+      {
+        prompt: "two days",
+        answer: "imisi ibiri"
+      },
+      {
+        prompt: "five ropes",
+        answer: "imigozi itanu"
+      },
+      {
+        prompt: "seven mats",
+        answer: "ibirago ndwi"
+      },
+      {
+        prompt: "one leg",
+        answer: "ukuguru kumwe"
+      }
+    ]
+  }];
+
 let l_content = JsxRuntime.jsx(Lesson37$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 37: Cardinal Numbers 1-10",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -171,24 +171,116 @@ let Content = {
   make: Lesson32$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ukuboko kwiwe ni kugufi.",
+        answer: "His (or her) arm is short."
+      },
+      {
+        prompt: "Umuhungu wawe afise amaguru maremare.",
+        answer: "Your son has long legs."
+      },
+      {
+        prompt: "Abantu benshi bafise ukwizera guke.",
+        answer: "Many people have little faith."
+      },
+      {
+        prompt: "Imana irakunda ugusenga kw’abantu beza.",
+        answer: "God loves the praying (or prayer) of good people."
+      },
+      {
+        prompt: "Umwana mutoya afise indwara mbi mu matwi yiwe.",
+        answer: "The small child has a bad disease (or illness) in his ears."
+      },
+      {
+        prompt: "Umwigisha wacu avuga ukuri.",
+        answer: "Our teacher speaks the truth."
+      },
+      {
+        prompt: "Inkoko ntifise amabobo ariko ifise amaguru.",
+        answer: "A chicken does not have arms but it has legs."
+      },
+      {
+        prompt: "Turirimba indirimbo z’Imana kuko dufise umunezero n’ukwizera.",
+        answer: "We sing the songs of God because we have joy and faith."
+      },
+      {
+        prompt: "Har’ umunezero mu gukora cane.",
+        answer: "There is joy in working hard."
+      },
+      {
+        prompt: "Umuntu afise amaguru n’amaboko n’umutwe n’amatwi n’amaso n’akanwa.",
+        answer: "A person has legs and arms and a head and ears and eyes and a mouth."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The arm of God is not short.",
+        answer: "Ukuboko kw'Imana si kugufi."
+      },
+      {
+        prompt: "The moon is small now but soon we shall see a large moon.",
+        answer: "Ukwezi ni kuto ubu ariko vuba tuzobona ukwezi kunini."
+      },
+      {
+        prompt: "Do you have much faith in your heart?",
+        answer: "Mbega ufise ukwizera kwinshi mu mutima wawe?"
+      },
+      {
+        prompt: "The teacher’s faith is very great (much).",
+        answer: "Ukwizera kw'umwigisha ni kwinshi cane."
+      },
+      {
+        prompt: "Jesus will come soon; perhaps (kumbure) we shall see His return.",
+        answer: "Yesu azoza vuba; kumbure tuzobona ukugaruka kwiwe."
+      },
+      {
+        prompt: "Put (some) medicine on the child’s leg.",
+        answer: "Shira umuti ku kuguru kw'umwana."
+      },
+      {
+        prompt: "My daughter has a burn on her arm.",
+        answer: "Umukobwa wanje afise ubushye ku kuboko kwiwe."
+      },
+      {
+        prompt: "A month has many days.",
+        answer: "Ukwezi gufise imisi myinshi."
+      },
+      {
+        prompt: "Are you (sing.) telling (speaking) the truth? Will you help the poor man tomorrow?",
+        answer: "Mbega uvuga ukuri? Uzofasha umukene ejo?"
+      },
+      {
+        prompt: "Their parents will not come tomorrow because there are locusts in their gardens and they have much work.",
+        answer: "Abavyeyi babo ntibazoza ejo kuko hariho amayige mu mirima yabo kandi bafise igikorwa cinshi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson32$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 32: Class 9",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -102,10 +102,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Bujumbura ni kure cane; tebuka kugenda.",
+        answer: "Bujumbura is very far; hurry to go.",
+      },
+      {
+        prompt: "Izindi mbwa zacu nini zibiri ziri hafi y’inzu.",
+        answer: "Our two other big dogs are near the house.",
+      },
+      {
+        prompt: "Umuzungu muremure aratebuka rwose.",
+        answer: "The tall white person is hurrying very much.",
+      },
+      {
+        prompt: "Tuzogenda vuba mu gihugu ca kure cane.",
+        answer: "We will go soon to a very far country.",
+      },
+      {
+        prompt: "Abahungu beza bose bakora neza mu mirima yabo minini.",
+        answer: "All the good boys work well in their big fields.",
+      },
+      {
+        prompt: "Umuzungu afise abana bato-bato bangahe? Ni batanu, kandi bose ni beza.",
+        answer: "How many little children does the white person have? They are five, and all are good.",
+      },
+      {
+        prompt: "Umugabo azana amata meza menshi cane imisi yose.",
+        answer: "The man brings much very good milk every day.",
+      },
+      {
+        prompt: "Umugenzi wanje aragaruka ku mugoroba guhemba abanyakazi biwe bose.",
+        answer: "My friend returns in the evening to pay all his workers.",
+      },
+      {
+        prompt: "Abakozi bariko barubaka neza cane inzu nini y’umwigisha wacu.",
+        answer: "The workers are building our teacher's big house very well.",
+      },
+      {
+        prompt: "Dufise utubuto tunzinya dutanu dusa.",
+        answer: "We have only five tiny seeds.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The rich man has very many large cows.",
+        answer: "Umutunzi afise inka nini nyinshi cane.",
+      },
+      {
+        prompt: "Put the chair on the floor near my small table.",
+        answer: "Shira intebe hasi hafi y'imeza yanje ntoya.",
+      },
+      {
+        prompt: "Hurry to go to school; the other boys are there.",
+        answer: "Tebuka kugenda kw'ishure; abandi bahungu bari hariya.",
+      },
+      {
+        prompt: "Perhaps we will receive three other good books soon.",
+        answer: "Kumbure tuzoronka ibindi bitabu vyiza bitatu vuba.",
+      },
+      {
+        prompt: "Your three little children are over there near the school.",
+        answer: "Abana bawe bato-bato batatu bari hariya hafi y'ishure.",
+      },
+      {
+        prompt: "Where are all my nice new clothes? They are in your box.",
+        answer: "Ivyambaro vyanje bishasha vyiza vyose biri he? Biri mu sandugu yawe.",
+      },
+      {
+        prompt: "There is another long, wide river near our hill.",
+        answer: "Hariho uruzi ruremure rugari hafi y'umusozi wacu.",
+      },
+      {
+        prompt: "The girls are cooking a few small fish on the stove.",
+        answer: "Abigeme bariko batekera amafifi matoya make ku ziko.",
+      },
+      {
+        prompt: "Minani’s child has a few more jiggers in his feet.",
+        answer: "Umwana wa Minani afise ayandi mavunja make mu birenge vyiwe.",
+      },
+      {
+        prompt: "Our wonderful living Savior has much love and mercy.",
+        answer: "Umukiza wacu muzima atangaje afise urukundo n'imbabazi nyinshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 47: Word Order",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

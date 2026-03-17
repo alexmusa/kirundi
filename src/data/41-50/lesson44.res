@@ -111,10 +111,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Sinzosubira guhemba neza abahungu kuko bakora nabi.",
+        answer: "I will not pay the boys well again because they work badly.",
+      },
+      {
+        prompt: "Dusaba Imana gukiza abandi bantu benshi.",
+        answer: "We pray to God to save many other people.",
+      },
+      {
+        prompt: "Nzobaza abigishwa ivyo (the things which) bigishwa mw ishuli.",
+        answer: "I will ask the students the things which they are taught in school.",
+      },
+      {
+        prompt: "Kumbure umunyakazi w’umutunzi azosubira i wabo vuba.",
+        answer: "Perhaps the rich man's worker will return to their home soon.",
+      },
+      {
+        prompt: "Abungere barasubira kurondera intama zabo.",
+        answer: "The shepherds are looking for their sheep again.",
+      },
+      {
+        prompt: "Ntiwemera k’ (that) ukora nabi? Ego, sinzosubīra.",
+        answer: "Don't you admit that you work badly? Yes, I won't do it again.",
+      },
+      {
+        prompt: "Ngomba kubaza umwigisha izina ryiwe, ariko mfise ubwoba.",
+        answer: "I want to ask the teacher his name, but I am afraid.",
+      },
+      {
+        prompt: "Abana bariko barasaba abavyeyi babo kugura imbwa.",
+        answer: "The children are asking their parents to buy a dog.",
+      },
+      {
+        prompt: "Umugabo abika impuzu ziwe nziza mw isandugu yiwe.",
+        answer: "The man stores his fine clothes in his box.",
+      },
+      {
+        prompt: "Shira ibitabo n’imbaho mw isandugu.",
+        answer: "Put the books and slates in the box.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The water (insert “yo”) in the river is bad; we will look again for water.",
+        answer: "Amazi yo mu ruzi ni mabi; tuzosubira kurondera amazi.",
+      },
+      {
+        prompt: "I am asking all the boys to bring their books tomorrow; perhaps they will remember.",
+        answer: "Ndasaba abahungu bose kuzana ibitabo vyabo ejo; kumbure bazokwibuka.",
+      },
+      {
+        prompt: "The boy’s parents are returning to their home, but he (ariko we) is staying at school.",
+        answer: "Abavyeyi b’umuhungu barasubira i wabo, ariko we aguma mw ishuli.",
+      },
+      {
+        prompt: "Ask again for three more books.",
+        answer: "Subira gusaba ibindi bitabo bitatu.",
+      },
+      {
+        prompt: "Put five other slates in the box.",
+        answer: "Shira izindi mbaho zitanu mw isandugu.",
+      },
+      {
+        prompt: "I want to hear again the words of the Savior.",
+        answer: "Ngomba gusubira kumva amajambo y’Umukiza.",
+      },
+      {
+        prompt: "Ask the new teacher his name. I can’t; I don’t speak his language.",
+        answer: "Baza umwigisha mushasha izina ryiwe. Sinshobora; sivuga ururimi rwiwe.",
+      },
+      {
+        prompt: "The teacher does not praise his pupils, because they work badly.",
+        answer: "Umwigisha ntiyishima abigishwa biwe, kuko bakora nabi.",
+      },
+      {
+        prompt: "When will you pay the workmen? I’ll ask the teacher.",
+        answer: "Uzohemba ryari abanyakazi? Nzobaza umwigisha.",
+      },
+      {
+        prompt: "Where are the tools? I don’t remember, perhaps they are in the box.",
+        answer: "Ibikoresho biri hehe? Sinkibuka, kumbure biri mw isandugu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 44: Some verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

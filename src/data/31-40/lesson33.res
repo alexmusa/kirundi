@@ -163,10 +163,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Hano ni habi cane.",
+        answer: "Here it is very bad (or, it is a very bad place here).",
+      },
+      {
+        prompt: "Kubura hasi n’ingoga.",
+        answer: "Sweep the floor quickly.",
+      },
+      {
+        prompt: "Haza abantu benshi mw ishuli.",
+        answer: "There come many people in the school.",
+      },
+      {
+        prompt: "Hariya ni hanini.",
+        answer: "That place over there is large.",
+      },
+      {
+        prompt: "Mbega harih’ ibiharage vyinshi? Ego, biriho.",
+        answer: "Are there many beans? Yes, there are.",
+      },
+      {
+        prompt: "Umukiza akiza abantu ivyaha vyabo.",
+        answer: "The Savior saves people from their sins.",
+      },
+      {
+        prompt: "Har’ ibiharage vyinshi hasi mu rugo.",
+        answer: "There are many beans on the ground in the yard.",
+      },
+      {
+        prompt: "Ngomba kuguma i wacu, singomba kugenda i Gitega.",
+        answer: "I want to stay at our place (home), I don't want to go to Gitega.",
+      },
+      {
+        prompt: "Tuzogenda kuba ahantu heza cane.",
+        answer: "We will go to live in a very nice place.",
+      },
+      {
+        prompt: "Abigishwa ntibakubura hasi mw ishuli uyu musi.",
+        answer: "The students are not sweeping the floor in the school today.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I don’t want to stay in a dirty place.",
+        answer: "Singomba kuguma ahantu habi.",
+      },
+      {
+        prompt: "Are there any bananas on the ground?",
+        answer: "Mbega harih’ ibitoke hasi?",
+      },
+      {
+        prompt: "Jesus likes to save people from their sins.",
+        answer: "Yezu akunda gukiza abantu ivyaha vyabo.",
+      },
+      {
+        prompt: "The boys are sweeping the floor.",
+        answer: "Abahungu barakubura hasi.",
+      },
+      {
+        prompt: "Outside it is very dirty; go to sweep the ground well.",
+        answer: "Inze ni habi cane; genda gukubura hasi neza.",
+      },
+      {
+        prompt: "I see a nice place over there.",
+        answer: "Mbona ahantu heza hariya.",
+      },
+      {
+        prompt: "Peter’s son will not go to Bujumbura.",
+        answer: "Umwana wa Petero ntazogenda i Bujumbura.",
+      },
+      {
+        prompt: "Are there (any) people in the church? Yes, there are many men and women and a few children.",
+        answer: "Mbega harih’ abantu mw ishengero? Ego, hariho abagabo benshi n’abagore n’abana bake.",
+      },
+      {
+        prompt: "In the morning there come a few workmen.",
+        answer: "Mu gitondo haza abakozi bake.",
+      },
+      {
+        prompt: "John has joy in his face.",
+        answer: "Yohana afise akanyamuneza mu maso hiwe.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 33: Class 10",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

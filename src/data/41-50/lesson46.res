@@ -185,10 +185,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Twese dushobora kunesha Satani mu nkomezi za Yesu.",
+        answer: "We all can defeat Satan in the strength of Jesus.",
+      },
+      {
+        prompt: "Mu rugo rwacu har’ abanyavyaha benshi, ariko Yesu afise inkomezi zo gukiza bose.",
+        answer: "In our home (kraal) there are many sinners, but Jesus has strength to save all.",
+      },
+      {
+        prompt: "Ngomba kugura ibindi biharage vyinshi, yamara simfise amafaranga menshi cane.",
+        answer: "I want to buy many other beans, but I do not have very much money.",
+      },
+      {
+        prompt: "Ubuyabo bungahe buri mu nzu yawe? Butatu buriho.",
+        answer: "How many keys are in your house? Three are there.",
+      },
+      {
+        prompt: "Urugo rwiwe ni runini cane, kandi ni rwiza.",
+        answer: "His kraal (home) is very large, and it is beautiful.",
+      },
+      {
+        prompt: "Umbabarire, sinshobora kuza i wanyu ubu, ariko nzoza uwundi musi.",
+        answer: "Excuse me (I'm sorry), I cannot come to your place now, but I will come another day.",
+      },
+      {
+        prompt: "Har’ imitima, bambe, imitsima ingahe ku meza?",
+        answer: "There are hearts, excuse me (I misspoke), how many loaves of bread on the table?",
+      },
+      {
+        prompt: "Umwana afise ubushe bubi ku kuguru.",
+        answer: "The child has a bad burn on the leg.",
+      },
+      {
+        prompt: "Ngomba kwandika ivyete cumi na bibiri uyu musi.",
+        answer: "I want to write twelve letters today.",
+      },
+      {
+        prompt: "Sinibuka neza ibitangaza vyose vya Yesu.",
+        answer: "I do not remember well all the miracles of Jesus.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The man has much faith; he will be saved.",
+        answer: "Umugabo afise ukwizera kwinshi; azokizwa.",
+      },
+      {
+        prompt: "Many sinners will be saved because they will hear the Word of God and will confess their sins and will believe Jesus.",
+        answer: "Abanyavyaha benshi bazokizwa kuko bazumva Ijambo ry'Imana kandi bazovyura ivyaha vyabo kandi bazokwizera Yesu.",
+      },
+      {
+        prompt: "I have only a little (= few) strength, but I like to work.",
+        answer: "Mfise inkomezi nkeyi gusa, ariko nkunda gukora.",
+      },
+      {
+        prompt: "Jesus will help his people to defeat Satan and sin.",
+        answer: "Yesu azofasha abantu biwe kunesha Satani n'icaha.",
+      },
+      {
+        prompt: "The rich man has many houses in his kraal; and he has eighty-four cows.",
+        answer: "Umutunzi afise amazu menshi mu rugo rwiwe; kandi afise inka mirongo umunani na zine.",
+      },
+      {
+        prompt: "How many little stones (use dimin.) do you have? I have thirty-six. Look for (some) more.",
+        answer: "Udubuye tungahe ufise? Mfise mirongo itatu na dutandatu. Rondera utundi.",
+      },
+      {
+        prompt: "Our friends are washing their feet in the river.",
+        answer: "Abagenzi bacu bariko bamesa ibirenge vyabo mu ruzi.",
+      },
+      {
+        prompt: "Write all the names of the pupils in my book.",
+        answer: "Andika amazina yose y'abatohoza mu gitabo canje.",
+      },
+      {
+        prompt: "We have much peace and joy because Jesus conquers sin.",
+        answer: "Tufise amahoro menshi n'akanyamuneza kuko Yesu anesha icaha.",
+      },
+      {
+        prompt: "How many people are in our new big church?",
+        answer: "Abantu bangahe bari mw'ishengero ryacu rishasha rinini?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 46: Adjective Chart",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

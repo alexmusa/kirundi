@@ -117,10 +117,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Haza abandi bagabo batandatu.",
+        answer: "Six other men are coming.",
+      },
+      {
+        prompt: "Abahungu bose ntibafise imbaho. Tugomba izindi cumi na zitatu.",
+        answer: "All the boys do not have slates. We want thirteen more.",
+      },
+      {
+        prompt: "Umwigeme afise ibikomere bibiri ku kuguru n’ikindi ku kuboko.",
+        answer: "The girl has two ulcers on the leg and another on the arm.",
+      },
+      {
+        prompt: "Genda kurondera ibindi bijumbu vyinshi.",
+        answer: "Go look for many more sweet potatoes.",
+      },
+      {
+        prompt: "Nzohemba abanyakazi uwundi musi; s’uyu musi.",
+        answer: "I will pay the workmen another day; not today.",
+      },
+      {
+        prompt: "Abagenzi bacu bafise amarushwa menshi; ntibashobora gushika hano vuba; bazoza uwundi musi.",
+        answer: "Our friends have many troubles; they cannot arrive here soon; they will come another day.",
+      },
+      {
+        prompt: "Amazi yo mu ruzi ni make; tuzogenda kwoga ahandi.",
+        answer: "The water in the river is little; we will go to swim elsewhere.",
+      },
+      {
+        prompt: "Petero azorondera akazi ahandi uwundi mwaka.",
+        answer: "Peter will look for work elsewhere another year.",
+      },
+      {
+        prompt: "Sinshobora kuza i wanyu uyu musi; mugabo nzoza ikindi gihe.",
+        answer: "I cannot come to your place today; but I will come another time.",
+      },
+      {
+        prompt: "Muzogura ayandi magi ryari?",
+        answer: "When will you (pl.) buy other eggs?",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The poor man has (only) few francs and he has many other troubles.",
+        answer: "Umukene afise amafaranga make gusa kandi afise ayandi marushwa menshi.",
+      },
+      {
+        prompt: "We will help the girls another time.",
+        answer: "Tuzofasha abigeme ikindi gihe.",
+      },
+      {
+        prompt: "A friend likes to help other people (at) all times.",
+        answer: "Umugenzi akunda gufasha abandi bantu mu bihe vyose.",
+      },
+      {
+        prompt: "The teacher is looking for many more pupils.",
+        answer: "Umwigisha arondera abandi banyeshure benshi.",
+      },
+      {
+        prompt: "We want to hear the Word of God today. Perhaps (kumbure) we shall not receive another opportunity.",
+        answer: "Tugomba kumva Ijambo ry'Imana uyu musi. Kumbure ntituzoronka ikindi gihe.",
+      },
+      {
+        prompt: "I don’t like your hat; can’t you get another?",
+        answer: "Sinkunda ingofero yawe; ntushobora kurondera iyindi?",
+      },
+      {
+        prompt: "You (sing.) can pay five workmen today; you will pay the others another month.",
+        answer: "Ushobora guhemba abanyakazi batanu uyu musi; uzohemba abandi uwundi kwezi.",
+      },
+      {
+        prompt: "Find (look for) another cat, because we have a lot of rats.",
+        answer: "Rondera akandi kayabo, kuko dufise imbeba nyinshi.",
+      },
+      {
+        prompt: "The teacher is going to Bujumbura to buy (some) more song books (= books of songs).",
+        answer: "Umwigisha agira i Bujumbura kugura ibindi bitabo vy'indirimbo.",
+      },
+      {
+        prompt: "The shepherd has 99 sheep, but he is looking for the other one.",
+        answer: "Umwungeri afise intama mirongo icenda n'icenda, mugabo arondera iyindi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 43: –ndi",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

@@ -85,10 +85,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Abigeme bariko baramesura impuzu zabo mu ruzi.",
+        answer: "The girls are washing their clothes in the river.",
+      },
+      {
+        prompt: "Genda gukaraba neza.",
+        answer: "Go wash (your) hands well.",
+      },
+      {
+        prompt: "Abahungu bazokwoza hasi mw ishuli ejo mu gitondo.",
+        answer: "The boys will wash the floor in the school tomorrow morning.",
+      },
+      {
+        prompt: "Ukwiyuhagira cane gushobora gufasha umuntu kwanka indwara.",
+        answer: "Bathing often can help a person avoid illness.",
+      },
+      {
+        prompt: "Abana bato bashobora kwigishwa kwiyoga neza imisi yose.",
+        answer: "Small children can be taught to wash themselves well every day.",
+      },
+      {
+        prompt: "Ronga neza ibijumbu, maze ndateka inyama n’ibijumbu.",
+        answer: "Wash the sweet potatoes well, then I will cook the meat and the sweet potatoes.",
+      },
+      {
+        prompt: "Abigishwa bigishwa kwoga mu ruzi.",
+        answer: "The students are taught to swim in the river.",
+      },
+      {
+        prompt: "Mushobora kuzana amazi menshi kukw abana bagomba kwiyuhagira.",
+        answer: "You (pl.) can bring much water because the children want to bathe.",
+      },
+      {
+        prompt: "Ibuka kumesura impuzu mbi zose.",
+        answer: "Remember to wash all the dirty (bad) clothes.",
+      },
+      {
+        prompt: "Ejo uzokwambara impuzu nziza.",
+        answer: "Tomorrow you will wear good clothes.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Wash all my clothes today.",
+        answer: "Mesura impuzu zanje zose uyu musi.",
+      },
+      {
+        prompt: "I do not want cold (-bisi) water; I want to take a bath.",
+        answer: "Sishaka amazi mabisi; ngomba kwiyuhagira.",
+      },
+      {
+        prompt: "Wash the floor well in the whole house today.",
+        answer: "Oza neza hasi mu nzu yose uyu musi.",
+      },
+      {
+        prompt: "You (pl.) can remember to wash (your) hands well every day.",
+        answer: "Mushobora kwibuka gukaraba neza imisi yose.",
+      },
+      {
+        prompt: "When will you (pl.) wash all the tables in the school?",
+        answer: "Muzokwoza ryari ameza yose mw ishuli?",
+      },
+      {
+        prompt: "The boys like to swim in the river.",
+        answer: "Abahungu bakunda kwoga mu ruzi.",
+      },
+      {
+        prompt: "The girls are washing all the peas and beans in clean water.",
+        answer: "Abigeme bariko bararonga amashaza n’ibiharage mu mazi meza.",
+      },
+      {
+        prompt: "Cats don’t wash in water.",
+        answer: "Injangwe ntiziyoga mu mazi.",
+      },
+      {
+        prompt: "Do you wash your face in the morning every day?",
+        answer: "Mbega wiyoga mu maso mu gitondo imisi yose?",
+      },
+      {
+        prompt: "Wash all the dirty dishes now.",
+        answer: "Oza amasahane mabi yose ubu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 42: \u201CTo wash\u201D",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

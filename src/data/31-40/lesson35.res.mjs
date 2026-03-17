@@ -324,24 +324,116 @@ let Content = {
   make: Lesson35$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umuntu yizera Imana azoronka umugisha.",
+        answer: "The person who trusts God will receive a blessing."
+      },
+      {
+        prompt: "Abana bigishwa neza mw ishuli.",
+        answer: "The children are taught well in school."
+      },
+      {
+        prompt: "Umukobwa arikw arihana ivyaha vyiwe.",
+        answer: "The girl is repenting of her sins."
+      },
+      {
+        prompt: "Umwigisha yigisha abana benshi gusoma no kwandika.",
+        answer: "The teacher teaches many children to read and write."
+      },
+      {
+        prompt: "Ngomba kwereka abigishwa Igitabo c’Imana.",
+        answer: "I want to show the students the Book of God."
+      },
+      {
+        prompt: "Umwigisha arikw arafasha abana kwandika.",
+        answer: "The teacher is helping the children to write."
+      },
+      {
+        prompt: "Abana bariko barereka abavyeyi babo impuzu zabo.",
+        answer: "The children are showing their parents their clothes."
+      },
+      {
+        prompt: "Umuhungu w’umutama yigishwa n’ingoga indirimbo nsha.",
+        answer: "The son of the old man is being taught the new song quickly."
+      },
+      {
+        prompt: "Igitabo c’Imana cigisha abantu urukundo n’ukwizera.",
+        answer: "The Book of God teaches people love and trust."
+      },
+      {
+        prompt: "Ntitugomba kugenda ubu kuko turiko turandika ivyete.",
+        answer: "We do not want to go now because we are writing letters."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boys write well but they do not read well.",
+        answer: "Abahungu bāndika neza ariko ntibasoma neza."
+      },
+      {
+        prompt: "The bad man is confessing his sins; he will receive the blessing of God and joy in his heart.",
+        answer: "Umuntu mubi ariko arihana ivyaha vyiwe; azoronka umugisha w'Imana n'akanyamuneza mu mutima wiwe."
+      },
+      {
+        prompt: "I believe the Word of God and I want to teach many people to trust God.",
+        answer: "Nizera Ijambo ry'Imana kandi ngomba kwigisha abantu benshi kwizera Imana."
+      },
+      {
+        prompt: "Our Savior, Jesus, will save bad people. They will receive new hearts.",
+        answer: "Umukiza wacu, Yesu, azokiza abantu babi. Bazoronka imitima mishasha."
+      },
+      {
+        prompt: "His repentance is good.",
+        answer: "Ukwihana kwiwe ni kwiza."
+      },
+      {
+        prompt: "Do you (sing.) trust the Savior? He wants to show people His love.",
+        answer: "Wīzera Umukiza? Agomba kwereka abantu urukundo rwiwe."
+      },
+      {
+        prompt: "The love of God shows people the good way.",
+        answer: "Urukundo rw'Imana rwēreka abantu inzira nziza."
+      },
+      {
+        prompt: "Do you (pl.) write letters in school?",
+        answer: "Mwāndika ivyete mw ishuli?"
+      },
+      {
+        prompt: "Parents teach their children to do well.",
+        answer: "Abavyeyi bīgisha abana babo gukora neza."
+      },
+      {
+        prompt: "We are learning to sing (some) nice new songs.",
+        answer: "Turiko turigishwa kuririmba indirimbo nsha nziza."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson35$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 35: Vowel-stem Verbs",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

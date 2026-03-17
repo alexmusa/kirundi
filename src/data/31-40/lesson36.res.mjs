@@ -195,24 +195,116 @@ let Content = {
   make: Lesson36$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Umuvyeyi ntiyanka gufasha abana biwe.",
+        answer: "The parent doesn't refuse to help his (or her) children."
+      },
+      {
+        prompt: "Abagabo bazokwubaka ishuli ejo.",
+        answer: "The men will build the school tomorrow."
+      },
+      {
+        prompt: "Abagore bazokwemera gukora neza mu mirima y’abagabo babo.",
+        answer: "The women will agree to work well in the gardens of their husbands."
+      },
+      {
+        prompt: "Ntituzokwibagira kuzana ibijumbu vyacu ejo.",
+        answer: "We shall not forget to bring our sweet potatoes tomorrow."
+      },
+      {
+        prompt: "Aboro ntibambara impuzu nziza kandi ntibafise amafaranga menshi.",
+        answer: "Poor people do not wear good clothes and they do not have much money."
+      },
+      {
+        prompt: "Impene ntizambara impuzu, ariko zifise ubwoya.",
+        answer: "Goats do not wear clothes, but they have hair (or fur)."
+      },
+      {
+        prompt: "Tuzokwubaka inzu nshasha i wacu.",
+        answer: "We shall build a new house at our place."
+      },
+      {
+        prompt: "Mbega muzokwambara impuzu zanyu nziza ku musi mukuru?",
+        answer: "Will you (pl.) wear your good clothes on the holiday?"
+      },
+      {
+        prompt: "Abana ntibibuka neza indirimbo nshasha.",
+        answer: "The children do not remember the new song well."
+      },
+      {
+        prompt: "Abigishwa ntibazokwandika ivyete vuba, kuko bazobanza kwigishwa gusoma.",
+        answer: "The pupils will not write letters soon, because they will first be taught to read."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The king’s men will build his new house soon.",
+        answer: "Abagabo b'umwami bazokwubaka inzu yiwe nshasha vuba."
+      },
+      {
+        prompt: "You (sing.) will not forget to come to get your books today.",
+        answer: "Ntuzokwibagira kuza kuronka ibitabo vyawe uyu musi."
+      },
+      {
+        prompt: "The boys agree to go to Gitega to buy their things.",
+        answer: "Abahungu baremera kuja i Gitega kugura ibintu vyabo."
+      },
+      {
+        prompt: "The rich man refuses to work in his garden.",
+        answer: "Umutunzi aranka gukora mu murima wiwe."
+      },
+      {
+        prompt: "You (pl.) will remember to come to school tomorrow morning.",
+        answer: "Muzokwibuka kuza kw'ishuli ejo mu gitondo."
+      },
+      {
+        prompt: "I am not willing to bring my slate, because we have slates at school.",
+        answer: "Sinemera kuzana urubaho rwanje, kuko dufise imibaho kw'ishuli."
+      },
+      {
+        prompt: "God’s people will build a new school soon.",
+        answer: "Abantu b'Imana bazokwubaka ishuli nshasha vuba."
+      },
+      {
+        prompt: "Do sheep refuse to go in the path?",
+        answer: "Mbega intama ziranka kuja mu nzira?"
+      },
+      {
+        prompt: "Will you (sing.) remember the good words of your teacher?",
+        answer: "Uzokwibuka amajambo meza y'umwigisha wawe?"
+      },
+      {
+        prompt: "The poor man will not repent of his sins because he is afraid (= has fear).",
+        answer: "Umworo ntazokwigaya ivyaha vyiwe kuko afise ubwoba."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson36$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 36: Far Future and Present Negative of Vowel-stem Verbs",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

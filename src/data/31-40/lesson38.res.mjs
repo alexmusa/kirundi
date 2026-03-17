@@ -230,24 +230,149 @@ let Content = {
   make: Lesson38$Content
 };
 
+let quizData = [
+  {
+    title: "Vocabulary",
+    questions: [
+      {
+        prompt: "urusengero",
+        answer: "church"
+      },
+      {
+        prompt: "guharūra",
+        answer: "to count"
+      },
+      {
+        prompt: "umwaka",
+        answer: "year"
+      },
+      {
+        prompt: "gufata",
+        answer: "to take hold of, catch, seize"
+      },
+      {
+        prompt: "umunyakazi",
+        answer: "workman"
+      },
+      {
+        prompt: "kwinjira",
+        answer: "to enter"
+      },
+      {
+        prompt: "imbeba",
+        answer: "rat, mouse"
+      }
+    ]
+  },
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Harūra abahungu bari mw ishuli.",
+        answer: "Count the boys who are in the school."
+      },
+      {
+        prompt: "Harih’ abahungu ijana na mirongwitatu na batanu.",
+        answer: "There are one hundred thirty-five boys."
+      },
+      {
+        prompt: "Abagabo n’abagore mirongwibiri na babiri bariko barinjira mu rusengero.",
+        answer: "Twenty-two men and women are entering the church."
+      },
+      {
+        prompt: "Akayabo kanini gafata imbeba zibiri.",
+        answer: "The big cat catches two rats."
+      },
+      {
+        prompt: "Tuzoguma hano gukora imyaka itatu.",
+        answer: "We will stay here to work three years."
+      },
+      {
+        prompt: "Abagabo bariko barazana amabuye amajana atatu na mirongwirindwi n’umunani.",
+        answer: "The men are bringing three hundred seventy-eight stones."
+      },
+      {
+        prompt: "Inzu y’umutunzi ifise inzugi cumi na rumwe.",
+        answer: "The rich man's house has eleven doors."
+      },
+      {
+        prompt: "Tugomba amasuka mirongibiri n’indwi, kukw abakozi benshi baraza.",
+        answer: "We want twenty-seven hoes because many workers are coming."
+      },
+      {
+        prompt: "Muzogura inyama z’amafaranga amajana abiri na mirongwine n’atanu.",
+        answer: "You will buy meat for two hundred forty-five francs."
+      },
+      {
+        prompt: "Abigishwa mw ishuli ryacu n’amajana atanu na mirongwicenda na batandatu.",
+        answer: "The pupils in our school are five hundred ninety-six."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Fifteen workmen are coming to build the house today.",
+        answer: "Abanyakazi cumi na batanu baraza kwubaka inzu uyu musi."
+      },
+      {
+        prompt: "The rich man has forty-three cows, and many goats.",
+        answer: "Umutunzi afise inka mirongwine na zitatu, n'ihene nyinshi."
+      },
+      {
+        prompt: "We have four cats; they will catch many rats.",
+        answer: "Tufise utuyabo tune; tuzogafata imbeba nyinshi."
+      },
+      {
+        prompt: "There are thirty-six trees in the teacher’s field.",
+        answer: "Harih’ ibiti mirongwitatu na bitandatu mu murima w’umwigisha."
+      },
+      {
+        prompt: "The boys write on slates in school. They have fifty-one (slates).",
+        answer: "Abahungu barandika ku bisate mw ishuli. Bafise mirongwitanu na kimwe."
+      },
+      {
+        prompt: "Buy eighty-four eggs.",
+        answer: "Gura amagi mirongumunani n'ane."
+      },
+      {
+        prompt: "There are twelve sheep in our field.",
+        answer: "Harih’ intama cumi na zibiri mu murima wacu."
+      },
+      {
+        prompt: "The poor man has a debt of 465 francs. (write out number)",
+        answer: "Umukene afise umwenda w’amafaranga amajana ane na mirongwitandatu na batanu."
+      },
+      {
+        prompt: "Sixty-six workmen will build the church.",
+        answer: "Abanyakazi mirongwitandatu na batandatu bazowubaka urusengero."
+      },
+      {
+        prompt: "The boys will learn in school seventeen years.",
+        answer: "Abahungu bazokwigira mw ishuli imyaka cumi n'indwi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson38$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 38: Higher Numbers",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

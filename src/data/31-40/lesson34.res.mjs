@@ -582,24 +582,149 @@ let Content = {
   make: Lesson34$Content
 };
 
+let quizData = [{
+    title: "I. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "His good dog",
+        answer: "Imbwa yiwe nziza"
+      },
+      {
+        prompt: "Our new books",
+        answer: "Ibitabo vyacu bishasha"
+      },
+      {
+        prompt: "A little boy",
+        answer: "Umuhungu muto"
+      },
+      {
+        prompt: "Cold (fresh) milk",
+        answer: "Amata mashasha"
+      },
+      {
+        prompt: "Where is their big garden?",
+        answer: "Umurima wabo munini uri he?"
+      },
+      {
+        prompt: "God’s Son",
+        answer: "Umwana w'Imana"
+      },
+      {
+        prompt: "The teacher’s goat",
+        answer: "Impene y'umwigisha"
+      },
+      {
+        prompt: "A long river",
+        answer: "Uruzi rure-re"
+      },
+      {
+        prompt: "The grace of God",
+        answer: "Ubuntu bw'Imana"
+      },
+      {
+        prompt: "The sheep are here",
+        answer: "Intama ziri hano"
+      },
+      {
+        prompt: "Much wind",
+        answer: "Umuyaga mwinshi"
+      },
+      {
+        prompt: "Deep holes",
+        answer: "Ibinogo bire-re"
+      },
+      {
+        prompt: "Our Savior",
+        answer: "Umukiza wacu"
+      },
+      {
+        prompt: "The boy’s chairs",
+        answer: "Intebe z'umuhungu"
+      },
+      {
+        prompt: "God’s people",
+        answer: "Abantu b'Imana"
+      },
+      {
+        prompt: "A short bed",
+        answer: "Uburiri bugufi"
+      },
+      {
+        prompt: "The boat is on the river",
+        answer: "Ubwato buri ku ruzi"
+      },
+      {
+        prompt: "Good meat",
+        answer: "Inyama nziza"
+      },
+      {
+        prompt: "My nice cat",
+        answer: "Injangwe yanje nziza"
+      },
+      {
+        prompt: "Many words",
+        answer: "Amajambo menshi"
+      },
+      {
+        prompt: "New hearts",
+        answer: "Imitima mishasha"
+      },
+      {
+        prompt: "The poor man’s many debts",
+        answer: "Amadeni menshi y'umukene"
+      },
+      {
+        prompt: "My eyes",
+        answer: "Amaso yanje"
+      },
+      {
+        prompt: "Your (sing.) long fingers",
+        answer: "Intoke zawe ndere-re"
+      },
+      {
+        prompt: "God’s mercy and grace",
+        answer: "Ikigongwe n'ubuntu bw'Imana"
+      },
+      {
+        prompt: "Good seeds are in the garden",
+        answer: "Imbuto nziza ziri mu murima"
+      },
+      {
+        prompt: "Our many bad sins",
+        answer: "Ibicumuro vyacu vyinshi bibi"
+      },
+      {
+        prompt: "Sour (pl.) parents",
+        answer: "Abavyeyi bakaze"
+      },
+      {
+        prompt: "The love of Jesus",
+        answer: "Urukundo rwa Yezu"
+      },
+      {
+        prompt: "The girl’s mat",
+        answer: "Ikirago c'umwigeme"
+      }
+    ]
+  }];
+
 let l_content = JsxRuntime.jsx(Lesson34$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 34: Chart of the Classes",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */
