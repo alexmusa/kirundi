@@ -63,7 +63,7 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
     <div className="max-w-md mx-auto w-full">
       {switch gameState {
       | Playing =>
-        let ctx = currentQuestion->Option.getExn
+        let ctx = currentQuestion->Option.getOrThrow
         let correctAnswer = ctx.question.answer
 
         <div 
@@ -98,10 +98,7 @@ let make = (~questions: array<contextualQuestion>, ~onBack) => {
               <button
                 key={opt}
                 disabled={hasAnswered}
-                onClick={e => {
-                  ReactEvent.Mouse.stopPropagation(e) // Prevent triggering the card's handleNext
-                  handleAnswer(opt)
-                }}
+                onClick={_ => handleAnswer(opt)}
                 className={`w-full text-left p-4 rounded-xl border-2 transition-all font-medium ${buttonStyles}`}>
                 {React.string(opt)}
               </button>

@@ -4,8 +4,6 @@ external rescript: string = "default"
 @module("./assets/vite.svg")
 external vite: string = "default"
 
-open Webapi.Dom
-
 type screen = MainMenu | LessonView | Settings | Flashcards | PracticeQuiz
 
 let getCompletedVocab = (lessons: array<LessonTypes.lesson>, maxIdx) => {
@@ -76,7 +74,7 @@ let make = () => {
   }
 
   let handleReset = _ => {
-    let confirm = window->Window.confirm(
+    let confirm = Webapi.Dom.window->Webapi.Dom.Window.confirm(
       "Are you sure you want to reset all progress? This cannot be undone.",
     )
     if confirm {

@@ -2,6 +2,7 @@
 
 import * as SRS from "./SRS.res.mjs";
 import * as React from "react";
+import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
 import * as Belt_MapString from "@rescript/runtime/lib/es6/Belt_MapString.js";
 import * as JsxRuntime from "react/jsx-runtime";
@@ -14,31 +15,38 @@ function Flashcards$SRSButton(props) {
   });
 }
 
+function serializeStats(map) {
+  return Belt_Option.getWithDefault(JSON.stringify(Belt_MapString.toArray(map)), "{}");
+}
+
 function Flashcards(props) {
   let onBack = props.onBack;
   let vocabulary = props.vocabulary;
+  let localStorageKey = "srs-stats-v1";
   let match = React.useState(() => {
-    Dom_storage.getItem("srs-stats-v1", localStorage);
+    let json = Dom_storage.getItem(localStorageKey, localStorage);
+    if (json !== undefined) {
+      try {
+        return Belt_MapString.fromArray(JSON.parse(json));
+      } catch (exn) {
+        return;
+      }
+    }
   });
   let setStatsMap = match[1];
   let statsMap = match[0];
   let match$1 = React.useState(() => {
     let now = Date.now();
-    return vocabulary.map(param => {
-      let k = param[0];
-      let stats = Belt_MapString.getWithDefault(statsMap, k, SRS.defaultStats);
+    return vocabulary.filter(param => {
+      let stats = Belt_MapString.getWithDefault(statsMap, param[0], SRS.defaultStats);
       let dueTime = stats.lastReviewed + stats.interval * 86400000.0;
-      return {
-        kirundi: k,
-        english: param[1],
-        isReversed: Math.random() > 0.5,
-        isDue: now >= dueTime
-      };
-    }).toSorted((a, b) => (
-      a.isDue ? -1.0 : 1.0
-    ) - (
-      b.isDue ? -1.0 : 1.0
-    ));
+      return now >= dueTime;
+    }).map(param => ({
+      kirundi: param[0],
+      english: param[1],
+      isReversed: Math.random() > 0.5,
+      isDue: true
+    }));
   });
   let deck = match$1[0];
   let match$2 = React.useState(() => 0);
@@ -58,6 +66,7 @@ function Flashcards(props) {
     let newStats = SRS.calculateNextReview(currentStats, result);
     let newMap = Belt_MapString.set(statsMap, currentCard.kirundi, newStats);
     setStatsMap(param => newMap);
+    Dom_storage.setItem(localStorageKey, serializeStats(newMap), localStorage);
     setIsFlipped(param => false);
     setTimeout(() => setCurrentIndex(prev => prev + 1 | 0), 200);
   };

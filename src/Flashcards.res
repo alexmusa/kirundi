@@ -20,34 +20,53 @@ module SRSButton = {
   }
 }
 
+// Helper to convert the Map to a JSON string
+let serializeStats = (map: cardStatsMap) => {
+  map
+  ->Belt.Map.String.toArray
+  ->JSON.stringifyAny
+  ->Belt.Option.getWithDefault("{}")
+}
+
+// Helper to parse the JSON string back into a Map
+let deserializeStats = (jsonString: string): cardStatsMap => {
+  try {
+    let parsed = JSON.parseOrThrow(jsonString)
+    // We assume the data is an array of (string, stats) tuples
+    let arr: array<(string, SRS.stats)> = Obj.magic(parsed) 
+    Belt.Map.String.fromArray(arr)
+  } catch {
+  | _ => Belt.Map.String.empty
+  }
+}
+
 @react.component
 let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
   let localStorageKey = "srs-stats-v1"
 
-  // 1. Load Stats from LocalStorage
+  // 1. Load Stats from LocalStorage on mount
   let (statsMap, setStatsMap) = React.useState(() => {
     switch Dom.Storage.getItem(localStorageKey, Dom.Storage.localStorage) {
-    | Some(json) => /* In a real app, use a JSON parser here. For brevity, returning empty map */ 
-      Belt.Map.String.empty
+    | Some(json) => deserializeStats(json)
     | None => Belt.Map.String.empty
     }
   })
 
-  // 2. Filter and Sort the Deck (Due cards first)
-  let (deck, setDeck) = React.useState(_ => {
-    let now = Js.Date.now()
+  // 2. Filter the Deck (Showing only due cards)
+  let (deck, _) = React.useState(_ => {
+    let now = Date.now()
     vocabulary
-    ->Array.map(((k, e)) => {
+    ->Array.filter(((k, _)) => {
       let stats = statsMap->Belt.Map.String.getWithDefault(k, SRS.defaultStats)
       let dueTime = stats.lastReviewed +. (stats.interval *. 86400000.0)
-      {
-        kirundi: k,
-        english: e,
-        isReversed: Math.random() > 0.5,
-        isDue: now >= dueTime,
-      }
+      now >= dueTime
     })
-    ->Array.toSorted((a, b) => (a.isDue ? -1.0 : 1.0) - (b.isDue ? -1.0 : 1.0)) // Put due cards at start
+    ->Array.map(((k, e)) => ({
+      kirundi: k,
+      english: e,
+      isReversed: Math.random() > 0.5,
+      isDue: true,
+    }))
   })
 
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
@@ -59,19 +78,25 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
       setIsFlipped(prev => !prev)
   }
 
+  // 3. Save to LocalStorage whenever stats change
   let handleReview = (result: SRS.reviewResult) => {
     switch currentCard {
     | Some(card) =>
-      // Calculate new stats
       let currentStats = statsMap->Belt.Map.String.getWithDefault(card.kirundi, SRS.defaultStats)
       let newStats = SRS.calculateNextReview(currentStats, result)
       
-      // Update State and Storage
       let newMap = statsMap->Belt.Map.String.set(card.kirundi, newStats)
+      
+      // Update State
       setStatsMap(_ => newMap)
-      // Dom.Storage.setItem(localStorageKey, serialize(newMap)) // Persistence logic
+      
+      // Persist to Disk
+      Dom.Storage.setItem(
+        localStorageKey, 
+        serializeStats(newMap), 
+        Dom.Storage.localStorage
+      )
 
-      // Move to next card
       setIsFlipped(_ => false)
       let _ = setTimeout(() => {
         setCurrentIndex(prev => prev + 1)

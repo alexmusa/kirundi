@@ -45,7 +45,7 @@ function PracticeQuiz(props) {
   };
   let tmp;
   if (match$2[0] === "Playing") {
-    let ctx = Stdlib_Option.getExn(currentQuestion, undefined);
+    let ctx = Stdlib_Option.getOrThrow(currentQuestion, undefined);
     let correctAnswer = ctx.question.answer;
     tmp = JsxRuntime.jsxs("div", {
       children: [
@@ -79,8 +79,7 @@ function PracticeQuiz(props) {
               children: opt,
               className: `w-full text-left p-4 rounded-xl border-2 transition-all font-medium ` + buttonStyles,
               disabled: hasAnswered,
-              onClick: e => {
-                e.stopPropagation();
+              onClick: param => {
                 let isCorrect = Stdlib_Option.mapOr(currentQuestion, false, c => c.question.answer === opt);
                 setSelectedChoice(param => opt);
                 if (isCorrect) {

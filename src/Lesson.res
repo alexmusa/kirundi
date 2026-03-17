@@ -1,9 +1,3 @@
-@module("react-dom/server")
-external renderToString: React.element => string = "renderToString"
-
-@module("react-dom/server")
-external renderToStaticMarkup: React.element => string = "renderToStaticMarkup"
-
 open LessonTypes
 
 let onDiscussWithGemini = (lesson: LessonTypes.lesson) => {
@@ -21,8 +15,7 @@ let onDiscussWithGemini = (lesson: LessonTypes.lesson) => {
   let url = "https://gemini.google.com/guided-learning?query=" ++ encodeURIComponent(prompt)
   
   // Open in new tab
-  open Webapi.Dom
-  window->Window.open_(~url, ~name="_blank", ~features="", ())->ignore
+  Webapi.Dom.window->Webapi.Dom.Window.open_(~url, ~name="_blank", ~features="", ())->ignore
 }
 
 module Vocabulary = {
