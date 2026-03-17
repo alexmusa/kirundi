@@ -31,31 +31,47 @@ let getContextualQuizzes : (array<LessonTypes.lesson>, int) => array<PracticeQui
 
 @react.component
 let make = () => {
-  let localStorageKey = "current-lesson-index"
+  let progressionKey = "max-lesson-reached"
+  let lastViewedKey = "last-viewed-lesson"
 
   // --- State ---
-  let (currentScreen, setCurrentScreen) = React.useState(_ => MainMenu)
-  let (selectedIdx, setSelectedIdx) = React.useState(() => {
-    switch Dom.Storage.getItem(localStorageKey, Dom.Storage.localStorage) {
-    | Some(value) => Belt.Int.fromString(value)->Belt.Option.getWithDefault(0)
+  // currentLessonIdx: What the user is looking at right now
+  let (currentLessonIdx, setCurrentLessonIdx) = React.useState(() => {
+    switch Dom.Storage.getItem(lastViewedKey, Dom.Storage.localStorage) {
+    | Some(v) => Belt.Int.fromString(v)->Belt.Option.getWithDefault(0)
     | None => 0
     }
   })
 
+  // lessonProgressionIdx: The furthest the user has ever gone
+  let (lessonProgressionIdx, setLessonProgressionIdx) = React.useState(() => {
+    switch Dom.Storage.getItem(progressionKey, Dom.Storage.localStorage) {
+    | Some(v) => Belt.Int.fromString(v)->Belt.Option.getWithDefault(0)
+    | None => 0
+    }
+  })
+
+  let (currentScreen, setCurrentScreen) = React.useState(_ => MainMenu)
   let totalLessons = Belt.Array.length(LessonData.lessons)
 
-  // Sync progress to LocalStorage
+  // --- Effects ---
   React.useEffect1(() => {
-    Dom.Storage.setItem(localStorageKey, Int.toString(selectedIdx), Dom.Storage.localStorage)
+    if currentLessonIdx > lessonProgressionIdx {
+      setLessonProgressionIdx(_ => currentLessonIdx)
+      Dom.Storage.setItem(progressionKey, Int.toString(currentLessonIdx), Dom.Storage.localStorage)
+    }
+    // Also save the "last viewed" for UX convenience
+    Dom.Storage.setItem(lastViewedKey, Int.toString(currentLessonIdx), Dom.Storage.localStorage)
     None
-  }, [selectedIdx])
+  }, [currentLessonIdx])
 
   // --- Handlers ---
-  let goToNext = () => setSelectedIdx(prev => Math.Int.min(prev + 1, totalLessons - 1))
-  let goToPrev = () => setSelectedIdx(prev => Math.Int.max(prev - 1, 0))
+  let goToNext = () => setCurrentLessonIdx(prev => Math.Int.min(prev + 1, totalLessons - 1))
+  let goToPrev = () => setCurrentLessonIdx(prev => Math.Int.max(prev - 1, 0))
+  
   let goToLessonId = (id) => {
     let id = Int.clamp(id, ~min=0, ~max=(totalLessons - 1))
-    setSelectedIdx(_ => id)
+    setCurrentLessonIdx(_ => id)
     setCurrentScreen(_ => LessonView)
   }
 
@@ -64,26 +80,29 @@ let make = () => {
       "Are you sure you want to reset all progress? This cannot be undone.",
     )
     if confirm {
-      Dom.Storage.removeItem(localStorageKey, Dom.Storage.localStorage)
-      setSelectedIdx(_ => 0)
+      Dom.Storage.removeItem(progressionKey, Dom.Storage.localStorage)
+      Dom.Storage.removeItem(lastViewedKey, Dom.Storage.localStorage)
+      setCurrentLessonIdx(_ => 0)
+      setLessonProgressionIdx(_ => 0)
       setCurrentScreen(_ => MainMenu)
     }
   }
 
   let handleChange = (event) => {
     let value = ReactEvent.Form.target(event)["value"]
-    setSelectedIdx(_ => Belt.Int.fromString(value)->Belt.Option.getWithDefault(0))
+    setCurrentLessonIdx(_ => Belt.Int.fromString(value)->Belt.Option.getWithDefault(0))
   }
 
-  // --- Main Render Logic ---
+  // --- Render ---
   switch currentScreen {
   | MainMenu =>
     <MainMenu
-      onStart={_ => setCurrentScreen(_ => LessonView)}
+      onStart={_ => goToLessonId(lessonProgressionIdx)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
       onFlashcards={_ => setCurrentScreen(_ => Flashcards)}
       onPracticeQuiz={_ => setCurrentScreen(_ => PracticeQuiz)}
-      lastLessonId=selectedIdx
+      lessonProgressionId=lessonProgressionIdx
+      lastLessonId=currentLessonIdx
       onLessonSelect=goToLessonId
     />
   | Settings => 
@@ -92,11 +111,11 @@ let make = () => {
       onReset={handleReset} 
     />
   | LessonView =>
-    switch Belt.Array.get(LessonData.lessons, selectedIdx) {
+    switch Belt.Array.get(LessonData.lessons, currentLessonIdx) {
     | Some(lesson) =>
       <Lesson.Container
         lesson
-        selectedIdx
+        selectedIdx=currentLessonIdx
         totalLessons
         onNext={goToNext}
         onPrev={goToPrev}
@@ -108,12 +127,12 @@ let make = () => {
     }
   | Flashcards =>
     <Flashcards
-      vocabulary={getCompletedVocab(LessonData.lessons, selectedIdx)}
+      vocabulary={getCompletedVocab(LessonData.lessons, lessonProgressionIdx)}
       onBack={_ => setCurrentScreen(_ => MainMenu)}
     />
   | PracticeQuiz =>
     <PracticeQuiz
-      questions={getContextualQuizzes(LessonData.lessons, selectedIdx)}
+      questions={getContextualQuizzes(LessonData.lessons, lessonProgressionIdx)}
       onBack={_ => setCurrentScreen(_ => MainMenu)}
     />
   }

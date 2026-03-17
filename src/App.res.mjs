@@ -35,58 +35,76 @@ function getContextualQuizzes(lessons, maxIdx) {
 }
 
 function App(props) {
-  let localStorageKey = "current-lesson-index";
-  let match = React.useState(() => "MainMenu");
-  let setCurrentScreen = match[1];
-  let match$1 = React.useState(() => {
-    let value = Dom_storage.getItem(localStorageKey, localStorage);
-    if (value !== undefined) {
-      return Belt_Option.getWithDefault(Belt_Int.fromString(value), 0);
+  let progressionKey = "max-lesson-reached";
+  let lastViewedKey = "last-viewed-lesson";
+  let match = React.useState(() => {
+    let v = Dom_storage.getItem(lastViewedKey, localStorage);
+    if (v !== undefined) {
+      return Belt_Option.getWithDefault(Belt_Int.fromString(v), 0);
     } else {
       return 0;
     }
   });
-  let setSelectedIdx = match$1[1];
-  let selectedIdx = match$1[0];
+  let setCurrentLessonIdx = match[1];
+  let currentLessonIdx = match[0];
+  let match$1 = React.useState(() => {
+    let v = Dom_storage.getItem(progressionKey, localStorage);
+    if (v !== undefined) {
+      return Belt_Option.getWithDefault(Belt_Int.fromString(v), 0);
+    } else {
+      return 0;
+    }
+  });
+  let setLessonProgressionIdx = match$1[1];
+  let lessonProgressionIdx = match$1[0];
+  let match$2 = React.useState(() => "MainMenu");
+  let setCurrentScreen = match$2[1];
   let totalLessons = LessonData.lessons.length;
   React.useEffect(() => {
-    Dom_storage.setItem(localStorageKey, selectedIdx.toString(), localStorage);
-  }, [selectedIdx]);
-  let goToNext = () => setSelectedIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
-  let goToPrev = () => setSelectedIdx(prev => Math.max(prev - 1 | 0, 0));
+    if (currentLessonIdx > lessonProgressionIdx) {
+      setLessonProgressionIdx(param => currentLessonIdx);
+      Dom_storage.setItem(progressionKey, currentLessonIdx.toString(), localStorage);
+    }
+    Dom_storage.setItem(lastViewedKey, currentLessonIdx.toString(), localStorage);
+  }, [currentLessonIdx]);
+  let goToNext = () => setCurrentLessonIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
+  let goToPrev = () => setCurrentLessonIdx(prev => Math.max(prev - 1 | 0, 0));
   let goToLessonId = id => {
     let id$1 = Stdlib_Int.clamp(0, totalLessons - 1 | 0, id);
-    setSelectedIdx(param => id$1);
+    setCurrentLessonIdx(param => id$1);
     setCurrentScreen(param => "LessonView");
   };
   let handleReset = param => {
     let confirm = window.confirm("Are you sure you want to reset all progress? This cannot be undone.");
     if (confirm) {
-      Dom_storage.removeItem(localStorageKey, localStorage);
-      setSelectedIdx(param => 0);
+      Dom_storage.removeItem(progressionKey, localStorage);
+      Dom_storage.removeItem(lastViewedKey, localStorage);
+      setCurrentLessonIdx(param => 0);
+      setLessonProgressionIdx(param => 0);
       return setCurrentScreen(param => "MainMenu");
     }
   };
   let handleChange = event => {
     let value = event.target.value;
-    setSelectedIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
+    setCurrentLessonIdx(param => Belt_Option.getWithDefault(Belt_Int.fromString(value), 0));
   };
-  switch (match[0]) {
+  switch (match$2[0]) {
     case "MainMenu" :
       return JsxRuntime.jsx(MainMenu.make, {
-        onStart: () => setCurrentScreen(param => "LessonView"),
+        onStart: () => goToLessonId(lessonProgressionIdx),
         onLessonSelect: goToLessonId,
         onSettings: () => setCurrentScreen(param => "Settings"),
-        lastLessonId: selectedIdx,
+        lessonProgressionId: lessonProgressionIdx,
+        lastLessonId: currentLessonIdx,
         onFlashcards: () => setCurrentScreen(param => "Flashcards"),
         onPracticeQuiz: () => setCurrentScreen(param => "PracticeQuiz")
       });
     case "LessonView" :
-      let lesson = Belt_Array.get(LessonData.lessons, selectedIdx);
+      let lesson = Belt_Array.get(LessonData.lessons, currentLessonIdx);
       if (lesson !== undefined) {
         return JsxRuntime.jsx(Lesson.Container.make, {
           lesson: lesson,
-          selectedIdx: selectedIdx,
+          selectedIdx: currentLessonIdx,
           totalLessons: totalLessons,
           onBack: () => setCurrentScreen(param => "MainMenu"),
           onSettings: () => setCurrentScreen(param => "Settings"),
@@ -104,12 +122,12 @@ function App(props) {
       });
     case "Flashcards" :
       return JsxRuntime.jsx(Flashcards.make, {
-        vocabulary: getCompletedVocab(LessonData.lessons, selectedIdx),
+        vocabulary: getCompletedVocab(LessonData.lessons, lessonProgressionIdx),
         onBack: param => setCurrentScreen(param => "MainMenu")
       });
     case "PracticeQuiz" :
       return JsxRuntime.jsx(PracticeQuiz.make, {
-        questions: getContextualQuizzes(LessonData.lessons, selectedIdx),
+        questions: getContextualQuizzes(LessonData.lessons, lessonProgressionIdx),
         onBack: () => setCurrentScreen(param => "MainMenu")
       });
   }

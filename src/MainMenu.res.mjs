@@ -8,6 +8,7 @@ function MainMenu(props) {
   let onPracticeQuiz = props.onPracticeQuiz;
   let onFlashcards = props.onFlashcards;
   let lastLessonId = props.lastLessonId;
+  let lessonProgressionId = props.lessonProgressionId;
   let onSettings = props.onSettings;
   let onLessonSelect = props.onLessonSelect;
   let onStart = props.onStart;
@@ -62,11 +63,11 @@ function MainMenu(props) {
     ]
   ];
   let isStarted = lastLessonId > 0;
-  let getLessonStyle = (n, currentId) => {
+  let getLessonStyle = (n, currentId, progressionId) => {
     let base = "flex items-center justify-center border rounded-lg text-sm font-medium transition-all";
     if (Primitive_object.equal(n, currentId)) {
       return base + ` bg-indigo-600 text-white border-indigo-600 shadow-md ring-2 ring-indigo-200 scale-105`;
-    } else if (Primitive_object.lessthan(n, currentId)) {
+    } else if (Primitive_object.lessequal(n, progressionId)) {
       return base + ` bg-gray-100 text-gray-400 border-gray-100 opacity-60 hover:bg-gray-200`;
     } else {
       return base + ` $base bg-white text-gray-600 border-gray-200 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-sm`;
@@ -189,7 +190,7 @@ function MainMenu(props) {
                 children: JsxRuntime.jsx("div", {
                   children: JsxRuntime.jsx("button", {
                     children: "Introduction",
-                    className: getLessonStyle(0, lastLessonId) + " p-4",
+                    className: getLessonStyle(0, lastLessonId, lessonProgressionId) + " p-4",
                     onClick: param => onLessonSelect(0)
                   }),
                   className: "grid grid-cols-2 sm:grid-cols-4 gap-2"
@@ -205,7 +206,7 @@ function MainMenu(props) {
                   children: JsxRuntime.jsx("div", {
                     children: Stdlib_Array.fromInitializer((param[1] - startNum | 0) + 1 | 0, i => startNum + i | 0).map(n => JsxRuntime.jsx("button", {
                       children: n.toString(),
-                      className: getLessonStyle(n, lastLessonId) + " aspect-square",
+                      className: getLessonStyle(n, lastLessonId, lessonProgressionId) + " aspect-square",
                       onClick: param => onLessonSelect(n)
                     }, n.toString())),
                     className: "grid grid-cols-5 sm:grid-cols-10 gap-2"

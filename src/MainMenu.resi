@@ -3,6 +3,7 @@ let make: (
   ~onStart: unit => unit,
   ~onLessonSelect: int => unit,
   ~onSettings: unit => unit,
+  ~lessonProgressionId: int,
   ~lastLessonId: int,
   ~onFlashcards: unit => unit,
   ~onPracticeQuiz: unit => unit,

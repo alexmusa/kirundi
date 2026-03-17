@@ -4,7 +4,8 @@
 let make = (
   ~onStart, 
   ~onLessonSelect: int => unit, 
-  ~onSettings, 
+  ~onSettings,
+  ~lessonProgressionId,
   ~lastLessonId,
   ~onFlashcards,
   ~onPracticeQuiz,
@@ -18,12 +19,12 @@ let make = (
   let isStarted = lastLessonId > 0
 
   // Helper to determine button styles based on progress
-  let getLessonStyle = (n, currentId) => {
+  let getLessonStyle = (n, currentId, progressionId) => {
     let base = "flex items-center justify-center border rounded-lg text-sm font-medium transition-all"
     if n == currentId {
       // Current Lesson: Highlighted
       base + ` bg-indigo-600 text-white border-indigo-600 shadow-md ring-2 ring-indigo-200 scale-105`
-    } else if n < currentId {
+    } else if n <= progressionId {
       // Previous Lessons: Greyed out
       base + ` bg-gray-100 text-gray-400 border-gray-100 opacity-60 hover:bg-gray-200`
     } else {
@@ -102,7 +103,7 @@ let make = (
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               <button
                 onClick={_ => onLessonSelect(0)}
-                className={getLessonStyle(0, lastLessonId) ++ " p-4"}>
+                className={getLessonStyle(0, lastLessonId, lessonProgressionId) ++ " p-4"}>
                 {React.string("Introduction")}
               </button>
             </div>
@@ -118,7 +119,7 @@ let make = (
                       <button
                         key={Int.toString(n)}
                         onClick={_ => onLessonSelect(n)}
-                        className={getLessonStyle(n, lastLessonId) ++ " aspect-square"}>
+                        className={getLessonStyle(n, lastLessonId, lessonProgressionId) ++ " aspect-square"}>
                         {React.string(Int.toString(n))}
                       </button>
                     )
