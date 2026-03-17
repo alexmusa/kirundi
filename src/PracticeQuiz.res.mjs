@@ -14,12 +14,14 @@ function PracticeQuiz(props) {
   let currentIndex = match[0];
   let match$1 = React.useState(() => 0);
   let setScore = match$1[1];
+  let score = match$1[0];
   let match$2 = React.useState(() => "Playing");
   let setGameState = match$2[1];
   let match$3 = React.useState(() => {});
   let setSelectedChoice = match$3[1];
   let selectedChoice = match$3[0];
   let shuffledQuestions = React.useMemo(() => Stdlib_Array.toShuffled(questions), [questions]);
+  let totalQuestions = shuffledQuestions.length;
   let currentQuestion = shuffledQuestions[currentIndex];
   let options = React.useMemo(() => {
     if (currentQuestion === undefined) {
@@ -33,10 +35,11 @@ function PracticeQuiz(props) {
     shuffledQuestions
   ]);
   let hasAnswered = Stdlib_Option.isSome(selectedChoice);
+  let progress = currentIndex / totalQuestions * 100.0;
   let handleNext = () => {
     if (hasAnswered) {
       setSelectedChoice(param => {});
-      if (currentIndex < (shuffledQuestions.length - 1 | 0)) {
+      if (currentIndex < (totalQuestions - 1 | 0)) {
         return setCurrentIndex(prev => prev + 1 | 0);
       } else {
         return setGameState(param => "Finished");
@@ -52,32 +55,29 @@ function PracticeQuiz(props) {
         JsxRuntime.jsxs("div", {
           children: [
             JsxRuntime.jsx("span", {
-              children: `Question ` + (currentIndex + 1 | 0).toString()
+              children: "Translate this phrase",
+              className: "text-xs font-bold text-slate-400 uppercase tracking-widest mb-4 block"
             }),
-            hasAnswered ? JsxRuntime.jsx("span", {
-                children: "Tap card to continue →",
-                className: "animate-pulse text-indigo-400"
-              }) : null
+            JsxRuntime.jsx("h2", {
+              children: ctx.question.prompt,
+              className: "text-3xl font-bold text-slate-800 leading-tight"
+            })
           ],
-          className: "mb-2 text-xs font-bold text-indigo-500 uppercase tracking-widest flex justify-between"
-        }),
-        JsxRuntime.jsx("h2", {
-          children: ctx.question.prompt,
-          className: "text-2xl font-bold text-gray-900 mb-8"
+          className: "bg-white rounded-2xl shadow-sm border border-slate-200 p-8 text-center"
         }),
         JsxRuntime.jsx("div", {
           children: options.map(opt => {
             let isSelected = Primitive_object.equal(selectedChoice, opt);
             let isCorrect = opt === correctAnswer;
             let isWrongSelection = isSelected && !isCorrect;
-            let buttonStyles = hasAnswered ? (
-                isCorrect ? "bg-green-500 border-green-500 text-white" : (
-                    isWrongSelection ? "bg-red-500 border-red-500 text-white animate-shake" : "bg-gray-50 border-gray-100 text-gray-400 opacity-50"
+            let stateClasses = hasAnswered ? (
+                isCorrect ? "bg-emerald-500 border-emerald-500 text-white shadow-lg shadow-emerald-200 scale-[1.02]" : (
+                    isWrongSelection ? "bg-rose-500 border-rose-500 text-white animate-shake" : "bg-slate-50 border-slate-100 text-slate-300 grayscale opacity-60"
                   )
-              ) : "bg-white border-gray-100 text-gray-700 hover:border-indigo-500";
+              ) : "bg-white border-slate-200 text-slate-700 hover:border-indigo-300 hover:bg-indigo-50 active:translate-y-0.5";
             return JsxRuntime.jsx("button", {
               children: opt,
-              className: `w-full text-left p-4 rounded-xl border-2 transition-all font-medium ` + buttonStyles,
+              className: `w-full text-left p-5 rounded-xl border-b-4 transition-all duration-200 font-semibold text-lg ` + stateClasses,
               disabled: hasAnswered,
               onClick: param => {
                 let isCorrect = Stdlib_Option.mapOr(currentQuestion, false, c => c.question.answer === opt);
@@ -89,46 +89,117 @@ function PracticeQuiz(props) {
             }, opt);
           }),
           className: "grid gap-3"
+        }),
+        JsxRuntime.jsx("div", {
+          children: JsxRuntime.jsx("button", {
+            children: currentIndex === (totalQuestions - 1 | 0) ? "Finish Quiz" : "Continue",
+            className: "w-full py-4 bg-slate-800 text-white rounded-xl font-bold text-lg shadow-xl hover:bg-slate-900 transition-transform active:scale-95",
+            onClick: param => handleNext()
+          }),
+          className: `transition-all duration-300 ` + (
+            hasAnswered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
+          )
         })
       ],
-      className: `bg-white rounded-3xl shadow-xl p-8 border-4 transition-all duration-300 ` + (
-        hasAnswered ? "cursor-pointer ring-4 ring-indigo-100" : "border-transparent"
-      ),
-      onClick: param => handleNext()
+      className: "space-y-6"
     });
   } else {
     tmp = JsxRuntime.jsxs("div", {
       children: [
+        JsxRuntime.jsx("div", {
+          children: JsxRuntime.jsxs("svg", {
+            children: [
+              JsxRuntime.jsx("path", {
+                d: "M22 11.08V12a10 10 0 1 1-5.93-9.14"
+              }),
+              JsxRuntime.jsx("path", {
+                d: "M22 4L12 14.01l-3-3"
+              })
+            ],
+            height: "40",
+            width: "40",
+            fill: "none",
+            stroke: "currentColor",
+            strokeWidth: "3",
+            viewBox: "0 0 24 24"
+          }),
+          className: "w-20 h-20 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6"
+        }),
         JsxRuntime.jsx("h2", {
-          children: "Quiz Complete!",
-          className: "text-2xl font-bold mb-2"
+          children: "Great work!",
+          className: "text-3xl font-black text-slate-900 mb-2"
         }),
         JsxRuntime.jsx("p", {
-          children: `Score: ` + match$1[0].toString() + `/` + shuffledQuestions.length.toString(),
-          className: "text-gray-600 mb-6"
+          children: `You got ` + score.toString() + ` out of ` + totalQuestions.toString() + ` right.`,
+          className: "text-slate-500 mb-8 text-lg font-medium"
         }),
         JsxRuntime.jsx("button", {
           children: "Return to Menu",
-          className: "w-full py-4 bg-indigo-600 text-white rounded-xl font-bold shadow-lg",
+          className: "w-full py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition-all",
           onClick: param => onBack()
         })
       ],
-      className: "p-8 text-center"
+      className: "bg-white rounded-3xl shadow-2xl p-10 text-center border border-slate-100"
     });
   }
   return JsxRuntime.jsxs("div", {
     children: [
-      JsxRuntime.jsx("button", {
-        children: "← Back to Menu",
-        className: "mb-8 text-indigo-600 font-medium flex items-center gap-2",
-        onClick: param => onBack()
+      JsxRuntime.jsx("header", {
+        children: JsxRuntime.jsxs("div", {
+          children: [
+            JsxRuntime.jsx("button", {
+              children: JsxRuntime.jsx("svg", {
+                children: JsxRuntime.jsx("path", {
+                  d: "M19 12H5M12 19l-7-7 7-7"
+                }),
+                height: "24",
+                width: "24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "2.5",
+                viewBox: "0 0 24 24"
+              }),
+              className: "p-2 hover:bg-slate-100 rounded-full transition-colors",
+              onClick: param => onBack()
+            }),
+            JsxRuntime.jsx("div", {
+              children: JsxRuntime.jsx("div", {
+                className: "h-full bg-indigo-500 transition-all duration-500 ease-out",
+                style: {
+                  width: progress.toString() + "%"
+                }
+              }),
+              className: "flex-1 h-3 bg-slate-100 rounded-full overflow-hidden"
+            }),
+            JsxRuntime.jsxs("div", {
+              children: [
+                JsxRuntime.jsx("span", {
+                  children: score.toString(),
+                  className: "text-indigo-600"
+                }),
+                JsxRuntime.jsx("span", {
+                  children: "/"
+                }),
+                JsxRuntime.jsx("span", {
+                  children: totalQuestions.toString()
+                })
+              ],
+              className: "flex items-center gap-1 font-bold text-slate-500 text-sm"
+            })
+          ],
+          className: "max-w-xl mx-auto flex items-center gap-4"
+        }),
+        className: "bg-white border-b border-slate-200 p-4 sticky top-0 z-10"
       }),
-      JsxRuntime.jsx("div", {
-        children: tmp,
-        className: "max-w-md mx-auto w-full"
+      JsxRuntime.jsx("main", {
+        children: JsxRuntime.jsx("div", {
+          children: tmp,
+          className: "max-w-md w-full"
+        }),
+        className: "flex-1 flex items-center justify-center p-4"
       })
     ],
-    className: "flex flex-col min-h-screen bg-gray-50 p-4"
+    className: "flex flex-col min-h-screen bg-slate-50 font-sans antialiased"
   });
 }
 
