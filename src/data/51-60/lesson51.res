@@ -124,10 +124,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abagabo bagiye kare mu gitondo kuko bafise akazi kenshi.",
+        answer: "The men went early in the morning because they have much work.",
+      },
+      {
+        prompt: "Mwagiye kare cane kurondera indya zangu.",
+        answer: "You (pl.) went very early to look for my food.",
+      },
+      {
+        prompt: "Abana bariye indya nyinshi.",
+        answer: "The children ate much food.",
+      },
+      {
+        prompt: "Umwigisha yavuze amajambo menshi mw ishuli ejo.",
+        answer: "The teacher spoke many words in school yesterday.",
+      },
+      {
+        prompt: "Twacanye umuriro mwinshi kuko tugomba guteka n’ingoga.",
+        answer: "We lit a big fire because we want to cook quickly.",
+      },
+      {
+        prompt: "Abanyakazi bakoze umusi wose kuko bagomba amafaranga menshi.",
+        answer: "The workers worked all day because they want much money.",
+      },
+      {
+        prompt: "Umugenzi wanje yavuze yukw azogaruka vuba cane.",
+        answer: "My friend said that he will return very soon.",
+      },
+      {
+        prompt: "Abana banyoye amata menshi mu gitondo.",
+        answer: "The children drank much milk in the morning.",
+      },
+      {
+        prompt: "Umworo yariye indya nyinshi, maze (then) yagiye.",
+        answer: "The poor man ate much food, then he went.",
+      },
+      {
+        prompt: "Umukozi yazanye inkwi nyinshi mu nzu.",
+        answer: "The worker brought much firewood into the house.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Two boys worked well in the garden but the other three worked badly.",
+        answer: "Abahungu babiri bakoze neza mu murima ariko abandi batatu bakoze nabi.",
+      },
+      {
+        prompt: "You (pl.) drank much dirty water.",
+        answer: "Mwanyoye amazi mabi menshi.",
+      },
+      {
+        prompt: "The children brought their books to school today because they want to read.",
+        answer: "Abana bazanye ibitabo vyabo mw ishuli uyu musi kuko bagomba gusoma.",
+      },
+      {
+        prompt: "The girl brought wood and she lit a big fire.",
+        answer: "Umwigeme yazanye inkwi maze acana umuriro mwinshi.",
+      },
+      {
+        prompt: "We ate meat and beans and bananas, and we drank much water.",
+        answer: "Twariye inyama n'ibiharage n'imishitsi, kandi twanyoye amazi menshi.",
+      },
+      {
+        prompt: "I worked hard yesterday, and I brought my food.",
+        answer: "Nakoze cane ejo, kandi nazanye indya zanje.",
+      },
+      {
+        prompt: "What did you (sing.) say? I said that I will come back tomorrow.",
+        answer: "Wavuze iki? Navuze yuko nzogaruka ejo.",
+      },
+      {
+        prompt: "The girls made a fire because they want to cook (some) meat and (some) sweet potatoes.",
+        answer: "Abigeme bacanye umuriro kuko bagomba guteka inyama n'ibijumbu.",
+      },
+      {
+        prompt: "Where did you (pl.) go yesterday? We went to Gitega to buy (some) food.",
+        answer: "Mwagiye he ejo? Twagiye i Gitega kugura indya.",
+      },
+      {
+        prompt: "I think that Mary brought a new chair to school.",
+        answer: "Nibaza yuko Mariya yazanye intebe nshasha mw ishuli.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 51: Ordinary Past Tense",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

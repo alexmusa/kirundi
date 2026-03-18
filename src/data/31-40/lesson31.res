@@ -92,10 +92,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abantu ntibazokora ejo mu gitondo kubo bazogenda gusenga Imana.",
+        answer: "The people will not work tomorrow morning because they will go to worship God.",
+      },
+      {
+        prompt: "Ntituzotangura gufasha abahungu ejo.",
+        answer: "We will not begin to help the boys tomorrow.",
+      },
+      {
+        prompt: "Banza kuririmba; tugomba gushima Imana.",
+        answer: "Begin by singing; we want to praise God.",
+      },
+      {
+        prompt: "Abahungu baratangura gusoma neza.",
+        answer: "The boys are beginning to read well.",
+      },
+      {
+        prompt: "Umwigisha araza vuba kuvuga Ijambo ry’Imana.",
+        answer: "The teacher is coming soon to speak the Word of God.",
+      },
+      {
+        prompt: "Abakozi barabanza kurima mu bitoke; ejo bazokora mu nzu.",
+        answer: "The workers begin by digging in the banana grove; tomorrow they will work in the house.",
+      },
+      {
+        prompt: "Abana bariko bararirimba indirimbo z’Imana mw ishuli.",
+        answer: "The children are singing the songs of God in school.",
+      },
+      {
+        prompt: "Vuba tuzoronka impuzu nshasha kukw abavyeyi bacu bazogaruka i wacu.",
+        answer: "Soon we will receive new clothes because our parents will return to our place.",
+      },
+      {
+        prompt: "Mbanza gushira uduta mw isahane.",
+        answer: "I begin by putting little spoons on the plate.",
+      },
+      {
+        prompt: "Umwotsi mwinshi uratangura kuva mu mucanwa.",
+        answer: "Much smoke is beginning to come out of the fireplace.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The cows will not go into the river.",
+        answer: "Inka ntizizogenda mu ruzi.",
+      },
+      {
+        prompt: "We shall receive the blessing of God in our hearts.",
+        answer: "Tuzoronka umugisha w'Imana mu mishaha yacu.",
+      },
+      {
+        prompt: "The pupils will not arrive in school tomorrow morning.",
+        answer: "Abigishwa ntibazoshika mw ishuli ejo mu gitondo.",
+      },
+      {
+        prompt: "You (sing.) will come in the evening (today) to help the girls.",
+        answer: "Uraza uyu mugoroba gufasha abakobwa.",
+      },
+      {
+        prompt: "We will begin to sing soon.",
+        answer: "Tuzotangura kuririmba vuba.",
+      },
+      {
+        prompt: "First go to work in the garden.",
+        answer: "Banza kugenda gukora mu murima.",
+      },
+      {
+        prompt: "The women will not cook fish tomorrow morning; they will cook meat.",
+        answer: "Abagore ntibazoteka ifi ejo mu gitondo; bazoteka inyama.",
+      },
+      {
+        prompt: "Our teacher will arrive this afternoon; he is not here in the morning.",
+        answer: "Umwigisha wacu arashika uyu mugoroba; ntabariho mu gitondo.",
+      },
+      {
+        prompt: "The old man’s son will not go to school tomorrow because he has a bad illness.",
+        answer: "Umuhungu w'umusaza ntazogenda mw ishuli ejo kuko afise indwara mbi.",
+      },
+      {
+        prompt: "We will not buy your (pl.) goats; they are very small.",
+        answer: "Ntituzogura ihene zanyu; ni ntoya cane.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 31: Negative of Future",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

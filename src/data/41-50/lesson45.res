@@ -95,10 +95,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbeg’ impuyi irazi kugenda mu nzira?",
+        answer: "Does the blind person know how to go in the path?",
+      },
+      {
+        prompt: "Mfise inyota nyinshi; ngomba amazi meza.",
+        answer: "I have much thirst; I want clean water.",
+      },
+      {
+        prompt: "Mbeg’ urazi umwami?",
+        answer: "Do you know the king?",
+      },
+      {
+        prompt: "Umurizo w’inka ni mugufi yamar’ amahembe ni maremare.",
+        answer: "The tail of the cow is short but the horns are long.",
+      },
+      {
+        prompt: "Umuvyeyi wiwe afise inzara n’inyota mu mutima kukw agomba kumenya Yesu.",
+        answer: "His parent has hunger and thirst in the heart because he/she wants to know Jesus.",
+      },
+      {
+        prompt: "Ibitabo vy’indirimbo biri hehe? Ndabizi? Kumbure biri mw ishuli.",
+        answer: "Where are the song books? Do I know? Perhaps they are in the school.",
+      },
+      {
+        prompt: "Subira ku ruzi kuzana amazi menshi. Twese dufise inyota.",
+        answer: "Go back to the river to bring much water. We all have thirst.",
+      },
+      {
+        prompt: "Impumyi ifise amaso, yamara ntibona.",
+        answer: "The blind person has eyes, but he/she doesn't see.",
+      },
+      {
+        prompt: "Ndazi yuko Yesu azogaruka.",
+        answer: "I know that Jesus will return.",
+      },
+      {
+        prompt: "Abana bazomenya gusoma neza vuba.",
+        answer: "The children will know how to read well soon.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Put all the dishes on the table.",
+        answer: "Shira amasahane yose kumeza.",
+      },
+      {
+        prompt: "The children don’t know the path.",
+        answer: "Abana ntibazi inzira.",
+      },
+      {
+        prompt: "The blind man cannot see the Word of God, but he can hear and he can know the love of Jesus.",
+        answer: "Impumyi ntishobora kubona Ijambo ry'Imana, yamara irashobora kumva kandi irazi urukundo rwa Yesu.",
+      },
+      {
+        prompt: "I don’t know your name.",
+        answer: "Sinzi izina ryawe.",
+      },
+      {
+        prompt: "The blind man feels the tail and horns of the cow.",
+        answer: "Impumyi yumva umurizo n'amahembe vy'inka.",
+      },
+      {
+        prompt: "Do you (sing.) know how to cook fish? No, I don’t know, but I’ll ask my parent.",
+        answer: "Mbeg' urazi guteka ifi? Oya, sinzi, yamara nzobaza umuvyeyi wanje.",
+      },
+      {
+        prompt: "The teacher is teaching the children a new song. He knows how to sing very well.",
+        answer: "Umwigisha arigisha abana indirimbo nshasha. Arazi kuririmba neza cane.",
+      },
+      {
+        prompt: "The goat’s tail and horns are short.",
+        answer: "Umurizo n'amahembe vy'impene ni bigufi.",
+      },
+      {
+        prompt: "Do you (sing.) know our hill? It is very high.",
+        answer: "Mbeg' urazi umusozi wacu? Ni muremure cane.",
+      },
+      {
+        prompt: "Our teacher knows many languages.",
+        answer: "Umwigisha wacu arazi indimi nyinshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 45: Verb –zi (To know)",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

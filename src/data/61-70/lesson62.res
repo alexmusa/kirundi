@@ -130,10 +130,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abashitsi bazoza ino mu kwezi kwa munani.",
+        answer: "The guests will come here in August.",
+      },
+      {
+        prompt: "Waraye hehe ku wa kane?",
+        answer: "Where did you spend the night on Thursday?",
+      },
+      {
+        prompt: "Nar' ahandi amayinga atatu, yamara nagarutse ku wa mbere.",
+        answer: "I was elsewhere for three weeks, but I returned on Monday.",
+      },
+      {
+        prompt: "Wasivye mw ishuli ku wa kabiri. Wari hehe?",
+        answer: "You were absent from school on Tuesday. Where were you?",
+      },
+      {
+        prompt: "Abandi bazungu bazoza i Burundi mu kwezi kwa gatandatu.",
+        answer: "Other white people will come to Burundi in June.",
+      },
+      {
+        prompt: "Kw itariki ya mirongwibiri n’indwi y’ukwezi kw’icenda tuzosubira mw ishuli.",
+        answer: "On the 27th of September we will return to school.",
+      },
+      {
+        prompt: "Muzotangura ibikorwa isaha zibiri zibuzemw’ amadakika cumi n’atanu.",
+        answer: "You (pl.) will start the work at 7:45 (8:00 lacking 15 minutes).",
+      },
+      {
+        prompt: "Abashitsi bacu bamaze ino igice c’ukwezi.",
+        answer: "Our guests spent half a month here.",
+      },
+      {
+        prompt: "Abanyakazi bagodotse isaha cumi na zibiri z’umugoroba.",
+        answer: "The workers went home at 6:00 in the evening.",
+      },
+      {
+        prompt: "Abasuma batwivye kw itariki y’icumi n’icenda mu kwezi kw’umunani. Hari ku musi wa gatandatu.",
+        answer: "The thieves robbed us on the 19th of August. It was on Saturday.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Did you come to church Sunday? I didn’t see you.",
+        answer: "Waje kw'ishengero ku musi w'Imana? Sinakuvonye.",
+      },
+      {
+        prompt: "The pupils will return to school in October.",
+        answer: "Abanyeshule bazosubira mw ishule mu kwezi kw'icumi.",
+      },
+      {
+        prompt: "Four guests came Thursday and stayed five days.",
+        answer: "Abashitsi bane baje ku wa kane bamara imisi itanu.",
+      },
+      {
+        prompt: "On the 14th day of January we went to see the king but he was not at home.",
+        answer: "Kw itariki ya cumi na zine y'ukwezi kwa mbere twagiye kuraba umwami yamara ntiyari muhira.",
+      },
+      {
+        prompt: "We wanted to go to Bujumbura Wednesday, but rain fell the whole day. We will go tomorrow at 8:00.",
+        answer: "Twashaka kuja i Bujumbura ku wa gatatu, yamara imvura yaguye umusi wose. Tuzojayo ejo isaha zibiri.",
+      },
+      {
+        prompt: "On Sunday they start to sing at 9.30.",
+        answer: "Ku musi w'Imana batangura kuririmba isaha zitatu n'igice.",
+      },
+      {
+        prompt: "My friends are coming at 10:00 at night.",
+        answer: "Abagenzi banje baraza isaha zine z'ijoro.",
+      },
+      {
+        prompt: "You (pl.) were absent a whole week in March. How many days did you spend at Gitega?",
+        answer: "Mwasivye iyinga ryose mu kwezi kwa gatatu. Mwamaze imisi ingahe i Gitega?",
+      },
+      {
+        prompt: "It is 2:15. Go to school quickly.",
+        answer: "Ni isaha munani n'amadakika cumi n'atanu. Genda mw ishuli n'ingoga.",
+      },
+      {
+        prompt: "The skilled workmen worked six hours on Friday.",
+        answer: "Abanyakazi b'abahanga bakoze amasaha atandatu ku wa gatanu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 62: Months, Days of the Week, Telling Time",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

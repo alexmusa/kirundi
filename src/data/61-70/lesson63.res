@@ -94,10 +94,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Teka imikonyogo n’intofanyi ku ziko.",
+        answer: "Cook the green beans and potatoes on the stove.",
+      },
+      {
+        prompt: "Baga inkoko zibiri, kukw abashitsi baraza.",
+        answer: "Butcher two chickens, because guests are coming.",
+      },
+      {
+        prompt: "Sesa amazi mabi; rondera ayandi meza.",
+        answer: "Pour out the bad water; look for other clean (water).",
+      },
+      {
+        prompt: "Karanga inyama mu mavuta menshi.",
+        answer: "Fry the meat in much oil.",
+      },
+      {
+        prompt: "Ngwino gusya inanasi. Shira isukari nkeya mu nanasi.",
+        answer: "Come to grind the pineapple. Put a little sugar in the pineapple.",
+      },
+      {
+        prompt: "Abigeme bariko baracagagura imikerera, bayishira mu ndobo.",
+        answer: "The girls are chopping up the green beans, they are putting them in the bucket.",
+      },
+      {
+        prompt: "Ngomba ko muhwata intofanyi nyinshi, kandi ko mutonora ibigori bike.",
+        answer: "I want you to peel many potatoes, and to shell a few corn ears.",
+      },
+      {
+        prompt: "Umuboyi (houseboy) arikw aravanga ifu n’umunyu n’amata n’amagi.",
+        answer: "The houseboy is mixing flour and salt and milk and eggs.",
+      },
+      {
+        prompt: "Dufise abashitsi batatu. Tegura ameza n’ingoga. Shira ku meza imbugita n’amakanya, n’utuyiko n’amasahane n’ibikombe.",
+        answer: "We have three guests. Prepare the table quickly. Put knives and forks, and teaspoons and plates and cups on the table.",
+      },
+      {
+        prompt: "Mariya yagiye mu murima kuzana imboga n’inyanya.",
+        answer: "Mary went to the field to bring leafy vegetables and tomatoes.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Cook the sweet potatoes on the stove.",
+        answer: "Teka intofanyi ku ziko.",
+      },
+      {
+        prompt: "I boiled much clean water but now it is dirty.",
+        answer: "Nabijije amazi meza menshi ariko ubu ni mabi.",
+      },
+      {
+        prompt: "I want sugar and milk in my coffee.",
+        answer: "Ngomba isukari n'amata mu ikawa yanje.",
+      },
+      {
+        prompt: "He poured out the good milk but he put away the bad milk.",
+        answer: "Yasese amata meza ariko yabitse amata mabi.",
+      },
+      {
+        prompt: "There is only a little (few) fire; put more wood in the fire; blow (the fire).",
+        answer: "Hariho umuriro muke gusa; shira inkwi nyinshi mu umuriro; akije.",
+      },
+      {
+        prompt: "Did you (sing.) put salt and pepper in the meat? I want to fry it.",
+        answer: "Washize umunyu n'ipiripiri mu nyama? Ngomba kuzikaranga.",
+      },
+      {
+        prompt: "Put a tablespoon of sugar in the tea; then (maze) we will pour it into the cups.",
+        answer: "Shira ikiyiko c'isukari mu mazi y'icayi; maze turayasuka mu bikombe.",
+      },
+      {
+        prompt: "The wheat was in a bucket (pail), but the girls are putting it out in the sun.",
+        answer: "Ingano zari mu ndobo, ariko abigeme bariko barazishira ku zuba.",
+      },
+      {
+        prompt: "We have finished eating (= to eat); clear the table. I will put away the food.",
+        answer: "Tumaze kurya; pangura ameza. Ndabika ivyo kurya.",
+      },
+      {
+        prompt: "I want to grind the wheat. Where did you put it?",
+        answer: "Ngomba gusya ingano. Wazishize hehe?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 63: Some Household Terms",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

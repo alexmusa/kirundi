@@ -213,10 +213,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Turakwinginga kudufasha mu bikorwa vyacu.",
+        answer: "We beseech you to help us in our tasks (works).",
+      },
+      {
+        prompt: "Mfise ibitabo vyawe; nzobiguha ejo.",
+        answer: "I have your books; I will give them to you tomorrow.",
+      },
+      {
+        prompt: "Ijwi ry’Imana ryanyeretse inzira y’agakiza; naryumvise.",
+        answer: "The voice of God showed me the way of salvation; I heard it.",
+      },
+      {
+        prompt: "Umwigeme yanikira impuzu mu gitondo; ku mugoroba arazanura.",
+        answer: "The girl puts out the clothes in the sun in the morning; in the evening she brings them in.",
+      },
+      {
+        prompt: "Imana ifise ubushobozi bwinshi; ni vyiza kuyubaha.",
+        answer: "God has much power; it is good to honor Him.",
+      },
+      {
+        prompt: "Mwaduhaye ibikorwa vyinshi, ariko twavyemeye.",
+        answer: "You gave us many tasks, but we accepted them.",
+      },
+      {
+        prompt: "Wavuze amazina yose? Ego, nayavuze kandi nayanditse yose.",
+        answer: "Did you say all the names? Yes, I said them and I wrote them all.",
+      },
+      {
+        prompt: "Mbona imvura. Mbeg’ impuzu ziri hanze? Ego, ndazanura vuba.",
+        answer: "I see rain. Are the clothes outside? Yes, I am bringing them in soon.",
+      },
+      {
+        prompt: "Umwigisha wawe yakwigishije vyinshi. Mbeg’ uzovyibuka?",
+        answer: "Your teacher taught you many things. Will you remember them?",
+      },
+      {
+        prompt: "Dufise udusahane twiza. Watwogeje neza?",
+        answer: "We have nice small plates. Did you wash them well?",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Where are my two sheep? The dog is killing them.",
+        answer: "Intama zanje zibiri ziri hehe? Imbwa irazica.",
+      },
+      {
+        prompt: "I forgot to bring the book today, but I will remember it tomorrow.",
+        answer: "Naribagiye kuzana igitabo uyu munsi, ariko nzocibuka ejo.",
+      },
+      {
+        prompt: "The old man has done (worked) many sins, but he is confessing them.",
+        answer: "Umutama yakoze ivyaha vyinshi, ariko arabivuga.",
+      },
+      {
+        prompt: "The teacher wants medicine; the doctor will give it to him in the evening.",
+        answer: "Umwigisha arashaka umuti; umuganga azowumuha ku mugoroba.",
+      },
+      {
+        prompt: "Where are the good peas? A thief stole them.",
+        answer: "Amashaza meza ari hehe? Igisuma yayivye.",
+      },
+      {
+        prompt: "The people respected him (the teacher) because he taught them well.",
+        answer: "Abantu baramwubashe kuko yabigishije neza.",
+      },
+      {
+        prompt: "Did you (sing.) take the key to the skilled workman? No, I forgot it.",
+        answer: "Wajanye urufunguzo ku mufundi? Oya, nararwibagiye.",
+      },
+      {
+        prompt: "Has John seen your garden? Yes, I showed it to him.",
+        answer: "Yohana yabonye umurima wawe? Ego, nawumweretse.",
+      },
+      {
+        prompt: "Did you put the wood out in the sun? I put it out yesterday morning.",
+        answer: "Wanyikiye inkwi? Nazianikiye ejo mu gitondo.",
+      },
+      {
+        prompt: "Where are my new ropes? Thieves stole them.",
+        answer: "Imizigo yanje mishasha iri hehe? Ibisuma vyayivye.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 59: Object pronouns with Vowel-stem Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

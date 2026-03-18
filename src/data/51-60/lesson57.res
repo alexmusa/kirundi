@@ -171,10 +171,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Abahungu bāri hehe? Ntitwababonye mw ishuli uyu musi.",
+        answer: "Where were the boys? We did not see them in school today.",
+      },
+      {
+        prompt: "Umwana yakoze nabi cane; umuvyeyi wiwe azomuhana.",
+        answer: "The child worked very badly; his parent will punish him.",
+      },
+      {
+        prompt: "Imana yaduhaye agakiza, n’ibindi vyiza vyinshi.",
+        answer: "God gave us salvation, and many other good things.",
+      },
+      {
+        prompt: "Yesu yaje mw isi kuducungura no kudukiza.",
+        answer: "Jesus came into the world to redeem us and to save us.",
+      },
+      {
+        prompt: "Imana yampariye ivyaha vyanje vyose.",
+        answer: "God forgave me all my sins.",
+      },
+      {
+        prompt: "Twabahaye amakaramu n’inkaratasi. Biri hehe?",
+        answer: "We gave them pens and papers. Where are they?",
+      },
+      {
+        prompt: "Biratugoye kugenda i wanyu ubu. Tuzobabona ejo.",
+        answer: "It is difficult for us to go to your home now. We will see you tomorrow.",
+      },
+      {
+        prompt: "Mbeg’ umuganga yakuvuye neza? Yagukijije indwara yawe?",
+        answer: "Did the doctor treat you well? Did he heal your illness?",
+      },
+      {
+        prompt: "Minani ntari hano; namurungitse ku Muyebe.",
+        answer: "Minani is not here; I sent him to Muyebe.",
+      },
+      {
+        prompt: "Yesu yabajije Petero, at’ Urankunda?",
+        answer: "Jesus asked Peter, \"Do you love me?\"",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Where were you (pl.) yesterday? I did not see you the whole day.",
+        answer: "Mwari hehe ejo? Simbabonye umusi wose.",
+      },
+      {
+        prompt: "The pupil is bad; his teacher cannot govern him.",
+        answer: "Umwigishwa ni mubi; umwigisha wiwe ntashobora kumuganza.",
+      },
+      {
+        prompt: "I praise God because He saved me and He gave me peace and joy.",
+        answer: "Nshimagiza Imana kuko yankijije kandi yampaye amahoro n'akanyamuneza.",
+      },
+      {
+        prompt: "It is difficult for him to learn because he has much other work.",
+        answer: "Biramugoye kwiga kuko afise ibindi bikorwa vyinshi.",
+      },
+      {
+        prompt: "Jesus helps us every day to do His work; we praise Him with (in) all our hearts.",
+        answer: "Yesu aradufasha imisi yose gukora igikorwa ciwe; turamushimagiza mu mishaha yacu yose.",
+      },
+      {
+        prompt: "Andrew’s (Andereya) children are good; he governs them well.",
+        answer: "Abana ba Andereya ni beza; abaganza neza.",
+      },
+      {
+        prompt: "What do you (sing.) want? I paid you yesterday.",
+        answer: "Ushaka iki? Naguhemvye ejo.",
+      },
+      {
+        prompt: "It was difficult for us to finish our work. Will you help us?",
+        answer: "Vyatugoye kurangiza igikorwa cacu. Uzodufasha?",
+      },
+      {
+        prompt: "Where were you (pl.)? Your parents were looking everywhere for you.",
+        answer: "Mwari hehe? Abavyeyi banyu babarondera hose.",
+      },
+      {
+        prompt: "We saw you (sing.) yesterday near the old man’s kraal.",
+        answer: "Twakubonye ejo hafi y'urugo rw'umutama.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 57: Object Pronouns",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

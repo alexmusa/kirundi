@@ -167,10 +167,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Abahungu bakubuye neza hose (everywhere) mw ishuli.",
+        answer: "The boys swept well everywhere in the school.",
+      },
+      {
+        prompt: "Mbega wabitse ibitambara vyiza vyose?",
+        answer: "Did you put away all the good cloths?",
+      },
+      {
+        prompt: "Yesu yakijije Abarundi benshi yamara tugomba kw abandi benshi bakizwa.",
+        answer: "Jesus saved many Burundians but we want that many others be saved.",
+      },
+      {
+        prompt: "Nahemvye abanyakazi amafaranga amajana munani na mirongwine n’abiri.",
+        answer: "I paid the workers eight hundred forty-two francs.",
+      },
+      {
+        prompt: "Twagarutse hano kuko tugomba kwumva Ijambo ry’imana.",
+        answer: "We returned here because we want to hear the Word of God.",
+      },
+      {
+        prompt: "Abana binjiye mw ishuli, mugabo batatu bagumye hanze.",
+        answer: "The children entered the school, but three stayed outside.",
+      },
+      {
+        prompt: "Mbega mwakaravye neza? Oya, ntidufise amazi.",
+        answer: "Did you wash well? No, we don't have water.",
+      },
+      {
+        prompt: "Umusore yaguye hasi; ntiyabonye ibuye mu nzira.",
+        answer: "The young man fell down; he didn't see the stone in the path.",
+      },
+      {
+        prompt: "Twafashe imbeba zitatu mw ijoro.",
+        answer: "We caught three mice in the night.",
+      },
+      {
+        prompt: "Mbega waguze iki? Naguze inyama n’amavuta.",
+        answer: "What did you buy? I bought meat and butter (or oil).",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "We helped our teacher today because he has much work.",
+        answer: "Twafashije umwigisha wacu uyu musi kuko afise igikorwa cinshi.",
+      },
+      {
+        prompt: "Did you (pl.) sleep well in the night?",
+        answer: "Mbega mwasinziriye neza mw ijoro?",
+      },
+      {
+        prompt: "The child cried all day because he wanted food.",
+        answer: "Umwana yarize umusi wose kuko wagomba ibiribwa.",
+      },
+      {
+        prompt: "I counted all the men and women in church yesterday; I saw 83 men and 97 women.",
+        answer: "Naharuye abagabo n'abagore bose mw ishengero ejo; nabonye abagabo mirongo umunani na batatu n'abagore mirongo icenda n'indwi.",
+      },
+      {
+        prompt: "Our friends went home this morning.",
+        answer: "Abagenzi bacu bagiye imuhira uyu muhengeri.",
+      },
+      {
+        prompt: "Where did you (sing.) put away the dishes? I put them in a box.",
+        answer: "Wabitse he amasahani? Nayabitse mu mukebe.",
+      },
+      {
+        prompt: "Jesus forgave Paul all his sins. He is a wonderful Savior.",
+        answer: "Yesu yahariye Pawulo ivyaha vyiwe vyose. Ni Umukiza mwiza cane.",
+      },
+      {
+        prompt: "What did you do today? We made a fire and cooked the food.",
+        answer: "Mwakoze iki uyu musi? Twacanye umuriro duteka ibiribwa.",
+      },
+      {
+        prompt: "Did the doctor pay his workmen today?",
+        answer: "Mbega umuganga yahemvye abanyakazi biwe uyu musi?",
+      },
+      {
+        prompt: "We went with the young men to look at the big river.",
+        answer: "Twagiye n'abasore kuraba uruzi runini.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 53: Past Verb Endings",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

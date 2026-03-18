@@ -186,10 +186,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abakobwa bagomvye kugenda ku muganga kukw azi kuvura.",
+        answer: "The girls wanted to go to the doctor because he knows how to treat (heal).",
+      },
+      {
+        prompt: "Twaharuye abasore n’inkumi; harih’ abasore cumi na batatu n’inkumi cumi na zibiri.",
+        answer: "We counted the young men and the young ladies; there were thirteen young men and twelve young ladies.",
+      },
+      {
+        prompt: "Abasore banyoye amazi mu ruzi.",
+        answer: "The young men drank water in the river.",
+      },
+      {
+        prompt: "Abigeme batebutse cane gushika hano uyu musi.",
+        answer: "The girls hurried very much to arrive here today.",
+      },
+      {
+        prompt: "Umusuma yafashe intama zitatu.",
+        answer: "The thief caught three sheep.",
+      },
+      {
+        prompt: "Abantu benshi baje ku muganga kukw avura indwara nyinshi.",
+        answer: "Many people came to the doctor because he treats many diseases.",
+      },
+      {
+        prompt: "Umwana yarize kuk’ umuvyeyi wiwe yamuhenze.",
+        answer: "The child cried because his parent deceived him.",
+      },
+      {
+        prompt: "Mbega mwinjiye mu rusengero ryari? Twinjiye mu gitondo.",
+        answer: "When did you (pl.) enter the church? We entered in the morning.",
+      },
+      {
+        prompt: "Abana basinziriye neza mw ijoro ryose.",
+        answer: "The children slept well all night.",
+      },
+      {
+        prompt: "Abigisha bigishije abana gukora iki? Bigishije abana gusoma.",
+        answer: "What did the teachers teach the children to do? They taught the children to read.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The doctor treated many people today; he knows much wisdom.",
+        answer: "Umuganga yavuye abantu benshi uyu musi; azi ubwenge bwinshi.",
+      },
+      {
+        prompt: "I put the seeds in the box. Where are they now?",
+        answer: "Nashize imbuto mu mukebe. Ziri he ubu?",
+      },
+      {
+        prompt: "Did you (pl.) see the teacher’s books?",
+        answer: "Mbega mwabonye ibitabo vy'umwigisha?",
+      },
+      {
+        prompt: "Did you (sing.) read the whole book of John today?",
+        answer: "Mbega wasomye igitabo cose ca Yohana uyu musi?",
+      },
+      {
+        prompt: "Jesus saved many people because they believed God.",
+        answer: "Yesu yakijije abantu benshi kuko bizereye Imana.",
+      },
+      {
+        prompt: "We knew that you (pl.) came because we saw the children.",
+        answer: "Twamenye ko mwaje kuko twabonye abana.",
+      },
+      {
+        prompt: "The thief deceived the rich man and entered his house at (in) night.",
+        answer: "Umusuma yahenze umutunzi kandi yinjiye mu nzu yiwe mw ijoro.",
+      },
+      {
+        prompt: "The young man wanted to go with his friend.",
+        answer: "Umusore yagomvye kugenda n'umugenzi wiwe.",
+      },
+      {
+        prompt: "The girls washed their clothes in the river.",
+        answer: "Abakobwa bameshe ivyambaro vyabo mu ruzi.",
+      },
+      {
+        prompt: "The women cooked a lot of (many) corn and sweet potatoes.",
+        answer: "Abagore batetse ibigori vyinshi n'ibijumbu vyinshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 52: Rules for Past Endings",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };
