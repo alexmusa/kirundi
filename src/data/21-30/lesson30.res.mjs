@@ -19,7 +19,7 @@ let l_examples = [];
 let l_quiz = [];
 
 let l = {
-  title: "LESSON X: xxx",
+  title: "LESSON 30: Review",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,

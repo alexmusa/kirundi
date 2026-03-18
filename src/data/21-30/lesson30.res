@@ -8,7 +8,7 @@ module Content = {
 }
 
 let l: lesson = {
-  title: "LESSON X: xxx",
+  title: "LESSON 30: Review",
   content: <Content />,
   examples: [],
   vocabulary: [],
