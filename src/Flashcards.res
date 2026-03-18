@@ -67,6 +67,7 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
       isReversed: Math.random() > 0.5,
       isDue: true,
     }))
+    ->Array.toShuffled
   })
 
   let (currentIndex, setCurrentIndex) = React.useState(_ => 0)
