@@ -63,7 +63,7 @@ def migrate_all_lessons():
             source_content = f.read()
 
         # 1. Correctly extract the quizData block using bracket balancing
-        quiz_data_str = extract_balanced_block(source_content, r'let quizData: array<quizSection> =')
+        quiz_data_str = extract_balanced_block(source_content, r'let quizData: array<Quiz.quizSection> =')
         
         if not quiz_data_str:
             print(f"[-] Could not find or balance quizData in {file_path}")
