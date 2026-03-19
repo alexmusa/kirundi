@@ -8,7 +8,7 @@
     "res:clean": "rescript clean",
     "res:dev": "rescript watch",
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run res:build && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
