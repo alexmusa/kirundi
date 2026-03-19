@@ -281,24 +281,149 @@ let Content = {
   make: Lesson61$Content
 };
 
+let quizData = [{
+    title: "I. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "the 4th sheep",
+        answer: "intama ya kane"
+      },
+      {
+        prompt: "the 16th boy",
+        answer: "umuhungu w'icumi na gatandatu"
+      },
+      {
+        prompt: "the last paper",
+        answer: "urukaratasi rw'impera"
+      },
+      {
+        prompt: "the 3rd shepherd",
+        answer: "umwungere wa gatatu"
+      },
+      {
+        prompt: "the 57th song",
+        answer: "indirimbo ya mirongo itanu n'indwi"
+      },
+      {
+        prompt: "my two ears",
+        answer: "amatwi yanje yompi"
+      },
+      {
+        prompt: "the 29th egg",
+        answer: "igi rya mirongwiribiri n'icenda"
+      },
+      {
+        prompt: "the 18th letter",
+        answer: "ikete rya cumi n'umunani"
+      },
+      {
+        prompt: "the first house",
+        answer: "inzu ya mbere"
+      },
+      {
+        prompt: "the 2nd river",
+        answer: "uruzi rwa kabiri"
+      },
+      {
+        prompt: "Five times",
+        answer: "gatanu"
+      },
+      {
+        prompt: "the 24th man",
+        answer: "umugabo wa mirongwiribiri na kane"
+      },
+      {
+        prompt: "the 43rd tree",
+        answer: "igiti ca mirongwine na gatatu"
+      },
+      {
+        prompt: "the 10th string",
+        answer: "umugozi wa icumi"
+      },
+      {
+        prompt: "the 5th pineapple",
+        answer: "inanasi ya gatanu"
+      },
+      {
+        prompt: "the 12th potatoe",
+        answer: "igihaya c'icumi na kabiri"
+      },
+      {
+        prompt: "the 4th cup of tea",
+        answer: "igikombe c'icayi ca kane"
+      },
+      {
+        prompt: "the 27th tomato",
+        answer: "inyanya ya mirongwiribiri n'indwi"
+      },
+      {
+        prompt: "the last woman",
+        answer: "umugore w'impera"
+      },
+      {
+        prompt: "I saw him once.",
+        answer: "Namubonye rimwe."
+      },
+      {
+        prompt: "both our houses",
+        answer: "amazu yacu yompi"
+      },
+      {
+        prompt: "the first time",
+        answer: "incuro ya mbere"
+      },
+      {
+        prompt: "the 136th hymn",
+        answer: "indirimbo y'ijana na mirongwitatu na gatandatu"
+      },
+      {
+        prompt: "the 9th young lady",
+        answer: "umwigeme wa cenda"
+      },
+      {
+        prompt: "the 10th month",
+        answer: "ukwezi kwa cumi"
+      },
+      {
+        prompt: "the 98th word",
+        answer: "ijambo rya mirongwicenda n'umunani"
+      },
+      {
+        prompt: "the last hill",
+        answer: "umusozi w'impera"
+      },
+      {
+        prompt: "the 15th sack of tea",
+        answer: "isaho y'icayi y'icumi na gatanu"
+      },
+      {
+        prompt: "the 70th sheep",
+        answer: "intama ya mirongwirindwi"
+      },
+      {
+        prompt: "How many times? Often!",
+        answer: "Kangahe? Kenshi!"
+      }
+    ]
+  }];
+
 let l_content = JsxRuntime.jsx(Lesson61$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 61: Ordinal Numerals",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

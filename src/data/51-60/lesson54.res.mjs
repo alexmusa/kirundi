@@ -172,24 +172,116 @@ let Content = {
   make: Lesson54$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inka zagiye ku ruzi kunywa amazi.",
+        answer: "The cows went to the river to drink water."
+      },
+      {
+        prompt: "Twibagiye kuzana ibitabo vyacu.",
+        answer: "We forgot to bring our books."
+      },
+      {
+        prompt: "Mbega mwogeje neza amasahane yose?",
+        answer: "Did you (pl.) wash all the plates well?"
+      },
+      {
+        prompt: "Twizeye Ijambo rya Yesu kuko twumvise ibitangaza (which) yakoze.",
+        answer: "We trusted the Word of Jesus because we heard the miracles (which) he did."
+      },
+      {
+        prompt: "Ubukene bw’umugabo bwazanye amarushwa menshi n’ubwoba.",
+        answer: "The man's poverty brought many troubles and fear."
+      },
+      {
+        prompt: "Impene yanyoye amazi mu ruzi.",
+        answer: "The goat drank water in the river."
+      },
+      {
+        prompt: "Ibikoko vyishe intama zitatu.",
+        answer: "The wild animals killed three sheep."
+      },
+      {
+        prompt: "Inkumi zogeje amasahane mabi yose.",
+        answer: "The young women washed all the dirty plates."
+      },
+      {
+        prompt: "Akayabo kacu gafashe imbeba nyinshi.",
+        answer: "Our cat caught many mice."
+      },
+      {
+        prompt: "Umucanwa wazanye umwotsi mu nzu yose.",
+        answer: "The fire brought smoke into the whole house."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Two blind man went to the church to pray.",
+        answer: "Abahumyi babiri bagiye kw'ishengero gusenga."
+      },
+      {
+        prompt: "Thieves entered the house in the night because the man was sleeping hard (cane).",
+        answer: "Abasuma binjiye mu nzu mw'ijoro kuko umugabo yari asinziriye cane."
+      },
+      {
+        prompt: "The king’s workmen built a big house in his kraal.",
+        answer: "Abakozi b'umwami bubatse inzu nini mu rugo rwiwe."
+      },
+      {
+        prompt: "I wrote the names of all the girles in the school.",
+        answer: "Nanditse amazina y'abigeme bose mu nshure."
+      },
+      {
+        prompt: "The new books fell on the floor.",
+        answer: "Ibitabo bishasha vyaguye hasi."
+      },
+      {
+        prompt: "The old man died yesterday.",
+        answer: "Umutama yapfuye ejo."
+      },
+      {
+        prompt: "Did you (pl.) hear the words of the teacher?",
+        answer: "Mbega mwumvise amajambo y'umwigisha?"
+      },
+      {
+        prompt: "Did you (sing.) remember to send three men to Gitega to buy food?",
+        answer: "Mbega wibutse kurungika abagabo batatu i Gitega kugura ibiribwa?"
+      },
+      {
+        prompt: "Sin brought death to all people.",
+        answer: "Icumuro cazanye urupfu ku bantu bose."
+      },
+      {
+        prompt: "We repented of all our sins and Jesus came into our hearts.",
+        answer: "Twihanye ivyaha vyacu vyose kandi Yesu yaje mu mishaha yacu."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson54$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 54: Ordinary Past (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

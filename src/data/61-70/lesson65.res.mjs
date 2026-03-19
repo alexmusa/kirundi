@@ -227,24 +227,116 @@ let Content = {
   make: Lesson65$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Uyu musi abafundi babumvye amatafari amajana atanu.",
+        answer: "Today the fundis (masons) molded five hundred bricks."
+      },
+      {
+        prompt: "Rungika abagabo bo kurondera umusenyi mwiza; ndawugomba.",
+        answer: "Send men to look for good sand; I want it."
+      },
+      {
+        prompt: "Zana inyundo yo gukoma imisumari.",
+        answer: "Bring a hammer for pounding (to pound) nails."
+      },
+      {
+        prompt: "Sambura inzu; mwubatse nabi.",
+        answer: "Tear down the house; you (pl.) built badly."
+      },
+      {
+        prompt: "Imana yaduhaye ubushobozi bwo kunesha Satani.",
+        answer: "God gave us the power (ability) to defeat Satan."
+      },
+      {
+        prompt: "Ngomba imbugita yo guhwata ibihaya.",
+        answer: "I want a knife for peeling 'ibihaya'."
+      },
+      {
+        prompt: "Ntidufise uburyo bwo kuza i wanyu.",
+        answer: "We don't have the way (opportunity/means) to come to your place."
+      },
+      {
+        prompt: "Umufundi arikw ararondera icuma ca kubāza.",
+        answer: "The fundi is looking for a tool for carving (planing)."
+      },
+      {
+        prompt: "Ndondera ibitoke vyo kurya. Mbega murabifise?",
+        answer: "I am looking for bananas to eat. Do you have them?"
+      },
+      {
+        prompt: "Umusi w’Imana n’umusi wo gusenga.",
+        answer: "Sunday is a day for praying (to pray)."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I want four hoes to dig (with) in the bananas.",
+        answer: "Ngomba amasuka ane yo kurima mu bitoke."
+      },
+      {
+        prompt: "Bring all the tools for cutting trees.",
+        answer: "Zana ivyuma vyose vyo guca ibiti."
+      },
+      {
+        prompt: "Look for a man to put a roof on the house.",
+        answer: "Rondera umugabo wo gusakara inzu."
+      },
+      {
+        prompt: "The ‘fundis’ have many nails to put in the boards.",
+        answer: "Abafundi bafise imisumari myinshi yo gushira mu mbaho."
+      },
+      {
+        prompt: "We want two other ‘fundis’ to plane boards; one is sick.",
+        answer: "Tugomba abandi bafundi babiri bo kubāza imbaho; umwe aragwaye."
+      },
+      {
+        prompt: "Where is your axe for splitting wood?",
+        answer: "Ishoka yawe ryo gusatura inkwi riri hehe?"
+      },
+      {
+        prompt: "Find (look for) a pencil for writing the names of the pupils.",
+        answer: "Rondera ikaramu yo kwandika amazina y'abanyeshure."
+      },
+      {
+        prompt: "Bring a cloth to put on the table.",
+        answer: "Zana igitambaro co gushira ku méeza."
+      },
+      {
+        prompt: "We have 13 pieces of paper (= 13 papers) to sell.",
+        answer: "Dufise impapuro cumi n'izindi zitatu zo kugurisha."
+      },
+      {
+        prompt: "The children don’t have books to read.",
+        answer: "Abana ntibafise ibitabu vyo gusoma."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson65$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 65: –o",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

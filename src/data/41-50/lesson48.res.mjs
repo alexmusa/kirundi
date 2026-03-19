@@ -215,24 +215,116 @@ let Content = {
   make: Lesson48$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Jewe ngomba kuguma muri Yesu Kristo Umukiza wanje.",
+        answer: "I want to stay in Jesus Christ my Savior."
+      },
+      {
+        prompt: "Muri mwebwe hariho benshi Yesu agomba gukiza.",
+        answer: "Among you there are many whom Jesus wants to save."
+      },
+      {
+        prompt: "Imana ifise ubushobozi bwinshi ngo kunesha Satani.",
+        answer: "God has much power to defeat Satan."
+      },
+      {
+        prompt: "Twebwe turazi Yesu; tuzokwinjira mu bwami bw’Imana, arikw abanyavyaha bazoronka urupfu.",
+        answer: "We know Jesus; we will enter the kingdom of God, but sinners will receive death."
+      },
+      {
+        prompt: "Yesu n’Umukiza wacu; umuntu wese azogenda kuri we azokizwa.",
+        answer: "Jesus is our Savior; every person who will go to him will be saved."
+      },
+      {
+        prompt: "Ni wewe ukunda gufasha abavyeyi cane.",
+        answer: "It is you who loves to help parents very much."
+      },
+      {
+        prompt: "Jewe nkunda ibigori, ariko wewe ukunda cane inyama.",
+        answer: "I like corn, but you like meat very much."
+      },
+      {
+        prompt: "Subira kuri Petero n’ingoga; arikw arapfa.",
+        answer: "Return to Peter quickly; he is dying."
+      },
+      {
+        prompt: "Abantu bashobora kugwa mu cobo kuko kiri hafi y’inzira.",
+        answer: "People can fall in the pit because it is near the path."
+      },
+      {
+        prompt: "Harura abigishwa bose; umwe muri bo afise indwara mbi.",
+        answer: "Count all the pupils; one among them has a bad disease."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Jesus does not want sin in His people; He will forgive everyone his sins.",
+        answer: "Yesu ntagomba igicumuro mu bantu biwe; azohaharira umuntu wese ibicumuro vyiwe."
+      },
+      {
+        prompt: "Come to Jesus; He wants to save every person.",
+        answer: "Ingo kuri Yesu; agomba gukiza umuntu wese."
+      },
+      {
+        prompt: "We can all receive new life in Jesus, but death is in Satan.",
+        answer: "Twese tushobora kuronka ubugingo bushasha muri Yesu, ariko urupfu ruri muri Satani."
+      },
+      {
+        prompt: "You (sing.) (emphasis) are you abiding (staying) in Jesus? Do you have his peace in your heart?",
+        answer: "Wewe, uguma muri Yesu? Ufise amahoro yiwe mu mutima wawe?"
+      },
+      {
+        prompt: "Send a letter to Matayo.",
+        answer: "Rungika ikete kuri Matayo."
+      },
+      {
+        prompt: "Among you (pl.) there are rich men and poor men, men and women.",
+        answer: "Muri mwebwe hariho abatunzi n’aboro, abagabo n’abagore."
+      },
+      {
+        prompt: "Come to me; I will buy your eggs.",
+        answer: "Ingo kuri jewe; nzogura amagi yawe."
+      },
+      {
+        prompt: "We (emphasis) want to have power (bwo) to defeat sin and to enter the kingdom of God.",
+        answer: "Twebwe tugomba kugira ubushobozi bwo kunesha igicumuro no kwinjira mu bwami bw’Imana."
+      },
+      {
+        prompt: "The old man will die soon; we want to go to him to speak words of love.",
+        answer: "Umutama azopfa vuba; tugomba kugenda kuri we kuvuga amajambo y’urukundo."
+      },
+      {
+        prompt: "Do you (pl.) see the people over there? My child is among them.",
+        answer: "Murabona abantu bariya? Umwana wanje ari muri bo."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson48$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 48: Personal Pronouns",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -4,6 +4,7 @@ import * as SRS from "./SRS.res.mjs";
 import * as React from "react";
 import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
 import * as Dom_storage from "@rescript/runtime/lib/es6/Dom_storage.js";
+import * as Stdlib_Array from "@rescript/runtime/lib/es6/Stdlib_Array.js";
 import * as Belt_MapString from "@rescript/runtime/lib/es6/Belt_MapString.js";
 import * as JsxRuntime from "react/jsx-runtime";
 
@@ -37,7 +38,7 @@ function Flashcards(props) {
   let statsMap = match[0];
   let match$1 = React.useState(() => {
     let now = Date.now();
-    return vocabulary.filter(param => {
+    return Stdlib_Array.toShuffled(vocabulary.filter(param => {
       let stats = Belt_MapString.getWithDefault(statsMap, param[0], SRS.defaultStats);
       let dueTime = stats.lastReviewed + stats.interval * 86400000.0;
       return now >= dueTime;
@@ -46,7 +47,7 @@ function Flashcards(props) {
       english: param[1],
       isReversed: Math.random() > 0.5,
       isDue: true
-    }));
+    })));
   });
   let deck = match$1[0];
   let match$2 = React.useState(() => 0);

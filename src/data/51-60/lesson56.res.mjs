@@ -149,24 +149,116 @@ let Content = {
   make: Lesson56$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umufundi yari hano ejo yamar’ uyu musi ar’i muhira.",
+        answer: "The skilled workman was here yesterday but today he is at home."
+      },
+      {
+        prompt: "Mbega wahejeje akazi kose? Oya, sinari hano. Nzoheza vuba.",
+        answer: "Did you finish all the work? No, I wasn't here. I will finish soon."
+      },
+      {
+        prompt: "Abanyakazi bose bagodotse ariko bazogaruka ejo.",
+        answer: "All the workers quit for the day but they will return tomorrow."
+      },
+      {
+        prompt: "Twari mw ishuli mu gitondo cose kandi twariko turigishwa vyinshi.",
+        answer: "We were in school all morning and we were being taught many things."
+      },
+      {
+        prompt: "Abagore bāri mu mwonga kurima.",
+        answer: "The women were in the valley to cultivate (dig)."
+      },
+      {
+        prompt: "Mwari hehe ejo? Twaduze umusozi, twagiye kuraba abagenzi bacu.",
+        answer: "Where were you yesterday? We went up the hill, we went to see our friends."
+      },
+      {
+        prompt: "Umufundi ntiyari hano mu gitondo; rer’ (so) abandi bakozi ntibashoboye gukora.",
+        answer: "The skilled workman wasn't here in the morning; so the other workers were not able to work."
+      },
+      {
+        prompt: "Twahejeje gucana; ntimugomba guteka ubu?",
+        answer: "We finished lighting the fire; don't you want to cook now?"
+      },
+      {
+        prompt: "Abagore bamanutse mu mwonga, kand’ abana bakurikiye abavyeyi babo.",
+        answer: "The women went down into the valley, and the children followed their parents."
+      },
+      {
+        prompt: "Ntitwar’ i muhira igihe mwaje i wacu. Mbega muzogaruka ejo?",
+        answer: "We weren't at home when you came to our place. Will you return tomorrow?"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The children went up the hill this morning but they came back. Now they are in school.",
+        answer: "Abana baduze umusozi mu gitondo ariko bagarutse. Ubu bari mw ishure."
+      },
+      {
+        prompt: "The teacher’s wife was not in church yesterday.",
+        answer: "Umugore w'umwigisha ntiyari mu rusengero ejo."
+      },
+      {
+        prompt: "The skilled workman was not at home yesterday evening; he went to Gitega.",
+        answer: "Umufundi ntiyari i muhira ejo nimugoroba; yagiye i Gitega."
+      },
+      {
+        prompt: "Were you (sing.) at school yesterday? Where were you? I was building a house.",
+        answer: "Mbega wari mw ishure ejo? Wari hehe? Nari ndiko nubaka inzu."
+      },
+      {
+        prompt: "The young girls went down to dig in the valley.",
+        answer: "Abigeme bamanutse kurima mu mwonga."
+      },
+      {
+        prompt: "The workman has quit for the day, but the skilled men are here in the yard (kraal).",
+        answer: "Umukozi yagodotse, ariko abafundi bari hano mu rugo."
+      },
+      {
+        prompt: "I was at your (pl.) place yesterday but you were not at home.",
+        answer: "Nari i wanyu ejo ariko ntimwari i muhira."
+      },
+      {
+        prompt: "The rats were many in our kraal, but we got a cat; it caught four in the night.",
+        answer: "Imbeba zari nyinshi mu rugo rwacu, ariko twaronse injangwe; yafashe zine mw ijoro."
+      },
+      {
+        prompt: "The poor man forgot his troubles, because he found much joy in Jesus.",
+        answer: "Umworo yibagiye amarushwa yiwe, kuko yabonye umunezero mwinshi muri Yesu."
+      },
+      {
+        prompt: "You (sing.) didn’t wear your new clothes today. Where are they?",
+        answer: "Ntiwambaye ivyambaro vyawe bishasha uyu musi. Biri hehe?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson56$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 56: Past of –ri",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

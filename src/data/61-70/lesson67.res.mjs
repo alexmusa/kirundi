@@ -213,24 +213,116 @@ let Content = {
   make: Lesson67$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Zana itara uridomeke.",
+        answer: "Bring the lamp and light it."
+      },
+      {
+        prompt: "Tuve hasi twese, dusenge.",
+        answer: "Let us all stand up and pray."
+      },
+      {
+        prompt: "Mwahejeje akazi kose nabahaye; ni mutahe.",
+        answer: "You (pl.) have finished all the work which I gave you; go home."
+      },
+      {
+        prompt: "Abanyakazi bareke gusambura inzu.",
+        answer: "Let the workers stop destroying the house."
+      },
+      {
+        prompt: "Simfise amasuka; yarondere uyazane.",
+        answer: "I don't have hoes; look for them and bring them."
+      },
+      {
+        prompt: "Ni bareke gusatura inkwi, singomba izindi.",
+        answer: "Let them stop splitting firewood, I don't want others."
+      },
+      {
+        prompt: "Muhagarare; mfise ibitabo ngomba kubaha kugira ngo mubijane ku mwigisha.",
+        answer: "Wait (pl.); I have books I want to give you so that you take them to the teacher."
+      },
+      {
+        prompt: "Umwana afise imbugita; mubuze gukeba urutoke rwiwe.",
+        answer: "The child has a knife; stop him from cutting his finger."
+      },
+      {
+        prompt: "Abigishwa bagende hehe? Bagende mu mirima ngo barime.",
+        answer: "Where should the students go? Let them go into the fields in order to dig."
+      },
+      {
+        prompt: "Mesura impuzu uzanikire vuba.",
+        answer: "Wash the clothes and hang them out quickly."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Let the visitor spend the night here; it is getting dark; he cannot go home now.",
+        answer: "Umushitsi arale hano; birije; ntashobora gutaha ubu."
+      },
+      {
+        prompt: "Let us learn well because we want to get much wisdom.",
+        answer: "Twige neza kuko tugomba kuronka ubwenge bwinshi."
+      },
+      {
+        prompt: "Wash all the dishes and put them away.",
+        answer: "Yoza amasahane yose uyabike."
+      },
+      {
+        prompt: "The pupils are outside; call them; let them come in now.",
+        answer: "Abigishwa bari hanze; bahamagare; binjire ubu."
+      },
+      {
+        prompt: "I want a light; look for it and bring it here.",
+        answer: "Ngomba itara; rirondere urizane hano."
+      },
+      {
+        prompt: "Go home (pl.) and find (look for) your francs and bring them.",
+        answer: "Nimutahe murondere amafaranga yanyu muyazane."
+      },
+      {
+        prompt: "What shall Mary do now? Let her (or, have her) boil water to drink.",
+        answer: "Mariya akore iki ubu? Ateke amazi yo kunywa."
+      },
+      {
+        prompt: "Stop! (sing.) Don’t go home now. There is work to do.",
+        answer: "Hagarara! Ntutahe ubu. Hariho akazi ko gukora."
+      },
+      {
+        prompt: "Wait (pl.) for the girls; they are coming.",
+        answer: "Murorere abigeme; baraje."
+      },
+      {
+        prompt: "Light a lamp so that (in order that) we may see to read.",
+        answer: "Domeka itara kugira ngo tubone gusoma."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson67$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 67: Subjunctive",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

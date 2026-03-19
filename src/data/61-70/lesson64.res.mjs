@@ -116,24 +116,116 @@ let Content = {
   make: Lesson64$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Ndanezerewe cane kuko Yesu yampariye ivyaha vyanje kandi yanyogeje umutima.",
+        answer: "I am very happy because Jesus forgave my sins and washed my heart."
+      },
+      {
+        prompt: "Umwana w’impumyi ararwaye cane. Baramujana ku muganga.",
+        answer: "The blind child is very sick. They are taking him to the doctor."
+      },
+      {
+        prompt: "Ntitwariye uyu musi; turashonje cane.",
+        answer: "We didn't eat today; we are very hungry."
+      },
+      {
+        prompt: "Cana umuriro mwinshi; ndakanye.",
+        answer: "Light a big fire; I am cold (or wet)."
+      },
+      {
+        prompt: "Umuhungu yarwaye mu gitondo arik’ ubu arakomeye.",
+        answer: "The boy was sick in the morning but now he is well."
+      },
+      {
+        prompt: "Abana baranezerewe kuko baronse impuzu nshasha.",
+        answer: "The children are happy because they got new clothes."
+      },
+      {
+        prompt: "Abigishwa baremeye gufasha abavyeyi babo mu mirima.",
+        answer: "The pupils are willing to help their parents in the fields."
+      },
+      {
+        prompt: "Inzira iragoye, ariko ngira ngo turashika vuba.",
+        answer: "The path is difficult, but I think that we will arrive soon."
+      },
+      {
+        prompt: "Inzu yacu nshasha irakomeye cane kandi ni nini.",
+        answer: "Our new house is very strong and is big."
+      },
+      {
+        prompt: "Umunvyavyaha arizeye Yesu; rer’ arakizwa ivyaha vyiwe.",
+        answer: "The sinner trusts Jesus; so he is saved from his sins."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The children want a lot of food. They are very hungry.",
+        answer: "Abana bashaka ibiryo vyinshi. Barashonje cane."
+      },
+      {
+        prompt: "Two girls were absent today because they are sick.",
+        answer: "Abigeme babiri ntibariyo uyu musi kuko bararwaye."
+      },
+      {
+        prompt: "I trust Jesus because He saved me.",
+        answer: "Ndizeye Yesu kuko yankijije."
+      },
+      {
+        prompt: "Good morning; are you well? Yes, I am very well and I have peace in my heart.",
+        answer: "Mwaramutse; mwarakomeye? Ego, ndakomeye cane kandi mfise amahoro mu mutima wanje."
+      },
+      {
+        prompt: "The teachers are willing to work hard to help their people to be saved.",
+        answer: "Abigisha baremeye gukora cane gufasha abantu babo gukizwa."
+      },
+      {
+        prompt: "The shepherd’s dog is dying; the doctor can’t treat it.",
+        answer: "Imbwa y'umwungere iriko irapfa; muganga ntashobora kuyivura."
+      },
+      {
+        prompt: "The clothes are wet; I’ll put them out in the sun. Remember to bring them in (this) evening.",
+        answer: "Impuzu zirakanye; ndazishira ku zuba. Ibuka kuzinjiza uyu mugoroba."
+      },
+      {
+        prompt: "My rope is very strong. I bought it yesterday.",
+        answer: "Umugozi wanje urakomeye cane. Nawuguze ejo."
+      },
+      {
+        prompt: "Mary’s baby (infant) is always sick. The doctor is treating it.",
+        answer: "Umwana wa Mariya arawara imisi yose. Muganga ariko aramuvura."
+      },
+      {
+        prompt: "We are very happy to see you (pl.). We haven’t seen you (for) years.",
+        answer: "Turanezerewe cane kubabona. Ntitubabonye imyaka myinshi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson64$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 64: Stative Voice",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

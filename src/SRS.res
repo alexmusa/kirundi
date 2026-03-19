@@ -14,11 +14,11 @@ let defaultStats = {
 }
 
 let calculateNextReview = (stats, result) => {
-  let now = Js.Date.now()
+  let now = Date.now()
   switch result {
-  | Again => { ...stats, lastReviewed: now, interval: 0.0, easeFactor: Math.max(1.3, stats.easeFactor -. 0.2) }
-  | Hard => { ...stats, lastReviewed: now, interval: Math.max(1.0, stats.interval *. 1.2), easeFactor: Math.max(1.3, stats.easeFactor -. 0.15) }
-  | Good => { ...stats, lastReviewed: now, interval: stats.interval == 0.0 ? 1.0 : stats.interval *. stats.easeFactor, easeFactor: stats.easeFactor }
-  | Easy => { ...stats, lastReviewed: now, interval: stats.interval == 0.0 ? 4.0 : stats.interval *. (stats.easeFactor +. 0.15), easeFactor: stats.easeFactor +. 0.15 }
+  | Again => { lastReviewed: now, interval: 0.0, easeFactor: Math.max(1.3, stats.easeFactor -. 0.2) }
+  | Hard => { lastReviewed: now, interval: Math.max(1.0, stats.interval *. 1.2), easeFactor: Math.max(1.3, stats.easeFactor -. 0.15) }
+  | Good => { lastReviewed: now, interval: stats.interval == 0.0 ? 1.0 : stats.interval *. stats.easeFactor, easeFactor: stats.easeFactor }
+  | Easy => { lastReviewed: now, interval: stats.interval == 0.0 ? 4.0 : stats.interval *. (stats.easeFactor +. 0.15), easeFactor: stats.easeFactor +. 0.15 }
   }
 }

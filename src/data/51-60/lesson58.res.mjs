@@ -171,24 +171,116 @@ let Content = {
   make: Lesson58$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbega wahevye ivyaha vyawe vyose? Ego me, nabihevye.",
+        answer: "Have you left all your sins? Yes indeed, I have left them."
+      },
+      {
+        prompt: "Imbwa yagize nabi cane; umusore yayikubise.",
+        answer: "The dog did very badly; the young man beat it."
+      },
+      {
+        prompt: "Wabonye igitabo gisha? Ndiko ndakiraba ubu.",
+        answer: "Have you seen the new book? I am looking at it now."
+      },
+      {
+        prompt: "Umusore n’umunvyavyaha; arakunda kubesha, kand’ ejo yivye amafaranga cumi; arikw azoyazana.",
+        answer: "The young man is a sinner; he likes to tell lies, and yesterday he stole ten francs; but he will bring them."
+      },
+      {
+        prompt: "Uzozana indya zawe ryari? Nzozizana vuba.",
+        answer: "When will you bring your food? I will bring it soon."
+      },
+      {
+        prompt: "Birangoye kwibuka amazina yanyu. Subira kuyavuga.",
+        answer: "It is difficult for me to remember your names. Say them again."
+      },
+      {
+        prompt: "Nabahaye akazi kenshi. Mwagahejeje kose?",
+        answer: "I gave you (pl.) much work. Have you finished it all?"
+      },
+      {
+        prompt: "Wacanye umuriro? Oya, Mariya yawucanye.",
+        answer: "Did you light the fire? No, Mary lit it."
+      },
+      {
+        prompt: "Wakoze imisi ingahe mu murima? Sinayiharuye.",
+        answer: "How many days did you work in the field? I didn't count them."
+      },
+      {
+        prompt: "Naguhaye utwuma tubiri. Turi hehe? Natubitse mw isandugu.",
+        answer: "I gave you two small pieces of metal. Where are they? I put them in a box."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Have you seen my new house? No, I will look at it tomorrow.",
+        answer: "Wabonye inzu yanje nshasha? Oya, nzoyiraba ejo."
+      },
+      {
+        prompt: "What did you give the cat? I gave it milk.",
+        answer: "Wahaye iki akanyabu? Nakahaye amata."
+      },
+      {
+        prompt: "I gave you (sing.) (some) new books. Did you bring them?",
+        answer: "Naguhaye ibitabo bishasha. Wavyazanye?"
+      },
+      {
+        prompt: "The boy stole the paper; but he refuses to bring it.",
+        answer: "Umuhungu yivye urupapuro; ariko yanse kuruzana."
+      },
+      {
+        prompt: "Did you steal the European’s dog? No, I bought it.",
+        answer: "Wivye imbwa y'umuzungu? Oya, nayiguze."
+      },
+      {
+        prompt: "Where did you buy the salt? I bought it at Gitega.",
+        answer: "Waguriye hehe umunyu? Nawuguriye i Gitega."
+      },
+      {
+        prompt: "We bought a new bed; we sent it home.",
+        answer: "Twaguze uburyamo bushasha; twaburungitse muhira."
+      },
+      {
+        prompt: "I didn’t hear the child’s name. Did you say it?",
+        answer: "Sinumvise izina ry'umwana. Waryavuze?"
+      },
+      {
+        prompt: "God gave us a wonderful Savior; we praise Him (God) very much.",
+        answer: "Imana yaduhaye Umukiza mwiza cane; turayishimagiza cane."
+      },
+      {
+        prompt: "Did you see the moon last night (= in the night)? Yes, I saw it, it was very large.",
+        answer: "Wabonye ukwezi mw ijoro? Ego, nakubonye, kwari kunini cane."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson58$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 58: Object Pronouns (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

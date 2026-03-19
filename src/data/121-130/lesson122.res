@@ -8,7 +8,7 @@ module Content = {
         <table className="border-collapse border border-black w-full text-sm">
           <thead>
             <tr>
-              {headers->Js.Array2.map(header => 
+              {headers->Array.map(header => 
                 <th key={header} className="border border-black p-2 italic font-normal text-left">
                   {React.string(header)}
                 </th>
@@ -16,7 +16,7 @@ module Content = {
             </tr>
           </thead>
           <tbody>
-            {rows->Js.Array2.map(((label, col1, col2, col3)) => 
+            {rows->Array.map(((label, col1, col2, col3)) => 
               <tr key={label}>
                 <td className="border border-black p-2 italic"> {React.string(label)} </td>
                 <td className="border border-black p-2"> {React.string(col1)} </td>
