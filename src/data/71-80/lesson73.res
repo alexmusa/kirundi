@@ -89,10 +89,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mawe ararwaye cane; tuzomujana ku muganga.",
+        answer: "My mother is very sick; we will take her to the doctor.",
+      },
+      {
+        prompt: "Nyina wa Rebeka yakoze cane mu murima wiwe.",
+        answer: "Rebecca's mother worked hard in her field.",
+      },
+      {
+        prompt: "Nyoko arakomeye ubu? Arakomeye buhoro-buhoro, yamara ntafise inkomezi nyinshi.",
+        answer: "Is your mother well now? She is well little by little, but she does not have much strength.",
+      },
+      {
+        prompt: "Se wa Yosefu yaramufashije cane; yamuhaye inka n’ibindi bintu vyinshi.",
+        answer: "Joseph's father helped him a lot; he gave him a cow and many other things.",
+      },
+      {
+        prompt: "Data afise urugo rwiza yamar’ azogenda ahandi vuba.",
+        answer: "My father has a nice home but he will go elsewhere soon.",
+      },
+      {
+        prompt: "So yatashe ryari? Yatashe mu kwezi guheze kw itariki y’icumi n’icenda.",
+        answer: "When did your father go home? He went home last month on the 19th.",
+      },
+      {
+        prompt: "Abigishwa bazohamagara ba se ngo baze kw ishuli ku musi mukuru.",
+        answer: "The students will call their fathers so that they come to school on the holiday.",
+      },
+      {
+        prompt: "Ba nyina b’abigeme barabigisha kurima no guteka.",
+        answer: "The girls' mothers teach them to cultivate and to cook.",
+      },
+      {
+        prompt: "Nyoko ariho? Oya, yahwereye mu mwaka uheze.",
+        answer: "Is your mother living? No, she died last year.",
+      },
+      {
+        prompt: "So na nyoko bar’ i muhira? Oya, bagiye kuraba data wacu.",
+        answer: "Are your father and mother at home? No, they went to see my uncle.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Where is your father? He died long ago.",
+        answer: "So ari he? Yahwereye kera.",
+      },
+      {
+        prompt: "John’s mother came here the day before yesterday, but I didn’t see her.",
+        answer: "Nyina wa Yohana yaje hano habiri, yamara sinamubonye.",
+      },
+      {
+        prompt: "We saw your mother in church yesterday.",
+        answer: "Twabonye nyoko (mama wawe) mw’ishengero ejo.",
+      },
+      {
+        prompt: "My father is waiting for us; let’s hurry.",
+        answer: "Data araturindiriye; nimutwihute.",
+      },
+      {
+        prompt: "Call Peter’s father; I want to give him work.",
+        answer: "Hamagara se wa Petero; nshaka kumuha igikorwa.",
+      },
+      {
+        prompt: "Our fathers work hard in order to give (that they give) us food and clothing.",
+        answer: "Ba dawe bakora cane ngo baduhe ivyo kurya n’ivyambarwa.",
+      },
+      {
+        prompt: "I want to go to tell my mother that the doctor is here.",
+        answer: "Nshaka kugenda kubwira mama (mawe) ko umuganga ari hano.",
+      },
+      {
+        prompt: "My Father in heaven loves us all and wants to save us.",
+        answer: "Data wa twese wo mw’ijuru adukunda twese kandi ashaka kudukiza.",
+      },
+      {
+        prompt: "The children’s mother is cooking their food.",
+        answer: "Nyina w’abana arateka ivyo kurya vyabo.",
+      },
+      {
+        prompt: "Tell your father that the workmen have finished molding (to mold) the bricks.",
+        answer: "Bwira so ko abakozi bahejeje kubumba amatafari.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 73: Father and Mother",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

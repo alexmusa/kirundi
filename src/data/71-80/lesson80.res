@@ -129,10 +129,87 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abana bamutwengesha amajambo yabo.",
+        answer: "The children make him laugh with their words.",
+      },
+      {
+        prompt: "Umugabo yakubitishije inkoni abana biwe batatu.",
+        answer: "The man hit his three children with a stick.",
+      },
+      {
+        prompt: "Babagishije imbugita inkoko.",
+        answer: "They slaughtered the chicken with a knife.",
+      },
+      {
+        prompt: "Imbuto mbi ziraboza imbuto nziza.",
+        answer: "Bad seeds (or fruits) spoil good seeds (or fruits).",
+      },
+      {
+        prompt: "Imana ifise ivyiza vyinshi; ibiduhesha Yesu.",
+        answer: "God has many good things; He gives them to us through Jesus.",
+      },
+      {
+        prompt: "Amabuye ni manini cane; yameneshe inyundo nini.",
+        answer: "The stones are very big; break them with a big hammer.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The teacher causes the boys to read the books.",
+        answer: "Umwigisha asomesha abahungu ibitabo.",
+      },
+      {
+        prompt: "The man’s troubles make him complain.",
+        answer: "Amagorwa y'umugabo amutatesha.",
+      },
+      {
+        prompt: "The old man’s anger made them laugh at him.",
+        answer: "Uburake bw'umutama bwabatwengesheje.",
+      },
+      {
+        prompt: "Let us praise God with our lives, not just words.",
+        answer: "Nidushimagize Imana n'ubuzima bwacu, si amajambo gusa.",
+      },
+      {
+        prompt: "The bad meat will spoil all the food.",
+        answer: "Inyama mbi zizaboza ibifungurwa vyose.",
+      },
+      {
+        prompt: "Peel the potatoes, please. What shall I peel them with?",
+        answer: "Ubura ibiraya, n'ukundo ushaka. Nabuberesha iki?",
+      },
+      {
+        prompt: "The grass in the kraal is very tall. Do you have a machete? Cut it with it.",
+        answer: "Ivyatsi mu rugo ni birebire cane. Urafise umuhoro? Ubukeshe na wo.",
+      },
+      {
+        prompt: "I want to build a house and I have (some) good bricks. Come (pl.) help me build it with them.",
+        answer: "Ngomba kwubaka inzu kandi mfise amatafari meza. Ni muje mumfashe kuyubakesha na yo.",
+      },
+      {
+        prompt: "My father’s anger hurts me very much in my heart. Jesus can save us from (it).",
+        answer: "Uburake bwa data burambabaza cane mu mutima. Yesu ashobora kudukiza muri bwo.",
+      },
+      {
+        prompt: "You (girl) told your brother bad news. It makes him fuss at you.",
+        answer: "Wabwiye musaza wawe inkuru mbi. Imutatesha kuri wewe.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 80: Objects with Causatives",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

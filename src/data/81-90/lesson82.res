@@ -98,10 +98,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Paulo yagize umwete mwinshi mu bikorwa vy’Imana; natwe ni tugire durtyo.",
+        answer: "Paul had much zeal in the works of God; and we, let us do like that.",
+      },
+      {
+        prompt: "Kuk’ umuco w’Imana waka urtyo tugende neza muri wo.",
+        answer: "Because God's light shines like that, let us walk well in it.",
+      },
+      {
+        prompt: "Kuko mwinginze murtyo nzobibaha.",
+        answer: "Because you (pl.) have pleaded like that, I will give them to you.",
+      },
+      {
+        prompt: "Abahungu bararima neza; mwebwe ni mukore murtyo.",
+        answer: "The boys cultivate well; as for you (pl.), do like that.",
+      },
+      {
+        prompt: "Toma ntiyizeye kugeza aho yabonye Yesu; ntidukekeranye durtyo.",
+        answer: "Thomas did not believe until he saw Jesus; let us not doubt like that.",
+      },
+      {
+        prompt: "Imbwa zirarya zirtya arikw abantu bararya bartya.",
+        answer: "Dogs eat like this but people eat like that.",
+      },
+      {
+        prompt: "Namb’ inkumi ibesha irtyo, ntidushobora kuyizera.",
+        answer: "If the young girl lies like that, we cannot trust her.",
+      },
+      {
+        prompt: "Sinshobora guha umufundi akazi kukw anebwe artyo.",
+        answer: "I cannot give the mason work because he is lazy like that.",
+      },
+      {
+        prompt: "Umwana wacu ararwara artya imisi yose; mbega ntimushobora kumukiza?",
+        answer: "Our child is sick like this every day; can you (pl.) not heal him?",
+      },
+      {
+        prompt: "Akayabo kivye inyama gartyo; singomba ko kagaruka mu nzu.",
+        answer: "The cat stole the meat like that; I don't want it to return into the house.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Let us be zealous to sing like this.",
+        answer: "Ni tugire umwete wo kuririmba gurtya.",
+      },
+      {
+        prompt: "Plane (sing.) the boards like that.",
+        answer: "Randa imbaho gurtyo (or urtyo).",
+      },
+      {
+        prompt: "It is not nice to laugh like that.",
+        answer: "Si vyiza gutwenga gurtyo.",
+      },
+      {
+        prompt: "The children run like this.",
+        answer: "Abana biruka bartya.",
+      },
+      {
+        prompt: "I did it like this, but you (pl.) do it like that.",
+        answer: "Nabikoze ntya, ariko mwebwe mukore murtyo.",
+      },
+      {
+        prompt: "It’s difficult to catch wild animals because they fear people like that.",
+        answer: "Ni bigumu gufata inyamaswa kuko zitinya abantu zirtyo.",
+      },
+      {
+        prompt: "Do you (sing.) write like this with a pencil?",
+        answer: "Mbega wandika urtya n'ikaramu?",
+      },
+      {
+        prompt: "Stop laughing like that and help your sister! (to a boy)",
+        answer: "Reka gutwenga gurtyo, tabara mushiki wawe!",
+      },
+      {
+        prompt: "Because God’s love is strong like that, He wants to save everybody.",
+        answer: "Kuko urukundo rw'Imana rukomeye rirtyo, ishaka gukiza bose.",
+      },
+      {
+        prompt: "We can’t bring in (from sun) the clothes because they are wet like that.",
+        answer: "Ntidushobora kwanura ivyambaro kuko bitoshe birtyo.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 82",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

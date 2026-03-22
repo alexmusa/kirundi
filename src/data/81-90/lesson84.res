@@ -169,10 +169,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Ibuye ryagawe n’abubatsi ni Yesu.",
+        answer: "The stone which was rejected (or despised) by the builders is Jesus.",
+      },
+      {
+        prompt: "Twatowe n’Imana kuba abana bayo.",
+        answer: "We were chosen by God to be His children.",
+      },
+      {
+        prompt: "Impuzu z’umugore zatabuwe cane n’imbwa.",
+        answer: "The woman's clothes were torn a lot by the dog.",
+      },
+      {
+        prompt: "Umuhungu mubi agawa n’abantu kukw agira nabi imisi yose.",
+        answer: "A bad boy is despised by people because he does bad (things) every day.",
+      },
+      {
+        prompt: "Intama zitatu zishwe n’ibikoko.",
+        answer: "Three sheep were killed by wild animals.",
+      },
+      {
+        prompt: "Amasaha-ne yogejwe neza n’abigeme, arikw abiri yamennywe.",
+        answer: "Four plates were washed well by the girls, but two were broken.",
+      },
+      {
+        prompt: "Basaza banje bompi batumwe guhamagara abantu bo gusakara inzu.",
+        answer: "Both of my brothers were sent to call people to roof the house.",
+      },
+      {
+        prompt: "Turagenda gutabara umukozi kukw aremerewe cane.",
+        answer: "We are going to help the worker because he is very heavily laden.",
+      },
+      {
+        prompt: "Ibitabo vyanje biri hehe? Simbizi, vyose vyashizwe ku meza mu gitondo.",
+        answer: "Where are my books? I don't know, they were all put on the table in the morning.",
+      },
+      {
+        prompt: "Mama arondera impuzu ziwe; ziri hehe? Zamesuwe kare, rero zanikiwe.",
+        answer: "Mother is looking for her clothes; where are they? They were washed early, then they were hung out to dry.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The leopard was feared by all the people because it caught two goats.",
+        answer: "Ingwe yatinzwe n'abantu bose kuko yafashe impene zibiri.",
+      },
+      {
+        prompt: "Many francs were offered by the people in the church.",
+        answer: "Amafaranga menshi yatanzwe n'abantu mw'ishengero.",
+      },
+      {
+        prompt: "The boys were punished by the teacher because they were absent many days.",
+        answer: "Abahungu bahanywe n'umwigisha kuko basivye imisi myinshi.",
+      },
+      {
+        prompt: "The chair was broken and the boy’s clothes were torn.",
+        answer: "Intebe yamennywe n'impuzu z'umuhungu zatabuwe.",
+      },
+      {
+        prompt: "There are many little holes in the new clothes.",
+        answer: "Hariho intoboro ntonya nyinshi mu mpuzu nshasha.",
+      },
+      {
+        prompt: "The teacher’s house will be torn down because it was built badly.",
+        answer: "Inzu y'umwigisha izosamburwa kuko yubatswe nabi.",
+      },
+      {
+        prompt: "How many francs were the workmen paid? I don’t know.",
+        answer: "Abakozi bahembwe amafaranga angahe? Simbizi.",
+      },
+      {
+        prompt: "The lamps were lit by the houseboy (umuboyi) because it got dark early.",
+        answer: "Amatara yadometswe n'umuboyi kuko hari hacitse umwiza kare.",
+      },
+      {
+        prompt: "My sister’s (of a boy) new clothes were stolen yesterday, and she doesn’t have (any) francs to buy more.",
+        answer: "Impuzu nshasha za mushiki wanje zivye ejo, kandi nta mafaranga afise yo kugura izindi.",
+      },
+      {
+        prompt: "We know that there are wild animals here because they have been seen by many people.",
+        answer: "Tuzi ko hariho ibikoko hano kuko vyabonetse n'abantu benshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 84: Past of Passives",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

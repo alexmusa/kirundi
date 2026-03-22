@@ -104,10 +104,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Imana ishimwe kuko yaduhaye agakiza.",
+        answer: "God be praised because He gave us salvation.",
+      },
+      {
+        prompt: "Abigishwa bose barategekwa n’abigisha babo n’abavyeyi babo.",
+        answer: "All students are commanded (ruled) by their teachers and their parents.",
+      },
+      {
+        prompt: "Impuzu zibarīrwa neza n’abakobwa.",
+        answer: "The clothes are sewn well by the girls.",
+      },
+      {
+        prompt: "Umwana mushasha w’umwigisha yitwa Kasa.",
+        answer: "The teacher's new child is called Kasa.",
+      },
+      {
+        prompt: "Umuhungu agira ishari kukw abandi bashimwa cane.",
+        answer: "The boy is jealous because the others are praised a lot.",
+      },
+      {
+        prompt: "Ngomba yukw inyanya zirongwa kabiri mu mazi yo kunywa.",
+        answer: "I want the tomatoes to be washed twice in drinking water.",
+      },
+      {
+        prompt: "Abana banyu ni beza kuko bakunda kuganzwa neza n’abakuru babo.",
+        answer: "Your children are good because they like to be ruled well by their elders.",
+      },
+      {
+        prompt: "Abantu bose bazobarirwa inkuru nziza yuko Yesu akiza.",
+        answer: "All people will be told the good news that Jesus saves.",
+      },
+      {
+        prompt: "Ibisuma vyirutse kuko bitinya ko bizofatwa.",
+        answer: "The thieves ran because they fear that they will be caught.",
+      },
+      {
+        prompt: "Abakuru b’igihugu bubahwa n’abantu bose.",
+        answer: "The leaders of the country are respected by all people.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The child is taken out of school because he is very bad.",
+        answer: "Umwana akurwa mu nzu y'ishure kuko ari mubi cane.",
+      },
+      {
+        prompt: "The man is sent to Gitega to buy food.",
+        answer: "Umugabo arungikwa i Gitega kugura ivyo kurya.",
+      },
+      {
+        prompt: "The books are brought by the boys and we shall use them in school tomorrow.",
+        answer: "Ibitabu bizanwa n'abahungu kandi tuzobikoresha mu nzu y'ishure ejo.",
+      },
+      {
+        prompt: "Jesus is called Savior because He came to save all people.",
+        answer: "Yesu yitwa Umukiza kuko yaje gukiza abantu bose.",
+      },
+      {
+        prompt: "We are redeemed by the blood of Jesus.",
+        answer: "Ducungurwa n'amaraso ya Yesu.",
+      },
+      {
+        prompt: "The Word of God can be trusted because it is the truth.",
+        answer: "Ijambo ry'Imana rishobora kwizigirwa kuko ari ukuri.",
+      },
+      {
+        prompt: "We want that all your (pl.) things be prepared because we will go very early.",
+        answer: "Turashaka yuko ibintu vyanyu vyose bitegurwa kuko tuzogenda kare cane.",
+      },
+      {
+        prompt: "The francs (which) are given today will be used to buy books.",
+        answer: "Amafaranga ahabwa uyu musi azokoreshwa kugura ibitabu.",
+      },
+      {
+        prompt: "Our guests are called by the teacher so that they may go to see the school.",
+        answer: "Abashitsi bacu bahamagagwa n'umwigisha kugira ngo baje kuraba ishure.",
+      },
+      {
+        prompt: "Give me (some) food quickly for (because) I’m dying of hunger (i.e. I’m being killed by hunger).",
+        answer: "Mpa ivyo kurya n'ingoga kuko ndiko ndicwa n'inzara.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 83: Passive Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

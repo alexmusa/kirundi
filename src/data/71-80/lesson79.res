@@ -83,10 +83,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ivyaha vyacu birababaza Yesu.",
+        answer: "Our sins make Jesus suffer.",
+      },
+      {
+        prompt: "Satani akunda kutugwisha mu vyaha; ariko Yesu aradushoboza kumunesha.",
+        answer: "Satan likes to make us fall into sins; but Jesus enables us to overcome him.",
+      },
+      {
+        prompt: "Abafundi bamenesha amabuye inyundo nini.",
+        answer: "The builders break the stones with a big hammer.",
+      },
+      {
+        prompt: "Amara-so ya Yesu yaduhesheje agakiza.",
+        answer: "The blood of Jesus obtained salvation for us (or: caused us to be given salvation).",
+      },
+      {
+        prompt: "Canisha inkwi nini.",
+        answer: "Build a fire with big firewood.",
+      },
+      {
+        prompt: "Ndagusavye kumfasha ariko singomba kugutesha umwanya (time).",
+        answer: "I ask you to help me but I don't want to make you lose time.",
+      },
+      {
+        prompt: "Kera Abarundi barishije intoke arik’ ubu hafi bose barisha ibiyiko.",
+        answer: "Long ago Burundians ate with their fingers but now almost all eat with spoons.",
+      },
+      {
+        prompt: "Unyweshe umuti mu kiyiko umwana arwaye.",
+        answer: "Give the sick child medicine with a spoon (lit: make the sick child drink medicine in a spoon).",
+      },
+      {
+        prompt: "Abanyakazi batemesheje umupanga ivyatsi.",
+        answer: "The workers cut the grass with a machete.",
+      },
+      {
+        prompt: "Abana banse kuvoma; vyarakishije nyina.",
+        answer: "The children refused to fetch water; it made their mother angry.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Bring water with a pail and pour it on the flowers.",
+        answer: "Vomesha amazi indobo uyasuke ku mashurwe.",
+      },
+      {
+        prompt: "The stone caused him to fall.",
+        answer: "Ibuye ryamugwishije.",
+      },
+      {
+        prompt: "Three boys lost their books, and the teacher punished them with a stick.",
+        answer: "Abahungu batatu bataye ibitabo vyabo, maze umwigisha abahanisha inkoni.",
+      },
+      {
+        prompt: "Have you (some) millet? Grind it with stones.",
+        answer: "Ufise uburo? Busyeshe amabuye.",
+      },
+      {
+        prompt: "Jesus saved us with His blood.",
+        answer: "Yesu adukirisha amaraso yiwe.",
+      },
+      {
+        prompt: "Rain and sun make the plants grow (= cause plants to grow).",
+        answer: "Imvura n'izuba bikuza ibimera.",
+      },
+      {
+        prompt: "I want to praise God with my whole life.",
+        answer: "Ngomba gushimagiza Imana n'ubugingo bwanje bwose.",
+      },
+      {
+        prompt: "Let’s not worship God with just (only) words, but let’s worship Him with our hearts.",
+        answer: "Ntitunyasenge Imana n'amajambo gusa, ariko tuyisenge n'imitima yacu.",
+      },
+      {
+        prompt: "Help me look for my pencil. I want to write a letter with it (= use it to write).",
+        answer: "Mfasha kurondera ikaramu yanje. Ngomba kuyandikisha ikete.",
+      },
+      {
+        prompt: "Wash (sing.) the windows with a lot of clean water and clean clothes.",
+        answer: "Ozesha amadirishya amazi menshi meza n'impuzu zisuku.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 79: Causatives (continued)",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };
