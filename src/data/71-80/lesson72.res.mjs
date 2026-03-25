@@ -144,24 +144,116 @@ let Content = {
   make: Lesson72$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abantu ntibemeye kudutabara mu kazi kacu.",
+        answer: "The people did not agree to help us in our work."
+      },
+      {
+        prompt: "Nagiye kure kuraba umwungere yamara sinamubonye kuko yagiye ahandi.",
+        answer: "I went far to look for the shepherd but I did not see him because he went elsewhere."
+      },
+      {
+        prompt: "Barondeye impamba zabo zo kurya mu rugendo; ntibagomvye gusonza.",
+        answer: "They looked for their food for the journey to eat on the trip; they did not want to be hungry."
+      },
+      {
+        prompt: "Hirya y’ejo umutama yarahwereye.",
+        answer: "The day before yesterday the old man died."
+      },
+      {
+        prompt: "Nahaye umuhungu igitabo n’ikaramu.",
+        answer: "I gave the boy a book and a pen."
+      },
+      {
+        prompt: "Mbeg’ imbugita yanje iri hehe? Nayiguhaye hirya y’ejo.",
+        answer: "Where is my knife? I gave it to you the day before yesterday."
+      },
+      {
+        prompt: "Nahemvye abanyakazi amafaranga menshi mu kwezi guheze.",
+        answer: "I paid the workers much money last month."
+      },
+      {
+        prompt: "Umwigisha yigishije vyinshi abana b’abanyakazi.",
+        answer: "The teacher taught the workers' children many things."
+      },
+      {
+        prompt: "Ntimwirutse n’ingoga cane, rero mwaratevye.",
+        answer: "You (pl.) did not run very quickly, so you were late."
+      },
+      {
+        prompt: "Mw iyinga riheze umuganga yavuye abantu benshi indwara zabo.",
+        answer: "Last week the doctor cured many people of their illnesses."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boys ran to school; they didn’t want to be late.",
+        answer: "Abahungu birutse kw’ishure; ntibagomvye guteba."
+      },
+      {
+        prompt: "I didn’t have food for the journey and I was hungry.",
+        answer: "Sinari n’impamba kandi narashonje."
+      },
+      {
+        prompt: "Long ago the people helped us to build the church.",
+        answer: "Kera abantu baradutabaye kwubaka ishengero."
+      },
+      {
+        prompt: "Did you (pl.) give the children clothes? Yes, we gave them to them.",
+        answer: "Mbega mwahaye abana impuzu? Egome, twazibahaye."
+      },
+      {
+        prompt: "The woman is very sick (dying); let them take her to a doctor.",
+        answer: "Umugore arahwereye; nibamujane kwa muganga."
+      },
+      {
+        prompt: "The day after tomorrow we will go to help (to the assistance of) the poor man.",
+        answer: "Hirya y’ejo tuzogenda gutabara umworo."
+      },
+      {
+        prompt: "Last month the ‘fundis’ didn’t finish building our new house, but they worked very hard.",
+        answer: "Mu kwezi guheze abafundi ntibahejeje kwubaka inzu yacu nshasha, yamara barakoze cane."
+      },
+      {
+        prompt: "You have come very late (= you were late to come). Yes, the journey was very difficult for us.",
+        answer: "Mwatevye cane kuza. Egome, urugendo rwatugoye cane."
+      },
+      {
+        prompt: "The young lady lied to me, but I have forgiven her.",
+        answer: "Umwigeme yarambeshe, yamara naramuhariye."
+      },
+      {
+        prompt: "On our journey we saw many wild animals, and they didn’t run away.",
+        answer: "Mu rugendo rwacu twabonye ibikoko vyinshi, kandi ntivyirutse."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson72$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 72: Negative of Far Past",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

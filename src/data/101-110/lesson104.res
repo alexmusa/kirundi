@@ -116,10 +116,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Nta muntu nabonye mw ishuli mu gitondo.",
+        answer: "I saw no person in school in the morning.",
+      },
+      {
+        prompt: "Mbega nta wuri hano agomba kunkorera?",
+        answer: "Is there no one here who wants to work for me?",
+      },
+      {
+        prompt: "Nta gitabo na kimwe gisigaye.",
+        answer: "Not even one book is left.",
+      },
+      {
+        prompt: "Nta mubabaro yagize naho se yapfuye.",
+        answer: "He had no sorrow although his father died.",
+      },
+      {
+        prompt: "Mu gihe Imana yakuriye abantu bayo muri Egiputa, nta mfura n’imwe yasigaye mu Banyegiputa itapfuye.",
+        answer: "In the time when God took out His people from Egypt, not even one first-born was left among the Egyptians who did not die.",
+      },
+      {
+        prompt: "Mbega mur’ ivyo bitoke vyose waguze, nta na kimwe gisigaye?",
+        answer: "Among all those bananas you bought, is not even one left?",
+      },
+      {
+        prompt: "Urya mugabo nta bana afise bazima atar’ imfura yiwe.",
+        answer: "That man has no living children except his first-born.",
+      },
+      {
+        prompt: "Naho twagerageje cane, nta rubaho na rumwe rwo gukora urugi twashoboye kuronka.",
+        answer: "Although we tried hard, we were not able to find even one board for making a door.",
+      },
+      {
+        prompt: "Nta kubabara mfise mu nda, ni mu mutwe gusa.",
+        answer: "I have no pain in the stomach, it is only in the head.",
+      },
+      {
+        prompt: "Nta wumvise ingoma? N’igihe co kwinjira mu rusengero.",
+        answer: "Did no one hear the drum? It is time to enter the church.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "No lodging place were they able to find.",
+        answer: "Nta ndaro bashoboye kuronka.",
+      },
+      {
+        prompt: "Those old men have some bad habits; but not one wants to leave them.",
+        answer: "Abo batama bafise imigenzo mibi; ariko nta n'umwe agomba kuyasiga.",
+      },
+      {
+        prompt: "Has anyone seen my pencil? (Using 'nta')",
+        answer: "Nta wabonye ikaramu yanje?",
+      },
+      {
+        prompt: "I haven’t any francs to buy beans.",
+        answer: "Nta mafranga mfise yo kugura ibiharage.",
+      },
+      {
+        prompt: "No one builds a house on sand.",
+        answer: "Nta wubaka inzu ku musenyi.",
+      },
+      {
+        prompt: "No visitors came, although we prepared lodging for them.",
+        answer: "Nta bashitsi baje, naho twabateguriye indaro.",
+      },
+      {
+        prompt: "Doesn’t anybody lack a songbook (book of songs)? I picked up one here.",
+        answer: "Mbega nta wubuze igitabo c'indirimbo? Natoye kimwe hano.",
+      },
+      {
+        prompt: "Didn’t anybody go to harvest the millet?",
+        answer: "Nta wagiye gushungura uburo?",
+      },
+      {
+        prompt: "We haven’t heard any news of our friends, although they went home last month.",
+        answer: "Nta nkur' z'abagenzi bacu twumvise, naho batashye ukwezi guheze.",
+      },
+      {
+        prompt: "Are there no fundis who know how to put a roof on a house?",
+        answer: "Mbega nta bafundi bariho bazi gushira igisenge ku nzu?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 104: Uses of",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

@@ -85,10 +85,114 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Vocabulary",
+    questions: [
+      {prompt: "gusha (hiye)", answer: "to cook (intr.), to be cooked, to ripen, to burn (intr.)"},
+      {prompt: "gushuha (she)", answer: "to be (get) hot"},
+      {prompt: "gushusha (hije)", answer: "to heat (trans.)"},
+      {prompt: "igisagara", answer: "large village, city, town"},
+      {prompt: "imihana", answer: "cluster of huts"},
+      {prompt: "ikirato", answer: "shoe"},
+    ],
+  },
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Ntidushobora kurya ubu kukw indya zitarasha.",
+        answer: "We cannot eat now because the food is not yet cooked.",
+      },
+      {
+        prompt: "Mubanze muheze ibikorwa vyose mutarataha.",
+        answer: "First finish all the work before you go home.",
+      },
+      {
+        prompt: "Uzobona umusozi muremure utarashika mu gisagara.",
+        answer: "You will see a tall mountain before you reach the city.",
+      },
+      {
+        prompt: "Bucumi ntafise ibirato kukw atararonka amafaranga yo kubigura.",
+        answer: "Bucumi doesn't have shoes because he hasn't yet received money to buy them.",
+      },
+      {
+        prompt: "Abanya-kazi ntibaratangura gukora kuk' umufundi ataraza.",
+        answer: "The workers haven't started to work yet because the builder/foreman hasn't come.",
+      },
+      {
+        prompt: "Ntiwamure inkere zitarasha.",
+        answer: "Do not pick the berries before they are ripe.",
+      },
+      {
+        prompt: "Ni mwiruke; inzu y'umwigisha irahiye hariya mu mihana.",
+        answer: "Run; the teacher's house is burning over there in the cluster of huts.",
+      },
+      {
+        prompt: "Mutaragenda mu gisagara, murondere amafaranga yo kugura ibintu.",
+        answer: "Before you go to the city, look for money to buy things.",
+      },
+      {
+        prompt: "N'ubwire umutama Ubutumwa Bgiza kugira ngw akizwe atarapfa.",
+        answer: "Tell the old man the Good News so that he may be saved before he dies.",
+      },
+      {
+        prompt: "Indya zirahiye neza, none dushobora kurya utarataha.",
+        answer: "The food is well cooked, now we can eat before you go home.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I can’t begin to cook the potatoes because the water isn’t hot yet.",
+        answer: "Sindashobora gutangura guteka ibijumbu kuko amazi atarashuha.",
+      },
+      {
+        prompt: "We aren’t going now for the workers haven’t been paid yet.",
+        answer: "Ntitugenda ubu kuko abakozi batararihirwa.",
+      },
+      {
+        prompt: "Heat the food again for we haven’t eaten yet.",
+        answer: "Subira ushushe indya kuko tutararya.",
+      },
+      {
+        prompt: "Bring the clothes in (from the sun) before it rains (before rain falls).",
+        answer: "Zana impuzu imvura itaragwa.",
+      },
+      {
+        prompt: "Sweep the floor before you start to work outside.",
+        answer: "Kopa hasi utaratangura gukora hanze.",
+      },
+      {
+        prompt: "The water is very hot; prepare the coffee before you go.",
+        answer: "Amazi arashushe cane; tegura ikawa utaragenda.",
+      },
+      {
+        prompt: "Are the oranges ripe? Yes, they are very ripe. Pick them all please.",
+        answer: "Amacungwa arahiye? Egome, arahiye cane. Yamyure yose, utubabarire.",
+      },
+      {
+        prompt: "Have (let) the children finish reading before you play.",
+        answer: "Reka abana baheze gusoma mutarakina.",
+      },
+      {
+        prompt: "Take that child to the doctor; he can’t get well before he receives medicine.",
+        answer: "Twara uwo mwana kwa muganga; ntashobora gukira atararonka umuti.",
+      },
+      {
+        prompt: "Be patient; we can’t eat before the meat is done.",
+        answer: "Ihangane; ntidushobora kurya inyama zitarasha.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 92: Dependent Not Yet Tense",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

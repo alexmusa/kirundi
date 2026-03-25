@@ -205,24 +205,141 @@ let Content = {
   make: Lesson98$Content
 };
 
+let quizData = [
+  {
+    title: "I. Make the following verbs prepositional and translate",
+    questions: [
+      {
+        prompt: "kwandika",
+        answer: "kwandikira - to write to/for"
+      },
+      {
+        prompt: "kugaruka",
+        answer: "kugarukira - to return to/for"
+      },
+      {
+        prompt: "kugira",
+        answer: "kugirira - to do for/have for"
+      },
+      {
+        prompt: "gusoma",
+        answer: "gusomera - to read to/for"
+      },
+      {
+        prompt: "kwubaka",
+        answer: "kwubakira - to build for"
+      },
+      {
+        prompt: "guteka",
+        answer: "gutekera - to cook for"
+      },
+      {
+        prompt: "gusaba",
+        answer: "gusabira - to ask for/pray for"
+      },
+      {
+        prompt: "guhunga",
+        answer: "guhungira - to flee to"
+      },
+      {
+        prompt: "kubika",
+        answer: "kubikira - to store for/put away for"
+      },
+      {
+        prompt: "kwanka",
+        answer: "kwankira - to refuse for"
+      },
+      {
+        prompt: "kwonona",
+        answer: "kwononera - to spoil for"
+      },
+      {
+        prompt: "kuraka",
+        answer: "kurakira - to be angry at"
+      },
+      {
+        prompt: "kubabara",
+        answer: "kubabarira - to forgive/suffer for"
+      },
+      {
+        prompt: "kuvoma",
+        answer: "kuvomera - to draw water for"
+      },
+      {
+        prompt: "gutwenga",
+        answer: "gutwengera - to laugh at/for"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into English",
+    questions: [
+      {
+        prompt: "Umwigisha arikw arasomera abana mu kihe gitabo?",
+        answer: "In which book is the teacher reading to the children?"
+      },
+      {
+        prompt: "Mbona yuk’ uzi kujisha neza. Ujishira nde uwo mupira?",
+        answer: "I see that you know how to knit well. For whom are you knitting that sweater?"
+      },
+      {
+        prompt: "Ndagusavye kunyihanganira. Ndaza vuba, ndi hafi guheza ibikorwa.",
+        answer: "I ask you to be patient with me. I am coming soon, I am about to finish the work."
+      },
+      {
+        prompt: "Impunzi nyinshi zizoza mur’ iri yinga. N’umfashe kuzitegurira indya nziza kugira ngo tuzakire neza.",
+        answer: "Many refugees will come this week. Help me to prepare good food for them so that we may welcome them well."
+      },
+      {
+        prompt: "Yesu yatweretse urukundo rwiwe rwinshi kuko yadupfiriye ku musaraba.",
+        answer: "Jesus showed us his great love because he died for us on the cross."
+      }
+    ]
+  },
+  {
+    title: "III. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Turn (pl.) to God and He will save you and give you new hearts.",
+        answer: "Muhindukirire Imana, nayo izobakiza, ibe n'imitima mishasha."
+      },
+      {
+        prompt: "The man saw a leopard and he fled to the doorway of his house.",
+        answer: "Umugabo yabonye ingwe, ahungira ku muryango w'inzu yiwe."
+      },
+      {
+        prompt: "Heat much water for me because I want to take a bath.",
+        answer: "Nshuhiriza amazi menshi kuko nshaka kwiyuhagira."
+      },
+      {
+        prompt: "I haven’t seen my brother (I, a girl) (for) many months; I want to write to him.",
+        answer: "Sinabonye musaza wanje amezi menshi; nshaka kumwandikira."
+      },
+      {
+        prompt: "We want to know the names of the teachers; will you ask Bwana for us?",
+        answer: "Tushaka kumenya amazina y'abigisha; uzotubariza Bwana?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson98$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 98: Prepositional Form of Verb",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

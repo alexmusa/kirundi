@@ -180,24 +180,116 @@ let Content = {
   make: Lesson55$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Sinshobora kwandika icete; sinazanye ikaramu ryanje.",
+        answer: "I cannot write a letter; I didn't bring my pencil."
+      },
+      {
+        prompt: "Abantu bangahe bavuye mu rusengero?",
+        answer: "How many people came from the church?"
+      },
+      {
+        prompt: "Navuye mu vyaha vyinshi; ubu nzokurikira Yesu imyaka yanje yose.",
+        answer: "I came away from many sins; now I will follow Jesus all my years."
+      },
+      {
+        prompt: "Mbega ntimwazanye amakaramu yanyu n’inkaratasi zanyu?",
+        answer: "Didn't you (pl.) bring your pencils and your papers?"
+      },
+      {
+        prompt: "Ishengero rinini ryakurikiye Yesu hose, ntiryagomvye kuva kuri we.",
+        answer: "A large crowd followed Jesus everywhere, it didn't want to leave him."
+      },
+      {
+        prompt: "Abavyeyi bacu ntibubatse inzu nini cane.",
+        answer: "Our parents didn't build a very large house."
+      },
+      {
+        prompt: "Mbega ntiwaguze inkaratasi n’ikaramu?",
+        answer: "Didn't you (sing.) buy paper and a pencil?"
+      },
+      {
+        prompt: "Imbwa ntizaje mu rusengero; ntitwagomvye ko zinjira.",
+        answer: "The dogs didn't go into the church; we didn't want them to enter."
+      },
+      {
+        prompt: "Ibikoko ntivyumvise abantu; rero (so) bafashe vyinshi.",
+        answer: "The animals didn't hear the people; so they caught many."
+      },
+      {
+        prompt: "Umusuma ntiyaronse ibintu vyinshi kuk’ umusore yinjiye mu nzu.",
+        answer: "The thief didn't get many things because the young man entered the house."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boys didn’t come from school, they came from church.",
+        answer: "Abahungu ntibavuye mw ishure, bavuye mu rusengero."
+      },
+      {
+        prompt: "The children wrote on all the paper and we didn’t have any other.",
+        answer: "Abana banditse ku nkaratasi zose, rero ntitwafise izindi."
+      },
+      {
+        prompt: "The blind men fell; they couldn’t see the path.",
+        answer: "Impumyi zaguye; ntizashoboye kubona inzira."
+      },
+      {
+        prompt: "Didn’t you (sing.) want to cook the sweet potatoes in the evening yesterday or did you forget?",
+        answer: "Mbega ntiwagomvye guteka ibijumbu ejo nimugoroba, canke waravyibagiye?"
+      },
+      {
+        prompt: "The young men did not eat all the beans.",
+        answer: "Abasore ntibariye ibiharage vyose."
+      },
+      {
+        prompt: "We didn’t ask the teacher to write a letter because he is very busy (= has much work).",
+        answer: "Ntitwasavye umwigisha kwandika icete kuko afise igikorwa cinshi."
+      },
+      {
+        prompt: "Didn’t you (pl.) bathe this morning? Your legs are very dirty.",
+        answer: "Mbega ntimwiyogeje uno musi mu gitondo? Amaguru yanyu ni mabi cane."
+      },
+      {
+        prompt: "They sang two songs at church, but I didn’t sing.",
+        answer: "Baririmvye indirimbo zibiri mu rusengero, mugabo sinasirimvye."
+      },
+      {
+        prompt: "Didn’t the young girls agree to hoe in our gardens today?",
+        answer: "Mbega abigeme ntibemeye kurima mu mirima yacu uyu musi?"
+      },
+      {
+        prompt: "The dog didn’t look at the cat; it looked for food.",
+        answer: "Imbwa ntiyitegereje akagege; yarondeye ibiribwa."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson55$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 55: Negative of Ordinary Past",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

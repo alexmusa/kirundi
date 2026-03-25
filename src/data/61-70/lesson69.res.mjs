@@ -265,24 +265,116 @@ let Content = {
   make: Lesson69$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ukubure neza mu nzu no mu rusengero.",
+        answer: "Sweep well in the house and in the church."
+      },
+      {
+        prompt: "Ibikoko vyo mw ishamba ni bibi kandi ni vyinshi cane.",
+        answer: "The wild animals of the forest are bad and are very many."
+      },
+      {
+        prompt: "Abagabo bagiye kurondera ubwatsi bwo gusakara inzu.",
+        answer: "The men have gone to look for grass for thatching the house."
+      },
+      {
+        prompt: "Abantu batemye ubwatsi bwose bwo ku musozi.",
+        answer: "The people cut all the grass on the hill."
+      },
+      {
+        prompt: "Tugende kurima no gutema ivyatsi.",
+        answer: "Let's go to cultivate and to cut the grass."
+      },
+      {
+        prompt: "Unyereke imbuto zo mu murima.",
+        answer: "Show me the seeds (or fruit) in the garden."
+      },
+      {
+        prompt: "Har’ ivyatsi bibi vyinshi mu mirima no mu ndimiro.",
+        answer: "There are many weeds in the fields and in the gardens."
+      },
+      {
+        prompt: "Tuzotangura kwubaka vuba; tugomba umusenyi mwiza wo mu ruzi.",
+        answer: "We will start to build soon; we want good sand from the river."
+      },
+      {
+        prompt: "Imana irakunda cane umuntu wese wo mu bwami bwayo.",
+        answer: "God loves very much every person in His kingdom."
+      },
+      {
+        prompt: "Mugende murondere imbuto zo ku biti.",
+        answer: "Go (pl.) look for the seeds (or fruit) on the trees."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The soil in the garden is not good.",
+        answer: "Ivu ryo mu murima si ryiza."
+      },
+      {
+        prompt: "The leaves on the trees are beginning to fall (gukoroka).",
+        answer: "Amababi yo ku biti atanguye gukoroka."
+      },
+      {
+        prompt: "We want to sing and to pray in the church.",
+        answer: "Tugomba kuririmba no gusenga mu rusengero."
+      },
+      {
+        prompt: "The bricks of the house are not strong.",
+        answer: "Amatafari y'inzu si akomeye."
+      },
+      {
+        prompt: "Cut (pl.) all the grass in the garden. I don’t want it.",
+        answer: "Muteme ivyatsi vyose vyo mu murima. Sinkivyipfuza."
+      },
+      {
+        prompt: "The flowers on the hills are beautiful; let’s go get (look for) some (them).",
+        answer: "Amashurwe yo ku misozi ni meza; tugende kuyarondera."
+      },
+      {
+        prompt: "The weeds in the garden will kill the plants.",
+        answer: "Ivyatsi bibi vyo mu murima bizokwica ibimera."
+      },
+      {
+        prompt: "The hair on the sheep’s skin is long.",
+        answer: "Umushatsi wo ku rukoba rw'intama ni muremure."
+      },
+      {
+        prompt: "The pages of the book are very dirty; let’s be careful in reading them.",
+        answer: "Ibikaratasi vyo mu gitabo ni bishaye cane; twirinde mu kubisoma."
+      },
+      {
+        prompt: "The words in God’s book are wonderful; let’s read them every day.",
+        answer: "Amajambo yo mu gitabo c'Imana ni ay'igitangaza; tuyasome imisi yose."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson69$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 69: Possessive Particle –",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

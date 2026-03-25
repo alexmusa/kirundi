@@ -267,24 +267,116 @@ let Content = {
   make: Lesson91$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umworo arakennye cane kukw adafise ibintu vyinshi cank’ amafaranga menshi.",
+        answer: "The poor man is very poor because he does not have many things or much money."
+      },
+      {
+        prompt: "Ngomba irya nka kukw ari nziza cane.",
+        answer: "I want that cow because it is very good."
+      },
+      {
+        prompt: "Umwigisha ntazoza ejo kukw arwaye inyonko.",
+        answer: "The teacher will not come tomorrow because he is sick with a cold."
+      },
+      {
+        prompt: "Ntushobora kubona umuzungu uyu musi kuko yagiye ahandi.",
+        answer: "You cannot see the white man today because he went elsewhere."
+      },
+      {
+        prompt: "Ntitugomba kugenda hariya kukw ar’ inzira mbi.",
+        answer: "We don't want to go there because it's a bad path."
+      },
+      {
+        prompt: "Uwo mwana yapfuye kukw atavuwe mu bitaro.",
+        answer: "That child died because he was not treated in the hospital."
+      },
+      {
+        prompt: "Musazanje yavuze yukw atazogenda i Gitega mur’ iyi misi.",
+        answer: "My brother said that he will not go to Gitega during these days."
+      },
+      {
+        prompt: "Sinshobora kwihangana kuko ntagomba guteba.",
+        answer: "I cannot be patient because I do not want to be late."
+      },
+      {
+        prompt: "Yemwe bana, ntimukinishe imicungwe, kukw atar’ impira, n’indya.",
+        answer: "You children, do not play with the oranges, because they are not balls, they are food."
+      },
+      {
+        prompt: "Ntidushobora kugura imicungwe uyu musi kuko tutayikena.",
+        answer: "We cannot buy oranges today because we do not need them."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "That man over there cannot see because he is a blind man.",
+        answer: "Urya muntu hariya ntashobora kubona kuko ari impumyi."
+      },
+      {
+        prompt: "You can all learn in one room because you are not many.",
+        answer: "Mwese mushobora kwiga mu cumba kimwe kuko mutari benshi."
+      },
+      {
+        prompt: "The workmen will finish today because they are not lazy.",
+        answer: "Abakozi bazoheza uyu musi kuko batari abanebwe."
+      },
+      {
+        prompt: "Don’t bring that lamp for it is not good.",
+        answer: "Ntuzane urwo rumuri kuko atari rwiza."
+      },
+      {
+        prompt: "I can’t finish that work today for I haven’t time.",
+        answer: "Sinshobora guheza ico gikorwa uyu musi kuko ntagira umwanya."
+      },
+      {
+        prompt: "I don’t have (any) flour to make bread, because I can’t untie the sack.",
+        answer: "Ntagira ifu yo gukora umutsima, kuko ntashobora kuzirura umufuko."
+      },
+      {
+        prompt: "The boys don’t have food because they didn’t gather the sweet potatoes today.",
+        answer: "Abahungu ntibafise ibifungurwa kuko batatoye ibijumbu uyu musi."
+      },
+      {
+        prompt: "The fundis were not paid today, because they didn’t wait (patiently).",
+        answer: "Abafundi ntibarishijwe uyu musi, kuko batahwihanganye."
+      },
+      {
+        prompt: "The people are afraid because they didn’t catch the thieves.",
+        answer: "Abantu baratinya kuko batafashe abasuma."
+      },
+      {
+        prompt: "The teacher’s child is crying because the other children didn’t play nicely.",
+        answer: "Umwana w'umwigisha ariko ararira kuko abandi bana batakinnye neza."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson91$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 91: Dependent Clauses",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

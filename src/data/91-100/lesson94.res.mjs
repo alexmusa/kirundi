@@ -185,24 +185,116 @@ let Content = {
   make: Lesson94$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Kuko Yesu yapfuye ku musaraba azokiza abantu bose bamwizera.",
+        answer: "Because Jesus died on the cross he will save all the people who believe in him."
+      },
+      {
+        prompt: "Dukunda kuyaga n’abantu badukunda.",
+        answer: "We like to talk (chat) with people who love us."
+      },
+      {
+        prompt: "Abanyakazi bataje uyu musi ntibazoronka amafaranga yabo ejo.",
+        answer: "The workers who did not come today will not get their money tomorrow."
+      },
+      {
+        prompt: "Abagore nabonye baraje mu rusengero.",
+        answer: "The women whom I saw have come into the church."
+      },
+      {
+        prompt: "Inkere wamuye ni mbi; ntidushobora kuzirya.",
+        answer: "The berries you picked are bad; we cannot eat them."
+      },
+      {
+        prompt: "Utwo tuntu ufise mu biganza, wadukuye hehe?",
+        answer: "Those little things you have in your hands, where did you get them?"
+      },
+      {
+        prompt: "Abana basubira kuyaga mw ishuli ntibazobura guhanwa.",
+        answer: "The children who chat again in school will not fail to be punished."
+      },
+      {
+        prompt: "Mureke kurwana; umugabo yabanje gukubita uwundi akwiye kumusaba ikigongwe.",
+        answer: "Stop fighting; the man who first hit the other ought to ask him for forgiveness."
+      },
+      {
+        prompt: "Ntimwonone za mpuzu nziza mwahawe. Ntimuzoronka izindi.",
+        answer: "Do not spoil those fine clothes you were given. You will not get others."
+      },
+      {
+        prompt: "Ntiturinda kurorera wa mwana atevye; araza hanyuma.",
+        answer: "We do not have to wait for that child who is late; he is coming later."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The men who went home early are lazy.",
+        answer: "Abagabo bagiye imuhira kare ni abanebwe."
+      },
+      {
+        prompt: "I don’t see the books which I brought.",
+        answer: "Ntibona ibitabo nazanye."
+      },
+      {
+        prompt: "The love which God showed us in Jesus is very great (much).",
+        answer: "Urukundo Imana yatweretse muri Yesu ni rwinshi cane."
+      },
+      {
+        prompt: "The sheep which you bought, is it here?",
+        answer: "Intama waguze, iri hano?"
+      },
+      {
+        prompt: "The cows which went in the corn are sick now.",
+        answer: "Inka zagiye mu bigori zirwaye ubu."
+      },
+      {
+        prompt: "Those people who are chatting over there ought to go to work.",
+        answer: "Barya bantu bayaga hariya bakwiye kuja gukora."
+      },
+      {
+        prompt: "The food you destroyed is that which we bought last week.",
+        answer: "Indya mwononye ni izo twaguze mu ndwi iheze."
+      },
+      {
+        prompt: "At the time when Jesus was put on the cross, they drove (-teye) nails into his hands.",
+        answer: "Igihe Yesu yashizwe ku musaraba, bamuteye imisumari mu biganza."
+      },
+      {
+        prompt: "The oranges which you (pl.) picked aren’t ripe yet.",
+        answer: "Amacungwa mwamuye ntarahia."
+      },
+      {
+        prompt: "Can’t you endure patiently in these few troubles which you have now? They will soon end.",
+        answer: "Ntimushobora kwihangana muri aya magorwa make mufise ubu? Azohera vuba."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson94$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 94: Relative Clauses",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

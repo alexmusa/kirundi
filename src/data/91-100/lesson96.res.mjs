@@ -217,24 +217,116 @@ let Content = {
   make: Lesson96$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Numva umwana akorora. Ni nde?",
+        answer: "I hear a child coughing. Who is it?"
+      },
+      {
+        prompt: "Abicaye ku ntebe zacu ni ba nde?",
+        answer: "Who are they who are sitting on our chairs?"
+      },
+      {
+        prompt: "Wasuzumye nde? Ararwaye cane?",
+        answer: "Whom did you examine? Is he (or she) very sick?"
+      },
+      {
+        prompt: "Ivyo biti hariya n’ivya nde?",
+        answer: "Whose are those trees over there?"
+      },
+      {
+        prompt: "Nabonye abana babiri barwaye inkorora, badashwe cane. Mbega n’abana ba nde?",
+        answer: "I saw two children sick with a cough, vomiting much. I wonder, whose children are they?"
+      },
+      {
+        prompt: "Ni nde yageze iyo ndimiro ngomba kugura?",
+        answer: "Who measured that field I want to buy?"
+      },
+      {
+        prompt: "Ivyo vyuma, nkwiye kubijana kwa nde?",
+        answer: "To whom should I take those tools?"
+      },
+      {
+        prompt: "Mu bigishwa basuzumwe ejo ni ba nde bashitse?",
+        answer: "Among the students who were examined yesterday, who passed?"
+      },
+      {
+        prompt: "Ziriya ndimiro ziri hafi y’imihana n’iza nde?",
+        answer: "Whose are those fields near the kraals?"
+      },
+      {
+        prompt: "Igihe mwagiye kurondera abasuma mwafashe nde?",
+        answer: "When you went to look for the thieves, whom did you catch?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Whom did you send to Gitega?",
+        answer: "Mwatumye nde i Gitega?"
+      },
+      {
+        prompt: "Whose are the three books which are on the table?",
+        answer: "Ibitabo bitatu biri ku meza n'ivya nde?"
+      },
+      {
+        prompt: "Who are the men who are sitting on the floor?",
+        answer: "Abagabo bicaye hasi ni ba nde?"
+      },
+      {
+        prompt: "Who is the woman you examined?",
+        answer: "Umugore wasuzumye ni nde?"
+      },
+      {
+        prompt: "Who came to the school to call the boys?",
+        answer: "Ni nde yaje kw'ishure guhamagara abahungu?"
+      },
+      {
+        prompt: "To whom did you send the letters you wrote yesterday?",
+        answer: "Amabaruwa mwanditse ejo mwayarungitse kwa nde?"
+      },
+      {
+        prompt: "Whose voice did we hear in the night?",
+        answer: "Ijwi twumvise mw'ijoro ni ry'a nde?"
+      },
+      {
+        prompt: "Who will help that poor man build a house? (those who will ... are who?)",
+        answer: "Abazofasha urya mukene kwubaka inzu ni ba nde?"
+      },
+      {
+        prompt: "I saw a woman who is very sick. She vomited and could not sit up. Who is she?",
+        answer: "Nabonye umugore arwaye cane. Yadashwe kandi ntiyashoboye kwicara. Ni nde?"
+      },
+      {
+        prompt: "At whom are the children laughing?",
+        answer: "Abana batwenga nde?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson96$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 96: Pronoun",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

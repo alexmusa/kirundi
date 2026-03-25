@@ -212,24 +212,120 @@ let Content = {
   make: Lesson78$Content
 };
 
+let quizData = [
+  {
+    title: "I. Make the following verbs causative, and give the meaning of the causative forms",
+    questions: [
+      {
+        prompt: "gukora",
+        answer: "gukoresha - to cause to work, to use"
+      },
+      {
+        prompt: "kurima",
+        answer: "kurimisha - to cause to cultivate, to use for cultivating"
+      },
+      {
+        prompt: "kugenda",
+        answer: "kugendesha - to cause to go, to drive or steer"
+      },
+      {
+        prompt: "gukunda",
+        answer: "gukundisha - to cause to love"
+      },
+      {
+        prompt: "gushima",
+        answer: "gushimisha - to cause to thank, to please"
+      },
+      {
+        prompt: "gusenga",
+        answer: "gusengesha - to cause to pray"
+      },
+      {
+        prompt: "gusoma",
+        answer: "gusomesha - to cause to read"
+      },
+      {
+        prompt: "guhana",
+        answer: "guhanisha - to cause to punish, to punish with"
+      },
+      {
+        prompt: "gutinya",
+        answer: "gutinyisha - to cause to fear, to frighten"
+      },
+      {
+        prompt: "gutanga",
+        answer: "gutangisha - to cause to give, to cause to pay"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into English",
+    questions: [
+      {
+        prompt: "Umugabo yivye amafaranga; abantu baramufashe, kand’ ubu bariko baramubohesha imigozi.",
+        answer: "The man stole money; the people caught him, and now they are tying him with ropes."
+      },
+      {
+        prompt: "Nakebesheje imbugita urutoke.",
+        answer: "I cut my finger with a knife."
+      },
+      {
+        prompt: "Sasishe ivyatsi akawa kawe (or agahawa kawe).",
+        answer: "Spread grass for your coffee (plant)."
+      },
+      {
+        prompt: "Mukundishe Imana imitima yanyu yose.",
+        answer: "Love God with all your hearts."
+      },
+      {
+        prompt: "Igikoko birantinyisha.",
+        answer: "The beast makes me afraid."
+      },
+      {
+        prompt: "Natinyishije abahungu kugira ngo ntibibe inanasi.",
+        answer: "I frightened the boys so that they would not steal pineapples."
+      },
+      {
+        prompt: "Ukoreshe ifu nyinshi mu gucumba umutsima.",
+        answer: "Use much flour in making bread."
+      },
+      {
+        prompt: "Abana bakarabishe amazi menshi kugira ngo ntibagire ico ku ntoke.",
+        answer: "The children should wash with much water so that they don't have anything on their hands."
+      },
+      {
+        prompt: "Mbeg’ invura yabasibishije? Ngomba ko muzoza kare ejo.",
+        answer: "Did the rain make you stay away (delay you)? I want you to come early tomorrow."
+      },
+      {
+        prompt: "Umwigisha Isaka yaririmbishije neza mw ishengero uyu musi.",
+        answer: "Teacher Isaac led the singing well in the church today."
+      },
+      {
+        prompt: "Umwana arikw arakubitisha igiti imbwa kuko yatwaye inyama.",
+        answer: "The child is hitting the dog with a stick because it took the meat."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson78$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 78: Causative Verbs",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

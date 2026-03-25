@@ -401,24 +401,116 @@ let Content = {
   make: Lesson97$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inka zawe n’izihe mur’ izo?",
+        answer: "Which of those are your cows?"
+      },
+      {
+        prompt: "Mbega iyihe mur’ izo nkoko?",
+        answer: "Which (one) of those baskets?"
+      },
+      {
+        prompt: "Mbeg’ ugomba igisamba? Ego, ntware ikihe?",
+        answer: "Do you want a deep basket? Yes, which (one) should I take?"
+      },
+      {
+        prompt: "Muzoza gutangura kwubaka umusi uwuhe?",
+        answer: "Which day will you come to start building?"
+      },
+      {
+        prompt: "Nataye urupfunguzo rumwe. N’uruhe?",
+        answer: "I lost one key. Which (one) is it?"
+      },
+      {
+        prompt: "N’uwuhe muhungu yakubise uwundi?",
+        answer: "Which boy hit the other?"
+      },
+      {
+        prompt: "Nshire ibiharage mu yihe nkōko, iyo nini cank’ iyi ntoya?",
+        answer: "In which basket should I put the beans, that big one or this small one?"
+      },
+      {
+        prompt: "N’ayahe mata yazanywe uyu musi? Ntuyavange n’ay’ (aya) ejo.",
+        answer: "Which milk was brought today? Do not mix it with yesterday's."
+      },
+      {
+        prompt: "Natowe kuba mu kanama akahe?",
+        answer: "In which committee was I chosen to be?"
+      },
+      {
+        prompt: "Iki gisimbo cajishwe n’umugore uwuhe mur’ abo?",
+        answer: "This tall basket was woven by which woman among those?"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "There are many houses in this village; which one do you live in?",
+        answer: "Hariho amazu menshi muri iki kigwati; uba mu ruyihe?"
+      },
+      {
+        prompt: "Which baskets (shallow) shall we take tomorrow?",
+        answer: "Tuzotwara izihe nkōko ejo?"
+      },
+      {
+        prompt: "The council chose one man of (among) these four. Which one?",
+        answer: "Inama yatoye umugabo umwe mur' aba bane. Uwuhe?"
+      },
+      {
+        prompt: "In that battle five men were killed. Which ones?",
+        answer: "Muri iyo ntambara abagabo batanu barishwe. Abāhe?"
+      },
+      {
+        prompt: "I want to buy a small mat, but you have many. I do not know which one I want.",
+        answer: "Ngomba kugura umukeka, mugabo ufise myinshi. Ntimbizi uwuhe ngomba."
+      },
+      {
+        prompt: "Which vegetable do you want me to gather?",
+        answer: "Ugomba ko ntororokanya imboga izihe?"
+      },
+      {
+        prompt: "Which of those men yonder is your brother? (to a girl)",
+        answer: "Uwuhe mur' bariya bagabo ni musaza wawe?"
+      },
+      {
+        prompt: "Which of the pupils are sick (with) coughs? They should go to the dispensary now.",
+        answer: "Abahe mur' abashuri barwaye inkorora? Bakwiye kuja kwa muganga ubu."
+      },
+      {
+        prompt: "From (in) which river did you drink that dirty water?",
+        answer: "Wanyoye ayo mazi mabi mu ruzi uruhe?"
+      },
+      {
+        prompt: "In which month did your friend come to see you? In November.",
+        answer: "Umugenzi wawe yaje kukuraba mu kwezi ukuhe? Muri Munyonyo."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson97$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 97: Adjective –",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -192,24 +192,116 @@ let Content = {
   make: Lesson88$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Rwa ruguma rubi rwakize neza.",
+        answer: "That bad wound (we know) has healed well."
+      },
+      {
+        prompt: "Umwigisha ntazobura guhana ba bana babi.",
+        answer: "The teacher will certainly punish those (known) bad children."
+      },
+      {
+        prompt: "Wa musore ntafise umwanya wo kurondera ca gitabo.",
+        answer: "That young man (we know) has no time to look for that book (we talked about)."
+      },
+      {
+        prompt: "Imbwa zishe ka kayabo kacu; non’ imbeba nyinshi zizoza.",
+        answer: "The dogs killed that little cat of ours; now many mice will come."
+      },
+      {
+        prompt: "Mbega wibutse kuzana ya mafaranga? Oya, nayibagiye.",
+        answer: "Did you remember to bring that money (mentioned before)? No, I forgot it."
+      },
+      {
+        prompt: "Yesu azotujana mw ijuru kugira ngo tubone bwa bwiza bwiwe.",
+        answer: "Jesus will take us to heaven so that we may see that glory of His."
+      },
+      {
+        prompt: "Mbega wabonye ya mbugita yawe? Oya, nayibuze.",
+        answer: "Did you see that knife of yours? No, I failed to find it."
+      },
+      {
+        prompt: "Mbega mutinya iki? Kwa kwizera kwanyu kuri hehe?",
+        answer: "What are you afraid of? Where is that faith of yours?"
+      },
+      {
+        prompt: "Wa mwana arizwa n’iki? Ararira kuko yabuze ya mbwa yiwe.",
+        answer: "What makes that child cry? He is crying because he lost (failed to find) 그at dog of his."
+      },
+      {
+        prompt: "Genda wamure za ngano, uzishire mu masaho.",
+        answer: "Go and spread out that wheat (mentioned), put it in the sacks."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boy’s parents prevented him from bringing (to bring) those sweet potatoes.",
+        answer: "Abavyeyi b'umuhungu bamubujije kuzana ya biyaya."
+      },
+      {
+        prompt: "That bad tire is flat (is dead); we will be late to go.",
+        answer: "Wa mupira mubi wapfuye; tuzoteba kugenda."
+      },
+      {
+        prompt: "Where are those medicines? The people want them.",
+        answer: "Ya miti iri hehe? Abantu barayashaka."
+      },
+      {
+        prompt: "Did you take those seeds? I do not see them.",
+        answer: "Mbega watwaye ya mbuto? Ntabwo ndazibona."
+      },
+      {
+        prompt: "That thief came again in the night; let us catch him.",
+        answer: "Wa mwibanyi yagarutse mw ijoro; nimuze tumufate."
+      },
+      {
+        prompt: "Yesterday that foolish man came back here. Can’t the doctor heal him?",
+        answer: "Ejo wa muntu w'igipfu yagarutse hano. Mbega muganga ntiyoshobora kumukiza?"
+      },
+      {
+        prompt: "Where is that machete you cut grass with yesterday?",
+        answer: "Ya mbugita wakubishije ivyatsi ejo iri hehe?"
+      },
+      {
+        prompt: "The doctor has treated well your father’s wounds. He will certainly get well.",
+        answer: "Muganga yavuye neza ya ruguma ya so. Ntazobura gukira."
+      },
+      {
+        prompt: "Will you take me to Bujumbura? I’m sorry, I don’t have room.",
+        answer: "Mbega uzonjana i Bujumbura? Ndarushije, simfise umwanya."
+      },
+      {
+        prompt: "When will those workmen be paid their francs? I’ll give them to them on May 3rd.",
+        answer: "Ba bakozi bazoriha ryari amafaranga yabo? Nzoyabaha ku itariki zitatu za Rusama."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson88$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 88: Demonstratives (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

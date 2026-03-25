@@ -197,24 +197,116 @@ let Content = {
   make: Lesson93$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Ngomba ikaramu; zana iryo riri ku meza.",
+        answer: "I want a pen; bring that (one which) is on the table."
+      },
+      {
+        prompt: "Umuntu w’Imana akawiye guheba ivyaha vyiwe.",
+        answer: "A person of God ought to give up his sins."
+      },
+      {
+        prompt: "Uyu yari hano mu gitondo; yamfashije mu bikorwa vyinshi.",
+        answer: "This (one) was here in the morning; he/she helped me in many tasks."
+      },
+      {
+        prompt: "Uwo ntarinda kugenda gukora mu murima.",
+        answer: "That (one) doesn't have to go to work in the field."
+      },
+      {
+        prompt: "Abahungu bongera gukina mw ishuli bakwiye kuronka igihano.",
+        answer: "The boys (who) play again in school ought to receive a punishment."
+      },
+      {
+        prompt: "Abigishwa bose ntibakwiwe imbaho; mukwiye kurondera izindi.",
+        answer: "All the pupils don't have enough boards; you (pl.) ought to look for others."
+      },
+      {
+        prompt: "Ntimurinda kugira isoni; mwakoze ivyo neza cane.",
+        answer: "You (pl.) don't have to be ashamed; you did those (things) very well."
+      },
+      {
+        prompt: "Sindatahura neza. Ukwiye kwongera kubimbwira.",
+        answer: "I don't understand well. You (sing.) ought to tell me them again."
+      },
+      {
+        prompt: "Ivyo bitoke ntibikwiye bose; ukwiye kwongera ibindi.",
+        answer: "Those bananas are not enough for everyone; you ought to add others."
+      },
+      {
+        prompt: "Ukwiye kwongera kwandika ivyo utarataha.",
+        answer: "You ought to write those again before you go home."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "You (pl.) ought to confess your sins and begin to follow God.",
+        answer: "Mukwiye kwatura ivyaha vyanyu mugatangura gukurikira Imana."
+      },
+      {
+        prompt: "They ought to be ashamed because they haven’t yet finished their work.",
+        answer: "Bakwiye kugira isoni kuko bataraheza igikorwa cabo."
+      },
+      {
+        prompt: "Do you want a mat? Shall I bring this one?",
+        answer: "Ugomba ikirago? Nzane iki?"
+      },
+      {
+        prompt: "We don’t have to cut all the grass today.",
+        answer: "Ntiturinda gukata ivyatsi vyose uyu munsi."
+      },
+      {
+        prompt: "There are two beds; do you want to lie on that one?",
+        answer: "Hariho uburiri bubiri; uragomba kuryama kubwo?"
+      },
+      {
+        prompt: "The workmen want to be given more francs; they do not praise those they got.",
+        answer: "Abakozi bagomba kwongerwa amafaranga; ntibashima ayo baronse."
+      },
+      {
+        prompt: "They must work hard before they will be given more.",
+        answer: "Bakwiye gukora cane batarahabwa ayandi."
+      },
+      {
+        prompt: "God is worthy of reverence; let us praise Him with our lives and words.",
+        answer: "Imana ikwiye icubahiro; tuyishime n'ubuzima bwacu n'amajambo yacu."
+      },
+      {
+        prompt: "We must go to Bujumbura soon, because there are (some) things we need.",
+        answer: "Dukwiye kugenda i Bujumbura vuba, kuko hariho ivyo dukeneye."
+      },
+      {
+        prompt: "You (sing.) must not tear this paper. We don’t have any more.",
+        answer: "Ntukwiye gutanyura uru rupapuro. Ntitufise izindi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson93$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 93: Demonstrative Pronouns",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

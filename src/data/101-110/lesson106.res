@@ -108,10 +108,117 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Make the following verbs reciprocal and translate",
+    questions: [
+      {prompt: "kubwira", answer: "kubwirana (to tell each other)"},
+      {prompt: "kwereka", answer: "kwerekana (to show each other)"},
+      {prompt: "gufata", answer: "gufatana (to hold each other / to stick together)"},
+      {prompt: "kugaya", answer: "kugayana (to despise each other)"},
+      {prompt: "kwanka", answer: "kwankana (to hate each other)"},
+      {prompt: "guhenda", answer: "guhendana (to cheat/deceive each other)"},
+      {prompt: "kwizera", answer: "kwizerana (to trust each other)"},
+      {prompt: "kuraba", answer: "kurabana (to look at each other)"},
+      {prompt: "kurega", answer: "kuregana (to accuse each other)"},
+    ],
+  },
+  {
+    title: "II. Translate into English",
+    questions: [
+      {
+        prompt: "Harih’ abantu benshi uyu musi. Mukwiye kwegerana kugira ngo bose bagire aho bicara.",
+        answer: "There are many people today. You (pl.) ought to come near to each other so that all may have a place to sit.",
+      },
+      {
+        prompt: "Yesu yatwigishije yuko dukwiye gukundana nk’uko yadukunze.",
+        answer: "Jesus taught us that we ought to love each other as He loved us.",
+      },
+      {
+        prompt: "Dufise ibikorwa vyinshi; dufashanye kugira ngo duheze n’ingoga.",
+        answer: "We have much work; let us help each other so that we may finish quickly.",
+      },
+      {
+        prompt: "Nahanuye cane abahungu kuko badafashanije neza mu bikorwa vy’ishuli.",
+        answer: "I warned the boys a lot because they did not help each other well in school activities.",
+      },
+      {
+        prompt: "N’agasaga. Tuzobonana ejo mu rusengero.",
+        answer: "Goodbye. We will see each other tomorrow in the church.",
+      },
+      {
+        prompt: "Ni mufashanye gukwega urwo rugi, kuko ruremereye cane.",
+        answer: "Help each other (pl.) to pull that door, because it is very heavy.",
+      },
+      {
+        prompt: "Hanagura amosozi yawe; nta co urira. Muzosubira kubonana ikindi gihe.",
+        answer: "Wipe away your tears; you have nothing to cry for. You will see each other again another time.",
+      },
+      {
+        prompt: "Ni twigishanye, wewe unyigishe ikirundi, na jewe nkwigishe icongereza (English).",
+        answer: "Let us teach each other: you teach me Kirundi, and I will teach you English.",
+      },
+      {
+        prompt: "Mwankanye, none mukwiye guharirana.",
+        answer: "You hated each other, now you ought to forgive each other.",
+      },
+      {
+        prompt: "Nabonye abahungu babiri bakubitana, ariko nababujije, hanyuma nabahanuye yuko bakwiye gukundana.",
+        answer: "I saw two boys hitting each other, but I stopped them, then I advised them that they ought to love each other.",
+      },
+    ],
+  },
+  {
+    title: "III. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Those two men are afraid of each other because both have riches and they are jealous (of) each other.",
+        answer: "Abo bagabo babiri baratinyana kuko bose bafise ubutunzi kandi bagiriranira ishari.",
+      },
+      {
+        prompt: "I am going to America soon, but let us write to each other.",
+        answer: "Ngiye muri Amerika vuba, ariko twandikirane.",
+      },
+      {
+        prompt: "The boys hated each other but now they love each other because Jesus has saved them.",
+        answer: "Abahungu barankanye ariko ubu barakundana kuko Yesu yabakijije.",
+      },
+      {
+        prompt: "The girls showed each other their new clothes.",
+        answer: "Abigeme berekanyanye impuzu zabo nshasha.",
+      },
+      {
+        prompt: "God’s people love each other, help each other and trust each other.",
+        answer: "Abantu b'Imana barakundana, bafashanya kandi barizerana.",
+      },
+      {
+        prompt: "Let’s help each other wash these dishes; you (sing.) wash them and I’ll dry them (wipe).",
+        answer: "Dufashanye kumesa aya masahani; uyamese nanje ndayahanagure.",
+      },
+      {
+        prompt: "Please get near to each other, all of you, so that you can hear what I say.",
+        answer: "Nimwegerane mwese, kugira ngo mushobore kumva ico mvuga.",
+      },
+      {
+        prompt: "The girls were shedding (=crying) many tears, but we advised them not to (= that they not) sorrow.",
+        answer: "Abigeme bararira amosozi menshi, ariko twabahanuye yuko batagira intuntu.",
+      },
+      {
+        prompt: "These thieves are lying to each other. I can’t trust anyone (of them).",
+        answer: "Aba basuma barabesheranya. Sinshobora kwizera n'umwe muri bo.",
+      },
+      {
+        prompt: "Those who respect each other are able to help each other.",
+        answer: "Abubahana barashobora gufashanya.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 106: Reciprocal Form of Verb",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

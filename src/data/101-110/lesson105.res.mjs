@@ -202,24 +202,116 @@ let Content = {
   make: Lesson105$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Uwo mwana ntagomba kuza kwigishwa kukw ata mpuzu afise.",
+        answer: "That child doesn't want to come to be taught because he has no clothes."
+      },
+      {
+        prompt: "Mbega wahejeje gukura inyondwi zose kuri ya mbwa? Ego, nta n’imwe isigaye.",
+        answer: "Have you finished pulling all the ticks off that dog? Yes, not even one remains."
+      },
+      {
+        prompt: "Ngira ngo har’inda nyinshi mu mpuzu z’uyu muhungu. Oya, nta zo afise.",
+        answer: "I think there are many lice in the clothes of this boy. No, he has none."
+      },
+      {
+        prompt: "Mbega wabonye ab’i wacu uyu musi? Oya, nta bo nabonye.",
+        answer: "Did you see our people (those of our place) today? No, I saw none (of them)."
+      },
+      {
+        prompt: "Nta ntozi twabonye mu gihugu cacu.",
+        answer: "We saw no pincher ants in our country."
+      },
+      {
+        prompt: "Nta mwigeme arāza gukubura mu rusengero? Nta we ndābona.",
+        answer: "Has no girl come yet to sweep in the church? I haven't seen any yet."
+      },
+      {
+        prompt: "Nta ho urābona inyondwi? Raba, mfise imwe hano ku kuguru ubu.",
+        answer: "Have you never yet seen a tick? Look, I have one here on my leg now."
+      },
+      {
+        prompt: "Sinashoboye kubwira ab’i wanyu inkuru zawe, kukw ata we nabonye mu rugo.",
+        answer: "I was not able to tell your family your news, because I saw no one in the kraal."
+      },
+      {
+        prompt: "Yesu yatubwiye kubika ubutunzi mw ijuru ah’ata nyenzi zishobora kubwonona.",
+        answer: "Jesus told us to store up wealth in heaven where no cockroaches can destroy it."
+      },
+      {
+        prompt: "Nta co ugora umwigisha ubu. Ntubona kw afise akazi kenshi?",
+        answer: "Stop bothering the teacher now. Don't you see that he has much work?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "He has never lost his way in his country.",
+        answer: "Nta ho arāzimira mu gihugu ciwe."
+      },
+      {
+        prompt: "I saw no one in your kraal yesterday.",
+        answer: "Nta we nabonye mu rugo rwanyu ejo."
+      },
+      {
+        prompt: "I don’t know about (ivya) this child because he says nothing.",
+        answer: "Sinzi ivya uyu mwana kuko nta co avuga."
+      },
+      {
+        prompt: "There are no cockroaches in her kitchen.",
+        answer: "Nta nyenzi ziri mu gikoni ciwe."
+      },
+      {
+        prompt: "This man wants to buy clothes although he has nothing.",
+        answer: "Uyu mugabo agomba kugura impuzu naho nta co afise."
+      },
+      {
+        prompt: "Are there pincher ants in your garden? I haven’t seen any.",
+        answer: "Mbega hari intozi mu murima wawe? Nta zo ndābona."
+      },
+      {
+        prompt: "Don’t tell anyone that thieves stole that cow.",
+        answer: "Nta we ubwira ko abasuma bavyivye ya nka."
+      },
+      {
+        prompt: "I’ve never seen a monkey or a leopard in this country.",
+        answer: "Nta ho ndābona inkende canke ingwe mu gihugu cacu."
+      },
+      {
+        prompt: "Haven’t you ever climbed that mountain? Let’s climb it tomorrow.",
+        answer: "Nta ho ururira uyo musozi? Tuwururire ejo."
+      },
+      {
+        prompt: "Stop writing (don’t write) that letter. You will see your brother (to a girl) soon.",
+        answer: "Nta co wandika urwo rwandiko. Uzobona musaza wawe vuba."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson105$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 105: Further Notes on",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

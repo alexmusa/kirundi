@@ -154,24 +154,116 @@ let Content = {
   make: Lesson87$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Barya bantu bavuye mu rusengero vuba.",
+        answer: "Those people (over there) came from the church recently."
+      },
+      {
+        prompt: "Uriya mufundi arazi neza kwubakisha amatafari.",
+        answer: "That fundi (yonder) knows well how to build with bricks."
+      },
+      {
+        prompt: "Karya kayabo ni kabi; kivye inyama.",
+        answer: "That small cat (over there) is bad; it stole the meat."
+      },
+      {
+        prompt: "Iriya nzu n’inzu y’umutunzi; ni nziza cane.",
+        answer: "That house (yonder) is the house of a rich man; it is very beautiful."
+      },
+      {
+        prompt: "Twagiye mu ruzi muri burya bwato.",
+        answer: "We went into the river in that boat (over there)."
+      },
+      {
+        prompt: "Uriya musozi uri mu gihugu c’i Bururi.",
+        answer: "That hill (yonder) is in the region of Bururi."
+      },
+      {
+        prompt: "Incuti yanje yubatse irya nzu mur’ uyu mwaka.",
+        answer: "My friend built that house (over there) in this year."
+      },
+      {
+        prompt: "Abagabo bakurikiye igikoko muri riri-i-ya shamba.",
+        answer: "The men followed the wild animal into that forest (way over there)."
+      },
+      {
+        prompt: "Urya muzungu yamaze imyaka myinshi mur’ iki gihugu.",
+        answer: "That white man (over there) spent many years in this country."
+      },
+      {
+        prompt: "Mbega mwabonye kiriya gipfamatwi? Kiravuga neza ariko nticumva.",
+        answer: "Have you seen that deaf-mute (yonder)? He speaks well but he doesn't hear."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Bring those boys (way over there).",
+        answer: "Zana bariya bahungu."
+      },
+      {
+        prompt: "That man (quite near) is John’s younger brother.",
+        answer: "Urya mugabo ni murumuna wa Yohani."
+      },
+      {
+        prompt: "These stones (yonder) near the school, bring them here for we shall use them.",
+        answer: "Ariya mabuye hafi y'ishure, ayazane hano kuko tuzoyakoresha."
+      },
+      {
+        prompt: "Those sweet potatoes (over there) are spoiled; throw them away.",
+        answer: "Birya bijumbu vyarononekaye; bita."
+      },
+      {
+        prompt: "That river (way over there) is very long and wide.",
+        answer: "Ruriya ruzi ni rure-rure kandi ni rugari cane."
+      },
+      {
+        prompt: "Do you see that sand over there? It’s good; we want to use it in building (= to build).",
+        answer: "Mbega urabona urya museke? Ni mwiza; dushaka kuwukoresha mu kwubaka."
+      },
+      {
+        prompt: "Go (pl.) cut that tall grass way over there, for we shall use it to roof with.",
+        answer: "Gende muteme biriya vyatsi bire-bire, kuko tuzobukoresha mu gusaka."
+      },
+      {
+        prompt: "That church yonder was built by the people of the church. They gave many francs and worked many days.",
+        answer: "Ruriya rusengero rwubatswe n'abantu b'ishengero. Batanze amafaranga menshi kandi bakosoye imisi myinshi."
+      },
+      {
+        prompt: "Those doors over there were made by a fundi. They’ll use them in the new school.",
+        answer: "Irya nzugi zakozwe n'umufundi. Bazozikoresha mw'ishure rishasha."
+      },
+      {
+        prompt: "The millet in those fields yonder is not good. There was too much (= a lot of) rain, so (rero) it isn’t strong.",
+        answer: "Uburo muri iriya mirima si bwiza. Hari imvura nyinshi, rero si bukomeye."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson87$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 87: Demonstratives (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

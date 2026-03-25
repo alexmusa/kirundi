@@ -148,24 +148,116 @@ let Content = {
   make: Lesson76$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Nabonye ingwe; amenyo yayo ni manini.",
+        answer: "I saw a leopard; its teeth are big."
+      },
+      {
+        prompt: "Hariya har’ igiti kirekire; imizi yaco ni myinshi cane.",
+        answer: "Over there is a tall tree; its roots are very many."
+      },
+      {
+        prompt: "Imana irakunda abantu bayo; ikigongwe cayo ni cinshi.",
+        answer: "God loves His people; His mercy is great (much)."
+      },
+      {
+        prompt: "Ikijuju gifise inkwavu arik’ urukwavu rwaco rumwe rurapfuye.",
+        answer: "The fool has rabbits but one of his rabbits is dead."
+      },
+      {
+        prompt: "Mbona impumyi; numva amajiwi yazo.",
+        answer: "I see the blind (people); I hear their voices."
+      },
+      {
+        prompt: "Murumuna wa Petero yaguze intebe nshasha. Amaguru yayo arakomeye cane.",
+        answer: "Peter's younger brother bought a new chair. Its legs are very strong."
+      },
+      {
+        prompt: "Urugi rw’inzu yacu ni rutoya, kand’ ivyuma vyarwo birapfuye (broken).",
+        answer: "The door of our house is small, and its hardware (iron parts) is broken."
+      },
+      {
+        prompt: "Har’ ibikoko mw ishamba, twabonye imitwe yavyo.",
+        answer: "There are wild animals in the forest, we saw their heads."
+      },
+      {
+        prompt: "Ndababaye kubona ikijuju; amarushwa yaco ni menshi cane.",
+        answer: "I am sorry to see a fool; his troubles are very many."
+      },
+      {
+        prompt: "Nkunda cane igihugu canyu; imisozi yaco n’ibiti vyaco ni vyiza cane.",
+        answer: "I like your country very much; its mountains and its trees are very beautiful."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "We have many chickens; their legs are short.",
+        answer: "Dufise inkoko nyinshi; amaguru yazo ni magufi."
+      },
+      {
+        prompt: "My older brother (of boy) has a very good cow; its horns are long.",
+        answer: "Mukuru wanje afise inka nziza cane; amahembe yayo ni maremare."
+      },
+      {
+        prompt: "God is able to defeat Satan; His strength is very great. (Strength should be plural, for ‘great’ use ‘much’)",
+        answer: "Imana ishobora gutsinda Satani; inkomezi zayo ni nyinshi cane."
+      },
+      {
+        prompt: "The foolish man has very few clothes, and his hair is long.",
+        answer: "Ikijuju gifise impuzu nkeyi cane, kandi amashatsi yaco ni maremare."
+      },
+      {
+        prompt: "The fire is big (much); its light helps us to see to read.",
+        answer: "Umuriro ni mwinshi; umuco wawo uradufasha kubona gusoma."
+      },
+      {
+        prompt: "Your rabbit is very nice; its body is big.",
+        answer: "Urukwavu rwawe ni rwiza cane; umubiri warwo ni munini."
+      },
+      {
+        prompt: "Did you (pl.) see our big dog? Its tail is short, but its eyes are very big.",
+        answer: "Mwabonye imbwa yacu nini? Umurizo wayo ni mugufi, ariko amaso yayo ni manini cane."
+      },
+      {
+        prompt: "The young men (make 2nd class) have their spears because they are going to the forest.",
+        answer: "Abasore bafise amacumu yabo kuko baragiye mw ishamba."
+      },
+      {
+        prompt: "John’s father built a new house; its rooms are large and it is very strong.",
+        answer: "Se wa Yohana yubatse inzu nshasha; ivyumba vyayo ni binini kandi irakomeye cane."
+      },
+      {
+        prompt: "There is a lot of corn in our garden; its roots are very short.",
+        answer: "Hariho ibigori vyinshi mu murima wacu; imizi yavyo ni migufi cane."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson76$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 76: Possessive Adjectives",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -197,24 +197,116 @@ let Content = {
   make: Lesson85$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Imana irahabwa icubahiro mu gusenga kwacu.",
+        answer: "God is given reverence in our worship."
+      },
+      {
+        prompt: "Inzoga nyinshi zanyowe n’abantu ku musi mukuru.",
+        answer: "Much beer was drunk by the people on the holiday."
+      },
+      {
+        prompt: "Uburo bwasewe n’urusyo.",
+        answer: "The millet was ground by the grindstone."
+      },
+      {
+        prompt: "Twebwe tuzohabwa ubwiza mw ijuru.",
+        answer: "We will be given glory in heaven."
+      },
+      {
+        prompt: "Inyama ziri hehe? Zariwe n’akayabo.",
+        answer: "Where is the meat? It was eaten by the cat."
+      },
+      {
+        prompt: "Umugore afise agahinda kenshi kuko yavuwe n’umwana mw iyinga riheze.",
+        answer: "The woman has much sorrow because she was bereaved of a child last week."
+      },
+      {
+        prompt: "Ndanezerewe ko turi hano i Gitega; numva ko twaguwe neza.",
+        answer: "I am happy that we are here in Gitega; I feel that we are settled down nicely."
+      },
+      {
+        prompt: "Nabonye yuk’ umushitsi yaje kubaha ibintu. Mbega mwahawe iki?",
+        answer: "I saw that the guest came to give you things. What were you given?"
+      },
+      {
+        prompt: "Ngomba gucumba umukate w’ibitoke; ndakoresha ibiyoba vyasewe.",
+        answer: "I want to bake banana bread; I use peanuts which were ground."
+      },
+      {
+        prompt: "Dufise inkwi nkeya cane. Mbeg’ ibindi biti bizocibwa ryari?",
+        answer: "We have very little firewood. When will the other trees be cut down?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The clothes were thrown away because they were torn.",
+        answer: "Ivyambaro vyatawe kuko vyari vishanyutse."
+      },
+      {
+        prompt: "Two trees were cut down by the men, but the fundi didn’t want them.",
+        answer: "Ibiti bibiri vyaciwe n’abagabo, ariko umufundi ntiyabishaka."
+      },
+      {
+        prompt: "Let us give reverence (to) God for (because) He should be given it.",
+        answer: "Tubahe Imana icubahiro kuko ikwiye kugihabwa."
+      },
+      {
+        prompt: "I want to go to heaven for we shall see Jesus and we shall have much joy.",
+        answer: "Ngomba kuja mw ijuru kuko tuzobona Yesu kandi tuzohabwa akanyamuneza kenshi."
+      },
+      {
+        prompt: "Much milk was drunk by the children.",
+        answer: "Amata menshi yanyowe n’abana."
+      },
+      {
+        prompt: "Is the meat of the sheep eaten by the Barundi? No, they don’t eat it.",
+        answer: "Inyama z’intama zirariwa n’Abarundi? Oya, ntibazirya."
+      },
+      {
+        prompt: "Were my papers thrown away? Go, please look for them, because I want them.",
+        answer: "Impapuro zanje zatawe? Genda, uzironderere, kuko ndazishaka."
+      },
+      {
+        prompt: "Jesus left his glory in heaven and came to earth. Here he was hated by many people.",
+        answer: "Yesu yasize ubwiza bwiwe mw ijuru araza kw isi. Hano yansenzwe n’abantu benshi."
+      },
+      {
+        prompt: "All the beer was poured out when the people were saved.",
+        answer: "Inzoga zose zasheshwe igihe abantu bakizwa."
+      },
+      {
+        prompt: "The good bricks and tiles were chosen by the builder, the others were thrown away.",
+        answer: "Amatafari meza n’amategu meza yatoranijwe n’uwubaka, ayandi yatawe."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson85$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 85: Passives of Monosyllabic Verbs",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

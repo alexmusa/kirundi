@@ -95,10 +95,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abagabo ntibarakanguka; genda ubakangure.",
+        answer: "The men haven't woken up yet; go wake them up.",
+      },
+      {
+        prompt: "Mbega ntimuramura inkere? Turazigomba uyu musi.",
+        answer: "Haven't you (pl.) gathered berries yet? We want them today.",
+      },
+      {
+        prompt: "Umufundi yagiye i Gitega; ntaragaruka.",
+        answer: "The mason went to Gitega; he hasn't returned yet.",
+      },
+      {
+        prompt: "Ntiturubaka urusengero yamara tugomba gutangura vuba.",
+        answer: "We haven't built the church yet but we want to start soon.",
+      },
+      {
+        prompt: "Sindoza amasahane kuko nkora ibindi bintu.",
+        answer: "I haven't washed the dishes yet because I am doing other things.",
+      },
+      {
+        prompt: "Inguma zanje ntizirakira, none sinshobora kugenda muri rwa rugendo.",
+        answer: "My wounds haven't healed yet, so I cannot go on that trip.",
+      },
+      {
+        prompt: "Mbeg’ umuhungu wanyu yigishwa mw ishuli? Oya, ntarakura.",
+        answer: "Is your son taught in school? No, he hasn't grown up yet.",
+      },
+      {
+        prompt: "Mbega mushikawe yavyaye umuhungu cank’ umukobwa? Ntaravyara.",
+        answer: "Has your sister given birth to a boy or a girl? She hasn't given birth yet.",
+      },
+      {
+        prompt: "Umukozi ntarasatura inkwi? Umubwire yuko tuzigomba ubu.",
+        answer: "Hasn't the worker split the firewood yet? Tell him that we want it now.",
+      },
+      {
+        prompt: "Mbega nturihana ivyaha vyawe? Imana iragukunda kand’ igomba kugukiza.",
+        answer: "Haven't you repented of your sins yet? God loves you and wants to save you.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "John’s wife hasn’t given birth yet.",
+        answer: "Umugore wa Yohana ntaravyara.",
+      },
+      {
+        prompt: "How many eggs are there? I haven’t counted them yet.",
+        answer: "Amagi ari angahe? Sindayaharura.",
+      },
+      {
+        prompt: "I want to go now, but the workmen haven’t come yet.",
+        answer: "Ngomba kugenda ubu, yamara abakozi ntibaroza.",
+      },
+      {
+        prompt: "That man (referred to before) is not yet saved, but he likes to hear the Word of God.",
+        answer: "Uwo mugabo ntarakizwa, yamara akunda kumva Ijambo ry'Imana.",
+      },
+      {
+        prompt: "Haven’t you put the clothes in the sun yet?",
+        answer: "Mbega nturānisha impuzu ku zuba?",
+      },
+      {
+        prompt: "My wife was sick in the night. She’s sleeping now, she hasn’t awakened yet.",
+        answer: "Umugore wanje yarwaye mw ijoro. Arasinziriye ubu, ntarakanguka.",
+      },
+      {
+        prompt: "Did you pick the tomatoes yet? Yes, I picked them and they are a lot (many).",
+        answer: "Mbega urasoroma inyanya? Ego, nazisoromye kandi ni nyinshi.",
+      },
+      {
+        prompt: "Hasn’t your (sing.) brother (older) stopped drinking (= left beer) yet?",
+        answer: "Mbega mukuru wawe ntarareka inzoga?",
+      },
+      {
+        prompt: "What is your (sing.) new baby’s name? We haven’t named him yet (= haven’t named him a name).",
+        answer: "Izina ry'umwana wanyu mushasha ni rirya? Ntituramwita izina.",
+      },
+      {
+        prompt: "Have the people begun to build the new church? No, they haven’t finished making (= finished to make) the bricks yet.",
+        answer: "Mbega abantu batanguye kwubaka urusengero rushasha? Oya, ntibaraheza gukora amabuye.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 89: Not Yet Tense",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

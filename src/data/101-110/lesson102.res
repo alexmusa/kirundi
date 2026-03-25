@@ -121,10 +121,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ntuze azoja i Bujumbura vuba kurondera akazi.",
+        answer: "What’s-his-name will go to Bujumbura soon to look for work.",
+      },
+      {
+        prompt: "Kubwanje singomba kumenya ibibi vy’abantu; ngomba kwumva ivyiza kuri (about) bo.",
+        answer: "As for me, I don't want to know the bad things of people; I want to hear the good things about them.",
+      },
+      {
+        prompt: "Muzogenda ryari kurega abansi banyu? Ntimuratangura gutegura ibintu vy’urugendo?",
+        answer: "When will you go to accuse your enemies? Haven't you started to prepare things for the journey yet?",
+      },
+      {
+        prompt: "Ni dusabe kubwa Yesu Kristo kugira ngo bituronkeshe ivyo dusaba.",
+        answer: "Let us pray for the sake of Jesus Christ so that it may make us receive those things we ask for.",
+      },
+      {
+        prompt: "Ntuze yarazimiye kukw atumvise neza ico abantu bamubwiye.",
+        answer: "What’s-his-name got lost because he didn't hear well what the people told him.",
+      },
+      {
+        prompt: "Vyatugoye cane mu gitondo, kukw abakozi bataje. Kubw’ ivyo dukwiye gutebuka cane kugira ngo tugerageze guheza gushwabura ibiharage.",
+        answer: "It was very difficult for us in the morning because the workers didn't come. Because of that, we ought to hurry a lot so that we try to finish harvesting the beans.",
+      },
+      {
+        prompt: "Intama za naka zazimiye, maze yahamagaye abamufasha kuzirondera.",
+        answer: "So-and-so's sheep got lost, then he called those who help him to look for them.",
+      },
+      {
+        prompt: "Twese dukwiye kugerageza cane kwanka kunebwa kugira ngo tugire umwete mu bikorwa vyacu.",
+        answer: "We all ought to try hard to refuse laziness so that we may have zeal in our works.",
+      },
+      {
+        prompt: "Abantu batangaye cane igihe Yesu yababwiye ko dukwiye gukunda abansi bacu.",
+        answer: "The people were very surprised when Jesus told them that we ought to love our enemies.",
+      },
+      {
+        prompt: "Mbega mwabonye ntuze kw isoko ejo? Jewe namaze imyaka ntamubonye.",
+        answer: "Did you see what's-his-name at the market yesterday? I have spent years without seeing him.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Jesus was tempted for our sakes in order that He may help us in our temptations (make noun out of verb here – “our being tempted”).",
+        answer: "Yesu yageragejwe kubwacu kugira ngo adufashe mu kugeragezwa kwacu.",
+      },
+      {
+        prompt: "Try (pl.) hard (cane) to do what God wants and He will help you.",
+        answer: "Mugerageze cane gukora ico Imana igomba, na yo izobafasha.",
+      },
+      {
+        prompt: "I am looking for what-you-call-it – a tool to pound (gukoma) nails with – a hammer.",
+        answer: "Ndarondera intuze – igikoresho co gukomesha imisumari – inyundo.",
+      },
+      {
+        prompt: "Jesus died on the cross because of your sins and my sins.",
+        answer: "Yesu yapfuye ku musaraba kubera ivyaha vyanyu n'ivyaha vyanje.",
+      },
+      {
+        prompt: "The men will go to Bururi tomorrow to begin to build a new house.",
+        answer: "Abagabo bazoja i Bururi ejo gutangura kwubaka inzu nshasha.",
+      },
+      {
+        prompt: "The fundi sent me to look for what-you-call-it. But I can’t find it. Tell me what you want and I’ll help you look for it.",
+        answer: "Umufundi yantumye kurondera intuze. Ariko sinshobora kuyironka. Mbwira ico ugomba, nanje ndagufasha kuyirondera.",
+      },
+      {
+        prompt: "When you go to Bujumbura please buy four pails for me.",
+        answer: "Ni mwaja i Bujumbura mube mwanguriye indobo zine.",
+      },
+      {
+        prompt: "Don’t stay home because of me; I’m not very sick, and I want you to go with the others.",
+        answer: "Ntugume muhira kubwanje; sindwaye cane, kandi ngomba ko ugenda n'abandi.",
+      },
+      {
+        prompt: "For whom did they weave that tall pointed basket over there?",
+        answer: "Baryaritsiye nde ruriya giseke kirekire?",
+      },
+      {
+        prompt: "When the visitors came here, they got lost (= lost their way) and we waited for them (for) five hours.",
+        answer: "Igihe abashitsi baje hano, barazimiye maze twabarindiye amasaha atanu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 102: Miscellaneous Words",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

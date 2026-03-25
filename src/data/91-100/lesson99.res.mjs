@@ -178,24 +178,116 @@ let Content = {
   make: Lesson99$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Dukwiye gukora neza imisi yose kuko tutazi igihe Yesu azogarukira.",
+        answer: "We ought to work well every day because we do not know the time Jesus will return."
+      },
+      {
+        prompt: "Hano n’uruzi aho Minani yanywereye amazi.",
+        answer: "Here is the river where Minani drank water."
+      },
+      {
+        prompt: "Muzokwigishwa imisi yose kugeza aho nzozira.",
+        answer: "You (plural) will be taught every day until I come."
+      },
+      {
+        prompt: "Bamureze ukwiba mu gihe bashwaburiye ibiharage.",
+        answer: "They accused him of stealing at the time they harvested beans."
+      },
+      {
+        prompt: "Twese tugomba gushika mw ijuru kukw ari ho (there) tuzonezererwa ibihe vyose.",
+        answer: "We all want to reach heaven because it is there that we will be happy forever."
+      },
+      {
+        prompt: "Yesu yatuviriye amaraso ku musaraba kugira ngw adukize ivyaha.",
+        answer: "Jesus shed blood for us on the cross so that He might save us from sins."
+      },
+      {
+        prompt: "Kur’ iri buye ni ho (it is here) nagwiriye.",
+        answer: "It is here on this rock that I fell."
+      },
+      {
+        prompt: "Ah’indya zihira umpamagare kugira ngo ntidutebe kurya.",
+        answer: "When the food is cooked (ready), call me so that we do not delay eating."
+      },
+      {
+        prompt: "Sinzi ah’umusi mukuru uzobera, ariko ngomba kuwubona.",
+        answer: "I don't know where the holiday will be, but I want to see it."
+      },
+      {
+        prompt: "Tujane impamba zikwiye bose kuko turarīra mu nzira.",
+        answer: "Let us take enough provisions for everyone because we are eating on the way."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "When my father dies he will give me all his things.",
+        answer: "Aho umuvyeyi wanje azopfira azompa ivyiwe vyose."
+      },
+      {
+        prompt: "Jesus healed many people at the shore (inkombe) of the lake.",
+        answer: "Yesu yakirije abantu benshi ku nkombe y'ikiyaga."
+      },
+      {
+        prompt: "I don’t know when the workers will cut those trees.",
+        answer: "Sinzi igihe abakozi bazocira ivyo biti."
+      },
+      {
+        prompt: "We will go to Gitega when we have (use “see”) the time.",
+        answer: "Tuzoja i Gitega aho tuzobonera umwanya."
+      },
+      {
+        prompt: "Let us work for Jesus until He comes.",
+        answer: "Dukorere Yesu kugeza aho azozira."
+      },
+      {
+        prompt: "I asked the policeman (umupolisi) for mercy and he had it for me.",
+        answer: "Nasavye umupolisi imbabazi kandi yazingiriye."
+      },
+      {
+        prompt: "That boy has been accused of many bad things. Let’s pray for him so that he will repent and ask God for forgiveness.",
+        answer: "Uyo muhungu yarezwe ibintu bibi vyinshi. Tumusengere kugira ngo yihane kandi asabe Imana imbabazi."
+      },
+      {
+        prompt: "They are harvesting the millet this week. The women will grind it in their kraals.",
+        answer: "Bariko bagesa uburo muri rino ndwi. Abagore bazobusēra mu ngo zabo."
+      },
+      {
+        prompt: "That old man over there doesn’t know (how) to read but he loves to tell (to) us stories (parables).",
+        answer: "Urya mutama ntabizi gusoma ariko akunda kutuyagira imigani."
+      },
+      {
+        prompt: "Please look for my knife for me. I have searched everywhere and I failed to find it.",
+        answer: "Ndagusavye, ndonderera umushoke wanje. Nawurondeye hose ariko nananiwe kuwubona."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson99$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 99: Uses of Prepositional Form",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

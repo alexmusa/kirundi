@@ -181,24 +181,116 @@ let Content = {
   make: Lesson75$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Turumvise inkuru nziza. Turanezerewe kuzumva.",
+        answer: "We have heard the good news. We are happy to hear it."
+      },
+      {
+        prompt: "Wahamagaye Samweli? Ego, aritavye.",
+        answer: "Did you call Samuel? Yes, he has answered."
+      },
+      {
+        prompt: "Umwigisha arikw arahana umuhungu; araratse cane.",
+        answer: "The teacher is punishing the boy; he is very angry."
+      },
+      {
+        prompt: "So ari hehe? Araryamye mu nzu.",
+        answer: "Where is your father? He has gone to bed in the house."
+      },
+      {
+        prompt: "Umwana ararwaye inyonko; arababaye cane.",
+        answer: "The child is sick with an ulcer; he is suffering very much."
+      },
+      {
+        prompt: "Paulo, n’uze hano. Ego, ndaje.",
+        answer: "Paul, come here. Yes, I am coming."
+      },
+      {
+        prompt: "Wumvise inkuru? Ego, Yohana arazimbwiye.",
+        answer: "Did you hear the news? Yes, John has just told them to me."
+      },
+      {
+        prompt: "Umutsima uriho? Ndawucumvye ubu.",
+        answer: "Is there bread? I have just made it now."
+      },
+      {
+        prompt: "Abasore baremeye gufasha kwubaka ishuli.",
+        answer: "The young men have agreed to help build the school."
+      },
+      {
+        prompt: "Mushikanje araje; arampamagaye.",
+        answer: "My sister has just come; she has called me."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I have just gone to bed because I am sick.",
+        answer: "Ndaryamye ubu kuko ndarwaye."
+      },
+      {
+        prompt: "John’s father has heard bad news and he has gone (just now).",
+        answer: "Se wa Yohana yumvise inkuru mbi, aragiye."
+      },
+      {
+        prompt: "Did you call the names just now? Yes, all have answered.",
+        answer: "Wahamagaye amazina ubu? Ego, bose bitavye."
+      },
+      {
+        prompt: "The men went just now to begin their work.",
+        answer: "Abagabo baragiye ubu gutangura igikorwa cabo."
+      },
+      {
+        prompt: "The woman has a bad ulcer on her leg; she is suffering a lot (much).",
+        answer: "Umugore afise inyonko mbi ku kuguru; arababaye cane."
+      },
+      {
+        prompt: "It’s getting late, I can’t see well. Yes, I just lit a lamp.",
+        answer: "Buragiye kwira, sinshobora kubona neza. Ego, ndadometse itara."
+      },
+      {
+        prompt: "What are the workmen doing? They’ve just gone home.",
+        answer: "Abakozi bariko barakora iki? Baragiye muhira."
+      },
+      {
+        prompt: "When will you make bread? I’ve just finished making it.",
+        answer: "Uzocumba ryari umutsima? Ndawucumvye ubu."
+      },
+      {
+        prompt: "My mother is preparing tea; the water has just boiled.",
+        answer: "Mawe ariko arategura icayi; amazi aratogose."
+      },
+      {
+        prompt: "This morning I saw that the floor was very dirty in your room. I know, but I just swept it.",
+        answer: "Uyu mugitondo nabonye ko hasi mu cumba cawe hari habi cane. Ndabizi, ariko ndahakubuye ubu."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson75$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 75: Immediate Past (or, –ra",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

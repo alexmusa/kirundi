@@ -200,24 +200,137 @@ let Content = {
   make: Lesson66$Content
 };
 
+let quizData = [
+  {
+    title: "Vocabulary",
+    questions: [
+      {
+        prompt: "kurorera (rorereye)",
+        answer: "to wait, wait for"
+      },
+      {
+        prompt: "kubwira (ye)",
+        answer: "to tell (Note: text says 'to sell', but usage is 'to tell')"
+      },
+      {
+        prompt: "guhamagara (ye)",
+        answer: "to call"
+      },
+      {
+        prompt: "gusa",
+        answer: "only"
+      }
+    ]
+  },
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Mubwire umugabo kuza ino uyu musi.",
+        answer: "Tell (pl.) the man to come here today."
+      },
+      {
+        prompt: "Akayabo karashonje; gahe inyama nkeya.",
+        answer: "The kitten is hungry; give it a little meat."
+      },
+      {
+        prompt: "Ni murorere ibitabo vyanyu; ndabibaha vuba.",
+        answer: "Wait (pl.) for your books; I will give them to you soon."
+      },
+      {
+        prompt: "Abakobwa baje; babwire kurondera ayandi masuka abiri gusa.",
+        answer: "The girls should come; tell them to look for only two other hoes."
+      },
+      {
+        prompt: "Abanyakazi bagiye; bahamagare n’ingoga; ndabagomba.",
+        answer: "The workers have gone; call them quickly; I want them."
+      },
+      {
+        prompt: "Ni mubāze imbaho, kuko tuzotangura kwubaka vuba.",
+        answer: "Plane (pl.) the boards, because we will begin to build soon."
+      },
+      {
+        prompt: "Har’ amatafari menshi mu mwonga. Muyazane hano yose.",
+        answer: "There are many bricks in the valley. Bring them all here."
+      },
+      {
+        prompt: "Mw ishuli ni habi cane; hakubure n’ingoga.",
+        answer: "It is very dirty in the school; sweep it quickly."
+      },
+      {
+        prompt: "Abana bagiye kure; babwire kugaruka kuko bwije.",
+        answer: "The children have gone far; tell them to come back because it is getting dark."
+      },
+      {
+        prompt: "Nabahaye ibikorwa bike; mubiheze mu gitondo, hanyuma ndabaha ibindi.",
+        answer: "I gave you a few tasks; finish them in the morning, then I will give you others."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Where is your pencil? Bring it to school.",
+        answer: "Ikaramu yawe iri hehe? Izane kw'ishule."
+      },
+      {
+        prompt: "Bring all the books. Put them away in the large box.",
+        answer: "Zana ibitabo vyose. Ubishire mu mukebe munini."
+      },
+      {
+        prompt: "Come back here (pl.)! Help the boys hoe in the garden.",
+        answer: "Ni mugaruke hano! Mufashe abahungu kurima mu murima."
+      },
+      {
+        prompt: "Go, wash your hands well (pl.); now set the table.",
+        answer: "Ni mugende, mwoze amaboko yanyu neza; ubu mutegure ameza."
+      },
+      {
+        prompt: "You have the names of all the pupils; write them in the book.",
+        answer: "Mufise amazina y'abashure bose; yayandike mu gitabo."
+      },
+      {
+        prompt: "I can’t find (= see) my goats; please look for them and bring them here.",
+        answer: "Sinshobora kubona ihene zanje; ni muzironderere uzizane hano."
+      },
+      {
+        prompt: "We have only a few bricks; mold (pl.) some more today.",
+        answer: "Dufise amatafari makeya gusa; mubumbire ayandi uyu musi."
+      },
+      {
+        prompt: "Learn well now (pl.), because later you will want to know much wisdom.",
+        answer: "Ni mwige neza ubu, kuko hanyuma muzogomba kumenya ubwenge bwinshi."
+      },
+      {
+        prompt: "First (= begin by) (pl.) wash the dishes; afterward you can work outside.",
+        answer: "Tangure mwoze amasahani; hanyuma mushobora gukora hanze."
+      },
+      {
+        prompt: "The hammer and nails and saw are here; take them to the skilled workman.",
+        answer: "Inyundo n'imisumari n'umusumeno biri hano; bitware umufundi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson66$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 66: Imperatives with the Subjunctive",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -147,10 +147,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ukora neza azoshimwa cane.",
+        answer: "He/she who works well will be praised much.",
+      },
+      {
+        prompt: "Abo nabonye mu nzira ntibarashika.",
+        answer: "Those (whom) I saw on the way have not yet arrived.",
+      },
+      {
+        prompt: "Uzokwihana wese azoharirwa.",
+        answer: "Everyone who will repent will be forgiven.",
+      },
+      {
+        prompt: "Mbega wakoze ico nakubwiye?",
+        answer: "Did you do that which I told you?",
+      },
+      {
+        prompt: "Uwo nkunda ni we akora ico Imana igomba.",
+        answer: "The one whom I love is the one who does what God wants.",
+      },
+      {
+        prompt: "Abasohotse tutaraheza ntibumvise vyose twavuze.",
+        answer: "Those who went outside before we finished did not hear everything we said.",
+      },
+      {
+        prompt: "Abakira neza abashitsi bazokwakirwa neza n’abandi.",
+        answer: "Those who receive guests well will be received well by others.",
+      },
+      {
+        prompt: "Ikinyereka umwete wanyu n’ibikorwa mwahejeje gukora.",
+        answer: "That which shows me your diligence is the works you have finished doing.",
+      },
+      {
+        prompt: "Mbega mwibagiye ivyo nababwiye mu kwezi guheze?",
+        answer: "Did you forget the things I told you last month?",
+      },
+      {
+        prompt: "Mu bihugu vyose vyo mw isi harih’ abakunda Imana.",
+        answer: "In all the countries of the earth there are those who love God.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Those (things) which I want are in the school.",
+        answer: "Ivyo ngomba biri mu nshure.",
+      },
+      {
+        prompt: "He who wants to go with Bwana must come early.",
+        answer: "Uwugomba kujana na Bwana ategerezwa kuza kare.",
+      },
+      {
+        prompt: "That which is praised by God is a good heart.",
+        answer: "Ikishimwa n'Imana ni umutima mwiza.",
+      },
+      {
+        prompt: "He who follows God shall be given many blessings.",
+        answer: "Uwukurikira Imana azohabwa imihezagiro myinshi.",
+      },
+      {
+        prompt: "The little birds which I saw in the tree have gone.",
+        answer: "Inyoni nabonye mu giti zagiye.",
+      },
+      {
+        prompt: "Those who go for a walk in the evening must come back (when) it gets dark.",
+        answer: "Abatembēra ku mugoroba bategerezwa kugaruka hariye.",
+      },
+      {
+        prompt: "We have troubles on the earth, but we who trust Jesus will have everlasting joy (joy that does not end) in heaven.",
+        answer: "Dufise amagorwa mw isi, mugabo twebwe abizigira Yesu tuzoronka akanyamuneza kadashira mw ijuru.",
+      },
+      {
+        prompt: "What (= that which) I told you to do is to heat the food so that those who are hungry can eat.",
+        answer: "Ico nakubwiye gukora ni ugushushanya ivyo kurya ngo abashonje barye.",
+      },
+      {
+        prompt: "I am calling those who know (how) to make bricks.",
+        answer: "Ndahamagara abazi kubumba amatafari.",
+      },
+      {
+        prompt: "The things which we learned in school will help us (for) many years.",
+        answer: "Ivyo twigiye mu nshure bizodufasha imyaka myinshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 95: Relative Clauses (No noun antecedent)",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

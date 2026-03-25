@@ -190,24 +190,116 @@ let Content = {
   make: Lesson71$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Yesu yaciye imigani myinshi, kand’ abantu benshi baramukurikiye.",
+        answer: "Jesus told many parables, and many people followed him."
+      },
+      {
+        prompt: "Umugabo yagize ingeso mbi cane, yamara hanyuma yarazihevye.",
+        answer: "The man had very bad habits, but afterward he gave them up."
+      },
+      {
+        prompt: "Twateguye neza ibintu vyacu vyose.",
+        answer: "We prepared all our things well."
+      },
+      {
+        prompt: "Nagiye mu kindi gihugu mu kwezi kwa gatanu.",
+        answer: "I went to another country in the fifth month (May)."
+      },
+      {
+        prompt: "Abahungu batevye kenshi mw ishuli kuko bavuye kure.",
+        answer: "The boys were often late at school because they came from far away."
+      },
+      {
+        prompt: "Ejo twabarorereye, ariko ntimwaje. Ego, twaribagiye.",
+        answer: "Yesterday we waited for you, but you didn't come. Yes, we forgot."
+      },
+      {
+        prompt: "Abana batwinginze kubajana, rero (so) twaravyemeye.",
+        answer: "The children begged us to take them, so we agreed."
+      },
+      {
+        prompt: "Umuvyeyi wanje yambwiye gusatura inkwi, kandi narabikoze.",
+        answer: "My parent told me to split firewood, and I did it."
+      },
+      {
+        prompt: "N’utegure ameza neza, kuko dufise abashitsi kandi bavuye kure.",
+        answer: "Prepare the table well, because we have guests and they came from far away."
+      },
+      {
+        prompt: "Umwigisha afise ingeso yo guca imigani imisi yose.",
+        answer: "The teacher has the habit of telling proverbs every day."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The people heard the Gospel; they thought about it much.",
+        answer: "Abantu bumvise Ubutumwa; barabwiyumviriye cane."
+      },
+      {
+        prompt: "The boys prepared much food because they went on a long journey.",
+        answer: "Abahungu bateguye ibiribwa vyinshi kuko baciye urugendo rureure."
+      },
+      {
+        prompt: "The workmen carried large boxes on their heads.",
+        answer: "Abakozi bikoreye ibikesha binini ku mitwe yabo."
+      },
+      {
+        prompt: "I waited a whole day to see the king.",
+        answer: "Naroreye umusi wose kugira ngo mbone umwami."
+      },
+      {
+        prompt: "The old man told many proverbs to teach the young men.",
+        answer: "Umugabo ashaje yaciye imigani myinshi kugira ngo yigishe abasore."
+      },
+      {
+        prompt: "Didn’t you go to help build the church? Yes, we went.",
+        answer: "Ntimwagiye gufasha kwubaka ishengero? Ego, twaragiye."
+      },
+      {
+        prompt: "The young ladies prepared their clothes nicely because they wanted to go to school.",
+        answer: "Abigeme bateguye neza impuzu zabo kuko bashatse kuja mw ishuli."
+      },
+      {
+        prompt: "Did you (pl.) hear that thieves stole the rich man’s cows? What did you think?",
+        answer: "Mwumvise ko abasuma bavyivye inka z'umutunzi? Mwiyumviriye iki?"
+      },
+      {
+        prompt: "We were late to arrive but we wanted to enter in order to see the leaders (important men).",
+        answer: "Twatevye gushika ariko twashatse kwinjira kugira ngo tubone abatware."
+      },
+      {
+        prompt: "The pastor (umupasitori) spoke very good words; afterward many sinners were saved.",
+        answer: "Umupasitori yavuze amajambo meza cane; hanyuma abanyavyaha benshi barakijijwe."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson71$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 71: Far Past Tense",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

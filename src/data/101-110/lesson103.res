@@ -103,10 +103,83 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abikunda ntibanezereza Imana ariko biyumvira ivyabo gusa.",
+        answer: "Those who love themselves do not please God but they think only of their own things.",
+      },
+      {
+        prompt: "Kubwanje sinzofasha ūtifasha.",
+        answer: "As for me, I will not help the one who does not help himself.",
+      },
+      {
+        prompt: "Umuntu yivye akunda kwihisha kukw atinya gufatwa.",
+        answer: "A person who has stolen likes to hide himself because he fears being caught.",
+      },
+      {
+        prompt: "Irinde kugira ngo ntugwe igihe uzogeragerezwa na Satani.",
+        answer: "Guard yourself so that you do not fall when you are tempted by Satan.",
+      },
+      {
+        prompt: "Uwibwira yukw amafaranga menshi azana umunezero arihenda.",
+        answer: "He who thinks to himself that much money brings happiness deceives himself.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Many people like to please only themselves, but they work (use prep.) in vain because they do not please God.",
+        answer: "Abantu benshi bakunda kwinezereza gusa, ariko bakorera ubusa kuko batanezereza Imana.",
+      },
+      {
+        prompt: "He who remains in sin does evil (badly) to himself.",
+        answer: "Uwuguma mu gicumuro (or mu vyaha) ariyagirira nabi.",
+      },
+      {
+        prompt: "My older brother is looking for gardens for himself because those he has are small.",
+        answer: "Mukuru wanje ariyironderera imirima kuko iyo afise ari mito.",
+      },
+      {
+        prompt: "Those who love themselves very much cannot love others.",
+        answer: "Abikunda cane ntibashobora gukunda abandi.",
+      },
+      {
+        prompt: "Let’s examine ourselves that we may see if (ko) we have sins in our hearts.",
+        answer: "Twisuzume ngo turabe ko dufise ivyaha mu mishaha yacu.",
+      },
+    ],
+  },
+  {
+    title: "III. Make the following verbs reflexive and translate",
+    questions: [
+      {prompt: "kwereka (to show)", answer: "kwiyereka (to show oneself)"},
+      {prompt: "gukiza (to save)", answer: "kwikiza (to save oneself)"},
+      {prompt: "kubuza (to prevent)", answer: "kwibuza (to refrain/stop oneself)"},
+      {prompt: "gukūra (to take away)", answer: "kwikūra (to take oneself away)"},
+      {prompt: "gutanga (to give)", answer: "kwitanga (to give oneself)"},
+      {prompt: "guha (to give)", answer: "kwiha (to give to oneself)"},
+      {prompt: "gukeba (to cut)", answer: "kwikeba (to cut oneself)"},
+      {prompt: "kubabaza (to cause pain)", answer: "kwibabaza (to cause oneself pain)"},
+      {prompt: "kwanka (to hate)", answer: "kwiyanka (to hate oneself)"},
+      {prompt: "kwubakira (to build for)", answer: "kwiyubakira (to build for oneself)"},
+      {prompt: "kubaza (to ask)", answer: "kwibaza (to ask oneself)"},
+      {prompt: "kuganza (to rule)", answer: "kwiganza (to rule oneself)"},
+      {prompt: "gufasha (to help)", answer: "kwifasha (to help oneself)"},
+      {prompt: "kuvugira (to speak for)", answer: "kwivugira (to speak for oneself)"},
+      {prompt: "gusengera (to pray for)", answer: "kwisengera (to pray for oneself)"},
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 103: Reflexive Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

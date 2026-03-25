@@ -812,24 +812,116 @@ let Content = {
   make: Lesson86$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Zana ivyo bitabo; biri ku meza.",
+        answer: "Bring those books; they are on the table."
+      },
+      {
+        prompt: "Uyu mugabo azogenda i Bujumbura.",
+        answer: "This man will go to Bujumbura."
+      },
+      {
+        prompt: "Iri buye rinini ni ryiza; uritware kuko nzoryubakisha.",
+        answer: "This big stone is good; take it because I will build with it."
+      },
+      {
+        prompt: "Mur’ iki gihugu har’ abantu benshi cane.",
+        answer: "In this country there are very many people."
+      },
+      {
+        prompt: "Mur’ iyo misi twahawe umunezero mwinshi kuri Yesu.",
+        answer: "In those days we were given much joy from Jesus."
+      },
+      {
+        prompt: "Aka kayabo ni keza kuko gakunda gufata imbeba imisi yose.",
+        answer: "This kitten is good because it likes to catch mice every day."
+      },
+      {
+        prompt: "Urwo rugo rwubatswe na mukurwa-nje.",
+        answer: "That yard was built by my older brother."
+      },
+      {
+        prompt: "Mur’ uku kwezi abantu benshi bafashwe n’indwara mbi cane.",
+        answer: "In this month many people were caught by a very bad disease."
+      },
+      {
+        prompt: "Izi nanasi zibwe n’aba bana. Bazohanwa n’abavyeyi babo.",
+        answer: "These pineapples were stolen by these children. They will be punished by their parents."
+      },
+      {
+        prompt: "Mbeg’ urandikisha iyo karamu cank’ urarondera iyindi?",
+        answer: "Are you writing with that pen or are you looking for another?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "That child is very sick; give him (some) medicine.",
+        answer: "Uwo mwana ararwaye cane; muhe umuti."
+      },
+      {
+        prompt: "Those words of Jesus help us to follow him.",
+        answer: "Ayo majambo ya Yesu adufasha kumukurikira."
+      },
+      {
+        prompt: "Take these books to those teachers.",
+        answer: "Twara ibi bitabo kuri abo bigisha."
+      },
+      {
+        prompt: "Let us sing that song again.",
+        answer: "Turirimbe urwo ruririmbo kandi."
+      },
+      {
+        prompt: "Take those cows from the path.",
+        answer: "Kura izo nka mu nzira."
+      },
+      {
+        prompt: "The teacher is going to read (do not translate “going”) the Word of God. These are good words.",
+        answer: "Umwigisha arasoma Ijambo ry'Imana. Aya ni amajambo meza."
+      },
+      {
+        prompt: "I can’t make (= cause to) the child drink its medicine.",
+        answer: "Sinshobora kunywesha umwana umuti wiwe."
+      },
+      {
+        prompt: "Put away this milk but pour out that milk.",
+        answer: "Bika aya mata ariko sesa ayo mata."
+      },
+      {
+        prompt: "All these people can’t go in that boat because it is very small.",
+        answer: "Aba bantu bose ntibashobora kugenda mur' ubwo bwato kuko ari buto cane."
+      },
+      {
+        prompt: "In these days there are thieves everywhere.",
+        answer: "Mur' iyi misi har' abasuma hose."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson86$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 86",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

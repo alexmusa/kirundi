@@ -268,24 +268,117 @@ let Content = {
   make: Lesson74$Content
 };
 
+let quizData = [{
+    title: "LESSON 74: Brother and Sister",
+    questions: [
+      {
+        prompt: "John’s younger brother",
+        answer: "murumuna wa Yohana"
+      },
+      {
+        prompt: "My sister (I – boy)",
+        answer: "mushikanje"
+      },
+      {
+        prompt: "Your older brother (you – boy)",
+        answer: "mukurwawe"
+      },
+      {
+        prompt: "His sisters",
+        answer: "bashiki biwe"
+      },
+      {
+        prompt: "Mary’s brother",
+        answer: "musaza wa Mariya"
+      },
+      {
+        prompt: "Ruth’s older sister",
+        answer: "mukuru wa Rusi"
+      },
+      {
+        prompt: "My brother (I – girl)",
+        answer: "musazanje"
+      },
+      {
+        prompt: "Your sister (you – boy)",
+        answer: "mushikawe"
+      },
+      {
+        prompt: "His older brother",
+        answer: "mukuru we"
+      },
+      {
+        prompt: "Your younger brother (you – boy)",
+        answer: "murumunawe"
+      },
+      {
+        prompt: "My older brother (I – boy)",
+        answer: "mukurwanje"
+      },
+      {
+        prompt: "Elizabeth’s younger sister",
+        answer: "murumuna wa Elizabeti"
+      },
+      {
+        prompt: "My older sister (I – girl)",
+        answer: "mukurwanje"
+      },
+      {
+        prompt: "My younger brother (I – boy)",
+        answer: "murumunanje"
+      },
+      {
+        prompt: "Your brother (you – girl)",
+        answer: "musazawe"
+      },
+      {
+        prompt: "Your younger sister (you – girl)",
+        answer: "murumunawe"
+      },
+      {
+        prompt: "My younger sister (I – girl)",
+        answer: "murumunanje"
+      },
+      {
+        prompt: "Your older sister (you – girl)",
+        answer: "mukurwawe"
+      },
+      {
+        prompt: "Your brothers (you – girl)",
+        answer: "basaza bawe"
+      },
+      {
+        prompt: "My sisters (I – boy)",
+        answer: "bashikanje"
+      },
+      {
+        prompt: "Her brothers",
+        answer: "basaza biwe"
+      },
+      {
+        prompt: "Are you brothers?",
+        answer: "Muravukana?"
+      }
+    ]
+  }];
+
 let l_content = JsxRuntime.jsx(Lesson74$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 74: Brother and Sister",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */
