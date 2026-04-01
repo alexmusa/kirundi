@@ -152,10 +152,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ndakumbuye cane abantu b’i wanyu; ubantahirize cane mu Mwami wacu.",
+        answer: "I miss the people of your place very much; greet them much for me in our Lord.",
+      },
+      {
+        prompt: "Urazi kubarīra neza. Wabaririye izi mpuzu wenyene?",
+        answer: "You know how to sew well. Did you sew these clothes yourself?",
+      },
+      {
+        prompt: "Imana yonyene ishobora gukiza abantu no kubaha ubugingo.",
+        answer: "God alone can save people and give them life.",
+      },
+      {
+        prompt: "Ukwiye gutonora vya biyoba (peanuts) vyose we nyene.",
+        answer: "You ought to shell all those peanuts yourself.",
+      },
+      {
+        prompt: "Ubwanje sinzi neza kuvuga ururimi rwanyu; uwundi akwiye kunsobanurira.",
+        answer: "I myself do not know well how to speak your language; someone else ought to interpret for me.",
+      },
+      {
+        prompt: "Urya muntu n’umunyenzigo nyinshi. Ni tumukunde tugerageze kumufasha guhinduka ukundi.",
+        answer: "That person is a very spiteful person. Let us love him and try to help him change.",
+      },
+      {
+        prompt: "Mu gisagara nabonye umwana w’umusezi. Nufuje kumufasha kugira ngw agende mw ishuli kwigishwa.",
+        answer: "In the city I saw a beggar child. I wanted to help him so that he might go to school to be taught.",
+      },
+      {
+        prompt: "Ico giseke conyene n’ico mama yajishe.",
+        answer: "That very basket is the one my mother wove.",
+      },
+      {
+        prompt: "Umupasitori wacu n’umunyamwete mwinshi. Yamaze imyaka myinshi mu bikorwa vyiwe, arikw aracakora cane.",
+        answer: "Our pastor is a very energetic person. He has spent many years in his work, but he is still working hard.",
+      },
+      {
+        prompt: "Abo bana b’impunzi barimye aho hantu hose ubwabo.",
+        answer: "Those refugee children cultivated that whole place themselves (with their own hands).",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The pupils will come back to school the day after tomorrow.",
+        answer: "Abanyeshuli bazotaha kw'ishuli hirya y'ejo.",
+      },
+      {
+        prompt: "The Word of God itself has power to speak in the hearts of people.",
+        answer: "Ijambo ry'Imana ryonyene rifise ububasha bwo kuvuga mu mitima y'abantu.",
+      },
+      {
+        prompt: "Some wise men went to visit (look at) the baby Jesus.",
+        answer: "Abanyabwenge bamwe bagiye kuraba umwana Yezu.",
+      },
+      {
+        prompt: "The teacher’s wife gave birth to a baby girl.",
+        answer: "Umugore w'umwigisha yavyaye umwana w'umukobwa.",
+      },
+      {
+        prompt: "I will greet our people for you (pl.).",
+        answer: "Ndabatahiriza abantu bacu.",
+      },
+      {
+        prompt: "A merciful person is kind to others.",
+        answer: "Umunyembabazi agirira neza abandi.",
+      },
+      {
+        prompt: "Did you catch the leopard in a trap by yourself?",
+        answer: "Wafashe ingwe mu mutego wenyene?",
+      },
+      {
+        prompt: "Lying and stealing are shameful habits.",
+        answer: "Kubesha no kwiba ni ingeso z'ibinyamaramara.",
+      },
+      {
+        prompt: "Medicine is a valuable thing because it heals sicknesses of many kinds.",
+        answer: "Umuti n'ikintu c'agaciro kuko ukiza indwara z'uburyo bwinshi.",
+      },
+      {
+        prompt: "This very bridge is the one that broke the time we went to Ruyigi.",
+        answer: "Iki kiraro nyene n'ico cavunitse igihe tugira i Ruyigi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 120: Miscellaneous Expressions",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

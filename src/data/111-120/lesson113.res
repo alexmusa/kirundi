@@ -125,10 +125,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umuswa mwinshi wari mu nzu; ngira ngo mu gihe isi izonyiganyigira cane ya nzu isogwa.",
+        answer: "Many white ants (termites) were in the house; I think that when the earth shakes much that house will fall.",
+      },
+      {
+        prompt: "Ejo ku mugoroba twagendagenze, yamar’ uyu musi imvura iratubuza.",
+        answer: "Yesterday evening we took a walk, but today the rain is preventing us.",
+      },
+      {
+        prompt: "Umwana yatwenze cane kuko bamudigadize.",
+        answer: "The child laughed a lot because they tickled him.",
+      },
+      {
+        prompt: "Ngira ngw ico uvuga a’ukuri; ura-mpendahenda gusa.",
+        answer: "I don't think what you say is true; you are just fooling me.",
+      },
+      {
+        prompt: "Mu mwaka uheze har’ ibihe bitatu isi yanyiganyize cane.",
+        answer: "In the past year there were three times the earth shook much.",
+      },
+      {
+        prompt: "Impumyi yakorakoye amagufa, maze yamenye ka ar’ay’ ingwe.",
+        answer: "The blind person felt the bones, and then he knew they were those of a leopard.",
+      },
+      {
+        prompt: "Namb’ ukora urtyo, uzomāramāra cane.",
+        answer: "If you act like that, you will be very much ashamed.",
+      },
+      {
+        prompt: "Sinshobora kugenda i wanyu kugeza aho namaramaje ibikorwa vyose.",
+        answer: "I cannot go to your place until I have completely finished all the work.",
+      },
+      {
+        prompt: "Ukwiye kuvangavanga rwose umuti utarawuha abarwaye.",
+        answer: "You ought to mix the medicine thoroughly before giving it to the sick people.",
+      },
+      {
+        prompt: "Umwana yarikw ararira cane, ariko nyina yamuhendahenze, non’ arikw aratwenga.",
+        answer: "The child was crying hard, but his mother amused him, and now he is laughing.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "This man is not deceiving us, he is very sick (with) boils.",
+        answer: "Uyu mugabo ntaturiko araduhendahenda, aragwaye cane ibihute.",
+      },
+      {
+        prompt: "The earth shook in the night; it made me afraid.",
+        answer: "Isi yanyiganyize mw ijoro; yanteye ubwoba.",
+      },
+      {
+        prompt: "Don’t try to fool me; I know very well that (yuko) you have francs.",
+        answer: "Ntugerageze kumpendahenda; nzi neza yuko ufise amafaranga.",
+      },
+      {
+        prompt: "I cannot go far for a walk for I haven’t time.",
+        answer: "Sinshobora kugenda kure kugendagenda kuko ntabaye n'umwanya.",
+      },
+      {
+        prompt: "The boys tickled the child until he cried.",
+        answer: "Abahungu badigadize umwana kugeza aho arira.",
+      },
+      {
+        prompt: "Did you mix the sugar and butter well? Then add some flour and salt.",
+        answer: "Wavangavanze neza isukari n'amavuta? Hanyuma ongerako ifu n'umunyu.",
+      },
+      {
+        prompt: "The child is feeling of the fur (hair) or the cat.",
+        answer: "Umwana ariko akorakora ubwoya bw'injangwe.",
+      },
+      {
+        prompt: "The thieves were very much ashamed. They didn’t know what to say.",
+        answer: "Abasuma bamāramaye cane. Ntibari bazi ico bavuga.",
+      },
+      {
+        prompt: "Your abscesses are completely healed. I have completely finished all I can do (work) for you.",
+        answer: "Ibihute vyanyu vyakize rwose. Namaramaje ibikorwa vyose nshobora kugukorera.",
+      },
+      {
+        prompt: "Wouldn’t you (sing.) amuse the baby so that he’ll stop crying?",
+        answer: "Ntiwohendahenda umwana kugira ngo aheze kurira?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 113: Reduplicated Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

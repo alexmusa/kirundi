@@ -85,24 +85,126 @@ let Content = {
   make: Lesson123$Content
 };
 
+let quizData = [
+  {
+    title: "Vocabulary",
+    questions: [
+      {
+        prompt: "gusimba (vye)",
+        answer: "to jump"
+      },
+      {
+        prompt: "kwimba (mvye)",
+        answer: "to dig a hole"
+      },
+      {
+        prompt: "gushishikara (ye)",
+        answer: "to strive, to persist"
+      },
+      {
+        prompt: "ubukwe",
+        answer: "wedding"
+      }
+    ]
+  },
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Adamu yar’ afise abana bairi; amazina yabo ni Kanini na Abeli.",
+        answer: "Adam had two children; their names were Cain and Abel."
+      },
+      {
+        prompt: "Umusi umwe bazanira Imana bimazi.",
+        answer: "One day they brought sacrifices to God."
+      },
+      {
+        prompt: "Abeli ntiyavura gukura ikimazi mu ntama ziwe, at’ Imana ntiyemera ikimazi kidafise amaraso.",
+        answer: "Abel did not fail to take a sacrifice from among his sheep, saying God does not accept a sacrifice that does not have blood."
+      },
+      {
+        prompt: "Nta kintu gikūra ikibi mu mutima w’umuntu atar’ amaraso.",
+        answer: "There is nothing that removes evil in the heart of a person if it is not blood."
+      },
+      {
+        prompt: "Ariko Kayini mukuruwe, ntiyazana ikintu gifise amaraso, arikw azana ibivuye mu mirima yiwe gusa, arabitanga.",
+        answer: "But Cain his older brother did not bring a thing having blood, but he brought things from his fields only and gave them."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Then God accepted Abel but he refused the other.",
+        answer: "Maze Imana yemera Abeli arik' iyanira uwundi."
+      },
+      {
+        prompt: "Then Cain was angry and he killed Abel.",
+        answer: "Maze Kayini arashava arica Abeli."
+      },
+      {
+        prompt: "God called him, saying, 'Where is your brother?'",
+        answer: "Imana iramuhamagara, iti: 'Mwene so ari hehe?'"
+      },
+      {
+        prompt: "Cain said, 'Do I know? Do I watch him?'",
+        answer: "Kayini ati: 'Mbega ndabizi? Mbega ndamurinda?'"
+      },
+      {
+        prompt: "Then God punished him and cursed him.",
+        answer: "Maze Imana iramuhana, iramuvuma."
+      },
+      {
+        prompt: "I tell you, that the blood of Jesus is that which washes the hearts of people.",
+        answer: "Ndababwira yuko amaraso ya Yesu ari yo ayoza imitima y'abantu."
+      }
+    ]
+  },
+  {
+    title: "Exercise III: Bible Verse Translation (Kirundi to English)",
+    questions: [
+      {
+        prompt: "Mark 1:9: Muri iyo misi, Yesu ava i Nazareti y'i Galilaya, abatizwa na Yohana mu ruzi rwa Yorodani.",
+        answer: "In those days, Jesus came from Nazareth of Galilee and was baptized by John in the Jordan river."
+      },
+      {
+        prompt: "Mark 1:11: Ijwi riva mw'ijuru, riti: Wewe uri Umwana wanje nkunda, ngushimishwa cane.",
+        answer: "A voice came from heaven, saying: You are my beloved Son, in you I am well pleased."
+      },
+      {
+        prompt: "Mark 1:13: Aguma mu bugaragwa imisi mirongo ine, ageragezwa na Satani; yari kumwe n'ibikoko, n'abamarayika baramusukurira.",
+        answer: "He was in the wilderness forty days, being tempted by Satan; and he was with the wild beasts, and the angels ministered to him."
+      },
+      {
+        prompt: "Mark 2:13: Asubira kuja ku nkombe y'ikiyaga; ishengero ryose riza kuri we, arabigisha.",
+        answer: "He went out again beside the sea; and all the crowd was coming to him, and he taught them."
+      },
+      {
+        prompt: "Mark 3:13: Adūga ku musozi, ahamagara abo ashatse, baraza.",
+        answer: "And he went up on the mountain and called to him those whom he desired, and they came to him."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson123$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 123: The Narrative Tenses",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

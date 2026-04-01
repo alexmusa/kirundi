@@ -317,24 +317,116 @@ let Content = {
   make: Lesson121$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Uzuza igikombe amata ukayaha uyu mwana.",
+        answer: "Fill the cup with milk and give it to this child."
+      },
+      {
+        prompt: "Ni mwumvirize neza kuko mfise ikintu ciza kubabwira.",
+        answer: "Listen well (pl.) because I have a good thing to tell you."
+      },
+      {
+        prompt: "Yesu yabwiye Abafarisayo yuko basa na se Satani.",
+        answer: "Jesus told the Pharisees that they are like their father Satan."
+      },
+      {
+        prompt: "Udonderere uwundi muhungu azokora nk’uyu.",
+        answer: "Look for another boy who will work like this one."
+      },
+      {
+        prompt: "Hazoza uwundi mupasitori azofashanya nanje mu bikorwa vy’Imana.",
+        answer: "There will come another pastor who will help (together) with me in the works of God."
+      },
+      {
+        prompt: "Mbeg’ ayo mafaranga, ugomba kuyarungikana natwe?",
+        answer: "That money, do you want to send it with us?"
+      },
+      {
+        prompt: "Igihugu canyu ntigisa n’igihugu cacu kuko hano har’ imisozi myinshi n’ibitoke vyinshi.",
+        answer: "Your country is not like our country because here there are many mountains and many banana trees."
+      },
+      {
+        prompt: "Mbega ntiwondonderera iyindi mbugita ben’ iyi?",
+        answer: "Won't you look for another knife like this one for me?"
+      },
+      {
+        prompt: "Ni ba nde bagomba gukinana natwe?",
+        answer: "Who (pl.) wants to play with us?"
+      },
+      {
+        prompt: "Mur’ iyo nzu twabonye inyenzi nyinshi, n’intozi na zo.",
+        answer: "In that house we saw many cockroaches, and biting ants too."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I have seen no others who obey their teachers like you (pl.).",
+        answer: "Ntabandi nabonye bumvira abigisha babo nk'amwe."
+      },
+      {
+        prompt: "The hole is full of water.",
+        answer: "Ikinogo kiruzuye amazi."
+      },
+      {
+        prompt: "Bring two other books like this one.",
+        answer: "Zana ibindi bitabo bibiri ben' iki."
+      },
+      {
+        prompt: "I know this child because she looks (is) like her mother.",
+        answer: "Ndazi uyu mwana kuko asa na nyina."
+      },
+      {
+        prompt: "Will you go with us to the market?",
+        answer: "Uzojana natwe kw'isoko?"
+      },
+      {
+        prompt: "The king is an honorable person. We ought to listen to him.",
+        answer: "Umwami n'umuntu w'icubahiro. Dukwiye kumwumviriza."
+      },
+      {
+        prompt: "We are ready (have prepared ourselves, stative) to begin our journey. Bring your sleeping mats and your food (for the journey), too.",
+        answer: "Twiteguye gutangura urugendo rwacu. Zana imisambi yanyu n'ivyokurya vyanyu na vyo."
+      },
+      {
+        prompt: "Are you (pl.) afraid to walk in the dark, too? There’s nothing bad there.",
+        answer: "Mbega muratinya kugendera mu mwiza namwe? Nta kintu kibi kiri mwo."
+      },
+      {
+        prompt: "Jesus was always kind (did nicely) to people. Let’s try to do like him, and to obey him.",
+        answer: "Yesu yamye agira neza abantu. Tugerageze kugira nka we, no kumwumvira."
+      },
+      {
+        prompt: "You (pl.) have been patient (for) many hours. Are you tired? I’m tired, too.",
+        answer: "Mwihanganye amasaha menshi. Mbega murarushe? Nanje ndarushe."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson121$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 121: More Miscellaneous Expressions",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

@@ -162,10 +162,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mwiruke hamwe kugira ngo turabe ūshobora kwiruka n’ingoga.",
+        answer: "Run together so that we may see who is able to run quickly.",
+      },
+      {
+        prompt: "Abana bakunda gukinana; bakunda cane gutera umupira.",
+        answer: "Children like to play together; they like very much to play ball.",
+      },
+      {
+        prompt: "Nzogarukana intebe yawe ejo.",
+        answer: "I will bring back your chair tomorrow.",
+      },
+      {
+        prompt: "Tujane kw isoko kugura ibiharage; hanyuma tuzobigura ahandi, kumbure tuzogira inyungu.",
+        answer: "Let's go together to the market to buy beans; afterwards we will buy them elsewhere, perhaps we will have a profit.",
+      },
+      {
+        prompt: "Har’ umwanda mwinshi mw ishuli; mukorane n’ingoga gukubura no kwoza hasi.",
+        answer: "There is much dirt in the school; work together quickly to sweep and wash the floor.",
+      },
+      {
+        prompt: "Abagore barajana kw isōko kuvoma.",
+        answer: "The women go together to the fountain to draw water.",
+      },
+      {
+        prompt: "Twicarane mu nzu ngo tuyage gatoya.",
+        answer: "Let's sit together in the house so that we may talk a little.",
+      },
+      {
+        prompt: "Twese dufise ibitugoye, rero ni twibuke gusabirana.",
+        answer: "We all have difficulties, so let's remember to pray for each other.",
+      },
+      {
+        prompt: "Izo mbuto zose nateye ziri hehe? Nta zo mbona.",
+        answer: "Where are all those seeds I planted? I don't see them.",
+      },
+      {
+        prompt: "Data yansigaranye urugo, none sinshobora kujana n’abandi i Gitega.",
+        answer: "My father left the home with me, so I cannot go with the others to Gitega.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Those men work together well because they like each other.",
+        answer: "Abo bagabo bakorana neza kuko bakundana.",
+      },
+      {
+        prompt: "The teachers will spend the night together so that they may have the opportunity to pray together.",
+        answer: "Abigisha bazararana kugira ngo bagire akaryo ko gusengera hamwe.",
+      },
+      {
+        prompt: "Let us sing together hymn no 263. (write out the number)",
+        answer: "Turirimbire hamwe ururirimbo rwa magana abiri na mirongo itandatu na bitatu.",
+      },
+      {
+        prompt: "I warned the thief with many words because I wanted to make him afraid.",
+        answer: "Naburiye umusuma n'amajambo menshi kuko nashaka kumutera ubwoba.",
+      },
+      {
+        prompt: "Iron all the clothes today before they dry completely.",
+        answer: "Tera ipasi ivyambaro vyose uyu munsi imbere y'uko vyuma rwose.",
+      },
+      {
+        prompt: "People who live together (use kuba) must trust each other.",
+        answer: "Abantu babana bategerezwa kwizigirana.",
+      },
+      {
+        prompt: "The girls went down to hoe with the women in the valley.",
+        answer: "Abigeme bamanutse kurima n'abagore mu mwonga.",
+      },
+      {
+        prompt: "Let’s do what (the things which) God wants so that we may bring (cause) Him honor.",
+        answer: "Dukore ivyo Imana ishaka kugira ngo tuyitere icubahiro.",
+      },
+      {
+        prompt: "My brother (girl speaking) wants his children (wants that) to learn together with the teacher’s children.",
+        answer: "Musaza wanje ashaka ko abana biwe bigana n'abana b'umwigisha.",
+      },
+      {
+        prompt: "The pupils went out together (in order) to play ball.",
+        answer: "Abanyeshule basohokanye kugira ngo batere umupira.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 107: Associative Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

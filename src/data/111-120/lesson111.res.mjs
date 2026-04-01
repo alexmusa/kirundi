@@ -212,24 +212,116 @@ let Content = {
   make: Lesson111$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abantu bamwe baza ku bitaro bava kure cane.",
+        answer: "Some people (who) come to the hospital come from very far."
+      },
+      {
+        prompt: "Har’ ivu ryiza hamwe-hamwe; ariko si hose.",
+        answer: "There is good fertilizer (ash) in some places; but not everywhere."
+      },
+      {
+        prompt: "Mfise ibitabo bimwe-bimwe vyo kugura ariko si vyinshi cane.",
+        answer: "I have a few books to buy but they are not very many."
+      },
+      {
+        prompt: "Tuzobonana rimwe-rimwe naho tutari hafi cane.",
+        answer: "We will see each other sometimes even though we are not very near."
+      },
+      {
+        prompt: "Yesu yahaye abigishwa biwe ibimenyetso bimwe kugira ngo bamenye kw ari Kristo.",
+        answer: "Jesus gave his disciples some signs so that they might know that he is Christ."
+      },
+      {
+        prompt: "Mbega wopfuma uheba kwigishwa, canke wemera kugira umwete?",
+        answer: "Would you rather give up being taught, or do you agree to be diligent?"
+      },
+      {
+        prompt: "Namb’ ubigomba, woshobora gusomera abana ubu.",
+        answer: "If you want it, you could read for the children now."
+      },
+      {
+        prompt: "Mbega ntimwondorera? Ndi hafi guheza iki gikorwa.",
+        answer: "Wouldn't you (pl.) wait for me? I am near finishing this work."
+      },
+      {
+        prompt: "Namba bakora ivyiza, koshimwa n’abakuru babo.",
+        answer: "If they do good things, they would be praised by their superiors."
+      },
+      {
+        prompt: "Namb’ ushira ibihaya vyaboze mu bindi vyiza, vyose vyobora.",
+        answer: "If you put rotten peanuts among other good ones, they would all rot."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "There are many stones here. Take away some of them.",
+        answer: "Hariho amabuye menshi hano. Yakureho amwe-amwe."
+      },
+      {
+        prompt: "Are there any sweet potatoes in the garden? Some, but not many.",
+        answer: "Mbega hariho ibijumbu mu murima? Bimwe-bimwe, ariko si vyinshi."
+      },
+      {
+        prompt: "Sometimes the people of God have troubles but He helps us in everything.",
+        answer: "Rimwe-rimwe abantu b'Imana bafise amagorwa (canke ivyago) ariko iradufasha muri vyose."
+      },
+      {
+        prompt: "Some thorns are in the path; take them away.",
+        answer: "Amahwa amwe-amwe ari mu nzira; ayakureho."
+      },
+      {
+        prompt: "Some difficulties are very bad, but let us not fall because of them.",
+        answer: "Amagorwa amwe-amwe ni mabi cane, ariko ntitugwe kubera yo."
+      },
+      {
+        prompt: "Wouldn’t you (sing.) bring me some oranges? I don’t want all of them.",
+        answer: "Ntiwonzanira amacungwa amwe-amwe? Sinkunda yose."
+      },
+      {
+        prompt: "Although we would do only good (things), some people would accuse us falsely.",
+        answer: "Naho twokora ivyiza gusa, abantu bamwe-bamwe boturega ibinyoma."
+      },
+      {
+        prompt: "If I tell you (pl.) all that God did for me, you would be amazed.",
+        answer: "Namba ndababwira vyose Imana yankoze, mwotangara."
+      },
+      {
+        prompt: "Wouldn’t you (sing.) like to rest now?",
+        answer: "Ntiwokunda kuruhuka ubu?"
+      },
+      {
+        prompt: "If the goats go in the garden, they would destroy the little plants.",
+        answer: "Namb' ihene zijije mu murima, zoyona ibiterwa bito."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson111$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 111: How to Say “Some”; The Conditional",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

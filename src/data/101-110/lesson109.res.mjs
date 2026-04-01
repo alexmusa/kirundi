@@ -232,24 +232,116 @@ let Content = {
   make: Lesson109$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "N’iki gituma utagomba kwemera Yesu no guheba ivyaha vyawe?",
+        answer: "Why don't you want to accept Jesus and leave your sins?"
+      },
+      {
+        prompt: "N’iki catumye usiba cane mu kwezi kwaheze?",
+        answer: "Why were you absent so much in the past month?"
+      },
+      {
+        prompt: "N’iki cakubujije kuja i Gitega ejo hamwe n’abandi?",
+        answer: "What hindered you from going to Gitega yesterday with the others?"
+      },
+      {
+        prompt: "Numvise yukw ejo wanse gukorana na Bujana. Ni ku iki?",
+        answer: "I heard that yesterday you refused to work with Bujana. Why?"
+      },
+      {
+        prompt: "Umwankira iki? Har’ ikibi yakugiriye?",
+        answer: "Why do you hate him/her? Is there some evil he/she did to you?"
+      },
+      {
+        prompt: "N’iki gituma mupfuma mugiriranira ishari?",
+        answer: "Why do you prefer to have envy for each other?"
+      },
+      {
+        prompt: "N’iki cabujije ya nkumi kugenda kuvurwa? Ni kukw ata mafaranga ifise.",
+        answer: "What hindered that young woman from going to be treated? It is because she has no money."
+      },
+      {
+        prompt: "Ya nka, so ayishimira iki? Mbona imeze nabi.",
+        answer: "That cow, why is your father pleased with it? I see it is in poor condition."
+      },
+      {
+        prompt: "N’iki cabujije umwubatsi guheza inzu yiwe mur’ uku kwezi? N’imvura nyinshi.",
+        answer: "What hindered the builder from finishing his house in this month? It's heavy rain."
+      },
+      {
+        prompt: "N’iki catumye ugirira murumunawe umwikomo?",
+        answer: "Why did you have hard feelings toward his/her younger brother/sister?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Why didn’t your father send you to school yesterday?",
+        answer: "N’iki cabujije so kugutuma kw’ishure ejo?"
+      },
+      {
+        prompt: "Why did you (pl.) throw stones (just now) into the school?",
+        answer: "N’iki gitumye muteye amabuye mw’ishure?"
+      },
+      {
+        prompt: "Why are you cross at me?",
+        answer: "N’iki gituma ungirira ishavu?"
+      },
+      {
+        prompt: "Long ago Paul persecuted those who followed Jesus. Why?",
+        answer: "Kera Pawulo yaradendereje abakurikiye Yesu. Ni ku iki?"
+      },
+      {
+        prompt: "Why do you prefer to quit your work? Because I want more money (francs).",
+        answer: "N’iki gituma upfuma uheba igikorwa cawe? Kuko ngomba amafaranga menshi."
+      },
+      {
+        prompt: "Why won’t the teacher go to warn those boys?",
+        answer: "N’iki gituma umwigisha atazoja kuburira nya bahungu?"
+      },
+      {
+        prompt: "Why do the elders falsely accuse these two young men? They didn’t steal anything.",
+        answer: "N’iki gituma abashingantahe badendereza aba basore babiri? Nta co bishivye."
+      },
+      {
+        prompt: "Why (for what) is that woman punishing her little child?",
+        answer: "Uwo mugore ahanira umwana wiwe muto iki?"
+      },
+      {
+        prompt: "Why did you (just now) drag that big box into this room?",
+        answer: "N’iki gitumye ukuruye nya sandugu nini mur’iki cumba?"
+      },
+      {
+        prompt: "Why did you wait until today to tell me that news?",
+        answer: "N’iki catumye urindira gushika uyu musi kugira ngo umbwire iyo nkuru?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson109$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 109: How to Say “Why?”",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

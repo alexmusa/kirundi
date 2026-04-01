@@ -113,10 +113,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Stefano yabonye mw ijuru kandi yabonye Umwami Yesu i buryo bw’Imana.",
+        answer: "Stephen saw into heaven and saw the Lord Jesus at the right hand of God.",
+      },
+      {
+        prompt: "Nasize ibitabo vyanje vyose i muhira.",
+        answer: "I left all my books at home.",
+      },
+      {
+        prompt: "Imana ir’i ruhande yacu imisi yose.",
+        answer: "God is at our side always (every day).",
+      },
+      {
+        prompt: "Mbeg’ urashobora kwandikisha ukuboko kwawe kw’i bubamfu?",
+        answer: "Can you write with your left hand?",
+      },
+      {
+        prompt: "Abagabo batanguye gukora; maze bamwe batangura gutata no kunebwa.",
+        answer: "The men began to work; then some began to grumble and to be lazy.",
+      },
+      {
+        prompt: "Umwana yicara i buryo bwawe yitwa nde?",
+        answer: "What is the name of the child sitting at your right?",
+      },
+      {
+        prompt: "Mukurwawe aracar’ i muhira? Oya, yagiye i Bujumbura kurondera akazi.",
+        answer: "Is your older brother still at home? No, he went to Bujumbura to look for work.",
+      },
+      {
+        prompt: "Umumarayika yari kumwe na Petero igihe bamushize mw ibohero (prison).",
+        answer: "An angel was with Peter when they put him in prison.",
+      },
+      {
+        prompt: "Ivyo twashwabuye mbere biruta ivyo turiko turashwabura uyu musi.",
+        answer: "The things we harvested before are greater than what we are harvesting today.",
+      },
+      {
+        prompt: "Mbeg’ abana banyu baracari kumwe na se wabo?",
+        answer: "Are your children still with their father?",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Go to take that letter right now.",
+        answer: "Genda gutwara iryo kete ubu nyene.",
+      },
+      {
+        prompt: "Perhaps we shall see our friends tomorrow.",
+        answer: "Kumbure tuzobona abagenzi bacu ejo.",
+      },
+      {
+        prompt: "One day the boys learned well, but the next day some were absent.",
+        answer: "Umusi umwe abahungu banyize neza, ariko bukeye bamwe bari bishize.",
+      },
+      {
+        prompt: "There were two animals beside the path.",
+        answer: "Hariho ibikoko bibiri i ruhande y’inzira.",
+      },
+      {
+        prompt: "After these things, the man tried to hide; then some children saw him.",
+        answer: "Hanyuma y’ivyo, umugabo yagerageje kwihisha; maze abana bamwe baramubona.",
+      },
+      {
+        prompt: "I always like to sit near the teacher so that I hear everything he says.",
+        answer: "Nkunda kwicara hafi y’umwigisha imisi yose nuko numve ivyo avuga vyose.",
+      },
+      {
+        prompt: "Sometimes we are tempted to doubt God’s Word, but Jesus enables us (causes us to be able) to defeat Satan.",
+        answer: "Rimwe-rimwe turagezwa gukekeranya Ijambo ry’Imana, ariko Yesu aratushoboza gutsinda Satani.",
+      },
+      {
+        prompt: "The sower (umubivyi) planted the seed and some fell beside the path and the birds ate them.",
+        answer: "Umubivyi yarabivye imbuto maze zimwe zaguye i ruhande y’inzira kandi inyoni barazirya.",
+      },
+      {
+        prompt: "Often the children like to play together beside the school. While they are playing they chat.",
+        answer: "Kenshi abana bakunda gukina hamwe i ruhande y’ishure. Igihe bariko barakina barayaga.",
+      },
+      {
+        prompt: "The baby is still sleeping in the bed which is at the right of his mother’s bed. Don’t waken him.",
+        answer: "Akana karacasinziriye mu gitanda kiri i buryo bw’igitanda ca nyina. Ntukamuvyure.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 119: More Adverbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

@@ -144,24 +144,40 @@ let Content = {
   make: Lesson124$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [{
+        prompt: "Yohana amaze gushirwa mw ibohero (prison), Yesu aja i Galilaya, ababwira Ubutumwa Bgiza bw’Imana, at’Igihe kirashitse, ubwami bw’Imana buri hafi; mwihane, mwemere Ubutumwa Bgiza. Aciye i ruhande y’ikiyaga c’i Galilaya, abona Simoni na Andereya mwene (son of) nyina baterera urusenga (net) mu kiyaga, kuko bar’ abarovyi. Yesu arababarira, ati Ni mukurikire, nzobagira abaroba abantu. Baca (immediately) bareka insenga, baramukurikira. Yigiye (as he went) imbere gato abona Yakobo mwene Zebedayo na Yohana mwene nyina, na bo bari mu bwato basana insenga. Aca (immediately) arabahamagara, basiga se Zebedayo mu bwato hamwe n’abakozi biwe, baramukurikira. Mariko 1:14",
+        answer: "After John had been put in prison, Jesus went to Galilee, telling them the Good News of God, saying, 'The time is fulfilled, the kingdom of God is near; repent, and believe the Good News.' Passing beside the lake of Galilee, he saw Simon and Andrew his brother throwing a net into the lake, for they were fishermen. Jesus said to them, 'Follow me, I will make you fishers of men.' Immediately they left the nets and followed him. As he went a little further he saw James the son of Zebedee and John his brother, they also were in the boat mending nets. Immediately he called them, they left their father Zebedee in the boat together with his workers, and they followed him."
+      }]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [{
+        prompt: "Long ago a woman named Hannah gave birth to a son and she named him Samuel. When three years were finished she took him to the church in order that he might work for God. Every year she went to see him and gave him clothes. After (hashize) a few years, one night God called him. Samuel thought (that) Eli called him. He ran and said, “Did you call me?” Eli said, “No, I didn’t call you, go back to bed.” After three times Eli understood that God was calling Samuel. He told Samuel that he ought to answer, “Yes, Lord, your servant hears.” God called again and Samuel answered. Then God showed him the punishment He was going to send on the sons of Eli.",
+        answer: "Kera umugore yitwa Hana yavyaye umuhungu, amwita Samweli. Imyaka itatu imaze guhera (gushira), aramujana mu rusengero ngo akorere Imana. Uko umwaka utashye yajayo kumuraba, amuha impuzu. Hashize imyaka mikeya, ijoro rimwe Imana iramuhamagara. Samweli agira ngo Eli ni we amuhamagaye. Ariruka, ati \"Warampamagaye?\" Eli ati \"Oya, sinaguhamagara, subira kuryama.\" Gatatu gashize Eli amenya ko Imana ari yo ihamagara Samweli. Abwira Samweli ko akwiye kwishura, ati \"Ego, Mwami, umushumba wawe arumva.\" Imana yongera guhamagara, Samweli arishura. Maze Imana iramwereka igihano izoherereza abahungu ba Eli."
+      }]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson124$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 124: Narrative (Continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

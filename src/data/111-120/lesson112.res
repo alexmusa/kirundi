@@ -102,10 +102,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Mbega nturaheza guteka indya? Turashonje cane.",
+        answer: "Have you not finished cooking food yet? We are very hungry.",
+      },
+      {
+        prompt: "Wa mugabo avyibushe aratunze vyinshi kand' afise abakozi benshi.",
+        answer: "That fat man is very rich and has many workers.",
+      },
+      {
+        prompt: "Uyu muntu aranezerewe kukw akijijwe.",
+        answer: "This person is happy because he is saved.",
+      },
+      {
+        prompt: "Biragoye kugenda mu nzira ipfunganye.",
+        answer: "It is difficult to go in a narrow path.",
+      },
+      {
+        prompt: "Wa muntu mukuru aba mu nzu yera; ni nziza cane.",
+        answer: "That important man (or adult) lives in a white house; it is very nice.",
+      },
+      {
+        prompt: "Unzanire amazi ahoze kuko mfise inyota nyinshi.",
+        answer: "Bring me water that has cooled because I am very thirsty.",
+      },
+      {
+        prompt: "Umuntu anebwe ntiyoshimwa n'abagomba kumukoresha.",
+        answer: "A lazy person would not be liked by those who want to employ him.",
+      },
+      {
+        prompt: "Ngomba yukw abigishwa bose bazoza ejo bambaye impuzu zimesuwe.",
+        answer: "I want all the students to come tomorrow wearing washed clothes.",
+      },
+      {
+        prompt: "Bika impuzu zumye, izindi zikanye uzanikire.",
+        answer: "Put away the dry clothes, spread the other damp ones out (to dry).",
+      },
+      {
+        prompt: "Ndarushe cane, ntiwompa uruhusha kugira ngo nduhuke gatoya?",
+        answer: "I am very tired, won't you give me permission so that I may rest a little?",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Do not bring the clothes in (from sunshine); they are damp.",
+        answer: "Ntuzane impuzu mu nzu; zirakanye.",
+      },
+      {
+        prompt: "The man’s cows are very fat; he will sell them (for) many francs.",
+        answer: "Inka z'umugabo ziravyibushe cane; azozigurisha amafaranga menshi.",
+      },
+      {
+        prompt: "God wants that His people have pure hearts; He can make them pure.",
+        answer: "Imana igomba yukw abantu bayo bafise imitima yera; Irashobora kuyeza.",
+      },
+      {
+        prompt: "A strong man can carry heavy loads.",
+        answer: "Umugabo akomeye arashobora gutwara imitwaro iremereye.",
+      },
+      {
+        prompt: "The path of life is very narrow, and the path of sin is wide; but he who goes in the narrow path is very happy.",
+        answer: "Inzira y'ubugingo ni pfunganye cane, n'inzira y'icaha ni ntagara; ariko uwugenda mu nzira ipfunganye aranezerewe cane.",
+      },
+      {
+        prompt: "Your child is very fat. I think he is very healthy (= strong).",
+        answer: "Umwana wawe aravyibushe cane. Nibaza yuko akomeye cane.",
+      },
+      {
+        prompt: "A rich person ought to help (-tabara) the unfortunate (those who are troubled).",
+        answer: "Umuntu atunze akwiriye gutabara abagowe.",
+      },
+      {
+        prompt: "We are asking the adults (= those who are grown) to come on Friday to build the school.",
+        answer: "Turasaba abantu bakuze kuza ku wa gatanu kwubaka ishure.",
+      },
+      {
+        prompt: "A sorrowing woman is outside; wouldn’t you go to help her?",
+        answer: "Umugore ababaye ari hanze; ntiwoja kumutabara?",
+      },
+      {
+        prompt: "The happy children of God should cause others to know what (ivyo) Jesus did for them.",
+        answer: "Abana b'Imana banezerewe bakwiriye kumenyesha abandi ivyo Yesu yabagiriye.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 112: Adjectives Expressed by Verbs",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

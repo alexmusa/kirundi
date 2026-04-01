@@ -312,24 +312,116 @@ let Content = {
   make: Lesson108$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Ndasavye uruhusha kuko ndushe cane.",
+        answer: "I ask for permission (or vacation) because I am very tired."
+      },
+      {
+        prompt: "Nyoko ameze ate ubu?",
+        answer: "How is your mother now?"
+      },
+      {
+        prompt: "Ashobora kugenda ate kukw arwaye ukuguru?",
+        answer: "How can he go since he has a sick leg?"
+      },
+      {
+        prompt: "Imana izofasha ite abantu banka kuyakira mu mitima yabo?",
+        answer: "How will God help people who refuse to receive Him in their hearts?"
+      },
+      {
+        prompt: "Nsoma nte ko (since) ntafise igitabo?",
+        answer: "How do I read since I don't have a book?"
+      },
+      {
+        prompt: "Ngomba isahane nini kuruta iyi kukw indya ari nyinshi.",
+        answer: "I want a plate larger than this one because the food is much."
+      },
+      {
+        prompt: "Ngire nte, kuko ndwaye cane uyu musi kuruta ejo?",
+        answer: "What shall I do, because I am more sick today than yesterday?"
+      },
+      {
+        prompt: "Aboro bakunda Imana batanga amafaranga menshi kuruta abatunzi bikunda.",
+        answer: "Poor people who love God give more money than rich people who love themselves."
+      },
+      {
+        prompt: "Igiciro c’ibiharage ni kinini cane ubu kuruta mu mwaka uheze.",
+        answer: "The price of beans is very high now than in the past year."
+      },
+      {
+        prompt: "Nkura nte ubuhoma buri ku mpuzu kw ata sabuni mfise?",
+        answer: "How do I remove the dirt that is on the clothes since I have no soap?"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "How are things going in your school?",
+        answer: "Bigende bite mu nshure yawe?"
+      },
+      {
+        prompt: "What shall we do since the others are not coming to help us?",
+        answer: "Tugire dute ko abandi bataje kudufasha?"
+      },
+      {
+        prompt: "How can I rest now for there is much work?",
+        answer: "Nshobora kuruhuka nte ubu kuko hariho igikorwa cinshi?"
+      },
+      {
+        prompt: "How will you (pl.) pay the workers today? You have no francs.",
+        answer: "Muzoriha mute abakozi uyu musi? Nta mafranga mufise."
+      },
+      {
+        prompt: "How are your cows now? They were sick, weren’t they?",
+        answer: "Inka zanyu zimeze zite ubu? Zari zirwaye, si ko?"
+      },
+      {
+        prompt: "What is your new kraal like? Is it nicer than the other one?",
+        answer: "Urugo rwawe rushasha rumeze rute? Ni rwiza kuruta urundi?"
+      },
+      {
+        prompt: "I heard that your father is very ill. How is he now? He’s no better.",
+        answer: "Numvise ko so arwaye cane. Ameze ate ubu? Nta kw ameze."
+      },
+      {
+        prompt: "How did they build, since it’s raining (= rain falls) every day?",
+        answer: "Bubatse bate, ko imvura igwa misi yose?"
+      },
+      {
+        prompt: "My sister (boy speaking) knows how to weave baskets (flat ones) better than my mother.",
+        answer: "Mushiki wanje azi kuboha inkoko neza kurusha mama."
+      },
+      {
+        prompt: "I like (use “praise”) these shoes more (kuruta) than those but the price is very big.",
+        answer: "Nshimye izi nkweto kuruta zirya ariko igiciro ni kinini cane."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson108$Content, {});
 
 let l_vocabulary = [];
 
 let l_examples = [];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 108: Adverb –",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */
