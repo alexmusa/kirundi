@@ -11,19 +11,19 @@ def main():
     model = "gemini-3-flash-preview"
 
     # Base paths
-    input_dir = Path("kirundi_textbook_pages")
+    input_dir = Path("kirundi_textbook_pages/content")
     output_dir = Path("kirundi_textbook_pages/rescript_output")
     output_dir.mkdir(parents=True, exist_ok=True)
     
-    # Process files from 1 to 125
-    start_num = 1
+    # Process files from 0 to 125
+    start_num = 0
     end_num = 125
     
     for file_num in range(start_num, end_num + 1):
         # Format file name with leading zeros
-        filename = f"page_{file_num:03d}.txt"
+        filename = f"content_{file_num:03d}.html"
         input_file = input_dir / filename
-        output_file = output_dir / f"exercice_{file_num:03d}.res.component"
+        output_file = output_dir / f"vocabulary_{file_num:03d}.res.component"
         
         if not input_file.exists():
             print(f"File {filename} not found, skipping...")
@@ -43,17 +43,9 @@ def main():
             # Create the prompt
             prompt = f"""{html_content}
             
-Adapt ALL the previous exercises to the given format for Rescript. Only output the quizData: array<Quiz.quizSection> code and nothing else.
+Create vocabulary in the given format for Rescript. Only output the vocabularyData: vocabulary code and nothing else.
 
-type quizQuestion = {{
-  prompt: string,
-  answer: string,
-}}
-
-type quizSection = {{
-  title: string,
-  questions: array<quizQuestion>,
-}}"""
+type vocabulary = array<(string, string)>"""
             
             # Send to Gemini
             response = client.models.generate_content(model=model, contents=prompt)
