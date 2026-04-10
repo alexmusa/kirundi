@@ -140,6 +140,42 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Plurals and Meanings",
+    questions: [
+      {prompt: "umwana", answer: "abāna (children)"},
+      {prompt: "umugabo", answer: "abagabo (men)"},
+      {prompt: "umwami", answer: "abāmi (kings/Lords)"},
+      {prompt: "umugore", answer: "abagore (women/wives)"},
+      {prompt: "umuhungu", answer: "abahungu (boys/sons)"},
+      {prompt: "umwigisha", answer: "abīgīsha (teachers)"},
+      {prompt: "umukobwa", answer: "abakobwa (girls/daughters)"},
+      {prompt: "umwigishwa", answer: "abīgīshwa (pupils)"},
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {prompt: "The king has a wife.", answer: "Umwami afise umugore"},
+      {prompt: "The children are going.", answer: "Abāna baragenda"},
+      {prompt: "The man is a king.", answer: "Umugabo n'umwami"},
+      {prompt: "The boys are working hard (much).", answer: "Abahungu barakora cane"},
+      {prompt: "The pupils have a teacher.", answer: "Abīgīshwa bafise umwīgīsha"},
+      {prompt: "A woman is hoeing.", answer: "Umugore arakora"},
+      {prompt: "The child is not a boy.", answer: "Umwana s'umuhungu"},
+      {prompt: "The man has a son.", answer: "Umugabo afise umuhungu"},
+      {prompt: "Teachers work hard (much).", answer: "Abīgīsha barakora cane"},
+      {prompt: "The women have children.", answer: "Abagore bafise abāna"},
+      {prompt: "The pupil is a girl.", answer: "Umwīgīshwa n'umukobwa"},
+      {prompt: "The girl is not a teacher.", answer: "Umukobwa s'umwīgīsha"},
+      {prompt: "Men have wives.", answer: "Abagabo bafise abagore"},
+      {prompt: "Pupils hoe.", answer: "Abīgīshwa barakora"},
+      {prompt: "The teacher is a man.", answer: "Umwīgīsha n'umugabo"},
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 2: Ni and Si",
   content: <Content />,
@@ -160,5 +196,5 @@ let l: lesson = {
     ("Umwigisha ni Andereya", "The teacher is Andrew"),
     ("Gitega ni kure", "Gitega is far away"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

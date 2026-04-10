@@ -179,6 +179,99 @@ let make = () => {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inka zigenda mu bijumbu.",
+        answer: "The cows are going into the sweet potatoes.",
+      },
+      {
+        prompt: "Mbeg’ abantu barakora neza mu murima?",
+        answer: "Are the people working well in the garden?",
+      },
+      {
+        prompt: "Turakora cane mu nzu zacu.",
+        answer: "We are working hard in our houses.",
+      },
+      {
+        prompt: "Imbwa yiwe igenda i muhira.",
+        answer: "His/her dog is going home.",
+      },
+      {
+        prompt: "Har’ imvunja nyinshi mu birenge vyiwe.",
+        answer: "There are many jiggers in his/her feet.",
+      },
+      {
+        prompt: "Umukiza aravuga mu mitima yacu.",
+        answer: "The Savior speaks in our hearts.",
+      },
+      {
+        prompt: "Igikoko kigenda mu ndimiro y’umwigisha.",
+        answer: "The wild animal is going into the teacher's garden.",
+      },
+      {
+        prompt: "Mbega murarima cane mu bigori?",
+        answer: "Are you (pl.) hoeing much in the corn?",
+      },
+      {
+        prompt: "Mbeg’ ukora intebe nziza? Ego, nkora intebe.",
+        answer: "Do you (sing.) make good chairs? Yes, I make chairs.",
+      },
+      {
+        prompt: "Abakobwa b’Abarundi bararima cane.",
+        answer: "Burundi girls hoe much.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "God speaks in the hearts of people.",
+        answer: "Imana iravuga mu mitima y'abantu.",
+      },
+      {
+        prompt: "Are you (pl.) hoeing in your gardens?",
+        answer: "Mbega murima mu ndimiro zanyu?",
+      },
+      {
+        prompt: "The bad goats are going into the house.",
+        answer: "Impene mbi zigenda mu nzu.",
+      },
+      {
+        prompt: "A few men and a few women are working in the old man’s gardens.",
+        answer: "Abagabo bake n'abagore bake barakora mu ndimiro z'umutama.",
+      },
+      {
+        prompt: "I am going to Gitega.",
+        answer: "Ngenda i Gitega.",
+      },
+      {
+        prompt: "We are working hard in our new houses.",
+        answer: "Turakora cane mu nzu zacu nshasha.",
+      },
+      {
+        prompt: "The boys have dirty sleeping mats.",
+        answer: "Abahungu bafise imisambi mibi.",
+      },
+      {
+        prompt: "Are you (sing.) going to our country?",
+        answer: "Mbega ugenda mu gihugu cacu?",
+      },
+      {
+        prompt: "The men’s dogs are going into the teacher’s fields.",
+        answer: "Imbwa z'abagabo zigenda mu ndimiro z'umwigisha.",
+      },
+      {
+        prompt: "Are you (sing.) working in the dark?",
+        answer: "Mbega ukora mu mwiza?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 16: –ra Present Tense of Verb",
   content: <Content />,
@@ -201,5 +294,5 @@ let l: lesson = {
     ("-rima", "hoe, dig, cultivate"),
     ("-vuga", "speak, say"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

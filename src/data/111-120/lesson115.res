@@ -127,10 +127,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbega wagiye ku Rutana guhiga? Ego, navuyey’ ubu nyene.",
+        answer: "Did you go to Rutana to hunt? Yes, I just came from there.",
+      },
+      {
+        prompt: "Nazanye umubindi (water pot); sukamw’ amazi menshi.",
+        answer: "I brought a water pot; pour much water into it.",
+      },
+      {
+        prompt: "Washize impuzu ku ntebe? Ego, nazishizeko.",
+        answer: "Did you put the clothes on the chair? Yes, I put them on it.",
+      },
+      {
+        prompt: "I wanyu n’i Bujumbura? Mbeg’ uzosubirayo ryari? Si vuba kukw igitarurwa capfuye.",
+        answer: "Is your home at Bujumbura? When will you return there? Not soon because the bridge is broken.",
+      },
+      {
+        prompt: "Yesu yaje mw isi kugira ngw akureh’ ivyaha.",
+        answer: "Jesus came into the world in order to take away sins.",
+      },
+      {
+        prompt: "Mbeg’ ugomba iyihe sandugu? Ngomba iyo irimw’ amafaranga.",
+        answer: "Which box do you want? I want that one which contains money.",
+      },
+      {
+        prompt: "Naka yavyutse n’ingoga kuk’ uburiri bwiwe burimw’ intozi.",
+        answer: "So-and-so got up quickly because his bed contains biting ants.",
+      },
+      {
+        prompt: "Izuba ni ryinshi, ngomba kurondera igitutu kugira ngo nicaremwo.",
+        answer: "The sun is strong, I want to look for shade so that I may sit in it.",
+      },
+      {
+        prompt: "Mbona har’ amazi hasi. Ego, nayashesheho vuba.",
+        answer: "I see there is water on the floor. Yes, I just spilled it there.",
+      },
+      {
+        prompt: "Twabonye ibintu vyinshi ku meza. N’ubikureko vyose kuko tugomba kuyategura kugira ngo tuyarīreko.",
+        answer: "We saw many things on the table. Take them all off because we want to prepare it so that we may eat on it.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "There is much wood in the fire; take some out.",
+        answer: "Hariho inkwi nyinshi mu muriro; kuramwo zimwe.",
+      },
+      {
+        prompt: "Tell the people who are in the school that they must come out of it.",
+        answer: "Bwira abantu bari mw’ishure ko bategerezwa kuyivamwo.",
+      },
+      {
+        prompt: "I want to go to Gitega. All right (ni ko), I will send you there soon to take a letter.",
+        answer: "Ngomba kuja i Gitega. Ni ko, nzokurungikayo vuba gutwara ikete.",
+      },
+      {
+        prompt: "Is the meat on the table in the kitchen? I put it there this morning.",
+        answer: "Mbeg’ inyama ziri ku meza mu gikoni? Nazishizeko uyu mugitondo.",
+      },
+      {
+        prompt: "Are there white potatoes in the garden? Yes, there are.",
+        answer: "Mbega hariho ibiraya mu murima? Ego, hariho.",
+      },
+      {
+        prompt: "We want to go in this path, but there are cows in it. Please take them out of it.",
+        answer: "Tugomba kuja muri iyi nzira, mugabo harimw’ inka. Uzikuremwo.",
+      },
+      {
+        prompt: "We have long benches (chairs) in the church and many people sit on them.",
+        answer: "Turi n’intebe ndende mw’ishengero kandi abantu benshi bazicarako.",
+      },
+      {
+        prompt: "A workman was splitting wood. His axe got caught (was caught) in the tree and he can’t take it out.",
+        answer: "Umukozi yari arasatura inkwi. Ishoka yiwe yafatiwe mu giti kandi ntarashobora kuyikuramwo.",
+      },
+      {
+        prompt: "Did the girls go to the valley to work this morning? Yes, but they came from there at noon.",
+        answer: "Mbeg’ abigeme bagiye mu mwonga gukora uyu mugitondo? Ego, mugabo bavuyeyo ku sasita.",
+      },
+      {
+        prompt: "What do you have in your tall basket? I have some peas. Please take them out and show them to me.",
+        answer: "Ufise iki mu giseke cawe? Mfise amashaza. Uyakuremwo uyanyereke.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 115: Prepositional Suffixes",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

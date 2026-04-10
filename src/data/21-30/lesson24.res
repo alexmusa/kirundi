@@ -86,6 +86,99 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Translate into English",
+    questions: [
+      {
+        prompt: "Uruyuki ruri ku rutoke rwanje.",
+        answer: "A bee is on my finger.",
+      },
+      {
+        prompt: "Inzige nyinshi ziri mu mirima.",
+        answer: "Many locusts are in the fields.",
+      },
+      {
+        prompt: "Urubaho rwawe ntiruri hano.",
+        answer: "Your board is not here.",
+      },
+      {
+        prompt: "Urukundo rw’Imana ruri mu mutima wanje.",
+        answer: "The love of God is in my heart.",
+      },
+      {
+        prompt: "Urusato rw’igikoko ni rwiza cane.",
+        answer: "The animal's skin is very beautiful.",
+      },
+      {
+        prompt: "Abana bariko baratega amashi.",
+        answer: "The children are holding out their hands to receive.",
+      },
+      {
+        prompt: "Mbeg’ ufise impfunguzo zanje? Ngomba kugenda mw ishuli.",
+        answer: "Do you have my keys? I want to go to school.",
+      },
+      {
+        prompt: "Mbeg’ uravuga ururimi rwacu?",
+        answer: "Do you speak our language?",
+      },
+      {
+        prompt: "Singomba inzuki mu nzu.",
+        answer: "I do not want bees in the house.",
+      },
+      {
+        prompt: "Mbega muzana insato z’inka mu rugo?",
+        answer: "Do you (pl.) bring cow skins into the yard?",
+      },
+    ],
+  },
+  {
+    title: "Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The cow’s skin is large.",
+        answer: "Urusato rw'inka ni runini.",
+      },
+      {
+        prompt: "The teacher speaks many languages.",
+        answer: "Umwigisha avuga indimi nyinshi.",
+      },
+      {
+        prompt: "Where are your (sing.) keys? They are here.",
+        answer: "Impfunguzo zawe ziri hehe? Ziri hano.",
+      },
+      {
+        prompt: "The boy’s fingernails are dirty.",
+        answer: "Inzara z'umuhungu ni mbi.",
+      },
+      {
+        prompt: "The woman’s baby (infant) has a bad illness.",
+        answer: "Uruyoya rw'umugore rufise indwara mbi.",
+      },
+      {
+        prompt: "God puts love in our hearts.",
+        answer: "Imana ishira urukundo mu mitima yacu.",
+      },
+      {
+        prompt: "What do you have in your hand (palm)?",
+        answer: "Ufise iki mu rushi?",
+      },
+      {
+        prompt: "Many bees and locusts are in our fields.",
+        answer: "Inzuki nyinshi n'inzige nyinshi ziri mu mirima yacu.",
+      },
+      {
+        prompt: "Put the teacher’s keys in his room.",
+        answer: "Shira impfunguzo z'umwigisha mu cumba ciwe.",
+      },
+      {
+        prompt: "Women love their babies very much.",
+        answer: "Abagore bakunda cane inzoya zabo.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 24: Class 6 (continued)",
   content: <Content />,
@@ -108,5 +201,5 @@ let l: lesson = {
     ("inzige", "locusts"),
     ("inzāra", "fingernails / toenails"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

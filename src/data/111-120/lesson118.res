@@ -164,10 +164,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inzu yawe iri hehe? iri hakurya y’uruzi.",
+        answer: "Where is your house? It is on the other side of the river.",
+      },
+      {
+        prompt: "Mbeg’ ibitabo biri mw isandugu? Oya, isandugu iri gusa.",
+        answer: "Are the books in the box? No, the box is empty.",
+      },
+      {
+        prompt: "Yesu yaje agahagaraga hagati y’abigishwa biwe.",
+        answer: "Jesus came and stood in the midst of his disciples.",
+      },
+      {
+        prompt: "Imirima iri hepfo y’aho; iri hafi y’umwonga.",
+        answer: "The fields are below there; they are near the valley.",
+      },
+      {
+        prompt: "Har’ abantu benshi cane hariya imbere y’urusengero.",
+        answer: "There are very many people over there in front of the church.",
+      },
+      {
+        prompt: "Kera ibikoko vyanteye ubwoba, n’ubu biracabuntera.",
+        answer: "Long ago wild animals frightened me, and even now they still cause me fear.",
+      },
+      {
+        prompt: "Mbega wa musuma aracihisha?",
+        answer: "Is that thief still hiding himself?",
+      },
+      {
+        prompt: "Abakozi bakibumba amatafari bararirimba.",
+        answer: "While the workers are molding bricks, they are singing.",
+      },
+      {
+        prompt: "Mariya ntacambara ya mpuzu yiwe nshasha. iri hehe? Yatabutse.",
+        answer: "Mary no longer wears that new cloth of hers. Where is it? It is torn.",
+      },
+      {
+        prompt: "Ndacakurikira Yesu kandi ngomba kumukurikira imyaka yanje yose.",
+        answer: "I am still following Jesus and I want to follow Him all my years.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The birds are above the trees.",
+        answer: "Inyoni ziri hejuru y'ibiti.",
+      },
+      {
+        prompt: "There are five men behind me.",
+        answer: "Hariho abagabo batanu inyuma yanje.",
+      },
+      {
+        prompt: "The bricks are on the ground near the house.",
+        answer: "Amatafari ari hasi hafi y'inzu.",
+      },
+      {
+        prompt: "The rich man’s kraal is on this side of the valley.",
+        answer: "Urugo rw'umutunzi ruri hakuno y'umwonga.",
+      },
+      {
+        prompt: "Everywhere the people are planting seeds now because the rains (use sing.) are beginning.",
+        answer: "Hose abantu baratera imbuto ubu kuko imvura iriko iratangura.",
+      },
+      {
+        prompt: "Gahungu is still asking us for work although we told him many times that we have none.",
+        answer: "Gahungu aracadusaba akazi naho twamubwiye kenshi ko ata ko dufise.",
+      },
+      {
+        prompt: "We no longer covet the things of earth because we have been saved.",
+        answer: "Ntitukifuza ivy'isi kuko twakijijwe.",
+      },
+      {
+        prompt: "Is that blind man still here? No, he is no longer here, he went to Rwanda.",
+        answer: "Mbega wa mpumyi aracari hano? Oya, ntakiri hano, yagiye mu Rwanda.",
+      },
+      {
+        prompt: "The fundis are still building that new school on the other side of the river.",
+        answer: "Abafundi baracubaka rya shure rishasha hakurya y'uruzi.",
+      },
+      {
+        prompt: "I am no longer a child, I have grown up, and I don’t learn in school any more (= no longer).",
+        answer: "Ntinkiri umwana, narakuze, kandi ntinciga mw ishure.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 118: Some Adverbs; The –",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

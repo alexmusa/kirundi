@@ -104,6 +104,39 @@ module Content = {
     </div>
   }
 }
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {prompt: "Inka yanje ni mbi.", answer: "My cow is bad."},
+      {prompt: "Umugabo ni mugufi.", answer: "The man is short."},
+      {prompt: "Abantu si bake.", answer: "The people are not few."},
+      {prompt: "Abana banje si babi.", answer: "My children are not bad."},
+      {prompt: "Umwigisha ni mukuru.", answer: "The teacher is important (or senior/great)."},
+      {prompt: "Inzu y’umutama ni mbi.", answer: "The old man's house is bad (or dirty/ugly)."},
+      {prompt: "Impuzu y’umwana ni ngufi.", answer: "The child's clothes are short."},
+      {prompt: "Mfise umutsima mubi.", answer: "I have bad bread."},
+      {prompt: "Abana bafise imitsima mike.", answer: "The children have a little bread."},
+      {prompt: "Intebe zanyu ni ngufi.", answer: "Your (pl.) chairs are short."},
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {prompt: "I have an ugly dog.", answer: "Mfise imbwa mbi."},
+      {prompt: "Our house is low.", answer: "Inzu yacu ni ngufi."},
+      {prompt: "Your (pl.) chairs are short.", answer: "Intebe zanyu ni ngufi."},
+      {prompt: "His bad children.", answer: "Abana biwe babi."},
+      {prompt: "Their few cows.", answer: "Inka zabo nkeya."},
+      {prompt: "The houses are few.", answer: "Inzu ni nkeya."},
+      {prompt: "Your (sing.) clothes are dirty.", answer: "Impuzu zawe ni mbi."},
+      {prompt: "God is very great.", answer: "Imana ni nkuru cane."},
+      {prompt: "I have his short rope.", answer: "Mfise umugozi wiwe mugufi."},
+      {prompt: "Is the teacher’s child bad?", answer: "Umwana w’umwigisha ni mubi?"},
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 8: Adjectives - Descriptive Adjectives",
   content: <Content />,
@@ -136,5 +169,5 @@ let l: lesson = {
     ("inka ziwe nkeya", "his few cows"),
     ("inka mbi nkeya", "a few bad cows"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

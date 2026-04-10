@@ -125,6 +125,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inka z’umugabo.",
+        answer: "The man's cows (or: The cows of the man)",
+      },
+      {
+        prompt: "Umutama n’imbwa yiwe.",
+        answer: "The old man and his dog",
+      },
+      {
+        prompt: "Umuhungu akora mu ndimiro yiwe.",
+        answer: "The boy works in his field",
+      },
+      {
+        prompt: "Abakobwa bafise intebe zabo.",
+        answer: "The girls have their chairs",
+      },
+      {
+        prompt: "Umukobwa afise impuzu mu nzu yanje.",
+        answer: "The girl has clothes in my house",
+      },
+      {
+        prompt: "Umwana afise impuzu zawe.",
+        answer: "The child has your clothes",
+      },
+      {
+        prompt: "Inka zawe ziri mu murima wanje.",
+        answer: "Your cows are in my field",
+      },
+      {
+        prompt: "Abantu bagenda mu nzu.",
+        answer: "The people go into the house",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The men’s houses",
+        answer: "Inzu z'abagabo",
+      },
+      {
+        prompt: "The girl’s chair",
+        answer: "Intebe y'umukobwa",
+      },
+      {
+        prompt: "I have a dog",
+        answer: "Mfise imbwa",
+      },
+      {
+        prompt: "Our chairs",
+        answer: "Intebe zacu",
+      },
+      {
+        prompt: "Their cows",
+        answer: "Inka zabo",
+      },
+      {
+        prompt: "My God",
+        answer: "Imana yanje",
+      },
+      {
+        prompt: "Your (pl.) clothes",
+        answer: "Impuzu zanyu",
+      },
+      {
+        prompt: "The old man’s cows",
+        answer: "Inka z'umutama",
+      },
+      {
+        prompt: "The teachers’ children",
+        answer: "Abana b'abigisha",
+      },
+      {
+        prompt: "The woman’s clothes",
+        answer: "Impuzu z'umugore",
+      },
+      {
+        prompt: "The children are going into the man’s field",
+        answer: "Abana bagenda mu ndimiro y'umugabo",
+      },
+      {
+        prompt: "I am working in the teacher’s field",
+        answer: "Ndakora mu ndimiro y'umwigisha",
+      },
+      {
+        prompt: "The women have bread on their heads",
+        answer: "Abagore bafise umukate ku mitwe yabo",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 7: Class 3 in–, in–",
   content: <Content />,
@@ -146,5 +243,5 @@ let l: lesson = {
     ("Imana (in-mana)", "God (n before m drops out)"),
     ("inzara (in-ara)", "hunger (n before vowel → nz)"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

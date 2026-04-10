@@ -99,6 +99,95 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umugabo agenda mu mwiza.",
+        answer: "The man walks in the darkness.",
+      },
+      {
+        prompt: "Umwigisha afise imyenda.",
+        answer: "The teacher has debts.",
+      },
+      {
+        prompt: "Umugore afise umunezero mu mutima wiwe.",
+        answer: "The woman has joy in her heart.",
+      },
+      {
+        prompt: "Abana biwe barakora neza.",
+        answer: "His (or her) children work well.",
+      },
+      {
+        prompt: "Umwotsi uva mu muriro.",
+        answer: "Smoke comes out of the fire.",
+      },
+      {
+        prompt: "Umutama afise umwiza mu mutima wiwe.",
+        answer: "The old man has darkness in his heart.",
+      },
+      {
+        prompt: "Umukiza akora mu mitima yacu.",
+        answer: "The Savior works in our hearts.",
+      },
+      {
+        prompt: "Mbeg’ umukozi afise imyenda? Oyaye.",
+        answer: "Does the worker have debts? No.",
+      },
+      {
+        prompt: "Abakozi barima ku musozi.",
+        answer: "The workers hoe on the hill.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The children have joy in their hearts.",
+        answer: "Abana bafise umunezero mu mitima yabo.",
+      },
+      {
+        prompt: "The boy has bread on his head.",
+        answer: "Umuhungu afise umutsima ku mutwe wiwe.",
+      },
+      {
+        prompt: "The women work on their hill.",
+        answer: "Abagore bakora ku musozi wabo.",
+      },
+      {
+        prompt: "Your (sing.) debts.",
+        answer: "Imyenda yawe.",
+      },
+      {
+        prompt: "Our fire.",
+        answer: "Umuriro wacu.",
+      },
+      {
+        prompt: "In the fire.",
+        answer: "Mu muriro.",
+      },
+      {
+        prompt: "At the fire.",
+        answer: "Ku muriro.",
+      },
+      {
+        prompt: "The old men have darkness in their hearts.",
+        answer: "Abatama bafise umwiza mu mitima yabo.",
+      },
+      {
+        prompt: "The light (insert “wo”) on the hill is your fire.",
+        answer: "Umuco wo ku musozi ni umuriro wawe.",
+      },
+      {
+        prompt: "The child is walking in the smoke.",
+        answer: "Umwana agenda mu mwotsi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 5: Mu and Ku",
   content: <Content />,
@@ -116,5 +205,5 @@ let l: lesson = {
     ("Kuva ku muriro", "To come away from the fire"),
     ("Umwenda / Imyenda", "Debt / Debts"),
   ],
-quiz: [],
+quiz: quizData,
 };

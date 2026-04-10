@@ -115,6 +115,99 @@ let make = () => {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abantu ntibarima mu mirima yabo, kandi ntibagenda i muhira.",
+        answer: "The people are not cultivating in their fields, and they are not going home.",
+      },
+      {
+        prompt: "Intama ntizigenda mu nzira.",
+        answer: "The sheep are not going in the path.",
+      },
+      {
+        prompt: "Nkunda Imana mu mutima wanje.",
+        answer: "I love God in my heart.",
+      },
+      {
+        prompt: "Ntitugenda i muhira.",
+        answer: "We are not going home.",
+      },
+      {
+        prompt: "Umuhungu ni mubi, ntakora.",
+        answer: "The boy is bad, he is not working.",
+      },
+      {
+        prompt: "Sinshima abana babi, ariko ndakunda abana beza.",
+        answer: "I do not praise bad children, but I love good children.",
+      },
+      {
+        prompt: "Umwana afise indwara mbi, ariko ntakunda umuti.",
+        answer: "The child has a bad illness, but he does not like medicine.",
+      },
+      {
+        prompt: "Mbeg’ abavyeyi bawe bar’ i muhira?",
+        answer: "Are your parents at home?",
+      },
+      {
+        prompt: "Ntitugenda mu nzira nini.",
+        answer: "We are not going in the big path.",
+      },
+      {
+        prompt: "Ntituri mu murima wanyu, tur’ i wacu.",
+        answer: "We are not in your garden, we are at our place.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I am not going to the house.",
+        answer: "Singenda mu nzu.",
+      },
+      {
+        prompt: "I praise God in my heart. he has much mercy.",
+        answer: "Nshima Imana mu mutima wanje. Afise imbabazi nyishi.",
+      },
+      {
+        prompt: "The child’s illness is not very bad.",
+        answer: "Indwara y'umwana ntiri mbi cane.",
+      },
+      {
+        prompt: "He does not like medicine.",
+        answer: "Ntakunda umuti.",
+      },
+      {
+        prompt: "My parents are not at home.",
+        answer: "Abavyeyi banje ntibari i muhira.",
+      },
+      {
+        prompt: "We love our Savior very much, and we do not like sin.",
+        answer: "Turakunda Umukiza wacu cane, kandi ntitukunda igicumuro.",
+      },
+      {
+        prompt: "The women are not hoeing in the sweet potatoes, they are in the house.",
+        answer: "Abagore ntibarima mu biyaya, bari mu nzu.",
+      },
+      {
+        prompt: "Where are the goats? They are not on the path.",
+        answer: "Impene ziri hehe? Ntiziri mu nzira.",
+      },
+      {
+        prompt: "Don’t you (sing.) love your parents?",
+        answer: "Mbega ntukunda abavyeyi bawe?",
+      },
+      {
+        prompt: "The sleeping mat is not in the house, and my clothes are not on the chair.",
+        answer: "Umukeka nturi mu nzu, kandi impuzu zanje ntiziri ku ntebe.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 17: Negative of the –ra– Present",
   content: <Content />,
@@ -142,5 +235,5 @@ let l: lesson = {
     ("kandi", "and (connecting phrases), also"),
     ("indwara (cl. 3)", "illness"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

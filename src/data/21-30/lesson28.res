@@ -89,6 +89,99 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ngwino n’ingoga; burije.",
+        answer: "Come quickly; it is late (it is getting dark).",
+      },
+      {
+        prompt: "Ubukene bw’umworo ni bwinshi.",
+        answer: "The poverty of the poor person is great (much).",
+      },
+      {
+        prompt: "Umwana wiwe afise ubushe bubi mu mutwe.",
+        answer: "His child has a bad burn on the head.",
+      },
+      {
+        prompt: "Indwara y’umuhungu ni mbi cane.",
+        answer: "The boy's disease is very bad.",
+      },
+      {
+        prompt: "Genda ubu gufasha umwigisha gukora mu murima wiwe.",
+        answer: "Go now to help the teacher to work in his field.",
+      },
+      {
+        prompt: "Imana irafasha abantu mu bukene bwabo.",
+        answer: "God helps people in their need (poverty).",
+      },
+      {
+        prompt: "Dusoma Ubutumwa Bgiza mu Gitabo c’Imana.",
+        answer: "We read the Gospel in the Book of God.",
+      },
+      {
+        prompt: "Abigishwa bagenda i muhira ubu kuko bwije.",
+        answer: "The students are going home now because it is late (dark).",
+      },
+      {
+        prompt: "Bgakeye, n’amaki? N’amahoro.",
+        answer: "Good morning, how are things? (It is) peace.",
+      },
+      {
+        prompt: "Akayabo gafise ubwoya bwiza bwinshi.",
+        answer: "The kitten has much beautiful fur (hair).",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "We have a good opportunity (insert ‘bwo’) to worship God.",
+        answer: "Tufise uburyo bwiza bwo gusenga Imana.",
+      },
+      {
+        prompt: "There is much joy in the Gospel of Jesus.",
+        answer: "Hariho umunezero mwinshi mu Butumwa Bgiza bwa Yezu.",
+      },
+      {
+        prompt: "Sheep’s hair is long, but a dog’s hair is short.",
+        answer: "Ubwoya bw'intama ni burebure, ariko ubwoya bw'imbwa ni bugufi.",
+      },
+      {
+        prompt: "We have great (much) need in our hearts; but Jesus is our Savior and He has great mercy.",
+        answer: "Tufise ubukene bwinshi mu mitima yacu; ariko Yezu ni Umukiza wacu kandi afise imbabazi nyinshi.",
+      },
+      {
+        prompt: "We want an opportunity (insert ‘bwo’) to help the poor people because they have great need.",
+        answer: "Turashaka uburyo bwo gufasha aboro kuko bafise ubukene bwinshi.",
+      },
+      {
+        prompt: "A woman is bringing (some) flour into the house.",
+        answer: "Umugore azanye ubufu mu nzu.",
+      },
+      {
+        prompt: "Put (some) oil on the child’s burn.",
+        answer: "Shira amavuta ku bushe bw'umwana.",
+      },
+      {
+        prompt: "In my childhood I liked (nakunda) to help my teacher.",
+        answer: "Mu bwana bwanje nakunda gufasha umwigisha wanje.",
+      },
+      {
+        prompt: "Come here; bring your peas and corn (pl.).",
+        answer: "Ngwino hano; zana amashaza yawe n'ibikori vyawe.",
+      },
+      {
+        prompt: "Don’t you want to read in the Gospel of John (Yohana)?",
+        answer: "Ntiushaka gusoma mu Butumwa Bgiza bwa Yohana?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 28: Class 8 (continued)",
   content: <Content />,
@@ -113,5 +206,5 @@ let l: lesson = {
     ("ngwino", "come / come here (singular)"),
     ("ngo", "come (singular)"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

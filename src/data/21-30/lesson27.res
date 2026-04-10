@@ -146,6 +146,95 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Umwigisha mwiza afise ubwenge bwinshi.",
+        answer: "A good teacher has much wisdom.",
+      },
+      {
+        prompt: "Amato menshi cane agenda mu ruzi.",
+        answer: "Very many boats are going on the river.",
+      },
+      {
+        prompt: "Uburiri bw’umutunzi ni burebure cane.",
+        answer: "The rich man's bed is very long.",
+      },
+      {
+        prompt: "Nshima Imana kukw ifise ubuntu bwinshi.",
+        answer: "I thank God because He has much grace.",
+      },
+      {
+        prompt: "Mfise ubugingo busha muri Yesu.",
+        answer: "I have new life in Jesus.",
+      },
+      {
+        prompt: "Turakunda kurima ubushaza mu mirima yacu.",
+        answer: "We like to plant peas in our fields.",
+      },
+      {
+        prompt: "Paulo n’umwigisha mwiza kukw afise ubwenge bwinshi.",
+        answer: "Paul is a good teacher because he has much wisdom.",
+      },
+      {
+        prompt: "Dusoma ivy’ ubuntu bwa Yesu mu Gitabo c’Imana.",
+        answer: "We read about the grace of Jesus in the Book of God.",
+      },
+      {
+        prompt: "Urukundo rw’Imana ruzana umuco mu mutima yacu.",
+        answer: "The love of God brings light into our hearts.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The women have a few good peas.",
+        answer: "Abagore bafise ubushaza bwiza buke.",
+      },
+      {
+        prompt: "God’s wisdom is very great (much).",
+        answer: "Ubwenge bw'Imana ni bwinshi cane.",
+      },
+      {
+        prompt: "The men are going in boats.",
+        answer: "Abagabo bagenda mu mato.",
+      },
+      {
+        prompt: "Do you (pl.) have the grace of Jesus in your hearts?",
+        answer: "Mufise ubuntu bwa Yesu mu mitima yanyu?",
+      },
+      {
+        prompt: "Bring the short bed into the house.",
+        answer: "Zana uburiri bugufi mu nzu.",
+      },
+      {
+        prompt: "A wise person (a person of wisdom) loves God because He brings salvation into our hearts.",
+        answer: "Umuntu w'ubwenge akunda Imana kukw izana agakiza mu mitima yacu.",
+      },
+      {
+        prompt: "God’s mercy and grace bring peace into my life.",
+        answer: "Imbabazi n'ubuntu bw'Imana bizana amahoro mu bugingo bwanje.",
+      },
+      {
+        prompt: "Do you (pl.) see the boat on (mu) the river over there?",
+        answer: "Mubona ubwato mu ruzi ruriya?",
+      },
+      {
+        prompt: "The poor man wants to buy a new bed, but he hasn’t (any) francs.",
+        answer: "Umutindi ashaka kugura uburiri busha, ariko nta mafranga afise.",
+      },
+      {
+        prompt: "I have joy because God loves to help people.",
+        answer: "Nfise akanyamuneza kuko Imana ikunda gufasha abantu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 27: Class 8",
   content: <Content />,
@@ -166,5 +255,5 @@ let l: lesson = {
     ("uburiri bubi", "a bad bed"),
     ("amariri mabi", "bad beds"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

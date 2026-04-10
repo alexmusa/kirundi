@@ -75,6 +75,80 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Vocabulary",
+    questions: [
+      {prompt: "gusesa", answer: "to empty out, spill"},
+      {prompt: "gutēka", answer: "to cook (in water)"},
+      {prompt: "gusoma", answer: "to read"},
+      {prompt: "gufasha", answer: "to help"},
+      {prompt: "kuzana", answer: "to bring"},
+      {prompt: "iki?", answer: "what?"},
+    ],
+  },
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {prompt: "Zana igitabo n’icete.", answer: "Bring the book and the letter."},
+      {prompt: "Tugomba kugenda i Gitega.", answer: "We want to go to Gitega."},
+      {
+        prompt: "Ntukore mu murima ubu, kora mu nzu.",
+        answer: "Don't work in the garden now, work in the house.",
+      },
+      {
+        prompt: "Abana bakunda gusoma mw ishuli.",
+        answer: "The children like to read in school.",
+      },
+      {
+        prompt: "Mbega mufise iki? Dufise ibitabo vyacu.",
+        answer: "What do you (pl.) have? We have our books.",
+      },
+      {prompt: "Soma mu gitabo cawe gishasha.", answer: "Read in your new book."},
+      {
+        prompt: "Sesa amazi mabi; ntuteke ibigori mu mazi mabi.",
+        answer: "Empty out the bad water; don't cook the corn in bad water.",
+      },
+      {
+        prompt: "Fasha abakobwa kurima mu bitoke.",
+        answer: "Help the girls to hoe in the banana grove.",
+      },
+      {prompt: "Teka inyama z’inkoko ku ziko.", answer: "Cook the chicken meat on the stove."},
+      {
+        prompt: "Turiko turafasha abigisha bacu gukora mw ishuli.",
+        answer: "We are helping our teachers to work in school.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {prompt: "Hoe well in your (sing.) garden.", answer: "Rima neza mu murima wawe."},
+      {prompt: "Cook the sweet potatoes and corn.", answer: "Teka ibijumbu n'ibigori."},
+      {prompt: "Go to help the poor people.", answer: "Genda gufasha abakene."},
+      {prompt: "I like to work in the house.", answer: "Nkunda gukora mu nzu."},
+      {prompt: "The boys want to go to school.", answer: "Abahungu bagomba kugenda mw ishuli."},
+      {
+        prompt: "The pupils like to read in school. They read very well.",
+        answer: "Abigishwa bakunda gusoma mw ishuli. Basoma neza cane.",
+      },
+      {
+        prompt: "Don’t bring your (sing.) sleeping mats and clothes into the house now.",
+        answer: "Ntuzane ibirago vyawe n'imyambaro mu nzu ubu.",
+      },
+      {
+        prompt: "What are you (pl.) doing? We are helping the boys (to) bring the fish.",
+        answer: "Muriko mukora iki? Turiko turafasha abahungu kuzana amafi.",
+      },
+      {prompt: "Don’t empty out the milk; it is good.", answer: "Ntusesa amata; ni meza."},
+      {
+        prompt: "The wind is bringing the smoke into our eyes.",
+        answer: "Umuyaga uzana umwotsi mu maso yacu.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 22: Infinitive and Imperative",
   content: <Content />,
@@ -94,5 +168,5 @@ let l: lesson = {
     ("kuzana", "to bring"),
     ("iki?", "what?"),
   ],
-  quiz: [],
+  quiz: quizData,
 }

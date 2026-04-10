@@ -119,6 +119,103 @@ module Content = {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Ibiti vyiwe ni birebire.",
+        answer: "His (or her) trees are tall.",
+      },
+      {
+        prompt: "Umugabo afise ibijumbu bikeya.",
+        answer: "The man has a few sweet potatoes.",
+      },
+      {
+        prompt: "Ibirenge vyiwe ni binini.",
+        answer: "His (or her) feet are big.",
+      },
+      {
+        prompt: "Igihugu cacu ni gitoya.",
+        answer: "Our country is small.",
+      },
+      {
+        prompt: "Ibintu vyanyu biri hehe?",
+        answer: "Where are your things?",
+      },
+      {
+        prompt: "Abigishwa bafise ibitabo bisha.",
+        answer: "The pupils have new books.",
+      },
+      {
+        prompt: "Abana bafise umvunja mu birenge.",
+        answer: "The children have jiggers in (their) feet.",
+      },
+      {
+        prompt: "Har’ibiti binini mu ndimiro zanyu.",
+        answer: "There are big trees in your gardens.",
+      },
+      {
+        prompt: "Ibitabo vyabo biri ku ntebe.",
+        answer: "Their books are on the chair.",
+      },
+      {
+        prompt: "Igitabo c’umwigisha kiri mu nzu.",
+        answer: "The teacher's book is in the house.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The girls’s sweet potatoes are dirty.",
+        answer: "Ibijumbu vy'abigeme ni bicafu.",
+      },
+      {
+        prompt: "There are tall trees over there at your place.",
+        answer: "Har'ibiti birebire hariya i wanyu.",
+      },
+      {
+        prompt: "I have a few books in my house.",
+        answer: "Mfise ibitabo bikeya mu nzu yanje.",
+      },
+      {
+        prompt: "Many hills are in our country.",
+        answer: "Imisozi myinshi iri mu gihugu cacu.",
+      },
+      {
+        prompt: "The sweet potatoes are small.",
+        answer: "Ibijumbu ni bitoya.",
+      },
+      {
+        prompt: "Where is your (sing.) book? It is at home.",
+        answer: "Igitabo cawe kiri hehe? Kiri muhira.",
+      },
+      {
+        prompt: "The trees over there are not very tall.",
+        answer: "Ibiti hariya si birebire cane.",
+      },
+      {
+        prompt: "The women have many sweet potatoes in their garden.",
+        answer: "Abagore bafise ibijumbu vyinshi mu ndimiro yabo.",
+      },
+      {
+        prompt: "Are there sheep and goats in your country?",
+        answer: "Hariho intama n'impene mu gihugu canyu?",
+      },
+      {
+        prompt: "The pupil’s books are in the teacher’s house.",
+        answer: "Ibitabo vy'umwigishwa biri mu nzu y'umwigisha.",
+      },
+      {
+        prompt: "I have a jigger in (my) foot.",
+        answer: "Mfise umvunja mu kirenge.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 13: Class 4",
   content: <Content />,
@@ -139,5 +236,5 @@ let l: lesson = {
     ("igihugu", "country"),
     ("ikirenge", "foot"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

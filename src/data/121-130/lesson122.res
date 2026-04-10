@@ -160,10 +160,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Nafuse amazina y’abanyeshuli bamwe kuko basivye cane.",
+        answer: "I erased the names of some students because they were absent a lot.",
+      },
+      {
+        prompt: "Ndanyotewe cane, unzanire amazi meza ahoze.",
+        answer: "I am very thirsty, bring me clean cool water.",
+      },
+      {
+        prompt: "Turaturiye ivyo bikaratasi ubu nyene.",
+        answer: "We have just burned those papers right now.",
+      },
+      {
+        prompt: "Uyu mwana ararwaye cane; arananiwe guhema gusa.",
+        answer: "This child is very sick; he is just struggling to breathe (unable to breathe).",
+      },
+      {
+        prompt: "Jana uyu mugabo mu bitaro n’ingoga kuko yavunitse ukuboko.",
+        answer: "Take this man to the hospital quickly because he broke his arm.",
+      },
+      {
+        prompt: "Mbega nturafuta ayo majambo yanditswe mu gitabo?",
+        answer: "Haven't you yet erased those words written in the book?",
+      },
+      {
+        prompt: "Sinokwugara urugi rw’inzu yawe utabimbwiye.",
+        answer: "I would not close the door of your house if you did not tell me.",
+      },
+      {
+        prompt: "Aho muzosubirira i wanyu, muntahirize incuti zanyu.",
+        answer: "When you return to your home, greet your friends for me.",
+      },
+      {
+        prompt: "Umwana arikw arakira, ntakidahwa kandi ntagikorora.",
+        answer: "The child is getting well; he is no longer vomiting and he is no longer coughing.",
+      },
+      {
+        prompt: "Ni murondere abanyakazi benshi mukajana na bo mugaturira umusozi.",
+        answer: "Look for many workers and go with them to burn the hill.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "This woman’s husband died (long ago).",
+        answer: "Umugabo w’uyu mugore yarapfuye.",
+      },
+      {
+        prompt: "Just now we drank lots of (much) water because we were very thirsty.",
+        answer: "Ubu nyene twanyoye amazi menshi kuko twari banyotewe cane.",
+      },
+      {
+        prompt: "I am defeated in working (to work) these numbers. Help me.",
+        answer: "Ndananiwe gukora ibi biharūro. Nfasha.",
+      },
+      {
+        prompt: "This morning the men will burn all the grass on the hill.",
+        answer: "Uyu munsi mu gitondo abagabo baraturira ivyatsi vyose ku musozi.",
+      },
+      {
+        prompt: "Yesterday two people came to the dispensary who had broken their legs.",
+        answer: "Ejo abantu babiri baje mu bitaro bavunitse amaguru.",
+      },
+      {
+        prompt: "Why are you erasing all those words? You must write them again.",
+        answer: "Ni kuki ufuta ayo majambo yose? Utegerezwa kuyandika kandi.",
+      },
+      {
+        prompt: "The children are beating the dog with a stick. Take the stick and break it.",
+        answer: "Abana bariko bakubita imbwa n’inkoni. Yakura iyo nkoni uyivune.",
+      },
+      {
+        prompt: "Who didn’t use a cup to drink with?",
+        answer: "Ni nde ntiyakoresheje igikombe kunywesha?",
+      },
+      {
+        prompt: "Before you fill those pails wash them well with soap.",
+        answer: "Imbere y’uko wuza ayo mabase, ayoge neza n’isabune.",
+      },
+      {
+        prompt: "Wouldn’t you try to take the children on the narrow path?",
+        answer: "Ntiyogerageza kujana abana mu nzira nfungane?",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 122: Summary of Tenses",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

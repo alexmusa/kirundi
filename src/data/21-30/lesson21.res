@@ -76,6 +76,99 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbeg’ ufise inkoko? Oya, simfise inkoko.",
+        answer: "Do you have a chicken? No, I don't have a chicken.",
+      },
+      {
+        prompt: "Dufise impene ariko ntidufise inka.",
+        answer: "We have goats but we don't have cows.",
+      },
+      {
+        prompt: "Umutunzi afise ibintu vyiza vyinshi.",
+        answer: "The rich man has many good things.",
+      },
+      {
+        prompt: "Mbega mufise ibitabo vyanyu? Oya, bir’ i muhira.",
+        answer: "Do you have your books? No, they are at home.",
+      },
+      {
+        prompt: "Imana ifise ikigongwe cinshi.",
+        answer: "God has much mercy.",
+      },
+      {
+        prompt: "Umworo ntafise amafaranga menshi, arik’ ubu arikw arakora.",
+        answer: "The poor man does not have much money, but now he is working.",
+      },
+      {
+        prompt: "Mbega har’ amahoro mu gihugu canyu? Ego me, dufise amahoro menshi.",
+        answer: "Is there peace in your country? Yes indeed, we have much peace.",
+      },
+      {
+        prompt: "Dufise inyama z’inkoko. Ziri ku meza mu nzu.",
+        answer: "We have chicken meat. It is on the table in the house.",
+      },
+      {
+        prompt: "Abatunzi bafise inzu nziza, n’inka n’intama n’impene n’inkoko.",
+        answer: "The rich people have good houses, and cows and sheep and goats and chickens.",
+      },
+      {
+        prompt: "Har’ umuyaga mwinshi mu biti hariya.",
+        answer: "There is much wind in the trees over there.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The poor man’s child has hunger.",
+        answer: "Umwana w'umworo afise inzara.",
+      },
+      {
+        prompt: "Sins are very bad, but God has mercy.",
+        answer: "Ivyaha ni bibi cane, ariko Imana ifise ikigongwe.",
+      },
+      {
+        prompt: "The rich man’s wife has a bad illness.",
+        answer: "Umugore w'umutunzi afise indwara mbi.",
+      },
+      {
+        prompt: "Is there much wind in your country?",
+        answer: "Mbega har' umuyaga mwinshi mu gihugu canyu?",
+      },
+      {
+        prompt: "We have chickens, but not many.",
+        answer: "Dufise inkoko, ariko si nyinshi.",
+      },
+      {
+        prompt: "The rich man’s spear is very long.",
+        answer: "Icumu ry'umutunzi ni rirerire cane.",
+      },
+      {
+        prompt: "We like chicken meat (meat of chicken), but poor people don’t have chickens.",
+        answer: "Dukunda inyama z'inkoko, ariko aboro ntibafise inkoko.",
+      },
+      {
+        prompt: "You (sing.) have good cows; do you have milk and butter?",
+        answer: "Ufise inka nziza; mbeg' ufise amata n'amavuta?",
+      },
+      {
+        prompt: "We are working hard in our gardens, but we don't have many sweet potatoes.",
+        answer: "Turiko turakora cane mu mirima yacu, ariko ntidufise ibijumbu vyinshi.",
+      },
+      {
+        prompt: "The men are praising God, and they have much joy.",
+        answer: "Abagabo bariko barashimagiza Imana, kandi bafise akanyamuneza kenshi.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 21: Verb –fise",
   content: <Content />,
@@ -99,5 +192,5 @@ let l: lesson = {
     ("ubu", "now"),
     ("Imana", "God"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

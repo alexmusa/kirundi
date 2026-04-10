@@ -101,6 +101,104 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Shira urubaho rwawe ku meza mw ishuli.",
+        answer: "Put your board (or slate) on the table in school.",
+      },
+      {
+        prompt: "Dufise urugi rugufi mu nzu yacu.",
+        answer: "We have a short door in our house.",
+      },
+      {
+        prompt: "Mbeg' urugo rwanyu ruri hehe? Ruri hariya kure ku musozi.",
+        answer: "Where is your homestead? It is over there far away on the mountain (or hill).",
+      },
+      {
+        prompt: "Mu gihugu cacu har' inzuzi nyinshi.",
+        answer: "In our country there are many rivers.",
+      },
+      {
+        prompt: "Umwana ashira urutoke mu jisho.",
+        answer: "The child puts a finger in the eye.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The man’s fingers are long.",
+        answer: "Intoke z'umugabo ni ndende.",
+      },
+      {
+        prompt: "Bring wood (insert “zo”) to put in the fire.",
+        answer: "Zana inkwi zo gushira mu muriro.",
+      },
+      {
+        prompt: "The love of God is great (much).",
+        answer: "Urukundo rw'Imana ni rwinshi.",
+      },
+      {
+        prompt: "The long river is over there.",
+        answer: "Uruzi ruremure ruri hariya.",
+      },
+      {
+        prompt: "We have a few slates in school.",
+        answer: "Dufise imbaho nkeyi mw ishuli.",
+      },
+    ],
+  },
+  {
+    title: "III. Give plurals and meanings",
+    questions: [
+      {
+        prompt: "inka",
+        answer: "plural: inka, meaning: cow",
+      },
+      {
+        prompt: "urutoke",
+        answer: "plural: intoke, meaning: finger",
+      },
+      {
+        prompt: "isahane",
+        answer: "plural: isahane (or amasahane), meaning: plate",
+      },
+      {
+        prompt: "inkoko",
+        answer: "plural: inkoko, meaning: chicken",
+      },
+      {
+        prompt: "uruzi",
+        answer: "plural: inzuzi, meaning: river",
+      },
+      {
+        prompt: "ishuli",
+        answer: "plural: amashuli, meaning: school",
+      },
+      {
+        prompt: "irigi",
+        answer: "plural: amagi, meaning: egg",
+      },
+      {
+        prompt: "urukwi",
+        answer: "plural: inkwi, meaning: stick of wood (firewood)",
+      },
+      {
+        prompt: "urubaho",
+        answer: "plural: imbaho, meaning: board, slate",
+      },
+      {
+        prompt: "urugi",
+        answer: "plural: inzugi, meaning: door",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 23: Class 6",
   content: <Content />,
@@ -124,5 +222,5 @@ let l: lesson = {
     ("gushira", "to put"),
     ("urugo", "homestead, kraal, enclosure"),
   ],
-  quiz: [],
+  quiz: quizData,
 }

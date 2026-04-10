@@ -146,6 +146,99 @@ module Content = {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Abahungu bari mu nzu.",
+        answer: "The boys are in the house.",
+      },
+      {
+        prompt: "Umwigisha ari hehe? Ar’i we.",
+        answer: "Where is the teacher? He is at his place.",
+      },
+      {
+        prompt: "Uri hehe? Ndi hano.",
+        answer: "Where are you? I am here.",
+      },
+      {
+        prompt: "Inka zawe ziri hariya.",
+        answer: "Your cows are over there.",
+      },
+      {
+        prompt: "Umwami afise ingoma nini nyinshi.",
+        answer: "The king has many big drums.",
+      },
+      {
+        prompt: "Inka n’impene n’intama ziri mu ndimiro y’umwigisha.",
+        answer: "The cows and goats and sheep are in the teacher's garden.",
+      },
+      {
+        prompt: "Ingoma ziri hehe? Ziri hariya mu nzu ntoya.",
+        answer: "Where are the drums? They are over there in the small house.",
+      },
+      {
+        prompt: "Har’umwotsi hariya ku musozi.",
+        answer: "There is smoke over there on the hill.",
+      },
+      {
+        prompt: "Impene iri mu murima.",
+        answer: "The goat is in the field.",
+      },
+      {
+        prompt: "Imana ikora mu mitima y’abantu.",
+        answer: "God works in the hearts of people.",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "Where are your (pl.) goats?",
+        answer: "Impene zanyu ziri hehe?",
+      },
+      {
+        prompt: "(the goats) They are at our place.",
+        answer: "Ziri iwacu.",
+      },
+      {
+        prompt: "Where are the old man’s gardens?",
+        answer: "Indimiro z'umutama ziri hehe?",
+      },
+      {
+        prompt: "The man’s many sheep are over there.",
+        answer: "Intama nyinshi z'umugabo ziri hariya.",
+      },
+      {
+        prompt: "Where is your (sing.) new house? It is over there on the hill.",
+        answer: "Inzu yawe nshasha iri hehe? Iri hariya ku musozi.",
+      },
+      {
+        prompt: "Where are you (pl.)? We are here at home.",
+        answer: "Muri hehe? Turi hano muhira.",
+      },
+      {
+        prompt: "There are many plants in the garden.",
+        answer: "Hari imbuto nyinshi mu ndimiro.",
+      },
+      {
+        prompt: "The child has many jiggers.",
+        answer: "Umwana afise imvunja nyinshi.",
+      },
+      {
+        prompt: "The girl has a sack of flour on her head.",
+        answer: "Umwigeme afise isaho y'ifu ku mutwe.",
+      },
+      {
+        prompt: "The boys and girls are in the teacher’s house.",
+        answer: "Abahungu n'abigeme bari mu nzu y'umwigisha.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 12: Verb –ri",
   content: <Content />,
@@ -172,5 +265,5 @@ let l: lesson = {
     ("hano", "here"),
     ("harīya", "over there"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

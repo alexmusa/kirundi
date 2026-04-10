@@ -118,6 +118,95 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Give plurals and meanings",
+    questions: [
+      {
+        prompt: "umukozi wawe",
+        answer: "abakozi banyu - your workers",
+      },
+      {
+        prompt: "umutima wiwe",
+        answer: "imitima yabo - their hearts",
+      },
+      {
+        prompt: "umwana wabo",
+        answer: "abana babo - their children",
+      },
+      {
+        prompt: "umusozi wacu",
+        answer: "imisozi yacu - our hills (or mountains)",
+      },
+      {
+        prompt: "umutsima wanje",
+        answer: "imitsima yacu - our bread",
+      },
+      {
+        prompt: "umutwe wawe",
+        answer: "imitwe yanyu - your heads",
+      },
+      {
+        prompt: "umwigishwa wiwe",
+        answer: "abigishwa babo - their pupils",
+      },
+      {
+        prompt: "umukobwa wanje",
+        answer: "abakobwa bacu - our daughters",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boy and the girl have their bread.",
+        answer: "Umuhungu n'umukobwa bafise umutsima wabo.",
+      },
+      {
+        prompt: "Jesus is my Savior.",
+        answer: "Yesu ni Umukiza wanje.",
+      },
+      {
+        prompt: "The old man has salt and bread.",
+        answer: "Umusaza afise umunyu n'umutsima.",
+      },
+      {
+        prompt: "Your (pl.) children work well.",
+        answer: "Abana banyu barakora neza.",
+      },
+      {
+        prompt: "His daughter and your (sing.) son are going.",
+        answer: "Umukobwa wiwe n'umuhungu wawe baragiye.",
+      },
+      {
+        prompt: "My teacher has a fire.",
+        answer: "Umwigisha wanje afise umuriro (or umucanwa).",
+      },
+      {
+        prompt: "The workmen and the pupils are hoeing.",
+        answer: "Abakozi n'abigishwa barahinga.",
+      },
+      {
+        prompt: "The people are speaking.",
+        answer: "Abantu baravuga.",
+      },
+      {
+        prompt: "Your (pl.) teachers have (some) salt.",
+        answer: "Abigisha banyu bafise umunyu.",
+      },
+      {
+        prompt: "The workman has his bread and (some) salt.",
+        answer: "Umukozi afise umutsima wiwe n'umunyu.",
+      },
+      {
+        prompt: "Is your (pl.) child a boy? No, it’s a girl.",
+        answer: "Mbega umwana wanyu ni umuhungu? Oya, ni umukobwa.",
+      },
+    ],
+  },
+]
+
 let l: lesson = { 
   title: "LESSON 4: Class 2 umu–, imi–", 
   content: <Content />,
@@ -138,5 +227,5 @@ let l: lesson = {
     ("umugabo n'umugore", "a man and a woman"),
     ("umugabo n'umugore n'umwana", "a man, woman, and child")
   ], 
-  quiz: [],
+  quiz: quizData,
 };

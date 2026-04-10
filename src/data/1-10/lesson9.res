@@ -119,6 +119,45 @@ module Content = {
     </div>
   }
 }
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {prompt: "Inka ziwe ni nyinshi.", answer: "His (or her) cows are many."},
+      {prompt: "Afise umwana mwiza.", answer: "He (or she) has a beautiful (or good) child."},
+      {
+        prompt: "Umukobwa wiwe n’umuhungu wiwe ni batoya.",
+        answer: "His daughter and his son are small.",
+      },
+      {prompt: "Inzu zabo nini ni nziza cane.", answer: "Their big houses are very nice."},
+      {prompt: "Abana bato si babi.", answer: "Small children are not bad."},
+      {
+        prompt: "Umugabo muremure akora mu ndimiro y’umwigisha.",
+        answer: "A tall man works in the teacher's garden.",
+      },
+      {prompt: "Mfise intebe nziza nshasha.", answer: "I have a nice new chair."},
+      {prompt: "Umuhungu mutoya afise umunyu mwinshi.", answer: "The small boy has much salt."},
+      {prompt: "Mbeg’ abigishwa bafise impuzu nziza?", answer: "Do the students have nice clothes?"},
+      {prompt: "Mbeg’ inka z’umutama ni nini?", answer: "Are the old man's cows big?"},
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {prompt: "My good dog is very short.", answer: "Imbwa yanje nziza ni ngufi cane."},
+      {prompt: "Your (pl.) large houses are nice.", answer: "Inzu zanyu nini ni nziza."},
+      {prompt: "Our small chairs are new.", answer: "Intebe zacu ntoya ni nshasha."},
+      {prompt: "Our great God is good.", answer: "Imana yacu nkuru ni nziza."},
+      {prompt: "Your (pl.) many people work hard.", answer: "Abantu banyu benshi bakora cane."},
+      {prompt: "A tall man is walking in the garden.", answer: "Umugabo muremure agendagenda mu ndimiro."},
+      {prompt: "The good children are not few.", answer: "Abana beza si bake."},
+      {prompt: "The teacher has many gardens.", answer: "Umwigisha afise indimiro nyinshi."},
+      {prompt: "His long string is nice.", answer: "Umugozi wiwe muremure ni mwiza."},
+      {prompt: "Our God is living.", answer: "Imana yacu ni nzima."},
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 9: Adjectives (continued)",
   content: <Content />,
@@ -135,5 +174,5 @@ let l: lesson = {
     ("n-iza", "nziza"),
     ("n-inshi", "nyinshi"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

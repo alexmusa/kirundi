@@ -128,6 +128,103 @@ let make = () => {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Amabuye makeya ari ku musozi.",
+        answer: "A few stones are on the hill (or mountain).",
+      },
+      {
+        prompt: "Amenyo y’umuhungu ni meza.",
+        answer: "The boy's teeth are good (or beautiful).",
+      },
+      {
+        prompt: "Ifaranga ryanje riri hehe?",
+        answer: "Where is my franc?",
+      },
+      {
+        prompt: "Umugabo afise amafaranga menshi.",
+        answer: "The man has many francs.",
+      },
+      {
+        prompt: "Umwana afise ikintu mu jisho ryiwe.",
+        answer: "The child has something in his eye.",
+      },
+      {
+        prompt: "Umuhungu afise irigi rito.",
+        answer: "The boy has a small egg.",
+      },
+      {
+        prompt: "Har’ umucanwa mu ziko.",
+        answer: "There is a fire in the fireplace.",
+      },
+      {
+        prompt: "Har’ abana benshi mw ishuli ryanyu.",
+        answer: "There are many children in your school.",
+      },
+      {
+        prompt: "Ku musozi wacu har’ amabuye menshi.",
+        answer: "On our hill there are many stones.",
+      },
+      {
+        prompt: "Amajambo y’umukiza ni meza cane.",
+        answer: "The words of the Savior are very good.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The teacher says many words.",
+        answer: "Umwigisha avuga amajambo menshi.",
+      },
+      {
+        prompt: "Our new school is very nice.",
+        answer: "Ishuli ryacu rishasha ni ryiza cane.",
+      },
+      {
+        prompt: "The sun is large.",
+        answer: "Izuba ni rinini.",
+      },
+      {
+        prompt: "The Word of God is good; it works in people’s hearts.",
+        answer: "Ijambo ry'Imana ni ryiza; rirakora mu mishaha y'abantu.",
+      },
+      {
+        prompt: "Do his parents have many francs?",
+        answer: "Abavyeyi biwe bafise amafaranga menshi?",
+      },
+      {
+        prompt: "John (Yohana) doesn’t like eggs, but (ariko) he likes meat.",
+        answer: "Yohana ntakunda amagi, ariko akunda inyama.",
+      },
+      {
+        prompt: "I have the blessing of the Savior in my heart, and I love His Word.",
+        answer: "Mfise umuhezagiro w'Umukiza mu mushaha wanje, kandi nkunda Ijambo ryiwe.",
+      },
+      {
+        prompt: "The child has a small nose and big eyes, and much hair.",
+        answer: "Umwana afise izuru rito n'amaso manini, n'ishatsi nyishi.",
+      },
+      {
+        prompt: "The old man has only a few teeth.",
+        answer: "Umusaza afise amenyo makeya gusa.",
+      },
+      {
+        prompt: "Women don’t go to school.",
+        answer: "Abagore ntibaja mw ishuli.",
+      },
+      {
+        prompt: "The girl has a little stone in her nose.",
+        answer: "Umwigeme afise ibuye rito mu zuru ryiwe.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 18: Class 5 i–, ama–",
   content: <Content />,
@@ -163,5 +260,5 @@ let l: lesson = {
     ("ku mabuye", "on the stones (plural drop)"),
     ("mu maso", "in the eyes")
   ],
-  quiz: [],
+  quiz: quizData,
 };

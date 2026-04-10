@@ -86,6 +86,103 @@ module Content = {
   }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Make plurals and give meanings",
+    questions: [
+      {
+        prompt: "Umwana w’umwani",
+        answer: "Abana b’abami - The children of the kings",
+      },
+      {
+        prompt: "Umutwe w’umuntu",
+        answer: "Imitwe y’abantu - The heads of the people",
+      },
+      {
+        prompt: "Umurima w’umutama",
+        answer: "Imirima y’abatama - The gardens of the old men",
+      },
+      {
+        prompt: "Umugore w’umugabo",
+        answer: "Abagore b’abagabo - The wives of the men",
+      },
+      {
+        prompt: "Umuhungu w’umwigisha",
+        answer: "Abahungu b’abigisha - The sons of the teachers",
+      },
+      {
+        prompt: "Umwigishwa wa Paulo",
+        answer: "Abigishwa ba Paulo - The disciples of Paul",
+      },
+      {
+        prompt: "Umugozi w’umuhungu",
+        answer: "Imigozi y’abahungu - The ropes of the boys",
+      },
+      {
+        prompt: "Umwenda w’umukozi",
+        answer: "Imyenda y’abakozi - The clothes of the workers",
+      },
+      {
+        prompt: "Umwami w’abantu",
+        answer: "Abami b’abantu - The kings of the people",
+      },
+      {
+        prompt: "Umutima w’umuntu",
+        answer: "Imitima y’abantu - The hearts of the people",
+      },
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The people of Jesus have joy in their hearts.",
+        answer: "Abantu ba Yesu bafise akanyamuneza mu mitima yabo.",
+      },
+      {
+        prompt: "I have the light of Jesus in my heart.",
+        answer: "Mfise umuco wa Yesu mu mutima wanje.",
+      },
+      {
+        prompt: "The teacher’s workmen are working in his gardens.",
+        answer: "Abakozi b’umwigisha barakora mu mirima yiwe.",
+      },
+      {
+        prompt: "The child of the king is a girl.",
+        answer: "Umwana w’umwami ni umukobwa.",
+      },
+      {
+        prompt: "The smoke of the fire.",
+        answer: "Umwotsi w’umuriro.",
+      },
+      {
+        prompt: "I work on our hill.",
+        answer: "Ndakora ku musozi wacu.",
+      },
+      {
+        prompt: "The child has hair.",
+        answer: "Umwana afise umushatsi.",
+      },
+      {
+        prompt: "I am working in the darkness.",
+        answer: "Ndakora mu mwijima.",
+      },
+      {
+        prompt: "I am going to the teacher’s garden.",
+        answer: "Ndagenda mu murima w’umwigisha.",
+      },
+      {
+        prompt: "The old man has the blessing of the Savior in his heart.",
+        answer: "Umutama afise umugisha w’Umukiza mu mutima wiwe.",
+      },
+      {
+        prompt: "Jesus is my Lord and Savior.",
+        answer: "Yesu ni Umwami wanje n’Umukiza wanje.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 6: Possessive Particle",
   content: <Content />,
@@ -103,5 +200,5 @@ let l: lesson = {
     ("Imirima y'abantu", "The gardens of the people (people's gardens)"),
     ("Abana b'umwigisha", "The teacher's children"),
   ],
-quiz: [],
+quiz: quizData,
 };

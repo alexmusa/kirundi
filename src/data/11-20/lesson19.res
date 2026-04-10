@@ -93,6 +93,103 @@ let make = () => {
 }
 }
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umutama afise inka nyinshi n’amata menshi.",
+        answer: "The old man has many cows and much milk.",
+      },
+      {
+        prompt: "Abana bariko baragenda mw ishuli ryabo.",
+        answer: "The children are going to their school.",
+      },
+      {
+        prompt: "Umutama afise amacumu maremare.",
+        answer: "The old man has long spears.",
+      },
+      {
+        prompt: "Umukobwa arikw ararima mu ndimiro z’abavyeyi biwe.",
+        answer: "The girl is hoeing in the fields of her parents.",
+      },
+      {
+        prompt: "Sinkunda amazi mabi.",
+        answer: "I do not like bad water.",
+      },
+      {
+        prompt: "Umwana afise ico ryinshi ku birenge vyiwe.",
+        answer: "The child has much dirt on his feet.",
+      },
+      {
+        prompt: "Mbeg’ ugomba amavuta ku mutsima wawe?",
+        answer: "Do you want butter (or oil) on your bread?",
+      },
+      {
+        prompt: "Abana b’Imana bafise amahoro menshi cane.",
+        answer: "The children of God have very much peace.",
+      },
+      {
+        prompt: "Ibitabo vyawe bisha biri hehe? Biri ku meza mu nzu yacu.",
+        answer: "Where are your new books? They are on the table in our house.",
+      },
+      {
+        prompt: "Abigishwa bariko barakora mw ishuli.",
+        answer: "The pupils are working in school.",
+      },
+      {
+        prompt: "Amaraso ya Yesu (saves us from) ivyaha vyacu.",
+        answer: "The blood of Jesus (saves us from) our sins.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "God’s people have joy and peace.",
+        answer: "Abantu b’Imana bafise akanyamuneza n’amahoro.",
+      },
+      {
+        prompt: "I have a very small stone in (my) eye.",
+        answer: "Mfise ibuye rito cane mu jisho.",
+      },
+      {
+        prompt: "The pupils have the Word of God in school.",
+        answer: "Abigishwa bafise Ijambo ry’Imana mw ishuli.",
+      },
+      {
+        prompt: "I want (some) clean water.",
+        answer: "Ngomba amazi meza.",
+      },
+      {
+        prompt: "Bad people are not going in the way of God.",
+        answer: "Abantu babi ntibariko baragenda mu nzira y’Imana.",
+      },
+      {
+        prompt: "The clean cloths are on the table.",
+        answer: "Impuzu nziza ziri ku meza.",
+      },
+      {
+        prompt: "A workman is hoeing at the school.",
+        answer: "Umukozi arikw ararima kw ishuli.",
+      },
+      {
+        prompt: "Our teacher is speaking the Word of God.",
+        answer: "Umwigisha wacu arikw aravuga Ijambo ry’Imana.",
+      },
+      {
+        prompt: "I am walking in the way of God.",
+        answer: "Ndiko ndagenda mu nzira y’Imana.",
+      },
+      {
+        prompt: "We are praising God and we love our Lord Jesus Christ (Kristo).",
+        answer: "Turiko durashimagiza Imana kandi dukunda Umwami wacu Yesu Kristo.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 19: Class 5 (continued), Continuous present",
   content: <Content />,
@@ -118,5 +215,5 @@ let l: lesson = {
     ("ameza", "table"),
     ("icukiro", "manure heap"),
   ],
-  quiz: [],
+  quiz: quizData,
 };

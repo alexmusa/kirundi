@@ -202,10 +202,68 @@ let examples: examples = [
   ("Ngomba agahuzu", "I want a little clothing"),
 ]
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "Exercise I: Change to the Diminutive Form (Singular and Plural)",
+    questions: [
+      {prompt: "1. igiti", answer: "akati, ututi"},
+      {prompt: "2. inyama", answer: "akanyama, utunyama"},
+      {prompt: "3. igitabo", answer: "akatabo, ututabo"},
+      {prompt: "4. ibuye", answer: "akabuye, utubuye"},
+      {prompt: "5. ikijumbu", answer: "akajumbu, utujumbu"},
+      {prompt: "6. igitambara", answer: "akatambara, ututambara"},
+      {prompt: "7. inkoko", answer: "agakoko, utukoko"},
+      {prompt: "8. impuzu", answer: "agahuzu, utuhuzu"},
+      {prompt: "9. igikoko", answer: "agakoko, utukoko"},
+      {prompt: "10. isuka", answer: "agasuka, utusuka"},
+      {prompt: "11. umunyu (no pl.)", answer: "akunyu"},
+      {prompt: "12. urukwi", answer: "agakwi, utukwi"},
+      {prompt: "13. umutsima", answer: "akatsima, ututsima"},
+      {prompt: "14. amazi", answer: "utuzi (plural form)"},
+      {prompt: "15. ijambo", answer: "akajambo, utujambo"},
+      {prompt: "16. intebe", answer: "akantebe, utuntebe"},
+      {prompt: "17. umutwe", answer: "akatwe, ututwe"},
+      {prompt: "18. icete", answer: "akete, utwete"},
+      {prompt: "19. imbuto", answer: "akambuto, utumbuto"},
+      {prompt: "20. urubaho", answer: "akabaho, utubaho"},
+    ],
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {prompt: "1. The woman has a tiny child.", answer: "Umugore afise akana gatoya."},
+      {prompt: "2. His children want a little milk.", answer: "Abana biwe bashaka uduta."},
+      {
+        prompt: "3. We have the salvation of Jesus in our hearts.",
+        answer: "Tufise agakiza ka Yezu mu mishaha yacu.",
+      },
+      {prompt: "4. The old man has much sorrow.", answer: "Umusaza afise agahinda kenshi."},
+      {
+        prompt: "5. We have much work, but we like to work.",
+        answer: "Tufise akazi kenshi, mugabo dukunda gukora.",
+      },
+      {prompt: "6. The child’s mouth is small.", answer: "Akanwa k'umwana ni gatoya."},
+      {prompt: "7. The large cat goes in the garden.", answer: "Akayabo kanini kagiye mu murima."},
+      {
+        prompt: "8. There is a very little mountain in our country.",
+        answer: "Hariho akasozi gatoya cane mu gihugu cacu.",
+      },
+      {
+        prompt: "9. The children have (some) very small dishes.",
+        answer: "Abana bafise utusahane tutoya cane.",
+      },
+      {
+        prompt: "10. (Some) little dogs are in your (sing.) house.",
+        answer: "Utumbwa turi mu nzu yawe.",
+      },
+    ],
+  },
+]
+
 let l: lesson = {
   title: "LESSON 26: Class 7",
   content: <Content />,
   examples: examples,
   vocabulary: vocabulary,
-  quiz: [],
+  quiz: quizData,
 };
