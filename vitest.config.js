@@ -5,7 +5,7 @@ import { defineConfig } from "vitest/config";
 // Tests import the compiled modules directly, so we verify what actually ships.
 export default defineConfig({
   test: {
-    include: ["tests/**/*.test.mjs"],
+    include: ["tests/**/*.test.js"],
     environment: "node",
   },
 });
