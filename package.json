@@ -9,7 +9,8 @@
     "res:dev": "rescript watch",
     "dev": "vite",
     "build": "npm run res:build && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:data": "npm run res:build && vitest run tests/data"
   },
   "dependencies": {
     "@rescript/react": "^0.14.0",
@@ -23,6 +24,7 @@
     "@vitejs/plugin-react": "^5.0.2",
     "tailwindcss": "^4.1.12",
     "vite": "^7.1.0",
-    "vite-plugin-pwa": "^1.2.0"
+    "vite-plugin-pwa": "^1.2.0",
+    "vitest": "^3.2.7"
   }
 }
