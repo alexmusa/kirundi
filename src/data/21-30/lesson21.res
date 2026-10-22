@@ -169,6 +169,23 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umworo", "poor man, woman"),
+  ("inzara", "hunger"),
+  ("umutunzi", "rich man, woman"),
+  ("ariko", "but"),
+  ("umuyaga", "wind"),
+  ("ubu", "now"),
+  ("inkoko", "chicken"),
+  ("-fise", "to have"),
+  ("mfise", "I have"),
+  ("ufise", "you have"),
+  ("afise", "he/she has"),
+  ("dufise", "we have"),
+  ("mufise", "you have"),
+  ("bafise", "they have"),
+]
+
 let l: lesson = {
   title: "LESSON 21: Verb –fise",
   content: <Content />,

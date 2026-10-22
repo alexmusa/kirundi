@@ -217,6 +217,19 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("kunywa (nyoye)", "to drink"),
+  ("indya", "food"),
+  ("gucana (canye)", "to light (fire)"),
+  ("kare", "early"),
+  ("kurya (riye)", "to eat"),
+  ("gukora (koze)", "to work"),
+  ("kuvuga (vuze)", "to speak"),
+  ("kugenda (giye)", "to go"),
+  ("kuzana (zanye)", "to bring"),
+  ("ibikorwa", "works/activities"),
+]
+
 let l: lesson = {
   title: "LESSON 51: Ordinary Past Tense",
   content: <Content />,

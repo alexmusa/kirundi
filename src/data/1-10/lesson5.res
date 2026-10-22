@@ -188,6 +188,18 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umwōtsi", "smoke"),
+  ("umuco", "light"),
+  ("umwīza", "darkness"),
+  ("umūsi", "day"),
+  ("umwēnda", "debt"),
+  ("umunēzēro", "joy"),
+  ("mu", "in, into, out of"),
+  ("ku", "on, at, to, from"),
+  ("kuva", "to come from"),
+]
+
 let l: lesson = {
   title: "LESSON 5: Mu and Ku",
   content: <Content />,

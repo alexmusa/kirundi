@@ -178,6 +178,17 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("kumesura", "to wash (clothes)"),
+  ("kwoga", "to wash feet and legs, to swim"),
+  ("gukaraba", "to wash hands"),
+  ("kwoza", "to wash (dishes, floor, etc.)"),
+  ("kwiyuhagira", "to bathe (oneself)"),
+  ("kwiyoga", "to wash oneself (feet, legs)"),
+  ("kuronga", "to wash (vegetables)"),
+  ("gushobora", "to be able, can"),
+]
+
 let l: lesson = {
   title: "LESSON 42: \u201CTo wash\u201D",
   content: <Content />,

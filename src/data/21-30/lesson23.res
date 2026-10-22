@@ -199,6 +199,21 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("urūgi", "door"),
+  ("urukwi", "stick of wood (firewood)"),
+  ("urutoke", "finger"),
+  ("urūzi", "river"),
+  ("urukūndo", "love"),
+  ("urubāho", "board, slate"),
+  ("gushira", "to put"),
+  ("urugo", "homestead, kraal, enclosure"),
+  ("imbaho", "boards"),
+  ("inzuzi", "rivers"),
+  ("inzugi", "doors"),
+  ("intoke", "fingers"),
+]
+
 let l: lesson = {
   title: "LESSON 23: Class 6",
   content: <Content />,

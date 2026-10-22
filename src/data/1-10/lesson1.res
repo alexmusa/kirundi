@@ -143,6 +143,23 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umugabo", "man (married), husband"),
+  ("abagabo", "men, husbands"),
+  ("umugore", "woman (married), wife"),
+  ("abagore", "women, wives"),
+  ("umuhungu", "boy, son"),
+  ("abahungu", "boys, sons"),
+  ("umukobwa", "girl, daughter"),
+  ("abakobwa", "girls, daughters"),
+  ("arakora", "he/she is working, he/she works"),
+  ("barakora", "they are working, they work"),
+  ("aragenda", "he/she is going, he/she goes"),
+  ("baragenda", "they are going, walking"),
+  ("ararima", "he/she is hoeing, he/she hoes"),
+  ("bararima", "they are hoeing, they hoe"),
+]
+
 let l: lesson = {
   title: "LESSON 1: Class 1 umu–, aba–",
   content: <Content />,

@@ -195,6 +195,14 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umuzungu", "white person, European"),
+  ("kure", "far, far away"),
+  ("gutebuka", "to hurry"),
+  ("hafi", "near"),
+  ("rwose", "completely, very, very much"),
+]
+
 let l: lesson = {
   title: "LESSON 47: Word Order",
   content: <Content />,

@@ -137,6 +137,25 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("-bi", "bad, dirty, ugly"),
+  ("-bisi", "raw, fresh, uncooked, wet, unboiled (liquids)"),
+  ("-gari", "wide, broad"),
+  ("-gufi", "short, low, shallow"),
+  ("-inshi", "much, many"),
+  ("-iza", "good, clean, beautiful, nice, pretty"),
+  ("-ke", "few, scanty, little (quantity)"),
+  ("-kuru", "important, senior, great"),
+  ("-nini", "big, thick, large, wide, broad"),
+  ("-nzinya", "very small, tiny"),
+  ("-rere", "tall, long, high, deep"),
+  ("-sa", "mere, only, alone"),
+  ("-sha", "new"),
+  ("-to", "small, little (size), young, thin"),
+  ("-toto", "green, unripe"),
+  ("-zima", "alive, whole, living"),
+]
+
 let l: lesson = {
   title: "LESSON 8: Adjectives - Descriptive Adjectives",
   content: <Content />,

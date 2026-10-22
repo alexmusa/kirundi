@@ -210,6 +210,28 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("igitāmbāra", "cloth"),
+  ("ikigōngwe", "mercy, pity, forgiveness"),
+  ("ikigōri", "corn, stalk of corn"),
+  ("igitōke", "bananas (bunch or tree)"),
+  ("ikirago", "mat (for sleeping)"),
+  ("umutsima", "bread"),
+  ("inyama", "meat"),
+  ("umurima", "garden"),
+  ("indimiro", "field"),
+  ("umuhungu", "boy"),
+  ("umukobwa", "girl"),
+  ("umusozi", "hill"),
+  ("igisozi", "a very big hill"),
+  ("ibuye", "stone"),
+  ("ikibuye", "a very big rock"),
+  ("imvura", "rain"),
+  ("ikivura", "a very heavy rain"),
+  ("ivyiza", "good things"),
+  ("ivyanje", "my things"),
+]
+
 let l: lesson = {
   title: "LESSON 15: Special Uses of Class 4",
   content: <Content />,

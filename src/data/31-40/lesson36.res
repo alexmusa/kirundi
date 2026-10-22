@@ -187,6 +187,15 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("kwambara", "to wear, put on"),
+  ("kwibagira", "to forget"),
+  ("kwanka", "to refuse, hate"),
+  ("kwibuka", "to remember"),
+  ("kwemera", "to agree to, be willing, accept, admit"),
+  ("kwubaka", "to build"),
+]
+
 let l: lesson = {
   title: "LESSON 36: Far Future and Present Negative of Vowel-stem Verbs",
   content: <Content />,

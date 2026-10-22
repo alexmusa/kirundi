@@ -227,6 +227,29 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umūntu", "person"),
+  ("umukozi", "workman, employee"),
+  ("umutāma", "old man"),
+  ("Umukiza", "Savior"),
+  ("aravuga", "he/she is speaking"),
+  ("egome", "yes"),
+  ("oyaye", "no"),
+  ("wanje", "my (singular object)"),
+  ("wawe", "your (sing.) (singular object)"),
+  ("wiwe", "his, hers (singular object)"),
+  ("wacu", "our (singular object)"),
+  ("wanyu", "your (pl.) (singular object)"),
+  ("wabo", "their (singular object)"),
+  ("banje", "my (plural object)"),
+  ("bawe", "your (sing.) (plural object)"),
+  ("biwe", "his, hers (plural object)"),
+  ("bacu", "our (plural object)"),
+  ("banyu", "your (pl.) (plural object)"),
+  ("babo", "their (plural object)"),
+  ("Mbega", "interrogative particle (introduces a question)"),
+]
+
 let l: lesson = {
   title: "LESSON 3: Possessive Adjectives",
   content: <Content />,

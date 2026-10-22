@@ -256,6 +256,15 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("ahantu", "place"),
+  ("ibiharage", "beans"),
+  ("hasi", "on the ground, floor"),
+  ("gukiza", "to heal, save, save from"),
+  ("gukubura", "to sweep"),
+  ("kuguma", "to stay, remain"),
+]
+
 let l: lesson = {
   title: "LESSON 33: Class 10",
   content: <Content />,

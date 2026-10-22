@@ -222,6 +222,16 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("inka", "cow"),
+  ("indimiro", "field"),
+  ("Imāna", "God"),
+  ("inzu", "house, room"),
+  ("imbwa", "dog"),
+  ("intebe", "chair, stool"),
+  ("impūzu", "clothes"),
+]
+
 let l: lesson = {
   title: "LESSON 7: Class 3 in–, in–",
   content: <Content />,

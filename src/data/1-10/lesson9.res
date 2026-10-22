@@ -158,6 +158,13 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("-iza", "good, beautiful"),
+  ("-inshi", "many, much"),
+  ("-nini", "big, large"),
+  ("-to", "small, little"),
+]
+
 let l: lesson = {
   title: "LESSON 9: Adjectives (continued)",
   content: <Content />,

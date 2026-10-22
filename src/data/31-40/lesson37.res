@@ -181,6 +181,19 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("-mwe", "one"),
+  ("-biri", "two"),
+  ("-tatu", "three"),
+  ("-ne", "four"),
+  ("-tanu", "five"),
+  ("-tandatu", "six"),
+  ("indwi", "seven"),
+  ("umunani", "eight"),
+  ("icenda", "nine"),
+  ("icumi", "ten"),
+]
+
 let l: lesson = {
   title: "LESSON 37: Cardinal Numbers 1-10",
   content: <Content />,

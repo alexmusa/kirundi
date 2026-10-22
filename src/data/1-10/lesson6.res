@@ -183,6 +183,16 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umushatsi", "hair (of the human head, rarely used in plural)"),
+  ("umugozi", "string, rope"),
+  ("umugisha", "blessing"),
+  ("umurima", "garden"),
+  ("ndagenda", "I am going, I go"),
+  ("ndakora", "I am working, I work"),
+  ("mfise", "I have"),
+]
+
 let l: lesson = {
   title: "LESSON 6: Possessive Particle",
   content: <Content />,

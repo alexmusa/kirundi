@@ -260,6 +260,23 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("agakiza", "salvation"),
+  ("agahinda", "sorrow"),
+  ("akazi", "work"),
+  ("agahiri", "cold (in the head)"),
+  ("akanwa", "mouth"),
+  ("akamango", "cold (in the head)"),
+  ("akantu", "a little thing"),
+  ("akayabo", "cat"),
+  ("akana", "little child"),
+  ("agakoko", "insect"),
+  ("agahuzu", "little clothing"),
+  ("akunyu", "little salt"),
+  ("utuzi", "little water"),
+  ("uduta", "little milk"),
+]
+
 let l: lesson = {
   title: "LESSON 26: Class 7",
   content: <Content />,

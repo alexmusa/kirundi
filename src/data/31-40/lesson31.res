@@ -185,6 +185,17 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("kurirīmba", "to sing"),
+  ("mu gitōndo", "in the morning"),
+  ("kuronka", "to receive, find, get"),
+  ("vuba", "soon, recently, quickly"),
+  ("gushika", "to arrive"),
+  ("kubānza", "to begin by, do first"),
+  ("indirimbo", "song, hymn"),
+  ("gutāngura", "to begin to"),
+]
+
 let l: lesson = {
   title: "LESSON 31: Negative of Future",
   content: <Content />,

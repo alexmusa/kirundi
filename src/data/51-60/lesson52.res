@@ -279,6 +279,14 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umusore", "young man (unmarried)"),
+  ("inkumi", "young lady (unmarried)"),
+  ("inyonko", "malaria, fever"),
+  ("kuvūra", "to treat (sickness), doctor"),
+  ("umuganga", "doctor"),
+]
+
 let l: lesson = {
   title: "LESSON 52: Rules for Past Endings",
   content: <Content />,

@@ -176,6 +176,17 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("umwāna (abāna)", "child"),
+  ("umwāmi (abāmi)", "king, Lord"),
+  ("umwīgīsha (abīgīsha)", "teacher"),
+  ("umwīgīshwa (abīgīshwa)", "pupil"),
+  ("afise", "he/she has"),
+  ("bafise", "they have"),
+  ("cane", "much, very"),
+  ("urakoze", "thank you"),
+]
+
 let l: lesson = {
   title: "LESSON 2: Ni and Si",
   content: <Content />,

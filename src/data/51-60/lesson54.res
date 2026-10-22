@@ -219,6 +219,14 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("nibagiye", "I forgot"),
+  ("yubatse", "he/she built"),
+  ("bemeye", "they agreed"),
+  ("twogeje", "we washed"),
+  ("mwanditse", "you (pl.) wrote"),
+]
+
 let l: lesson = {
   title: "LESSON 54: Ordinary Past (continued)",
   content: <Content />,

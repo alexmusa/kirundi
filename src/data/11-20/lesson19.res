@@ -190,6 +190,19 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("amazi", "water"),
+  ("amaraso", "blood"),
+  ("amata", "milk"),
+  ("-gomba", "to want"),
+  ("amavuta", "butter, oil"),
+  ("ico", "dirt"),
+  ("amahoro", "peace"),
+  ("icumu", "spear"),
+  ("ameza", "table"),
+  ("icukiro", "manure heap"),
+]
+
 let l: lesson = {
   title: "LESSON 19: Class 5 (continued), Continuous present",
   content: <Content />,

@@ -227,6 +227,21 @@ let quizData: array<Quiz.quizSection> = [
   },
 ]
 
+let vocabularyData: vocabulary = [
+  ("urupfu", "death"),
+  ("guharira", "to forgive"),
+  ("ubushobozi", "power"),
+  ("kugwa", "to fall"),
+  ("ubwami", "kingdom"),
+  ("gupfa", "to die"),
+  ("jewe (je)", "I, me"),
+  ("wewe (we)", "you (singular)"),
+  ("we", "he, him, she, her"),
+  ("twebwe (twe)", "we, us"),
+  ("mwebwe (mwe)", "you (plural)"),
+  ("bo", "they, them"),
+]
+
 let l: lesson = {
   title: "LESSON 48: Personal Pronouns",
   content: <Content />,
