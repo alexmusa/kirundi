@@ -290,6 +290,103 @@ let Content = {
   make: Lesson11$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abantu benshi bafise impene.",
+        answer: "Many people have goats."
+      },
+      {
+        prompt: "Mfise amasuka i muhira.",
+        answer: "I have hoes at home."
+      },
+      {
+        prompt: "Imvura ni nziza.",
+        answer: "The rain is good."
+      },
+      {
+        prompt: "Abagabo bagenda i Gitega.",
+        answer: "The men are going to Gitega."
+      },
+      {
+        prompt: "Umuhungu wawe afise impene nyinshi n’inka nyinshi.",
+        answer: "Your son has many goats and many cows."
+      },
+      {
+        prompt: "Umugabo afise inyama nziza nyinshi.",
+        answer: "The man has much good meat."
+      },
+      {
+        prompt: "I wacu mfise isaho niniya cane.",
+        answer: "At our place I have a very large bag."
+      },
+      {
+        prompt: "Abigishwa bakora i Kibimba.",
+        answer: "The students work at Kibimba."
+      },
+      {
+        prompt: "Umutama afise ifi nyinshi.",
+        answer: "The old man has many fish."
+      },
+      {
+        prompt: "Ifu yacu ni nziza.",
+        answer: "Our flour is good."
+      },
+      {
+        prompt: "Abahungu bafise imbwa i wabo.",
+        answer: "The boys have a dog at their place."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "I have much good flour.",
+        answer: "Mfise ifu nziza nyinshi."
+      },
+      {
+        prompt: "The old man has many goats at his place.",
+        answer: "Umutama afise impene nyinshi i we."
+      },
+      {
+        prompt: "The woman has a hoe in her house.",
+        answer: "Umugore afise isuka mu nzu yiwe."
+      },
+      {
+        prompt: "The new teacher has many gardens.",
+        answer: "Umwigisha mushasha afise imirima myinshi."
+      },
+      {
+        prompt: "The king’s new house is large.",
+        answer: "Inzu nshasha y’umwami ni nini."
+      },
+      {
+        prompt: "The boys have a few fish.",
+        answer: "Abahungu bafise ifi nkeya."
+      },
+      {
+        prompt: "The child’s plate is clean.",
+        answer: "Isahane y’umwana ni nziza."
+      },
+      {
+        prompt: "A man is walking in the house. He has a sack on (his) head.",
+        answer: "Umugabo agenda mu nzu. Afise isaho ku mutwe."
+      },
+      {
+        prompt: "My plate is dirty.",
+        answer: "Isahane yanje ni mbi."
+      },
+      {
+        prompt: "Are the boys hoeing in the rain?",
+        answer: "Abahungu bararima mu mvura?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson11$Content, {});
 
 let l_vocabulary = [
@@ -370,113 +467,17 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Translate into English",
-    questions: [
-      {
-        prompt: "1. Abantu benshi bafise impene.",
-        answer: "Many people have goats"
-      },
-      {
-        prompt: "2. Mfise amasuka i muhira.",
-        answer: "I have hoes at home"
-      },
-      {
-        prompt: "3. Imvura ni nziza.",
-        answer: "The rain is good"
-      },
-      {
-        prompt: "4. Abagabo bagenda i Gitega.",
-        answer: "The men are going to Gitega"
-      },
-      {
-        prompt: "5. Umuhungu wawe afise impene nyinshi n’inka nyinshi.",
-        answer: "Your son has many goats and many cows"
-      },
-      {
-        prompt: "6. Umugabo afise inyama nziza nyinshi.",
-        answer: "The man has much good meat"
-      },
-      {
-        prompt: "7. I wacu mfise isaho niniya cane.",
-        answer: "At our place I have a very large sack"
-      },
-      {
-        prompt: "8. Abigishwa bakora i Kibimba.",
-        answer: "The students work at Kibimba"
-      },
-      {
-        prompt: "9. Umutama afise ifi nyinshi.",
-        answer: "The old man has many fish"
-      },
-      {
-        prompt: "10. Ifu yacu ni nziza.",
-        answer: "Our flour is good"
-      },
-      {
-        prompt: "11. Abahungu bafise imbwa i wabo.",
-        answer: "The boys have a dog at their place"
-      }
-    ]
-  },
-  {
-    title: "II. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "1. I have much good flour.",
-        answer: "Mfise ifu nziza nyinshi"
-      },
-      {
-        prompt: "2. The old man has many goats at his place.",
-        answer: "Umutama afise impene nyinshi i wabo"
-      },
-      {
-        prompt: "3. The woman has a hoe in her house.",
-        answer: "Umugore afise isuka mu nzu yiwe"
-      },
-      {
-        prompt: "4. The new teacher has many gardens.",
-        answer: "Umwigisha mushasha afise imirima myinshi"
-      },
-      {
-        prompt: "5. The king’s new house is large.",
-        answer: "Inzu nshasha y'umwami ni nini"
-      },
-      {
-        prompt: "6. The boys have a few fish.",
-        answer: "Abahungu bafise ifi nkeyi"
-      },
-      {
-        prompt: "7. The child’s plate is clean.",
-        answer: "Isahani y'umwana ni nziza"
-      },
-      {
-        prompt: "8. A man is walking in the house. He has a sack on (his head.",
-        answer: "Umugabo aragenda mu nzu. Afise isaho ku mutwe"
-      },
-      {
-        prompt: "9. My plate is dirty.",
-        answer: "Isahani yanje ni mbi"
-      },
-      {
-        prompt: "10. Are the boys hoeing in the rain?",
-        answer: "Abahungu bararimira mu mvura?"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 11: Class 3 (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

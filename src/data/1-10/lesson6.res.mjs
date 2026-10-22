@@ -173,6 +173,134 @@ let Content = {
   make: Lesson6$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Make plurals and give meanings",
+    questions: [
+      {
+        prompt: "Umwana w’umwani",
+        answer: "Abana b’abami - The children of the kings"
+      },
+      {
+        prompt: "Umutwe w’umuntu",
+        answer: "Imitwe y’abantu - The heads of the people"
+      },
+      {
+        prompt: "Umurima w’umutama",
+        answer: "Imirima y’abatama - The gardens of the old men"
+      },
+      {
+        prompt: "Umugore w’umugabo",
+        answer: "Abagore b’abagabo - The wives of the men"
+      },
+      {
+        prompt: "Umuhungu w’umwigisha",
+        answer: "Abahungu b’abigisha - The sons of the teachers"
+      },
+      {
+        prompt: "Umwigishwa wa Paulo",
+        answer: "Abigishwa ba Paulo - The disciples of Paul"
+      },
+      {
+        prompt: "Umugozi w’umuhungu",
+        answer: "Imigozi y’abahungu - The ropes of the boys"
+      },
+      {
+        prompt: "Umwenda w’umukozi",
+        answer: "Imyenda y’abakozi - The clothes of the workers"
+      },
+      {
+        prompt: "Umwami w’abantu",
+        answer: "Abami b’abantu - The kings of the people"
+      },
+      {
+        prompt: "Umutima w’umuntu",
+        answer: "Imitima y’abantu - The hearts of the people"
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The people of Jesus have joy in their hearts.",
+        answer: "Abantu ba Yesu bafise akanyamuneza mu mitima yabo."
+      },
+      {
+        prompt: "I have the light of Jesus in my heart.",
+        answer: "Mfise umuco wa Yesu mu mutima wanje."
+      },
+      {
+        prompt: "The teacher’s workmen are working in his gardens.",
+        answer: "Abakozi b’umwigisha barakora mu mirima yiwe."
+      },
+      {
+        prompt: "The child of the king is a girl.",
+        answer: "Umwana w’umwami ni umukobwa."
+      },
+      {
+        prompt: "The smoke of the fire.",
+        answer: "Umwotsi w’umuriro."
+      },
+      {
+        prompt: "I work on our hill.",
+        answer: "Ndakora ku musozi wacu."
+      },
+      {
+        prompt: "The child has hair.",
+        answer: "Umwana afise umushatsi."
+      },
+      {
+        prompt: "I am working in the darkness.",
+        answer: "Ndakora mu mwijima."
+      },
+      {
+        prompt: "I am going to the teacher’s garden.",
+        answer: "Ndagenda mu murima w’umwigisha."
+      },
+      {
+        prompt: "The old man has the blessing of the Savior in his heart.",
+        answer: "Umutama afise umugisha w’Umukiza mu mutima wiwe."
+      },
+      {
+        prompt: "Jesus is my Lord and Savior.",
+        answer: "Yesu ni Umwami wanje n’Umukiza wanje."
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "umushatsi",
+    "hair (of the human head, rarely used in plural)"
+  ],
+  [
+    "umugozi",
+    "string, rope"
+  ],
+  [
+    "umugisha",
+    "blessing"
+  ],
+  [
+    "umurima",
+    "garden"
+  ],
+  [
+    "ndagenda",
+    "I am going, I go"
+  ],
+  [
+    "ndakora",
+    "I am working, I work"
+  ],
+  [
+    "mfise",
+    "I have"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson6$Content, {});
 
 let l_vocabulary = [
@@ -221,113 +349,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Plurals and Meanings",
-    questions: [
-      {
-        prompt: "Make plural: Umwana w’umwami (The king's child",
-        answer: "Abana b’abami"
-      },
-      {
-        prompt: "Make plural: Umutwe w’umuntu (The person's head)",
-        answer: "Imitwe y’abantu"
-      },
-      {
-        prompt: "Make plural: Umurima w’umutama (The old man's garden",
-        answer: "Imirima y’abatama"
-      },
-      {
-        prompt: "Make plural: Umugore w’umugabo (The man's wife",
-        answer: "Abagore b’abagabo"
-      },
-      {
-        prompt: "Make plural: Umuhungu w’umwigisha (The teacher's son",
-        answer: "Abahungu b’abigisha"
-      },
-      {
-        prompt: "Make plural: Umwigishwa wa Paulo (Paul's disciple)",
-        answer: "Abigishwa ba Paulo"
-      },
-      {
-        prompt: "Make plural: Umugozi w’umuhungu (The boy's rope",
-        answer: "Imigozi y’abahungu"
-      },
-      {
-        prompt: "Make plural: Umwenda w’umukozi (The worker's garment",
-        answer: "Imyenda y’abakozi"
-      },
-      {
-        prompt: "Make plural: Umwami w’abantu (The king of the people",
-        answer: "Abami b’abantu"
-      },
-      {
-        prompt: "Make plural: Umutima w’umuntu (The person's heart",
-        answer: "Imitima y’abantu"
-      }
-    ]
-  },
-  {
-    title: "II. Translation into Kirundi",
-    questions: [
-      {
-        prompt: "The people of Jesus have joy in their hearts.",
-        answer: "Abantu ba Yezu bafise akanyamuneza mu mitima yabo"
-      },
-      {
-        prompt: "I have the light of Jesus in my heart.",
-        answer: "Mfise umuco wa Yezu mu mutima wanje"
-      },
-      {
-        prompt: "The teacher’s workmen are working in his gardens.",
-        answer: "Abakozi b'umwigisha bariko barakora mu mirima yiwe"
-      },
-      {
-        prompt: "The child of the king is a girl.",
-        answer: "Umwana w’umwami ni umwigeme"
-      },
-      {
-        prompt: "The smoke of the fire.",
-        answer: "Umwotsi w’umuriro"
-      },
-      {
-        prompt: "I work on our hill.",
-        answer: "Ndakora ku mugasozi wacu"
-      },
-      {
-        prompt: "The child has hair.",
-        answer: "Umwana afise imishatsi"
-      },
-      {
-        prompt: "I am working in the darkness.",
-        answer: "Ndiko ndakora mu muzimagiza"
-      },
-      {
-        prompt: "I am going to the teacher’s garden.",
-        answer: "Ngira mu murima w’umwigisha"
-      },
-      {
-        prompt: "The old man has the blessing of the Savior in his heart.",
-        answer: "Umutama afise umuhezagiro w’Umukiza mu mutima wiwe"
-      },
-      {
-        prompt: "Jesus is my Lord and Savior.",
-        answer: "Yezu ni Umwami wanje n’Umukiza wanje"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 6: Possessive Particle",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

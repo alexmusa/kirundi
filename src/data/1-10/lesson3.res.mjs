@@ -249,6 +249,194 @@ let Content = {
   make: Lesson3$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umukiza wacu ni Yesu.",
+        answer: "Our Savior is Jesus."
+      },
+      {
+        prompt: "Umwigisha wabo aravuga.",
+        answer: "Their teacher is speaking."
+      },
+      {
+        prompt: "Abakozi banyu bararima.",
+        answer: "Your (pl.) workmen are hoeing."
+      },
+      {
+        prompt: "Umwana wawe n’umuhungu.",
+        answer: "Your (sing.) child is a boy."
+      },
+      {
+        prompt: "Abigishwa babo barakora.",
+        answer: "Their pupils are working."
+      },
+      {
+        prompt: "Abantu barakora cane.",
+        answer: "The people are working hard."
+      },
+      {
+        prompt: "Mbeg’ umwigisha wanyu ararima?",
+        answer: "Is your teacher hoeing?"
+      },
+      {
+        prompt: "Abana banje n’abakobwa.",
+        answer: "My children are girls."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "My child.",
+        answer: "Umwana wanje"
+      },
+      {
+        prompt: "Your (sing.) husband.",
+        answer: "Umugabo wawe"
+      },
+      {
+        prompt: "His workmen.",
+        answer: "Abakozi biwe"
+      },
+      {
+        prompt: "Your (pl.) teachers.",
+        answer: "Abigisha banyu"
+      },
+      {
+        prompt: "Your (sing.) children.",
+        answer: "Abana bawe"
+      },
+      {
+        prompt: "Her pupils.",
+        answer: "Abigishwa biwe"
+      },
+      {
+        prompt: "Our Savior.",
+        answer: "Umukiza wacu"
+      },
+      {
+        prompt: "Our boys.",
+        answer: "Abahungu bacu"
+      },
+      {
+        prompt: "Their wives.",
+        answer: "Abagore babo"
+      },
+      {
+        prompt: "Your (pl.) girls.",
+        answer: "Abakobwa banyu"
+      },
+      {
+        prompt: "The old men work (are working).",
+        answer: "Abatama barakora"
+      },
+      {
+        prompt: "Your (pl.) king.",
+        answer: "Umwami wanyu"
+      },
+      {
+        prompt: "Our children are hoeing.",
+        answer: "Abana bacu bararima"
+      },
+      {
+        prompt: "Your (pl.) children are girls.",
+        answer: "Abana banyu n’abakobwa"
+      },
+      {
+        prompt: "My sons are not pupils.",
+        answer: "Abahungu banje si abigishwa"
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "umūntu",
+    "person"
+  ],
+  [
+    "umukozi",
+    "workman, employee"
+  ],
+  [
+    "umutāma",
+    "old man"
+  ],
+  [
+    "Umukiza",
+    "Savior"
+  ],
+  [
+    "aravuga",
+    "he/she is speaking"
+  ],
+  [
+    "egome",
+    "yes"
+  ],
+  [
+    "oyaye",
+    "no"
+  ],
+  [
+    "wanje",
+    "my (singular object)"
+  ],
+  [
+    "wawe",
+    "your (sing.) (singular object)"
+  ],
+  [
+    "wiwe",
+    "his, hers (singular object)"
+  ],
+  [
+    "wacu",
+    "our (singular object)"
+  ],
+  [
+    "wanyu",
+    "your (pl.) (singular object)"
+  ],
+  [
+    "wabo",
+    "their (singular object)"
+  ],
+  [
+    "banje",
+    "my (plural object)"
+  ],
+  [
+    "bawe",
+    "your (sing.) (plural object)"
+  ],
+  [
+    "biwe",
+    "his, hers (plural object)"
+  ],
+  [
+    "bacu",
+    "our (plural object)"
+  ],
+  [
+    "banyu",
+    "your (pl.) (plural object)"
+  ],
+  [
+    "babo",
+    "their (plural object)"
+  ],
+  [
+    "Mbega",
+    "interrogative particle (introduces a question)"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson3$Content, {});
 
 let l_vocabulary = [
@@ -301,121 +489,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Translate into English",
-    questions: [
-      {
-        prompt: "1. Umukiza wacu ni Yesu.",
-        answer: "Our Savior is Jesus"
-      },
-      {
-        prompt: "2. Umwigisha wabo aravuga.",
-        answer: "Their teacher is speaking"
-      },
-      {
-        prompt: "3. Abakozi banyu bararima.",
-        answer: "Your workers are hoeing"
-      },
-      {
-        prompt: "4. Umwana wawe n’umuhungu.",
-        answer: "Your child is a boy"
-      },
-      {
-        prompt: "5. Abigishwa babo barakora.",
-        answer: "Their pupils are working"
-      },
-      {
-        prompt: "6. Abantu barakora cane.",
-        answer: "The people are working hard"
-      },
-      {
-        prompt: "7. Mbeg’ umwigisha wanyu ararima?",
-        answer: "Is your teacher hoeing?"
-      },
-      {
-        prompt: "8. Abana banje n’abakobwa.",
-        answer: "My children are girls"
-      }
-    ]
-  },
-  {
-    title: "II. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "1. My child.",
-        answer: "Umwana wanje"
-      },
-      {
-        prompt: "2. Your (sing. husband.",
-        answer: "Umugabo wawe"
-      },
-      {
-        prompt: "3. His workmen.",
-        answer: "Abakozi biwe"
-      },
-      {
-        prompt: "4. Your (pl. teachers.",
-        answer: "Abigisha banyu"
-      },
-      {
-        prompt: "5. Your (sing. children.",
-        answer: "Abana bawe"
-      },
-      {
-        prompt: "6. Her pupils.",
-        answer: "Abigishwa biwe"
-      },
-      {
-        prompt: "7. Our Savior.",
-        answer: "Umukiza wacu"
-      },
-      {
-        prompt: "8. Our boys.",
-        answer: "Abahungu bacu"
-      },
-      {
-        prompt: "9. Their wives.",
-        answer: "Abagore babo"
-      },
-      {
-        prompt: "10. Your (pl. girls.",
-        answer: "Abakobwa banyu"
-      },
-      {
-        prompt: "11. The old men work (are working).",
-        answer: "Abasaza barakora"
-      },
-      {
-        prompt: "12. Your (pl. king.",
-        answer: "Umwami wanyu"
-      },
-      {
-        prompt: "13. Our children are hoeing.",
-        answer: "Abana bacu bararima"
-      },
-      {
-        prompt: "14. Your (pl. children are girls.",
-        answer: "Abana banyu n'abakobwa"
-      },
-      {
-        prompt: "15. My sons are not pupils.",
-        answer: "Abahungu banje si abigishwa"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 3: Possessive Adjectives",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

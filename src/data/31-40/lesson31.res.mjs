@@ -273,6 +273,41 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "kurirīmba",
+    "to sing"
+  ],
+  [
+    "mu gitōndo",
+    "in the morning"
+  ],
+  [
+    "kuronka",
+    "to receive, find, get"
+  ],
+  [
+    "vuba",
+    "soon, recently, quickly"
+  ],
+  [
+    "gushika",
+    "to arrive"
+  ],
+  [
+    "kubānza",
+    "to begin by, do first"
+  ],
+  [
+    "indirimbo",
+    "song, hymn"
+  ],
+  [
+    "gutāngura",
+    "to begin to"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson31$Content, {});
 
 let l_vocabulary = [];
@@ -290,6 +325,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

@@ -489,6 +489,49 @@ let quizData = [{
     ]
   }];
 
+let vocabularyData = [
+  [
+    "-mwe",
+    "one"
+  ],
+  [
+    "-biri",
+    "two"
+  ],
+  [
+    "-tatu",
+    "three"
+  ],
+  [
+    "-ne",
+    "four"
+  ],
+  [
+    "-tanu",
+    "five"
+  ],
+  [
+    "-tandatu",
+    "six"
+  ],
+  [
+    "indwi",
+    "seven"
+  ],
+  [
+    "umunani",
+    "eight"
+  ],
+  [
+    "icenda",
+    "nine"
+  ],
+  [
+    "icumi",
+    "ten"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson37$Content, {});
 
 let l_vocabulary = [];
@@ -506,6 +549,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

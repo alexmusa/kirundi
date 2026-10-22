@@ -194,6 +194,146 @@ let Content = {
   make: Lesson19$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umutama afise inka nyinshi n’amata menshi.",
+        answer: "The old man has many cows and much milk."
+      },
+      {
+        prompt: "Abana bariko baragenda mw ishuli ryabo.",
+        answer: "The children are going to their school."
+      },
+      {
+        prompt: "Umutama afise amacumu maremare.",
+        answer: "The old man has long spears."
+      },
+      {
+        prompt: "Umukobwa arikw ararima mu ndimiro z’abavyeyi biwe.",
+        answer: "The girl is hoeing in the fields of her parents."
+      },
+      {
+        prompt: "Sinkunda amazi mabi.",
+        answer: "I do not like bad water."
+      },
+      {
+        prompt: "Umwana afise ico ryinshi ku birenge vyiwe.",
+        answer: "The child has much dirt on his feet."
+      },
+      {
+        prompt: "Mbeg’ ugomba amavuta ku mutsima wawe?",
+        answer: "Do you want butter (or oil) on your bread?"
+      },
+      {
+        prompt: "Abana b’Imana bafise amahoro menshi cane.",
+        answer: "The children of God have very much peace."
+      },
+      {
+        prompt: "Ibitabo vyawe bisha biri hehe? Biri ku meza mu nzu yacu.",
+        answer: "Where are your new books? They are on the table in our house."
+      },
+      {
+        prompt: "Abigishwa bariko barakora mw ishuli.",
+        answer: "The pupils are working in school."
+      },
+      {
+        prompt: "Amaraso ya Yesu (saves us from) ivyaha vyacu.",
+        answer: "The blood of Jesus (saves us from) our sins."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "God’s people have joy and peace.",
+        answer: "Abantu b’Imana bafise akanyamuneza n’amahoro."
+      },
+      {
+        prompt: "I have a very small stone in (my) eye.",
+        answer: "Mfise ibuye rito cane mu jisho."
+      },
+      {
+        prompt: "The pupils have the Word of God in school.",
+        answer: "Abigishwa bafise Ijambo ry’Imana mw ishuli."
+      },
+      {
+        prompt: "I want (some) clean water.",
+        answer: "Ngomba amazi meza."
+      },
+      {
+        prompt: "Bad people are not going in the way of God.",
+        answer: "Abantu babi ntibariko baragenda mu nzira y’Imana."
+      },
+      {
+        prompt: "The clean cloths are on the table.",
+        answer: "Impuzu nziza ziri ku meza."
+      },
+      {
+        prompt: "A workman is hoeing at the school.",
+        answer: "Umukozi arikw ararima kw ishuli."
+      },
+      {
+        prompt: "Our teacher is speaking the Word of God.",
+        answer: "Umwigisha wacu arikw aravuga Ijambo ry’Imana."
+      },
+      {
+        prompt: "I am walking in the way of God.",
+        answer: "Ndiko ndagenda mu nzira y’Imana."
+      },
+      {
+        prompt: "We are praising God and we love our Lord Jesus Christ (Kristo).",
+        answer: "Turiko durashimagiza Imana kandi dukunda Umwami wacu Yesu Kristo."
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "amazi",
+    "water"
+  ],
+  [
+    "amaraso",
+    "blood"
+  ],
+  [
+    "amata",
+    "milk"
+  ],
+  [
+    "-gomba",
+    "to want"
+  ],
+  [
+    "amavuta",
+    "butter, oil"
+  ],
+  [
+    "ico",
+    "dirt"
+  ],
+  [
+    "amahoro",
+    "peace"
+  ],
+  [
+    "icumu",
+    "spear"
+  ],
+  [
+    "ameza",
+    "table"
+  ],
+  [
+    "icukiro",
+    "manure heap"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson19$Content, {});
 
 let l_vocabulary = [
@@ -274,113 +414,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "Section I: Kirundi to English Translation",
-    questions: [
-      {
-        prompt: "Translate: Umutama afise inka nyinshi n’amata menshi.",
-        answer: "The old man has many cows and much milk"
-      },
-      {
-        prompt: "Translate: Abana bariko baragenda mw ishuli ryabo.",
-        answer: "The children are going to their school."
-      },
-      {
-        prompt: "Translate: Umutama afise amacumu maremare.",
-        answer: "The old man has long spears"
-      },
-      {
-        prompt: "Translate: Umukobwa arikw ararima mu ndimiro z’abavyeyi biwe.",
-        answer: "The girl is hoeing in the fields of her parents"
-      },
-      {
-        prompt: "What does 'Sinkunda amazi mabi' mean?",
-        answer: "I do not like bad water."
-      },
-      {
-        prompt: "Translate: Umwana afise ico ryinshi ku birenge vyiwe.",
-        answer: "The child has much dirt on his feet"
-      },
-      {
-        prompt: "Translate: Mbeg’ ugomba amavuta ku mutsima wawe?",
-        answer: "Do you want butter on your bread?"
-      },
-      {
-        prompt: "Translate: Abana b’Imana bafise amahoro menshi cane.",
-        answer: "The children of God have very much peace"
-      },
-      {
-        prompt: "Translate: Ibitabo vyawe bisha biri hehe? Biri ku meza mu nzu yacu.",
-        answer: "Where are your new books? They are on the table in our house"
-      },
-      {
-        prompt: "Translate: Abigishwa bariko barakora mw ishuli.",
-        answer: "The pupils are working in school"
-      },
-      {
-        prompt: "Translate: Amaraso ya Yesu akiza ivyaha vyacu. (The blood of Jesus saves us from our sins",
-        answer: "The blood of Jesus saves us from our sins"
-      }
-    ]
-  },
-  {
-    title: "Section II: English to Kirundi Translation",
-    questions: [
-      {
-        prompt: "How do you say 'God’s people have joy and peace'?",
-        answer: "Abantu b'Imana bafise akanyamuneza n'amahoro."
-      },
-      {
-        prompt: "Translate into Kirundi: I have a very small stone in (my eye.",
-        answer: "Nfise ibuye rito cane mu jisho"
-      },
-      {
-        prompt: "Translate into Kirundi: The pupils have the Word of God in school.",
-        answer: "Abigishwa bafise Ijambo ry'Imana mw ishuli"
-      },
-      {
-        prompt: "Translate into Kirundi: I want (some clean water.",
-        answer: "Ngomba amazi meza"
-      },
-      {
-        prompt: "Translate into Kirundi: Bad people are not going in the way of God.",
-        answer: "Abantu babi ntibagenda mu nzira y'Imana"
-      },
-      {
-        prompt: "Translate into Kirundi: The clean cloths are on the table.",
-        answer: "Impuzu zera ziri ku meza"
-      },
-      {
-        prompt: "Translate into Kirundi: A workman is hoeing at the school.",
-        answer: "Umukozi ariko ararima mw ishuli"
-      },
-      {
-        prompt: "Translate into Kirundi: Our teacher is speaking the Word of God.",
-        answer: "Umwigisha wacu ariko aravuga Ijambo ry'Imana"
-      },
-      {
-        prompt: "Translate into Kirundi: I am walking in the way of God.",
-        answer: "Ndiko nagenda mu nzira y'Imana"
-      },
-      {
-        prompt: "Translate into Kirundi: We are praising God and we love our Lord Jesus Christ (Kristo.",
-        answer: "Turiko turashimagiza Imana kandi turakunda Umwami wacu Yesu Kristo"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 19: Class 5 (continued), Continuous present",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

@@ -308,6 +308,57 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "urupfu",
+    "death"
+  ],
+  [
+    "guharira",
+    "to forgive"
+  ],
+  [
+    "ubushobozi",
+    "power"
+  ],
+  [
+    "kugwa",
+    "to fall"
+  ],
+  [
+    "ubwami",
+    "kingdom"
+  ],
+  [
+    "gupfa",
+    "to die"
+  ],
+  [
+    "jewe (je)",
+    "I, me"
+  ],
+  [
+    "wewe (we)",
+    "you (singular)"
+  ],
+  [
+    "we",
+    "he, him, she, her"
+  ],
+  [
+    "twebwe (twe)",
+    "we, us"
+  ],
+  [
+    "mwebwe (mwe)",
+    "you (plural)"
+  ],
+  [
+    "bo",
+    "they, them"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson48$Content, {});
 
 let l_vocabulary = [];
@@ -325,6 +376,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

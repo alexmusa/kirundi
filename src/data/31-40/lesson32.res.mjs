@@ -264,6 +264,37 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "ukuboko",
+    "arm"
+  ],
+  [
+    "ukwezi",
+    "moon, month"
+  ],
+  [
+    "ukuguru",
+    "leg"
+  ],
+  [
+    "ukwaha",
+    "armpit"
+  ],
+  [
+    "ugutwi",
+    "ear"
+  ],
+  [
+    "ukwizera",
+    "faith"
+  ],
+  [
+    "ukuri",
+    "truth"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson32$Content, {});
 
 let l_vocabulary = [];
@@ -281,6 +312,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

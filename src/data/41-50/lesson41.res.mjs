@@ -464,6 +464,97 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "umwīgeme",
+    "girl"
+  ],
+  [
+    "izina",
+    "name"
+  ],
+  [
+    "umwūngere",
+    "shepherd"
+  ],
+  [
+    "gusīnzīra",
+    "to sleep"
+  ],
+  [
+    "igitangaza",
+    "surprising thing, miracle"
+  ],
+  [
+    "ryāri",
+    "when?"
+  ],
+  [
+    "wese",
+    "every, whole (Class 1 sing.)"
+  ],
+  [
+    "bose",
+    "all (Class 1 pl.), all of them"
+  ],
+  [
+    "wose",
+    "every, whole (Class 2 sing.)"
+  ],
+  [
+    "yose",
+    "all, every, whole (Classes 2, 3, 5, 8, 9)"
+  ],
+  [
+    "zose",
+    "all (Classes 3, 6 pl.)"
+  ],
+  [
+    "cose",
+    "every, whole (Class 4 sing.)"
+  ],
+  [
+    "vyose",
+    "all (Class 4 pl.)"
+  ],
+  [
+    "ryose",
+    "every, whole (Class 5 sing.)"
+  ],
+  [
+    "rwose",
+    "every, whole (Class 6 sing.)"
+  ],
+  [
+    "kose",
+    "every, whole (Class 7 sing.)"
+  ],
+  [
+    "twose",
+    "all (Class 7 pl.)"
+  ],
+  [
+    "bwose",
+    "every, whole (Class 8 sing.)"
+  ],
+  [
+    "kwose",
+    "every, whole (Class 9 sing.)"
+  ],
+  [
+    "hose",
+    "every, whole (Class 10)"
+  ],
+  [
+    "twese",
+    "all of us"
+  ],
+  [
+    "mwese",
+    "all of you"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson41$Content, {});
 
 let l_vocabulary = [];
@@ -481,6 +572,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

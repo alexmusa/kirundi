@@ -344,6 +344,99 @@ let Content = {
   make: Lesson16$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Inka zigenda mu bijumbu.",
+        answer: "The cows are going into the sweet potatoes."
+      },
+      {
+        prompt: "Mbeg’ abantu barakora neza mu murima?",
+        answer: "Are the people working well in the garden?"
+      },
+      {
+        prompt: "Turakora cane mu nzu zacu.",
+        answer: "We are working hard in our houses."
+      },
+      {
+        prompt: "Imbwa yiwe igenda i muhira.",
+        answer: "His/her dog is going home."
+      },
+      {
+        prompt: "Har’ imvunja nyinshi mu birenge vyiwe.",
+        answer: "There are many jiggers in his/her feet."
+      },
+      {
+        prompt: "Umukiza aravuga mu mitima yacu.",
+        answer: "The Savior speaks in our hearts."
+      },
+      {
+        prompt: "Igikoko kigenda mu ndimiro y’umwigisha.",
+        answer: "The wild animal is going into the teacher's garden."
+      },
+      {
+        prompt: "Mbega murarima cane mu bigori?",
+        answer: "Are you (pl.) hoeing much in the corn?"
+      },
+      {
+        prompt: "Mbeg’ ukora intebe nziza? Ego, nkora intebe.",
+        answer: "Do you (sing.) make good chairs? Yes, I make chairs."
+      },
+      {
+        prompt: "Abakobwa b’Abarundi bararima cane.",
+        answer: "Burundi girls hoe much."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "God speaks in the hearts of people.",
+        answer: "Imana iravuga mu mitima y'abantu."
+      },
+      {
+        prompt: "Are you (pl.) hoeing in your gardens?",
+        answer: "Mbega murima mu ndimiro zanyu?"
+      },
+      {
+        prompt: "The bad goats are going into the house.",
+        answer: "Impene mbi zigenda mu nzu."
+      },
+      {
+        prompt: "A few men and a few women are working in the old man’s gardens.",
+        answer: "Abagabo bake n'abagore bake barakora mu ndimiro z'umutama."
+      },
+      {
+        prompt: "I am going to Gitega.",
+        answer: "Ngenda i Gitega."
+      },
+      {
+        prompt: "We are working hard in our new houses.",
+        answer: "Turakora cane mu nzu zacu nshasha."
+      },
+      {
+        prompt: "The boys have dirty sleeping mats.",
+        answer: "Abahungu bafise imisambi mibi."
+      },
+      {
+        prompt: "Are you (sing.) going to our country?",
+        answer: "Mbega ugenda mu gihugu cacu?"
+      },
+      {
+        prompt: "The men’s dogs are going into the teacher’s fields.",
+        answer: "Imbwa z'abagabo zigenda mu ndimiro z'umwigisha."
+      },
+      {
+        prompt: "Are you (sing.) working in the dark?",
+        answer: "Mbega ukora mu mwiza?"
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson16$Content, {});
 
 let l_vocabulary = [
@@ -412,109 +505,17 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Translate into English",
-    questions: [
-      {
-        prompt: "1. Inka zigenda mu bijumbu.",
-        answer: "Cows go in the sweet potatoes"
-      },
-      {
-        prompt: "2. Mbeg’ abantu barakora neza mu murima?",
-        answer: "Are the people working well in the field?"
-      },
-      {
-        prompt: "3. Turakora cane mu nzu zacu.",
-        answer: "We are working hard in our houses"
-      },
-      {
-        prompt: "4. Imbwa yiwe igenda i muhira.",
-        answer: "His dog is going home"
-      },
-      {
-        prompt: "5. Har’ imvunja nyinshi mu birenge vyiwe.",
-        answer: "There are many jiggers in his feet."
-      },
-      {
-        prompt: "6. Umukiza aravuga mu mitima yacu.",
-        answer: "The Savior speaks in our hearts"
-      },
-      {
-        prompt: "7. Igikoko kigenda mu ndimiro y’umwigisha.",
-        answer: "The wild animal is going in the teacher’s gardens"
-      },
-      {
-        prompt: "8. Mbega murarima cane mu bigori?",
-        answer: "Are you hoeing much in the corn?"
-      },
-      {
-        prompt: "9. Mbeg’ ukora intebe nziza? Ego, nkora intebe.",
-        answer: "Do you make a nice chair? Yes, I make a chair."
-      },
-      {
-        prompt: "10. Abakobwa b’Abarundi bararima cane.",
-        answer: "The Burundian girls are hoeing much."
-      }
-    ]
-  },
-  {
-    title: "II. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "1. God speaks in the hearts of people.",
-        answer: "Imana ivuga mu mitima y'abantu"
-      },
-      {
-        prompt: "2. Are you (pl. hoeing in your gardens?",
-        answer: "Mbega murarima mu ndimiro zanyu?"
-      },
-      {
-        prompt: "3. The bad goats are going into the house.",
-        answer: "Ihene mbi zigenda mu nzu."
-      },
-      {
-        prompt: "4. A few men and a few women are working in the old man’s gardens.",
-        answer: "Abagabo bake n'abagore bake barakora mu ndimiro z'umutama"
-      },
-      {
-        prompt: "5. I am going to Gitega.",
-        answer: "Ngenda i Gitega"
-      },
-      {
-        prompt: "6. We are working hard in our new houses.",
-        answer: "Turakora cane mu nzu zacu nshasha"
-      },
-      {
-        prompt: "7. The boys have dirty sleeping mats.",
-        answer: "Abahungu bafise imisambi mibi"
-      },
-      {
-        prompt: "8. Are you (sing.) going to our country? (use 'mu')",
-        answer: "Mbega ugenda mu gihugu cacu?"
-      },
-      {
-        prompt: "9. The men’s dogs are going into the teacher’s fields.",
-        answer: "Imbwa z'abagabo zigenda mu ndimiro z'umwigisha"
-      },
-      {
-        prompt: "10. Are you (sing. working in the dark?",
-        answer: "Mbega ukora mu muzimagiza?"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 16: –ra Present Tense of Verb",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

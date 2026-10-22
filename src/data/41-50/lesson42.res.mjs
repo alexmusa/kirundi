@@ -232,6 +232,41 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "kumesura",
+    "to wash (clothes)"
+  ],
+  [
+    "kwoga",
+    "to wash feet and legs, to swim"
+  ],
+  [
+    "gukaraba",
+    "to wash hands"
+  ],
+  [
+    "kwoza",
+    "to wash (dishes, floor, etc.)"
+  ],
+  [
+    "kwiyuhagira",
+    "to bathe (oneself)"
+  ],
+  [
+    "kwiyoga",
+    "to wash oneself (feet, legs)"
+  ],
+  [
+    "kuronga",
+    "to wash (vegetables)"
+  ],
+  [
+    "gushobora",
+    "to be able, can"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson42$Content, {});
 
 let l_vocabulary = [];
@@ -249,6 +284,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

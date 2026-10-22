@@ -317,6 +317,146 @@ let Content = {
   make: Lesson2$Content
 };
 
+let quizData = [
+  {
+    title: "I. Plurals and Meanings",
+    questions: [
+      {
+        prompt: "umwana",
+        answer: "abāna (children)"
+      },
+      {
+        prompt: "umugabo",
+        answer: "abagabo (men)"
+      },
+      {
+        prompt: "umwami",
+        answer: "abāmi (kings/Lords)"
+      },
+      {
+        prompt: "umugore",
+        answer: "abagore (women/wives)"
+      },
+      {
+        prompt: "umuhungu",
+        answer: "abahungu (boys/sons)"
+      },
+      {
+        prompt: "umwigisha",
+        answer: "abīgīsha (teachers)"
+      },
+      {
+        prompt: "umukobwa",
+        answer: "abakobwa (girls/daughters)"
+      },
+      {
+        prompt: "umwigishwa",
+        answer: "abīgīshwa (pupils)"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The king has a wife.",
+        answer: "Umwami afise umugore"
+      },
+      {
+        prompt: "The children are going.",
+        answer: "Abāna baragenda"
+      },
+      {
+        prompt: "The man is a king.",
+        answer: "Umugabo n'umwami"
+      },
+      {
+        prompt: "The boys are working hard (much).",
+        answer: "Abahungu barakora cane"
+      },
+      {
+        prompt: "The pupils have a teacher.",
+        answer: "Abīgīshwa bafise umwīgīsha"
+      },
+      {
+        prompt: "A woman is hoeing.",
+        answer: "Umugore arakora"
+      },
+      {
+        prompt: "The child is not a boy.",
+        answer: "Umwana s'umuhungu"
+      },
+      {
+        prompt: "The man has a son.",
+        answer: "Umugabo afise umuhungu"
+      },
+      {
+        prompt: "Teachers work hard (much).",
+        answer: "Abīgīsha barakora cane"
+      },
+      {
+        prompt: "The women have children.",
+        answer: "Abagore bafise abāna"
+      },
+      {
+        prompt: "The pupil is a girl.",
+        answer: "Umwīgīshwa n'umukobwa"
+      },
+      {
+        prompt: "The girl is not a teacher.",
+        answer: "Umukobwa s'umwīgīsha"
+      },
+      {
+        prompt: "Men have wives.",
+        answer: "Abagabo bafise abagore"
+      },
+      {
+        prompt: "Pupils hoe.",
+        answer: "Abīgīshwa barakora"
+      },
+      {
+        prompt: "The teacher is a man.",
+        answer: "Umwīgīsha n'umugabo"
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "umwāna (abāna)",
+    "child"
+  ],
+  [
+    "umwāmi (abāmi)",
+    "king, Lord"
+  ],
+  [
+    "umwīgīsha (abīgīsha)",
+    "teacher"
+  ],
+  [
+    "umwīgīshwa (abīgīshwa)",
+    "pupil"
+  ],
+  [
+    "afise",
+    "he/she has"
+  ],
+  [
+    "bafise",
+    "they have"
+  ],
+  [
+    "cane",
+    "much, very"
+  ],
+  [
+    "urakoze",
+    "thank you"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson2$Content, {});
 
 let l_vocabulary = [
@@ -377,121 +517,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Plurals and Meanings",
-    questions: [
-      {
-        prompt: "Plural of 'umwana' and its meaning:",
-        answer: "abana, children"
-      },
-      {
-        prompt: "Plural of 'umugabo' and its meaning:",
-        answer: "abagabo, men"
-      },
-      {
-        prompt: "Plural of 'umwami' and its meaning:",
-        answer: "abami, kings"
-      },
-      {
-        prompt: "Plural of 'umugore':",
-        answer: "abagore"
-      },
-      {
-        prompt: "Plural of 'umuhungu' and its meaning:",
-        answer: "abahungu, boys"
-      },
-      {
-        prompt: "Plural of 'umwigisha':",
-        answer: "abigisha"
-      },
-      {
-        prompt: "Plural of 'umukobwa' and its meaning:",
-        answer: "abakobwa, girls"
-      },
-      {
-        prompt: "Plural of 'umwigishwa':",
-        answer: "abigishwa"
-      }
-    ]
-  },
-  {
-    title: "II. Translation into Kirundi",
-    questions: [
-      {
-        prompt: "The king has a wife.",
-        answer: "umwami afise umugore"
-      },
-      {
-        prompt: "The children are going.",
-        answer: "abana bariko baragenda"
-      },
-      {
-        prompt: "The man is a king.",
-        answer: "umugabo ni umwami"
-      },
-      {
-        prompt: "The boys are working hard (much).",
-        answer: "abahungu bariko barakora cane"
-      },
-      {
-        prompt: "The pupils have a teacher.",
-        answer: "abanyeshure bafise umwigisha"
-      },
-      {
-        prompt: "A woman is hoeing.",
-        answer: "umugore ariko aracumba"
-      },
-      {
-        prompt: "The child is not a boy.",
-        answer: "umwana si umuhungu"
-      },
-      {
-        prompt: "The man has a son.",
-        answer: "umugabo afise umuhungu"
-      },
-      {
-        prompt: "Teachers work hard (much.",
-        answer: "abigisha barakora cane"
-      },
-      {
-        prompt: "The women have children.",
-        answer: "abagore bafise abana"
-      },
-      {
-        prompt: "The pupil is a girl.",
-        answer: "umunyeshure ni umukobwa"
-      },
-      {
-        prompt: "The girl is not a teacher.",
-        answer: "umukobwa si umwigisha"
-      },
-      {
-        prompt: "Men have wives.",
-        answer: "abagabo bafise abagore"
-      },
-      {
-        prompt: "Pupils hoe.",
-        answer: "abanyeshure baracumba"
-      },
-      {
-        prompt: "The teacher is a man.",
-        answer: "umwigisha ni umugabo"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 2: Ni and Si",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

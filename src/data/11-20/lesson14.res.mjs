@@ -154,6 +154,164 @@ let Content = {
   make: Lesson14$Content
 };
 
+let quizData = [
+  {
+    title: "I. Give the singulars of the following words and translate",
+    questions: [
+      {
+        prompt: "ibiti",
+        answer: "igiti - tree"
+      },
+      {
+        prompt: "ivyobo",
+        answer: "icobo - hole"
+      },
+      {
+        prompt: "imyenda",
+        answer: "umwenda - cloth/garment"
+      },
+      {
+        prompt: "ibirenge",
+        answer: "ikirenge - foot"
+      },
+      {
+        prompt: "ivyuma",
+        answer: "icuma - iron/metal/tool"
+      },
+      {
+        prompt: "abigishwa",
+        answer: "umwigishwa - pupil"
+      },
+      {
+        prompt: "ibitabo",
+        answer: "igitabo - book"
+      },
+      {
+        prompt: "abami",
+        answer: "umwami - king"
+      },
+      {
+        prompt: "ivyaha",
+        answer: "icaha - sin"
+      },
+      {
+        prompt: "ibikoko",
+        answer: "igikoko - wild animal/insect"
+      },
+      {
+        prompt: "amasuka",
+        answer: "isuka - hoe"
+      },
+      {
+        prompt: "ibihugu",
+        answer: "igihugu - country"
+      },
+      {
+        prompt: "ibijumbu",
+        answer: "igijumbu - sweet potato"
+      },
+      {
+        prompt: "imisi",
+        answer: "umusi - day"
+      },
+      {
+        prompt: "ivyete",
+        answer: "icete - letter"
+      }
+    ]
+  },
+  {
+    title: "II. Translate into English",
+    questions: [
+      {
+        prompt: "Igitabo c’umukobwa kiri hano.",
+        answer: "The girl’s book is here."
+      },
+      {
+        prompt: "Har’ivyete vyawe vyinshi mu nzu.",
+        answer: "There are many of your letters in the house."
+      },
+      {
+        prompt: "Ibikoko bibi biri hanze.",
+        answer: "Bad wild animals are outside."
+      },
+      {
+        prompt: "Umuntu mubi afise ivyaha vyinshi mu mutima wiwe.",
+        answer: "A bad person has many sins in his heart."
+      },
+      {
+        prompt: "Mfise igitabo ciza cane.",
+        answer: "I have a very good book."
+      },
+      {
+        prompt: "Intama iri mu cobo kinini hariya.",
+        answer: "The sheep is in a large hole over there."
+      },
+      {
+        prompt: "Ibirenge vy’umwana ni bibi.",
+        answer: "The child’s feet are bad."
+      },
+      {
+        prompt: "Mbeg’ibitabo vyanyu bisha biri mu nzu?",
+        answer: "Are your new books in the house?"
+      },
+      {
+        prompt: "Mbeg’abakozi bafise ivyuma vyinshi? oya, bafise bikeya.",
+        answer: "Do the workers have many tools? No, they have few."
+      },
+      {
+        prompt: "Umutama afise icete canje. Kiri mu mpuzu ziwe.",
+        answer: "The old man has my letter. It is in his clothes."
+      }
+    ]
+  },
+  {
+    title: "III. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The hole is very large.",
+        answer: "Icobo ni kinini cane."
+      },
+      {
+        prompt: "Many people are outside.",
+        answer: "Abantu benshi bari hanze."
+      },
+      {
+        prompt: "There are many sins in the heart of a bad man.",
+        answer: "Har'ivyaha vyinshi mu mutima w'umuntu mubi."
+      },
+      {
+        prompt: "Your (pl.) big country is nice.",
+        answer: "Igihugu canyu kinini ni ciza."
+      },
+      {
+        prompt: "Many good things are in their houses.",
+        answer: "Ibintu vyiza vyinshi biri mu nzu zabo."
+      },
+      {
+        prompt: "Where are your tools? They are at home.",
+        answer: "Ivyuma vyanyu biri hehe? Biri muhira."
+      },
+      {
+        prompt: "The girls have few books.",
+        answer: "Abakobwa bafise ibitabo bikeya."
+      },
+      {
+        prompt: "The tall trees over there are very beautiful.",
+        answer: "Ibiti birebire hariya ni vyiza cane."
+      },
+      {
+        prompt: "The wild animal is alive.",
+        answer: "Igikoko ni kizima."
+      },
+      {
+        prompt: "There is a small hole in our field.",
+        answer: "Hariho icobo gito mu murima wacu."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson14$Content, {});
 
 let l_vocabulary = [
@@ -210,174 +368,17 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Singulars and Translations",
-    questions: [
-      {
-        prompt: "Give the singular and English translation for 'ibiti':",
-        answer: "igiti - tree"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ivyobo':",
-        answer: "icobo - hole"
-      },
-      {
-        prompt: "Give the singular and English translation for 'imyenda':",
-        answer: "umwenda - garment"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ibirenge':",
-        answer: "ikirenge - foot"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ivyuma':",
-        answer: "icuma - tool"
-      },
-      {
-        prompt: "What is the singular of 'abigishwa'?",
-        answer: "umwigishwa"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ibitabo':",
-        answer: "igitabo - book"
-      },
-      {
-        prompt: "Give the singular and English translation for 'abami':",
-        answer: "umwami - king"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ivyaha':",
-        answer: "icaha - sin"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ibikoko':",
-        answer: "igikoko - animal"
-      },
-      {
-        prompt: "Give the singular and English translation for 'amasuka':",
-        answer: "isuka - hoe"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ibihugu':",
-        answer: "igihugu - country"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ibijumbu':",
-        answer: "igijumbu - sweet potato"
-      },
-      {
-        prompt: "Give the singular and English translation for 'imisi':",
-        answer: "umusi - day"
-      },
-      {
-        prompt: "Give the singular and English translation for 'ivyete':",
-        answer: "icete - letter"
-      }
-    ]
-  },
-  {
-    title: "II. Translate into English",
-    questions: [
-      {
-        prompt: "Translate: Igitabo c’umukobwa kiri hano.",
-        answer: "The girl's book is here."
-      },
-      {
-        prompt: "Translate: Har’ivyete vyawe vyinshi mu nzu.",
-        answer: "There are many of your letters in the house."
-      },
-      {
-        prompt: "Translate: Ibikoko bibi biri hanze.",
-        answer: "Bad animals are outside."
-      },
-      {
-        prompt: "Translate: Umuntu mubi afise ivyaha vyinshi mu mutima wiwe.",
-        answer: "A bad person has many sins in his heart."
-      },
-      {
-        prompt: "Translate: Mfise igitabo ciza cane.",
-        answer: "I have a very good book."
-      },
-      {
-        prompt: "Translate: Intama iri mu cobo kinini hariya.",
-        answer: "The sheep is in a large hole over there."
-      },
-      {
-        prompt: "Translate: Ibirenge vy’umwana ni bibi.",
-        answer: "The child's feet are bad."
-      },
-      {
-        prompt: "Translate: Mbeg’ibitabo vyanyu bisha biri mu nzu?",
-        answer: "Are your new books in the house?"
-      },
-      {
-        prompt: "Translate: Mbeg’abakozi bafise ivyuma vyinshi? oya, bafise bikeya.",
-        answer: "Do the workers have many tools? No, they have few."
-      },
-      {
-        prompt: "Translate: Umutama afise icete canje. Kiri mu mpuzu ziwe.",
-        answer: "The old man has my letter. It is in his clothes."
-      }
-    ]
-  },
-  {
-    title: "III. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "Translate: The hole is very large.",
-        answer: "Icobo ni kinini cane."
-      },
-      {
-        prompt: "Translate: Many people are outside.",
-        answer: "Abantu benshi bari hanze."
-      },
-      {
-        prompt: "Translate: There are many sins in the heart of a bad man.",
-        answer: "Har'ivyaha vyinshi mu mutima w'umuntu mubi."
-      },
-      {
-        prompt: "Translate: Your (pl. big country is nice.",
-        answer: "Igihugu canyu kinini ni ciza."
-      },
-      {
-        prompt: "Translate: Many good things are in their houses.",
-        answer: "Ibintu vyiza vyinshi biri mu nzu zabo."
-      },
-      {
-        prompt: "Translate: Where are your tools? They are at home.",
-        answer: "Ivyuma vyawe biri he? Biri muhira."
-      },
-      {
-        prompt: "Translate: The girls have few books.",
-        answer: "Abakobwa bafise ibitabo bikeya."
-      },
-      {
-        prompt: "Translate: The tall trees over there are very beautiful.",
-        answer: "Ibiti birebire hariya ni vyiza cane."
-      },
-      {
-        prompt: "Translate: The wild animal is alive.",
-        answer: "Igikoko kiri muzima."
-      },
-      {
-        prompt: "Translate: There is a small hole in our field.",
-        answer: "Har'icobo gitoyi mu murima wacu."
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 14: Class 4 (continued)",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

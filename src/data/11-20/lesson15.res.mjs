@@ -243,6 +243,178 @@ let Content = {
   make: Lesson15$Content
 };
 
+let quizData = [
+  {
+    title: "Exercise I: Translate into English",
+    questions: [
+      {
+        prompt: "Umunezero n’ikigongwe vy’Imana ni bikuru.",
+        answer: "The joy and mercy of God are great."
+      },
+      {
+        prompt: "Igisozi ni kirekire cane.",
+        answer: "The very big hill is very high."
+      },
+      {
+        prompt: "Impene nyinshi n’ibikoko bike biri ku musozi.",
+        answer: "Many goats and a few wild animals are on the hill."
+      },
+      {
+        prompt: "Ikigongwe c’Imana ni cinshi cane.",
+        answer: "The mercy of God is very great."
+      },
+      {
+        prompt: "Ivyanje bir’i wacu.",
+        answer: "My things are at our place (at our home)."
+      },
+      {
+        prompt: "Ikirago c’umugabo kiri mu nzu yiwe.",
+        answer: "The man's mat is in his house."
+      },
+      {
+        prompt: "Umukozi wacu n’ikigabo.",
+        answer: "Our worker is a very big man."
+      },
+      {
+        prompt: "Abagore bafise ibigori vyinshi mu mirima yabo.",
+        answer: "The women have much corn in their fields."
+      },
+      {
+        prompt: "Har’ igihuzu mu nzu y’umutama.",
+        answer: "There is a very large cloth in the old man's house."
+      },
+      {
+        prompt: "Abana bafise umunezero mwinshi. Ni vyiza.",
+        answer: "The children have much joy. It is good."
+      }
+    ]
+  },
+  {
+    title: "Exercise II: Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The dog and a wild animal are over there.",
+        answer: "Imbwa n'igikoko biri hariya."
+      },
+      {
+        prompt: "A huge stone is on the hill.",
+        answer: "Ikibuye kiri ku musozi."
+      },
+      {
+        prompt: "The boys have corn (pl.) and sweet potatoes.",
+        answer: "Abahungu bafise ibigori n'ibijumbu."
+      },
+      {
+        prompt: "Bananas are very good.",
+        answer: "Igitoke ni vyiza cane."
+      },
+      {
+        prompt: "The new cloth is long.",
+        answer: "Igitambara gishasha ni kirekire."
+      },
+      {
+        prompt: "There is a very heavy rain over there.",
+        answer: "Hari ikivura hariya."
+      },
+      {
+        prompt: "The men are hoeing well in the bananas.",
+        answer: "Abagabo bararima neza mu bitoke."
+      },
+      {
+        prompt: "Our bread (pl.) and meat are in a cloth.",
+        answer: "Imitsima n'inyama vyacu biri mu gitambara."
+      },
+      {
+        prompt: "The child’s head and feet are large.",
+        answer: "Umutwe n'ibirenge vy'umwana ni binini."
+      },
+      {
+        prompt: "The man’s chairs and drums are in his house.",
+        answer: "Intebe n'ingoma z'umugabo ziri mu nzu yiwe."
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "igitāmbāra",
+    "cloth"
+  ],
+  [
+    "ikigōngwe",
+    "mercy, pity, forgiveness"
+  ],
+  [
+    "ikigōri",
+    "corn, stalk of corn"
+  ],
+  [
+    "igitōke",
+    "bananas (bunch or tree)"
+  ],
+  [
+    "ikirago",
+    "mat (for sleeping)"
+  ],
+  [
+    "umutsima",
+    "bread"
+  ],
+  [
+    "inyama",
+    "meat"
+  ],
+  [
+    "umurima",
+    "garden"
+  ],
+  [
+    "indimiro",
+    "field"
+  ],
+  [
+    "umuhungu",
+    "boy"
+  ],
+  [
+    "umukobwa",
+    "girl"
+  ],
+  [
+    "umusozi",
+    "hill"
+  ],
+  [
+    "igisozi",
+    "a very big hill"
+  ],
+  [
+    "ibuye",
+    "stone"
+  ],
+  [
+    "ikibuye",
+    "a very big rock"
+  ],
+  [
+    "imvura",
+    "rain"
+  ],
+  [
+    "ikivura",
+    "a very heavy rain"
+  ],
+  [
+    "ivyiza",
+    "good things"
+  ],
+  [
+    "ivyanje",
+    "my things"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson15$Content, {});
 
 let l_vocabulary = [
@@ -327,109 +499,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Translate into English",
-    questions: [
-      {
-        prompt: "Umunezero n’ikigongwe vy’Imana ni bikuru.",
-        answer: "The joy and mercy of God are great"
-      },
-      {
-        prompt: "Igisozi ni kirekire cane.",
-        answer: "The mountain is very high"
-      },
-      {
-        prompt: "What does 'Impene nyinshi n’ibikoko bike biri ku musozi' mean?",
-        answer: "Many goats and a few wild animals are on the hill"
-      },
-      {
-        prompt: "Ikigongwe c’Imana ni cinshi cane.",
-        answer: "The mercy of God is very great"
-      },
-      {
-        prompt: "Ivyanje bir’i wacu.",
-        answer: "Mine are at our place"
-      },
-      {
-        prompt: "Ikirago c’umugabo kiri mu nzu yiwe.",
-        answer: "The man's mat is in his house"
-      },
-      {
-        prompt: "Umukozi wacu n’ikigabo.",
-        answer: "Our worker is a big man"
-      },
-      {
-        prompt: "Translate: 'Abagore bafise ibigori vyinshi mu mirima yabo.'",
-        answer: "The women have much corn in their fields"
-      },
-      {
-        prompt: "Har’ igihuzu mu nzu y’umutama.",
-        answer: "There is a cloth in the old man's house"
-      },
-      {
-        prompt: "Abana bafise umunezero mwinshi. Ni vyiza.",
-        answer: "The children have much joy. It is good"
-      }
-    ]
-  },
-  {
-    title: "II. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "The dog and a wild animal are over there.",
-        answer: "Imbwa n’igikoko biri hariya"
-      },
-      {
-        prompt: "A huge stone is on the hill.",
-        answer: "Ibuye rinini riri ku musozi"
-      },
-      {
-        prompt: "The boys have corn (pl. and sweet potatoes.",
-        answer: "Abahungu bafise ibigori n’ibijumbu"
-      },
-      {
-        prompt: "How do you say 'Bananas are very good'?",
-        answer: "Imineke ni myiza cane"
-      },
-      {
-        prompt: "The new cloth is long.",
-        answer: "Igihuzu gishasha ni kirekire"
-      },
-      {
-        prompt: "There is a very heavy rain over there.",
-        answer: "Hari imvura nyinshi cane hariya"
-      },
-      {
-        prompt: "The men are hoeing well in the bananas.",
-        answer: "Abagabo bariko bararima neza mu bitoke"
-      },
-      {
-        prompt: "Our bread (pl. and meat are in a cloth.",
-        answer: "Imikate yacu n’inyama biri mu gihuzu"
-      },
-      {
-        prompt: "Translate: 'The child’s head and feet are large.'",
-        answer: "Umutwe n’ibirenge vy’umwana ni binini"
-      },
-      {
-        prompt: "The man’s chairs and drums are in his house.",
-        answer: "Intebe n’ingoma vy’umugabo biri mu nzu yiwe"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 15: Special Uses of Class 4",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

@@ -265,6 +265,29 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "nibagiye",
+    "I forgot"
+  ],
+  [
+    "yubatse",
+    "he/she built"
+  ],
+  [
+    "bemeye",
+    "they agreed"
+  ],
+  [
+    "twogeje",
+    "we washed"
+  ],
+  [
+    "mwanditse",
+    "you (pl.) wrote"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson54$Content, {});
 
 let l_vocabulary = [];
@@ -282,6 +305,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

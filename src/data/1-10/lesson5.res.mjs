@@ -197,6 +197,134 @@ let Content = {
   make: Lesson5$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umugabo agenda mu mwiza.",
+        answer: "The man walks in the darkness."
+      },
+      {
+        prompt: "Umwigisha afise imyenda.",
+        answer: "The teacher has debts."
+      },
+      {
+        prompt: "Umugore afise umunezero mu mutima wiwe.",
+        answer: "The woman has joy in her heart."
+      },
+      {
+        prompt: "Abana biwe barakora neza.",
+        answer: "His (or her) children work well."
+      },
+      {
+        prompt: "Umwotsi uva mu muriro.",
+        answer: "Smoke comes out of the fire."
+      },
+      {
+        prompt: "Umutama afise umwiza mu mutima wiwe.",
+        answer: "The old man has darkness in his heart."
+      },
+      {
+        prompt: "Umukiza akora mu mitima yacu.",
+        answer: "The Savior works in our hearts."
+      },
+      {
+        prompt: "Mbeg’ umukozi afise imyenda? Oyaye.",
+        answer: "Does the worker have debts? No."
+      },
+      {
+        prompt: "Abakozi barima ku musozi.",
+        answer: "The workers hoe on the hill."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The children have joy in their hearts.",
+        answer: "Abana bafise umunezero mu mitima yabo."
+      },
+      {
+        prompt: "The boy has bread on his head.",
+        answer: "Umuhungu afise umutsima ku mutwe wiwe."
+      },
+      {
+        prompt: "The women work on their hill.",
+        answer: "Abagore bakora ku musozi wabo."
+      },
+      {
+        prompt: "Your (sing.) debts.",
+        answer: "Imyenda yawe."
+      },
+      {
+        prompt: "Our fire.",
+        answer: "Umuriro wacu."
+      },
+      {
+        prompt: "In the fire.",
+        answer: "Mu muriro."
+      },
+      {
+        prompt: "At the fire.",
+        answer: "Ku muriro."
+      },
+      {
+        prompt: "The old men have darkness in their hearts.",
+        answer: "Abatama bafise umwiza mu mitima yabo."
+      },
+      {
+        prompt: "The light (insert “wo”) on the hill is your fire.",
+        answer: "Umuco wo ku musozi ni umuriro wawe."
+      },
+      {
+        prompt: "The child is walking in the smoke.",
+        answer: "Umwana agenda mu mwotsi."
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "umwōtsi",
+    "smoke"
+  ],
+  [
+    "umuco",
+    "light"
+  ],
+  [
+    "umwīza",
+    "darkness"
+  ],
+  [
+    "umūsi",
+    "day"
+  ],
+  [
+    "umwēnda",
+    "debt"
+  ],
+  [
+    "umunēzēro",
+    "joy"
+  ],
+  [
+    "mu",
+    "in, into, out of"
+  ],
+  [
+    "ku",
+    "on, at, to, from"
+  ],
+  [
+    "kuva",
+    "to come from"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson5$Content, {});
 
 let l_vocabulary = [
@@ -245,105 +373,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Kirundi to English Translation",
-    questions: [
-      {
-        prompt: "Translate: Umugabo agenda mu mwiza.",
-        answer: "The man walks in the darkness."
-      },
-      {
-        prompt: "What does 'imyenda' mean in: 'Umwigisha afise imyenda'?",
-        answer: "Clothes/Garments"
-      },
-      {
-        prompt: "Translate: Umugore afise umunezero mu mutima wiwe.",
-        answer: "The woman has joy in her heart."
-      },
-      {
-        prompt: "Translate 'His/her children work well': Abana biwe _________ neza.",
-        answer: "barakora"
-      },
-      {
-        prompt: "Translate: Umwotsi uva mu muriro.",
-        answer: "Smoke comes from the fire."
-      },
-      {
-        prompt: "Translate: Umutama afise umwiza mu mutima wiwe.",
-        answer: "The old man has darkness in his heart."
-      },
-      {
-        prompt: "Translate: Umukiza akora mu mitima yacu.",
-        answer: "The Savior works in our hearts."
-      },
-      {
-        prompt: "Translate the question and answer: Mbeg’ umukozi afise imyenda? Oyaye.",
-        answer: "Does the worker have clothes? No."
-      },
-      {
-        prompt: "Translate 'The workers hoe on the hill': Abakozi _____ ku musozi.",
-        answer: "barima"
-      }
-    ]
-  },
-  {
-    title: "II. English to Kirundi Translation",
-    questions: [
-      {
-        prompt: "Translate: The children have joy in their hearts.",
-        answer: "Abana bafise umunezero mu mitima yabo"
-      },
-      {
-        prompt: "How do you say 'The boy has bread on his head'?",
-        answer: "Umuhungu afise umukate ku mutwe wiwe"
-      },
-      {
-        prompt: "Translate: The women work on their hill.",
-        answer: "Abagore barakora ku musozi wabo"
-      },
-      {
-        prompt: "Translate 'Your (sing. debts': ______ yawe.",
-        answer: "Imyenda"
-      },
-      {
-        prompt: "Translate: Our fire.",
-        answer: "Umuriro wacu"
-      },
-      {
-        prompt: "Which phrase means 'In the fire'?",
-        answer: "Mu muriro"
-      },
-      {
-        prompt: "Translate: At the fire.",
-        answer: "Ku muriro"
-      },
-      {
-        prompt: "Translate: The old men have darkness in their hearts.",
-        answer: "Abatama bafise umwiza mu mitima yabo"
-      },
-      {
-        prompt: "Translate using 'wo': The light on the hill is your fire.",
-        answer: "umuco wo ku musozi ni umuriro wawe"
-      },
-      {
-        prompt: "Translate: The child is walking in the smoke.",
-        answer: "Umwana agenda mu mwotsi"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 5: Mu and Ku",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

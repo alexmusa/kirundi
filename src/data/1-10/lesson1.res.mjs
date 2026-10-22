@@ -233,6 +233,170 @@ let Content = {
   make: Lesson1$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Umugabo arakora.",
+        answer: "The man is working."
+      },
+      {
+        prompt: "Abahungu baragenda.",
+        answer: "The boys are going."
+      },
+      {
+        prompt: "Umukobwa ararima.",
+        answer: "The girl is hoeing."
+      },
+      {
+        prompt: "Umugore arakora.",
+        answer: "The woman is working."
+      },
+      {
+        prompt: "Abagore bararima.",
+        answer: "The women are hoeing."
+      },
+      {
+        prompt: "Abagabo bararima.",
+        answer: "The men are hoeing."
+      },
+      {
+        prompt: "Umuhungu aragenda.",
+        answer: "The boy is going."
+      },
+      {
+        prompt: "Abakobwa baragenda.",
+        answer: "The girls are going."
+      },
+      {
+        prompt: "Umugore ararima.",
+        answer: "The woman is hoeing."
+      },
+      {
+        prompt: "Umugabo aragenda.",
+        answer: "The man is going."
+      },
+      {
+        prompt: "Baragenda.",
+        answer: "They are going."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The boy is hoeing.",
+        answer: "Umuhungu ararima."
+      },
+      {
+        prompt: "The girl works.",
+        answer: "Umukobwa arakora."
+      },
+      {
+        prompt: "The men are going.",
+        answer: "Abagabo baragenda."
+      },
+      {
+        prompt: "The women are walking.",
+        answer: "Abagore baragenda."
+      },
+      {
+        prompt: "A boy is working.",
+        answer: "Umuhungu arakora."
+      },
+      {
+        prompt: "A girl is walking.",
+        answer: "Umukobwa aragenda."
+      },
+      {
+        prompt: "Some boys are working.",
+        answer: "Abahungu barakora."
+      },
+      {
+        prompt: "The man hoes.",
+        answer: "Umugabo ararima."
+      },
+      {
+        prompt: "A woman is going.",
+        answer: "Umugore aragenda."
+      },
+      {
+        prompt: "Women work.",
+        answer: "Abagore barakora."
+      },
+      {
+        prompt: "They are working.",
+        answer: "Barakora."
+      },
+      {
+        prompt: "She is hoeing.",
+        answer: "Ararima."
+      }
+    ]
+  }
+];
+
+let vocabularyData = [
+  [
+    "umugabo",
+    "man (married), husband"
+  ],
+  [
+    "abagabo",
+    "men, husbands"
+  ],
+  [
+    "umugore",
+    "woman (married), wife"
+  ],
+  [
+    "abagore",
+    "women, wives"
+  ],
+  [
+    "umuhungu",
+    "boy, son"
+  ],
+  [
+    "abahungu",
+    "boys, sons"
+  ],
+  [
+    "umukobwa",
+    "girl, daughter"
+  ],
+  [
+    "abakobwa",
+    "girls, daughters"
+  ],
+  [
+    "arakora",
+    "he/she is working, he/she works"
+  ],
+  [
+    "barakora",
+    "they are working, they work"
+  ],
+  [
+    "aragenda",
+    "he/she is going, he/she goes"
+  ],
+  [
+    "baragenda",
+    "they are going, walking"
+  ],
+  [
+    "ararima",
+    "he/she is hoeing, he/she hoes"
+  ],
+  [
+    "bararima",
+    "they are hoeing, they hoe"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson1$Content, {});
 
 let l_vocabulary = [
@@ -297,121 +461,18 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [
-  {
-    title: "I. Translate into English",
-    questions: [
-      {
-        prompt: "1. Umugabo arakora.",
-        answer: "The man is working"
-      },
-      {
-        prompt: "2. Abahungu baragenda.",
-        answer: "The boys are going"
-      },
-      {
-        prompt: "3. Umukobwa ararima.",
-        answer: "The girl is hoeing"
-      },
-      {
-        prompt: "4. Umugore arakora.",
-        answer: "The woman is working"
-      },
-      {
-        prompt: "5. Abagore bararima.",
-        answer: "The women are hoeing"
-      },
-      {
-        prompt: "6. Abagabo bararima.",
-        answer: "The men are hoeing"
-      },
-      {
-        prompt: "7. Umuhungu aragenda.",
-        answer: "The boy is going"
-      },
-      {
-        prompt: "8. Abakobwa baragenda.",
-        answer: "The girls are going"
-      },
-      {
-        prompt: "9. Umugore ararima.",
-        answer: "The woman is hoeing"
-      },
-      {
-        prompt: "10. Umugabo aragenda.",
-        answer: "The man is going"
-      },
-      {
-        prompt: "11. Baragenda.",
-        answer: "They are going"
-      }
-    ]
-  },
-  {
-    title: "II. Translate into Kirundi",
-    questions: [
-      {
-        prompt: "1. The boy is hoeing.",
-        answer: "Umuhungu ararima"
-      },
-      {
-        prompt: "2. The girl works.",
-        answer: "Umukobwa arakora"
-      },
-      {
-        prompt: "3. The men are going.",
-        answer: "Abagabo baragenda"
-      },
-      {
-        prompt: "4. The women are walking.",
-        answer: "Abagore baragenda"
-      },
-      {
-        prompt: "5. A boy is working.",
-        answer: "Umuhungu arakora"
-      },
-      {
-        prompt: "6. A girl is walking.",
-        answer: "Umukobwa aragenda"
-      },
-      {
-        prompt: "7. Some boys are working.",
-        answer: "Abahungu barakora"
-      },
-      {
-        prompt: "8. The man hoes.",
-        answer: "Umugabo ararima"
-      },
-      {
-        prompt: "9. A woman is going.",
-        answer: "Umugore aragenda"
-      },
-      {
-        prompt: "10. Women work.",
-        answer: "Abagore barakora"
-      },
-      {
-        prompt: "11. They are working.",
-        answer: "Barakora"
-      },
-      {
-        prompt: "12. She is hoeing.",
-        answer: "Ararima"
-      }
-    ]
-  }
-];
-
 let l = {
   title: "LESSON 1: Class 1 umu–, aba–",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

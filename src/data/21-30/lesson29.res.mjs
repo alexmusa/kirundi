@@ -196,6 +196,99 @@ let Content = {
   make: Lesson29$Content
 };
 
+let quizData = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Abagabo benshi bazogenda i Gitega ejo kugura impuzu.",
+        answer: "Many men will go to Gitega tomorrow to buy clothes."
+      },
+      {
+        prompt: "Umuvyeyi wanje aragaruka uyu musi.",
+        answer: "My parent is returning today."
+      },
+      {
+        prompt: "Umuntu mubi agira ubwoba bwinshi mu mutima wiwe.",
+        answer: "A bad person has much fear in his heart."
+      },
+      {
+        prompt: "Bika ibintu vyawe mu nzu.",
+        answer: "Put away your things in the house."
+      },
+      {
+        prompt: "Ejo abahungu bazogaruka hano mw ishuli.",
+        answer: "Tomorrow the boys will return here to school."
+      },
+      {
+        prompt: "Abakozi barasubira i wabo ku mugoroba.",
+        answer: "The workers are going back home in the afternoon."
+      },
+      {
+        prompt: "Umwana wa Petero azofasha abavyeyi biwe mu mirima yabo.",
+        answer: "Peter's child will help his parents in their fields."
+      },
+      {
+        prompt: "Inka ziragenda mu nzira ntoya.",
+        answer: "The cows are going in the small path."
+      },
+      {
+        prompt: "Tuzogira umunezero mwinshi kuko tuzobona Umukiza wacu.",
+        answer: "We shall have much joy because we shall see our Savior."
+      },
+      {
+        prompt: "Teka ibijumbu vyinshi n’inyama n’ibigori kukw abantu benshi baraza.",
+        answer: "Cook many sweet potatoes and meat and corn because many people are coming."
+      }
+    ]
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "The women will dig in their husband’s gardens tomorrow, but today they are reading in school.",
+        answer: "Abagore bazorima mu mirima y'abagabo babo ejo, ariko uyu musi barasoma mw ishuli."
+      },
+      {
+        prompt: "The teachers are going to Bujumbura today but they will return tomorrow.",
+        answer: "Abigisha baragenda i Bujumbura uyu musi ariko bazogaruka ejo."
+      },
+      {
+        prompt: "The boys will put away their books in the afternoon.",
+        answer: "Abahungu barabika ibitabo vyabo ku mugoroba."
+      },
+      {
+        prompt: "You (pl.) will have God’s blessing in your hearts (far future).",
+        answer: "Muzogira umuhezagiro w'Imana mu mitima yanyu."
+      },
+      {
+        prompt: "The teacher will come tomorrow into the school to speak the Word of God.",
+        answer: "Umwigisha azogaruka ejo mw ishuli kuvuga Ijambo ry'Imana."
+      },
+      {
+        prompt: "The children are afraid because they see a wild animal outside.",
+        answer: "Abana bagira ubwoba kuko babona igikoko hanze."
+      },
+      {
+        prompt: "Will you (pl.) come back today? No, we will come back tomorrow afternoon.",
+        answer: "Mugaruka uyu musi? Oya, tuzogaruka ejo ku mugoroba."
+      },
+      {
+        prompt: "What will the pupils do (this) afternoon? They will read in the Gospel of Matthew (Matayo).",
+        answer: "Abanyeshule baragira iki ku mugoroba? Barasoma mu Njili ya Matayo."
+      },
+      {
+        prompt: "The women are putting away the cloths now. They will come back tomorrow.",
+        answer: "Abagore barabika impuzu ubu. Bazogaruka ejo."
+      },
+      {
+        prompt: "We are praising God because He will have much mercy.",
+        answer: "Turahaya Imana kuko azogira imbabazi nyinshi."
+      }
+    ]
+  }
+];
+
 let l_content = JsxRuntime.jsx(Lesson29$Content, {});
 
 let l_vocabulary = [
@@ -264,18 +357,17 @@ let l_examples = [
   ]
 ];
 
-let l_quiz = [];
-
 let l = {
   title: "LESSON 29: Future Tense",
   content: l_content,
   vocabulary: l_vocabulary,
   examples: l_examples,
-  quiz: l_quiz
+  quiz: quizData
 };
 
 export {
   Content,
+  quizData,
   l,
 }
 /* l Not a pure module */

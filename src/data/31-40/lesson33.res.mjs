@@ -395,6 +395,33 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "ahantu",
+    "place"
+  ],
+  [
+    "ibiharage",
+    "beans"
+  ],
+  [
+    "hasi",
+    "on the ground, floor"
+  ],
+  [
+    "gukiza",
+    "to heal, save, save from"
+  ],
+  [
+    "gukubura",
+    "to sweep"
+  ],
+  [
+    "kuguma",
+    "to stay, remain"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson33$Content, {});
 
 let l_vocabulary = [];
@@ -412,6 +439,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

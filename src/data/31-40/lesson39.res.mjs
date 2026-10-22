@@ -341,6 +341,53 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "inkofero",
+    "hat"
+  ],
+  [
+    "gutuma",
+    "to send"
+  ],
+  [
+    "umusuma",
+    "thief"
+  ],
+  [
+    "igisuma",
+    "thief"
+  ],
+  [
+    "kurungika",
+    "to send"
+  ],
+  [
+    "ijoro",
+    "night"
+  ],
+  [
+    "yamara",
+    "but"
+  ],
+  [
+    "kwumva",
+    "to hear, feel, smell, taste"
+  ],
+  [
+    "mugabo",
+    "however, but"
+  ],
+  [
+    "-ngahe",
+    "how many?"
+  ],
+  [
+    "ariko",
+    "but"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson39$Content, {});
 
 let l_vocabulary = [];
@@ -358,6 +405,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

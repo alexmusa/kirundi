@@ -708,6 +708,65 @@ let quizData = [{
     ]
   }];
 
+let vocabularyData = [
+  [
+    "umu",
+    "Class 1 & 2 singular noun prefix"
+  ],
+  [
+    "aba",
+    "Class 1 plural noun prefix"
+  ],
+  [
+    "imi",
+    "Class 2 plural noun prefix"
+  ],
+  [
+    "in",
+    "Class 3 sing. & plur., Class 6 plural noun prefix"
+  ],
+  [
+    "iki",
+    "Class 4 singular noun prefix"
+  ],
+  [
+    "ibi",
+    "Class 4 plural noun prefix"
+  ],
+  [
+    "i",
+    "Class 5 singular noun prefix"
+  ],
+  [
+    "ama",
+    "Class 5, 8, & 9 plural noun prefix"
+  ],
+  [
+    "uru",
+    "Class 6 singular noun prefix"
+  ],
+  [
+    "aka",
+    "Class 7 singular noun prefix"
+  ],
+  [
+    "utu",
+    "Class 7 plural noun prefix"
+  ],
+  [
+    "ubu",
+    "Class 8 singular noun prefix"
+  ],
+  [
+    "uku",
+    "Class 9 singular noun prefix"
+  ],
+  [
+    "ha",
+    "Class 10 noun prefix"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson34$Content, {});
 
 let l_vocabulary = [];
@@ -725,6 +784,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

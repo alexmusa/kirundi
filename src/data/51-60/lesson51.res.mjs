@@ -285,6 +285,49 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "kunywa (nyoye)",
+    "to drink"
+  ],
+  [
+    "indya",
+    "food"
+  ],
+  [
+    "gucana (canye)",
+    "to light (fire)"
+  ],
+  [
+    "kare",
+    "early"
+  ],
+  [
+    "kurya (riye)",
+    "to eat"
+  ],
+  [
+    "gukora (koze)",
+    "to work"
+  ],
+  [
+    "kuvuga (vuze)",
+    "to speak"
+  ],
+  [
+    "kugenda (giye)",
+    "to go"
+  ],
+  [
+    "kuzana (zanye)",
+    "to bring"
+  ],
+  [
+    "ibikorwa",
+    "works/activities"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson51$Content, {});
 
 let l_vocabulary = [];
@@ -302,6 +345,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */

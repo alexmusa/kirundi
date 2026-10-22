@@ -288,6 +288,33 @@ let quizData = [
   }
 ];
 
+let vocabularyData = [
+  [
+    "kwambara",
+    "to wear, put on"
+  ],
+  [
+    "kwibagira",
+    "to forget"
+  ],
+  [
+    "kwanka",
+    "to refuse, hate"
+  ],
+  [
+    "kwibuka",
+    "to remember"
+  ],
+  [
+    "kwemera",
+    "to agree to, be willing, accept, admit"
+  ],
+  [
+    "kwubaka",
+    "to build"
+  ]
+];
+
 let l_content = JsxRuntime.jsx(Lesson36$Content, {});
 
 let l_vocabulary = [];
@@ -305,6 +332,7 @@ let l = {
 export {
   Content,
   quizData,
+  vocabularyData,
   l,
 }
 /* l Not a pure module */
