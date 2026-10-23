@@ -13,8 +13,7 @@ let defaultStats = {
   easeFactor: 2.5,
 }
 
-let calculateNextReview = (stats, result) => {
-  let now = Date.now()
+let calculateNextReviewAt = (now: float, stats, result) => {
   switch result {
   | Again => { lastReviewed: now, interval: 0.0, easeFactor: Math.max(1.3, stats.easeFactor -. 0.2) }
   | Hard => { lastReviewed: now, interval: Math.max(1.0, stats.interval *. 1.2), easeFactor: Math.max(1.3, stats.easeFactor -. 0.15) }
@@ -22,3 +21,6 @@ let calculateNextReview = (stats, result) => {
   | Easy => { lastReviewed: now, interval: stats.interval == 0.0 ? 4.0 : stats.interval *. (stats.easeFactor +. 0.15), easeFactor: stats.easeFactor +. 0.15 }
   }
 }
+
+// Wrapper present for testing purposes (see tests/srs.test.js).
+let calculateNextReview = (stats, result) => calculateNextReviewAt(Date.now(), stats, result)
