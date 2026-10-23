@@ -66,12 +66,21 @@ let make = () => {
   // --- Handlers ---
   let goToNext = () => setCurrentLessonIdx(prev => Math.Int.min(prev + 1, totalLessons - 1))
   let goToPrev = () => setCurrentLessonIdx(prev => Math.Int.max(prev - 1, 0))
-  
-  let goToLessonId = (id) => {
-    let id = Int.clamp(id, ~min=0, ~max=(totalLessons - 1))
-    setCurrentLessonIdx(_ => id)
+
+  let goToLessonIdx = (idx) => {
+    let idx = Int.clamp(idx, ~min=0, ~max=(totalLessons - 1))
+    setCurrentLessonIdx(_ => idx)
     setCurrentScreen(_ => LessonView)
   }
+
+// TODO: Remove once all lessons are complete.
+// Currently needed to skip missing lessons.
+  let goToLessonNumber = (n) =>
+    switch LessonData.numberToIndex(n) {
+    | Some(idx) => goToLessonIdx(idx)
+    | None => ()
+    }
+
 
   let handleReset = _ => {
     let confirm = Webapi.Dom.window->Webapi.Dom.Window.confirm(
@@ -95,13 +104,13 @@ let make = () => {
   switch currentScreen {
   | MainMenu =>
     <MainMenu
-      onStart={_ => goToLessonId(lessonProgressionIdx)}
+      onStart={_ => goToLessonIdx(lessonProgressionIdx)}
       onSettings={_ => setCurrentScreen(_ => Settings)}
       onFlashcards={_ => setCurrentScreen(_ => Flashcards)}
       onPracticeQuiz={_ => setCurrentScreen(_ => PracticeQuiz)}
-      lessonProgressionId=lessonProgressionIdx
-      lastLessonId=currentLessonIdx
-      onLessonSelect=goToLessonId
+      lessonProgressionId=LessonData.indexToNumber(lessonProgressionIdx)
+      lastLessonId=LessonData.indexToNumber(currentLessonIdx)
+      onLessonSelect=goToLessonNumber
     />
   | Settings => 
     <Settings 

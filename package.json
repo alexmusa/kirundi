@@ -10,7 +10,10 @@
     "dev": "vite",
     "build": "npm run res:build && vite build",
     "preview": "vite preview",
-    "test:data": "npm run res:build && vitest run tests/data"
+    "test": "npm run res:build && vitest run",
+    "test:data": "npm run res:build && vitest run tests/data",
+    "test:unit": "npm run res:build && vitest run tests/unit",
+    "test:integration": "npm run res:build && vitest run tests/integration"
   },
   "dependencies": {
     "@rescript/react": "^0.14.0",
@@ -21,10 +24,13 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.12",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
     "@vitejs/plugin-react": "^5.0.2",
+    "jsdom": "^26.1.0",
     "tailwindcss": "^4.1.12",
     "vite": "^7.1.0",
     "vite-plugin-pwa": "^1.2.0",
-    "vitest": "^3.2.7"
+    "vitest": "^4.1.12"
   }
 }

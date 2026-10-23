@@ -114,6 +114,47 @@ import * as Lesson121 from "./121-130/lesson121.res.mjs";
 import * as Lesson122 from "./121-130/lesson122.res.mjs";
 import * as Lesson123 from "./121-130/lesson123.res.mjs";
 import * as Lesson124 from "./121-130/lesson124.res.mjs";
+import * as Belt_Array from "@rescript/runtime/lib/es6/Belt_Array.js";
+import * as Belt_Option from "@rescript/runtime/lib/es6/Belt_Option.js";
+import * as Stdlib_String from "@rescript/runtime/lib/es6/Stdlib_String.js";
+
+function titleNumber(title) {
+  let len = title.length;
+  let _i = 0;
+  while (true) {
+    let i = _i;
+    if (i >= len) {
+      return 0;
+    }
+    let c = Stdlib_String.charCodeAt(title, i);
+    if (c === undefined) {
+      return 0;
+    }
+    if (c >= 48 && c <= 57) {
+      let _i$1 = i + 1 | 0;
+      let _acc = c - 48 | 0;
+      while (true) {
+        let acc = _acc;
+        let i$1 = _i$1;
+        if (i$1 >= len) {
+          return acc;
+        }
+        let c$1 = Stdlib_String.charCodeAt(title, i$1);
+        if (c$1 === undefined) {
+          return acc;
+        }
+        if (!(c$1 >= 48 && c$1 <= 57)) {
+          return acc;
+        }
+        _acc = ((acc * 10 | 0) + c$1 | 0) - 48 | 0;
+        _i$1 = i$1 + 1 | 0;
+        continue;
+      };
+    }
+    _i = i + 1 | 0;
+    continue;
+  };
+}
 
 let lessons = [
   Lesson0.l,
@@ -230,6 +271,33 @@ let lessons = [
   Lesson123.l,
   Lesson124.l
 ];
+
+let lessonNumbers = Belt_Array.map(lessons, l => titleNumber(l.title));
+
+function numberToIndex(n) {
+  let total = lessonNumbers.length;
+  let _i = 0;
+  while (true) {
+    let i = _i;
+    if (i >= total) {
+      return;
+    }
+    let m = lessonNumbers[i];
+    if (m !== undefined) {
+      if (m === n) {
+        return i;
+      }
+      _i = i + 1 | 0;
+      continue;
+    }
+    _i = i + 1 | 0;
+    continue;
+  };
+}
+
+function indexToNumber(i) {
+  return Belt_Option.getWithDefault(Belt_Array.get(lessonNumbers, i), 0);
+}
 
 let vocabulary = [
   Lesson0.l.vocabulary,
@@ -348,7 +416,11 @@ let vocabulary = [
 ];
 
 export {
+  titleNumber,
   lessons,
+  lessonNumbers,
+  numberToIndex,
+  indexToNumber,
   vocabulary,
 }
-/* Lesson0 Not a pure module */
+/* lessonNumbers Not a pure module */

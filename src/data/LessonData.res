@@ -1,6 +1,34 @@
 // LessonData.res
 open LessonTypes
 
+// TODO: Remove once all lessons are complete.
+// Currently needed to skip missing lessons.
+let titleNumber = (title: string): int => {
+  let len = String.length(title)
+  let rec skip = i =>
+    if i >= len {
+      0
+    } else {
+      switch String.charCodeAt(title, i) {
+      | Some(c) if c >= 48 && c <= 57 => digits(i + 1, c - 48)
+      | Some(_) => skip(i + 1)
+      | None => 0
+      }
+    }
+  and digits = (i, acc) =>
+    if i >= len {
+      acc
+    } else {
+      switch String.charCodeAt(title, i) {
+      | Some(c) if c >= 48 && c <= 57 => digits(i + 1, acc * 10 + c - 48)
+      | Some(_) => acc
+      | None => acc
+      }
+    }
+  skip(0)
+}
+
+
 let lessons: array<lesson> = [
   // Introduction
   Lesson0.l,
@@ -142,6 +170,28 @@ let lessons: array<lesson> = [
   Lesson124.l,
   // Lesson125.l,
 ]
+
+// The `lessons` array skips unported lessons (reviews, reading lessons, ...),
+// so array indices and textbook numbers diverge from lesson 31 onwards.
+// The registry provides the bidirectional mapping.
+let lessonNumbers: array<int> = Belt.Array.map(lessons, l => titleNumber(l.title))
+
+let numberToIndex = (n: int): option<int> => {
+  let total = Belt.Array.length(lessonNumbers)
+  let rec go = i =>
+    if i >= total {
+      None
+    } else {
+      switch lessonNumbers[i] {
+      | Some(m) when m == n => Some(i)
+      | _ => go(i + 1)
+      }
+    }
+  go(0)
+}
+
+let indexToNumber = (i: int): int =>
+  Belt.Array.get(lessonNumbers, i)->Belt.Option.getWithDefault(0)
 
 let vocabulary: array<vocabulary> = [
   // Introduction
