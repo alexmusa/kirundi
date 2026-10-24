@@ -29,7 +29,7 @@ let make = (
       base + ` bg-gray-100 text-gray-400 border-gray-100 opacity-60 hover:bg-gray-200`
     } else {
       // Future Lessons: Standard
-      base + ` $base bg-white text-gray-600 border-gray-200 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-sm`
+      base + ` bg-white text-gray-600 border-gray-200 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-sm`
     }
   }
 

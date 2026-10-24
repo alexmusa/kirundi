@@ -59,6 +59,17 @@ describe("App — new user journey", () => {
   });
 });
 
+describe("App — MainMenu styling", () => {
+  it("lesson buttons carry no bogus class tokens", () => {
+    render(React.createElement(App.make));
+    // Regression: a literal "$base" template-string mistake used to leak
+    // into the lesson button classes for future lessons.
+    const btn = screen.getByRole("button", { name: "5" });
+    expect(btn.className).not.toContain("$base");
+    expect(btn.className).toContain("bg-white");
+  });
+});
+
 describe("App — progression persistence", () => {
   it("Next saves last-viewed, max-lesson-reached and moves forward", async () => {
     render(React.createElement(App.make));

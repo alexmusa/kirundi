@@ -67,6 +67,8 @@ function App(props) {
     }
     Dom_storage.setItem(lastViewedKey, currentLessonIdx.toString(), localStorage);
   }, [currentLessonIdx]);
+  let goToNext = () => setCurrentLessonIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
+  let goToPrev = () => setCurrentLessonIdx(prev => Math.max(prev - 1 | 0, 0));
   let goToLessonIdx = idx => {
     let idx$1 = Stdlib_Int.clamp(0, totalLessons - 1 | 0, idx);
     setCurrentLessonIdx(param => idx$1);
@@ -78,8 +80,6 @@ function App(props) {
       return goToLessonIdx(idx);
     }
   };
-  let goToNext = () => setCurrentLessonIdx(prev => Math.min(prev + 1 | 0, totalLessons - 1 | 0));
-  let goToPrev = () => setCurrentLessonIdx(prev => Math.max(prev - 1 | 0, 0));
   let handleReset = param => {
     let confirm = window.confirm("Are you sure you want to reset all progress? This cannot be undone.");
     if (confirm) {
