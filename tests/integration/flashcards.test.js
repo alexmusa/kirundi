@@ -42,8 +42,8 @@ describe("Flashcards — deck setup", () => {
   it("shows the empty state for an empty deck", () => {
     render(React.createElement(Flashcards.make, { vocabulary: [], onBack: () => {} }));
     expect(screen.getByText("All caught up!")).toBeTruthy();
-    // Known quirk: the counter still renders "Card 1 of 0" for an empty deck.
-    expect(screen.getByText("Card 1 of 0")).toBeTruthy();
+    // The "Card x of y" counter is hidden when the deck is empty.
+    expect(screen.queryByText(/Card /)).toBeNull();
   });
 
   it("filters out cards that are not yet due", () => {

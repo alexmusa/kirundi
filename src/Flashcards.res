@@ -115,9 +115,11 @@ let make = (~vocabulary: LessonTypes.vocabulary, ~onBack) => {
         </svg>
         {React.string("Back")}
       </button>
-      <div className="text-sm font-semibold text-gray-500">
-        {React.string(`Card ${Int.toString(currentIndex + 1)} of ${Int.toString(totalCards)}`)}
-      </div>
+      {totalCards > 0
+        ? <div className="text-sm font-semibold text-gray-500">
+            {React.string(`Card ${Int.toString(currentIndex + 1)} of ${Int.toString(totalCards)}`)}
+          </div>
+        : React.null}
     </div>
 
     /* Card Area */

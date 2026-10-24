@@ -157,10 +157,10 @@ function Flashcards(props) {
             className: "text-gray-600 font-medium flex items-center gap-2",
             onClick: onBack
           }),
-          JsxRuntime.jsx("div", {
-            children: `Card ` + (currentIndex + 1 | 0).toString() + ` of ` + totalCards.toString(),
-            className: "text-sm font-semibold text-gray-500"
-          })
+          totalCards > 0 ? JsxRuntime.jsx("div", {
+              children: `Card ` + (currentIndex + 1 | 0).toString() + ` of ` + totalCards.toString(),
+              className: "text-sm font-semibold text-gray-500"
+            }) : null
         ],
         className: "flex items-center justify-between mb-8"
       }),
