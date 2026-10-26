@@ -13,7 +13,8 @@
     "test": "npm run res:build && vitest run",
     "test:data": "npm run res:build && vitest run tests/data",
     "test:unit": "npm run res:build && vitest run tests/unit",
-    "test:integration": "npm run res:build && vitest run tests/integration"
+    "test:integration": "npm run res:build && vitest run tests/integration",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@rescript/react": "^0.14.0",
@@ -23,6 +24,7 @@
     "rescript-webapi": "^0.10.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/vite": "^4.1.12",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.8",
