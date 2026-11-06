@@ -64,7 +64,7 @@ let lessons: array<lesson> = [
   Lesson27.l,
   Lesson28.l,
   Lesson29.l,
-  // Lesson30.l,
+  Lesson30.l,
   // 31-40
   Lesson31.l,
   Lesson32.l,
@@ -75,7 +75,7 @@ let lessons: array<lesson> = [
   Lesson37.l,
   Lesson38.l,
   Lesson39.l,
-  // Lesson40.l,
+  Lesson40.l,
   // 41-50
   Lesson41.l,
   Lesson42.l,
@@ -85,8 +85,8 @@ let lessons: array<lesson> = [
   Lesson46.l,
   Lesson47.l,
   Lesson48.l,
-  // Lesson49.l,
-  // Lesson50.l,
+  Lesson49.l,
+  Lesson50.l,
   // 51-60
   Lesson51.l,
   Lesson52.l,
@@ -97,7 +97,7 @@ let lessons: array<lesson> = [
   Lesson57.l,
   Lesson58.l,
   Lesson59.l,
-  // Lesson60.l,
+  Lesson60.l,
   // 61-70
   Lesson61.l,
   Lesson62.l,
@@ -106,9 +106,9 @@ let lessons: array<lesson> = [
   Lesson65.l,
   Lesson66.l,
   Lesson67.l,
-  // Lesson68.l,
+  Lesson68.l,
   Lesson69.l,
-  // Lesson70.l,
+  Lesson70.l,
   // 71-80
   Lesson71.l,
   Lesson72.l,
@@ -121,7 +121,7 @@ let lessons: array<lesson> = [
   Lesson79.l,
   Lesson80.l,
   // 81-90
-  // Lesson81.l,
+  Lesson81.l,
   Lesson82.l,
   Lesson83.l,
   Lesson84.l,
@@ -130,7 +130,7 @@ let lessons: array<lesson> = [
   Lesson87.l,
   Lesson88.l,
   Lesson89.l,
-  // Lesson90.l,
+  Lesson90.l,
   // 91-100
   Lesson91.l,
   Lesson92.l,
@@ -141,9 +141,9 @@ let lessons: array<lesson> = [
   Lesson97.l,
   Lesson98.l,
   Lesson99.l,
-  // Lesson100.l,
+  Lesson100.l,
   // 101-110
-  // Lesson101.l,
+  Lesson101.l,
   Lesson102.l,
   Lesson103.l,
   Lesson104.l,
@@ -152,7 +152,7 @@ let lessons: array<lesson> = [
   Lesson107.l,
   Lesson108.l,
   Lesson109.l,
-  // Lesson110.l,
+  Lesson110.l,
   // 111-125
   Lesson111.l,
   Lesson112.l,
@@ -168,7 +168,7 @@ let lessons: array<lesson> = [
   Lesson122.l,
   Lesson123.l,
   Lesson124.l,
-  // Lesson125.l,
+  Lesson125.l,
 ]
 
 // The `lessons` array skips unported lessons (reviews, reading lessons, ...),
@@ -239,7 +239,7 @@ let vocabulary: array<vocabulary> = [
   Lesson37.l.vocabulary,
   Lesson38.l.vocabulary,
   Lesson39.l.vocabulary,
-  // Lesson40.l.vocabulary,
+  Lesson40.l.vocabulary,
   // 41-50
   Lesson41.l.vocabulary,
   Lesson42.l.vocabulary,
@@ -249,8 +249,8 @@ let vocabulary: array<vocabulary> = [
   Lesson46.l.vocabulary,
   Lesson47.l.vocabulary,
   Lesson48.l.vocabulary,
-  // Lesson49.l.vocabulary,
-  // Lesson50.l.vocabulary,
+  Lesson49.l.vocabulary,
+  Lesson50.l.vocabulary,
   // 51-60
   Lesson51.l.vocabulary,
   Lesson52.l.vocabulary,
@@ -261,7 +261,7 @@ let vocabulary: array<vocabulary> = [
   Lesson57.l.vocabulary,
   Lesson58.l.vocabulary,
   Lesson59.l.vocabulary,
-  // Lesson60.l.vocabulary,
+  Lesson60.l.vocabulary,
   // 61-70
   Lesson61.l.vocabulary,
   Lesson62.l.vocabulary,
@@ -270,9 +270,9 @@ let vocabulary: array<vocabulary> = [
   Lesson65.l.vocabulary,
   Lesson66.l.vocabulary,
   Lesson67.l.vocabulary,
-  // Lesson68.l.vocabulary,
+  Lesson68.l.vocabulary,
   Lesson69.l.vocabulary,
-  // Lesson70.l.vocabulary,
+  Lesson70.l.vocabulary,
   // 71-80
   Lesson71.l.vocabulary,
   Lesson72.l.vocabulary,
@@ -285,7 +285,7 @@ let vocabulary: array<vocabulary> = [
   Lesson79.l.vocabulary,
   // Lesson80.l.vocabulary,
   // 81-90
-  // Lesson81.l.vocabulary,
+  Lesson81.l.vocabulary,
   Lesson82.l.vocabulary,
   Lesson83.l.vocabulary,
   Lesson84.l.vocabulary,
@@ -294,7 +294,7 @@ let vocabulary: array<vocabulary> = [
   Lesson87.l.vocabulary,
   Lesson88.l.vocabulary,
   Lesson89.l.vocabulary,
-  // Lesson90.l.vocabulary,
+  Lesson90.l.vocabulary,
   // 91-100
   Lesson91.l.vocabulary,
   Lesson92.l.vocabulary,
@@ -305,9 +305,9 @@ let vocabulary: array<vocabulary> = [
   Lesson97.l.vocabulary,
   Lesson98.l.vocabulary,
   Lesson99.l.vocabulary,
-  // Lesson100.l.vocabulary,
+  Lesson100.l.vocabulary,
   // 101-110
-  // Lesson101.l.vocabulary,
+  Lesson101.l.vocabulary,
   Lesson102.l.vocabulary,
   Lesson103.l.vocabulary,
   Lesson104.l.vocabulary,
@@ -316,7 +316,7 @@ let vocabulary: array<vocabulary> = [
   Lesson107.l.vocabulary,
   Lesson108.l.vocabulary,
   Lesson109.l.vocabulary,
-  // Lesson110.l.vocabulary,
+  Lesson110.l.vocabulary,
   // 111-125
   Lesson111.l.vocabulary,
   Lesson112.l.vocabulary,
@@ -332,5 +332,5 @@ let vocabulary: array<vocabulary> = [
   Lesson122.l.vocabulary,
   Lesson123.l.vocabulary,
   Lesson124.l.vocabulary,
-  // Lesson125.l.vocabulary,
+  Lesson125.l.vocabulary,
 ]

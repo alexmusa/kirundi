@@ -17,7 +17,7 @@ test("every lesson renders without uncaught errors", async ({ page }) => {
   const select = page.getByRole("combobox");
   await expect(select).toBeVisible();
   const total = await select.locator("option").count();
-  expect(total).toBe(113); // lesson registry size (documented skip-list)
+  expect(total).toBe(126); // lesson registry size (introduction + lessons 1-125)
 
   for (let i = 0; i < total; i++) {
     await select.selectOption(String(i));

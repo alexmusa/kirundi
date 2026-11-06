@@ -1,5 +1,98 @@
 open LessonTypes
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbega n’umuhungu ki akunda kurwana imisi yose?",
+        answer: "What sort of boy (ever) likes to fight every day?",
+      },
+      {
+        prompt: "Ubwoko mur’ iki gihugu n’ubuki?",
+        answer: "What kind of tribes/nations are in this country?",
+      },
+      {
+        prompt: "Uzotora igitabo ki mur’ ivyo vyinshi?",
+        answer: "What sort of book will you choose among those many?",
+      },
+      {
+        prompt: "N’umuntu ki ategeka artyo?",
+        answer: "What sort of person is it who commands like that?",
+      },
+      {
+        prompt: "Vya bikoko mwahize n’ibiki?",
+        answer: "What kind of wild animals were those you hunted?",
+      },
+      {
+        prompt: "Umuti wasīze ku mwana n’umuki?",
+        answer: "What kind of medicine did you rub on the child?",
+      },
+      {
+        prompt: "Mwavuze yuko naka afise iradiyo. Mbeg’ iradiyo n’iki?",
+        answer: "You said that so-and-so has a radio. What (on earth) is a radio?",
+      },
+      {
+        prompt: "Ca gihugu mwavuyemwo n’igihugu ki?",
+        answer: "What ever kind of country is that which you came from?",
+      },
+      {
+        prompt: "Indya babateguriye n’inki?",
+        answer: "What kind of food did they prepare for you?",
+      },
+      {
+        prompt: "Uwanditse ico cete n’umuntu ki?",
+        answer: "What sort of person is it who wrote that letter?",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "You have many books. What kind are they?",
+        answer: "Ufise ibitabo vyinshi. N’ibiki?",
+      },
+      {
+        prompt: "Did you hear what this man said? What sort of man is he?",
+        answer: "Warumvise ivyo uyu muntu yavuze? N’umuntu ki?",
+      },
+      {
+        prompt: "What is “umumarayika”?",
+        answer: "Umumarayika n’iki?",
+      },
+      {
+        prompt: "What sort of flowers are those?",
+        answer: "Ivyo n’amashurwe amaki?",
+      },
+      {
+        prompt: "What kind of dish is that from which you took out food?",
+        answer: "Ico n’igisoroma igiki mwatuyemwo indya?",
+      },
+      {
+        prompt: "What kind of clothes did you leave at home?",
+        answer: "Impuzu wasize muhira n’inki?",
+      },
+      {
+        prompt: "I saw the doctor rubbing medicine on that man. What kind of illness does he have?",
+        answer: "Nabonye muganga asīga umuti kuri uyo muntu. Afise indwara ki?",
+      },
+      {
+        prompt: "What are pincher ants? We don’t have any in our country.",
+        answer: "Intasigwa n’iki? Nta zo dufise mu gihugu cacu.",
+      },
+      {
+        prompt: "What kind of nails does the fundi want me to bring (= want that I bring)?",
+        answer: "Umufundi ashaka ko nzana imisumari imiki?",
+      },
+      {
+        prompt: "Whatever kind of a hat is that? Where did you get it (= take it from)?",
+        answer: "Iyo n’ingofero ki? Wajikuye hehe?",
+      },
+    ],
+  },
+]
+
 module Content = {
   @react.component
   let make = () => {
@@ -113,9 +206,9 @@ module Content = {
 }
 
 let l: lesson = {
-  title: "LESSON 116:",
+  title: "LESSON 116: Ki and Umuki",
   content: <Content />,
   examples: [],
   vocabulary: [],
-  quiz: [],
+  quiz: quizData,
 };

@@ -3,7 +3,16 @@
 import * as JsxRuntime from "react/jsx-runtime";
 
 function Lesson30$Content(props) {
-  return JsxRuntime.jsx(JsxRuntime.Fragment, {});
+  return JsxRuntime.jsx("div", {
+    children: JsxRuntime.jsx("div", {
+      children: JsxRuntime.jsx("b", {
+        children: "LESSON 30: Review",
+        className: "uppercase"
+      }),
+      className: "border-b border-black text-center pb-1 mb-6"
+    }),
+    className: "p-8 max-w-3xl mx-auto font-serif text-[11pt] text-gray-900 leading-normal"
+  });
 }
 
 let Content = {

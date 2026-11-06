@@ -10,15 +10,11 @@ import * as LessonData from "../../src/data/LessonData.res.mjs";
  * If a lesson file is added or removed, update this list in the same commit.
  */
 
-// Lessons that exist in the textbook but have no data file yet
-// (Review lessons + Reading lessons + lesson 68).
-const MISSING_LESSON_FILES = new Set([
-  40, 49, 50, 60, 68, 70, 81, 90, 100, 101, 110, 125,
-]);
+// All lessons now have data files and are registered.
+const MISSING_LESSON_FILES = new Set([]);
 
-// Lessons with a data file that is present but intentionally (for now)
-// commented out of the `lessons` array in LessonData.res.
-const REGISTERED_FILES_NOT_IN_ARRAY = new Set([30]);
+// All lessons with a data file are registered in the `lessons` array.
+const REGISTERED_FILES_NOT_IN_ARRAY = new Set([]);
 
 const TOTAL_TEXTBOOK_LESSONS = 125; // lessons 1..125 (page 0 = intro)
 

@@ -1,5 +1,98 @@
 open LessonTypes
 
+let quizData: array<Quiz.quizSection> = [
+  {
+    title: "I. Translate into English",
+    questions: [
+      {
+        prompt: "Mbega mugomba ibitabo bisha?",
+        answer: "Do you (pl.) want new books?",
+      },
+      {
+        prompt: "Ugomba iki? Ngomba amata.",
+        answer: "What do you (sing.) want? I want milk.",
+      },
+      {
+        prompt: "Mbeg’ ugomba kugura inka? Oya, ngomba kugura impene.",
+        answer: "Do you (sing.) want to buy a cow? No, I want to buy a goat.",
+      },
+      {
+        prompt: "Mubona iki? Tubona inzu nziza.",
+        answer: "What do you (pl.) see? We see a beautiful house.",
+      },
+      {
+        prompt: "Abantu benshi bariko barasenga Imana mu rusengero.",
+        answer: "Many people are praying to God in the church.",
+      },
+      {
+        prompt: "Abana baza buhoro-buhoro mw ishuli.",
+        answer: "The children come slowly to school.",
+      },
+      {
+        prompt: "Ngomba kubona ishuli ryanyu rishasha.",
+        answer: "I want to see your (pl.) new school.",
+      },
+      {
+        prompt: "Abagore baza kugura umuti.",
+        answer: "The women are coming to buy medicine.",
+      },
+      {
+        prompt: "Genda n’ingoga kugura inyama.",
+        answer: "Go quickly to buy meat.",
+      },
+      {
+        prompt: "Dukunda gusenga Imana; ifise urukundo rwinshi n’ikigongwe.",
+        answer: "We love to pray to God; He has much love and mercy.",
+      },
+    ],
+  },
+  {
+    title: "II. Translate into Kirundi",
+    questions: [
+      {
+        prompt: "We want to worship God.",
+        answer: "Tugomba gusenga Imana.",
+      },
+      {
+        prompt: "The boy is coming slowly.",
+        answer: "Umuhungu aza buhoro-buhoro.",
+      },
+      {
+        prompt: "Go quickly to school. The teacher is speaking.",
+        answer: "Genda n’ingoga mw ishuli. Umwigisha aravuga.",
+      },
+      {
+        prompt: "Put the books on the chair.",
+        answer: "Shira ibitabo ku ntebe.",
+      },
+      {
+        prompt: "Where do you (sing.) want to hoe? I want to hoe in my garden.",
+        answer: "Ugomba kurima hehe? Ngomba kurima mu murima wanje.",
+      },
+      {
+        prompt: "What are you buying? I’m buying chickens and eggs.",
+        answer: "Ugura iki? Ngura inkoko n’amagi.",
+      },
+      {
+        prompt: "The pupils are walking slowly; they don’t want to go to school.",
+        answer: "Abigishwa bagenda buhoro-buhoro; ntibagomba kugenda mw ishuli.",
+      },
+      {
+        prompt: "Bring your (sing.) books here. I want to see the words.",
+        answer: "Zana ibitabo vyawe hano. Ngomba kubona amajambo.",
+      },
+      {
+        prompt: "Go to the river quickly. Bring (some) fish.",
+        answer: "Genda ku ruzi n’ingoga. Zana ifi.",
+      },
+      {
+        prompt: "We see the rich man’s bees over there. They are on the bananas.",
+        answer: "Tubona inzuki z’umutunzi hariya. Ziri ku bitoke.",
+      },
+    ],
+  },
+]
+
 module Content = {
   @react.component
   let make = () => {
@@ -128,5 +221,5 @@ let l: lesson = {
   content: <Content />,
   vocabulary: vocabulary,
   examples: examples,
-  quiz: [],
+  quiz: quizData,
 };

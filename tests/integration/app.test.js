@@ -43,11 +43,11 @@ describe("App — new user journey", () => {
       // Lesson 31's content does repeat its full title.
       expect(screen.getByText("LESSON 31: Negative of Future", { selector: "p" })).toBeTruthy();
 
-      // An unported lesson number is a no-op, not a wrong lesson.
+      // All lessons are now registered; lesson 40 opens correctly.
       cleanup();
       render(React.createElement(App.make));
       await user.click(screen.getByRole("button", { name: "40" }));
-      expect(screen.queryByRole("combobox")).toBeNull();
+      expectOnLessonIdx(LessonData.numberToIndex(40));
     });
 
   it("Start Learning opens the introduction", async () => {
