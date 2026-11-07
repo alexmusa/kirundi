@@ -12,7 +12,7 @@ let onDiscussWithGemini = (lesson: LessonTypes.lesson) => {
     "The new vocabulary is: " ++ vocabList ++ ". " ++
     "Please help me practice these words and any grammar related to this lesson."
 
-  let url = "https://gemini.google.com/guided-learning?query=" ++ encodeURIComponent(prompt)
+  let url = "https://chat.openai.com/?q=" ++ encodeURIComponent(prompt)
   
   // Open in new tab
   Webapi.Dom.window->Webapi.Dom.Window.open_(~url, ~name="_blank", ~features="", ())->ignore
@@ -54,7 +54,7 @@ module LessonView = {
         <path d="M12 7v6" />
         <path d="M9 10h6" />
       </svg>
-      {React.string("Discuss with Gemini")}
+      {React.string("Discuss with ChatGPT")}
     </button>
 
     <section className="space-y-6">
